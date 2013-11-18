@@ -1,13 +1,17 @@
-##Stackoverflow Dark theme for the Stylish Addon ([Firefox](https://addons.mozilla.org/en-US/firefox/addon/2108/) and [Chrome](https://chrome.google.com/extensions/detail/fjnbnpbmkenffdnngjfgmeleoegfcffe)).
+## Stackoverflow Dark theme for the Stylish Addon ([Firefox](https://addons.mozilla.org/en-US/firefox/addon/2108/) and [Chrome](https://chrome.google.com/extensions/detail/fjnbnpbmkenffdnngjfgmeleoegfcffe)).
 
 Hosted at [userstyles.org](http://userstyles.org/styles/35345)
 
-###Before & After
+### Before & After
 
  [ ![before screenshot](http://mottie.github.com/Stackoverflow-Dark/images/before_th.jpg) ](http://mottie.github.com/Stackoverflow-Dark/images/before.jpg)
  [ ![after screenshot](http://mottie.github.com/Stackoverflow-Dark/images/after_th.jpg) ](http://mottie.github.com/Stackoverflow-Dark/images/after.jpg)
 
-###**Changelog**
+### **Changelog**
+
+#### Version 2.3.1 (11/18/2013)
+
+* Fix editor buttons (misspelling of url)
 
 #### Version 2.3 (11/15/2013)
 

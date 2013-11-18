@@ -3,7 +3,7 @@
 @-moz-document domain("stackoverflow.com") {
 
 /***************************************************************
- Stackoverflow Dark v2.3 (11/15/2013)
+ Stackoverflow Dark v2.3.1 (11/18/2013)
  https://github.com/Mottie/Stackoverflow-Dark
  http://userstyles.org/styles/35345
 
@@ -45,8 +45,7 @@
   background-color: #232323 !important;
   color: #BBB !important;
  }
-
- .summary .post-tag:hover , .commentslink {
+ .summary .post-tag:hover , .commentslink, .bounty-indicator, .bounty-indicator-tab, .bounty-award {
   background-color: #3E6D8E !important;
   color: #E0EAF1 !important;
  }
@@ -130,22 +129,21 @@
   background: #232323 !important;
   color:#75845C !important
  }
-
  .answered strong {
-  color: #ddd !important
+  color: #75845C !important
  }
-
  .answered-accepted {
   background: #75845C !important;
   color: #FFF !important
  }
-
  .answered-accepted strong {
   color: #FFF !important
  }
-
  .accepted-answer {
   background: #224422 !important;
+ }
+ .stats {
+  margin-bottom: 4px !important;
  }
 
  div, .accepted-answer .post-text, .accepted-answer .user-action-time, #question-header a,
@@ -285,7 +283,7 @@
  }
 
  .wmd-button>span {
-  background-image: url(http://mottie.github.io/StackOverflow-Dark/images/wmd-buttons.png) !important;
+  background-image: url(http://mottie.github.io/Stackoverflow-Dark/images/wmd-buttons.png) !important;
  }
 
  .statsarrow {
