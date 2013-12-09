@@ -4,8 +4,8 @@ Hosted at [userstyles.org](http://userstyles.org/styles/35345)
 
 ### Before & After
 
- [ ![before screenshot](http://StylishThemes.github.com/Stackoverflow-Dark/images/before_th.jpg) ](http://StylishThemes.github.com/Stackoverflow-Dark/images/before.jpg)
- [ ![after screenshot](http://StylishThemes.github.com/Stackoverflow-Dark/images/after_th.jpg) ](http://StylishThemes.github.com/Stackoverflow-Dark/images/after.jpg)
+ [ ![before screenshot](http://StylishThemes.github.com/Stackoverflow-Dark/images/before_th.png) ](http://StylishThemes.github.com/Stackoverflow-Dark/images/before.png)
+ [ ![after screenshot](http://StylishThemes.github.com/Stackoverflow-Dark/images/after_th.png) ](http://StylishThemes.github.com/Stackoverflow-Dark/images/after.png)
 
 ### **Changelog**
 
