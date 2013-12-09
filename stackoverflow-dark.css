@@ -3,8 +3,8 @@
 @-moz-document domain("stackoverflow.com") {
 
 /***************************************************************
- Stackoverflow Dark v2.3.1 (11/18/2013)
- https://github.com/Mottie/Stackoverflow-Dark
+ Stackoverflow Dark v2.3.2 (12/9/2013)
+ https://github.com/StylishThemes/Stackoverflow-Dark
  http://userstyles.org/styles/35345
 
  previous version information contained at the userstlyes site
@@ -41,7 +41,7 @@
   text-decoration:none !important
  }
 
- .summary .post-tag, .rep-recent-row {
+ .summary .post-tag, .rep-recent-row, .bounty {
   background-color: #232323 !important;
   color: #BBB !important;
  }
@@ -93,11 +93,11 @@
   border-radius: 3px !important;
  }
 
- .form-item, #wmd-button-bar {
+ .form-item {
   background:#191919 !important
  }
 
- input, textarea, #search input {
+ input, textarea, #search input, .topbar-dialog .header, .topbar-dialog .modal-content li:hover {
   background: #222 !important;
   color: #ddd !important;
  }
@@ -107,7 +107,7 @@
  }
 
  /* code & syntax highlighting */
- pre, code, .pln {
+ pre, code, .pln, #wmd-button-bar {
   background: #333 !important;
   color: #ccc !important;
  }
@@ -134,10 +134,7 @@
  }
  .answered-accepted {
   background: #75845C !important;
-  color: #FFF !important
- }
- .answered-accepted strong {
-  color: #FFF !important
+  color: #fff !important
  }
  .accepted-answer {
   background: #224422 !important;
@@ -147,7 +144,7 @@
  }
 
  div, .accepted-answer .post-text, .accepted-answer .user-action-time, #question-header a,
- .post-text, .user-info {
+ .post-text, .user-info, .topbar-dialog .header h3, .topbar-dialog .header h3 a, .topbar-dialog span {
   color: #ddd !important;
  }
 
@@ -181,6 +178,9 @@
 
  .comment, #top-menu a, .subheader a, .reputation a {
   color: #aaa !important;
+ }
+ .answered-accepted strong, .youarehere {
+  color: #fff !important
  }
 
  tr.comment:hover, .reply-parent, .timestamp, .roomcard, .usercard, .page-numbers.current,
@@ -257,7 +257,7 @@
   color: #c1beba !important
  }
 
- .nav li, .seNav {
+ .nav li, .seNav, .topbar .topbar-icon-on, .topbar .topbar-icon-on:hover, .topbar-dialog {
   background-color: #333 !important;
  }
 
@@ -265,7 +265,7 @@
   background-color: #d80 !important;
  }
 
- div.message .meta, .spaces {
+ div.message .meta, .spaces, .comment, span.feed-icon {
   background-color: transparent !important;
  }
 
@@ -283,7 +283,7 @@
  }
 
  .wmd-button>span {
-  background-image: url(http://mottie.github.io/Stackoverflow-Dark/images/wmd-buttons.png) !important;
+  background-image: url(http://StylishThemes.github.io/Stackoverflow-Dark/images/wmd-buttons.png) !important;
  }
 
  .statsarrow {
@@ -293,7 +293,8 @@
  }
 
  #hlogo img, .everyonelovesstackoverflow, #newsletter-ad { opacity:0.3 !important; }
- #hlogo a { background-image: none !important; }
- #hlogo { height: 61px !important; width: 237px !important; background-image: url('data:image/gif;base64,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') !important; }
+ #hlogo a {
+  background-image: url(http://StylishThemes.github.io/Stackoverflow-Dark/images/logo.png) !important;
+ }
 
 }

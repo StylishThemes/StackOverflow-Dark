@@ -4,10 +4,15 @@ Hosted at [userstyles.org](http://userstyles.org/styles/35345)
 
 ### Before & After
 
- [ ![before screenshot](http://mottie.github.com/Stackoverflow-Dark/images/before_th.jpg) ](http://mottie.github.com/Stackoverflow-Dark/images/before.jpg)
- [ ![after screenshot](http://mottie.github.com/Stackoverflow-Dark/images/after_th.jpg) ](http://mottie.github.com/Stackoverflow-Dark/images/after.jpg)
+ [ ![before screenshot](http://StylishThemes.github.com/Stackoverflow-Dark/images/before_th.jpg) ](http://StylishThemes.github.com/Stackoverflow-Dark/images/before.jpg)
+ [ ![after screenshot](http://StylishThemes.github.com/Stackoverflow-Dark/images/after_th.jpg) ](http://StylishThemes.github.com/Stackoverflow-Dark/images/after.jpg)
 
 ### **Changelog**
+
+#### Version 2.3.2 (12/9/2013)
+
+* Lots of style updates (sorry I didn't keep track)
+* Moved repo to https://github.com/StylishThemes/Stackoverflow-Dark
 
 #### Version 2.3.1 (11/18/2013)
 
