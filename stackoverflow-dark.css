@@ -3,7 +3,7 @@
 @-moz-document domain("stackoverflow.com") {
 
 /***************************************************************
- Stackoverflow Dark v2.3.2 (12/9/2013)
+ Stackoverflow Dark v2.3.3 (12/11/2013)
  https://github.com/StylishThemes/Stackoverflow-Dark
  http://userstyles.org/styles/35345
 
@@ -86,15 +86,11 @@
  }
 
  .welovestackoverflow, #header #topbar, .reputation-score, .revision-comment, .date-span, .post-tag,
- .form-submit input, .preferred-login, .mdhelp {
+ .form-submit input, .preferred-login, .mdhelp, .wmd-help-button.active-help {
   background: #333 !important;
   color: #ddd !important;
   -webkit-border-radius: 3px !important;
   border-radius: 3px !important;
- }
-
- .form-item {
-  background:#191919 !important
  }
 
  input, textarea, #search input, .topbar-dialog .header, .topbar-dialog .modal-content li:hover {
@@ -107,7 +103,7 @@
  }
 
  /* code & syntax highlighting */
- pre, code, .pln, #wmd-button-bar {
+ pre, code, .pln {
   background: #333 !important;
   color: #ccc !important;
  }
@@ -190,7 +186,8 @@
   background-color: #444 !important;
  }
 
- body, blockquote, #post-preview, .nav .primarynav li a, #container, #hsearch .textbox {
+ body, blockquote, #post-preview, .nav .primarynav li a, #container, #hsearch .textbox, .form-item,
+ #wmd-button-bar {
   background:#191919 none !important
  }
 
@@ -203,7 +200,7 @@
   color: #C1BEBA !important;
  }
 
- .ad502-room, .messages {
+ .ad502-room, .messages, .messages,.topbar-dialog .unread-item {
   background-color:#232323 !important;
   border: 1px solid #191919 !important;
  }

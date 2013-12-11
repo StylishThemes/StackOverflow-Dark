@@ -9,6 +9,11 @@ Hosted at [userstyles.org](http://userstyles.org/styles/35345)
 
 ### **Changelog**
 
+#### Version 2.3.3 (12/11/2013)
+
+* Correct editor button background color
+* Unread messages are now styled
+
 #### Version 2.3.2 (12/9/2013)
 
 * Lots of style updates (sorry I didn't keep track)
