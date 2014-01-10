@@ -1,9 +1,8 @@
 @namespace url(http://www.w3.org/1999/xhtml);
-
 @-moz-document domain("stackoverflow.com") {
 
 /***************************************************************
- Stackoverflow Dark v2.3.3 (12/11/2013)
+ Stackoverflow Dark v2.4 (1/9/2014)
  https://github.com/StylishThemes/Stackoverflow-Dark
  http://userstyles.org/styles/35345
 
@@ -16,38 +15,39 @@
   box-shadow: none !important;
  }
 
+ body {
+  background: #191919 url(/*[[bg-url]]*/) repeat !important;
+ }
+
  #custom-header {
   background-color: #111 !important;
  }
 
  div.hireme, div#hireme {
-  display:none !important;
+  display: none !important;
  }
 
  .post-tag, .comments-link, .tag-synonym-link {
   background-color: #444 !important;
-  color:#5588aa !important;
-  margin:2px !important;
-  padding:3px !important;
-  text-decoration:none !important;
-  font-size:80% !important;
-  line-height:2.2 !important;
-  white-space:nowrap !important
+  color: #5588aa !important;
+  margin: 2px !important;
+  padding: 3px !important;
+  text-decoration: none !important;
+  font-size: 80% !important;
+  line-height: 2.2 !important;
+  white-space: nowrap !important
  }
 
- .post-tag:hover, .comments-link:hover {
-  background-color:#3E6D8E !important;
-  color: #E0EAF1 !important;
-  text-decoration:none !important
+ .post-tag:hover, .comments-link:hover, .summary .post-tag:hover , .commentslink, .bounty-indicator,
+ .bounty-indicator-tab, .bounty-award {
+  background-color: #3e6d8e !important;
+  color: #e0eaf1 !important;
+  text-decoration: none !important
  }
 
  .summary .post-tag, .rep-recent-row, .bounty {
   background-color: #232323 !important;
-  color: #BBB !important;
- }
- .summary .post-tag:hover , .commentslink, .bounty-indicator, .bounty-indicator-tab, .bounty-award {
-  background-color: #3E6D8E !important;
-  color: #E0EAF1 !important;
+  color: #bbb !important;
  }
 
  a.required-tag {
@@ -77,7 +77,7 @@
  }
 
  .nav .primarynav li a:hover {
-  color:#fff !important;
+  color: #fff !important;
   background: #f90 !important;
  }
 
@@ -86,14 +86,14 @@
  }
 
  .welovestackoverflow, #header #topbar, .reputation-score, .revision-comment, .date-span, .post-tag,
- .form-submit input, .preferred-login, .mdhelp, .wmd-help-button.active-help {
+ .form-submit input, .preferred-login, .mdhelp, .wmd-help-button.active-help, .date_brick {
   background: #333 !important;
   color: #ddd !important;
   -webkit-border-radius: 3px !important;
   border-radius: 3px !important;
  }
 
- input, textarea, #search input, .topbar-dialog .header, .topbar-dialog .modal-content li:hover {
+ input, textarea, #search input, .topbar-dialog .header, .topbar-dialog .modal-content li:hover, .share-tip {
   background: #222 !important;
   color: #ddd !important;
  }
@@ -103,7 +103,7 @@
  }
 
  /* code & syntax highlighting */
- pre, code, .pln {
+ pre, code, .pln, .youarehere {
   background: #333 !important;
   color: #ccc !important;
  }
@@ -118,12 +118,12 @@
 
  .answer, #system-message, .commentlist, .revision td, #hero-content, .mdhelp-tabs .selected {
   background: #232323 !important;
-  color:#999 !important;
+  color: #999 !important;
  }
 
  .answered, .answer-votes {
   background: #232323 !important;
-  color:#75845C !important
+  color: #75845C !important
  }
  .answered strong {
   color: #75845C !important
@@ -148,10 +148,6 @@
   background-color: #200 !important;
  }
 
- .owner-answer, .question-status, #input-area {
-  background: #404040 !important;
- }
-
  .profile-popup a, .seWrapper a {
   color: #4A6B82 !important
  }
@@ -168,10 +164,6 @@
   background: #111 !important;
  }
 
- h2, h2 a, .profile-popup a:hover {
-  color: #C1BEBA !important;
- }
-
  .comment, #top-menu a, .subheader a, .reputation a {
   color: #aaa !important;
  }
@@ -186,22 +178,18 @@
   background-color: #444 !important;
  }
 
- body, blockquote, #post-preview, .nav .primarynav li a, #container, #hsearch .textbox, .form-item,
- #wmd-button-bar {
-  background:#191919 none !important
+ blockquote, #post-preview, .nav .primarynav li a, #container, #hsearch .textbox, .form-item,
+ #wmd-button-bar, .qa-block, .content-block, .user-info-rep {
+  background: #191919 none !important
  }
 
  .authcomment, .seIntro, .seFooter {
-  background-color:#191919 !important;
+  background-color: #191919 !important;
   border: 2px solid #262626 !important;
  }
 
- .module h4 {
-  color: #C1BEBA !important;
- }
-
  .ad502-room, .messages, .messages,.topbar-dialog .unread-item {
-  background-color:#232323 !important;
+  background-color: #232323 !important;
   border: 1px solid #191919 !important;
  }
 
@@ -217,10 +205,6 @@
   background: #191919 !important;
  }
 
- .page-description {
-  color: #C1BEBA !important;
- }
-
  #user-about-me, .user-about-me, .mine .messages {
   background: #191919 !important;
   border: 0px !important;
@@ -231,9 +215,14 @@
   color: #c1beba !important;
  }
 
- .notification, #feed-ticker, #top-menu {
+ .owner-answer, .question-status, #input-area, .notification, #feed-ticker, #top-menu {
   background: #404040 !important;
  }
+
+ .nav li, .seNav, .topbar a.topbar-icon-on, .topbar a.topbar-icon-on:hover, .topbar-dialog {
+  background-color: #333 !important;
+ }
+
  .owner, #footer, .module li.current, .seCurrent, .community-bulletin {
   background: #333 !important;
  }
@@ -242,20 +231,13 @@
   background: #c1beba !important
  }
 
- .result-highlight {
-  color: #aa0 !important;
- }
-
- #openid_identifier {
-  color: #c1beba !important
- }
-
+ h2, h2 a, .profile-popup a:hover, .module h4, .page-description, #openid_identifier,
  .form-item label {
   color: #c1beba !important
  }
 
- .nav li, .seNav, .topbar .topbar-icon-on, .topbar .topbar-icon-on:hover, .topbar-dialog {
-  background-color: #333 !important;
+ .result-highlight {
+  color: #aa0 !important;
  }
 
  .supernovabg, .hotbg, .nav .youarehere, .nav li:hover {
@@ -289,7 +271,7 @@
   background: url('data:image/gif;base64,R0lGODlhBwANAIAAACMjI////yH5BAEAAAEALAAAAAAHAA0AAAITRI5gGLrnXlzT1NsidEkx/zFHAQA7') 0 0 !important;
  }
 
- #hlogo img, .everyonelovesstackoverflow, #newsletter-ad { opacity:0.3 !important; }
+ #hlogo img, .everyonelovesstackoverflow, #newsletter-ad { opacity: 0.3 !important; }
  #hlogo a {
   background-image: url(http://StylishThemes.github.io/Stackoverflow-Dark/images/logo.png) !important;
  }

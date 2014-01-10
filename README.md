@@ -9,6 +9,14 @@ Hosted at [userstyles.org](http://userstyles.org/styles/35345)
 
 ### **Changelog**
 
+#### Version 2.4 (1/9/2014)
+
+* Add background image option
+* Fix text colors of answered questions
+* Fix tour background colors
+* Other miscellaneous fixes
+* Cleanup code
+
 #### Version 2.3.3 (12/11/2013)
 
 * Correct editor button background color
