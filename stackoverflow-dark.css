@@ -19,12 +19,111 @@
   background: #191919 url(/*[[bg-url]]*/) repeat !important;
  }
 
- #custom-header {
-  background-color: #111 !important;
- }
-
  div.hireme, div#hireme {
   display: none !important;
+ }
+
+ /*** background color ***/
+ #custom-header, .review-bar, .diff-choices a.selected, #header #topbar, td.owner, a.owner, .question-status,
+ .profile-popup, .profile-popup div, .profile-popup th, .profile-popup td {
+  background: #111 !important;
+ }
+
+ blockquote, #post-preview, .nav .primarynav li a, #container, #hsearch .textbox, .form-item,
+ #wmd-button-bar, .qa-block, .content-block, .user-info-rep {
+  background: #191919 none !important
+ }
+
+ .authcomment, .seIntro, .seFooter {
+  background-color: #191919 !important;
+  border: 2px solid #262626 !important;
+ }
+
+ .ad502-room, .messages, .messages,.topbar-dialog .unread-item {
+  background-color: #232323 !important;
+  border: 1px solid #191919 !important;
+ }
+
+ #tabs a.youarehere {
+  border: 1px solid #666666 !important;
+  border-bottom: 1px solid #191919 !important;
+  background: #191919 !important;
+ }
+
+ #user-about-me, .user-about-me, .mine .messages {
+  background: #191919 !important;
+  border: 0px !important;
+  color: #C1BEBA !important;
+ }
+
+ input, textarea, #search input, .topbar-dialog .header, .topbar-dialog .modal-content li:hover, .share-tip {
+  background: #222 !important;
+  color: #ddd !important;
+ }
+
+ .profile-popup, .profile-popup tr, .profile-popup th, .profile-gravatar, .newuser,
+ .seWrapper {
+  background-color: #222 !important;
+  border-color: #555 !important;
+  color: #ddd !important;
+ }
+
+ .answer, #system-message, .commentlist, .revision td, #hero-content, .mdhelp-tabs .selected {
+  background: #232323 !important;
+  color: #999 !important;
+ }
+
+ .summary .post-tag, .rep-recent-row, .bounty, .diff-choices a:hover, div.meter, .narrow .votes, .stats {
+  background-color: #232323 !important;
+  color: #bbb !important;
+ }
+
+ .tagged-interesting, .tagged-interesting .views, .highlight-row {
+  background-color: #242424 !important;
+  background-image: none !important;
+ }
+
+ .welovestackoverflow, #header #topbar, .revision-comment, .date-span, .post-tag,
+ .form-submit input, .preferred-login, .mdhelp, .wmd-help-button.active-help, .date_brick {
+  background: #333 !important;
+  color: #ddd !important;
+  -webkit-border-radius: 3px !important;
+  border-radius: 3px !important;
+ }
+
+ .nav li, .seNav, .topbar a.topbar-icon-on, .topbar a.topbar-icon-on:hover, .topbar-dialog, .owner,
+ #footer, .module li.current, .seCurrent, .community-bulletin {
+  background: #333 !important;
+ }
+
+ .owner-answer, .question-status, #input-area, .notification, #feed-ticker, #top-menu {
+  background: #404040 !important;
+ }
+
+ tr.comment:hover, .reply-parent, .timestamp, .roomcard, .usercard, .page-numbers.current,
+ .comment-help, .answer-help-background, .mdhelp-tabs, .hi, .seNavLinks a:hover,
+ .seNavLinks a:focus, .itemBoxNew {
+  background-color: #444 !important;
+  color: #ddd !important;
+ }
+
+ #post-text-container div span {
+  background: #c1beba !important
+ }
+
+ /* Brown(ish) */
+ .supernovabg, .hotbg, .nav .youarehere, .nav li:hover {
+  background-color: #d80 !important;
+ }
+
+ .new-post-activity, #new-answer-activity {
+  background-color: #840 !important;
+ }
+
+ /* Blue */
+ .nav .primarynav li a:hover {
+  color: #fff !important;
+  background: #f90 !important;
  }
 
  .post-tag, .comments-link, .tag-synonym-link {
@@ -45,68 +144,120 @@
   text-decoration: none !important
  }
 
- .summary .post-tag, .rep-recent-row, .bounty {
-  background-color: #232323 !important;
-  color: #bbb !important;
+ /* Green */
+ .answered, .answer-votes {
+  background: #232323 !important;
+  color: #75845c !important
  }
 
- a.required-tag {
-  border-color: #333 !important;
+ .answered strong {
+  color: #75845c !important
  }
+
+ .answered-accepted {
+  background: #75845c !important;
+  color: #fff !important
+ }
+
+ .accepted-answer, .suggested-edit .inserted {
+  background: #224422 !important;
+ }
+
+ /* Red */
+ .deleted-answer, .suggested-edit .deleted {
+  background-color: #200 !important;
+ }
+
  a.moderator-tag {
   background-color: #400 !important;
  }
+
  a.moderator-tag:hover {
   background-color: #600 !important;
  }
 
- .tagged-interesting, .tagged-interesting .views, .highlight-row {
-  background-color: #242424 !important;
-  background-image: none !important;
+ /* Transparent background */
+ div.message .meta, .spaces, .comment, span.feed-icon {
+  background-color: transparent !important;
  }
 
+ #tabs a:hover {
+  background-color: transparent !important;
+  border: 1px solid #666666 !important;
+  border-bottom: 1px solid #191919 !important;
+ }
+
+ /*** Dark border ***/
+ a.required-tag {
+  border-color: #333 !important;
+ }
+
+ /*** Text Color ***/
+ .comment, #top-menu a, .subheader a, .reputation a, .reputation-score {
+  color: #aaa !important;
+ }
+
+ .user-details td, .content-page, h2, h2 a, .profile-popup a:hover, .module h4, .page-description,
+ #openid_identifier, .form-item label {
+  color: #c1beba !important
+ }
+
+ div, .accepted-answer .post-text, .accepted-answer .user-action-time, #question-header a,
+ .post-text, .user-info, .topbar-dialog .header h3, .topbar-dialog .header h3 a, .topbar-dialog span,
+ .search-result .answered .vote-count-post strong {
+  color: #ddd !important;
+ }
+
+ .answered-accepted strong, .youarehere, .nav .primarynav li a {
+  color: #fff !important
+ }
+
+ /* Light Blue */
+ .profile-popup a, .seWrapper a {
+  color: #4a6b82 !important
+ }
+
+ .result-highlight {
+  color: #aa0 !important;
+ }
+
+ .warm {
+  color: #840 !important;
+ }
+
+ .hot {
+  color: #a20 !important;
+ }
+
+ .unanswered {
+  color: #9a4444 !important;
+ }
+
+ /*** Style adjustments ***/
  .stats {
   float: right !important;
   margin-top: 5px !important;
- }
-
- .nav .primarynav li a {
-  color: #fff !important;
-  display: block !important;
-  float: left !important
- }
-
- .nav .primarynav li a:hover {
-  color: #fff !important;
-  background: #f90 !important;
- }
-
- .narrow .votes, .stats {
-  background: #232323 !important;
- }
-
- .welovestackoverflow, #header #topbar, .reputation-score, .revision-comment, .date-span, .post-tag,
- .form-submit input, .preferred-login, .mdhelp, .wmd-help-button.active-help, .date_brick {
-  background: #333 !important;
-  color: #ddd !important;
-  -webkit-border-radius: 3px !important;
-  border-radius: 3px !important;
- }
-
- input, textarea, #search input, .topbar-dialog .header, .topbar-dialog .modal-content li:hover, .share-tip {
-  background: #222 !important;
-  color: #ddd !important;
  }
 
  #hsearch {
   margin-right: 5px !important;
  }
 
- /* code & syntax highlighting */
+ .stats {
+  margin-bottom: 4px !important;
+ }
+
+ .nav .primarynav li a {
+  display: block !important;
+  float: left !important
+ }
+
+ /*** code & syntax highlighting ***/
  pre, code, .pln, .youarehere {
   background: #333 !important;
   color: #ccc !important;
  }
+
  .str { color: #0a0 !important; }
  .lit { color: #a00 !important; }
  .pun { color: #999 !important; } /* parenthesis */
@@ -116,151 +267,7 @@
  .atv { color: #0a0 !important; } /* attribute value*/
  .dec { color: #90a !important; } /* doc type */
 
- .answer, #system-message, .commentlist, .revision td, #hero-content, .mdhelp-tabs .selected {
-  background: #232323 !important;
-  color: #999 !important;
- }
-
- .answered, .answer-votes {
-  background: #232323 !important;
-  color: #75845C !important
- }
- .answered strong {
-  color: #75845C !important
- }
- .answered-accepted {
-  background: #75845C !important;
-  color: #fff !important
- }
- .accepted-answer {
-  background: #224422 !important;
- }
- .stats {
-  margin-bottom: 4px !important;
- }
-
- div, .accepted-answer .post-text, .accepted-answer .user-action-time, #question-header a,
- .post-text, .user-info, .topbar-dialog .header h3, .topbar-dialog .header h3 a, .topbar-dialog span {
-  color: #ddd !important;
- }
-
- .deleted-answer {
-  background-color: #200 !important;
- }
-
- .profile-popup a, .seWrapper a {
-  color: #4A6B82 !important
- }
-
- .profile-popup, .profile-popup tr, .profile-popup th, .profile-gravatar, .newuser,
- .seWrapper {
-  background-color: #222 !important;
-  border-color: #555 !important;
-  color: #ddd !important;
- }
-
- #header #topbar, td.owner, a.owner, .question-status, .reputation-score, .profile-popup,
- .profile-popup div, .profile-popup th, .profile-popup td {
-  background: #111 !important;
- }
-
- .comment, #top-menu a, .subheader a, .reputation a {
-  color: #aaa !important;
- }
- .answered-accepted strong, .youarehere {
-  color: #fff !important
- }
-
- tr.comment:hover, .reply-parent, .timestamp, .roomcard, .usercard, .page-numbers.current,
- .comment-help, .answer-help-background, .mdhelp-tabs, .hi, .seNavLinks a:hover,
- .seNavLinks a:focus, .itemBoxNew {
-  color: #ddd !important;
-  background-color: #444 !important;
- }
-
- blockquote, #post-preview, .nav .primarynav li a, #container, #hsearch .textbox, .form-item,
- #wmd-button-bar, .qa-block, .content-block, .user-info-rep {
-  background: #191919 none !important
- }
-
- .authcomment, .seIntro, .seFooter {
-  background-color: #191919 !important;
-  border: 2px solid #262626 !important;
- }
-
- .ad502-room, .messages, .messages,.topbar-dialog .unread-item {
-  background-color: #232323 !important;
-  border: 1px solid #191919 !important;
- }
-
- #tabs a:hover {
-  background-color: transparent !important;
-  border: 1px solid #666666 !important;
-  border-bottom: 1px solid #191919 !important;
- }
-
- #tabs a.youarehere {
-  border: 1px solid #666666 !important;
-  border-bottom: 1px solid #191919 !important;
-  background: #191919 !important;
- }
-
- #user-about-me, .user-about-me, .mine .messages {
-  background: #191919 !important;
-  border: 0px !important;
-  color: #C1BEBA !important;
- }
-
- .user-details td, .content-page {
-  color: #c1beba !important;
- }
-
- .owner-answer, .question-status, #input-area, .notification, #feed-ticker, #top-menu {
-  background: #404040 !important;
- }
-
- .nav li, .seNav, .topbar a.topbar-icon-on, .topbar a.topbar-icon-on:hover, .topbar-dialog {
-  background-color: #333 !important;
- }
-
- .owner, #footer, .module li.current, .seCurrent, .community-bulletin {
-  background: #333 !important;
- }
-
- #post-text-container div span {
-  background: #c1beba !important
- }
-
- h2, h2 a, .profile-popup a:hover, .module h4, .page-description, #openid_identifier,
- .form-item label {
-  color: #c1beba !important
- }
-
- .result-highlight {
-  color: #aa0 !important;
- }
-
- .supernovabg, .hotbg, .nav .youarehere, .nav li:hover {
-  background-color: #d80 !important;
- }
-
- div.message .meta, .spaces, .comment, span.feed-icon {
-  background-color: transparent !important;
- }
-
- .new-post-activity, #new-answer-activity {
-  background-color: #840 !important;
- }
- .warm {
-  color: #840 !important;
- }
- .hot {
-  color: #a20 !important;
- }
- .unanswered {
-  color: #9A4444 !important;
- }
-
+ /*** Images ***/
  .wmd-button>span {
   background-image: url(http://StylishThemes.github.io/Stackoverflow-Dark/images/wmd-buttons.png) !important;
  }
@@ -272,8 +279,10 @@
  }
 
  #hlogo img, .everyonelovesstackoverflow, #newsletter-ad { opacity: 0.3 !important; }
+
  #hlogo a {
-  background-image: url(http://StylishThemes.github.io/Stackoverflow-Dark/images/logo.png) !important;
+  /* background-image: url(http://StylishThemes.github.io/Stackoverflow-Dark/images/logo.png) !important; */
+  background-image: url('data:image/png;base64,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') !important;
  }
 
 }
