@@ -29,8 +29,12 @@
   background: #111 !important;
  }
 
+ .summary .post-tag {
+  background: #151515 !important;
+ }
+
  blockquote, #post-preview, .nav .primarynav li a, #container, #hsearch .textbox, .form-item,
- #wmd-button-bar, .qa-block, .content-block, .user-info-rep {
+ .welovestackoverflow, #wmd-button-bar, .qa-block, .content-block, .user-info-rep {
   background: #191919 none !important
  }
 
@@ -56,8 +60,9 @@
   color: #C1BEBA !important;
  }
 
- input, textarea, #search input, .topbar-dialog .header, .topbar-dialog .modal-content li:hover, .share-tip {
-  background: #222 !important;
+ input, textarea, #search input, .topbar-dialog .header, .topbar-dialog .modal-content li:hover, .share-tip,
+ #tag-menu {
+  background-color: #222 !important;
   color: #ddd !important;
  }
 
@@ -73,7 +78,7 @@
   color: #999 !important;
  }
 
- .summary .post-tag, .rep-recent-row, .bounty, .diff-choices a:hover, div.meter, .narrow .votes, .stats {
+ .rep-recent-row, .bounty, .diff-choices a:hover, div.meter, .narrow .votes, .stats {
   background-color: #232323 !important;
   color: #bbb !important;
  }
@@ -83,9 +88,9 @@
   background-image: none !important;
  }
 
- .welovestackoverflow, #header #topbar, .revision-comment, .date-span, .post-tag,
- .form-submit input, .preferred-login, .mdhelp, .wmd-help-button.active-help, .date_brick {
-  background: #333 !important;
+ #header #topbar, .revision-comment, .date-span, .post-tag, .form-submit input, .preferred-login,
+ .mdhelp, .wmd-help-button.active-help, .date_brick {
+  background: #222 !important;
   color: #ddd !important;
   -webkit-border-radius: 3px !important;
   border-radius: 3px !important;
@@ -127,7 +132,6 @@
  }
 
  .post-tag, .comments-link, .tag-synonym-link {
-  background-color: #444 !important;
   color: #5588aa !important;
   margin: 2px !important;
   padding: 3px !important;
@@ -188,7 +192,7 @@
  }
 
  /*** Dark border ***/
- a.required-tag {
+ a.required-tag, .welovestackoverflow, .question-summary {
   border-color: #333 !important;
  }
 
@@ -239,7 +243,7 @@
   margin-top: 5px !important;
  }
 
- #hsearch {
+ #hsearch, .statscontainer {
   margin-right: 5px !important;
  }
 
