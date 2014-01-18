@@ -26,7 +26,7 @@
  /*** background color ***/
  #custom-header, .review-bar, .diff-choices a.selected, #header #topbar, td.owner, a.owner, .question-status,
  .profile-popup, .profile-popup div, .profile-popup th, .profile-popup td {
-  background: #111 !important;
+  background-color: #111 !important;
  }
 
  .summary .post-tag {
@@ -97,7 +97,7 @@
  }
 
  .nav li, .seNav, .topbar a.topbar-icon-on, .topbar a.topbar-icon-on:hover, .topbar-dialog, .owner,
- #footer, .module li.current, .seCurrent, .community-bulletin {
+ #footer, .module li.current, .seCurrent, .community-bulletin, .owner-revision td, .markdown-diff .skip {
   background: #333 !important;
  }
 
@@ -163,12 +163,12 @@
   color: #fff !important
  }
 
- .accepted-answer, .suggested-edit .inserted {
+ .accepted-answer, .suggested-edit .inserted, .markdown-diff .inserted {
   background: #224422 !important;
  }
 
  /* Red */
- .deleted-answer, .suggested-edit .deleted {
+ .deleted-answer, .suggested-edit .deleted, .markdown-diff .deleted {
   background-color: #200 !important;
  }
 
