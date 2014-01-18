@@ -29,12 +29,12 @@
   background-color: #111 !important;
  }
 
- .summary .post-tag {
+ .summary .post-tag, .onebox {
   background: #151515 !important;
  }
 
- blockquote, #post-preview, .nav .primarynav li a, #container, #hsearch .textbox, .form-item,
- .welovestackoverflow, #wmd-button-bar, .qa-block, .content-block, .user-info-rep {
+ blockquote, #post-preview, .nav .primarynav li a, #container, #hsearch .textbox, .form-item, .grippie,
+ .welovestackoverflow, #wmd-button-bar, .wmd-button-bar, .qa-block, .content-block, .user-info-rep {
   background: #191919 none !important
  }
 
@@ -78,7 +78,7 @@
   color: #999 !important;
  }
 
- .rep-recent-row, .bounty, .diff-choices a:hover, div.meter, .narrow .votes, .stats {
+ .rep-recent-row, .bounty, .diff-choices a:hover, div.meter, .narrow .votes, .stats, .ob-post-votes {
   background-color: #232323 !important;
   color: #bbb !important;
  }
