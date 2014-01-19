@@ -1,6 +1,5 @@
 @namespace url(http://www.w3.org/1999/xhtml);
 @-moz-document domain("stackoverflow.com") {
-
 /***************************************************************
  Stackoverflow Dark v2.5 (1/13/2014)
  https://github.com/StylishThemes/Stackoverflow-Dark
@@ -25,16 +24,17 @@
 
  /*** background color ***/
  #custom-header, .review-bar, .diff-choices a.selected, #header #topbar, td.owner, a.owner, .question-status,
- .profile-popup, .profile-popup div, .profile-popup th, .profile-popup td {
+ .profile-popup, .profile-popup div, .profile-popup th, .profile-popup td, #global {
   background-color: #111 !important;
  }
 
- .summary .post-tag, .onebox {
+ .summary .post-tag, .onebox, .profile-ad {
   background: #151515 !important;
  }
 
- blockquote, #post-preview, .nav .primarynav li a, #container, #hsearch .textbox, .form-item, .grippie,
- .welovestackoverflow, #wmd-button-bar, .wmd-button-bar, .qa-block, .content-block, .user-info-rep {
+ html, blockquote, #post-preview, .nav .primarynav li a, #container, #hsearch .textbox, .form-item, .grippie,
+ .welovestackoverflow, #wmd-button-bar, .wmd-button-bar, .qa-block, .content-block, .user-info-rep, .container,
+ #content, #sidebar, .sidebar {
   background: #191919 none !important
  }
 
@@ -60,20 +60,20 @@
   color: #C1BEBA !important;
  }
 
- input, textarea, #search input, .topbar-dialog .header, .topbar-dialog .modal-content li:hover, .share-tip,
- #tag-menu {
+ input:not([type='submit']), textarea, #search input, .topbar-dialog .header, .topbar-dialog .modal-content li:hover, .share-tip,
+ #tag-menu, .sidebar h3 {
   background-color: #222 !important;
   color: #ddd !important;
  }
 
  .profile-popup, .profile-popup tr, .profile-popup th, .profile-gravatar, .newuser,
- .seWrapper {
+ .seWrapper, h2.index.header {
   background-color: #222 !important;
   border-color: #555 !important;
   color: #ddd !important;
  }
 
- .answer, #system-message, .commentlist, .revision td, #hero-content, .mdhelp-tabs .selected {
+ .answer, #system-message, .commentlist, .revision td, #hero-content, .mdhelp-tabs .selected, .tabs .selected {
   background: #232323 !important;
   color: #999 !important;
  }
@@ -83,7 +83,7 @@
   color: #bbb !important;
  }
 
- .tagged-interesting, .tagged-interesting .views, .highlight-row {
+ .tagged-interesting, .tagged-interesting .views, .highlight-row, .highlighted {
   background-color: #242424 !important;
   background-image: none !important;
  }
@@ -97,7 +97,8 @@
  }
 
  .nav li, .seNav, .topbar a.topbar-icon-on, .topbar a.topbar-icon-on:hover, .topbar-dialog, .owner,
- #footer, .module li.current, .seCurrent, .community-bulletin, .owner-revision td, .markdown-diff .skip {
+ #footer, .module li.current, .seCurrent, .community-bulletin, .owner-revision td, .markdown-diff .skip,
+ #footer .container {
   background: #333 !important;
  }
 
@@ -106,7 +107,7 @@
  }
 
  tr.comment:hover, .reply-parent, .timestamp, .roomcard, .usercard, .page-numbers.current,
- .comment-help, .answer-help-background, .mdhelp-tabs, .hi, .seNavLinks a:hover,
+ .comment-help, .answer-help-background, .mdhelp-tabs, .tabs li, .hi, .seNavLinks a:hover,
  .seNavLinks a:focus, .itemBoxNew {
   background-color: #444 !important;
   color: #ddd !important;
@@ -181,7 +182,7 @@
  }
 
  /* Transparent background */
- div.message .meta, .spaces, .comment, span.feed-icon {
+ div.message .meta, .spaces, .comment, span.feed-icon, a.role-switch, .nav.careers li, .nav.careers li:hover {
   background-color: transparent !important;
  }
 
@@ -194,6 +195,9 @@
  /*** Dark border ***/
  a.required-tag, .welovestackoverflow, .question-summary {
   border-color: #333 !important;
+ }
+ div.list > div {
+  border-right: 0 !important;
  }
 
  /*** Text Color ***/
