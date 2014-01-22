@@ -102,7 +102,7 @@
   background: #333 !important;
  }
 
- .owner-answer, .question-status, #input-area, .notification, #feed-ticker, #top-menu {
+ .owner-answer, .question-status, #input-area, .notification, #feed-ticker, #top-menu, .vote-revision td {
   background: #404040 !important;
  }
 
