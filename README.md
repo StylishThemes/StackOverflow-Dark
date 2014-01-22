@@ -11,6 +11,15 @@ Hosted at [userstyles.org](http://userstyles.org/styles/35345)
 
 See the [full change log here](https://github.com/StylishThemes/Stackoverflow-Dark/wiki)
 
+#### Verison 2.5.1 (1/22/2014)
+
+* Add better contrast to tags &amp; top info panel
+* Fix editing preview
+* Fix chat &amp; editor (when editing your own answers) styling
+* Fix careers subdomain styling
+* Badges: make easier to differentiate (text color matches badge)
+* Fix revision page styling
+
 #### Version 2.5 (1/13/2014)
 
 * Reorganized the main CSS file
