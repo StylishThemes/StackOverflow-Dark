@@ -260,6 +260,21 @@
   float: left !important
  }
 
+ /* badges */
+ a.badge[title^="bronze"], a.badge-tag[title^="bronze"], .badge3 + .badgecount {
+  color: #cc9966 !important;
+ }
+ a.badge[title^="silver"], a.badge-tag[title^="silver"], .badge2 + .badgecount {
+  color: #c5c5c5 !important;
+ }
+ a.badge[title^="gold"], a.badge-tag[title^="gold"], .badge1 + .badgecount {
+  color: #ffcc46 !important;
+ }
+ .badge-tag {
+  background-color: #191919 !important;
+  border-color: #111 !important;
+ }
+
  /*** code & syntax highlighting ***/
  pre, code, .pln, .youarehere {
   background: #333 !important;
