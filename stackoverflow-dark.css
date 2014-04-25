@@ -1,7 +1,7 @@
 @namespace url(http://www.w3.org/1999/xhtml);
-@-moz-document domain("stackoverflow.com") {
+@-moz-document url("http://stackoverflow.com/") {
 /***************************************************************
- Stackoverflow Dark v2.5.1 (1/22/2014)
+ Stackoverflow Dark v2.5.2 (4/25/2014)
  https://github.com/StylishThemes/Stackoverflow-Dark
  http://userstyles.org/styles/35345
 
@@ -14,10 +14,32 @@
   box-shadow: none !important;
  }
 
- body {
-  background: #191919 url(/*[[bg-url]]*/) repeat !important;
+  body {
+    background-color: #191919 !important;
+    background-image: /*[[bg-choice]]*/ url() !important;
+    background-clip: border-box !important;
+    background-origin: padding-box !important;
+    /*[[bg-options]]*/
+    /*[[bg-options2]]*/
+  }
+
+ /* custom color */
+ a, .profile-popup a, .seWrapper a, .post-tag, .comments-link, .tag-synonym-link {
+  color: /*[[base-color]]*/ #008080 !important
  }
 
+ .nav .primarynav li a:hover {
+  color: #fff !important;
+  background: /*[[base-color]]*/ #008080 !important;
+ }
+
+ .post-tag:hover, .comments-link:hover, .summary .post-tag:hover , .commentslink, .bounty-indicator,
+ .bounty-indicator-tab, .bounty-award {
+  background-color: /*[[base-color]]*/ #008080 !important;
+  color: #eee !important;
+ }
+
+ /*** hidden ***/
  div.hireme, div#hireme {
   display: none !important;
  }
@@ -33,8 +55,8 @@
  }
 
  html, blockquote, #post-preview, .nav .primarynav li a, #container, #hsearch .textbox, .form-item, .grippie,
- .welovestackoverflow, #wmd-button-bar, .wmd-button-bar, .qa-block, .content-block, .user-info-rep, .container,
- #content, #sidebar, .sidebar {
+ .welovestackoverflow, #wmd-button-bar, .wmd-button-bar, .qa-block, .content-block, .user-info-rep, .sidebar,
+ .popup {
   background: #191919 none !important
  }
 
@@ -61,13 +83,13 @@
  }
 
  input:not([type='submit']), textarea, #search input, .topbar-dialog .header, .topbar-dialog .modal-content li:hover, .share-tip,
- #tag-menu, .sidebar h3 {
+ #tag-menu, .sidebar h3, #overlay-header, .action-list .action-selected, .switcher-nudge-lightbox {
   background-color: #222 !important;
   color: #ddd !important;
  }
 
  .profile-popup, .profile-popup tr, .profile-popup th, .profile-gravatar, .newuser,
- .seWrapper, h2.index.header {
+ .seWrapper, h2.index.header, .privilege-table-row:hover {
   background-color: #222 !important;
   border-color: #555 !important;
   color: #ddd !important;
@@ -98,8 +120,8 @@
 
  .nav li, .seNav, .topbar a.topbar-icon-on, .topbar a.topbar-icon-on:hover, .topbar-dialog, .owner,
  #footer, .module li.current, .seCurrent, .community-bulletin, .owner-revision td, .markdown-diff .skip,
- #footer .container {
-  background: #333 !important;
+ #footer .container, .current-site-container, .body-diffs .skip, .newsletter-anon {
+  background-color: #333 !important;
  }
 
  .owner-answer, .question-status, #input-area, .notification, #feed-ticker, #top-menu, .vote-revision td {
@@ -124,29 +146,6 @@
 
  .new-post-activity, #new-answer-activity {
   background-color: #840 !important;
- }
-
- /* Blue */
- .nav .primarynav li a:hover {
-  color: #fff !important;
-  background: #f90 !important;
- }
-
- .post-tag, .comments-link, .tag-synonym-link {
-  color: #5588aa !important;
-  margin: 2px !important;
-  padding: 3px !important;
-  text-decoration: none !important;
-  font-size: 80% !important;
-  line-height: 2.2 !important;
-  white-space: nowrap !important
- }
-
- .post-tag:hover, .comments-link:hover, .summary .post-tag:hover , .commentslink, .bounty-indicator,
- .bounty-indicator-tab, .bounty-award {
-  background-color: #3e6d8e !important;
-  color: #e0eaf1 !important;
-  text-decoration: none !important
  }
 
  /* Green */
@@ -182,7 +181,8 @@
  }
 
  /* Transparent background */
- div.message .meta, .spaces, .comment, span.feed-icon, a.role-switch, .nav.careers li, .nav.careers li:hover {
+ div.message .meta, .spaces, .comment, span.feed-icon, a.role-switch, .nav.careers li, .nav.careers li:hover,
+ .switcher-nudge-content p {
   background-color: transparent !important;
  }
 
@@ -192,7 +192,14 @@
   border-bottom: 1px solid #191919 !important;
  }
 
+ .module {
+  border-color: transparent !important;
+ }
+
  /*** Dark border ***/
+ .body-diffs table * {
+  border-color: #111 !important;
+ }
  a.required-tag, .welovestackoverflow, .question-summary {
   border-color: #333 !important;
  }
@@ -201,7 +208,7 @@
  }
 
  /*** Text Color ***/
- .comment, #top-menu a, .subheader a, .reputation a, .reputation-score {
+ .comment, #top-menu a, .subheader a, .reputation a, .reputation-score, a:visited, .relativetime.old {
   color: #aaa !important;
  }
 
@@ -216,13 +223,8 @@
   color: #ddd !important;
  }
 
- .answered-accepted strong, .youarehere, .nav .primarynav li a {
+ .answered-accepted strong, .youarehere, .nav .primarynav li a, .nav a, a:hover {
   color: #fff !important
- }
-
- /* Light Blue */
- .profile-popup a, .seWrapper a {
-  color: #4a6b82 !important
  }
 
  .result-highlight {
@@ -242,6 +244,22 @@
  }
 
  /*** Style adjustments ***/
+ a.question-hyperlink, a:hover, a:visited {
+  text-decoration: underline !important;
+ }
+
+ .nav a, .post-tag, .comments-link, .tag-synonym-link, a.post-tag:hover, .topbar a {
+  text-decoration: none !important;
+ }
+
+ .post-tag, .comments-link, .tag-synonym-link {
+  margin: 2px !important;
+  padding: 3px !important;
+  font-size: 80% !important;
+  line-height: 2.2 !important;
+  white-space: nowrap !important
+ }
+
  .stats {
   float: right !important;
   margin-top: 5px !important;
