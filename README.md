@@ -10,7 +10,11 @@
 
 See the [full changelog](https://github.com/StylishThemes/Stackoverflow-Dark/wiki).
 
-#### Version 2.5.2 (4/24/2014)
+#### Version 2.5.3 (4/25/2014)
+
+* Change to url-prefix, otherwise it stops working in Chrome.
+
+#### Version 2.5.2 (4/25/2014)
 
 * Change target url to ignore stackoverflow subdomains.
 * Change background option to allow chosing "no background image" when installing from userstyles.
