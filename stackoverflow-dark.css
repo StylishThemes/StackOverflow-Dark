@@ -300,7 +300,7 @@
  }
 
  .str { color: #0a0 !important; }
- .lit { color: #a00 !important; }
+ .lit { color: #d65 !important; }
  .pun { color: #999 !important; } /* parenthesis */
  .kwd { color: #08f !important; } /* keyword */
  .tag { color: #999 !important; } /* html tag */
