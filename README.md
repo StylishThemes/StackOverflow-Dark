@@ -10,6 +10,10 @@
 
 See the [full changelog](https://github.com/StylishThemes/Stackoverflow-Dark/wiki).
 
+#### Version 2.5.4 (4/27/2014)
+
+* Make dark red content readable on a dark background. Thanks [kelunik](https://github.com/kelunik)!
+
 #### Version 2.5.3 (4/25/2014)
 
 * Change to url-prefix, otherwise it stops working in Chrome.
@@ -29,12 +33,3 @@ See the [full changelog](https://github.com/StylishThemes/Stackoverflow-Dark/wik
 * Fix careers subdomain styling
 * Badges: make easier to differentiate (text color matches badge)
 * Fix revision page styling
-
-#### Version 2.5 (1/13/2014)
-
-* Reorganized the main CSS file
-* Fix question review styles
-* Search result with accepted answers votes are now visible
-* Images
-  * Reduced the size of the main logo, then added it as an encoded base 64 image
-  * Reduced the size of the editor icons
