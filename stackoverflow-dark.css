@@ -1,5 +1,5 @@
 @namespace url(http://www.w3.org/1999/xhtml);
-@-moz-document url-prefix(http://stackoverflow.com/) {
+@-moz-document domain("stackoverflow.com") {
 /***************************************************************
  Stackoverflow Dark v2.5.4 (4/27/2014)
  https://github.com/StylishThemes/Stackoverflow-Dark
