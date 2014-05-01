@@ -74,6 +74,7 @@
  .profile-popup, .profile-popup div, .profile-popup th, .profile-popup td, #global, .actual-edit-overlay,
  input:not([type='submit']), textarea, #search input, .tag-editor {
   background-color: #111 !important;
+  color: #ddd !important;
  }
 
  .summary .post-tag, .onebox, .profile-ad {
