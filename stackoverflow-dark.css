@@ -1,5 +1,5 @@
 @namespace url(http://www.w3.org/1999/xhtml);
-@-moz-document regexp("^https?://(chat\.)?stackoverflow\.com.*") {
+@-moz-document regexp("^https?://(chat|meta\.)?stackoverflow\.com.*") {
  /***************************************************************
  Stackoverflow Dark v2.5.5 (4/30/2014)
  https://github.com/StylishThemes/Stackoverflow-Dark
