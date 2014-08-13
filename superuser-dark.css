@@ -1,11 +1,11 @@
 @namespace url(http://www.w3.org/1999/xhtml);
-@-moz-document regexp("^https?://([a-z][a-z][a-z][a-z]\.)?stackoverflow\.com.*") {
+@-moz-document regexp("^https?://(chat|meta\.)?(stackoverflow|superuser\.)?com.*") {
  /***************************************************************
  Stackoverflow Dark v2.5.5 (4/30/2014)
  https://github.com/StylishThemes/Stackoverflow-Dark
  http://userstyles.org/styles/35345
 
- previous version information contained at the userstyles site
+ previous version information contained at the userstlyes site
  ****************************************************************/
 
  * {
