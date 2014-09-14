@@ -1,12 +1,12 @@
-## Stackoverflow Dark theme for Stylish
-- Install from [userstyles.org](http://userstyles.org/styles/35345) or [manually](https://github.com/StylishThemes/Stackoverflow-Dark/blob/master/stackoverflow-dark.css). Manual installation won't offer options.
-- Stylish is available for [Firefox](https://addons.mozilla.org/en-US/firefox/addon/2108/) and [Chrome](https://chrome.google.com/extensions/detail/fjnbnpbmkenffdnngjfgmeleoegfcffe).
+# Stackoverflow Dark theme for Stylish
+- Install from [userstyles.org](http://userstyles.org/styles/35345) (with customization options) or [manually](https://raw.githubusercontent.com/StylishThemes/Stackoverflow-Dark/master/stackoverflow-dark.css).
+- Stylish is available for [Firefox](https://addons.mozilla.org/en-US/firefox/addon/2108/), [Chrome](https://chrome.google.com/extensions/detail/fjnbnpbmkenffdnngjfgmeleoegfcffe) and [Opera](https://addons.opera.com/en/extensions/details/stylish-for-opera/).
 
-### Preview
+## Preview
 
 ![Stackoverflow Dark preview](http://StylishThemes.github.com/Stackoverflow-Dark/images/after.png)
 
-### **Changelog**
+## Changelog
 
 See the [full changelog](https://github.com/StylishThemes/Stackoverflow-Dark/wiki).
 
