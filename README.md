@@ -10,6 +10,11 @@
 
 See the [full changelog](https://github.com/StylishThemes/Stackoverflow-Dark/wiki).
 
+#### Version 2.5.6 (9/14/2014)
+
+* Darker & consistent greens
+* Various tweaks (sorry, didn't keep track)
+
 #### Version 2.5.5 (4/30/2014)
 
 * Restructure the layout and add more obvious comment titles
@@ -27,23 +32,3 @@ See the [full changelog](https://github.com/StylishThemes/Stackoverflow-Dark/wik
 #### Version 2.5.4 (4/27/2014)
 
 * Make dark red content readable on a dark background. Thanks [kelunik](https://github.com/kelunik)!
-
-#### Version 2.5.3 (4/25/2014)
-
-* Change to url-prefix, otherwise it stops working in Chrome.
-
-#### Version 2.5.2 (4/25/2014)
-
-* Change target url to ignore stackoverflow subdomains.
-* Change background option to allow chosing "no background image" when installing from userstyles.
-* Add a base highlight color.
-* Various other fixes that weren't tracked.
-
-#### Verison 2.5.1 (1/22/2014)
-
-* Add better contrast to tags &amp; top info panel
-* Fix editing preview
-* Fix chat &amp; editor (when editing your own answers) styling
-* Fix careers subdomain styling
-* Badges: make easier to differentiate (text color matches badge)
-* Fix revision page styling
