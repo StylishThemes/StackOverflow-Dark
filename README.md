@@ -13,6 +13,7 @@ See the [full changelog](https://github.com/StylishThemes/Stackoverflow-Dark/wik
 #### Version 2.5.6 (9/14/2014)
 
 * Darker & consistent greens
+* Add meta Stackoverflow logo
 * Various tweaks (sorry, didn't keep track)
 
 #### Version 2.5.5 (4/30/2014)
