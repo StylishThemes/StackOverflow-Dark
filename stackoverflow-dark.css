@@ -1,4 +1,3 @@
-@namespace url(http://www.w3.org/1999/xhtml);
 @-moz-document regexp("^https?://(chat\.)?stackoverflow\.com.*") {
  /***************************************************************
  Stackoverflow Dark v2.5.5 (4/30/2014)
@@ -92,6 +91,10 @@
   border: 2px solid #262626 !important;
  }
 
+ #tabs a {
+  border: 1px solid transparent !important;
+ }
+
  #tabs a.youarehere, .tag-suggestions {
   background: #191919 !important;
   border: 1px solid #444 !important;
@@ -104,7 +107,8 @@
  }
 
  .topbar-dialog .header, .topbar-dialog .modal-content li:hover, .share-tip,
- #tag-menu, .sidebar h3, #overlay-header, .action-list .action-selected, .switcher-nudge-lightbox {
+ #tag-menu, .sidebar h3, #overlay-header, .action-list .action-selected, .switcher-nudge-lightbox,
+ .user-rep-chart-summary-tooltip:hover, #footer {
   background-color: #222 !important;
   color: #ddd !important;
  }
@@ -145,7 +149,7 @@
  }
 
  .nav li, .seNav, .topbar a.topbar-icon-on, .topbar a.topbar-icon-on:hover, .topbar-dialog, .owner,
- #footer, .module li.current, .seCurrent, .community-bulletin, .owner-revision td, .markdown-diff .skip,
+ .module li.current, .seCurrent, .community-bulletin, .owner-revision td, .markdown-diff .skip,
  #footer .container, .current-site-container, .body-diffs .skip, .newsletter-anon, .tag-suggestions>div:hover {
   background-color: #333 !important;
  }
@@ -182,21 +186,21 @@
 
  /* === Green === */
  .accepted-answer, .suggested-edit .inserted, .markdown-diff .inserted {
-  background: #224422 !important;
+  background: #232 !important;
  }
 
  .answered, .answer-votes {
   background: #232323 !important;
-  color: #75845c !important
+  color: #4b553c !important
  }
 
- .answered-accepted {
-  background: #75845c !important;
+ .answered-accepted, .rep-up.bounty-indicator-tab, .user-rep-chart-summary-bar {
+  background: #4b553c !important;
   color: #fff !important
  }
 
  .answered strong {
-  color: #75845c !important
+  color: #4b553c !important
  }
 
  /* === Red === */
@@ -224,6 +228,10 @@
   border-bottom: 1px solid #444 !important;
  }
 
+ .highcharts-container rect[fill="#FFFFFF"], rect[fill="rgb(255, 255, 255)"] {
+  fill: transparent !important;
+ }
+
  /* === Dark border === */
  .body-diffs table * {
   border-color: #111 !important;
@@ -246,31 +254,16 @@
   border-color: transparent !important;
  }
 
- /* === Text Color === */
+ /* blue label count */
  .bounty-indicator-tab {
-  background: transparent !important;
-  color: #07d !important;
+  background: #07d !important;
+  color: #ccc !important;
  }
 
- .comment, #top-menu a, .subheader a, .reputation a, .reputation-score, a:visited, .relativetime.old {
-  color: #aaa !important;
- }
-
- .user-details td, .content-page, h2, h2 a, .profile-popup a:hover, .module h4, .page-description,
- #openid_identifier, .form-item label {
-  color: #c1beba !important
- }
-
- .rep-up {
-  color: #6b5 !important;
- }
- .rep-down {
-  color: #d65 !important;
- }
-
+ /* === Text Color === */
  div, input, .accepted-answer .post-text, .accepted-answer .user-action-time, #question-header a,
  .post-text, .user-info, .topbar-dialog .header h3, .topbar-dialog .header h3 a, .topbar-dialog span,
- .search-result .answered .vote-count-post strong {
+ .search-result .answered .vote-count-post strong, .votes-cast-stats th {
   color: #ddd !important;
  }
 
@@ -282,12 +275,29 @@
   color: #ddd !important;
  }
 
- .answered-accepted strong, .youarehere, .nav .primarynav li a, .nav a, a:hover {
+ .user-details td, .content-page, h2, h2 a, .profile-popup a:hover, .module h4, .page-description,
+ #openid_identifier, .form-item label {
+  color: #c1beba !important
+ }
+
+ .comment, #top-menu a, .subheader a, .reputation a, .reputation-score, a:visited, .relativetime.old,
+ .votes-cast-stats td {
+  color: #aaa !important;
+ }
+
+ .answered-accepted strong, .youarehere, .nav .primarynav li a, .nav a, a:hover, .special-rep {
   color: #fff !important
  }
 
  input, .actual-edit-overlay {
   -webkit-text-fill-color: #fff !important;
+ }
+
+ .rep-up {
+  color: #4b553c !important;
+ }
+ .rep-down {
+  color: #d65 !important;
  }
 
  /* dark blue */
