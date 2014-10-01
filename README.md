@@ -4,7 +4,7 @@
 
 ## Preview
 
-![Stackoverflow Dark preview](http://StylishThemes.github.com/Stackoverflow-Dark/images/after.png)
+![Stackoverflow Dark preview](http://StylishThemes.github.com/StackOverflow-Dark/images/after.png)
 
 ## Changelog
 
