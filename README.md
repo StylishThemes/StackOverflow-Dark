@@ -10,6 +10,11 @@
 
 See the [full changelog](https://github.com/StylishThemes/Stackoverflow-Dark/wiki).
 
+#### Version 2.5.7 (10/2/2014)
+
+* Fix broken links after renaming repository from "Stackoverflow-Dark" to "StackOverflow-Dark" (capital "O")
+* Accepted answer green styling matches again.
+
 #### Version 2.5.6 (9/14/2014)
 
 * Darker & consistent greens
