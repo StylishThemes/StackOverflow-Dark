@@ -33,7 +33,7 @@
  }
 
  .post-tag:hover, .comments-link:hover, .summary .post-tag:hover , .commentslink, .bounty-indicator,
- .bounty-indicator-tab, .bounty-award {
+ .bounty-indicator-tab, .bounty-award, span.bounty-indicator-tab {
   background-color: /*[[base-color]]*/ #008080 !important;
   color: #eee !important;
  }
@@ -82,7 +82,7 @@
 
  html, blockquote, #post-preview, .nav .primarynav li a, #container, #hsearch .textbox, .form-item, .grippie,
  .welovestackoverflow, #wmd-button-bar, .wmd-button-bar, .qa-block, .content-block, .user-info-rep, .sidebar,
- .popup {
+ .popup, #footer {
   background: #191919 none !important
  }
 
@@ -108,7 +108,7 @@
 
  .topbar-dialog .header, .topbar-dialog .modal-content li:hover, .share-tip,
  #tag-menu, .sidebar h3, #overlay-header, .action-list .action-selected, .switcher-nudge-lightbox,
- .user-rep-chart-summary-tooltip:hover, #footer {
+ .user-rep-chart-summary-tooltip:hover {
   background-color: #222 !important;
   color: #ddd !important;
  }
@@ -194,7 +194,8 @@
   color: #4b553c !important
  }
 
- .answered-accepted, .answered-accepted strong, .rep-up.bounty-indicator-tab, .user-rep-chart-summary-bar {
+ .answered-accepted, .answered-accepted strong, .rep-up.bounty-indicator-tab, .user-rep-chart-summary-bar,
+ .special-rep {
   background: #4b553c !important;
   color: #fff !important
  }
@@ -223,9 +224,9 @@
  }
 
  #tabs a:hover {
-  background-color: transparent !important;
+  background-color: #191919 !important;
   border: 1px solid #666666 !important;
-  border-bottom: 1px solid #444 !important;
+  border-bottom: 1px solid #191919 !important;
  }
 
  .highcharts-container rect[fill="#FFFFFF"], rect[fill="rgb(255, 255, 255)"] {
