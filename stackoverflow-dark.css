@@ -114,7 +114,8 @@
  }
 
  .profile-popup, .profile-popup tr, .profile-popup th, .profile-gravatar, .newuser, .roomcard,
- .seWrapper, h2.index.header, .privilege-table-row:hover {
+ .seWrapper, h2.index.header, .privilege-table-row:hover, .list-originals .item.hover,
+ .list-originals .body-summary, .review-instructions-reason {
   background-color: #222 !important;
   border-color: #555 !important;
   color: #ddd !important;
@@ -351,7 +352,7 @@
   margin-bottom: 4px !important;
  }
 
- .nav .primarynav li a {
+ .nav .primarynav li a, .list-originals .stats {
   display: block !important;
   float: left !important
  }
