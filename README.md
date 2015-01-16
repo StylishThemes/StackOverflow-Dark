@@ -10,17 +10,17 @@
 
 See the [full changelog](https://github.com/StylishThemes/Stackoverflow-Dark/wiki).
 
+#### Version 2.6.1 (1/16/2015)
+
+* Add StackOverflow meta svg source logo.
+* Make unread inbox & announcement messages more obvious.
+
 #### Version 2.6.0 (1/15/2015)
 
-* Lots of updates - Stackoverflow changed their template.
+* Lots of updates - StackOverflow changed their template.
 
 #### Version 2.5.8 (12/30/2014)
 
-* Fix footer styling
-* Fix tab styling
+* Fix footer styling.
+* Fix tab styling.
 * Review: darken panels.
-
-#### Version 2.5.7 (10/2/2014)
-
-* Fix broken links after renaming repository from "Stackoverflow-Dark" to "StackOverflow-Dark" (capital "O")
-* Accepted answer green styling matches again.
