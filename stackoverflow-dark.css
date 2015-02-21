@@ -192,7 +192,7 @@
   background: #232 !important;
  }
 
- .answered, .answer-votes {
+ .answered, .answer-votes, .answered .vote-count-post {
   background: #232323 !important;
   color: #4b553c !important
  }
