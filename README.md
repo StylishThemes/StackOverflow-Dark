@@ -10,6 +10,11 @@
 
 See the [full changelog](https://github.com/StylishThemes/Stackoverflow-Dark/wiki).
 
+#### Version 2.6.2 (2/26/2015)
+
+* Search results: fix style of answer votes.
+* Hide annoying "Answer similar questions" banner.
+
 #### Version 2.6.1 (1/16/2015)
 
 * Add StackOverflow meta svg source logo.
@@ -18,9 +23,3 @@ See the [full changelog](https://github.com/StylishThemes/Stackoverflow-Dark/wik
 #### Version 2.6.0 (1/15/2015)
 
 * Lots of updates - StackOverflow changed their template.
-
-#### Version 2.5.8 (12/30/2014)
-
-* Fix footer styling.
-* Fix tab styling.
-* Review: darken panels.
