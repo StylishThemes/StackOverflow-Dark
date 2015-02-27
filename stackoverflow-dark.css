@@ -59,7 +59,7 @@
  }
 
  /* === hidden === */
- div.hireme, div#hireme {
+ div.hireme, div#hireme, .next-answer-hook-container {
   display: none !important;
  }
 
