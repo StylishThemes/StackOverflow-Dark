@@ -27,7 +27,8 @@
   color: /*[[base-color]]*/ #008080 !important
  }
 
- .nav .primarynav li a:hover {
+ .nav .primarynav li a:hover, .message.message-config .actions .button, .btn-careers:hover,
+ .btn-careers:visited {
   color: #fff !important;
   background: /*[[base-color]]*/ #008080 !important;
  }
@@ -68,6 +69,9 @@
  .search-container input[type=text] {
   background-color: #000 !important;
  }
+ .popup-badges .all-badge-progress .completed:before {
+  background-color: rgba(0,0,0,0.4) !important;
+ }
 
  #custom-header, .review-bar, .diff-choices a.selected, #header #topbar, td.owner, a.owner, .question-status,
  .profile-popup, .profile-popup div, .profile-popup th, .profile-popup td, #global, .actual-edit-overlay,
@@ -76,7 +80,7 @@
   color: #ddd !important;
  }
 
- .summary .post-tag, .onebox, .profile-ad {
+ .summary .post-tag, .onebox, .profile-ad, .message.message-config {
   background: #151515 !important;
  }
 
@@ -95,12 +99,16 @@
   border: 1px solid transparent !important;
  }
 
- #tabs a.youarehere, .tag-suggestions {
+ #tabs a.youarehere, .tabs a.youarehere, .tag-suggestions {
   background: #191919 !important;
   border: 1px solid #444 !important;
  }
+ .tabs a.youarehere {
+  border-bottom: 0 !important;
+ }
 
- #user-about-me, .user-about-me, .mine .messages {
+
+ #user-about-me, .user-about-me, .mine .messages, .avatar-card, .top-tags .tag-wrapper .tag-container {
   background: #191919 !important;
   border: 0px !important;
   color: #C1BEBA !important;
@@ -129,12 +137,12 @@
   border-radius: 3px !important;
  }
 
- .ad502-room {
+ .ad502-room, .message.message-config .actions {
   background-color: #232323 !important;
   border: 1px solid #191919 !important;
  }
 
- .rep-recent-row, .bounty, .diff-choices a:hover, div.meter, .narrow .votes, .ob-post-votes {
+ .rep-recent-row, .bounty, .diff-choices a:hover, div.meter, .narrow .votes, .ob-post-votes, .card {
   background-color: #232323 !important;
   color: #bbb !important;
  }
@@ -144,7 +152,8 @@
   color: #999 !important;
  }
 
- .tagged-interesting, .tagged-interesting .views, .highlight-row, .highlighted {
+ .tagged-interesting, .tagged-interesting .views, .highlight-row, .highlighted, .card.rep-card .graph,
+ .popup-badges .badge-progress:hover:not(.completed) {
   background-color: #242424 !important;
   background-image: none !important;
  }
@@ -152,12 +161,13 @@
  .nav li, .seNav, .topbar a.topbar-icon-on, .topbar a.topbar-icon-on:hover, .owner, .nav a,
  .module li.current, .seCurrent, .community-bulletin, .owner-revision td, .markdown-diff .skip,
  #footer .container, .body-diffs .skip, .newsletter-anon, .tag-suggestions>div:hover,
- .topbar-dialog .modal-content li:hover, .timestamp:hover+div.message .meta, div.message:hover .meta {
+ .topbar-dialog .modal-content li:hover, .timestamp:hover+div.message .meta, div.message:hover .meta,
+ #side-menu ul li a:hover {
   background-color: #333 !important;
  }
 
  .owner-answer, .question-status, .notification, #feed-ticker, #top-menu, .vote-revision td,
- .topbar-dialog .unread-item {
+ .topbar-dialog .unread-item, .privileges-wrapper .stroke, .privileges-wrapper .bar {
   background: #404040 !important;
  }
 
@@ -173,8 +183,8 @@
  }
 
  /* === Brown(ish) === */
- .new-post-activity, #new-answer-activity {
-  background-color: #840 !important;
+ .new-post-activity, #new-answer-activity, .val-info {
+  background-color: #321 !important;
  }
 
  /* chat room buttons */
@@ -222,7 +232,8 @@
 
  /* === Transparent background === */
  div.message .meta, .spaces, .comment, span.feed-icon, a.role-switch, .nav.careers li, .nav.careers li:hover,
- .switcher-nudge-content p, #content, #tabs a, #chat .username, #chat .messages {
+ .switcher-nudge-content p, #content, #tabs a, .tabs a, #chat .username, #chat .messages,
+ .top-tags .tag-wrapper .tag-container {
   background-color: transparent !important;
  }
 
@@ -245,8 +256,8 @@
   border-color: #333 !important;
  }
 
- #tabs a.youarehere {
-  border-bottom: 1px solid #191919 !important;
+ .message .message-tip-top-right:before, .message .message-tip-top-left:before {
+  border-bottom-color: #191919 !important;
  }
 
  /* === No/hide border === */
@@ -254,20 +265,21 @@
   border-right: 0 !important;
  }
 
- .module {
+ .module, .tabs a, .top-tags .tag-wrapper .tag-container .col {
   border-color: transparent !important;
  }
 
  /* blue label count */
- .bounty-indicator-tab {
-  background: #07d !important;
+ .bounty-indicator-tab, .hero.profile {
+  background: #046 !important;
   color: #ccc !important;
  }
 
  /* === Text Color === */
  div, input, .accepted-answer .post-text, .accepted-answer .user-action-time, #question-header a,
  .post-text, .user-info, .topbar-dialog .header h3, .topbar-dialog .header h3 a, .topbar-dialog span,
- .search-result .answered .vote-count-post strong, .votes-cast-stats th, .subheader h1 {
+ .search-result .answered .vote-count-post strong, .votes-cast-stats th, .subheader h1,
+ .message.message-config h1, .message.message-config h2, .message.message-config h3, .message.message-config h4 {
   color: #ddd !important;
  }
 
@@ -285,7 +297,8 @@
  }
 
  .comment, #top-menu a, .subheader a, .reputation a, .reputation-score, a:visited, .relativetime.old,
- .votes-cast-stats td, .mini-counts span, #chat .system-message {
+ .votes-cast-stats td, .mini-counts span, #chat .system-message, .card .rep,
+ .user-card .user-stats .number, .user-card .user-card-name {
   color: #aaa !important;
  }
 
@@ -372,6 +385,16 @@
   background-color: #191919 !important;
   border-color: #111 !important;
  }
+ .badge3-alternate, .progress-bar.badge-3 .bar .percent {
+  background-color: #7C4318 !important; /* bronze */
+ }
+ .badge2-alternate, .progress-bar.badge-2 .bar .percent {
+  background-color: #464a4f !important; /* silver */
+ }
+ .badge1-alternate, .progress-bar.badge-1 .bar .percent {
+  background-color: #957000 !important; /* gold */
+ }
+
 
  /* === code & syntax highlighting === */
  pre, code, .pln, .youarehere {
