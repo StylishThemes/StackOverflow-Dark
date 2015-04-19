@@ -10,6 +10,11 @@
 
 See the [full changelog](https://github.com/StylishThemes/Stackoverflow-Dark/wiki).
 
+#### Version 2.7.1 (4/19/2015)
+
+* More color tweaks for new template.
+* Updates to chat.
+
 #### Version 2.7.0 (4/18/2015)
 
 * Lots of updates - StackOverflow changed their template.
