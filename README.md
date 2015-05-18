@@ -10,6 +10,10 @@
 
 See the [full changelog](https://github.com/StylishThemes/Stackoverflow-Dark/wiki).
 
+#### Version 2.7.2 (5/18/2015)
+
+* Add styling to prev/next question arrows.
+
 #### Version 2.7.1 (4/19/2015)
 
 * More color tweaks for new template.
@@ -18,13 +22,3 @@ See the [full changelog](https://github.com/StylishThemes/Stackoverflow-Dark/wik
 #### Version 2.7.0 (4/18/2015)
 
 * Lots of updates - StackOverflow changed their template.
-
-#### Version 2.6.2 (2/26/2015)
-
-* Search results: fix style of answer votes.
-* Hide annoying "Answer similar questions" banner.
-
-#### Version 2.6.1 (1/16/2015)
-
-* Add StackOverflow meta svg source logo.
-* Make unread inbox & announcement messages more obvious.
