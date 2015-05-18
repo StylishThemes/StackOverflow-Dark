@@ -55,7 +55,7 @@
   border-color: /*[[base-color]]*/ #008080 !important;
   box-shadow: 0px 1px 2px rgba(255, 255, 255, 0.075) inset, 0px 0px 5px rgba(255, 255, 255, .075) !important;
  }
- .tag-editor input:focus {
+ .tag-editor input:focus, .previous-button, .next-button {
   border: 0 !important;
   box-shadow: none !important;
  }
@@ -70,7 +70,7 @@
  .search-container input[type=text] {
   background-color: #000 !important;
  }
- .popup-badges .all-badge-progress .completed:before {
+ .popup-badges .all-badge-progress .completed:before, .previous-button, .next-button {
   background-color: rgba(0,0,0,0.4) !important;
  }
 
@@ -111,7 +111,7 @@
 
  #user-about-me, .user-about-me, .mine .messages, .avatar-card, .tag-container {
   background: #191919 !important;
-  border: 0px !important;
+  border: 0 !important;
   color: #C1BEBA !important;
  }
 
@@ -167,7 +167,7 @@
  .module li.current, .seCurrent, .community-bulletin, .owner-revision td, .markdown-diff .skip,
  #footer .container, .body-diffs .skip, .newsletter-anon, .tag-suggestions>div:hover,
  .topbar-dialog .modal-content li:hover, .timestamp:hover+div.message .meta, div.message:hover .meta,
- #side-menu ul li a:hover, .conversation-info {
+ #side-menu ul li a:hover, .conversation-info, .message.reply-parent, .message.reply-child {
   background-color: #333 !important;
  }
 
@@ -261,12 +261,29 @@
   border-bottom-color: #191919 !important;
  }
 
+ .left-arrow {
+  border-right-color: rgba(119,119,119,0.4) !important;
+ }
+ .previous-button:hover .left-arrow {
+  border-right-color: #c0c0c0 !important;
+ }
+ .right-arrow {
+  border-left-color: rgba(119,119,119,0.4) !important;
+ }
+ .next-button:hover .right-arrow {
+  border-left-color: #c0c0c0 !important;
+ }
+
  /* === No/hide border === */
  div.list > div {
   border-right: 0 !important;
  }
  .module, .tabs a, div.message {
   border-color: transparent !important;
+ }
+ .left-arrow, .right-arrow {
+  border-bottom-color: transparent !important;
+  border-top-color: transparent !important;
  }
  div.message:hover, .timestamp:hover + div.message {
   visibility: inherit;
