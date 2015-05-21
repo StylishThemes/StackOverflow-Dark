@@ -10,6 +10,10 @@
 
 See the [full changelog](https://github.com/StylishThemes/Stackoverflow-Dark/wiki).
 
+#### Version 2.7.3 (5/21/2015)
+
+* Change accepted answer code block background color. Thanks [tophf](https://github.com/tophf)!
+
 #### Version 2.7.2 (5/18/2015)
 
 * Add styling to prev/next question arrows.
@@ -18,7 +22,3 @@ See the [full changelog](https://github.com/StylishThemes/Stackoverflow-Dark/wik
 
 * More color tweaks for new template.
 * Updates to chat.
-
-#### Version 2.7.0 (4/18/2015)
-
-* Lots of updates - StackOverflow changed their template.
