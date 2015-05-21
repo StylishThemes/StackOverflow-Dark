@@ -204,6 +204,11 @@
   background: #232 !important;
  }
 
+ /* accepted answer code blocks */
+ .accepted-answer pre, .accepted-answer code, .accepted-answer .pln, .accepted-answer .youarehere {
+  background: #202A20 !important;
+ }
+
  .answered, .answer-votes, .answered .vote-count-post {
   background: #232323 !important;
   color: #4b553c !important
