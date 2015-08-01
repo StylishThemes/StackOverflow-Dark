@@ -1,0 +1,52 @@
+/*! Sunburst */
+/* Pretty printing styles. Used with prettify.js. */
+/* Vim sunburst theme by David Leibovic */
+/* https://code.google.com/p/google-code-prettify/source/browse/trunk/styles/sunburst.css */
+
+pre .str, code .str { color: #65B042 !important; } /* string  - green */
+pre .kwd, code .kwd { color: #E28964 !important; } /* keyword - dark pink */
+pre .com, code .com { color: #AEAEAE !important; font-style: italic !important; } /* comment - gray */
+pre .typ, code .typ { color: #89bdff !important; } /* type - light blue */
+pre .lit, code .lit { color: #3387CC !important; } /* literal - blue */
+pre .pun, code .pun { color: #fff !important; } /* punctuation - white */
+pre .pln, code .pln { color: #fff !important; } /* plaintext - white */
+pre .tag, code .tag { color: #89bdff !important; } /* html/xml tag    - light blue */
+pre .atn, code .atn { color: #bdb76b !important; } /* html/xml attribute name  - khaki */
+pre .atv, code .atv { color: #65B042 !important; } /* html/xml attribute value - green */
+pre .dec, code .dec { color: #3387CC !important; } /* decimal - blue */
+
+pre.prettyprint, code.prettyprint {
+  background-color: #000 !important;
+  -moz-border-radius: 8px !important;
+  -webkit-border-radius: 8px !important;
+  -o-border-radius: 8px !important;
+  -ms-border-radius: 8px !important;
+  -khtml-border-radius: 8px !important;
+  border-radius: 8px !important;
+}
+
+pre.prettyprint {
+  width: 95% !important;
+  margin: 1em auto !important;
+  padding: 1em !important;
+  white-space: pre-wrap !important;
+}
+
+/* Specify class=linenums on a pre to get line numbering */
+ol.linenums { margin-top: 0 !important; margin-bottom: 0 !important; color: #AEAEAE !important; } /* IE indents via margin-left */
+li.L0,li.L1,li.L2,li.L3,li.L5,li.L6,li.L7,li.L8 { list-style-type: none !important; }
+/* Alternate shading for lines */
+li.L1,li.L3,li.L5,li.L7,li.L9 { }
+
+@media print {
+  pre .str, code .str { color: #060 !important; }
+  pre .kwd, code .kwd { color: #006 !important; font-weight: bold !important; }
+  pre .com, code .com { color: #600 !important; font-style: italic !important; }
+  pre .typ, code .typ { color: #404 !important; font-weight: bold !important; }
+  pre .lit, code .lit { color: #044 !important; }
+  pre .pun, code .pun { color: #440 !important; }
+  pre .pln, code .pln { color: #000 !important; }
+  pre .tag, code .tag { color: #006 !important; font-weight: bold !important; }
+  pre .atn, code .atn { color: #404 !important; }
+  pre .atv, code .atv { color: #060 !important; }
+}
