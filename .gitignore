@@ -1,3 +1,8 @@
+# GitHub build config
+build.json
+*.build.css
+*.build.min.css
+
 #################
 ## Eclipse
 #################
@@ -28,6 +33,11 @@ local.properties
 # PDT-specific
 .buildpath
 
+#################
+## IntelliJ IDEA
+#################
+.idea/*
+*.iml
 
 #################
 ## Visual Studio
@@ -44,6 +54,7 @@ local.properties
 # Build results
 [Dd]ebug/
 [Rr]elease/
+node_modules/
 *_i.c
 *_p.c
 *.ilk
@@ -125,26 +136,6 @@ Thumbs.db
 
 # Folder config file
 Desktop.ini
-
-
-#############
-## Python
-#############
-
-*.py[co]
-
-# Packages
-*.egg
-*.egg-info
-dist
-build
-eggs
-parts
-bin
-var
-sdist
-develop-eggs
-.installed.cfg
 
 # Installer logs
 pip-log.txt

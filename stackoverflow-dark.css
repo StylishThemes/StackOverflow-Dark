@@ -1,5 +1,4 @@
-@-moz-document regexp("^https?://((chat|meta|ja|pt|ru)\.)?stackoverflow\.com.*"), domain("serverfault.com"), domain("superuser.com"),
- domain("stackapps.com"), domain("mathoverflow.net"), regexp("^https?://((?!(area51|gaming|rpg)).*\.)?stackexchange.com.*") {
+@-moz-document regexp("^https?://((chat|meta|ja|pt|ru)\.)?stackoverflow\.com.*"), domain("serverfault.com"), domain("superuser.com"), domain("stackapps.com"), domain("mathoverflow.net"), regexp("^https?://((?!(area51|gaming|rpg)).*\.)?stackexchange.com.*") {
  /***************************************************************
  StackOverflow Dark v2.7.3 (5/21/2015)
  https://github.com/StylishThemes/StackOverflow-Dark
@@ -28,8 +27,13 @@
   background-image: /*[[bg-choice]]*/ url() !important;
   background-clip: border-box !important;
   background-origin: padding-box !important;
+  background-attachment: /*[[bg-attachment]]*/ fixed !important;
   /*[[bg-options]]*/
-  /*[[bg-options2]]*/
+ }
+
+ /* custom code font */
+ pre.prettyprint {
+  font-family: "/*[[font-choice]]*/", Monaco, Consolas, "Liberation Mono", Menlo, Courier, monospace !important;
  }
 
  /* === custom color === */
@@ -454,20 +458,6 @@
   background-color: #957000 !important; /* gold */
  }
 
- /* === code & syntax highlighting === */
- pre, code, .pln {
-  background: #333 !important;
-  color: #ccc !important;
- }
- .str { color: #0a0 !important; }
- .lit { color: #d65 !important; }
- .pun { color: #999 !important; } /* parenthesis */
- .kwd { color: #08f !important; } /* keyword */
- .tag { color: #999 !important; } /* html tag */
- .atn { color: #088 !important; } /* attribute */
- .atv { color: #0a0 !important; } /* attribute value*/
- .dec { color: #90a !important; } /* doc type */
-
  /* === Images === */
  .wmd-button>span {
   background-image: url(http://StylishThemes.github.io/StackOverflow-Dark/images/wmd-buttons.png) !important;
@@ -489,8 +479,44 @@
   filter: invert(100%) !important;
  }
 
+ /* override prettyprint bright border styles */
+ pre.prettyprint {
+  border-color: transparent !important;
+ }
+ /* style non-prettyprint code */
+ code, pre:not(.prettyprint) {
+  background: #333 !important;
+ }
+ .prettyprint code {
+  background: transparent !important;
+ }
+
+ /*[[syntax-theme]]*/
+ /* grunt-webkit-remove-to-end-of-file */
+ /* grunt-remove-block-below */
+
+ /* === basic dark code & syntax highlighting === */
+ pre, code, .pln {
+  background: #333 !important;
+  color: #ccc !important;
+ }
+ .str { color: #0a0 !important; }
+ .lit { color: #d65 !important; }
+ .pun { color: #999 !important; } /* parenthesis */
+ .kwd { color: #08f !important; } /* keyword */
+ .tag { color: #999 !important; } /* html tag */
+ .atn { color: #088 !important; } /* attribute */
+ .atv { color: #0a0 !important; } /* attribute value*/
+ .dec { color: #90a !important; } /* doc type */
+
+ /* grunt-remove-block-above */
 }
 
+/* These extra @-moz-document will not be included in the "grunt user" build
+ * because Chrome Stylish puts these extra definitions into separate sections
+ * with separate regexp/domain definitions.
+ * If the css below changes, it will have to be manu
+ */
 /* site logos */
 @-moz-document regexp("^https?://(chat\.)?stackoverflow\.com.*") {
 #hlogo a, #footer-logo {
