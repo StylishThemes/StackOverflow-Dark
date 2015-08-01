@@ -20,6 +20,10 @@
 
 See the [full changelog](https://github.com/StylishThemes/Stackoverflow-Dark/wiki).
 
+#### Version 2.8.1 (8/1/2015)
+
+* Fix `@-moz-document regexp` not using double escaping
+
 #### Version 2.8.0 (8/1/2015)
 
 * Move `selogos` & `secss` folders into a `resource` folder.
