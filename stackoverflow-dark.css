@@ -466,8 +466,11 @@
  #hlogo img, .everyonelovesstackoverflow, #newsletter-ad { opacity: 0.3 !important; }
 
  #hlogo a, #footer-logo {
-  background-size: contain !important;
   background-repeat: no-repeat !important;
+ }
+
+ #footer-logo {
+  background-size: contain !important;
  }
 
  #header-logo img, #footer-logo img {
@@ -518,6 +521,11 @@
  * If the css below changes, it will have to be manually updated
  */
 /* site logos */
+@-moz-document domain("stackoverflow.com") {
+ #hlogo a {
+  background-image: url(http://StylishThemes.github.io/StackOverflow-Dark/images/stackoverflow-logo.svg) !important;
+ }
+}
 @-moz-document domain("chat.stackoverflow.com") {
 #hlogo a, #footer-logo {
   background-image: url(http://StylishThemes.github.io/StackOverflow-Dark/images/stackoverflow-logo.svg) !important;
