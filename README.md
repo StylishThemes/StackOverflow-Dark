@@ -20,6 +20,12 @@
 
 See the [full changelog](https://github.com/StylishThemes/Stackoverflow-Dark/wiki).
 
+#### Version 2.8.3 (8/2/2015)
+
+* Logo tweaks:
+  * Stop header logo background image repeat.
+  * Add updated stackoverflow logo & remove background-size contain.
+
 #### Version 2.8.2 (8/2/2015)
 
 * Moved screenshots into subfolder; add wiki subfolder.
