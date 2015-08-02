@@ -465,7 +465,7 @@
 
  #hlogo img, .everyonelovesstackoverflow, #newsletter-ad { opacity: 0.3 !important; }
 
- #footer-logo {
+ #hlogo a, #footer-logo {
   background-size: contain !important;
   background-repeat: no-repeat !important;
  }
