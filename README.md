@@ -20,6 +20,12 @@
 
 See the [full changelog](https://github.com/StylishThemes/Stackoverflow-Dark/wiki).
 
+#### Version 2.8.4 (8/3/2015)
+
+* Add section to darken images using css filters. Fixes [issue #15](https://github.com/StylishThemes/StackOverflow-Dark/issues/15).
+* StackExchange login page: Darken panels & fix logo. Fixes [issue #16](https://github.com/StylishThemes/StackOverflow-Dark/issues/16).
+* Rearrange sections & move site logos to bottom.
+
 #### Version 2.8.3 (8/2/2015)
 
 * Logo tweaks:
@@ -36,22 +42,3 @@ See the [full changelog](https://github.com/StylishThemes/Stackoverflow-Dark/wik
   * Cleaned up logos for dba.stackexchange & mathoverflow sites.
   * Inverted header images for academia, dba, electronics & tex stackexchange sites.
   * See [issue #14](https://github.com/StylishThemes/StackOverflow-Dark/issues/14) for an updated list.
-
-#### Version 2.8.1 (8/1/2015)
-
-* Fix `@-moz-document regexp` not using double escaping
-
-#### Version 2.8.0 (8/1/2015)
-
-* Move `selogos` & `secss` folders into a `resource` folder.
-* Add modified site logos for serverfault, stackapps, stackexchange & superuser.
-* Add support for StackExchange & associated sites:
-  * Not all sites have been throughly tested, so please [report any issues](https://github.com/StylishThemes/StackOverflow-Dark/issues).
-  * Currently the following sites are not supported:
-    * Area51 (http://area51.stackexchange.com/)
-    * Gaming (http://gaming.stackexchange.com/)
-    * Role Playing Games ( http://rpg.stackexchange.com/ )
-  * Fixes [issue #10](https://github.com/StylishThemes/StackOverflow-Dark/issues/10).
-* Add grunt build process & new options:
-  * Choose a syntax highlighting theme (see readme for a list). Fixes [issue #13](https://github.com/StylishThemes/StackOverflow-Dark/issues/13)
-  * Choose a default code font.
