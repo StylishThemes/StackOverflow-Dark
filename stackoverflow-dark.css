@@ -130,14 +130,15 @@
 
  .topbar-dialog, .topbar-dialog .header, .share-tip, #input-area, .messages,
  #tag-menu, .sidebar h3, #overlay-header, .action-list .action-selected, .switcher-nudge-lightbox,
- .user-rep-chart-summary-tooltip:hover, .current-site-container {
+ .user-rep-chart-summary-tooltip:hover, .current-site-container, #or {
   background-color: #222 !important;
   color: #ddd !important;
  }
 
  .profile-popup, .profile-popup tr, .profile-popup th, .profile-gravatar, .newuser, .roomcard,
  .seWrapper, h2.index.header, .privilege-table-row:hover, .list-originals .item.hover,
- .list-originals .body-summary, .review-instructions-reason, .room-mini {
+ .list-originals .body-summary, .review-instructions-reason, .room-mini, #formContainer, #switch,
+ .login-topbar {
   background-color: #222 !important;
   border-color: #555 !important;
   color: #ddd !important;
@@ -595,6 +596,17 @@
  }
  #header {
   background-image: none !important;
+ }
+ /* login screen StackExchange logo replacement */
+ .login-page .se-logo {
+  -moz-box-sizing: border-box !important;
+  box-sizing: border-box !important;
+  background: url(http://StylishThemes.github.io/StackOverflow-Dark/images/stackexchange-logo.svg) no-repeat !important;
+  background-size: cover !important;
+  background-position: center center !important;
+  width: 200px !important; /* Width of new image */
+  height: 48px !important; /* Height of new image */
+  padding-left: 200px !important; /* Equal to width of new image */
  }
 }
 /* target sites that need inverted header */
