@@ -521,7 +521,109 @@
  * with separate regexp/domain definitions.
  * If the css below changes, it will have to be manually updated
  */
-/* site logos */
+
+/* === StackExchange tweaks ===
+ _____ _           _   _____         _                      _                 _
+|   __| |_ ___ ___| |_|   __|_ _ ___| |_ ___ ___ ___ ___   | |_ _ _ _ ___ ___| |_ ___
+|__   |  _| .'|  _| '_|   __|_'_|  _|   | .'|   | . | -_|  |  _| | | | -_| .'| '_|_ -|
+|_____|_| |__,|___|_,_|_____|_,_|___|_|_|__,|_|_|_  |___|  |_| |_____|___|__,|_,_|___|
+                                                |___|
+*/
+@-moz-document domain("stackexchange.com") {
+ /* login screen StackExchange logo replacement */
+ .login-page .se-logo {
+  -moz-box-sizing: border-box !important;
+  box-sizing: border-box !important;
+  background: url(http://StylishThemes.github.io/StackOverflow-Dark/images/stackexchange-logo.svg) no-repeat !important;
+  background-size: cover !important;
+  background-position: center center !important;
+  width: 200px !important; /* Width of new image */
+  height: 48px !important; /* Height of new image */
+  padding-left: 200px !important; /* Equal to width of new image */
+ }
+ /* login button (input type=button")*/
+ .login-page input.fr {
+  background-color: /*[[base-color]]*/ #008080 !important;
+ }
+}
+@-moz-document regexp("^https?:\\/\\/((?!(academia|dba|electronics|tex)).*\\.)?stackexchange.com.*") {
+ /* target sites to *NOT* hide the header background */
+ #header, #hmenus {
+  background-color: transparent !important;
+ }
+ #header {
+  background-image: none !important;
+ }
+}
+@-moz-document regexp("^https?:\\/\\/((academia|dba|electronics|tex)\\.)?stackexchange\\.com.*") {
+ /* target sites that need an inverted header */
+ #header, #header > * {
+  -webkit-filter: invert(100%) !important;
+  filter: invert(100%) !important;
+ }
+}
+@-moz-document regexp("^https?:\\/\\/((academia|chess|english|meta|salesforce|skeptics|judaism|ux)\\.)?stackexchange\\.com.*") {
+ /* target sites needing menu adjustments */
+ .nav.mainnavs li, .nav.askquestion li {
+  background-color: transparent !important;
+ }
+ .nav.mainnavs, .footerwrap {
+  background-image: none !important;
+ }
+ .nav.mainnavs li {
+  margin: 0 6px !important;
+ }
+ .nav.mainnavs li a, .nav.askquestion li a {
+  padding: 6px !important;
+  margin: 2px !important;
+  border-radius: 3px !important;
+ }
+}
+@-moz-document regexp("^https?:\\/\\/((programmers)\\.)?stackexchange\\.com.*") {
+ /* target sites that don't need a menu background color */
+ .nav li, .nav a, .nav li.youarehere a, .nav a:hover {
+  background-color: transparent !important;
+ }
+}
+@-moz-document regexp("^https?:\\/\\/((programmers)\\.)?stackexchange\\.com.*") {
+ /* darken everything that uses sprite.svg (vote arrows, badges, feed icons, etc */
+ .envelope-on, .envelope-off, .vote-up-off, .vote-up-on, .vote-down-off, .vote-down-on, .star-on, .star-off,
+ .comment-up-off, .comment-up-on, .comment-flag, .edited-yes, .feed-icon, .vote-accepted-off, .vote-accepted-on,
+ .vote-accepted-bounty, .badge-earned-check, .delete-tag, .expander-arrow-hide, .expander-arrow-show,
+ .expander-arrow-small-hide, .expander-arrow-small-show, .anonymous-gravatar, .gp-share, .fb-share, .twitter-share,
+ #notify-container span.notify-close, .migrated.to, .migrated.from {
+  -webkit-filter: invert(100%) hue-rotate(180deg) brightness(.9) !important;
+          filter: invert(100%) hue-rotate(180deg) brightness(.9) !important;
+ }
+}
+/* === site specific ===
+     _ _                          _ ___ _
+ ___|_| |_ ___    ___ ___ ___ ___|_|  _|_|___
+|_ -| |  _| -_|  |_ -| . | -_|  _| |  _| |  _|
+|___|_|_| |___|  |___|  _|___|___|_|_| |_|___|
+                     |_|
+*/
+@-moz-document domain("programmers.stackexchange.com") {
+ /* programmers.stackexchange.com specific tweaks */
+ /* menu & section underline extensions (wrong color) */
+ #hmenus .nav ul li.youarehere a:before, #hmenus .nav ul li a:hover:before,
+ #hmenus .nav ul li.youarehere a:after,  #hmenus .nav ul li a:hover:after,
+ #header:before, #header:after, #question-header:before, #question-header:after,
+ .subheader:before, .subheader:after {
+  display: none !important;
+ }
+ #header {
+  border-bottom: 0 !important;
+ }
+}
+
+/* === site logos ===
+     _ _          _
+ ___|_| |_ ___   | |___ ___ ___ ___
+|_ -| |  _| -_|  | | . | . | . |_ -|
+|___|_|_| |___|  |_|___|_  |___|___|
+                       |___|
+*/
 @-moz-document domain("stackoverflow.com") {
  #hlogo a {
   background-image: url(http://StylishThemes.github.io/StackOverflow-Dark/images/stackoverflow-logo.svg) !important;
@@ -586,51 +688,5 @@
 @-moz-document domain("dba.stackexchange.com") {
  #hlogo a {
   background-image: url(http://StylishThemes.github.io/StackOverflow-Dark/images/database-admin-logo.svg) !important;
- }
-}
-/* === StackExchange tweaks === */
-/* target sites to *NOT* hide the header background */
-@-moz-document regexp("^https?:\\/\\/((?!(academia|dba|electronics|tex)).*\\.)?stackexchange.com.*") {
- #header, #hmenus {
-  background-color: transparent !important;
- }
- #header {
-  background-image: none !important;
- }
- /* login screen StackExchange logo replacement */
- .login-page .se-logo {
-  -moz-box-sizing: border-box !important;
-  box-sizing: border-box !important;
-  background: url(http://StylishThemes.github.io/StackOverflow-Dark/images/stackexchange-logo.svg) no-repeat !important;
-  background-size: cover !important;
-  background-position: center center !important;
-  width: 200px !important; /* Width of new image */
-  height: 48px !important; /* Height of new image */
-  padding-left: 200px !important; /* Equal to width of new image */
- }
-}
-/* target sites that need inverted header */
-@-moz-document regexp("^https?:\\/\\/((academia|dba|electronics|tex)\\.)?stackexchange\\.com.*") {
- #header, #header > * {
-  -webkit-filter: invert(100%) !important;
-  filter: invert(100%) !important;
- }
-}
-/* target sites needing menu adjustments */
-@-moz-document regexp("^https?:\\/\\/((academia|chess|english|meta|salesforce|skeptics|judaism|ux)\\.)?stackexchange\\.com.*") {
- /* fix nav menu */
- .nav.mainnavs li, .nav.askquestion li {
-  background-color: transparent !important;
- }
- .nav.mainnavs, .footerwrap {
-  background-image: none !important;
- }
- .nav.mainnavs li {
-  margin: 0 6px !important;
- }
- .nav.mainnavs li a, .nav.askquestion li a {
-  padding: 6px !important;
-  margin: 2px !important;
-  border-radius: 3px !important;
  }
 }
