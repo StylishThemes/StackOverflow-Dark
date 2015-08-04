@@ -270,7 +270,7 @@
  /* === Transparent background === */
  div.message .meta, .spaces, .comment, span.feed-icon, a.role-switch, .nav.careers li, .nav.careers li:hover,
  .switcher-nudge-content p, #content, #tabs a, .tabs a, #chat .username, #chat .messages, .tag-container, .prettyprint code,
- .lv-info, .lv-stats-wrapper, .lv-stats-wrapper .number, .container {
+ .lv-info, .lv-stats-wrapper, .lv-stats-wrapper .number, .container, .bottom-notice, #question-header {
   background-color: transparent !important;
  }
 
