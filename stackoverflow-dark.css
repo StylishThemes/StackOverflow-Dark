@@ -272,7 +272,7 @@
  div.message .meta, .spaces, .comment, span.feed-icon, a.role-switch, .nav.careers li, .nav.careers li:hover,
  .switcher-nudge-content p, #content, #tabs a, .tabs a, #chat .username, #chat .messages, .tag-container,
  .prettyprint code, .lv-info, .lv-stats-wrapper, .lv-stats-wrapper .number, .container, .bottom-notice,
- #question-header, .question-form .form-item {
+ #question-header, .question-form .form-item, .post-menu>a:hover, a.comments-link:hover {
   background-color: transparent !important;
  }
 
@@ -551,6 +551,14 @@
  .login-page input.fr {
   background-color: /*[[base-color]]*/ #008080 !important;
  }
+ /* remove content border */
+ #content {
+  border: 0 !important;
+ }
+ /* Beta sites need
+ div.nav ul li { margin-right: 5px; }
+ .nav a { padding: 4px 6px; }
+ */
 }
 @-moz-document regexp("^https?:\\/\\/((?!(academia|dba|electronics|tex)).*\\.)?stackexchange.com.*") {
  /* target sites to *NOT* hide the header background */
@@ -585,7 +593,7 @@
   border-radius: 3px !important;
  }
 }
-@-moz-document regexp("^https?:\\/\\/((programmers|wordpress)\\.)?stackexchange\\.com.*") {
+@-moz-document regexp("^https?:\\/\\/((android|photo|programmers|wordpress)\\.)?stackexchange\\.com.*") {
  /* darken everything that uses sprite.svg (vote arrows, feed icons, etc) */
  .envelope-on, .envelope-off, .vote-up-off, .vote-up-on, .vote-down-off, .vote-down-on, .star-on, .star-off,
  .comment-up-off, .comment-up-on, .comment-flag, .edited-yes, .feed-icon, .vote-accepted-off, .vote-accepted-on,
@@ -593,16 +601,44 @@
  .expander-arrow-small-hide, .expander-arrow-small-show, .anonymous-gravatar, .gp-share, .fb-share, .twitter-share,
  #notify-container span.notify-close, .migrated.to, .migrated.from {
   -webkit-filter: invert(100%) hue-rotate(180deg) brightness(1.1) !important;
-          filter: invert(100%) hue-rotate(180deg) brightness(1.1) !important;
+  filter: invert(100%) hue-rotate(180deg) brightness(1.1) !important;
  }
 }
-@-moz-document regexp("^https?:\/\/((apple|gis|tex|wordpress)\.)?stackexchange\.com.*") {
+@-moz-document regexp("^https?:\/\/((photo|security|wordpress)\\.)?stackexchange\\.com.*") {
+ /* nav manu text coloring only */
+ .nav li.youarehere a, .nav li a:hover,
+ .nav li.youarehere a, .nav li a:hover, {
+  background-color: transparent !important;
+  color: #ddd !important;
+ }
+ .nav li.youarehere a, .nav li a:hover {
+  color: /*[[base-color]]*/ #008080 !important;
+ }
+}
+@-moz-document regexp("^https?:\/\/((android|apple|dba|drupal|gis|mathematica|photo|security|tex|wordpress)\\.)?stackexchange\\.com.*") {
  /* hide top nav background on <li>, style is on <a> */
  .nav li {
   background-color: transparent !important;
  }
 }
-
+@-moz-document regexp("^https?:\/\/((android|dba|salesforce|security|tex|ux)\\.)?stackexchange\\.com.*") {
+ /* darken vote off buttons */
+ .vote-up-off, .vote-down-off {
+  -webkit-filter: brightness(.5) !important;
+  filter: brightness(.5) !important;
+ }
+}
+/*
+@-moz-document regexp("^https?:\\/\\/((?!(android|apple|dba|drupal|electronics|gamedev|gis|mathematica|programmers|salesforce|security|sharepoint|tex|unix|ux|webapps|webmasters|wordpress)).*\\.)?stackexchange.com.*") {
+ / * BETA SITES * /
+ div.nav ul li {
+  margin-right: 5px !important;
+ }
+ .nav a {
+  padding: 4px 6px !important;
+ }
+}
+*/
 /* === site specific (alphabetical order by domain) ===
      _ _                          _ ___ _
  ___|_| |_ ___    ___ ___ ___ ___|_|  _|_|___
@@ -624,7 +660,7 @@
 }
 @-moz-document domain("electronics.stackexchange.com") {
  /* electrical engineering */
- .nav li, .nav li a, .nav li a:hover, .answered-accepted .mini-counts {
+ .nav li, .nav li a, .nav li a:hover, .nav li.youarehere a, .answered-accepted .mini-counts {
   background-color: transparent !important;
  }
 }
@@ -644,6 +680,17 @@
  /* meta.stackoverflow.com */
  #hlogo a {
   background-image: url(http://StylishThemes.github.io/StackOverflow-Dark/images/meta-stackoverflow-logo.svg) !important;
+ }
+}
+@-moz-document domain("photo.stackexchange.com") {
+ #custom-content {
+  background-image: none !important;
+ }
+ .post-tag, .comments-link, .tag-synonym-link {
+  line-height: 1.4em !important;
+ }
+ .vote-count-post {
+  color: #777 !important;
  }
 }
 @-moz-document domain("programmers.stackexchange.com") {
@@ -679,11 +726,22 @@
   background-image: url(http://StylishThemes.github.io/StackOverflow-Dark/images/ru-stackoverflow-logo.svg) !important;
  }
 }
+@-moz-document domain("salesforce.stackexchange.com") {
+ .star-on {
+  -webkit-filter: brightness(.9) !important;
+  filter: brightness(.9) !important;
+ }
+}
 @-moz-document domain("serverfault.com") {
  /* serverfault.com */
  #hlogo a {
   background-size: cover !important;
   background-image: url(http://StylishThemes.github.io/StackOverflow-Dark/images/serverfault-logo.svg) !important;
+ }
+ .container .answered, .container .answered-accepted {
+  border: 2px transparent !important;
+  padding: 5px 5px 6px 5px !important;
+  height: 38px !important;
  }
 }
 @-moz-document domain("stackapps.com") {
@@ -716,6 +774,7 @@
 @-moz-document domain("wordpress.stackexchange.com") {
  #hlogo a {
   -webkit-filter: invert(100%) !important;
+  filter: invert(100%) !important;
  }
  #hmenus, .module {
   background-image: none !important;
@@ -724,9 +783,6 @@
  }
  .module {
   border-top-width: 0 !important;
- }
- #content {
-  border: 0 !important;
  }
  /* override !important flag set in site css */
  a.question-hyperlink {
