@@ -605,6 +605,9 @@
                      |_|
 */
 @-moz-document domain("programmers.stackexchange.com") {
+ #hlogo a {
+  background-image: url(http://StylishThemes.github.io/StackOverflow-Dark/images/programmers-logo.svg) !important;
+ }
  /* programmers.stackexchange.com specific tweaks */
  /* menu & section underline extensions (wrong color) */
  #hmenus .nav ul li.youarehere a:before, #hmenus .nav ul li a:hover:before,
