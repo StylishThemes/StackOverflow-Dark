@@ -20,6 +20,33 @@
 
 See the [full changelog](https://github.com/StylishThemes/Stackoverflow-Dark/wiki).
 
+#### Version 2.8.5 (8/5/2015)
+
+* Fix tags page input focus color.
+* Make question header & footer background transparent.
+* Site specific updates:
+  * Andriod
+  * Apple
+  * Database admin
+  * Drupal
+  * Electronics
+  * Geographic Information Systems (GIS)
+  * Graphic Design
+  * Mathematica
+  * Movies
+  * Photography
+  * Programmers: Modified logo.
+  * Salesforce
+  * Scifi
+  * Security
+  * Serverfault
+  * Sharepoint
+  * StackExchange Blog & chat
+  * TEX
+  * UX
+  * Unix/Linux
+  * Wordpress
+
 #### Version 2.8.4 (8/3/2015)
 
 * Add section to darken images using css filters. Fixes [issue #15](https://github.com/StylishThemes/StackOverflow-Dark/issues/15).
@@ -31,14 +58,3 @@ See the [full changelog](https://github.com/StylishThemes/Stackoverflow-Dark/wik
 * Logo tweaks:
   * Stop header logo background image repeat.
   * Add updated stackoverflow logo & remove background-size contain.
-
-#### Version 2.8.2 (8/2/2015)
-
-* Moved screenshots into subfolder; add wiki subfolder.
-* Optimize images/svg.
-* Multiple site fixes
-  * Switch to using hosted images instead of base64 encoded images. GitHub serves gh-pages on a CDN, so hopefully it won't cause any issues.
-  * Add logo for ja, pt & ru stackoverflow sites.
-  * Cleaned up logos for dba.stackexchange & mathoverflow sites.
-  * Inverted header images for academia, dba, electronics & tex stackexchange sites.
-  * See [issue #14](https://github.com/StylishThemes/StackOverflow-Dark/issues/14) for an updated list.
