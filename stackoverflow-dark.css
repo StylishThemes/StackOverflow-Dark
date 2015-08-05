@@ -555,10 +555,36 @@
  #content {
   border: 0 !important;
  }
- /* Beta sites need
- div.nav ul li { margin-right: 5px; }
- .nav a { padding: 4px 6px; }
- */
+ #sidebar #newsletter-ad, #sidebar .ad-container, #sidebar .everyonelovesstackoverflow {
+  border-width: 2px !important;
+ }
+ /* start blog.stackexchange.com */
+ header, .cse .gsc-control-cse, .gsc-control-cse, div.pagination {
+  background-color: #181818 !important;
+ }
+ .sidebar p {
+  color: #ddd !important;
+ }
+ .job {
+  color: #888 !important;
+ }
+ .gsc-control-wrapper-cse {
+  padding-top: 10px !important;
+ }
+ /* hide google custom search placeholder */
+ .gsc-input input:not(.gse-input-focus) {
+   background-image: none !important;
+ }
+ .podcast-container {
+  -webkit-filter: invert(100%) !important;
+  filter: invert(100%) !important;
+ }
+ /* end blog.stackexchange.com */
+ /* chat.stackexchange.com */
+ .event-banner {
+  background-color: #222 !important;
+  border-color: #555 !important;
+ }
 }
 @-moz-document regexp("^https?:\\/\\/((?!(academia|dba|electronics|tex)).*\\.)?stackexchange.com.*") {
  /* target sites to *NOT* hide the header background */
@@ -576,7 +602,7 @@
   filter: invert(100%) !important;
  }
 }
-@-moz-document regexp("^https?:\\/\\/((academia|chess|english|meta|salesforce|skeptics|judaism|ux)\\.)?stackexchange\\.com.*") {
+@-moz-document regexp("^https?:\\/\\/((academia|chess|english|meta|movies|salesforce|skeptics|judaism|ux)\\.)?stackexchange\\.com.*") {
  /* target sites needing menu adjustments */
  .nav.mainnavs li, .nav.askquestion li {
   background-color: transparent !important;
@@ -615,15 +641,15 @@
   color: /*[[base-color]]*/ #008080 !important;
  }
 }
-@-moz-document regexp("^https?:\/\/((android|apple|dba|drupal|gis|mathematica|photo|security|tex|wordpress)\\.)?stackexchange\\.com.*") {
+@-moz-document regexp("^https?:\/\/((android|apple|dba|drupal|gis|mathematica|photo|scifi|security|tex|wordpress)\\.)?stackexchange\\.com.*") {
  /* hide top nav background on <li>, style is on <a> */
  .nav li {
   background-color: transparent !important;
  }
 }
-@-moz-document regexp("^https?:\/\/((android|dba|salesforce|security|tex|ux)\\.)?stackexchange\\.com.*") {
+@-moz-document regexp("^https?:\/\/((android|dba|movies|salesforce|scifi|security|tex|ux)\\.)?stackexchange\\.com.*") {
  /* darken vote off buttons */
- .vote-up-off, .vote-down-off {
+ .vote-up-off, .vote-down-off, .star-off {
   -webkit-filter: brightness(.5) !important;
   filter: brightness(.5) !important;
  }
@@ -662,6 +688,37 @@
  /* electrical engineering */
  .nav li, .nav li a, .nav li a:hover, .nav li.youarehere a, .answered-accepted .mini-counts {
   background-color: transparent !important;
+ }
+}
+@-moz-document domain("graphicdesign.stackexchange.com") {
+ /* nav manu text coloring only */
+ .nav li, .nav li.youarehere a, .nav a, .nav a:hover, #mainbar, #sidebar, #mainbar-full, .mainbar-full,
+ #footer .top-footer-links, #footer #footer-sites, .narrow .votes, .narrow .mini-counts,
+ .answered, .answered-accepted {
+  background-color: transparent !important;
+  color: #ddd !important;
+ }
+ .nav li.youarehere a, .nav li a:hover {
+  color: /*[[base-color]]*/ #008080 !important;
+ }
+ .answered-accepted .mini-counts span {
+  color: #fff !important;
+ }
+ .about-page .new-about-content-page h2.about-title {
+  color: #888 !important;
+ }
+ body:before {
+  -webkit-filter: brightness(.3) !important;
+  filter: brightness(.3) !important;
+ }
+
+ .answered-accepted .mini-counts {
+  background-color: #4b553c !important;
+  color: #ddd !important;
+ }
+ .answered .mini-counts span {
+  font-weight: bold !important;
+  color: #4b553c !important
  }
 }
 @-moz-document domain("ja.stackoverflow.com") {
