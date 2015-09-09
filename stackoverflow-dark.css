@@ -157,12 +157,13 @@
   background: #222 !important;
  }
 
- .ad502-room, .message.message-config .actions, .tag-container .col {
+ .ad502-room, .message.message-config .actions, .tag-container .col, .congrats {
   background-color: #232323 !important;
   border: 1px solid #191919 !important;
  }
 
- .rep-recent-row, .bounty, .diff-choices a:hover, div.meter, .narrow .votes, .ob-post-votes, .card {
+ .rep-recent-row, .bounty, .diff-choices a:hover, div.meter, .narrow .votes, .ob-post-votes, .card,
+ .congrats {
   background-color: #232323 !important;
   color: #bbb !important;
  }
@@ -193,7 +194,7 @@
  #footer .container, .body-diffs .skip, .newsletter-anon, .tag-suggestions>div:hover,
  .topbar-dialog .modal-content li:hover, .timestamp:hover+div.message .meta, div.message:hover .meta,
  #side-menu ul li a:hover, .conversation-info, .message.reply-parent, .message.reply-child,
- .sidebar-element .list li .rep-and-badges {
+ .sidebar-element .list li .rep-and-badges, .congrats .actions {
   background-color: #333 !important;
  }
 
@@ -230,8 +231,13 @@
 
  /* === Green === */
  .accepted-answer, .suggested-edit .inserted, .markdown-diff .inserted, .rep-increase, .progress-bar .percent,
- .recommended, .vote.accepted {
+ .recommended, .vote.accepted, .suggested-edit .inserted>div {
   background: #232 !important;
+ }
+
+ span.diff-add {
+  background: #3F4E1D !important;
+  color: #92CC09 !important;
  }
 
  /* accepted answer code blocks */
@@ -256,8 +262,12 @@
  }
 
  /* === Red === */
- .deleted-answer, .suggested-edit .deleted, .markdown-diff .deleted {
+ .deleted-answer, .suggested-edit .deleted, .markdown-diff .deleted, .suggested-edit .deleted>div {
   background-color: #200 !important;
+ }
+ span.diff-delete {
+  background-color: #400f00 !important;
+  color: #ff4a15 !important;
  }
 
  a.moderator-tag {
@@ -451,7 +461,7 @@
  a.badge[title^="gold"], a.badge-tag[title^="gold"], .badge1 + .badgecount {
   color: #ffcc46 !important;
  }
- .badge-tag, a.tag, .ob-post-tag, .ob-user-tag {
+ .badge-tag, a.tag, .ob-post-tag, .ob-user-tag, .events-tooltip {
   background-color: #191919 !important;
   border-color: #111 !important;
  }
@@ -487,6 +497,13 @@
  #sound, .vote-count-container.stars .img {
   -webkit-filter: invert(100%) !important;
   filter: invert(100%) !important;
+ }
+
+ .axis .tick, .pie text {
+   fill: #ccc !important;
+ }
+ .axis line, .axis path {
+   stroke: #999 !important;
  }
 
  /* override prettyprint bright border styles */
@@ -647,7 +664,7 @@
   background-color: transparent !important;
  }
 }
-@-moz-document regexp("^https?:\/\/((android|dba|movies|salesforce|scifi|security|tex|ux)\\.)?stackexchange\\.com.*") {
+@-moz-document regexp("^https?:\/\/((android|apple|dba|gamedev|movies|salesforce|scifi|security|tex|ux|webapps|webmasters)\\.)?stackexchange\\.com.*") {
  /* darken vote off buttons */
  .vote-up-off, .vote-down-off, .star-off {
   -webkit-filter: brightness(.5) !important;
