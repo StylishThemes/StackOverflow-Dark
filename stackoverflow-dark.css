@@ -689,6 +689,11 @@
 |___|_|_| |___|  |___|  _|___|___|_|_| |_|___|
                      |_|
 */
+@-moz-document domain("stackoverflow.com") {
+ #hlogo a {
+  background-image: url(http://StylishThemes.github.io/StackOverflow-Dark/images/stackoverflow-logo.svg) !important;
+ }
+}
 @-moz-document domain("chat.stackoverflow.com") {
  /* chat.stackoverflow.com */
 #hlogo a, #footer-logo {
@@ -833,11 +838,7 @@
   background-image: url(http://StylishThemes.github.io/StackOverflow-Dark/images/stackexchange-logo.svg) !important;
  }
 }
-@-moz-document domain("stackoverflow.com") {
- #hlogo a {
-  background-image: url(http://StylishThemes.github.io/StackOverflow-Dark/images/stackoverflow-logo.svg) !important;
- }
-}
+
 @-moz-document domain("superuser.com") {
  #hlogo a {
   height: 60px !important;
