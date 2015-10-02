@@ -697,9 +697,15 @@
  }
 }
 @-moz-document domain("chat.stackoverflow.com") {
- /* chat.stackoverflow.com */
-#hlogo a, #footer-logo {
+ /* chat.stackoverflow.com */\
+ #hlogo a {
+  background-image: none !important;
+ }
+ #header-logo, #footer-logo {
   background-image: url(http://StylishThemes.github.io/StackOverflow-Dark/images/stackoverflow-logo.svg) !important;
+ }
+ #header-logo {
+  background-size: contain !important;
  }
 }
 @-moz-document domain("dba.stackexchange.com") {
