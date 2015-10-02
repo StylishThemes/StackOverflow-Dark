@@ -760,6 +760,12 @@
  #hlogo a {
   background-image: url(http://StylishThemes.github.io/StackOverflow-Dark/images/meta-stackoverflow-logo.svg) !important;
  }
+ #sidebar .community-bulletin .bulletin-item-content a, #sidebar .community-bulletin .bulletin-item-content a:hover {
+  color: /*[[base-color]]*/ !important;
+ }
+ #sidebar .community-bulletin .bulletin-item-content a:hover {
+  color: #fff !important;
+}
 }
 @-moz-document domain("photo.stackexchange.com") {
  #custom-content {
