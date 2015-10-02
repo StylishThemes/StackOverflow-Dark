@@ -20,6 +20,11 @@
 
 See the [full changelog](https://github.com/StylishThemes/Stackoverflow-Dark/wiki).
 
+#### Version 2.8.8 (10/2/2015)
+
+* Grunt: fix replacing of visited-color. See [issue #18](https://github.com/StylishThemes/StackOverflow-Dark/issues/18).
+* Chat-Stackoverflow: fix logo.
+
 #### Version 2.8.7 (10/1/2015)
 
 * Update Meta Stackoverflow logo.
@@ -31,30 +36,3 @@ See the [full changelog](https://github.com/StylishThemes/Stackoverflow-Dark/wik
 
 * Activity: darken new priviledge card.
 * Graphic Design: remove white background from profile page. Fixes [issue #17](https://github.com/StylishThemes/StackOverflow-Dark/issues/17).
-
-#### Version 2.8.5 (8/5/2015)
-
-* Fix tags page input focus color.
-* Make question header & footer background transparent.
-* Site specific updates:
-  * Andriod
-  * Apple
-  * Database admin
-  * Drupal
-  * Electronics
-  * Geographic Information Systems (GIS)
-  * Graphic Design
-  * Mathematica
-  * Movies
-  * Photography
-  * Programmers: Modified logo.
-  * Salesforce
-  * Scifi
-  * Security
-  * Serverfault
-  * Sharepoint
-  * StackExchange Blog & chat
-  * TEX
-  * UX
-  * Unix/Linux
-  * Wordpress
