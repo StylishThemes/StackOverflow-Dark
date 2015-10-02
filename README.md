@@ -20,6 +20,13 @@
 
 See the [full changelog](https://github.com/StylishThemes/Stackoverflow-Dark/wiki).
 
+#### Version 2.8.7 (10/1/2015)
+
+* Update Meta Stackoverflow logo.
+* Prevent Stackoverflow logo from overriding meta, chat, ja, pt & ru logos.
+* Meta Stackoverflow: fix featured box links.
+* Visited hyperlink color modification. See [issue #18](https://github.com/StylishThemes/StackOverflow-Dark/issues/18).
+
 #### Version 2.8.6 (10/1/2015)
 
 * Activity: darken new priviledge card.
@@ -51,9 +58,3 @@ See the [full changelog](https://github.com/StylishThemes/Stackoverflow-Dark/wik
   * UX
   * Unix/Linux
   * Wordpress
-
-#### Version 2.8.4 (8/3/2015)
-
-* Add section to darken images using css filters. Fixes [issue #15](https://github.com/StylishThemes/StackOverflow-Dark/issues/15).
-* StackExchange login page: Darken panels & fix logo. Fixes [issue #16](https://github.com/StylishThemes/StackOverflow-Dark/issues/16).
-* Rearrange sections & move site logos to bottom.
