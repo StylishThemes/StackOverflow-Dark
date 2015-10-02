@@ -10,6 +10,7 @@ module.exports = function (grunt) {
 		config = {
 			'theme'    : 'desert',
 			'color'    : '#4183C4',
+			'visited'  : '#ff32a0',
 			'font'     : 'Menlo',
 			'image'    : 'url(https://raw.githubusercontent.com/StylishThemes/GitHub-Dark/master/images/backgrounds/bg-tile1.png)',
 			'tiled'    : true,
@@ -55,6 +56,9 @@ module.exports = function (grunt) {
 		pattern: /\/\*\[\[base-color\]\]\*\/ #\w{3,6}/g,
 		replacement: config.color
 	},{
+		pattern: /\/\*\[\[visited-color\]\]\*\/ #\w{3,6}/g,
+		replacement: config.visited
+	},{
 		pattern: '/*[[font-choice]]*/',
 		replacement: config.font
 	},{
@@ -77,6 +81,9 @@ module.exports = function (grunt) {
 	},{
 		pattern: /\/\*\[\[base-color\]\]\*\/ #\w{3,6}/g,
 		replacement: '/*[[base-color]]*/'
+	},{
+		pattern: /\/\*\[\[visited-color\]\]\*\/ #\w{3,6}/g,
+		replacement: '/*[[visited-color]]*/'
 	},{
 		// remove default syntax theme
 		pattern: /\s+\/\* grunt-remove-block-below (.*(\n|\r))+\s+\/\* grunt-remove-block-above \*\//m,
