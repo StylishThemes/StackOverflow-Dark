@@ -363,8 +363,7 @@
  #openid_identifier, .form-item label, .subheader h2 {
   color: #c1beba !important
  }
-
- .comment, #top-menu a, .subheader a, .reputation a, .reputation-score, a:visited, .relativetime.old,
+ .comment, #top-menu a, .subheader a, .reputation a, .reputation-score, .relativetime.old,
  .votes-cast-stats td, .mini-counts span, #chat .system-message, .card .rep, a.badge, a.badge-tag,
  .user-card .user-stats .number, .user-card .user-card-name {
   color: #aaa !important;
@@ -381,6 +380,9 @@
   -webkit-text-fill-color: #fff !important;
  }
 
+ a:visited {
+  color: /*[[visited-color]]*/ #ff32a0 !important;
+ }
  .rep-up {
   color: #4b553c !important;
  }
