@@ -140,7 +140,7 @@
  .profile-popup, .profile-popup tr, .profile-popup th, .profile-gravatar, .newuser, .roomcard,
  .seWrapper, h2.index.header, .privilege-table-row:hover, .list-originals .item.hover,
  .list-originals .body-summary, .review-instructions-reason, .room-mini, #formContainer, #switch,
- .login-topbar {
+ .login-topbar, .newsletter-category, .newsletter-item, .blogcontainer {
   background-color: #222 !important;
   border-color: #555 !important;
   color: #ddd !important;
@@ -194,7 +194,7 @@
  #footer .container, .body-diffs .skip, .newsletter-anon, .tag-suggestions>div:hover,
  .topbar-dialog .modal-content li:hover, .timestamp:hover+div.message .meta, div.message:hover .meta,
  #side-menu ul li a:hover, .conversation-info, .message.reply-parent, .message.reply-child,
- .sidebar-element .list li .rep-and-badges, .congrats .actions {
+ .sidebar-element .list li .rep-and-badges, .congrats .actions, .newsletters-toggle {
   background-color: #333 !important;
  }
 
