@@ -20,6 +20,10 @@
 
 See the [full changelog](https://github.com/StylishThemes/Stackoverflow-Dark/wiki).
 
+#### Version 2.8.9 (10/12/2015)
+
+* StackExchange: darken newsletters & blog containers. See [issue #14](https://github.com/StylishThemes/StackOverflow-Dark/issues/14).
+
 #### Version 2.8.8 (10/2/2015)
 
 * Grunt: fix replacing of visited-color. See [issue #18](https://github.com/StylishThemes/StackOverflow-Dark/issues/18).
@@ -31,8 +35,3 @@ See the [full changelog](https://github.com/StylishThemes/Stackoverflow-Dark/wik
 * Prevent Stackoverflow logo from overriding meta, chat, ja, pt & ru logos.
 * Meta Stackoverflow: fix featured box links.
 * Visited hyperlink color modification. See [issue #18](https://github.com/StylishThemes/StackOverflow-Dark/issues/18).
-
-#### Version 2.8.6 (10/1/2015)
-
-* Activity: darken new priviledge card.
-* Graphic Design: remove white background from profile page. Fixes [issue #17](https://github.com/StylishThemes/StackOverflow-Dark/issues/17).
