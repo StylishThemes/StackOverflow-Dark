@@ -20,6 +20,10 @@
 
 See the [full changelog](https://github.com/StylishThemes/Stackoverflow-Dark/wiki).
 
+#### Version 2.8.10 (10/18/2015)
+
+* Remove "Love this site?" background. See [issue #14](https://github.com/StylishThemes/StackOverflow-Dark/issues/14).
+
 #### Version 2.8.9 (10/12/2015)
 
 * StackExchange: darken newsletters & blog containers. See [issue #14](https://github.com/StylishThemes/StackOverflow-Dark/issues/14).
@@ -28,10 +32,3 @@ See the [full changelog](https://github.com/StylishThemes/Stackoverflow-Dark/wik
 
 * Grunt: fix replacing of visited-color. See [issue #18](https://github.com/StylishThemes/StackOverflow-Dark/issues/18).
 * Chat-Stackoverflow: fix logo.
-
-#### Version 2.8.7 (10/1/2015)
-
-* Update Meta Stackoverflow logo.
-* Prevent Stackoverflow logo from overriding meta, chat, ja, pt & ru logos.
-* Meta Stackoverflow: fix featured box links.
-* Visited hyperlink color modification. See [issue #18](https://github.com/StylishThemes/StackOverflow-Dark/issues/18).
