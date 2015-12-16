@@ -290,7 +290,8 @@
  div.message .meta, .spaces, .comment, span.feed-icon, a.role-switch, .nav.careers li, .nav.careers li:hover,
  .switcher-nudge-content p, #content, #tabs a, .tabs a, #chat .username, #chat .messages, .tag-container,
  .prettyprint code, .lv-info, .lv-stats-wrapper, .lv-stats-wrapper .number, .container, .bottom-notice,
- #question-header, .question-form .form-item, .post-menu>a:hover, a.comments-link:hover, #main-content {
+ #question-header, .question-form .form-item, .post-menu>a:hover, a.comments-link:hover, #main-content,
+ #mainbar, #mainbar-full, .mainbar-full, #logout-page, #sidebar, .footerwrap, #footer-menu, .module {
   background-color: transparent !important;
  }
 
@@ -730,7 +731,7 @@
 }
 @-moz-document domain("graphicdesign.stackexchange.com") {
  /* nav manu text coloring only */
- .nav li, .nav li.youarehere a, .nav a, .nav a:hover, #mainbar, #sidebar, #mainbar-full, .mainbar-full,
+ .nav li, .nav li.youarehere a, .nav a, .nav a:hover,
  #footer .top-footer-links, #footer #footer-sites, .narrow .votes, .narrow .mini-counts,
  .answered, .answered-accepted {
   background-color: transparent !important;
