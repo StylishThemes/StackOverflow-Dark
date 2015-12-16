@@ -291,7 +291,8 @@
  .switcher-nudge-content p, #content, #tabs a, .tabs a, #chat .username, #chat .messages, .tag-container,
  .prettyprint code, .lv-info, .lv-stats-wrapper, .lv-stats-wrapper .number, .container, .bottom-notice,
  #question-header, .question-form .form-item, .post-menu>a:hover, a.comments-link:hover, #main-content,
- #mainbar, #mainbar-full, .mainbar-full, #logout-page, #sidebar, .footerwrap, #footer-menu, .module {
+ #mainbar, #mainbar-full, .mainbar-full, #logout-page, #sidebar, .footerwrap, #footer-menu, .module,
+ #sidebar #newsletter-ad, #sidebar .ad-container, #sidebar .everyonelovesstackoverflow {
   background-color: transparent !important;
  }
 
