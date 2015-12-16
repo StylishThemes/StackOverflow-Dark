@@ -717,6 +717,30 @@
   background-size: contain !important;
  }
 }
+@-moz-document domain("askubuntu.com") {
+ #header {
+  background-image: none !important;
+ }
+ .narrow div.votes, .answered-accepted .mini-counts {
+  background-color: transparent !important;
+ }
+ #custom-header .nav-global, #custom-header .nav-global ul, .topbar {
+  background-color: #000 !important;
+ }
+ #custom-header .more.open, .topbar .profile-me:hover, .topbar a:hover, .topbar-icon:hover, #hmenus, .nav li, .nav a {
+  background-color: #111 !important;
+ }
+ #custom-header .nav-global a {
+  border-top-color: transparent !important;
+ }
+ #custom-header .nav-global a.active {
+  color: #eee !important;
+  border-top-color: #eee !important;
+ }
+ .nav li.youarehere, .nav li:hover {
+  background-color: #008080 !important;
+ }
+}
 @-moz-document domain("dba.stackexchange.com") {
  /* database administrators */
  #hlogo a {
