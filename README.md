@@ -20,6 +20,12 @@
 
 See the [full changelog](https://github.com/StylishThemes/Stackoverflow-Dark/wiki).
 
+#### Version 2.8.11 (12/15/2015)
+
+* Clean up CodeReview backgrounds. Fixes [issue #20](https://github.com/StylishThemes/StackOverflow-Dark/issues/20).
+* Add askubuntu.com support. Fixes [issue #19](https://github.com/StylishThemes/StackOverflow-Dark/issues/19).
+* Give side bar ads a transparent background.
+
 #### Version 2.8.10 (10/18/2015)
 
 * Remove "Love this site?" background. See [issue #14](https://github.com/StylishThemes/StackOverflow-Dark/issues/14).
@@ -27,8 +33,3 @@ See the [full changelog](https://github.com/StylishThemes/Stackoverflow-Dark/wik
 #### Version 2.8.9 (10/12/2015)
 
 * StackExchange: darken newsletters & blog containers. See [issue #14](https://github.com/StylishThemes/StackOverflow-Dark/issues/14).
-
-#### Version 2.8.8 (10/2/2015)
-
-* Grunt: fix replacing of visited-color. See [issue #18](https://github.com/StylishThemes/StackOverflow-Dark/issues/18).
-* Chat-Stackoverflow: fix logo.
