@@ -76,7 +76,7 @@
  }
 
  /* === hidden === */
- div.hireme, div#hireme, .next-answer-hook-container {
+ div.hireme, div#hireme, .next-answer-hook-container, .intellitab:after {
   display: none !important;
  }
 
@@ -516,6 +516,21 @@
  }
  .axis line, .axis path {
    stroke: #999 !important;
+ }
+
+ /*New navigation tabs*/
+ #tabs a, .tabs a, .intellitab a, .intellitab .menu-switcher {
+   background-color: #333 !important;
+ }
+ .intellitab .menu-switcher:hover{
+   background-color: #222 !important;
+ }
+ .intellitab.dropdown-enabled:hover .menu-switcher, .intellitab .dropdown a:hover {
+   background-color: #444 !important;
+ }
+ .intellitab .dropdown:before {
+   filter: invert(76%) !important;
+   -webkit-filter: invert(76%) !important;
  }
 
  /* override prettyprint bright border styles */
