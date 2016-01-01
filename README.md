@@ -20,6 +20,11 @@
 
 See the [full changelog](https://github.com/StylishThemes/Stackoverflow-Dark/wiki).
 
+#### Version 2.8.12 (1/1/2016)
+
+* Add askubuntu to `@-moz-document`.
+* Add styles for new tabs. See [issue #14](https://github.com/StylishThemes/StackOverflow-Dark/issues/14).
+
 #### Version 2.8.11 (12/15/2015)
 
 * Clean up CodeReview backgrounds. Fixes [issue #20](https://github.com/StylishThemes/StackOverflow-Dark/issues/20).
@@ -29,7 +34,3 @@ See the [full changelog](https://github.com/StylishThemes/Stackoverflow-Dark/wik
 #### Version 2.8.10 (10/18/2015)
 
 * Remove "Love this site?" background. See [issue #14](https://github.com/StylishThemes/StackOverflow-Dark/issues/14).
-
-#### Version 2.8.9 (10/12/2015)
-
-* StackExchange: darken newsletters & blog containers. See [issue #14](https://github.com/StylishThemes/StackOverflow-Dark/issues/14).
