@@ -116,7 +116,7 @@
   padding: 2px 6px 4px 6px !important;
  }
 
- #tabs a.youarehere, .tabs a.youarehere, .tag-suggestions {
+ #tabs a.youarehere, .tabs a.youarehere, .tag-suggestions, .dropdown li {
   background: #191919 !important;
   border: 1px solid #444 !important;
  }
@@ -124,7 +124,7 @@
   border-bottom: 0 !important;
  }
 
- #user-about-me, .user-about-me, .mine .messages, .avatar-card, .tag-container {
+ #user-about-me, .user-about-me, .mine .messages, .avatar-card, .tag-container, .dropdown {
   background: #191919 !important;
   border: 0 !important;
   color: #C1BEBA !important;
@@ -192,7 +192,7 @@
   font-size: 18px !important;
  }
 
- .youarehere {
+ .youarehere, .dropdown li.selected a, .dropdown li.selected a:hover {
   background: #333 !important;
   color: #ccc !important;
  }
@@ -528,7 +528,7 @@
  .intellitab.dropdown-enabled:hover .menu-switcher, .intellitab .dropdown a:hover {
    background-color: #444 !important;
  }
- .intellitab .dropdown:before {
+ .dropdown:before {
    filter: invert(76%) !important;
    -webkit-filter: invert(76%) !important;
  }
