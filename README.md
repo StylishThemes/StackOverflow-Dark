@@ -20,6 +20,11 @@
 
 See the [full changelog](https://github.com/StylishThemes/Stackoverflow-Dark/wiki).
 
+#### Version 2.9.0 (1/13/2016)
+
+* Themes: normalize line-height. Remove font-size & border-radius. Fixes [issue #22](https://github.com/StylishThemes/StackOverflow-Dark/issues/22).
+* Fix new tab dropdown styling. See [issue #14](https://github.com/StylishThemes/StackOverflow-Dark/issues/14).
+
 #### Version 2.8.12 (1/1/2016)
 
 * Add askubuntu to `@-moz-document`.
@@ -30,7 +35,3 @@ See the [full changelog](https://github.com/StylishThemes/Stackoverflow-Dark/wik
 * Clean up CodeReview backgrounds. Fixes [issue #20](https://github.com/StylishThemes/StackOverflow-Dark/issues/20).
 * Add askubuntu.com support. Fixes [issue #19](https://github.com/StylishThemes/StackOverflow-Dark/issues/19).
 * Give side bar ads a transparent background.
-
-#### Version 2.8.10 (10/18/2015)
-
-* Remove "Love this site?" background. See [issue #14](https://github.com/StylishThemes/StackOverflow-Dark/issues/14).
