@@ -17,12 +17,6 @@ pre .dec, code .dec { color: #3387CC !important; } /* decimal - blue */
 
 pre.prettyprint, code.prettyprint {
   background-color: #000 !important;
-  -moz-border-radius: 8px !important;
-  -webkit-border-radius: 8px !important;
-  -o-border-radius: 8px !important;
-  -ms-border-radius: 8px !important;
-  -khtml-border-radius: 8px !important;
-  border-radius: 8px !important;
 }
 
 pre.prettyprint {
@@ -30,6 +24,7 @@ pre.prettyprint {
   margin: 1em auto !important;
   padding: 1em !important;
   white-space: pre-wrap !important;
+  line-height: 1.4em !important;
 }
 
 /* Specify class=linenums on a pre to get line numbering */

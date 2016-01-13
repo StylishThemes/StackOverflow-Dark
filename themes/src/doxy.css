@@ -22,14 +22,7 @@ a {
 pre.prettyprint, code.prettyprint {
   font-family:'Droid Sans Mono','CPMono_v07 Bold','Droid Sans' !important;
   font-weight: bold !important;
-  font-size: 9pt !important;
   background-color: #0f0f0f !important;
-  -moz-border-radius: 8px !important;
-  -webkit-border-radius: 8px !important;
-  -o-border-radius: 8px !important;
-  -ms-border-radius: 8px !important;
-  -khtml-border-radius: 8px !important;
-  border-radius: 8px !important;
 }  /*  background is black (well, just a tad less dark )  */
 
 pre.prettyprint {
@@ -37,10 +30,11 @@ pre.prettyprint {
   margin: 1em auto !important;
   padding: 1em !important;
   white-space: pre-wrap !important;
+  line-height: 1.4em !important;
 }
 
 pre.prettyprint a, code.prettyprint a {
-   text-decoration:none !important;
+  text-decoration:none !important;
 }
 /* Specify class=linenums on a pre to get line numbering !important; line numbers themselves are the same color as punctuation */
 ol.linenums { margin-top: 0 !important; margin-bottom: 0 !important; color: #8B8970 !important; } /* IE indents via margin-left */
