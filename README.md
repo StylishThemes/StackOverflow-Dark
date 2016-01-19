@@ -20,6 +20,10 @@
 
 See the [full changelog](https://github.com/StylishThemes/Stackoverflow-Dark/wiki).
 
+#### Version 2.9.1 (1/18/2016)
+
+* English.Stackexchange: Remove background image from asker card. See [issue #14](https://github.com/StylishThemes/StackOverflow-Dark/issues/14).
+
 #### Version 2.9.0 (1/13/2016)
 
 * Themes: normalize line-height. Remove font-size & border-radius. Fixes [issue #22](https://github.com/StylishThemes/StackOverflow-Dark/issues/22).
@@ -29,9 +33,3 @@ See the [full changelog](https://github.com/StylishThemes/Stackoverflow-Dark/wik
 
 * Add askubuntu to `@-moz-document`.
 * Add styles for new tabs. See [issue #14](https://github.com/StylishThemes/StackOverflow-Dark/issues/14).
-
-#### Version 2.8.11 (12/15/2015)
-
-* Clean up CodeReview backgrounds. Fixes [issue #20](https://github.com/StylishThemes/StackOverflow-Dark/issues/20).
-* Add askubuntu.com support. Fixes [issue #19](https://github.com/StylishThemes/StackOverflow-Dark/issues/19).
-* Give side bar ads a transparent background.
