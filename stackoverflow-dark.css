@@ -769,6 +769,12 @@
   background-color: transparent !important;
  }
 }
+@-moz-document domain("english.stackexchange.com") {
+ /* english language & usage */
+ .post-signature.owner {
+  background-image: none !important;
+ }
+}
 @-moz-document domain("graphicdesign.stackexchange.com") {
  /* nav manu text coloring only */
  .nav li, .nav li.youarehere a, .nav a, .nav a:hover,
