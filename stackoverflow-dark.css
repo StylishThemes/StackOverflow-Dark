@@ -102,7 +102,7 @@
 
  html, blockquote, #post-preview, .nav .primarynav li a, #chat, #hsearch .textbox, .form-item, .grippie,
  .welovestackoverflow, #wmd-button-bar, .wmd-button-bar, .qa-block, .content-block, .user-info-rep, .sidebar,
- .popup, #footer {
+ .popup, #footer, .full-diff {
   background: #191919 none !important
  }
 
@@ -239,7 +239,7 @@
 
  /* === Green === */
  .accepted-answer, .suggested-edit .inserted, .markdown-diff .inserted, .rep-increase, .progress-bar .percent,
- .recommended, .vote.accepted, .suggested-edit .inserted>div {
+ .recommended, .vote.accepted, .suggested-edit .inserted>div, .full-diff .inserted>div {
   background: #232 !important;
  }
 
@@ -270,7 +270,8 @@
  }
 
  /* === Red === */
- .deleted-answer, .suggested-edit .deleted, .markdown-diff .deleted, .suggested-edit .deleted>div {
+ .deleted-answer, .suggested-edit .deleted, .markdown-diff .deleted, .suggested-edit .deleted>div,
+ .full-diff .deleted>div {
   background-color: #200 !important;
  }
  span.diff-delete {
@@ -335,7 +336,7 @@
  div.list > div {
   border-right: 0 !important;
  }
- .module, .tabs a, div.message {
+ .module, .tabs a, div.message, .full-diff td {
   border-color: transparent !important;
  }
  .left-arrow, .right-arrow {
