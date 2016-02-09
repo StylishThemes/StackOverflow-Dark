@@ -20,6 +20,10 @@
 
 See the [full changelog](https://github.com/StylishThemes/Stackoverflow-Dark/wiki).
 
+#### Version 2.9.2 (2/9/2016)
+
+* Fix markdown diff style.
+
 #### Version 2.9.1 (1/18/2016)
 
 * English.Stackexchange: Remove background image from asker card. See [issue #14](https://github.com/StylishThemes/StackOverflow-Dark/issues/14).
@@ -28,8 +32,3 @@ See the [full changelog](https://github.com/StylishThemes/Stackoverflow-Dark/wik
 
 * Themes: normalize line-height. Remove font-size & border-radius. Fixes [issue #22](https://github.com/StylishThemes/StackOverflow-Dark/issues/22).
 * Fix new tab dropdown styling. See [issue #14](https://github.com/StylishThemes/StackOverflow-Dark/issues/14).
-
-#### Version 2.8.12 (1/1/2016)
-
-* Add askubuntu to `@-moz-document`.
-* Add styles for new tabs. See [issue #14](https://github.com/StylishThemes/StackOverflow-Dark/issues/14).
