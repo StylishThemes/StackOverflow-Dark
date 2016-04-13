@@ -20,6 +20,11 @@
 
 See the [full changelog](https://github.com/StylishThemes/Stackoverflow-Dark/wiki).
 
+#### Version 2.9.4 (4/13/2016)
+
+* Add support for docs-beta.stackexchange.com.
+* Reformat: switch from 1 to 2 space indention.
+
 #### Version 2.9.3 (4/1/2016)
 
 * Themes: Fix Doxy color.
@@ -28,7 +33,3 @@ See the [full changelog](https://github.com/StylishThemes/Stackoverflow-Dark/wik
 #### Version 2.9.2 (2/9/2016)
 
 * Fix markdown diff style.
-
-#### Version 2.9.1 (1/18/2016)
-
-* English.Stackexchange: Remove background image from asker card. See [issue #14](https://github.com/StylishThemes/StackOverflow-Dark/issues/14).
