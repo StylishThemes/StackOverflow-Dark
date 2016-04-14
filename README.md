@@ -20,6 +20,11 @@
 
 See the [full changelog](https://github.com/StylishThemes/Stackoverflow-Dark/wiki).
 
+#### Version 2.9.5 (4/14/2016)
+
+* Docs-beta: more tweaks.
+* Themes: remove prettyprint border & reformat.
+
 #### Version 2.9.4 (4/13/2016)
 
 * Add support for docs-beta.stackexchange.com.
@@ -29,7 +34,3 @@ See the [full changelog](https://github.com/StylishThemes/Stackoverflow-Dark/wik
 
 * Themes: Fix Doxy color.
 * Chat bubble: Add style. Fixes [issue #24](https://github.com/StylishThemes/StackOverflow-Dark/issues/24).
-
-#### Version 2.9.2 (2/9/2016)
-
-* Fix markdown diff style.
