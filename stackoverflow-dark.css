@@ -768,10 +768,11 @@ ___|_| |_ ___    ___ ___ ___ ___|_|  _|_|___
   }
 }
 @-moz-document domain("docs-beta.stackexchange.com") {
-  .examples .example:hover, .example.expanded, div.sidebar, .timestamp {
+  .examples .example:hover, .example.expanded, div.sidebar, .timestamp,
+  .syntax .syntax-html {
     background: transparent !important;
   }
-  .doctag-cell, .proposal-cell, .button, .btn, .btn-clear, input {
+  .doctag-cell, .proposal-cell, .button, .btn, .btn-clear, input, .panel-empty {
     background-color: #181818 !important;
   }
   .version-name, .version-row, .example-metric, .edit-summary, .first-time-container, .current-draft,
@@ -797,13 +798,16 @@ ___|_| |_ ___    ___ ___ ___ ___|_|  _|_|___
   }
   /* blue */
   .hero-box, .hero-box .blue ,input[type="submit"].btn-secondary, input[type="button"].btn-secondary,
-  button.btn-secondary, .btn-secondary, .privacy-switch-btn, .topic-request-vote-up {
+  button.btn-secondary, .btn-secondary, .privacy-switch-btn, .topic-request-vote-up, .message-info {
     background: #182030 !important;
+  }
+  .message-tip-top-center:before {
+    border-bottom-color: #182030 !important;
   }
   /* brown */
   .handling-improvement-request, .shared-draft, .topic-request, .shared-draft, .pending-review,
   .deleting-topic, .has-changed, .missing-example, .pending-proposed-change, .undeleting-topic,
-  .undeleting-example, .edit-notifications, .hero-box .btn {
+  .undeleting-example, .edit-notifications, .hero-box .btn, .moved {
     background: #321 !important;
     border-color: #542 !important;
     color: #b74 !important;
