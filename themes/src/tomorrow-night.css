@@ -4,7 +4,6 @@
   background: #1d1f21 !important;
   font-family: Menlo, 'Bitstream Vera Sans Mono', 'DejaVu Sans Mono', Monaco, Consolas, monospace !important;
   line-height: 1.4em !important;
-  border: 1px solid #ccc !important;
   padding: 10px !important;
 }
 
@@ -13,102 +12,31 @@
 }
 
 @media screen {
-  .str {
-    color: #b5bd68 !important;
-  }
-
-  .kwd {
-    color: #b294bb !important;
-  }
-
-  .com {
-    color: #969896 !important;
-  }
-
-  .typ {
-    color: #81a2be !important;
-  }
-
-  .lit {
-    color: #de935f !important;
-  }
-
-  .pun {
-    color: #c5c8c6 !important;
-  }
-
-  .opn {
-    color: #c5c8c6 !important;
-  }
-
-  .clo {
-    color: #c5c8c6 !important;
-  }
-
-  .tag {
-    color: #cc6666 !important;
-  }
-
-  .atn {
-    color: #de935f !important;
-  }
-
-  .atv {
-    color: #8abeb7 !important;
-  }
-
-  .dec {
-    color: #de935f !important;
-  }
-
-  .var {
-    color: #cc6666 !important;
-  }
-
-  .fun {
-    color: #81a2be !important;
-  }
+  .str { color: #b5bd68 !important; }
+  .kwd { color: #b294bb !important; }
+  .com { color: #969896 !important; }
+  .typ { color: #81a2be !important; }
+  .lit { color: #de935f !important; }
+  .pun { color: #c5c8c6 !important; }
+  .opn { color: #c5c8c6 !important; }
+  .clo { color: #c5c8c6 !important; }
+  .tag { color: #cc6666 !important; }
+  .atn { color: #de935f !important; }
+  .atv { color: #8abeb7 !important; }
+  .dec { color: #de935f !important; }
+  .var { color: #cc6666 !important; }
+  .fun { color: #81a2be !important; }
 }
 @media print, projection {
-  .str {
-    color: #006600 !important;
-  }
-
-  .kwd {
-    color: #006 !important;
-    font-weight: bold !important;
-  }
-
-  .com {
-    color: #600 !important;
-    font-style: italic !important;
-  }
-
-  .typ {
-    color: #404 !important;
-    font-weight: bold !important;
-  }
-
-  .lit {
-    color: #004444 !important;
-  }
-
-  .pun, .opn, .clo {
-    color: #444400 !important;
-  }
-
-  .tag {
-    color: #006 !important;
-    font-weight: bold !important;
-  }
-
-  .atn {
-    color: #440044 !important;
-  }
-
-  .atv {
-    color: #006600 !important;
-  }
+  .str { color: #006600 !important; }
+  .kwd { color: #006 !important; font-weight: bold !important; }
+  .com { color: #600 !important; font-style: italic !important; }
+  .typ { color: #404 !important; font-weight: bold !important; }
+  .lit { color: #004444 !important; }
+  .pun, .opn, .clo { color: #444400 !important; }
+  .tag { color: #006 !important; font-weight: bold !important; }
+  .atn { color: #440044 !important; }
+  .atv { color: #006600 !important; }
 }
 /* Specify class=linenums on a pre to get line numbering */
 ol.linenums {
@@ -117,24 +45,6 @@ ol.linenums {
 }
 
 /* IE indents via margin-left */
-li.L0,
-li.L1,
-li.L2,
-li.L3,
-li.L4,
-li.L5,
-li.L6,
-li.L7,
-li.L8,
-li.L9 {
-  /* */
-}
-
+li.L0, li.L1, li.L2, li.L3, li.L4, li.L5, li.L6, li.L7, li.L8, li.L9 {}
 /* Alternate shading for lines */
-li.L1,
-li.L3,
-li.L5,
-li.L7,
-li.L9 {
-  /* */
-}
+li.L1, li.L3, li.L5, li.L7, li.L9 {}

@@ -6,115 +6,43 @@
  * https://code.google.com/p/google-code-prettify/source/browse/trunk/styles/sons-of-obsidian.css
  */
 
-.str
-{
-    color: #EC7600 !important;
-}
-.kwd
-{
-    color: #93C763 !important;
-}
-.com
-{
-    color: #66747B !important;
-}
-.typ
-{
-    color: #678CB1 !important;
-}
-.lit
-{
-    color: #FACD22 !important;
-}
-.pun
-{
-    color: #F1F2F3 !important;
-}
-.pln
-{
-    color: #F1F2F3 !important;
-}
-.tag
-{
-    color: #8AC763 !important;
-}
-.atn
-{
-    color: #E0E2E4 !important;
-}
-.atv
-{
-    color: #EC7600 !important;
-}
-.dec
-{
-    color: purple !important;
-}
-pre.prettyprint
-{
-    border: 0px solid #888 !important;
-}
-ol.linenums
-{
-    margin-top: 0 !important;
-    margin-bottom: 0 !important;
+.str { color: #EC7600 !important; }
+.kwd { color: #93C763 !important; }
+.com { color: #66747B !important; }
+.typ { color: #678CB1 !important; }
+.lit { color: #FACD22 !important; }
+.pun { color: #F1F2F3 !important; }
+.pln { color: #F1F2F3 !important; }
+.tag { color: #8AC763 !important; }
+.atn { color: #E0E2E4 !important; }
+.atv { color: #EC7600 !important; }
+.dec { color: purple !important; }
+
+pre.prettyprint { border: 0px solid #888 !important; }
+ol.linenums {
+  margin-top: 0 !important;
+  margin-bottom: 0 !important;
 }
 .prettyprint {
-    background: #000 !important;
-    line-height: 1.4em !important;
+  background: #000 !important;
+  line-height: 1.4em !important;
 }
-li.L0, li.L1, li.L2, li.L3, li.L4, li.L5, li.L6, li.L7, li.L8, li.L9
-{
-    color: #555 !important;
-    list-style-type: decimal !important;
+li.L0, li.L1, li.L2, li.L3, li.L4, li.L5, li.L6, li.L7, li.L8, li.L9 {
+  color: #555 !important;
+  list-style-type: decimal !important;
 }
 li.L1, li.L3, li.L5, li.L7, li.L9 {
-    background: #111 !important;
+  background: #111 !important;
 }
-@media print
-{
-    .str
-    {
-        color: #060 !important;
-    }
-    .kwd
-    {
-        color: #006 !important;
-        font-weight: bold !important;
-    }
-    .com
-    {
-        color: #600 !important;
-        font-style: italic !important;
-    }
-    .typ
-    {
-        color: #404 !important;
-        font-weight: bold !important;
-    }
-    .lit
-    {
-        color: #044 !important;
-    }
-    .pun
-    {
-        color: #440 !important;
-    }
-    .pln
-    {
-        color: #000 !important;
-    }
-    .tag
-    {
-        color: #006 !important;
-        font-weight: bold !important;
-    }
-    .atn
-    {
-        color: #404 !important;
-    }
-    .atv
-    {
-        color: #060 !important;
-    }
+@media print {
+  .str { color: #060 !important; }
+  .kwd { color: #006 !important; font-weight: bold !important; }
+  .com { color: #600 !important; font-style: italic !important; }
+  .typ { color: #404 !important; font-weight: bold !important; }
+  .lit { color: #044 !important; }
+  .pun { color: #440 !important; }
+  .pln { color: #000 !important; }
+  .tag { color: #006 !important; font-weight: bold !important; }
+  .atn { color: #404 !important; }
+  .atv { color: #060 !important; }
 }
