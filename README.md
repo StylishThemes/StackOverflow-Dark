@@ -20,6 +20,10 @@
 
 See the [full changelog](https://github.com/StylishThemes/Stackoverflow-Dark/wiki).
 
+#### Version 2.9.6 (4/15/2016)
+
+* Global: Add a default code text color.
+
 #### Version 2.9.5 (4/14/2016)
 
 * Docs-beta: more tweaks.
@@ -29,8 +33,3 @@ See the [full changelog](https://github.com/StylishThemes/Stackoverflow-Dark/wik
 
 * Add support for docs-beta.stackexchange.com.
 * Reformat: switch from 1 to 2 space indention.
-
-#### Version 2.9.3 (4/1/2016)
-
-* Themes: Fix Doxy color.
-* Chat bubble: Add style. Fixes [issue #24](https://github.com/StylishThemes/StackOverflow-Dark/issues/24).
