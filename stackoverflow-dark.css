@@ -538,8 +538,9 @@
   }
 
   /* override prettyprint bright border styles */
-  pre.prettyprint {
+  .prettyprint {
     border-color: transparent !important;
+    color: #ddd !important;
   }
   /* style non-prettyprint code */
   code, pre:not(.prettyprint) {
