@@ -85,7 +85,7 @@
   .search-container input[type=text] {
     background-color: #000 !important;
   }
-  .popup-badges .all-badge-progress .completed:before, .previous-button, .next-button {
+  .popup-badges .all-badge-progress .completed:before, .previous-button, .next-button, header, #footer {
     background-color: rgba(0,0,0,0.4) !important;
   }
 
@@ -102,7 +102,7 @@
 
   html, blockquote, #post-preview, .nav .primarynav li a, #chat, #hsearch .textbox, .form-item, .grippie,
   .welovestackoverflow, #wmd-button-bar, .wmd-button-bar, .qa-block, .content-block, .user-info-rep, .sidebar,
-  .popup, #footer, .full-diff {
+  .popup, .full-diff {
     background: #191919 none !important
   }
 
@@ -132,7 +132,7 @@
 
   .topbar-dialog, .topbar-dialog .header, .share-tip, #input-area, .messages,
   #tag-menu, .sidebar h3, #overlay-header, .action-list .action-selected, .switcher-nudge-lightbox,
-  .user-rep-chart-summary-tooltip:hover, .current-site-container, #or {
+  .user-rep-chart-summary-tooltip:hover, .current-site-container, #or, .account-number {
     background-color: #222 !important;
     color: #ddd !important;
   }
@@ -608,7 +608,7 @@ _____ _           _   _____         _                      _                 _
     border-width: 2px !important;
   }
   /* start blog.stackexchange.com */
-  header, .cse .gsc-control-cse, .gsc-control-cse, div.pagination {
+  .cse .gsc-control-cse, .gsc-control-cse, div.pagination {
     background-color: #181818 !important;
   }
   .sidebar p {
