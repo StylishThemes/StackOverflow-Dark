@@ -305,6 +305,9 @@
   .highcharts-container rect[fill="#FFFFFF"], rect[fill="rgb(255, 255, 255)"] {
     fill: transparent !important;
   }
+  .spoiler {
+    color: transparent !important;
+  }
 
   /* === Dark border === */
   .body-diffs table * {
@@ -361,7 +364,8 @@
   div, input, .accepted-answer .post-text, .accepted-answer .user-action-time, #question-header a,
   .post-text, .user-info, .topbar-dialog .header h3, .topbar-dialog .header h3 a, .topbar-dialog span,
   .search-result .answered .vote-count-post strong, .votes-cast-stats th, .subheader h1, .vote.accepted,
-  .message.message-config h1, .message.message-config h2, .message.message-config h3, .message.message-config h4 {
+  .message.message-config h1, .message.message-config h2, .message.message-config h3, .message.message-config h4,
+  .spoiler:hover {
     color: #ddd !important;
   }
 
