@@ -37,7 +37,8 @@
   }
 
   /* === custom color === */
-  a, .profile-popup a, .seWrapper a, .post-tag, .comments-link, .tag-synonym-link, .gs-title b {
+  a, .profile-popup a, .seWrapper a, .post-tag, .comments-link, .tag-synonym-link, .gs-title b,
+  .spoiler:hover a {
     color: /*[[base-color]]*/ #008080 !important;
   }
 
@@ -693,7 +694,7 @@ _____ _           _   _____         _                      _                 _
     background-color: transparent !important;
     color: #ddd !important;
   }
-  .nav li.youarehere a, .nav li a:hover, .spoiler:hover a {
+  .nav li.youarehere a, .nav li a:hover {
     color: /*[[base-color]]*/ #008080 !important;
   }
 }
