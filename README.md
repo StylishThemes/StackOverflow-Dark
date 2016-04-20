@@ -20,6 +20,15 @@
 
 See the [full changelog](https://github.com/StylishThemes/Stackoverflow-Dark/wiki).
 
+#### Version 2.9.7 (4/20/2016)
+
+* Make header & footer partially opaque.
+* Global:
+  * Fix spoiler styling.
+  * Hide all content inside spoilers.
+  * Define spoiler link colors globally.
+* Remove `@mention` style. Fixes [issue #26](https://github.com/StylishThemes/StackOverflow-Dark/issues/26).
+
 #### Version 2.9.6 (4/15/2016)
 
 * Global: Add a default code text color.
@@ -28,8 +37,3 @@ See the [full changelog](https://github.com/StylishThemes/Stackoverflow-Dark/wik
 
 * Docs-beta: more tweaks.
 * Themes: remove prettyprint border & reformat.
-
-#### Version 2.9.4 (4/13/2016)
-
-* Add support for docs-beta.stackexchange.com.
-* Reformat: switch from 1 to 2 space indention.
