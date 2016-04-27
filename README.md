@@ -20,6 +20,14 @@
 
 See the [full changelog](https://github.com/StylishThemes/Stackoverflow-Dark/wiki).
 
+#### Version 2.9.8 (4/26/2016)
+
+* Tags:
+  * Fix moderator tag specificity.
+  * Fix tag line height.
+  * Remove border from non-required tags.
+* Add ru.meta.stackoverflow.com. See [issue #14](https://github.com/StylishThemes/StackOverflow-Dark/issues/14).
+
 #### Version 2.9.7 (4/20/2016)
 
 * Make header & footer partially opaque.
@@ -32,8 +40,3 @@ See the [full changelog](https://github.com/StylishThemes/Stackoverflow-Dark/wik
 #### Version 2.9.6 (4/15/2016)
 
 * Global: Add a default code text color.
-
-#### Version 2.9.5 (4/14/2016)
-
-* Docs-beta: more tweaks.
-* Themes: remove prettyprint border & reformat.
