@@ -844,7 +844,7 @@ ___|_| |_ ___    ___ ___ ___ ___|_|  _|_|___
     background-image: url(http://StylishThemes.github.io/StackOverflow-Dark/images/es-stackoverflow-logo.svg) !important;
   }
 }
-@-moz-document domain("meta.ja.stackoverflow.com") {
+@-moz-document domain("meta.es.stackoverflow.com") {
   /* meta.es.stackoverflow.com (Spanish) */
   #hlogo a {
     background-image: url(http://StylishThemes.github.io/StackOverflow-Dark/images/es-meta-stackoverflow-logo.png) !important;
