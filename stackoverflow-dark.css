@@ -847,7 +847,7 @@ ___|_| |_ ___    ___ ___ ___ ___|_|  _|_|___
 @-moz-document domain("meta.es.stackoverflow.com") {
   /* meta.es.stackoverflow.com (Spanish) */
   #hlogo a {
-    background-image: url(http://StylishThemes.github.io/StackOverflow-Dark/images/es-meta-stackoverflow-logo.png) !important;
+    background-image: url(http://StylishThemes.github.io/StackOverflow-Dark/images/es-meta-stackoverflow-logo.svg) !important;
   }
 }
 @-moz-document domain("graphicdesign.stackexchange.com") {
