@@ -20,6 +20,11 @@
 
 See the [full changelog](https://github.com/StylishThemes/Stackoverflow-Dark/wiki).
 
+#### Version 2.9.9 (4/26/2016)
+
+* Add pt & ja meta stackoverflow logos.
+* Meta.ru: fix domain name.
+
 #### Version 2.9.8 (4/26/2016)
 
 * Tags:
@@ -36,7 +41,3 @@ See the [full changelog](https://github.com/StylishThemes/Stackoverflow-Dark/wik
   * Hide all content inside spoilers.
   * Define spoiler link colors globally.
 * Remove `@mention` style. Fixes [issue #26](https://github.com/StylishThemes/StackOverflow-Dark/issues/26).
-
-#### Version 2.9.6 (4/15/2016)
-
-* Global: Add a default code text color.
