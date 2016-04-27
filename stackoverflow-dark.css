@@ -318,8 +318,12 @@
     border-color: #111 !important;
   }
 
-  a.required-tag, .welovestackoverflow, .question-summary, .subheader {
+  .welovestackoverflow, .question-summary, .subheader {
     border-color: #333 !important;
+  }
+
+  a.required-tag {
+    border-color: #555 !important;
   }
 
   .message .message-tip-top-right:before, .message .message-tip-top-left:before {
@@ -346,7 +350,7 @@
   div.list > div {
     border-right: 0 !important;
   }
-  .module, .tabs a, div.message, .full-diff td {
+  .module, .tabs a, div.message, .full-diff td, .post-tag:not(.required-tag) {
     border-color: transparent !important;
   }
   .left-arrow, .right-arrow {
