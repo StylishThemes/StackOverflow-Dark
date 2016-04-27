@@ -280,11 +280,11 @@
     color: #ff4a15 !important;
   }
 
-  a.moderator-tag {
+  .summary a.moderator-tag {
     background-color: #400 !important;
   }
 
-  a.moderator-tag:hover {
+  .summary a.moderator-tag:hover {
     background-color: #600 !important;
   }
 
