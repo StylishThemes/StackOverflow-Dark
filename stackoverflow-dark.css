@@ -937,8 +937,8 @@ ___|_| |_ ___    ___ ___ ___ ___|_|  _|_|___
     background-image: url(http://StylishThemes.github.io/StackOverflow-Dark/images/ru-stackoverflow-logo.svg) !important;
   }
 }
-@-moz-document domain("ru.meta.stackoverflow.com") {
-  /* ru.meta.stackoverflow.com (Russian) */
+@-moz-document domain("meta.ru.stackoverflow.com") {
+  /* meta.ru.stackoverflow.com (Russian) */
   #hlogo a {
     background-image: url(http://StylishThemes.github.io/StackOverflow-Dark/images/ru-meta-stackoverflow-logo.svg) !important;
   }
