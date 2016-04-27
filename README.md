@@ -20,6 +20,11 @@
 
 See the [full changelog](https://github.com/StylishThemes/Stackoverflow-Dark/wiki).
 
+#### Version 2.9.10 (4/26/2016)
+
+* Add es & meta.es stackoverflow sites & logos.
+* Logos: optimize svg files.
+
 #### Version 2.9.9 (4/26/2016)
 
 * Add pt & ja meta stackoverflow logos.
