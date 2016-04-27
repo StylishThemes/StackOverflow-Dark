@@ -875,6 +875,12 @@ ___|_| |_ ___    ___ ___ ___ ___|_|  _|_|___
     background-image: url(http://StylishThemes.github.io/StackOverflow-Dark/images/ja-stackoverflow-logo.svg) !important;
   }
 }
+@-moz-document domain("meta.ja.stackoverflow.com") {
+  /* meta.ja.stackoverflow.com (Japanese) */
+  #hlogo a {
+    background-image: url(http://StylishThemes.github.io/StackOverflow-Dark/images/ja-meta-stackoverflow-logo.png) !important;
+  }
+}
 @-moz-document domain("mathoverflow.net") {
   /* mathoverflow.net */
   #hlogo a {
@@ -929,6 +935,12 @@ ___|_| |_ ___    ___ ___ ___ ___|_|  _|_|___
   /* pt.stackoverflow.com (Portuguese) */
   #hlogo a {
     background-image: url(http://StylishThemes.github.io/StackOverflow-Dark/images/pt-stackoverflow-logo.svg) !important;
+  }
+}
+@-moz-document domain("meta.pt.stackoverflow.com") {
+  /* pt.stackoverflow.com (Portuguese) */
+  #hlogo a {
+    background-image: url(http://StylishThemes.github.io/StackOverflow-Dark/images/pt-meta-stackoverflow-logo.svg) !important;
   }
 }
 @-moz-document domain("ru.stackoverflow.com") {
