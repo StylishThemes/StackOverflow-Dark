@@ -1,4 +1,4 @@
-@-moz-document regexp("^https?:\\/\\/((chat|meta|ja|pt|ru)\\.)+?stackoverflow\\.com.*"), domain("serverfault.com"), domain("superuser.com"), domain("stackapps.com"), domain("mathoverflow.net"), domain("askubuntu.com"), regexp("^https?:\\/\\/((?!(area51|gaming|rpg)).*\\.)?stackexchange.com.*") {
+@-moz-document regexp("^https?:\\/\\/((chat|meta|es|ja|pt|ru)\\.)+?stackoverflow\\.com.*"), domain("serverfault.com"), domain("superuser.com"), domain("stackapps.com"), domain("mathoverflow.net"), domain("askubuntu.com"), regexp("^https?:\\/\\/((?!(area51|gaming|rpg)).*\\.)?stackexchange.com.*") {
   /***************************************************************
   StackOverflow Dark v2.9.9 (4/26/2016)
   https://github.com/StylishThemes/StackOverflow-Dark
@@ -836,6 +836,18 @@ ___|_| |_ ___    ___ ___ ___ ___|_|  _|_|___
   /* english language & usage */
   .post-signature.owner {
     background-image: none !important;
+  }
+}
+@-moz-document domain("es.stackoverflow.com") {
+  /* es.stackoverflow.com (Spanish) */
+  #hlogo a {
+    background-image: url(http://StylishThemes.github.io/StackOverflow-Dark/images/es-stackoverflow-logo.svg) !important;
+  }
+}
+@-moz-document domain("meta.ja.stackoverflow.com") {
+  /* meta.es.stackoverflow.com (Spanish) */
+  #hlogo a {
+    background-image: url(http://StylishThemes.github.io/StackOverflow-Dark/images/es-meta-stackoverflow-logo.png) !important;
   }
 }
 @-moz-document domain("graphicdesign.stackexchange.com") {
