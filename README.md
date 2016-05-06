@@ -20,6 +20,13 @@
 
 See the [full changelog](https://github.com/StylishThemes/Stackoverflow-Dark/wiki).
 
+#### Version 2.9.12 (5/6/2016)
+
+* Review: Add missing styles to first-posts/stats page. See [issue #14](https://github.com/StylishThemes/StackOverflow-Dark/issues/14).
+* Tabs:
+  * Fix padding.
+  * Darken current tab indicator.
+
 #### Version 2.9.11 (4/26/2016)
 
 * Global: Fix domain regex - breaking all sites :(
@@ -28,25 +35,3 @@ See the [full changelog](https://github.com/StylishThemes/Stackoverflow-Dark/wik
 
 * Add es & meta.es stackoverflow sites & logos.
 * Logos: optimize svg files.
-
-#### Version 2.9.9 (4/26/2016)
-
-* Add pt & ja meta stackoverflow logos.
-* Meta.ru: fix domain name.
-
-#### Version 2.9.8 (4/26/2016)
-
-* Tags:
-  * Fix moderator tag specificity.
-  * Fix tag line height.
-  * Remove border from non-required tags.
-* Add ru.meta.stackoverflow.com. See [issue #14](https://github.com/StylishThemes/StackOverflow-Dark/issues/14).
-
-#### Version 2.9.7 (4/20/2016)
-
-* Make header & footer partially opaque.
-* Global:
-  * Fix spoiler styling.
-  * Hide all content inside spoilers.
-  * Define spoiler link colors globally.
-* Remove `@mention` style. Fixes [issue #26](https://github.com/StylishThemes/StackOverflow-Dark/issues/26).
