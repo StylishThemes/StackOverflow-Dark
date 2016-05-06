@@ -229,7 +229,7 @@
   }
 
   /* === Brown(ish) === */
-  .new-post-activity, #new-answer-activity, .val-info, .highlight {
+  .new-post-activity, #new-answer-activity, .val-info, .highlight, a.youarehere:before {
     background-color: #321 !important;
   }
 
@@ -538,6 +538,7 @@
   /*New navigation tabs*/
   #tabs a, .tabs a, .intellitab a, .intellitab .menu-switcher {
     background-color: #333 !important;
+    padding: 14px 10px !important;
   }
   .intellitab .menu-switcher:hover{
     background-color: #222 !important;
