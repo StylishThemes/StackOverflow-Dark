@@ -148,7 +148,8 @@
   }
 
   #header #topbar, .revision-comment, .date-span, .post-tag, .form-submit input, .preferred-login,
-  .mdhelp, .wmd-help-button.active-help, .date_brick, .more-info {
+  .mdhelp, .wmd-help-button.active-help, .date_brick, .more-info, .review-stats-current-user,
+  .review-stats-count-current-user {
     background: #222 !important;
     color: #ddd !important;
     -webkit-border-radius: 3px !important;
@@ -158,7 +159,7 @@
     background: #222 !important;
   }
 
-  .ad502-room, .message.message-config .actions, .tag-container .col, .congrats {
+  .ad502-room, .message.message-config .actions, .tag-container .col, .congrats, .task-stat-table td {
     background-color: #232323 !important;
     border: 1px solid #191919 !important;
   }
