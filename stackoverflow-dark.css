@@ -204,7 +204,8 @@
   #footer .container, .body-diffs .skip, .newsletter-anon, .tag-suggestions>div:hover,
   .topbar-dialog .modal-content li:hover, .timestamp:hover+div.message .meta, div.message:hover .meta,
   #side-menu ul li a:hover, .conversation-info, .message.reply-parent, .message.reply-child,
-  .sidebar-element .list li .rep-and-badges, .congrats .actions, .newsletters-toggle {
+  .sidebar-element .list li .rep-and-badges, .congrats .actions, .newsletters-toggle,
+  .tag-suggestions>div:focus {
     background-color: #333 !important;
   }
 
@@ -295,7 +296,8 @@
   .prettyprint code, .lv-info, .lv-stats-wrapper, .lv-stats-wrapper .number, .container, .bottom-notice,
   #question-header, .question-form .form-item, .post-menu>a:hover, a.comments-link:hover, #main-content,
   #mainbar, #mainbar-full, .mainbar-full, #logout-page, #sidebar, .footerwrap, #footer-menu, .module,
-  #sidebar #newsletter-ad, #sidebar .ad-container, #sidebar .everyonelovesstackoverflow, .mention {
+  #sidebar #newsletter-ad, #sidebar .ad-container, #sidebar .everyonelovesstackoverflow, .mention,
+  .tag-suggestions>div .more-info {
     background-color: transparent !important;
   }
 
@@ -536,9 +538,12 @@
   }
 
   /*New navigation tabs*/
-  #tabs a, .tabs a, .intellitab a, .intellitab .menu-switcher {
+  #tabs a, .tabs a, .intellitab a {
     background-color: #333 !important;
     padding: 14px 10px !important;
+  }
+  .intellitab .menu-switcher {
+    background-color: #333 !important;
   }
   .intellitab .menu-switcher:hover{
     background-color: #222 !important;
