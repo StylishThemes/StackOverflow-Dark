@@ -274,7 +274,7 @@
 
   /* === Red === */
   .deleted-answer, .suggested-edit .deleted, .markdown-diff .deleted, .suggested-edit .deleted>div,
-  .full-diff .deleted>div {
+  .full-diff .deleted>div, .realtime-post-deleted-notification p {
     background-color: #200 !important;
   }
   span.diff-delete {
@@ -297,7 +297,7 @@
   #question-header, .question-form .form-item, .post-menu>a:hover, a.comments-link:hover, #main-content,
   #mainbar, #mainbar-full, .mainbar-full, #logout-page, #sidebar, .footerwrap, #footer-menu, .module,
   #sidebar #newsletter-ad, #sidebar .ad-container, #sidebar .everyonelovesstackoverflow, .mention,
-  .tag-suggestions>div .more-info {
+  .tag-suggestions>div .more-info, .user-tags .answer-votes {
     background-color: transparent !important;
   }
 
