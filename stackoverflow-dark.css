@@ -1,6 +1,6 @@
 @-moz-document regexp("^https?:\\/\\/((chat|meta|es|ja|pt|ru)\\.)*stackoverflow\\.com.*"), domain("serverfault.com"), domain("superuser.com"), domain("stackapps.com"), domain("mathoverflow.net"), domain("askubuntu.com"), regexp("^https?:\\/\\/((?!(area51|gaming|rpg)).*\\.)?stackexchange.com.*") {
   /***************************************************************
-  Stack Overflow Dark v2.9.14 (6/13/2016)
+  Stack Overflow Dark v2.9.15 (6/30/2016)
   https://github.com/StylishThemes/StackOverflow-Dark
   http://userstyles.org/styles/35345
 
@@ -954,6 +954,7 @@ ___|_| |_ ___    ___ ___ ___ ___|_|  _|_|___
   /* pt.stackoverflow.com (Portuguese) */
   #hlogo a {
     background-image: url(http://StylishThemes.github.io/StackOverflow-Dark/images/pt-stackoverflow-logo.svg) !important;
+    height: 70px !important;
   }
 }
 @-moz-document domain("meta.pt.stackoverflow.com") {
@@ -966,6 +967,8 @@ ___|_| |_ ___    ___ ___ ___ ___|_|  _|_|___
   /* ru.stackoverflow.com (Russian) */
   #hlogo a {
     background-image: url(http://StylishThemes.github.io/StackOverflow-Dark/images/ru-stackoverflow-logo.svg) !important;
+    height: 70px !important;
+    width: 225px !important;
   }
 }
 @-moz-document domain("meta.ru.stackoverflow.com") {
