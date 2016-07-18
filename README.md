@@ -20,6 +20,10 @@
 
 See the [full changelog](https://github.com/StylishThemes/Stackoverflow-Dark/wiki).
 
+#### Version 2.9.16 (7/18/2016)
+
+* Documentation: beta site moved to SO; tweak styles.
+
 #### Version 2.9.15 (6/30/2016)
 
 * Adjust pt & ru SO logo dimensions. Fixes [issue #28](https://github.com/StylishThemes/StackOverflow-Dark/issues/28).
@@ -28,7 +32,3 @@ See the [full changelog](https://github.com/StylishThemes/Stackoverflow-Dark/wik
 
 * Use the official name of Stack Overflow and Stack Exchange. See [pull #27](https://github.com/StylishThemes/StackOverflow-Dark/pull/27); thanks [@PeterMortensen](https://github.com/PeterMortensen)!
 * Question deleted while viewing - fix notification style.
-
-#### Version 2.9.13 (5/23/2016)
-
-* Tweak tabs & tags autocomplete. See [issue #14](https://github.com/StylishThemes/StackOverflow-Dark/issues/14).
