@@ -20,6 +20,10 @@
 
 See the [full changelog](https://github.com/StylishThemes/Stackoverflow-Dark/wiki).
 
+#### Version 2.9.18 (7/22/2016)
+
+* Documentation: Lots of tweaks & use regex to target url.
+
 #### Version 2.9.17 (7/22/2016)
 
 * Documentation: add split side panel styling.
@@ -27,7 +31,3 @@ See the [full changelog](https://github.com/StylishThemes/Stackoverflow-Dark/wik
 #### Version 2.9.16 (7/18/2016)
 
 * Documentation: beta site moved to SO; tweak styles.
-
-#### Version 2.9.15 (6/30/2016)
-
-* Adjust pt & ru SO logo dimensions. Fixes [issue #28](https://github.com/StylishThemes/StackOverflow-Dark/issues/28).
