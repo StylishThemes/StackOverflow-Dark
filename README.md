@@ -20,6 +20,10 @@
 
 See the [full changelog](https://github.com/StylishThemes/Stackoverflow-Dark/wiki).
 
+#### Version 2.9.17 (7/22/2016)
+
+* Documentation: add split side panel styling.
+
 #### Version 2.9.16 (7/18/2016)
 
 * Documentation: beta site moved to SO; tweak styles.
@@ -27,8 +31,3 @@ See the [full changelog](https://github.com/StylishThemes/Stackoverflow-Dark/wik
 #### Version 2.9.15 (6/30/2016)
 
 * Adjust pt & ru SO logo dimensions. Fixes [issue #28](https://github.com/StylishThemes/StackOverflow-Dark/issues/28).
-
-#### Version 2.9.14 (6/13/2016)
-
-* Use the official name of Stack Overflow and Stack Exchange. See [pull #27](https://github.com/StylishThemes/StackOverflow-Dark/pull/27); thanks [@PeterMortensen](https://github.com/PeterMortensen)!
-* Question deleted while viewing - fix notification style.
