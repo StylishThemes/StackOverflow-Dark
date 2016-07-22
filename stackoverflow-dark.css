@@ -155,8 +155,13 @@
     -webkit-border-radius: 3px !important;
     border-radius: 3px !important;
   }
-  .calendar, .calendar-small, .mspark .mspbar, #promo-box, #input-area .input-hint {
+  .calendar, .calendar-small, .mspark .mspbar, #promo-box, #input-area .input-hint,
+  .tour-page .feature-selection li a.triggered {
     background: #222 !important;
+  }
+
+  .tour-page .tour-content section:nth-child(n+1) {
+    background: rgba(34,34,34,.5) !important;
   }
 
   .ad502-room, .message.message-config .actions, .tag-container .col, .congrats, .task-stat-table td {
@@ -176,7 +181,7 @@
     color: #999 !important;
   }
 
-  .container {
+  .container, .tour-page .headline, .tour-page .cta {
     background-image: none !important;
   }
 
@@ -231,7 +236,7 @@
 
   /* === Brown(ish) === */
   .new-post-activity, #new-answer-activity, .val-info, .highlight, a.youarehere:before {
-    background-color: #321 !important;
+    background-color: rgba(51,34,17,.4) !important;
   }
 
   /* chat room buttons */
@@ -410,7 +415,7 @@
   }
 
   a:visited {
-    color: /*[[visited-color]]*/ #ff32a0 !important;
+    color: /*[[visited-color]]*/ #4183C4 !important;
   }
   .rep-up {
     color: #4b553c !important;
@@ -835,7 +840,7 @@ ___|_| |_ ___    ___ ___ ___ ___|_|  _|_|___
   .handling-improvement-request, .shared-draft, .topic-request, .shared-draft, .pending-review,
   .deleting-topic, .has-changed, .missing-example, .pending-proposed-change, .undeleting-topic,
   .undeleting-example, .edit-notifications, .hero-box .btn, .moved, .section-help {
-    background: #321 !important;
+    background: rgba(51,34,17,.4) !important;
     border-color: #542 !important;
     color: #b74 !important;
   }
@@ -919,7 +924,7 @@ ___|_| |_ ___    ___ ___ ___ ___|_|  _|_|___
     background-image: url(http://StylishThemes.github.io/StackOverflow-Dark/images/meta-stackoverflow-logo.svg) !important;
   }
   #sidebar .community-bulletin .bulletin-item-content a, #sidebar .community-bulletin .bulletin-item-content a:hover {
-    color: /*[[base-color]]*/ !important;
+    color: /*[[base-color]]*/ #008080 !important;
   }
   #sidebar .community-bulletin .bulletin-item-content a:hover {
     color: #fff !important;
