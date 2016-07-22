@@ -793,12 +793,13 @@ ___|_| |_ ___    ___ ___ ___ ___|_|  _|_|___
   .syntax .syntax-html, #tabs a, .tabs a, .intellitab a {
     background: transparent !important;
   }
-  .doctag-cards .card-top, .proposal-cell, .button, .btn, .btn-clear, input, .panel-empty, .version-line {
+  .doctag-cards .card-top, .proposal-cell, .button, .btn, .btn-clear, input, .panel-empty, .version-line,
+  .container.example-expanded:not(.split-disabled) .split-pane-examples, .vertical-option {
     background-color: #181818 !important;
   }
   .version-name, .version-row, .example-metric, .edit-summary, .first-time-container, .current-draft,
   a.selected, .diff-choices a:hover, .diff-type-controls a:hover, .doctag-cards .ctas, .proposal-details,
-  .bubble-message .left-pane, .bubble-message .right-pane {
+  .bubble-message .left-pane, .bubble-message .right-pane, .vertical-option:hover {
     background-color: #222 !important;
   }
   .vertical-option:hover, .split-option:hover, .expand-all-examples:hover, .collapse-all-examples:hover,
