@@ -792,41 +792,62 @@ ___|_| |_ ___    ___ ___ ___ ___|_|  _|_|___
     background-image: url(http://StylishThemes.github.io/StackOverflow-Dark/images/database-admin-logo.svg) !important;
   }
 }
-@-moz-document domain("stackoverflow.com") {
+@-moz-document regexp("http://stackoverflow\.com/documentation/.*") {
   /* documentation beta moved into Stackoverflow */
   .examples .example:hover, .example.expanded, div.sidebar, .timestamp,
   .syntax .syntax-html, #tabs a, .tabs a, .intellitab a {
     background: transparent !important;
   }
   .doctag-cards .card-top, .proposal-cell, .button, .btn, .btn-clear, input, .panel-empty, .version-line,
-  .container.example-expanded:not(.split-disabled) .split-pane-examples, .vertical-option {
+  .container.example-expanded:not(.split-disabled) .split-pane-examples, .vertical-option,
+  .search-doctag-popdown {
     background-color: #181818 !important;
   }
   .version-name, .version-row, .example-metric, .edit-summary, .first-time-container, .current-draft,
-  a.selected, .diff-choices a:hover, .diff-type-controls a:hover, .doctag-cards .ctas, .proposal-details,
-  .bubble-message .left-pane, .bubble-message .right-pane, .vertical-option:hover {
+  a.selected, .diff-choices a:hover, .diff-type-controls a:hover, .doctag-cards .card-bottom, .proposal-details,
+  .bubble-message .left-pane, .bubble-message .right-pane, .vertical-option:hover,
+  .side-by-side-markdown .skip-row {
     background-color: #222 !important;
   }
   .vertical-option:hover, .split-option:hover, .expand-all-examples:hover, .collapse-all-examples:hover,
   .examples .example-expansion-chevron:hover, .examples .example.collapsed:hover .example-expansion-chevron {
     background-color: rgba(50,50,50,.6) !important;
   }
-  .btn-outlined {
+  input.request-topic-button, .search-doctag-popdown .section-items a:hover {
+    background-color: #333 !important;
+  }
+  .btn-outlined, .topic-title.change-modifies, .syntax.change-modifies, .parameters.change-modifies,
+  .remarks.change-modifies, .remarks-subsection.change-modifies,
+  .split-disabled .example.expanded.change-modifies, .versions.change-modifies {
     border-color: #484848 !important;
   }
   a.button, input[type="button"]:hover, button:hover, .button:hover, .btn:hover, button:focus,
   .button:focus, .btn:focus, .btn-clear:hover {
-    background: #008080 !important;
+    background-color: /*[[base-color]]*/ #008080 !important;
     color: #ddd !important;
   }
   .btn-outlined:hover {
-    border-color: #008080 !important;
+    border-color: /*[[base-color]]*/ #008080 !important;
   }
   .relativetime, .edit-summary .edited-sections li:not(.example-list).section-being-edited {
     color: #ddd !important;
   }
   .topic-request-vote-up .vote-arrow {
     border-color: transparent transparent #fff transparent !important;
+  }
+  /* score box hidden behind up vote arrow, why? */
+  .collapsed-example-score {
+    visibility: hidden !important;
+  }
+  .syntax .syntax-html li {
+    padding: 0 !important;
+  }
+  .syntax .syntax-html code {
+    padding: 10px 0 10px 10px !important;
+  }
+  /* add padding because footer is semi-transparent and has "position:relative" set */
+  .split-pane-examples {
+    padding-bottom: 520px !important;
   }
   /* blue */
   .hero-box, .hero-box .blue ,input[type="submit"].btn-secondary, input[type="button"].btn-secondary,
@@ -843,6 +864,10 @@ ___|_| |_ ___    ___ ___ ___ ___|_|  _|_|___
     background: rgba(51,34,17,.4) !important;
     border-color: #542 !important;
     color: #b74 !important;
+  }
+  .edit-notifications .view-proposed-change:hover, .edit-notifications .view-latest-draft:hover,
+  .edit-notifications .accept-chat-invite:hover {
+    background-color: rgba(51,34,17,.8) !important;
   }
 }
 @-moz-document domain("electronics.stackexchange.com") {
