@@ -20,6 +20,11 @@
 
 See the [full changelog](https://github.com/StylishThemes/Stackoverflow-Dark/wiki).
 
+#### Version 2.9.19 (7/22/2016)
+
+* Documentation: Fix url regex.
+* Chat: Darken xxl cards.
+
 #### Version 2.9.18 (7/22/2016)
 
 * Documentation: Lots of tweaks & use regex to target url.
