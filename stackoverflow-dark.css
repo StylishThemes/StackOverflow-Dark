@@ -141,7 +141,7 @@
   .profile-popup, .profile-popup tr, .profile-popup th, .profile-gravatar, .newuser, .roomcard,
   .seWrapper, h2.index.header, .privilege-table-row:hover, .list-originals .item.hover,
   .list-originals .body-summary, .review-instructions-reason, .room-mini, #formContainer, #switch,
-  .login-topbar, .newsletter-category, .newsletter-item, .blogcontainer {
+  .login-topbar, .newsletter-category, .newsletter-item, .blogcontainer, .usercard-xxl, .roomcard-xxl {
     background-color: #222 !important;
     border-color: #555 !important;
     color: #ddd !important;
