@@ -20,17 +20,15 @@
 
 See the [full changelog](https://github.com/StylishThemes/Stackoverflow-Dark/wiki).
 
-#### Version 2.9.19 (7/22/2016)
+#### Version 2.9.20 (7/24/2016)
+
+* Chat: add referenced tags.
+
+#### Version 2.9.17 - 2.9.19 (7/22/2016)
 
 * Documentation: Fix url regex.
 * Chat: Darken xxl cards.
-
-#### Version 2.9.18 (7/22/2016)
-
 * Documentation: Lots of tweaks & use regex to target url.
-
-#### Version 2.9.17 (7/22/2016)
-
 * Documentation: add split side panel styling.
 
 #### Version 2.9.16 (7/18/2016)
