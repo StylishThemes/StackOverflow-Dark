@@ -156,7 +156,7 @@
     border-radius: 3px !important;
   }
   .calendar, .calendar-small, .mspark .mspbar, #promo-box, #input-area .input-hint,
-  .tour-page .feature-selection li a.triggered {
+  .tour-page .feature-selection li a.triggered, .ob-docs {
     background: #222 !important;
   }
 
@@ -199,7 +199,7 @@
     font-size: 18px !important;
   }
 
-  .youarehere, .dropdown li.selected a, .dropdown li.selected a:hover {
+  .youarehere, .dropdown li.selected a, .dropdown li.selected a:hover, .ob-docs .example-metric {
     background: #333 !important;
     color: #ccc !important;
   }
