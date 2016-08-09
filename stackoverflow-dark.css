@@ -311,7 +311,7 @@
   #question-header, .question-form .form-item, .post-menu>a:hover, a.comments-link:hover, #main-content,
   #mainbar, #mainbar-full, .mainbar-full, #logout-page, #sidebar, .footerwrap, #footer-menu, .module,
   #sidebar #newsletter-ad, #sidebar .ad-container, #sidebar .everyonelovesstackoverflow, .mention,
-  .tag-suggestions>div .more-info, .user-tags .answer-votes {
+  .tag-suggestions>div .more-info, .user-tags .answer-votes, .expanded:hover {
     background-color: transparent !important;
   }
 
@@ -568,6 +568,15 @@
   .dropdown:before {
     filter: invert(76%) !important;
     -webkit-filter: invert(76%) !important;
+  }
+  /* documentation editing icons */
+  .docs-menu a {
+    -webkit-filter: brightness(200%) !important;
+    filter: brightness(200%) !important;
+  }
+  .docs-menu:hover a {
+    -webkit-filter: none !important;
+    filter: none !important;
   }
 
   /* override prettyprint bright border styles */
