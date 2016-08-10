@@ -20,6 +20,11 @@
 
 See the [full changelog](https://github.com/StylishThemes/Stackoverflow-Dark/wiki).
 
+#### Version 2.9.21 (8/10/2016)
+
+* Update to chat. See [pull #31](https://github.com/StylishThemes/StackOverflow-Dark/pull/31); thanks [@9redhat](https://github.com/9redhat)!
+* Documentation: Editing-help, fix hover.
+
 #### Version 2.9.20 (7/24/2016)
 
 * Chat: add referenced tags.
@@ -30,7 +35,3 @@ See the [full changelog](https://github.com/StylishThemes/Stackoverflow-Dark/wik
 * Chat: Darken xxl cards.
 * Documentation: Lots of tweaks & use regex to target url.
 * Documentation: add split side panel styling.
-
-#### Version 2.9.16 (7/18/2016)
-
-* Documentation: beta site moved to SO; tweak styles.
