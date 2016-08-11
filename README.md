@@ -20,6 +20,11 @@
 
 See the [full changelog](https://github.com/StylishThemes/Stackoverflow-Dark/wiki).
 
+#### Version 2.9.22 (8/11/2016)
+
+* Readme: Update last version.
+* Add blue name to moderator users. See [pull #32](https://github.com/StylishThemes/StackOverflow-Dark/pull/32); thanks [@9redhat](https://github.com/9redhat)!
+
 #### Version 2.9.21 (8/10/2016)
 
 * Update to chat. See [pull #31](https://github.com/StylishThemes/StackOverflow-Dark/pull/31); thanks [@9redhat](https://github.com/9redhat)!
@@ -28,10 +33,3 @@ See the [full changelog](https://github.com/StylishThemes/Stackoverflow-Dark/wik
 #### Version 2.9.20 (7/24/2016)
 
 * Chat: add referenced tags.
-
-#### Version 2.9.17 - 2.9.19 (7/22/2016)
-
-* Documentation: Fix url regex.
-* Chat: Darken xxl cards.
-* Documentation: Lots of tweaks & use regex to target url.
-* Documentation: add split side panel styling.

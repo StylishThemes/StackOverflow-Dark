@@ -1,6 +1,6 @@
 @-moz-document regexp("^https?:\\/\\/((chat|meta|es|ja|pt|ru)\\.)*stackoverflow\\.com.*"), domain("serverfault.com"), domain("superuser.com"), domain("stackapps.com"), domain("mathoverflow.net"), domain("askubuntu.com"), regexp("^https?:\\/\\/((?!(area51|gaming|rpg)).*\\.)?stackexchange.com.*") {
   /***************************************************************
-  Stack Overflow Dark v2.9.21 (8/10/2016)
+  Stack Overflow Dark v2.9.22 (8/11/2016)
   https://github.com/StylishThemes/StackOverflow-Dark
   http://userstyles.org/styles/35345
 
@@ -135,11 +135,11 @@
     background-color: #292929 !important;
     border: 1px solid #444 !important;
   }
-  
+
   #chat .messages .mention {
     background: #666666 !important;
   }
-  
+
   #chat div.moderator {
     color: #366fb3 !important;
   }
