@@ -132,12 +132,16 @@
   }
 
   #chat .mine .messages {
-    background: #666666 !important;
-    background-color: #666666 !important;
+    background-color: #292929 !important;
     border: 1px solid #444 !important;
   }
-  .mention {
-    background-color: #666666 !important;
+  
+  #chat .messages .mention {
+    background: #666666 !important;
+  }
+  
+  #chat div.moderator {
+    color: #366fb3 !important;
   }
 
   .topbar-dialog, .topbar-dialog .header, .share-tip, #input-area, .messages,
