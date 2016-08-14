@@ -1077,6 +1077,13 @@ ___|_| |_ ___    ___ ___ ___ ___|_|  _|_|___
     background-image: url(http://StylishThemes.github.io/StackOverflow-Dark/images/superuser-logo.svg) !important;
   }
 }
+@-moz-document domain("meta.superuser.com") {
+  #hlogo a {
+    height: 60px !important;
+    background-size: cover !important;
+    background-image: url(http://StylishThemes.github.io/StackOverflow-Dark/images/meta-superuser-logo.svg) !important;
+  }
+}
 @-moz-document domain("wordpress.stackexchange.com") {
   #hlogo a {
     -webkit-filter: invert(100%) !important;
