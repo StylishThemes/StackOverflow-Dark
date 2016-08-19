@@ -478,7 +478,6 @@
   .post-tag, .comments-link, .tag-synonym-link {
     margin: 2px !important;
     padding: 3px !important;
-    font-size: 80% !important;
     line-height: 1.9em !important;
     white-space: nowrap !important
   }
