@@ -55,6 +55,11 @@
     color: #eee !important;
   }
 
+  #tabs a.youarehere:before, .tabs a.youarehere:before,
+  .newnav .tabs-list-container .tabs-list .intellitab a.youarehere:before {
+    background-color: /*[[base-color]]*/ #008080 !important;
+  }
+
   /* === text selection === */
   ::selection {
     background: /*[[base-color]]*/ #008080 !important;
@@ -119,7 +124,7 @@
 
   #tabs a.youarehere, .tabs a.youarehere, .tag-suggestions, .dropdown li {
     background: #191919 !important;
-    border: 1px solid #444 !important;
+    border-color: #444 !important;
   }
   .tabs a.youarehere {
     border-bottom: 0 !important;
@@ -555,10 +560,16 @@
     stroke: #999 !important;
   }
 
-  /*New navigation tabs*/
-  #tabs a, .tabs a, .intellitab a {
+  #tabs a, .tabs a {
     background-color: #333 !important;
-    padding: 14px 10px !important;
+  }
+  /*New navigation tabs*/
+  .intellitab a {
+    background: transparent !important;
+    border: none !important;
+  }
+  .intellitab.selected a {
+    background-color: rgba(51, 51, 51, .5) !important;
   }
   .intellitab .menu-switcher {
     background-color: #333 !important;
@@ -805,7 +816,7 @@ ___|_| |_ ___    ___ ___ ___ ___|_|  _|_|___
     border-top-color: #eee !important;
   }
   .nav li.youarehere, .nav li:hover {
-    background-color: #008080 !important;
+    background-color: /*[[base-color]]*/ #008080 !important;
   }
 }
 @-moz-document domain("dba.stackexchange.com") {
