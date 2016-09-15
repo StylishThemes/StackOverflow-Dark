@@ -119,7 +119,6 @@
 
   #tabs a {
     border: 1px solid transparent !important;
-    padding: 2px 6px 4px 6px !important;
   }
 
   #tabs a.youarehere, .tabs a.youarehere, .tag-suggestions, .dropdown li {
@@ -324,7 +323,7 @@
     background-color: transparent !important;
   }
 
-  #tabs a:hover {
+  #tabs a:hover, .tabs a:hover {
     background-color: #191919 !important;
     border: 1px solid #444 !important;
   }
@@ -559,9 +558,6 @@
     stroke: #999 !important;
   }
 
-  #tabs a, .tabs a {
-    background-color: #333 !important;
-  }
   /*New navigation tabs*/
   .intellitab a {
     background: transparent !important;
