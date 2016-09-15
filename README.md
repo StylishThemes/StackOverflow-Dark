@@ -1,3 +1,14 @@
+[![][tag-img]][tag-url] [![][star-img]][star-url] [![][fork-img]][fork-url] [![][dev-img]][dev-url]
+
+[tag-url]: https://github.com/StylishThemes/Stackoverflow-Dark/tags
+[tag-img]: https://img.shields.io/github/tag/StylishThemes/Stackoverflow-Dark.svg
+[star-url]: https://github.com/StylishThemes/Stackoverflow-Dark/stargazers
+[star-img]: http://github-svg-buttons.herokuapp.com/star.svg?user=StylishThemes&repo=Stackoverflow-Dark&style=flat&background=007ec6
+[fork-url]: https://github.com/StylishThemes/Stackoverflow-Dark/fork
+[fork-img]: http://github-svg-buttons.herokuapp.com/fork.svg?user=StylishThemes&repo=Stackoverflow-Dark&style=flat&background=007ec6
+[dev-url]: https://david-dm.org/StylishThemes/Stackoverflow-Dark?type=dev
+[dev-img]: https://david-dm.org/StylishThemes/Stackoverflow-Dark/dev-status.svg
+
 # Stack Overflow Dark theme for Stylish
 - Install from [userstyles.org](http://userstyles.org/styles/35345) (with customization options) or [manually](https://raw.githubusercontent.com/StylishThemes/Stackoverflow-Dark/master/stackoverflow-dark.css).
 - Stylish is available for [Firefox](https://addons.mozilla.org/en-US/firefox/addon/2108/), [Chrome](https://chrome.google.com/extensions/detail/fjnbnpbmkenffdnngjfgmeleoegfcffe), [Opera](https://addons.opera.com/en/extensions/details/stylish/), [Safari](http://sobolev.us/stylish/) and [Firefox Mobile](https://addons.mozilla.org/en-US/firefox/addon/2108/).
@@ -20,6 +31,11 @@
 
 See the [full changelog](https://github.com/StylishThemes/Stackoverflow-Dark/wiki).
 
+### Version 2.9.24 (9/15/2016)
+
+* Global: Fix tab styling.
+* Themes: Fix desert theme not styling code blocks. See [issue #14](https://github.com/StylishThemes/StackOverflow-Dark/issues/14).
+
 ### Version 2.9.23 (8/19/2016)
 
 * Meta-superuser logo added.
@@ -31,8 +47,3 @@ See the [full changelog](https://github.com/StylishThemes/Stackoverflow-Dark/wik
 
 * Readme: Update last version.
 * Add blue name to moderator users. See [pull #32](https://github.com/StylishThemes/StackOverflow-Dark/pull/32); thanks [@9redhat](https://github.com/9redhat)!
-
-### Version 2.9.21 (8/10/2016)
-
-* Update to chat. See [pull #31](https://github.com/StylishThemes/StackOverflow-Dark/pull/31); thanks [@9redhat](https://github.com/9redhat)!
-* Documentation: Editing-help, fix hover.
