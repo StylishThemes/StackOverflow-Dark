@@ -33,9 +33,8 @@ See the [full changelog](https://github.com/StylishThemes/Stackoverflow-Dark/wik
 
 ### Version 2.9.25 (12/1/2016)
 
-* Meta:
-  * Fix regex to ignore Google. See https://forum.userstyles.org/discussion/51784/x
-  * Restore upvote count color. See https://forum.userstyles.org/discussion/51845/x
+* Meta: Fix regex to ignore Google. See https://forum.userstyles.org/discussion/51784/x
+* Restore upvote count color. See https://forum.userstyles.org/discussion/51845/x
 
 ### Version 2.9.24 (9/15/2016)
 
