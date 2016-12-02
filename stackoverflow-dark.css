@@ -294,6 +294,10 @@
     color: #4b553c !important
   }
 
+  .vote-count-post [style="color:green"] {
+    color: green !important;
+  }
+
   /* === Red === */
   .deleted-answer, .suggested-edit .deleted, .markdown-diff .deleted, .suggested-edit .deleted>div,
   .full-diff .deleted>div, .realtime-post-deleted-notification p {
@@ -310,6 +314,10 @@
 
   .summary a.moderator-tag:hover {
     background-color: #600 !important;
+  }
+
+  .vote-count-post [style="color:maroon"] {
+    color: maroon !important;
   }
 
   /* === Transparent background === */
