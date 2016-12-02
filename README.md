@@ -31,6 +31,12 @@
 
 See the [full changelog](https://github.com/StylishThemes/Stackoverflow-Dark/wiki).
 
+### Version 2.9.25 (12/1/2016)
+
+* Meta:
+  * Fix regex to ignore Google. See https://forum.userstyles.org/discussion/51784/x
+  * Restore upvote count color. See https://forum.userstyles.org/discussion/51845/x
+
 ### Version 2.9.24 (9/15/2016)
 
 * Global: Fix tab styling.
@@ -42,8 +48,3 @@ See the [full changelog](https://github.com/StylishThemes/Stackoverflow-Dark/wik
 * SO:
   * Fix tab issues. Closes [issue #33](https://github.com/StylishThemes/StackOverflow-Dark/issues/33).
   * Restore tag font-size. Closes [issue #34](https://github.com/StylishThemes/StackOverflow-Dark/issues/34).
-
-### Version 2.9.22 (8/11/2016)
-
-* Readme: Update last version.
-* Add blue name to moderator users. See [pull #32](https://github.com/StylishThemes/StackOverflow-Dark/pull/32); thanks [@9redhat](https://github.com/9redhat)!
