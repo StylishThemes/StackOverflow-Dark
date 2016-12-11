@@ -171,7 +171,7 @@
 
   #header #topbar, .revision-comment, .date-span, .post-tag, .form-submit input, .preferred-login,
   .mdhelp, .wmd-help-button.active-help, .date_brick, .more-info, .review-stats-current-user,
-  .review-stats-count-current-user, .topbar.newheader, .topbar-wrapper, .topbar-links, .topbar-menu-links, .network-items>a, .icon-help, .icon-help:hover, a:nth-child(2):hover  {
+  .review-stats-count-current-user, .topbar.newheader, .topbar-menu-links, .network-items>a, .icon-help, .icon-help:hover, a:nth-child(2):hover  {
     background-color: #222 !important;
     color: #ddd !important;
     -webkit-border-radius: 3px !important;
