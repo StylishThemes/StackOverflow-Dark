@@ -31,6 +31,10 @@
 
 See the [full changelog](https://github.com/StylishThemes/Stackoverflow-Dark/wiki).
 
+### Version 2.9.26 (12/12/2016)
+
+* Fixed new topbar header & login white herobox; see [pull #37](https://github.com/StylishThemes/StackOverflow-Dark/pull/37); thanks [@Zeeex](https://github.com/Zeeex)!
+
 ### Version 2.9.25 (12/1/2016)
 
 * Meta: Fix regex to ignore Google. See https://forum.userstyles.org/discussion/51784/x
@@ -40,10 +44,3 @@ See the [full changelog](https://github.com/StylishThemes/Stackoverflow-Dark/wik
 
 * Global: Fix tab styling.
 * Themes: Fix desert theme not styling code blocks. See [issue #14](https://github.com/StylishThemes/StackOverflow-Dark/issues/14).
-
-### Version 2.9.23 (8/19/2016)
-
-* Meta-superuser logo added.
-* SO:
-  * Fix tab issues. Closes [issue #33](https://github.com/StylishThemes/StackOverflow-Dark/issues/33).
-  * Restore tag font-size. Closes [issue #34](https://github.com/StylishThemes/StackOverflow-Dark/issues/34).
