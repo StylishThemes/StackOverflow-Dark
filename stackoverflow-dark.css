@@ -233,7 +233,7 @@
   .topbar-dialog .modal-content li:hover, .timestamp:hover+div.message .meta, div.message:hover .meta,
   #side-menu ul li a:hover, .conversation-info, .message.reply-parent, .message.reply-child,
   .sidebar-element .list li .rep-and-badges, .congrats .actions, .newsletters-toggle,
-  .tag-suggestions>div:focus {
+  .tag-suggestions>div:focus, .current-site a.site-link:hover {
     background-color: #333 !important;
   }
 
