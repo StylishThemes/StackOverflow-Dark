@@ -152,7 +152,7 @@
 
   .topbar-dialog, .topbar-dialog .header, .share-tip, #input-area, .messages,
   #tag-menu, .sidebar h3, #overlay-header, .action-list .action-selected, .switcher-nudge-lightbox,
-  .user-rep-chart-summary-tooltip:hover, .current-site-container, #or, .account-number {
+  .user-rep-chart-summary-tooltip:hover, .current-site-container, #or, .account-number, .topbar {
     background-color: #222 !important;
     color: #ddd !important;
   }
