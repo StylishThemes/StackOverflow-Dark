@@ -31,6 +31,11 @@
 
 See the [full changelog](https://github.com/StylishThemes/Stackoverflow-Dark/wiki).
 
+### Version 2.9.27 (12/12/2016)
+
+* Fix top bar background.
+* Fix current community menu item hover.
+
 ### Version 2.9.26 (12/12/2016)
 
 * Fixed new topbar header & login white herobox; see [pull #37](https://github.com/StylishThemes/StackOverflow-Dark/pull/37); thanks [@Zeeex](https://github.com/Zeeex)!
