@@ -88,8 +88,11 @@
 
   /* === background color === */
   /* from darkest to lightest grey */
-  .search-container input[type=text], .topbar.newheader .topbar-wrapper .topbar-links .search-container #search input[name="q"] { 
-    background-color: #222 !important;
+  .search-container input[type=text] { 
+    background-color: #000 !important;
+  }
+  .topbar.newheader .topbar-wrapper .topbar-links .search-container #search input[name="q"] {
+    background: #222 !important;
   }
   .popup-badges .all-badge-progress .completed:before, .previous-button, .next-button, header, #footer {
     background-color: rgba(0,0,0,0.4) !important;
@@ -171,11 +174,14 @@
 
   #header #topbar, .revision-comment, .date-span, .post-tag, .form-submit input, .preferred-login,
   .mdhelp, .wmd-help-button.active-help, .date_brick, .more-info, .review-stats-current-user,
-  .review-stats-count-current-user, .topbar.newheader, .topbar-menu-links, .network-items>a, .icon-help, .icon-help:hover, a:nth-child(2):hover  {
-    background-color: #222 !important;
+  .review-stats-count-current-user, .topbar-menu-links {
+    background: #222 !important;
     color: #ddd !important;
     -webkit-border-radius: 3px !important;
     border-radius: 3px !important;
+  }  
+  .topbar.newheader, .network-items>a, .icon-help, .icon-help:hover, a:nth-child(2):hover {
+    background-color: #222 !important;
   }
   .calendar, .calendar-small, .mspark .mspbar, #promo-box, #input-area .input-hint,
   .tour-page .feature-selection li a.triggered, .ob-docs {
