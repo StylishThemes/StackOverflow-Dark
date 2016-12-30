@@ -31,9 +31,10 @@
 
 See the [full changelog](https://github.com/StylishThemes/Stackoverflow-Dark/wiki).
 
-### Version 2.9.28 (12/30/2016)
+### Versions 2.9.28 & 2.9.29 (12/30/2016)
 
 * Darken account recovery message box. See [issue #36](https://github.com/StylishThemes/StackOverflow-Dark/issues/36).
+* Style jobs & companies pages. See [issue #38](https://github.com/StylishThemes/StackOverflow-Dark/issues/36).
 
 ### Version 2.9.27 (12/12/2016)
 
