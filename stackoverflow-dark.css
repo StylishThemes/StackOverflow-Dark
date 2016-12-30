@@ -80,6 +80,10 @@
     border: 0 !important;
     box-shadow: none !important;
   }
+  .menu-switcher {
+    filter: none !important;
+    -webkit-filter: none !important;
+  }
 
   /* === hidden === */
   div.hireme, div#hireme, .next-answer-hook-container, .intellitab:after {
@@ -110,7 +114,7 @@
 
   html, blockquote, #post-preview, .nav .primarynav li a, #chat, #hsearch .textbox, .form-item, .grippie,
   .welovestackoverflow, #wmd-button-bar, .wmd-button-bar, .qa-block, .content-block, .user-info-rep, .sidebar,
-  .popup, .full-diff, .val-success {
+  .popup, .full-diff, .val-success, .search-form .filter-pane nav {
     background: #191919 none !important
   }
 
@@ -142,16 +146,12 @@
     border: 1px solid #444 !important;
   }
 
-  #chat .messages .mention {
-    background: #666666 !important;
-  }
-
   #chat div.moderator {
     color: #366fb3 !important;
   }
 
   .topbar-dialog, .topbar-dialog .header, .share-tip, #input-area, .messages,
-  #tag-menu, .sidebar h3, #overlay-header, .action-list .action-selected, .switcher-nudge-lightbox,
+  #tag-menu, #overlay-header, .action-list .action-selected, .switcher-nudge-lightbox,
   .user-rep-chart-summary-tooltip:hover, .current-site-container, #or, .account-number, .topbar {
     background-color: #222 !important;
     color: #ddd !important;
@@ -199,7 +199,7 @@
   }
 
   .answer, #system-message, .commentlist, .revision td, #hero-content, .mdhelp-tabs .selected, .tabs .selected,
-  .rep-card .rep-col {
+  .rep-card .rep-col, .sort select, .-job._highlighted {
     background: #232323 !important;
     color: #999 !important;
   }
@@ -209,7 +209,7 @@
   }
 
   .tagged-interesting, .tagged-interesting .views, .highlight-row, .highlighted, .card.rep-card .graph,
-  .popup-badges .badge-progress:hover:not(.completed), #newsletter-ad {
+  .popup-badges .badge-progress:hover:not(.completed), #newsletter-ad, .search-form .icon-advanced-search {
     background-color: #242424 !important;
     background-image: none !important;
   }
@@ -233,7 +233,8 @@
   .topbar-dialog .modal-content li:hover, .timestamp:hover+div.message .meta, div.message:hover .meta,
   #side-menu ul li a:hover, .conversation-info, .message.reply-parent, .message.reply-child,
   .sidebar-element .list li .rep-and-badges, .congrats .actions, .newsletters-toggle,
-  .tag-suggestions>div:focus, .current-site a.site-link:hover {
+  .tag-suggestions>div:focus, .current-site a.site-link:hover, #sub-navs>a:hover,
+  #sub-navs .menu-item:hover {
     background-color: #333 !important;
   }
 
@@ -244,13 +245,19 @@
 
   tr.comment:hover, .reply-parent, .timestamp, .usercard, .page-numbers.current,
   .comment-help, .answer-help-background, .mdhelp-tabs, .tabs li, .hi, .seNavLinks a:hover,
-  .seNavLinks a:focus, .itemBoxNew {
+  .seNavLinks a:focus, .itemBoxNew, .pagination a.current, .pagination a.selected, .pagination a:hover {
     background-color: #444 !important;
     color: #ddd !important;
   }
 
+  #chat .messages .mention {
+    background: #666 !important;
+  }
   #post-text-container div span {
     background: #c1beba !important
+  }
+  .-logo img {
+    background: #fff !important;
   }
 
   .sidebar-element .list li .rep-and-badges:before {
@@ -333,7 +340,8 @@
   #question-header, .question-form .form-item, .post-menu>a:hover, a.comments-link:hover, #main-content,
   #mainbar, #mainbar-full, .mainbar-full, #logout-page, #sidebar, .footerwrap, #footer-menu, .module,
   #sidebar #newsletter-ad, #sidebar .ad-container, #sidebar .everyonelovesstackoverflow, .mention,
-  .tag-suggestions>div .more-info, .user-tags .answer-votes, .expanded:hover {
+  .tag-suggestions>div .more-info, .user-tags .answer-votes, .expanded:hover, .sidebar-accordion,
+  .sidebar-accordion a:hover, .sidebar, .sidebar * {
     background-color: transparent !important;
   }
 
@@ -357,7 +365,8 @@
     border-color: #111 !important;
   }
 
-  .welovestackoverflow, .question-summary, .subheader {
+  .welovestackoverflow, .question-summary, .subheader,
+  .company-module .-details strong:before {
     border-color: #333 !important;
   }
 
@@ -368,7 +377,9 @@
   .message .message-tip-top-right:before, .message .message-tip-top-left:before {
     border-bottom-color: #191919 !important;
   }
-
+  .search-form .filter-pane a._active, .search-form .filter-pane a:hover {
+    border-bottom-color: #c0c0c0 !important;
+  }
   .left-arrow {
     border-right-color: rgba(119,119,119,0.4) !important;
   }
@@ -402,7 +413,8 @@
   }
 
   /* blue label count */
-  .bounty-indicator-tab, .hero.profile {
+  .bounty-indicator-tab, .hero.profile, .jobs-banner.-blue, #reg-alert-modal:hover,
+  .-popout .btn-secondary:hover, .search-btn, .tags .jobs a {
     background: #046 !important;
     color: #ccc !important;
   }
@@ -412,7 +424,7 @@
   .post-text, .user-info, .topbar-dialog .header h3, .topbar-dialog .header h3 a, .topbar-dialog span,
   .search-result .answered .vote-count-post strong, .votes-cast-stats th, .subheader h1, .vote.accepted,
   .message.message-config h1, .message.message-config h2, .message.message-config h3, .message.message-config h4,
-  .spoiler:hover {
+  .spoiler:hover, .company-module a:hover *, .search-form .label, .search-form label, .list.companies p {
     color: #ddd !important;
   }
 
@@ -480,7 +492,8 @@
     text-decoration: underline !important;
   }
 
-  .nav a, .post-tag, .comments-link, .tag-synonym-link, a.post-tag:hover, .topbar a {
+  .nav a, .post-tag, .comments-link, .tag-synonym-link, a.post-tag:hover, .topbar a,
+  .search-form .filter-pane a:hover {
     text-decoration: none !important;
   }
 
@@ -560,7 +573,8 @@
     visibility: hidden !important;
   }
 
-  #sound, .vote-count-container.stars .img {
+  #sound, .vote-count-container.stars .img, #sub-navs>a:hover .messages-icon,
+  .industries:before {
     -webkit-filter: invert(100%) !important;
     filter: invert(100%) !important;
   }
