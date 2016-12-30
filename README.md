@@ -31,6 +31,10 @@
 
 See the [full changelog](https://github.com/StylishThemes/Stackoverflow-Dark/wiki).
 
+### Version 2.9.28 (12/30/2016)
+
+* Darken account recovery message box. See [issue #36](https://github.com/StylishThemes/StackOverflow-Dark/issues/36).
+
 ### Version 2.9.27 (12/12/2016)
 
 * Fix top bar background.
@@ -39,13 +43,3 @@ See the [full changelog](https://github.com/StylishThemes/Stackoverflow-Dark/wik
 ### Version 2.9.26 (12/12/2016)
 
 * Fixed new topbar header & login white herobox; see [pull #37](https://github.com/StylishThemes/StackOverflow-Dark/pull/37); thanks [@Zeeex](https://github.com/Zeeex)!
-
-### Version 2.9.25 (12/1/2016)
-
-* Meta: Fix regex to ignore Google. See https://forum.userstyles.org/discussion/51784/x
-* Restore upvote count color. See https://forum.userstyles.org/discussion/51845/x
-
-### Version 2.9.24 (9/15/2016)
-
-* Global: Fix tab styling.
-* Themes: Fix desert theme not styling code blocks. See [issue #14](https://github.com/StylishThemes/StackOverflow-Dark/issues/14).
