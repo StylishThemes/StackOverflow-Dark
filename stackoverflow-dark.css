@@ -110,7 +110,7 @@
 
   html, blockquote, #post-preview, .nav .primarynav li a, #chat, #hsearch .textbox, .form-item, .grippie,
   .welovestackoverflow, #wmd-button-bar, .wmd-button-bar, .qa-block, .content-block, .user-info-rep, .sidebar,
-  .popup, .full-diff {
+  .popup, .full-diff, .val-success {
     background: #191919 none !important
   }
 
