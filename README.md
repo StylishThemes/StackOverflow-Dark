@@ -31,6 +31,10 @@
 
 See the [full changelog](https://github.com/StylishThemes/Stackoverflow-Dark/wiki).
 
+### Version 2.9.30 (1/3/2017)
+
+* Darken Footer &amp; remove a background image on meta.stackexchange.com.
+
 ### Versions 2.9.28 & 2.9.29 (12/30/2016)
 
 * Darken account recovery message box. See [issue #36](https://github.com/StylishThemes/StackOverflow-Dark/issues/36).
@@ -40,7 +44,3 @@ See the [full changelog](https://github.com/StylishThemes/Stackoverflow-Dark/wik
 
 * Fix top bar background.
 * Fix current community menu item hover.
-
-### Version 2.9.26 (12/12/2016)
-
-* Fixed new topbar header & login white herobox; see [pull #37](https://github.com/StylishThemes/StackOverflow-Dark/pull/37); thanks [@Zeeex](https://github.com/Zeeex)!
