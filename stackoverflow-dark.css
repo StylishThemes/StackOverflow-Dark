@@ -1011,6 +1011,12 @@
     color: #fff !important;
   }
 }
+@-moz-document domain("meta.stackexchange.com") {
+  #footer {
+    background-color: #182030 !important;
+    background-image: url('https://meta.stackexchange.com/content/Sites/stackexchangemeta/img/icon-cloud-footer.png?v=ac80a4525ace') !important;
+  }
+}
 @-moz-document domain("photo.stackexchange.com") {
   #custom-content {
     background-image: none !important;
