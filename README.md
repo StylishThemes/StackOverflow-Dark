@@ -31,6 +31,14 @@
 
 See the [full changelog](https://github.com/StylishThemes/Stackoverflow-Dark/wiki).
 
+### Version 2.9.31 (1/7/2017)
+
+* Style "Insert a link" popup.
+* Hide Meta StackExchange header text.
+* Darken Winter Bash popup.
+* Darken Impact card horizontal line.
+* Fixes [issue #39](https://github.com/StylishThemes/StackOverflow-Dark/issues/39).
+
 ### Version 2.9.30 (1/3/2017)
 
 * Darken Footer &amp; remove a background image on meta.stackexchange.com.
@@ -39,8 +47,3 @@ See the [full changelog](https://github.com/StylishThemes/Stackoverflow-Dark/wik
 
 * Darken account recovery message box. See [issue #36](https://github.com/StylishThemes/StackOverflow-Dark/issues/36).
 * Style jobs & companies pages. See [issue #38](https://github.com/StylishThemes/StackOverflow-Dark/issues/36).
-
-### Version 2.9.27 (12/12/2016)
-
-* Fix top bar background.
-* Fix current community menu item hover.
