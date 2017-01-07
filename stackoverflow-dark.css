@@ -152,7 +152,8 @@
 
   .topbar-dialog, .topbar-dialog .header, .share-tip, #input-area, .messages,
   #tag-menu, #overlay-header, .action-list .action-selected, .switcher-nudge-lightbox,
-  .user-rep-chart-summary-tooltip:hover, .current-site-container, #or, .account-number, .topbar {
+  .user-rep-chart-summary-tooltip:hover, .current-site-container, #or, .account-number, .topbar,
+  .wmd-prompt-dialog, .wb-popup-content, .wb-hat-details {
     background-color: #222 !important;
     color: #ddd !important;
   }
@@ -245,7 +246,8 @@
 
   tr.comment:hover, .reply-parent, .timestamp, .usercard, .page-numbers.current,
   .comment-help, .answer-help-background, .mdhelp-tabs, .tabs li, .hi, .seNavLinks a:hover,
-  .seNavLinks a:focus, .itemBoxNew, .pagination a.current, .pagination a.selected, .pagination a:hover {
+  .seNavLinks a:focus, .itemBoxNew, .pagination a.current, .pagination a.selected, .pagination a:hover,
+  .wb-wearing, .impact-card hr {
     background-color: #444 !important;
     color: #ddd !important;
   }
@@ -400,7 +402,8 @@
   div.list > div {
     border-right: 0 !important;
   }
-  .module, .tabs a, div.message, .full-diff td, .post-tag:not(.required-tag) {
+  .module, .tabs a, div.message, .full-diff td, .post-tag:not(.required-tag),
+  .wb-outer:not(.wb-selected) {
     border-color: transparent !important;
   }
   .left-arrow, .right-arrow {
@@ -417,6 +420,9 @@
   .-popout .btn-secondary:hover, .search-btn, .tags .jobs a {
     background: #046 !important;
     color: #ccc !important;
+  }
+  .hero-box {
+    background: #182030 !important;
   }
 
   /* === Text Color === */
@@ -715,7 +721,7 @@
     border-color: #555 !important;
   }
 }
-@-moz-document regexp("^https?:\\/\\/((?!(academia|dba|electronics|tex)).*\\.)?stackexchange.com.*") {
+@-moz-document regexp("^https?:\\/\\/((?!(academia|dba|electronics|meta|tex)).*\\.)?stackexchange.com.*") {
   /* target sites to *NOT* hide the header background */
   #header, #hmenus {
     background-color: transparent !important;
@@ -906,7 +912,7 @@
     padding-bottom: 520px !important;
   }
   /* blue */
-  .hero-box, .hero-box .blue ,input[type="submit"].btn-secondary, input[type="button"].btn-secondary,
+  .hero-box .blue ,input[type="submit"].btn-secondary, input[type="button"].btn-secondary,
   button.btn-secondary, .btn-secondary, .privacy-switch-btn, .topic-request-vote-up, .message-info {
     background: #182030 !important;
   }
@@ -1012,6 +1018,9 @@
   }
 }
 @-moz-document domain("meta.stackexchange.com") {
+  #hlogo a {
+    text-indent: -9999px !important;
+  }
   #footer {
     background-color: #182030 !important;
     background-image: url('https://meta.stackexchange.com/content/Sites/stackexchangemeta/img/icon-cloud-footer.png?v=ac80a4525ace') !important;
