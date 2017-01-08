@@ -31,6 +31,10 @@
 
 See the [full changelog](https://github.com/StylishThemes/Stackoverflow-Dark/wiki).
 
+### Version 2.9.32 (1/8/2017)
+
+* Add style to SE newsletters page. See [issue #36](https://github.com/StylishThemes/StackOverflow-Dark/issues/36#issuecomment-271138803).
+
 ### Version 2.9.31 (1/7/2017)
 
 * Style "Insert a link" popup.
@@ -42,8 +46,3 @@ See the [full changelog](https://github.com/StylishThemes/Stackoverflow-Dark/wik
 ### Version 2.9.30 (1/3/2017)
 
 * Darken Footer &amp; remove a background image on meta.stackexchange.com.
-
-### Versions 2.9.28 & 2.9.29 (12/30/2016)
-
-* Darken account recovery message box. See [issue #36](https://github.com/StylishThemes/StackOverflow-Dark/issues/36).
-* Style jobs & companies pages. See [issue #38](https://github.com/StylishThemes/StackOverflow-Dark/issues/36).
