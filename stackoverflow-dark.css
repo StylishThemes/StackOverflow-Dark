@@ -1161,17 +1161,14 @@
   }
 }
 @-moz-document domain("wordpress.stackexchange.com") {
-  #hlogo a {
-    -webkit-filter: invert(100%) !important;
-    filter: invert(100%) !important;
-  }
-  #hmenus, .module {
-    background-image: none !important;
-    border: 1px solid #333 !important;
-    border-width: 1px 0 !important;
+  #hmenus {
+    border: none !important;
   }
   .module {
+    background-image: none !important;
     border-top-width: 0 !important;
+    border: 1px solid #333 !important;
+    border-width: 1px 0 !important;
   }
   /* override !important flag set in site css */
   a.question-hyperlink {
