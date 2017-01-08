@@ -720,6 +720,33 @@
     background-color: #222 !important;
     border-color: #555 !important;
   }
+  /* end chat.stackexchange.com */
+  /* http://stackexchange.com/newsletters/newsletter (see #36) */
+  .promotion-banner-container, .promotion-banner {
+    background: #222 !important;
+  }
+  table[style*="background-color"], table[style*="background-image"] {
+    background: transparent !important;
+    border: none !important;
+  }
+  table h2[style*="color: "][style*="!important"],
+  table a[style*="color: #000!important"]:not([href*="questions/tagged"]) {
+    /* can't use color here because they added an inline !important */
+    filter: invert(100%);
+  }
+  table tr, table td, table td p {
+    background: transparent !important;
+    color: #ddd !important;
+  }
+  table td a[href*="questions/tagged"] {
+    background: #222 !important;
+    color: #ddd !important;
+    border: none !important;
+    text-decoration: none !important;
+  }
+  table td hr {
+    border-style: solid !important;
+  }
 }
 @-moz-document regexp("^https?:\\/\\/((?!(academia|dba|electronics|meta|tex)).*\\.)?stackexchange.com.*") {
   /* target sites to *NOT* hide the header background */
