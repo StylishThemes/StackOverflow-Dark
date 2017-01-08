@@ -31,9 +31,12 @@
 
 See the [full changelog](https://github.com/StylishThemes/Stackoverflow-Dark/wiki).
 
-### Version 2.9.32 (1/8/2017)
+### Version 2.9.32 & 2.9.33 (1/8/2017)
 
 * Add style to SE newsletters page. See [issue #36](https://github.com/StylishThemes/StackOverflow-Dark/issues/36#issuecomment-271138803).
+* Skeptics: Add logo & fix styling.
+* Travel: Fix styling.
+* Wordpress: Fix header logo & background.
 
 ### Version 2.9.31 (1/7/2017)
 
