@@ -1160,6 +1160,32 @@
     background-image: url(http://StylishThemes.github.io/StackOverflow-Dark/images/meta-superuser-logo.svg) !important;
   }
 }
+@-moz-document domain("travel.stackexchange.com") {
+  .container {
+    position: relative !important;
+  }
+  .container:after {
+    content: ' ';
+    background: url(https://cdn.sstatic.net/Sites/travel/img/bg-map.png?v=78dabedcf17b) no-repeat center -34px !important;
+    position: absolute !important;
+    top: 0 !important;
+    left: 0 !important;
+    width: 100% !important;
+    height: 100% !important;
+    z-index: 0 !important;
+    opacity: 0.1 !important;
+    pointer-events: none !important;
+  }
+  .nav li, .nav a, .narrow .status, #content {
+    background: transparent !important;
+  }
+  .nav a:hover, .nav li.youarehere a {
+    background: rgba(0, 0, 0, 0.3) !important;
+  }
+  .answered-accepted .mini-counts {
+    background-color: /*[[base-color]]*/ #6D8048  !important;
+  }
+}
 @-moz-document domain("wordpress.stackexchange.com") {
   #hmenus {
     border: none !important;
