@@ -1064,27 +1064,6 @@
     color: #777 !important;
   }
 }
-@-moz-document domain("programmers.stackexchange.com") {
-  /* programmers.stackexchange.com */
-  #hlogo a {
-    background-image: url(http://StylishThemes.github.io/StackOverflow-Dark/images/programmers-logo.svg) !important;
-  }
-  /* programmers.stackexchange.com specific tweaks */
-  /* menu & section underline extensions (wrong color) */
-  #hmenus .nav ul li.youarehere a:before, #hmenus .nav ul li a:hover:before,
-  #hmenus .nav ul li.youarehere a:after,  #hmenus .nav ul li a:hover:after,
-  #header:before, #header:after, #question-header:before, #question-header:after,
-  .subheader:before, .subheader:after {
-    display: none !important;
-  }
-  #header {
-    border-bottom: 0 !important;
-  }
-  /* target sites that don't need a menu background color */
-  .nav li, .nav a, .nav li.youarehere a, .nav a:hover {
-    background-color: transparent !important;
-  }
-}
 @-moz-document domain("pt.stackoverflow.com") {
   /* pt.stackoverflow.com (Portuguese) */
   #hlogo a {
@@ -1144,6 +1123,34 @@
     mix-blend-mode: initial !important;
     color: #999 !important;
     left: 3px !important;
+  }
+}
+@-moz-document domain("softwareengineering.stackexchange.com") {
+  /* softwareengineering.stackexchange.com specific tweaks */
+  /* menu & section underline extensions (wrong color) */
+  #hmenus .nav ul li a, #hmenus .nav ul li a:hover {
+    /* display: none !important; */
+    border-bottom-color: #db2424 !important;
+  }
+  #header {
+    border-bottom-color: #2b2b2b !important;
+  }
+  .subheader:before, .subheader:after {
+    background: transparent !important;
+  }
+  /* target sites that don't need a menu background color */
+  .nav li, .nav a, .nav li.youarehere a, .nav a:hover {
+    background-color: transparent !important;
+  }
+  .vote-up-off:not(.vote-up-on), .vote-down-off:not(.vote-down-on),
+  .star-off:not(.star-on) {
+    background-color: transparent !important;
+    filter: invert(100%) !important;
+  }
+  a.vote-up-off:hover, a.vote-down-off:hover,
+  a.vote-up-on:hover, a.vote-down-on:hover {
+    background-color: transparent !important;
+    filter: brightness(200%) !important;
   }
 }
 @-moz-document domain("stackapps.com") {
