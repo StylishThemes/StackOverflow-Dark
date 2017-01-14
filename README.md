@@ -31,6 +31,10 @@
 
 See the [full changelog](https://github.com/StylishThemes/Stackoverflow-Dark/wiki).
 
+### Version 2.9.34 (1/13/2017)
+
+* Update & rename "programmers" to "softwareengineering" stackexchange site. See [issue #14](https://github.com/StylishThemes/StackOverflow-Dark/issues/14).
+
 ### Version 2.9.32 & 2.9.33 (1/8/2017)
 
 * Add style to SE newsletters page. See [issue #36](https://github.com/StylishThemes/StackOverflow-Dark/issues/36#issuecomment-271138803).
@@ -45,7 +49,3 @@ See the [full changelog](https://github.com/StylishThemes/Stackoverflow-Dark/wik
 * Darken Winter Bash popup.
 * Darken Impact card horizontal line.
 * Fixes [issue #39](https://github.com/StylishThemes/StackOverflow-Dark/issues/39).
-
-### Version 2.9.30 (1/3/2017)
-
-* Darken Footer &amp; remove a background image on meta.stackexchange.com.
