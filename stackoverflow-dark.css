@@ -1,4 +1,4 @@
-@-moz-document regexp("^https?:\\/\\/((chat|meta|es|ja|pt|ru)\\.)*stackoverflow\\.com.*"), domain("serverfault.com"), domain("superuser.com"), domain("stackapps.com"), domain("mathoverflow.net"), domain("askubuntu.com"), regexp("^https?:\\/\\/((?!(www|area51|gaming|rpg)).*\\.)?stackexchange.com.*") {
+@-moz-document regexp("^https?:\\/\\/((chat|meta|es|ja|pt|ru)\\.)*stackoverflow\\.com.*"), domain("serverfault.com"), domain("superuser.com"), domain("stackapps.com"), domain("mathoverflow.net"), domain("askubuntu.com"), regexp("^https?:\\/\\/((?!(www|area51|gaming)).*\\.)?stackexchange.com.*") {
   /***************************************************************
   Stack Overflow Dark v2.9.34 (1/13/2017)
   https://github.com/StylishThemes/StackOverflow-Dark
@@ -8,7 +8,6 @@
   Except:
   * Area 51 (area51.stackexchange.com)
   * Gaming (gaming.stackexchange.com)
-  * Rope Playing Games (rpg.stackexchange.com)
 
   ** Please open an issue to report sites where the style breaks **
   https://github.com/StylishThemes/StackOverflow-Dark/issues
@@ -670,7 +669,7 @@
 |_____|_| |__,|___|_,_|_____|_,_|___|_|_|__,|_|_|_  |___|  |_| |_____|___|__,|_,_|___|
                                                |___|
 */
-@-moz-document domain("stackexchange.com") {
+@-moz-document regexp("^https?:\\/\\/((?!(www|area51|gaming)).*\\.)?stackexchange.com.*") {
   /* login screen StackExchange logo replacement */
   .login-page .se-logo {
     -moz-box-sizing: border-box !important;
@@ -1075,6 +1074,25 @@
   /* pt.stackoverflow.com (Portuguese) */
   #hlogo a {
     background-image: url(http://StylishThemes.github.io/StackOverflow-Dark/images/pt-meta-stackoverflow-logo.svg) !important;
+  }
+}
+@-moz-document domain("rpg.stackexchange.com") {
+  #content, #hmenus, #mainbar .subheader, .mainbar .subheader,
+  #footer .footerwrap {
+    background-image: none !important;
+  }
+  #hlogo {
+    left: 25px !important;
+  }
+  .nav li a {
+    margin: 0 !important;
+    padding: 10px 20px !important;
+  }
+  #nav-askquestion {
+    text-indent: 10px !important;
+  }
+  a[class*="vote-"]:hover {
+    background-color: transparent !important;
   }
 }
 @-moz-document domain("ru.stackoverflow.com") {
