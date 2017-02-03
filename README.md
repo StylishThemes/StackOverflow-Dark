@@ -31,6 +31,10 @@
 
 See the [full changelog](https://github.com/StylishThemes/Stackoverflow-Dark/wiki).
 
+### Version 2.9.36 (2/2/2017)
+
+* Use https urls. Fixes [issue #41](https://github.com/StylishThemes/StackOverflow-Dark/issues/41).
+
 ### Version 2.9.35 (1/17/2017)
 
 * Add support for rpg.stackexchange.com. Fixes [issue #40](https://github.com/StylishThemes/StackOverflow-Dark/issues/40).
@@ -38,10 +42,3 @@ See the [full changelog](https://github.com/StylishThemes/Stackoverflow-Dark/wik
 ### Version 2.9.34 (1/13/2017)
 
 * Update & rename "programmers" to "softwareengineering" stackexchange site. See [issue #14](https://github.com/StylishThemes/StackOverflow-Dark/issues/14).
-
-### Version 2.9.32 & 2.9.33 (1/8/2017)
-
-* Add style to SE newsletters page. See [issue #36](https://github.com/StylishThemes/StackOverflow-Dark/issues/36#issuecomment-271138803).
-* Skeptics: Add logo & fix styling.
-* Travel: Fix styling.
-* Wordpress: Fix header logo & background.
