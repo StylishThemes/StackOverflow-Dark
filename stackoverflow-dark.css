@@ -561,7 +561,7 @@
 
   /* === Images === */
   .wmd-button>span {
-    background-image: url(http://StylishThemes.github.io/StackOverflow-Dark/images/wmd-buttons.png) !important;
+    background-image: url(https://StylishThemes.github.io/StackOverflow-Dark/images/wmd-buttons.png) !important;
   }
 
   #hlogo img, .everyonelovesstackoverflow { opacity: 0.3 !important; }
@@ -674,7 +674,7 @@
   .login-page .se-logo {
     -moz-box-sizing: border-box !important;
     box-sizing: border-box !important;
-    background: url(http://StylishThemes.github.io/StackOverflow-Dark/images/stackexchange-logo.svg) no-repeat !important;
+    background: url(https://StylishThemes.github.io/StackOverflow-Dark/images/stackexchange-logo.svg) no-repeat !important;
     background-size: cover !important;
     background-position: center center !important;
     width: 200px !important; /* Width of new image */
@@ -835,7 +835,7 @@
 */
 @-moz-document domain("stackoverflow.com") {
   #hlogo a {
-    background-image: url(http://StylishThemes.github.io/StackOverflow-Dark/images/stackoverflow-logo.svg) !important;
+    background-image: url(https://StylishThemes.github.io/StackOverflow-Dark/images/stackoverflow-logo.svg) !important;
   }
 }
 @-moz-document domain("chat.stackoverflow.com") {
@@ -844,7 +844,7 @@
     background-image: none !important;
   }
   #header-logo, #footer-logo {
-    background-image: url(http://StylishThemes.github.io/StackOverflow-Dark/images/stackoverflow-logo.svg) !important;
+    background-image: url(https://StylishThemes.github.io/StackOverflow-Dark/images/stackoverflow-logo.svg) !important;
   }
   #header-logo {
     background-size: contain !important;
@@ -877,7 +877,7 @@
 @-moz-document domain("dba.stackexchange.com") {
   /* database administrators */
   #hlogo a {
-    background-image: url(http://StylishThemes.github.io/StackOverflow-Dark/images/database-admin-logo.svg) !important;
+    background-image: url(https://StylishThemes.github.io/StackOverflow-Dark/images/database-admin-logo.svg) !important;
   }
 }
 @-moz-document regexp("http://stackoverflow\.com/documentation.*") {
@@ -973,13 +973,13 @@
 @-moz-document domain("es.stackoverflow.com") {
   /* es.stackoverflow.com (Spanish) */
   #hlogo a {
-    background-image: url(http://StylishThemes.github.io/StackOverflow-Dark/images/es-stackoverflow-logo.svg) !important;
+    background-image: url(https://StylishThemes.github.io/StackOverflow-Dark/images/es-stackoverflow-logo.svg) !important;
   }
 }
 @-moz-document domain("meta.es.stackoverflow.com") {
   /* meta.es.stackoverflow.com (Spanish) */
   #hlogo a {
-    background-image: url(http://StylishThemes.github.io/StackOverflow-Dark/images/es-meta-stackoverflow-logo.svg) !important;
+    background-image: url(https://StylishThemes.github.io/StackOverflow-Dark/images/es-meta-stackoverflow-logo.svg) !important;
   }
 }
 @-moz-document domain("graphicdesign.stackexchange.com") {
@@ -1016,25 +1016,25 @@
 @-moz-document domain("ja.stackoverflow.com") {
   /* ja.stackoverflow.com (Japanese) */
   #hlogo a {
-    background-image: url(http://StylishThemes.github.io/StackOverflow-Dark/images/ja-stackoverflow-logo.svg) !important;
+    background-image: url(https://StylishThemes.github.io/StackOverflow-Dark/images/ja-stackoverflow-logo.svg) !important;
   }
 }
 @-moz-document domain("meta.ja.stackoverflow.com") {
   /* meta.ja.stackoverflow.com (Japanese) */
   #hlogo a {
-    background-image: url(http://StylishThemes.github.io/StackOverflow-Dark/images/ja-meta-stackoverflow-logo.png) !important;
+    background-image: url(https://StylishThemes.github.io/StackOverflow-Dark/images/ja-meta-stackoverflow-logo.png) !important;
   }
 }
 @-moz-document domain("mathoverflow.net") {
   /* mathoverflow.net */
   #hlogo a {
-    background-image: url(http://StylishThemes.github.io/StackOverflow-Dark/images/mathoverflow-logo.png) !important;
+    background-image: url(https://StylishThemes.github.io/StackOverflow-Dark/images/mathoverflow-logo.png) !important;
   }
 }
 @-moz-document domain("meta.stackoverflow.com") {
   /* meta.stackoverflow.com */
   #hlogo a {
-    background-image: url(http://StylishThemes.github.io/StackOverflow-Dark/images/meta-stackoverflow-logo.svg) !important;
+    background-image: url(https://StylishThemes.github.io/StackOverflow-Dark/images/meta-stackoverflow-logo.svg) !important;
   }
   #sidebar .community-bulletin .bulletin-item-content a, #sidebar .community-bulletin .bulletin-item-content a:hover {
     color: /*[[base-color]]*/ #008080 !important;
@@ -1066,14 +1066,14 @@
 @-moz-document domain("pt.stackoverflow.com") {
   /* pt.stackoverflow.com (Portuguese) */
   #hlogo a {
-    background-image: url(http://StylishThemes.github.io/StackOverflow-Dark/images/pt-stackoverflow-logo.svg) !important;
+    background-image: url(https://StylishThemes.github.io/StackOverflow-Dark/images/pt-stackoverflow-logo.svg) !important;
     height: 70px !important;
   }
 }
 @-moz-document domain("meta.pt.stackoverflow.com") {
   /* pt.stackoverflow.com (Portuguese) */
   #hlogo a {
-    background-image: url(http://StylishThemes.github.io/StackOverflow-Dark/images/pt-meta-stackoverflow-logo.svg) !important;
+    background-image: url(https://StylishThemes.github.io/StackOverflow-Dark/images/pt-meta-stackoverflow-logo.svg) !important;
   }
 }
 @-moz-document domain("rpg.stackexchange.com") {
@@ -1098,7 +1098,7 @@
 @-moz-document domain("ru.stackoverflow.com") {
   /* ru.stackoverflow.com (Russian) */
   #hlogo a {
-    background-image: url(http://StylishThemes.github.io/StackOverflow-Dark/images/ru-stackoverflow-logo.svg) !important;
+    background-image: url(https://StylishThemes.github.io/StackOverflow-Dark/images/ru-stackoverflow-logo.svg) !important;
     height: 70px !important;
     width: 225px !important;
   }
@@ -1106,7 +1106,7 @@
 @-moz-document domain("meta.ru.stackoverflow.com") {
   /* meta.ru.stackoverflow.com (Russian) */
   #hlogo a {
-    background-image: url(http://StylishThemes.github.io/StackOverflow-Dark/images/ru-meta-stackoverflow-logo.svg) !important;
+    background-image: url(https://StylishThemes.github.io/StackOverflow-Dark/images/ru-meta-stackoverflow-logo.svg) !important;
   }
 }
 @-moz-document domain("salesforce.stackexchange.com") {
@@ -1119,7 +1119,7 @@
   /* serverfault.com */
   #hlogo a {
     background-size: cover !important;
-    background-image: url(http://StylishThemes.github.io/StackOverflow-Dark/images/serverfault-logo.svg) !important;
+    background-image: url(https://StylishThemes.github.io/StackOverflow-Dark/images/serverfault-logo.svg) !important;
   }
   .container .answered, .container .answered-accepted {
     border: 2px transparent !important;
@@ -1131,7 +1131,7 @@
   #hlogo a {
     height: 60px !important;
     background-size: contain !important;
-    background-image: url(http://StylishThemes.github.io/StackOverflow-Dark/images/skeptics-logo.svg) !important;
+    background-image: url(https://StylishThemes.github.io/StackOverflow-Dark/images/skeptics-logo.svg) !important;
   }
   #hmenus .nav li a {
     border: none !important;
@@ -1175,7 +1175,7 @@
   /* stackapps.com */
   #hlogo a {
     background-size: cover !important;
-    background-image: url(http://StylishThemes.github.io/StackOverflow-Dark/images/stackapps-logo.png) !important;
+    background-image: url(https://StylishThemes.github.io/StackOverflow-Dark/images/stackapps-logo.png) !important;
   }
 }
 @-moz-document regexp("^https?:\\/\\/stackexchange\\.com.*") {
@@ -1183,7 +1183,7 @@
   header h1 {
     height: 60px !important;
     background-size: cover !important;
-    background-image: url(http://StylishThemes.github.io/StackOverflow-Dark/images/stackexchange-logo.svg) !important;
+    background-image: url(https://StylishThemes.github.io/StackOverflow-Dark/images/stackexchange-logo.svg) !important;
   }
 }
 
@@ -1191,14 +1191,14 @@
   #hlogo a {
     height: 60px !important;
     background-size: cover !important;
-    background-image: url(http://StylishThemes.github.io/StackOverflow-Dark/images/superuser-logo.svg) !important;
+    background-image: url(https://StylishThemes.github.io/StackOverflow-Dark/images/superuser-logo.svg) !important;
   }
 }
 @-moz-document domain("meta.superuser.com") {
   #hlogo a {
     height: 60px !important;
     background-size: cover !important;
-    background-image: url(http://StylishThemes.github.io/StackOverflow-Dark/images/meta-superuser-logo.svg) !important;
+    background-image: url(https://StylishThemes.github.io/StackOverflow-Dark/images/meta-superuser-logo.svg) !important;
   }
 }
 @-moz-document domain("travel.stackexchange.com") {
