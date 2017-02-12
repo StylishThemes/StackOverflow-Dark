@@ -1,16 +1,13 @@
 {
   "name": "stackoverflow-dark",
-  "version": "2.9.36",
-  "description": "Stack Overflow Dark theme for Stylish",
+  "version": "2.9.37",
+  "description": "Stack Overflow Dark theme",
   "license": "CC-BY-SA-4.0",
   "repository": "https://github.com/StylishThemes/StackOverflow-Dark",
   "homepage": "https://userstyles.org/styles/35345/stackoverflow-dark",
-  "contributors": [
-    "Mottie <wowmotty@gmail.com> (http://wowmotty.blogspot.com/)",
-    "Hasimir (http://www.adversary.org/wp/)",
-    "kelunik (https://github.com/kelunik)",
-    "silverwind <me@silverwind.io> (https://silverwind.io/)"
-  ],
+  "scripts": {
+    "authors" : "bash tools/authors.sh"
+  },
   "devDependencies": {
     "grunt": "^1.0.1",
     "grunt-contrib-clean": "^1.0.0",
