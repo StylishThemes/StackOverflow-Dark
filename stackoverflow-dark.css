@@ -102,7 +102,7 @@
 
   #custom-header, .review-bar, .diff-choices a.selected, #header #topbar, td.owner, a.owner, .question-status,
   .profile-popup, .profile-popup div, .profile-popup th, .profile-popup td, #global, .actual-edit-overlay,
-  input:not([type='submit']), textarea, #search input, .tag-editor {
+  input:not([type='submit']), textarea, #search input, .tag-editor, .f-select > select {
     background-color: #111 !important;
     color: #ddd !important;
   }
@@ -114,7 +114,7 @@
   html, blockquote, #post-preview, .nav .primarynav li a, #chat, #hsearch .textbox, .form-item, .grippie,
   .welovestackoverflow, #wmd-button-bar, .wmd-button-bar, .qa-block, .content-block, .user-info-rep, .sidebar,
   .popup, .full-diff, .val-success, .search-form .filter-pane nav {
-    background: #191919 none !important
+    background: #191919 !important
   }
 
   .authcomment, .seIntro, .seFooter {
@@ -126,8 +126,9 @@
     border: 1px solid transparent !important;
   }
 
-  #tabs a.youarehere, .tabs a.youarehere, .tag-suggestions, .dropdown li {
-    background: #191919 !important;
+  #tabs a.youarehere, .tabs a.youarehere, .tag-suggestions, .dropdown li,
+  .proposed-change .diff-buttons a:not(.selected) {
+    background-color: #191919 !important;
     border-color: #444 !important;
   }
   .tabs a.youarehere {
@@ -152,7 +153,7 @@
   .topbar-dialog, .topbar-dialog .header, .share-tip, #input-area, .messages,
   #tag-menu, #overlay-header, .action-list .action-selected, .switcher-nudge-lightbox,
   .user-rep-chart-summary-tooltip:hover, .current-site-container, #or, .account-number, .topbar,
-  .wmd-prompt-dialog, .wb-popup-content, .wb-hat-details {
+  .wmd-prompt-dialog, .wb-popup-content, .wb-hat-details, .docs-review-page .history-table tr.even td {
     background-color: #222 !important;
     color: #ddd !important;
   }
@@ -160,7 +161,8 @@
   .profile-popup, .profile-popup tr, .profile-popup th, .profile-gravatar, .newuser, .roomcard,
   .seWrapper, h2.index.header, .privilege-table-row:hover, .list-originals .item.hover,
   .list-originals .body-summary, .review-instructions-reason, .room-mini, #formContainer, #switch,
-  .login-topbar, .newsletter-category, .newsletter-item, .blogcontainer, .usercard-xxl, .roomcard-xxl {
+  .login-topbar, .newsletter-category, .newsletter-item, .blogcontainer, .usercard-xxl, .roomcard-xxl,
+  .docs-review-page .topic-draft-bar {
     background-color: #222 !important;
     border-color: #555 !important;
     color: #ddd !important;
@@ -179,7 +181,8 @@
   }
   .calendar, .calendar-small, .mspark .mspbar, #promo-box, #input-area .input-hint,
   .tour-page .feature-selection li a.triggered, .ob-docs,
-  .topbar.newheader .topbar-wrapper .topbar-links .search-container #search input[name="q"] {
+  .topbar.newheader .topbar-wrapper .topbar-links .search-container #search input[name="q"],
+  .mainbar.discussion .discussion-item {
     background: #222 !important;
   }
 
