@@ -96,7 +96,8 @@
   }
 
   .popup-badges .all-badge-progress .completed:before, .previous-button, .next-button, header, #footer,
-  /* === herobox when not logged in === */ #herobox.alternate {
+  /* === herobox when not logged in === */ #herobox.alternate,
+  .message-title {
     background-color: rgba(0,0,0,0.4) !important;
   }
 
@@ -212,7 +213,8 @@
   }
 
   .tagged-interesting, .tagged-interesting .views, .highlight-row, .highlighted, .card.rep-card .graph,
-  .popup-badges .badge-progress:hover:not(.completed), #newsletter-ad, .search-form .icon-advanced-search {
+  .popup-badges .badge-progress:hover:not(.completed), #newsletter-ad, .search-form .icon-advanced-search,
+  .message.gray {
     background-color: #242424 !important;
     background-image: none !important;
   }
@@ -269,7 +271,8 @@
   }
 
   /* === Brown(ish) === */
-  .new-post-activity, #new-answer-activity, .val-info, .highlight, a.youarehere:before {
+  .new-post-activity, #new-answer-activity, .val-info, .highlight, a.youarehere:before,
+  .message.regular {
     background-color: rgba(51,34,17,.4) !important;
   }
 
@@ -281,7 +284,8 @@
 
   /* === Green === */
   .accepted-answer, .suggested-edit .inserted, .markdown-diff .inserted, .rep-increase, .progress-bar .percent,
-  .recommended, .vote.accepted, .suggested-edit .inserted>div, .full-diff .inserted>div {
+  .recommended, .vote.accepted, .suggested-edit .inserted>div, .full-diff .inserted>div,
+  .message.success {
     background: #232 !important;
   }
 
@@ -317,7 +321,8 @@
 
   /* === Red === */
   .deleted-answer, .suggested-edit .deleted, .markdown-diff .deleted, .suggested-edit .deleted>div,
-  .full-diff .deleted>div, .realtime-post-deleted-notification p {
+  .full-diff .deleted>div, .realtime-post-deleted-notification p, .message.incomplete,
+  .message.error {
     background-color: #200 !important;
   }
   span.diff-delete {
