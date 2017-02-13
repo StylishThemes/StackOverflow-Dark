@@ -32,6 +32,10 @@
 
 See the [full changelog](https://github.com/StylishThemes/Stackoverflow-Dark/wiki).
 
+### Version 2.9.38 (2/13/2017)
+
+* Global: Fix messages box.
+
 ### Version 2.9.37 (2/12/2017)
 
 * Documentation: Darken proposed changes
@@ -40,7 +44,3 @@ See the [full changelog](https://github.com/StylishThemes/Stackoverflow-Dark/wik
 ### Version 2.9.36 (2/2/2017)
 
 * Use https urls. Fixes [issue #41](https://github.com/StylishThemes/StackOverflow-Dark/issues/41).
-
-### Version 2.9.35 (1/17/2017)
-
-* Add support for rpg.stackexchange.com. Fixes [issue #40](https://github.com/StylishThemes/StackOverflow-Dark/issues/40).
