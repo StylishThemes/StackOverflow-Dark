@@ -95,10 +95,14 @@
     background-color: #000 !important;
   }
 
-  .popup-badges .all-badge-progress .completed:before, .previous-button, .next-button, header, #footer,
+  .popup-badges .all-badge-progress .completed:before, .previous-button, .next-button, #footer,
   /* === herobox when not logged in === */ #herobox.alternate,
   .message-title {
     background-color: rgba(0,0,0,0.4) !important;
+  }
+
+  header {
+    background-color: #080808 !important;
   }
 
   #custom-header, .review-bar, .diff-choices a.selected, #header #topbar, td.owner, a.owner, .question-status,
@@ -108,7 +112,8 @@
     color: #ddd !important;
   }
 
-  .summary .post-tag, .onebox, .profile-ad, .message.message-config {
+  .summary .post-tag, .onebox, .profile-ad, .message.message-config,
+  .so-header a:hover, .so-header a.topbar-icon-on {
     background: #151515 !important;
   }
 
