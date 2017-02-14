@@ -10,7 +10,7 @@ module.exports = function (grunt) {
 		config = {
 			'theme'    : 'desert',
 			'color'    : '#4183C4',
-			'visited'  : '#ff32a0',
+			'visited'  : '#4183C4',
 			'font'     : 'Menlo',
 			'image'    : 'url(https://raw.githubusercontent.com/StylishThemes/GitHub-Dark/master/images/backgrounds/bg-tile1.png)',
 			'tiled'    : true,
