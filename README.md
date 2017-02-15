@@ -41,12 +41,13 @@
 
 See the [full changelog](https://github.com/StylishThemes/Stackoverflow-Dark/wiki).
 
-### Version 2.9.39 & 2.9.40 (2/14/2017)
+### Version 2.9.39 - 2.9.41 (2/14/2017)
 
 * Global: Change default background to match GitHub-Dark. Fixes [issue #42](https://github.com/StylishThemes/StackOverflow-Dark/issues/42).
 * SO:
   * Add solid background color to header. Fixes [issue #43](https://github.com/StylishThemes/StackOverflow-Dark/issues/43).
-  * fix bounty tab & question button style.
+  * Fix bounty tab & question button style.
+  * Fix visited ask question button text.
 
 ### Version 2.9.38 (2/13/2017)
 
