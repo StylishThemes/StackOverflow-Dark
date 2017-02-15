@@ -50,7 +50,7 @@
   .post-tag:hover, .comments-link:hover, .summary .post-tag:hover , .commentslink, .bounty-indicator,
   .bounty-indicator-tab, .bounty-award, span.bounty-indicator-tab, #change-picture, .top-badge,
   .supernovabg, .hotbg, .nav li.youarehere a, .nav a:hover, a.button:hover, .edit-count, .pager a:hover span,
-  a[href*="/questions/ask"], .bounties-tab {
+  a[href*="/questions/ask"], a[href*="/questions/ask"]:visited, .bounties-tab {
     background-color: /*[[base-color]]*/ #008080 !important;
     color: #eee !important;
   }
