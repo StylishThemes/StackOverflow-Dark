@@ -41,6 +41,12 @@
 
 See the [full changelog](https://github.com/StylishThemes/Stackoverflow-Dark/wiki).
 
+### Version 2.9.42 (3/12/2017)
+
+* Global:
+  * Fix editor icons.
+  * Remove background from "ask your own question" link.
+
 ### Version 2.9.39 - 2.9.41 (2/14/2017)
 
 * Global: Change default background to match GitHub-Dark. Fixes [issue #42](https://github.com/StylishThemes/StackOverflow-Dark/issues/42).
@@ -52,8 +58,3 @@ See the [full changelog](https://github.com/StylishThemes/Stackoverflow-Dark/wik
 ### Version 2.9.38 (2/13/2017)
 
 * Global: Fix messages box.
-
-### Version 2.9.37 (2/12/2017)
-
-* Documentation: Darken proposed changes
-* Meta: Add AUTHORS file
