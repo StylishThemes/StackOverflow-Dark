@@ -41,11 +41,14 @@
 
 See the [full changelog](https://github.com/StylishThemes/Stackoverflow-Dark/wiki).
 
-### Version 2.9.42 (3/12/2017)
+### Version 2.9.42 - 2.9.43 (3/12/2017)
 
 * Global:
   * Fix editor icons.
   * Remove background from "ask your own question" link.
+  * Fix button colors.
+* SO:
+  * Change header icon. Fixes [issue #45](https://github.com/StylishThemes/StackOverflow-Dark/issues/45).
 
 ### Version 2.9.39 - 2.9.41 (2/14/2017)
 
