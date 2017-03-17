@@ -134,7 +134,8 @@
   }
 
   #tabs a.youarehere, .tabs a.youarehere, .tag-suggestions, .dropdown li,
-  .proposed-change .diff-buttons a:not(.selected), #logout-form {
+  .proposed-change .diff-buttons a:not(.selected), #logout-form, .snippet-holder,
+  .CodeMirror, .CodeMirror-gutters, .snippet-box-edit {
     background-color: #191919 !important;
     border-color: #444 !important;
   }
@@ -160,7 +161,8 @@
   .topbar-dialog, .topbar-dialog .header, .share-tip, #input-area, .messages,
   #tag-menu, #overlay-header, .action-list .action-selected, .switcher-nudge-lightbox,
   .user-rep-chart-summary-tooltip:hover, .current-site-container, #or, .account-number, .topbar,
-  .wmd-prompt-dialog, .wb-popup-content, .wb-hat-details, .docs-review-page .history-table tr.even td {
+  .wmd-prompt-dialog, .wb-popup-content, .wb-hat-details, .docs-review-page .history-table tr.even td,
+  kbd, kbd code {
     background-color: #222 !important;
     color: #ddd !important;
   }
@@ -443,7 +445,8 @@
   .post-text, .user-info, .topbar-dialog .header h3, .topbar-dialog .header h3 a, .topbar-dialog span,
   .search-result .answered .vote-count-post strong, .votes-cast-stats th, .subheader h1, .vote.accepted,
   .message.message-config h1, .message.message-config h2, .message.message-config h3, .message.message-config h4,
-  .spoiler:hover, .company-module a:hover *, .search-form .label, .search-form label, .list.companies p {
+  .spoiler:hover, .company-module a:hover *, .search-form .label, .search-form label, .list.companies p,
+  #snpte-button-run {
     color: #ddd !important;
   }
 
@@ -642,7 +645,7 @@
     color: #ddd !important;
   }
   /* style non-prettyprint code */
-  code, pre:not(.prettyprint) {
+  code, pre:not(.prettyprint):not(.CodeMirror-line) {
     background: #333 !important;
   }
   .prettyprint code {
