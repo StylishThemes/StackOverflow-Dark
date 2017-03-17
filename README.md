@@ -41,6 +41,10 @@
 
 See the [full changelog](https://github.com/StylishThemes/Stackoverflow-Dark/wiki).
 
+### Version 2.9.44 (3/16/2017)
+
+* SO: Darken code snippet popup.
+
 ### Version 2.9.42 - 2.9.43 (3/12/2017)
 
 * Global:
@@ -57,7 +61,3 @@ See the [full changelog](https://github.com/StylishThemes/Stackoverflow-Dark/wik
   * Add solid background color to header. Fixes [issue #43](https://github.com/StylishThemes/StackOverflow-Dark/issues/43).
   * Fix bounty tab & question button style.
   * Fix visited ask question button text.
-
-### Version 2.9.38 (2/13/2017)
-
-* Global: Fix messages box.
