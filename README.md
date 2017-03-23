@@ -18,7 +18,7 @@
   </a>
 </p>
 
-- This dark theme applied to Stack Overflow and almost all Stack Exchange sites (except [Gaming](http://gaming.stackexchange.com/) and [Area 51](http://area51.stackexchange.com/).
+- This dark theme applied to Stack Overflow and almost all Stack Exchange sites (except [Gaming](http://gaming.stackexchange.com/) and [Area 51](http://area51.stackexchange.com/)).
 - Install from [userstyles.org](http://userstyles.org/styles/35345) (with customization options) or [manually](https://raw.githubusercontent.com/StylishThemes/Stackoverflow-Dark/master/stackoverflow-dark.css).
 - Stylus is available for [Chrome](https://chrome.google.com/webstore/detail/stylus/clngdbkpkpeebahjckkjfobafhncgmne).
 - Stylish is available for [Firefox](https://addons.mozilla.org/en-US/firefox/addon/2108/), [Chrome](https://chrome.google.com/extensions/detail/fjnbnpbmkenffdnngjfgmeleoegfcffe), [Opera](https://addons.opera.com/en/extensions/details/stylish/), [Safari](http://sobolev.us/stylish/) and [Firefox Mobile](https://addons.mozilla.org/en-US/firefox/addon/2108/).
@@ -41,6 +41,10 @@
 
 See the [full changelog](https://github.com/StylishThemes/Stackoverflow-Dark/wiki).
 
+### Version 2.9.45 (3/23/2017)
+
+* Chat: Remove background image from input. Fixes [issue #46](https://github.com/StylishThemes/StackOverflow-Dark/issues/46).
+
 ### Version 2.9.44 (3/16/2017)
 
 * SO: Darken code snippet popup.
@@ -53,11 +57,3 @@ See the [full changelog](https://github.com/StylishThemes/Stackoverflow-Dark/wik
   * Fix button colors.
 * SO:
   * Change header icon. Fixes [issue #45](https://github.com/StylishThemes/StackOverflow-Dark/issues/45).
-
-### Version 2.9.39 - 2.9.41 (2/14/2017)
-
-* Global: Change default background to match GitHub-Dark. Fixes [issue #42](https://github.com/StylishThemes/StackOverflow-Dark/issues/42).
-* SO:
-  * Add solid background color to header. Fixes [issue #43](https://github.com/StylishThemes/StackOverflow-Dark/issues/43).
-  * Fix bounty tab & question button style.
-  * Fix visited ask question button text.
