@@ -23,7 +23,7 @@
 - Stylus is available for [Chrome](https://chrome.google.com/webstore/detail/stylus/clngdbkpkpeebahjckkjfobafhncgmne).
 - Stylish is available for [Firefox](https://addons.mozilla.org/en-US/firefox/addon/2108/), [Chrome](https://chrome.google.com/extensions/detail/fjnbnpbmkenffdnngjfgmeleoegfcffe), [Opera](https://addons.opera.com/en/extensions/details/stylish/), [Safari](http://sobolev.us/stylish/) and [Firefox Mobile](https://addons.mozilla.org/en-US/firefox/addon/2108/).
 - In versions 2.8.0+, this style will apply to *almost all* Stack Exchange sites.
-- Use the [grunt build process](https://github.com/StylishThemes/StackOverflow-Dark/wiki/Build) to customize your GitHub Dark theme.
+- Use the [grunt build process](https://github.com/StylishThemes/StackOverflow-Dark/wiki/Build) to customize your StackOverflow Dark theme.
 - Please refer to the [installation documentation](https://github.com/StylishThemes/StackOverflow-Dark/wiki/Install) for more details.
 
 ## Preview
@@ -41,6 +41,11 @@
 
 See the [full changelog](https://github.com/StylishThemes/Stackoverflow-Dark/wiki).
 
+### Version 2.9.46 (4/10/2017)
+
+* Global: Hide space occupying empty div; seen when ads are blocked.
+* SO: Fix accepted answer pre background.
+
 ### Version 2.9.45 (3/23/2017)
 
 * Chat: Remove background image from input. Fixes [issue #46](https://github.com/StylishThemes/StackOverflow-Dark/issues/46).
@@ -48,12 +53,3 @@ See the [full changelog](https://github.com/StylishThemes/Stackoverflow-Dark/wik
 ### Version 2.9.44 (3/16/2017)
 
 * SO: Darken code snippet popup.
-
-### Version 2.9.42 - 2.9.43 (3/12/2017)
-
-* Global:
-  * Fix editor icons.
-  * Remove background from "ask your own question" link.
-  * Fix button colors.
-* SO:
-  * Change header icon. Fixes [issue #45](https://github.com/StylishThemes/StackOverflow-Dark/issues/45).
