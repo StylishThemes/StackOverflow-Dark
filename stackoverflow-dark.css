@@ -576,6 +576,7 @@
   }
 
   #hlogo img, .everyonelovesstackoverflow { opacity: 0.3 !important; }
+  .everyonelovesstackoverflow:empty { display: none !important; }
 
   #hlogo a, #footer-logo {
     background-repeat: no-repeat !important;
