@@ -41,6 +41,11 @@
 
 See the [full changelog](https://github.com/StylishThemes/Stackoverflow-Dark/wiki).
 
+### Version 2.9.47 (5/29/2017)
+
+* Remove header inversion from academia, dba & electronics. Fixes [issue #14](https://github.com/StylishThemes/StackOverflow-Dark/issues/14).
+* Database: Fix logo
+
 ### Version 2.9.46 (4/10/2017)
 
 * Global: Hide space occupying empty div; seen when ads are blocked.
@@ -49,7 +54,3 @@ See the [full changelog](https://github.com/StylishThemes/Stackoverflow-Dark/wik
 ### Version 2.9.45 (3/23/2017)
 
 * Chat: Remove background image from input. Fixes [issue #46](https://github.com/StylishThemes/StackOverflow-Dark/issues/46).
-
-### Version 2.9.44 (3/16/2017)
-
-* SO: Darken code snippet popup.
