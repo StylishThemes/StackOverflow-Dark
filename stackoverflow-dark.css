@@ -902,6 +902,9 @@
   #hlogo a {
     background-image: url(https://StylishThemes.github.io/StackOverflow-Dark/images/database-admin-logo.svg) !important;
   }
+  #header {
+    background-image: url(https://StylishThemes.github.io/StackOverflow-Dark/images/database-admin-logo-lines.png) !important;
+  }
 }
 @-moz-document regexp("http://stackoverflow\.com/documentation.*") {
   /* documentation beta moved into Stackoverflow */
