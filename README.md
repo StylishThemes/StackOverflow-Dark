@@ -41,10 +41,13 @@
 
 See the [full changelog](https://github.com/StylishThemes/Stackoverflow-Dark/wiki).
 
-### Version 2.9.48 (6/3/2017)
+### Version 2.9.48 & 2.9.49 (6/3/2017)
 
-* SO: Style goal tracking tooltip. Fixes [issue #47](https://github.com/StylishThemes/StackOverflow-Dark/issues/47).
+* SO:
+  * Style goal tracking tooltip. Fixes [issue #47](https://github.com/StylishThemes/StackOverflow-Dark/issues/47).
+  * Update style of badge progress cards. Fixes [issue #48](https://github.com/StylishThemes/StackOverflow-Dark/issues/48).
 * Database: Fix logo color.
+* Documentation: fix url protocol
 
 ### Version 2.9.47 (5/29/2017)
 
