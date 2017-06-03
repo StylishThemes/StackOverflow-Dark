@@ -41,6 +41,11 @@
 
 See the [full changelog](https://github.com/StylishThemes/Stackoverflow-Dark/wiki).
 
+### Version 2.9.48 (6/3/2017)
+
+* SO: Style goal tracking tooltip. Fixes [issue #47](https://github.com/StylishThemes/StackOverflow-Dark/issues/47).
+* Database: Fix logo color.
+
 ### Version 2.9.47 (5/29/2017)
 
 * Remove header inversion from academia, dba & electronics. Fixes [issue #14](https://github.com/StylishThemes/StackOverflow-Dark/issues/14).
@@ -50,7 +55,3 @@ See the [full changelog](https://github.com/StylishThemes/Stackoverflow-Dark/wik
 
 * Global: Hide space occupying empty div; seen when ads are blocked.
 * SO: Fix accepted answer pre background.
-
-### Version 2.9.45 (3/23/2017)
-
-* Chat: Remove background image from input. Fixes [issue #46](https://github.com/StylishThemes/StackOverflow-Dark/issues/46).
