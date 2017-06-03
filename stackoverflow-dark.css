@@ -222,7 +222,7 @@
 
   .tagged-interesting, .tagged-interesting .views, .highlight-row, .highlighted, .card.rep-card .graph,
   .badge-progress:hover, #newsletter-ad, .search-form .icon-advanced-search,
-  .message.gray {
+  .message.gray, .choose-tracker-menu li:hover {
     background-color: #242424 !important;
     background-image: none !important;
   }
