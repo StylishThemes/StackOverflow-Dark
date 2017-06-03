@@ -907,7 +907,7 @@
     background-image: url(https://StylishThemes.github.io/StackOverflow-Dark/images/database-admin-logo-lines.png) !important;
   }
 }
-@-moz-document regexp("http://stackoverflow\.com/documentation.*") {
+@-moz-document url-prefix("https://stackoverflow.com/documentation") {
   /* documentation beta moved into Stackoverflow */
   .examples .example:hover, .example.expanded, div.sidebar, .timestamp,
   .syntax .syntax-html, #tabs a, .tabs a, .intellitab a {
@@ -921,7 +921,7 @@
   .version-name, .version-row, .example-metric, .edit-summary, .first-time-container, .current-draft,
   a.selected, .diff-choices a:hover, .diff-type-controls a:hover, .doctag-cards .card-bottom, .proposal-details,
   .bubble-message .left-pane, .bubble-message .right-pane, .vertical-option:hover,
-  .side-by-side-markdown .skip-row {
+  .side-by-side-markdown .skip-row, .introduction-topic {
     background-color: #222 !important;
   }
   .vertical-option:hover, .split-option:hover, .expand-all-examples:hover, .collapse-all-examples:hover,
