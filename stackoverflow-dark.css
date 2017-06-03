@@ -235,7 +235,8 @@
     font-size: 18px !important;
   }
 
-  .youarehere, .dropdown li.selected a, .dropdown li.selected a:hover, .ob-docs .example-metric {
+  .youarehere, .dropdown li.selected a, .dropdown li.selected a:hover, .ob-docs .example-metric,
+  .choose-tracker-menu {
     background: #333 !important;
     color: #ccc !important;
   }
