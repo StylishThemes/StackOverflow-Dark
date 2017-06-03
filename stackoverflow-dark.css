@@ -135,7 +135,7 @@
 
   #tabs a.youarehere, .tabs a.youarehere, .tag-suggestions, .dropdown li,
   .proposed-change .diff-buttons a:not(.selected), #logout-form, .snippet-holder,
-  .CodeMirror, .CodeMirror-gutters, .snippet-box-edit {
+  .CodeMirror, .CodeMirror-gutters, .snippet-box-edit, .badge-progress.completed {
     background-color: #191919 !important;
     border-color: #444 !important;
   }
@@ -171,7 +171,7 @@
   .seWrapper, h2.index.header, .privilege-table-row:hover, .list-originals .item.hover,
   .list-originals .body-summary, .review-instructions-reason, .room-mini, #formContainer, #switch,
   .login-topbar, .newsletter-category, .newsletter-item, .blogcontainer, .usercard-xxl, .roomcard-xxl,
-  .docs-review-page .topic-draft-bar {
+  .docs-review-page .topic-draft-bar, .badge-progress {
     background-color: #222 !important;
     border-color: #555 !important;
     color: #ddd !important;
@@ -221,7 +221,7 @@
   }
 
   .tagged-interesting, .tagged-interesting .views, .highlight-row, .highlighted, .card.rep-card .graph,
-  .popup-badges .badge-progress:hover:not(.completed), #newsletter-ad, .search-form .icon-advanced-search,
+  .badge-progress:hover, #newsletter-ad, .search-form .icon-advanced-search,
   .message.gray {
     background-color: #242424 !important;
     background-image: none !important;
