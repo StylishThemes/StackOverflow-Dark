@@ -284,6 +284,10 @@
   .message.regular {
     background-color: rgba(51,34,17,.4) !important;
   }
+  pre .spaces {
+    background-color: #321 !important;
+    color: #eee !important;
+  }
 
   /* chat room buttons */
   a.button {
