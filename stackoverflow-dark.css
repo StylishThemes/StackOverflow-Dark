@@ -92,7 +92,7 @@
 
   /* === background color === */
   /* from darkest to lightest grey */
-  .search-container input[type=text] {
+  .search-container input[type=text], .-link:focus {
     background-color: #000 !important;
   }
 
