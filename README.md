@@ -41,6 +41,17 @@
 
 See the [full changelog](https://github.com/StylishThemes/Stackoverflow-Dark/wiki).
 
+### Version 2.9.51 (6/4/2017)
+
+* SO:
+  * Style review decision buttons. Fixes [issue #50](https://github.com/StylishThemes/StackOverflow-Dark/issues/50).
+  * Style answer hyperlinks. Fixes [issue #51](https://github.com/StylishThemes/StackOverflow-Dark/issues/51).
+  * remove generic link selector. Fixes [issue #52](https://github.com/StylishThemes/StackOverflow-Dark/issues/52); Also remove multiple tag "any|all" selector background.
+  * Darken focus navigation bar style. Fixes [issue #53](https://github.com/StylishThemes/StackOverflow-Dark/issues/53).
+  * Add markdown spaces styling. Fixes [issue #54](https://github.com/StylishThemes/StackOverflow-Dark/issues/54).
+  * Fix version lables on editing-help page. Fixes [issue #55](https://github.com/StylishThemes/StackOverflow-Dark/issues/55).
+  * More background flash on TOC select. Fixes [issue #56](https://github.com/StylishThemes/StackOverflow-Dark/issues/56).
+
 ### Version 2.9.48 - 2.9.50 (6/3/2017)
 
 * SO:
@@ -54,8 +65,3 @@ See the [full changelog](https://github.com/StylishThemes/Stackoverflow-Dark/wik
 
 * Remove header inversion from academia, dba & electronics. Fixes [issue #14](https://github.com/StylishThemes/StackOverflow-Dark/issues/14).
 * Database: Fix logo
-
-### Version 2.9.46 (4/10/2017)
-
-* Global: Hide space occupying empty div; seen when ads are blocked.
-* SO: Fix accepted answer pre background.
