@@ -236,7 +236,7 @@
   }
 
   .youarehere, .dropdown li.selected a, .dropdown li.selected a:hover, .ob-docs .example-metric,
-  .choose-tracker-menu {
+  .choose-tracker-menu, .version-row, .version-name {
     background: #333 !important;
     color: #ccc !important;
   }
