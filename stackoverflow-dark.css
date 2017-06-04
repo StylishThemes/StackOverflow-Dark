@@ -357,7 +357,7 @@
   #mainbar, #mainbar-full, .mainbar-full, #logout-page, #sidebar, .footerwrap, #footer-menu, .module,
   #sidebar #newsletter-ad, #sidebar .ad-container, #sidebar .everyonelovesstackoverflow, .mention,
   .tag-suggestions>div .more-info, .user-tags .answer-votes, .expanded:hover, .sidebar-accordion,
-  .sidebar-accordion a:hover, .sidebar, .sidebar *, .tag-filter-isany {
+  .sidebar-accordion a:hover, .sidebar, .sidebar *, .tag-filter-isany, .col-section.expanded {
     background-color: transparent !important;
   }
 
