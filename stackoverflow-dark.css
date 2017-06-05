@@ -1102,6 +1102,18 @@
     color: #777 !important;
   }
 }
+@-moz-document domain("portuguese.meta.stackexchange.com") {
+  #hlogo a {
+    text-indent: 0 !important;
+  }
+  .nav ul li {
+    margin-left: 5px !important;
+  }
+  .nav ul li a {
+    padding: 5px 10px !important;
+    margin: 0 !important;
+  }
+}
 @-moz-document domain("pt.stackoverflow.com") {
   /* pt.stackoverflow.com (Portuguese) */
   .so-header .-logo:not(._glyph) .-img {
