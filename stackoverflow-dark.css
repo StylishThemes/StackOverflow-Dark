@@ -1096,15 +1096,18 @@
 }
 @-moz-document domain("pt.stackoverflow.com") {
   /* pt.stackoverflow.com (Portuguese) */
-  #hlogo a {
+  .so-header .-logo:not(._glyph) .-img {
     background-image: url(https://StylishThemes.github.io/StackOverflow-Dark/images/pt-stackoverflow-logo.svg) !important;
-    height: 70px !important;
+    background-size: cover !important;
+    height: 60px !important;
   }
 }
-@-moz-document domain("meta.pt.stackoverflow.com") {
-  /* pt.stackoverflow.com (Portuguese) */
-  #hlogo a {
+@-moz-document domain("pt.meta.stackoverflow.com") {
+  /* pt.meta.stackoverflow.com (Portuguese) */
+  .so-header .-logo:not(._glyph) .-img {
     background-image: url(https://StylishThemes.github.io/StackOverflow-Dark/images/pt-meta-stackoverflow-logo.svg) !important;
+    background-size: contain !important;
+    height: 60px !important;
   }
 }
 @-moz-document domain("rpg.stackexchange.com") {
