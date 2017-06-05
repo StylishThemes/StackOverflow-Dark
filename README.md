@@ -41,6 +41,41 @@
 
 See the [full changelog](https://github.com/StylishThemes/Stackoverflow-Dark/wiki).
 
+### Version 2.10.0 (6/5/2017)
+
+* SO:
+  * visited tags retain white text. Fixes [issue #57](https://github.com/StylishThemes/StackOverflow-Dark/issues/57).
+  * Add hover indication to layout selection buttons. Fixes [issue #58](https://github.com/StylishThemes/StackOverflow-Dark/issues/58).
+  * Remove extra tag & comment styling. Fixes [issue #59](https://github.com/StylishThemes/StackOverflow-Dark/issues/59).
+  * Darken dropdown header. Fixes [issue #60](https://github.com/StylishThemes/StackOverflow-Dark/issues/60).
+* Español SO & Meta:
+  * Fix logo selectors.
+  * Use updated meta URL.
+* Japanese SO & Meta:
+  * Fix logo selectors.
+  * Use updated meta URL.
+* Meta.SE:
+  * Fix URL for footer styles.
+* Photography:
+  * Remove extra tag & comment styling.
+* Portuguese Language Meta:
+  * Restore header text. Fixes [issue #62](https://github.com/StylishThemes/StackOverflow-Dark/issues/62).
+  * Clean up tab styling.
+* Portuguese SO & Meta:
+  * Fix logo selectors.
+  * Use updated meta URL.
+* Russian SO & Meta:
+  * Fix logo (no longer in beta).
+  * Fix logo selectors.
+  * Use updated meta URL.
+* StackApps
+  * Fix logo size.
+* SuperUser:
+  * Fix logo size.
+* Repo Meta:
+  * Add Stylus Firefox addon link.
+  * Update wiki install page instructions. Fixes [issue #61](https://github.com/StylishThemes/StackOverflow-Dark/issues/61).
+
 ### Version 2.9.51 (6/4/2017)
 
 * SO:
@@ -60,8 +95,3 @@ See the [full changelog](https://github.com/StylishThemes/Stackoverflow-Dark/wik
   * Style next goal tracker popup selector. Fixes [issue #49](https://github.com/StylishThemes/StackOverflow-Dark/issues/49).
 * Database: Fix logo color.
 * Documentation: fix url protocol
-
-### Version 2.9.47 (5/29/2017)
-
-* Remove header inversion from academia, dba & electronics. Fixes [issue #14](https://github.com/StylishThemes/StackOverflow-Dark/issues/14).
-* Database: Fix logo
