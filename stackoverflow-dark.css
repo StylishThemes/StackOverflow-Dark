@@ -42,7 +42,7 @@
   }
 
   .nav .primarynav li a:hover, .message.message-config .actions .button, .btn-careers:hover,
-  .btn-careers:visited {
+  .btn-careers:visited, .question-list-layout a:hover {
     color: #fff !important;
     background: /*[[base-color]]*/ #008080 !important;
   }
