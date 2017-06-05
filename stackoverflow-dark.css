@@ -36,8 +36,7 @@
   }
 
   /* === custom color === */
-  a, .profile-popup a, .seWrapper a, .post-tag, .comments-link, .tag-synonym-link, .gs-title b,
-  .spoiler:hover a {
+  a, .profile-popup a, .seWrapper a, .gs-title b, .spoiler:hover a {
     color: /*[[base-color]]*/ #008080 !important;
   }
 
@@ -47,10 +46,11 @@
     background: /*[[base-color]]*/ #008080 !important;
   }
 
-  a.post-tag:hover, .comments-link:hover, .commentslink, .bounty-indicator,
-  .bounty-indicator-tab, .bounty-award, span.bounty-indicator-tab, #change-picture, .top-badge,
-  .supernovabg, .hotbg, .nav li.youarehere a, .nav a:hover, a.button:hover, .edit-count, .pager a:hover span,
-  .bounties-tab, .login-link, #sidebar a[href*="/questions/ask"], #sidebar a[href*="/questions/ask"]:visited {
+  a.post-tag:hover, .bounty-indicator, .bounty-indicator-tab, .bounty-award,
+  span.bounty-indicator-tab, #change-picture, .top-badge,.supernovabg, .hotbg,
+  .nav li.youarehere a, .nav a:hover, a.button:hover, .edit-count, .pager a:hover span,
+  .bounties-tab, .login-link, #sidebar a[href*="/questions/ask"],
+  #sidebar a[href*="/questions/ask"]:visited {
     background-color: /*[[base-color]]*/ #008080 !important;
     color: #eee !important;
   }
@@ -113,7 +113,7 @@
     color: #ddd !important;
   }
 
-  .summary .post-tag, .onebox, .profile-ad, .message.message-config,
+  .onebox, .profile-ad, .message.message-config,
   .so-header a:hover, .so-header a.topbar-icon-on {
     background: #151515 !important;
   }
@@ -177,9 +177,9 @@
     color: #ddd !important;
   }
 
-  #header #topbar, .revision-comment, .date-span, .post-tag, .form-submit input, .preferred-login,
+  #header #topbar, .revision-comment, .date-span, .form-submit input, .preferred-login,
   .mdhelp, .wmd-help-button.active-help, .date_brick, .more-info, .review-stats-current-user,
-  .review-stats-count-current-user, .topbar-menu-links, .post-tag:visited {
+  .review-stats-count-current-user, .topbar-menu-links {
     background: #222 !important;
     color: #ddd !important;
     -webkit-border-radius: 3px !important;
@@ -236,7 +236,7 @@
   }
 
   .youarehere, .dropdown li.selected a, .dropdown li.selected a:hover, .ob-docs .example-metric,
-  .choose-tracker-menu, .version-row, .version-name {
+  .choose-tracker-menu, .version-row, .version-name, .post-tag, .post-tag:visited {
     background: #333 !important;
     color: #ccc !important;
   }
@@ -353,7 +353,7 @@
   div.message .meta, .spaces, .comment, span.feed-icon, a.role-switch, .nav.careers li, .nav.careers li:hover,
   .switcher-nudge-content p, #content, #tabs a, .tabs a, #chat .username, #chat .messages, .tag-container,
   .prettyprint code, .lv-info, .lv-stats-wrapper, .lv-stats-wrapper .number, .container, .bottom-notice,
-  #question-header, .question-form .form-item, .post-menu>a:hover, a.comments-link:hover, #main-content,
+  #question-header, .question-form .form-item, .post-menu>a:hover, #main-content,
   #mainbar, #mainbar-full, .mainbar-full, #logout-page, #sidebar, .footerwrap, #footer-menu, .module,
   #sidebar #newsletter-ad, #sidebar .ad-container, #sidebar .everyonelovesstackoverflow, .mention,
   .tag-suggestions>div .more-info, .user-tags .answer-votes, .expanded:hover, .sidebar-accordion,
@@ -454,7 +454,7 @@
   .search-result .answered .vote-count-post strong, .votes-cast-stats th, .subheader h1, .vote.accepted,
   .message.message-config h1, .message.message-config h2, .message.message-config h3, .message.message-config h4,
   .spoiler:hover, .company-module a:hover *, .search-form .label, .search-form label, .list.companies p,
-  #snpte-button-run {
+  #snpte-button-run, .comment-link {
     color: #ddd !important;
   }
 
@@ -523,20 +523,13 @@
     text-decoration: underline !important;
   }
 
-  .nav a, .post-tag, .comments-link, .tag-synonym-link, a.post-tag:hover, .topbar a,
-  .search-form .filter-pane a:hover {
+  .nav a, .post-tag, .comment-link, .tag-synonym-link, a.post-tag:hover, .topbar a,
+  .search-form .filter-pane a:hover, .comment-link:hover, .tag-synonym-link:hover {
     text-decoration: none !important;
   }
 
   .form-item {
     padding-left: 20px !important;
-  }
-
-  .post-tag, .comments-link, .tag-synonym-link {
-    margin: 2px !important;
-    padding: 3px !important;
-    line-height: 1.9em !important;
-    white-space: nowrap !important
   }
 
   .tag-container .col {
@@ -1096,9 +1089,6 @@
 @-moz-document domain("photo.stackexchange.com") {
   #custom-content {
     background-image: none !important;
-  }
-  .post-tag, .comments-link, .tag-synonym-link {
-    line-height: 1.4em !important;
   }
   .vote-count-post {
     color: #777 !important;
