@@ -1006,14 +1006,18 @@
 }
 @-moz-document domain("es.stackoverflow.com") {
   /* es.stackoverflow.com (Spanish) */
-  #hlogo a {
+  .so-header .-logo:not(._glyph) .-img {
     background-image: url(https://StylishThemes.github.io/StackOverflow-Dark/images/es-stackoverflow-logo.svg) !important;
+    background-size: cover !important;
+    height: 50px !important;
   }
 }
-@-moz-document domain("meta.es.stackoverflow.com") {
-  /* meta.es.stackoverflow.com (Spanish) */
-  #hlogo a {
+@-moz-document domain("es.meta.stackoverflow.com") {
+  /* es.meta.stackoverflow.com (Spanish) */
+  .so-header .-logo:not(._glyph) .-img {
     background-image: url(https://StylishThemes.github.io/StackOverflow-Dark/images/es-meta-stackoverflow-logo.svg) !important;
+    background-size: cover !important;
+    height: 50px !important;
   }
 }
 @-moz-document domain("graphicdesign.stackexchange.com") {
