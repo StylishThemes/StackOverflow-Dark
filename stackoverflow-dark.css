@@ -1139,16 +1139,18 @@
 }
 @-moz-document domain("ru.stackoverflow.com") {
   /* ru.stackoverflow.com (Russian) */
-  #hlogo a {
+  .so-header .-logo:not(._glyph) .-img {
     background-image: url(https://StylishThemes.github.io/StackOverflow-Dark/images/ru-stackoverflow-logo.svg) !important;
-    height: 70px !important;
-    width: 225px !important;
+    background-size: cover !important;
+    height: 50px !important;
   }
 }
-@-moz-document domain("meta.ru.stackoverflow.com") {
+@-moz-document domain("ru.meta.stackoverflow.com") {
   /* meta.ru.stackoverflow.com (Russian) */
-  #hlogo a {
+  .so-header .-logo:not(._glyph) .-img {
     background-image: url(https://StylishThemes.github.io/StackOverflow-Dark/images/ru-meta-stackoverflow-logo.svg) !important;
+    background-size: contain !important;
+    height: 60px !important;
   }
 }
 @-moz-document domain("salesforce.stackexchange.com") {
