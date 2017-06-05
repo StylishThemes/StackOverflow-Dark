@@ -41,7 +41,7 @@
 
 See the [full changelog](https://github.com/StylishThemes/Stackoverflow-Dark/wiki).
 
-### Version 2.10.0 (6/5/2017)
+### Version 2.10.0 - 2.10.1 (6/5/2017)
 
 * SO:
   * visited tags retain white text. Fixes [issue #57](https://github.com/StylishThemes/StackOverflow-Dark/issues/57).
@@ -68,6 +68,7 @@ See the [full changelog](https://github.com/StylishThemes/Stackoverflow-Dark/wik
   * Fix logo (no longer in beta).
   * Fix logo selectors.
   * Use updated meta URL.
+  * Tweak logo size in v2.10.1.
 * StackApps
   * Fix logo size.
 * SuperUser:

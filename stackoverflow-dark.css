@@ -1,6 +1,6 @@
 @-moz-document regexp("^https?:\\/\\/((chat|meta|es|ja|pt|ru)\\.)*stackoverflow\\.com.*"), domain("serverfault.com"), domain("superuser.com"), domain("stackapps.com"), domain("mathoverflow.net"), domain("askubuntu.com"), regexp("^https?:\\/\\/((?!(www|area51|gaming)).*\\.)?stackexchange.com.*") {
   /***************************************************************
-  Stack Overflow Dark v2.10.0 (2017-06-05)
+  Stack Overflow Dark v2.10.1 (2017-06-05)
   https://github.com/StylishThemes/StackOverflow-Dark
   http://userstyles.org/styles/35345
 
