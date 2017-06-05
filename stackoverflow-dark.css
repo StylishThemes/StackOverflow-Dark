@@ -47,7 +47,7 @@
     background: /*[[base-color]]*/ #008080 !important;
   }
 
-  .post-tag:hover, .comments-link:hover, .summary .post-tag:hover , .commentslink, .bounty-indicator,
+  a.post-tag:hover, .comments-link:hover, .commentslink, .bounty-indicator,
   .bounty-indicator-tab, .bounty-award, span.bounty-indicator-tab, #change-picture, .top-badge,
   .supernovabg, .hotbg, .nav li.youarehere a, .nav a:hover, a.button:hover, .edit-count, .pager a:hover span,
   .bounties-tab, .login-link, #sidebar a[href*="/questions/ask"], #sidebar a[href*="/questions/ask"]:visited {
@@ -179,7 +179,7 @@
 
   #header #topbar, .revision-comment, .date-span, .post-tag, .form-submit input, .preferred-login,
   .mdhelp, .wmd-help-button.active-help, .date_brick, .more-info, .review-stats-current-user,
-  .review-stats-count-current-user, .topbar-menu-links {
+  .review-stats-count-current-user, .topbar-menu-links, .post-tag:visited {
     background: #222 !important;
     color: #ddd !important;
     -webkit-border-radius: 3px !important;
