@@ -1153,8 +1153,6 @@
   /* ru.stackoverflow.com (Russian) */
   .so-header .-logo:not(._glyph) .-img {
     background-image: url(https://StylishThemes.github.io/StackOverflow-Dark/images/ru-stackoverflow-logo.svg) !important;
-    background-size: cover !important;
-    height: 50px !important;
   }
 }
 @-moz-document domain("ru.meta.stackoverflow.com") {
