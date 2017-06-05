@@ -1218,8 +1218,8 @@
 @-moz-document domain("stackapps.com") {
   /* stackapps.com */
   #hlogo a {
-    background-size: cover !important;
     background-image: url(https://StylishThemes.github.io/StackOverflow-Dark/images/stackapps-logo.png) !important;
+    background-size: contain !important;
   }
 }
 @-moz-document regexp("^https?:\\/\\/stackexchange\\.com.*") {
