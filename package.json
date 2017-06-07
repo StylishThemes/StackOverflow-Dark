@@ -6,7 +6,7 @@
   "repository": "https://github.com/StylishThemes/StackOverflow-Dark",
   "homepage": "https://userstyles.org/styles/35345/stackoverflow-dark",
   "scripts": {
-    "authors" : "bash tools/authors.sh"
+    "authors": "bash tools/authors.sh"
   },
   "devDependencies": {
     "grunt": "^1.0.1",

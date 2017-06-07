@@ -519,10 +519,6 @@
   }
 
   /* === Style adjustments === */
-  a.question-hyperlink, a.answer-hyperlink, a:hover, a:visited {
-    text-decoration: underline !important;
-  }
-
   .nav a, .post-tag, .comment-link, .tag-synonym-link, a.post-tag:hover, .topbar a,
   .search-form .filter-pane a:hover, .comment-link:hover, .tag-synonym-link:hover {
     text-decoration: none !important;
