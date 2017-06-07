@@ -1098,7 +1098,7 @@
     color: #777 !important;
   }
 }
-@-moz-document domain("portuguese.meta.stackexchange.com") {
+@-moz-document domain("portuguese.meta.stackexchange.com"), domain("portuguese.stackexchange.com") {
   #hlogo a {
     text-indent: 0 !important;
   }

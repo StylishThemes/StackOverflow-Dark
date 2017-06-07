@@ -41,9 +41,11 @@
 
 See the [full changelog](https://github.com/StylishThemes/Stackoverflow-Dark/wiki).
 
-### Version 2.10.2 (6/7/2017)
+### Version 2.10.2 (???)
 
 * Fix many GUI elements being underlined. Fixes [issue #63](https://github.com/StylishThemes/StackOverflow-Dark/issues/63).
+* Portuguese Language:
+  * Also apply the styling fixes to the main site.
 
 ### Version 2.10.0 - 2.10.1 (6/5/2017)
 
