@@ -44,6 +44,7 @@ See the [full changelog](https://github.com/StylishThemes/Stackoverflow-Dark/wik
 ### Version 2.10.2 (???)
 
 * Fix many GUI elements being underlined. Fixes [issue #63](https://github.com/StylishThemes/StackOverflow-Dark/issues/63).
+* Fix dots having a border around them in the user tab. Fixes [issue #66](https://github.com/StylishThemes/StackOverflow-Dark/issues/66).
 * Portuguese Language:
   * Also apply the styling fixes to the main site.
 

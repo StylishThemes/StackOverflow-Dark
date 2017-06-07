@@ -417,7 +417,7 @@
     border-right: 0 !important;
   }
   .module, .tabs a, div.message, .full-diff td, .post-tag:not(.required-tag),
-  .wb-outer:not(.wb-selected) {
+  .wb-outer:not(.wb-selected), .page-numbers.dots {
     border-color: transparent !important;
   }
   .left-arrow, .right-arrow {
