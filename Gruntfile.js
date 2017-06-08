@@ -176,14 +176,10 @@ module.exports = function (grunt) {
 					advanced: false
 				}
 			}
-		},
-		watch: {
-			css: { files: [ 'stackoverflow-dark.css' ] }
 		}
 	});
 
 	grunt.loadNpmTasks('grunt-string-replace');
-	grunt.loadNpmTasks('grunt-contrib-watch');
 	grunt.loadNpmTasks('grunt-contrib-clean');
 	grunt.loadNpmTasks('grunt-contrib-cssmin');
 
@@ -234,8 +230,5 @@ module.exports = function (grunt) {
 			'cssmin:themes'
 		]);
 	});
-
-	// watch thingy
-	grunt.registerTask('dev', ['watch']);
 
 };
