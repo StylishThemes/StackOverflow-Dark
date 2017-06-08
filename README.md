@@ -41,14 +41,14 @@
 
 See the [full changelog](https://github.com/StylishThemes/Stackoverflow-Dark/wiki).
 
-### Version 2.10.2 (???)
+### Version 2.10.2 (2017-06-07)
 
 * Fix many GUI elements being underlined. Fixes [issue #63](https://github.com/StylishThemes/StackOverflow-Dark/issues/63).
 * Fix dots having a border around them in the user tab. Fixes [issue #66](https://github.com/StylishThemes/StackOverflow-Dark/issues/66).
 * Portuguese Language:
   * Also apply the styling fixes to the main site.
 
-### Version 2.10.0 - 2.10.1 (6/5/2017)
+### Version 2.10.0 - 2.10.1 (2017-06-05)
 
 * SO:
   * visited tags retain white text. Fixes [issue #57](https://github.com/StylishThemes/StackOverflow-Dark/issues/57).
@@ -84,7 +84,7 @@ See the [full changelog](https://github.com/StylishThemes/Stackoverflow-Dark/wik
   * Add Stylus Firefox addon link.
   * Update wiki install page instructions. Fixes [issue #61](https://github.com/StylishThemes/StackOverflow-Dark/issues/61).
 
-### Version 2.9.51 (6/4/2017)
+### Version 2.9.51 (2017-06-04)
 
 * SO:
   * Style review decision buttons. Fixes [issue #50](https://github.com/StylishThemes/StackOverflow-Dark/issues/50).
@@ -94,12 +94,3 @@ See the [full changelog](https://github.com/StylishThemes/Stackoverflow-Dark/wik
   * Add markdown spaces styling. Fixes [issue #54](https://github.com/StylishThemes/StackOverflow-Dark/issues/54).
   * Fix version lables on editing-help page. Fixes [issue #55](https://github.com/StylishThemes/StackOverflow-Dark/issues/55).
   * More background flash on TOC select. Fixes [issue #56](https://github.com/StylishThemes/StackOverflow-Dark/issues/56).
-
-### Version 2.9.48 - 2.9.50 (6/3/2017)
-
-* SO:
-  * Style goal tracking tooltip. Fixes [issue #47](https://github.com/StylishThemes/StackOverflow-Dark/issues/47).
-  * Update style of badge progress cards. Fixes [issue #48](https://github.com/StylishThemes/StackOverflow-Dark/issues/48).
-  * Style next goal tracker popup selector. Fixes [issue #49](https://github.com/StylishThemes/StackOverflow-Dark/issues/49).
-* Database: Fix logo color.
-* Documentation: fix url protocol
