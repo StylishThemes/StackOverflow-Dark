@@ -162,7 +162,7 @@
   #tag-menu, #overlay-header, .action-list .action-selected, .switcher-nudge-lightbox,
   .user-rep-chart-summary-tooltip:hover, .current-site-container, #or, .account-number, .topbar,
   .wmd-prompt-dialog, .wb-popup-content, .wb-hat-details, .docs-review-page .history-table tr.even td,
-  kbd, kbd code {
+  kbd, kbd code, .switcher label {
     background-color: #222 !important;
     color: #ddd !important;
   }
@@ -236,7 +236,8 @@
   }
 
   .youarehere, .dropdown li.selected a, .dropdown li.selected a:hover, .ob-docs .example-metric,
-  .choose-tracker-menu, .version-row, .version-name, .post-tag, .post-tag:visited {
+  .choose-tracker-menu, .version-row, .version-name, .post-tag, .post-tag:visited,
+  .switcher input[type="radio"]:checked+label, .double-input .separator {
     background: #333 !important;
     color: #ccc !important;
   }
