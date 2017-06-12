@@ -1,4 +1,4 @@
-@-moz-document regexp("^https?:\\/\\/((chat|meta|es|ja|pt|ru)\\.)*stackoverflow\\.com.*"), domain("serverfault.com"), domain("superuser.com"), domain("stackapps.com"), domain("mathoverflow.net"), domain("askubuntu.com"), regexp("^https?:\\/\\/((?!(www|area51|gaming)).*\\.)?stackexchange.com.*") {
+@-moz-document regexp("^https?://((chat|meta|es|ja|pt|ru)\\.)*stackoverflow\\.com.*"), domain("serverfault.com"), domain("superuser.com"), domain("stackapps.com"), domain("mathoverflow.net"), domain("askubuntu.com"), regexp("^https?://((?!(www|area51|gaming)).*\\.)?stackexchange\\.com.*") {
   /***************************************************************
   Stack Overflow Dark v2.10.2 (2017-06-07)
   https://github.com/StylishThemes/StackOverflow-Dark
@@ -699,7 +699,7 @@
 |_____|_| |__,|___|_,_|_____|_,_|___|_|_|__,|_|_|_  |___|  |_| |_____|___|__,|_,_|___|
                                                |___|
 */
-@-moz-document regexp("^https?:\\/\\/((?!(www|area51|gaming)).*\\.)?stackexchange.com.*") {
+@-moz-document regexp("^https?://((?!(www|area51|gaming)).*\\.)?stackexchange.com.*") {
   /* login screen StackExchange logo replacement */
   .login-page .se-logo {
     -moz-box-sizing: border-box !important;
@@ -777,7 +777,7 @@
     border-style: solid !important;
   }
 }
-@-moz-document regexp("^https?:\\/\\/((?!(academia|dba|electronics|meta|tex)).*\\.)?stackexchange.com.*") {
+@-moz-document regexp("^https?://((?!(academia|dba|electronics|meta|tex)).*\\.)?stackexchange.com.*") {
   /* target sites to *NOT* hide the header background */
   #header, #hmenus {
     background-color: transparent !important;
@@ -793,7 +793,7 @@
     filter: invert(100%) !important;
   }
 }
-@-moz-document regexp("^https?:\\/\\/((academia|chess|english|meta|movies|salesforce|skeptics|judaism|ux)\\.)?stackexchange\\.com.*") {
+@-moz-document regexp("^https?://((academia|chess|english|meta|movies|salesforce|skeptics|judaism|ux)\\.)?stackexchange\\.com.*") {
   /* target sites needing menu adjustments */
   .nav.mainnavs li, .nav.askquestion li {
     background-color: transparent !important;
@@ -810,7 +810,7 @@
     border-radius: 3px !important;
   }
 }
-@-moz-document regexp("^https?:\\/\\/((android|photo|programmers|wordpress)\\.)?stackexchange\\.com.*") {
+@-moz-document regexp("^https?://((android|photo|programmers|wordpress)\\.)?stackexchange\\.com.*") {
   /* darken everything that uses sprite.svg (vote arrows, feed icons, etc) */
   .envelope-on, .envelope-off, .vote-up-off, .vote-up-on, .vote-down-off, .vote-down-on, .star-on, .star-off,
   .comment-up-off, .comment-up-on, .comment-flag, .edited-yes, .feed-icon, .vote-accepted-off, .vote-accepted-on,
@@ -821,7 +821,7 @@
     filter: invert(100%) hue-rotate(180deg) brightness(1.1) !important;
   }
 }
-@-moz-document regexp("^https?:\/\/((photo|security|wordpress)\\.)?stackexchange\\.com.*") {
+@-moz-document regexp("^https?://((photo|security|wordpress)\\.)?stackexchange\\.com.*") {
   /* nav manu text coloring only */
   .nav li.youarehere a, .nav li a:hover,
   .nav li.youarehere a, .nav li a:hover {
@@ -832,13 +832,13 @@
     color: /*[[base-color]]*/ #008080 !important;
   }
 }
-@-moz-document regexp("^https?:\/\/((android|apple|dba|drupal|gis|mathematica|photo|scifi|security|tex|wordpress)\\.)?stackexchange\\.com.*") {
+@-moz-document regexp("^https?://((android|apple|dba|drupal|gis|mathematica|photo|scifi|security|tex|wordpress)\\.)?stackexchange\\.com.*") {
   /* hide top nav background on <li>, style is on <a> */
   .nav li {
     background-color: transparent !important;
   }
 }
-@-moz-document regexp("^https?:\/\/((android|apple|dba|gamedev|movies|salesforce|scifi|security|tex|ux|webapps|webmasters)\\.)?stackexchange\\.com.*") {
+@-moz-document regexp("^https?://((android|apple|dba|gamedev|movies|salesforce|scifi|security|tex|ux|webapps|webmasters)\\.)?stackexchange\\.com.*") {
   /* darken vote off buttons */
   .vote-up-off, .vote-down-off, .star-off {
     -webkit-filter: brightness(.5) !important;
@@ -846,7 +846,7 @@
   }
 }
 /*
-@-moz-document regexp("^https?:\\/\\/((?!(android|apple|dba|drupal|electronics|gamedev|gis|mathematica|programmers|salesforce|security|sharepoint|tex|unix|ux|webapps|webmasters|wordpress)).*\\.)?stackexchange.com.*") {
+@-moz-document regexp("^https?://((?!(android|apple|dba|drupal|electronics|gamedev|gis|mathematica|programmers|salesforce|security|sharepoint|tex|unix|ux|webapps|webmasters|wordpress)).*\\.)?stackexchange.com.*") {
 / * BETA SITES * /
   div.nav ul li {
     margin-right: 5px !important;
@@ -1237,7 +1237,7 @@
     background-size: contain !important;
   }
 }
-@-moz-document regexp("^https?:\\/\\/stackexchange\\.com.*") {
+@-moz-document regexp("^https?://stackexchange\\.com.*") {
   /* stackExchange.com */
   header h1 {
     height: 60px !important;
