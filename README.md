@@ -20,7 +20,7 @@
 
 - This dark theme applied to Stack Overflow and almost all Stack Exchange sites (except [Gaming](http://gaming.stackexchange.com/) and [Area 51](http://area51.stackexchange.com/)).
 - Install from [userstyles.org](http://userstyles.org/styles/35345) (with customization options) or [manually](https://raw.githubusercontent.com/StylishThemes/Stackoverflow-Dark/master/stackoverflow-dark.css).
-- Stylus is available for [Firefox](https://addons.mozilla.org/en-US/firefox/addon/styl-us/) and [Chrome](https://chrome.google.com/webstore/detail/stylus/clngdbkpkpeebahjckkjfobafhncgmne).
+- Stylus is available for [Firefox](https://addons.mozilla.org/en-US/firefox/addon/styl-us/), [Chrome](https://chrome.google.com/webstore/detail/stylus/clngdbkpkpeebahjckkjfobafhncgmne) and [Opera](https://addons.opera.com/en-gb/extensions/details/stylus/).
 - Stylish is available for [Firefox](https://addons.mozilla.org/en-US/firefox/addon/2108/), [Chrome](https://chrome.google.com/extensions/detail/fjnbnpbmkenffdnngjfgmeleoegfcffe), [Opera](https://addons.opera.com/en/extensions/details/stylish/), [Safari](http://sobolev.us/stylish/) and [Firefox Mobile](https://addons.mozilla.org/en-US/firefox/addon/2108/).
 - In versions 2.8.0+, this style will apply to *almost all* Stack Exchange sites.
 - Use the [grunt build process](https://github.com/StylishThemes/StackOverflow-Dark/wiki/Build) to customize your StackOverflow Dark theme.
@@ -32,14 +32,30 @@
 
 ## Available Syntax Highlighting Themes
 
-|                |                      |                       |                         |             |
-|----------------|----------------------|-----------------------|-------------------------|-------------|
-| Desert         | Doxy                 | Hemisu Dark           | Sons of Obsidian        | Sunburst    |
-| Tomorrow Night | Tomorrow Night Blue  | Tomorrow Night Bright | Tomorrow Night Eigthies | Vibrant Ink |
+|                         |                          |                       |                         |
+|-------------------------|--------------------------|-----------------------|-------------------------|
+| Atelier-cave-dark       | Atelier-dune-dark        | Atelier-estuary-dark  | Atelier-forest-dark     |
+| Atelier-heath-dark      | Atelier-lakeside-dark    | Atelier-plateau-dark  | Atelier-savanna-dark    |
+| Atelier-seaside-dark    | Atelier-sulphurpool-dark | Desert                | Doxy                    |
+| Hemisu Dark             | Monokai                  | Sons of Obsidian      | Sunburst                |
+| Tomorrow Night          | Tomorrow Night Blue      | Tomorrow Night Bright | Tomorrow Night Eigthies |
+| Tranquil Heart          | Vibrant Ink              | VSCode Monaco         |                         |
+
+\* Reference the [Themes wiki](https://github.com/StylishThemes/StackOverflow-Dark/wiki/Themes) for more details.
 
 ## Changelog
 
 See the [full changelog](https://github.com/StylishThemes/Stackoverflow-Dark/wiki).
+
+### Version 2.10.3 (2017-06-14)
+
+* Themes:
+  * Add dark Atelier themes ([source](https://jmblog.github.io/color-themes-for-google-code-prettify/)).
+  * Add monokai. Fixes [issue #71](https://github.com/StylishThemes/StackOverflow-Dark/issues/71) ([source](https://github.com/RaphaelDDL/google-prettify-monokai-theme)).
+  * Added vscode Monaco inspired theme ([source](https://github.com/google/code-prettify/pull/447)).
+* Meta:
+  * Fix `@-moz-document` regexp escaping.
+  * Grunt: fallback to basic syntax style if selected style doesn't exist.
 
 ### Version 2.10.2 (2017-06-07)
 
@@ -90,14 +106,3 @@ See the [full changelog](https://github.com/StylishThemes/Stackoverflow-Dark/wik
 * Repo Meta:
   * Add Stylus Firefox addon link.
   * Update wiki install page instructions. Fixes [issue #61](https://github.com/StylishThemes/StackOverflow-Dark/issues/61).
-
-### Version 2.9.51 (2017-06-04)
-
-* SO:
-  * Style review decision buttons. Fixes [issue #50](https://github.com/StylishThemes/StackOverflow-Dark/issues/50).
-  * Style answer hyperlinks. Fixes [issue #51](https://github.com/StylishThemes/StackOverflow-Dark/issues/51).
-  * remove generic link selector. Fixes [issue #52](https://github.com/StylishThemes/StackOverflow-Dark/issues/52); Also remove multiple tag "any|all" selector background.
-  * Darken focus navigation bar style. Fixes [issue #53](https://github.com/StylishThemes/StackOverflow-Dark/issues/53).
-  * Add markdown spaces styling. Fixes [issue #54](https://github.com/StylishThemes/StackOverflow-Dark/issues/54).
-  * Fix version lables on editing-help page. Fixes [issue #55](https://github.com/StylishThemes/StackOverflow-Dark/issues/55).
-  * More background flash on TOC select. Fixes [issue #56](https://github.com/StylishThemes/StackOverflow-Dark/issues/56).
