@@ -19,14 +19,30 @@ module.exports = function (grunt) {
 		};
 	}
 
-	getTheme = function () {
-		return (config.theme || '').toLowerCase().replace(/\s+/g, '-');
-	};
+	file = (config.theme || '').toLowerCase().replace(/\s+/g, '-');
+
+	function loadTheme() {
+		let data;
+		config.themeFile = 'themes/' + file + '.min.css';
+		if (grunt.file.exists(config.themeFile)) {
+			data = grunt.file.read(config.themeFile);
+		} else {
+			grunt.log.writeln(`\n**** Syntax theme: "${file}" not found; falling back to a basic dark syntax file ****`['yellow'].bold);
+			config.themeFile = '';
+			file = '';
+			// fallback to a basic dark syntax if no theme chosen
+			data = '.pln,code,pre{background:#333!important;color:#ccc!important}.str{color:#0a0!important}' +
+				'.lit{color:#d65!important}.pun{color:#999!important}.kwd{color:#08f!important}.tag{color:#999!important}' +
+				'.atn{color:#088!important}.atv{color:#0a0!important}.dec{color:#90a!important}';
+		}
+		config.newTheme = data;
+	}
+
+	// updates file variable if theme not found
+	loadTheme();
 
 	// ** set up build options **
 	config.sourceFile = 'stackoverflow-dark.css';
-	file = getTheme();
-	config.themeFile = file === '' || file === 'default' ? '' : 'themes/' + file + '.min.css';
 	// build file name
 	config.buildFile = 'stackoverflow-dark-' + (file ? file : 'default') + '-' + config.color.replace(/[^\d\w]/g, '') + '.build.min.css';
 	// background options
@@ -34,14 +50,6 @@ module.exports = function (grunt) {
 		'background-repeat: repeat !important; background-size: auto !important; background-position: left top !important;' :
 		'background-repeat: no-repeat !important; background-size: cover !important; background-position: center top !important;';
 	config.bgAttachment = config.attach.toLowerCase() === 'scroll' ? 'scroll' : 'fixed';
-
-	// Don't include closing bracket for a webkit build
-	config.newTheme = config.themeFile ? '<%= grunt.file.read("' + config.themeFile + '") %>' :
-		// basic dark syntax if no theme chosen
-		'.pln,code,pre{background:#333!important;color:#ccc!important}.str{color:#0a0!important}' +
-		'.lit{color:#d65!important}.pun{color:#999!important}.kwd{color:#08f!important}.tag{color:#999!important}' +
-		'.atn{color:#088!important}.atv{color:#0a0!important}.dec{color:#90a!important}';
-
 	// custom build
 	config.replacements = [{
 		pattern: /\/\*\[\[bg-choice\]\]\*\/ url\(.*\)/,
