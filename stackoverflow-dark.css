@@ -1,6 +1,6 @@
 @-moz-document regexp("^https?://((chat|meta|es|ja|pt|ru)\\.)*stackoverflow\\.com.*"), domain("serverfault.com"), domain("superuser.com"), domain("stackapps.com"), domain("mathoverflow.net"), domain("askubuntu.com"), regexp("^https?://((?!(www|area51|gaming)).*\\.)?stackexchange\\.com.*") {
   /***************************************************************
-  Stack Overflow Dark v2.10.4 (2017-06-27)
+  Stack Overflow Dark v2.10.3 (2017-06-15)
   https://github.com/StylishThemes/StackOverflow-Dark
   http://userstyles.org/styles/35345
 
@@ -121,7 +121,7 @@
 
   html, blockquote, #post-preview, .nav .primarynav li a, #chat, #hsearch .textbox, .form-item, .grippie,
   .welovestackoverflow, #wmd-button-bar, .wmd-button-bar, .qa-block, .content-block, .user-info-rep, .sidebar,
-  .popup, .full-diff, .val-success, .search-form .filter-pane nav {
+  .popup, .full-diff, .val-success, .search-form .filter-pane nav, .s-card {
     background: #191919 !important
   }
 
@@ -366,7 +366,7 @@
   .timeline-mine header, .timeline-sidebar header, .sidebar-profile.is-visible, .cv-section,
   .cv-story .avatar-wrapper, .btn-clear, .header-edit-section, .personal-statement, .link-text,
   .match-preferences .seniority-selector, .field-with-bg, #tags .message.regular,
-  #profile-side #side-menu a {
+  #profile-side #side-menu a, .sidebar-profile .-header, .sidebar-profile .-footer {
     background-color: transparent !important;
   }
 
