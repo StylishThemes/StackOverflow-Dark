@@ -47,6 +47,12 @@
 
 See the [full changelog](https://github.com/StylishThemes/Stackoverflow-Dark/wiki).
 
+### Version 2.10.4 (2017-06-27)
+
+* SO:
+  * Add `code` selector to font setting. See [issue #73](https://github.com/StylishThemes/StackOverflow-Dark/issues/73).
+  * Style job recommendations panel.
+
 ### Version 2.10.3 (2017-06-14)
 
 * Themes:
@@ -70,39 +76,3 @@ See the [full changelog](https://github.com/StylishThemes/Stackoverflow-Dark/wik
 * Meta:
   * Start using ISO 8601 format. Fixes [issue #68](https://github.com/StylishThemes/StackOverflow-Dark/issues/68).
   * Remove grunt watch method. Fixes [issue #69](https://github.com/StylishThemes/StackOverflow-Dark/issues/69).
-
-### Version 2.10.0 - 2.10.1 (2017-06-05)
-
-* SO:
-  * visited tags retain white text. Fixes [issue #57](https://github.com/StylishThemes/StackOverflow-Dark/issues/57).
-  * Add hover indication to layout selection buttons. Fixes [issue #58](https://github.com/StylishThemes/StackOverflow-Dark/issues/58).
-  * Remove extra tag & comment styling. Fixes [issue #59](https://github.com/StylishThemes/StackOverflow-Dark/issues/59).
-  * Darken dropdown header. Fixes [issue #60](https://github.com/StylishThemes/StackOverflow-Dark/issues/60).
-* Español SO & Meta:
-  * Fix logo selectors.
-  * Use updated meta URL.
-* Japanese SO & Meta:
-  * Fix logo selectors.
-  * Use updated meta URL.
-* Meta.SE:
-  * Fix URL for footer styles.
-* Photography:
-  * Remove extra tag & comment styling.
-* Portuguese Language Meta:
-  * Restore header text. Fixes [issue #62](https://github.com/StylishThemes/StackOverflow-Dark/issues/62).
-  * Clean up tab styling.
-* Portuguese SO & Meta:
-  * Fix logo selectors.
-  * Use updated meta URL.
-* Russian SO & Meta:
-  * Fix logo (no longer in beta).
-  * Fix logo selectors.
-  * Use updated meta URL.
-  * Tweak logo size in v2.10.1.
-* StackApps
-  * Fix logo size.
-* SuperUser:
-  * Fix logo size.
-* Repo Meta:
-  * Add Stylus Firefox addon link.
-  * Update wiki install page instructions. Fixes [issue #61](https://github.com/StylishThemes/StackOverflow-Dark/issues/61).
