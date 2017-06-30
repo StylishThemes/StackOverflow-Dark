@@ -47,6 +47,10 @@
 
 See the [full changelog](https://github.com/StylishThemes/Stackoverflow-Dark/wiki).
 
+### Version 2.10.5 (2017-06-29)
+
+* SO: update new style for reputation panels & progress bars. Fixes [issue #74](https://github.com/StylishThemes/StackOverflow-Dark/issues/74).
+
 ### Version 2.10.4 (2017-06-27)
 
 * SO:
@@ -62,17 +66,3 @@ See the [full changelog](https://github.com/StylishThemes/Stackoverflow-Dark/wik
 * Meta:
   * Fix `@-moz-document` regexp escaping.
   * Grunt: fallback to basic syntax style if selected style doesn't exist.
-
-### Version 2.10.2 (2017-06-07)
-
-* SO:
-  * Fix many GUI elements being underlined. Fixes [issue #63](https://github.com/StylishThemes/StackOverflow-Dark/issues/63).
-  * Fix dots having a border around them in the user tab. Fixes [issue #66](https://github.com/StylishThemes/StackOverflow-Dark/issues/66).
-  * Darken profile settings buttons. Fixes [issue #64](https://github.com/StylishThemes/StackOverflow-Dark/issues/64).
-  * Style developer story elements. See [issue #65](https://github.com/StylishThemes/StackOverflow-Dark/issues/65).
-  * Darken user card hover. Fixes [issue #67](https://github.com/StylishThemes/StackOverflow-Dark/issues/67).
-* Portuguese Language:
-  * Also apply the styling fixes to the main site.
-* Meta:
-  * Start using ISO 8601 format. Fixes [issue #68](https://github.com/StylishThemes/StackOverflow-Dark/issues/68).
-  * Remove grunt watch method. Fixes [issue #69](https://github.com/StylishThemes/StackOverflow-Dark/issues/69).
