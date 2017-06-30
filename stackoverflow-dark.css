@@ -137,7 +137,7 @@
   #tabs a.youarehere, .tabs a.youarehere, .tag-suggestions, .dropdown li,
   .proposed-change .diff-buttons a:not(.selected), #logout-form, .snippet-holder,
   .CodeMirror, .CodeMirror-gutters, .snippet-box-edit, .badge-progress.completed,
-  .timeline-item:before, .item-select-table .item, .title-box {
+  .timeline-item:before, .item-select-table .item, .title-box, .-list-item {
     background-color: #191919 !important;
     border-color: #444 !important;
   }
@@ -175,7 +175,8 @@
   .seWrapper, h2.index.header, .privilege-table-row:hover, .list-originals .item.hover,
   .list-originals .body-summary, .review-instructions-reason, .room-mini, #formContainer, #switch,
   .login-topbar, .newsletter-category, .newsletter-item, .blogcontainer, .usercard-xxl, .roomcard-xxl,
-  .docs-review-page .topic-draft-bar, .badge-progress, .avatar-wrapper, .timeline-line {
+  .docs-review-page .topic-draft-bar, .badge-progress, .avatar-wrapper, .timeline-line,
+  .s-progress-bar .-bar {
     background-color: #222 !important;
     border-color: #555 !important;
     color: #ddd !important;
@@ -209,7 +210,7 @@
   }
 
   .rep-recent-row, .bounty, .diff-choices a:hover, div.meter, .narrow .votes, .ob-post-votes, .card,
-  .congrats {
+  .congrats, .-card {
     background-color: #232323 !important;
     color: #bbb !important;
   }
@@ -220,7 +221,7 @@
     color: #999 !important;
   }
 
-  .container, .tour-page .headline, .tour-page .cta {
+  .container, .tour-page .headline, .tour-page .cta, .s-progress-bar._badge .-fill {
     background-image: none !important;
   }
 
@@ -253,7 +254,7 @@
   #side-menu ul li a:hover, .conversation-info, .message.reply-parent, .message.reply-child,
   .sidebar-element .list li .rep-and-badges, .congrats .actions, .newsletters-toggle,
   .tag-suggestions>div:focus, .current-site a.site-link:hover, #sub-navs>a:hover,
-  #sub-navs .menu-item:hover {
+  #sub-navs .menu-item:hover, .popup-close .-link:hover {
     background-color: #333 !important;
   }
 
@@ -303,7 +304,7 @@
   /* === Green === */
   .accepted-answer, .suggested-edit .inserted, .markdown-diff .inserted, .rep-increase, .progress-bar .percent,
   .recommended, .vote.accepted, .suggested-edit .inserted>div, .full-diff .inserted>div,
-  .message.success {
+  .message.success, .p-highlights .-rep-increase, .s-progress-bar .-fill {
     background: #232 !important;
   }
 
@@ -366,7 +367,8 @@
   .timeline-mine header, .timeline-sidebar header, .sidebar-profile.is-visible, .cv-section,
   .cv-story .avatar-wrapper, .btn-clear, .header-edit-section, .personal-statement, .link-text,
   .match-preferences .seniority-selector, .field-with-bg, #tags .message.regular,
-  #profile-side #side-menu a, .sidebar-profile .-header, .sidebar-profile .-footer {
+  #profile-side #side-menu a, .sidebar-profile .-header, .sidebar-profile .-footer,
+  #popup-next-badge .-header, .popup-close .-link {
     background-color: transparent !important;
   }
 
@@ -463,7 +465,8 @@
   .search-result .answered .vote-count-post strong, .votes-cast-stats th, .subheader h1, .vote.accepted,
   .message.message-config h1, .message.message-config h2, .message.message-config h3, .message.message-config h4,
   .spoiler:hover, .company-module a:hover *, .search-form .label, .search-form label, .list.companies p,
-  #snpte-button-run, .comment-link, .timeline .header h4, .-title, #profile-side #side-menu a:hover {
+  #snpte-button-run, .comment-link, .timeline .header h4, .-title, #profile-side #side-menu a:hover,
+  .-rep, .-total {
     color: #ddd !important;
   }
 
@@ -573,13 +576,16 @@
     background-color: #191919 !important;
     border-color: #111 !important;
   }
-  .badge3-alternate, .progress-bar.badge-3 .bar .percent {
+  .badge3-alternate, .progress-bar.badge-3 .bar .percent,
+  .s-progress-bar._badge._badge3 .-fill {
     background-color: #7C4318 !important; /* bronze */
   }
-  .badge2-alternate, .progress-bar.badge-2 .bar .percent {
+  .badge2-alternate, .progress-bar.badge-2 .bar .percent,
+  .s-progress-bar._badge._badge2 .-fill {
     background-color: #464a4f !important; /* silver */
   }
-  .badge1-alternate, .progress-bar.badge-1 .bar .percent {
+  .badge1-alternate, .progress-bar.badge-1 .bar .percent,
+  .s-progress-bar._badge._badge1 .-fill {
     background-color: #957000 !important; /* gold */
   }
 
@@ -604,7 +610,7 @@
   }
 
   #sound, .vote-count-container.stars .img, #sub-navs>a:hover .messages-icon,
-  .industries:before {
+  .industries:before, .js-reputation-graph, .js-reputation-graph * {
     -webkit-filter: invert(100%) !important;
     filter: invert(100%) !important;
   }
