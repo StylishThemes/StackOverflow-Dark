@@ -166,7 +166,7 @@
   .wmd-prompt-dialog, .wb-popup-content, .wb-hat-details, .docs-review-page .history-table tr.even td,
   kbd, kbd code, .switcher label, .timeline-item-actions, .cv-story .section-opener h2,
   .cv-story .section-opener:after, .header-edit-section .ctas,
-  .item-select-table .item:hover, .visa-wrapper, .chosen-choices {
+  .item-select-table .item:hover, .visa-wrapper, .chosen-choices, .p-top-tags .-tag-group {
     background-color: #222 !important;
     color: #ddd !important;
   }
