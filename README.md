@@ -47,6 +47,10 @@
 
 See the [full changelog](https://github.com/StylishThemes/Stackoverflow-Dark/wiki).
 
+### Version 2.10.6 (2017-07-08)
+
+* SO: Remove progress bar edges. Fixes [issue #74](https://github.com/StylishThemes/StackOverflow-Dark/issues/74).
+
 ### Version 2.10.5 (2017-06-29)
 
 * SO: update new style for reputation panels & progress bars. Fixes [issue #74](https://github.com/StylishThemes/StackOverflow-Dark/issues/74).
@@ -56,13 +60,3 @@ See the [full changelog](https://github.com/StylishThemes/Stackoverflow-Dark/wik
 * SO:
   * Add `code` selector to font setting. See [issue #73](https://github.com/StylishThemes/StackOverflow-Dark/issues/73).
   * Style job recommendations panel.
-
-### Version 2.10.3 (2017-06-14)
-
-* Themes:
-  * Add dark Atelier themes ([source](https://jmblog.github.io/color-themes-for-google-code-prettify/)).
-  * Add monokai. Fixes [issue #71](https://github.com/StylishThemes/StackOverflow-Dark/issues/71) ([source](https://github.com/RaphaelDDL/google-prettify-monokai-theme)).
-  * Added vscode Monaco inspired theme ([source](https://github.com/google/code-prettify/pull/447)).
-* Meta:
-  * Fix `@-moz-document` regexp escaping.
-  * Grunt: fallback to basic syntax style if selected style doesn't exist.
