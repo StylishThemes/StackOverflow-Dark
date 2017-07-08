@@ -466,7 +466,7 @@
   .message.message-config h1, .message.message-config h2, .message.message-config h3, .message.message-config h4,
   .spoiler:hover, .company-module a:hover *, .search-form .label, .search-form label, .list.companies p,
   #snpte-button-run, .comment-link, .timeline .header h4, .-title, #profile-side #side-menu a:hover,
-  .-rep, .-total {
+  .-rep, .-total, .-list-item .-description {
     color: #ddd !important;
   }
 
@@ -485,7 +485,7 @@
   .comment, #top-menu a, .subheader a, .reputation a, .reputation-score, .relativetime.old,
   .votes-cast-stats td, .mini-counts span, #chat .system-message, .card .rep, a.badge, a.badge-tag,
   .user-card .user-stats .number, .user-card .user-card-name, a.question-hyperlink:hover,
-  a.answer-hyperlink:hover, .cv-story .time-frame {
+  a.answer-hyperlink:hover, .cv-story .time-frame, .-list-item.is-completed .-description {
     color: #aaa !important;
   }
   .ob-post-tag, .ob-user-tag {
