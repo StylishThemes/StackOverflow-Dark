@@ -623,7 +623,7 @@
   }
 
   /*New navigation tabs*/
-  .intellitab a {
+  .intellitab a, .s-progress-bar .-bar:before, .s-progress-bar .-bar:after {
     background: transparent !important;
     border: none !important;
   }
