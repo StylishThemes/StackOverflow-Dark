@@ -47,12 +47,13 @@
 
 See the [full changelog](https://github.com/StylishThemes/Stackoverflow-Dark/wiki).
 
-### Version 2.10.6 & 2.10.7 (2017-07-08)
+### Version 2.10.6 &ndash; 2.10.8 (2017-07-08)
 
 * SO:
   * Remove progress bar edges. Fixes [issue #74](https://github.com/StylishThemes/StackOverflow-Dark/issues/74).
   * Fix text contrast on badge descriptions.
   * Fix progress bar corners. See [issue #74](https://github.com/StylishThemes/StackOverflow-Dark/issues/74).
+  * Fix other user top tags background. See [issue #74](https://github.com/StylishThemes/StackOverflow-Dark/issues/74).
 
 ### Version 2.10.5 (2017-06-29)
 
