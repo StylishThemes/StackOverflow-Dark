@@ -392,6 +392,10 @@
     border-color: #111 !important;
   }
 
+  .s-progress-bar .-bar:before, .s-progress-bar .-bar:after {
+    border-color: #222 !important;
+  }
+
   .welovestackoverflow, .question-summary, .subheader,
   .company-module .-details strong:before {
     border-color: #333 !important;
@@ -421,6 +425,10 @@
   }
   #input-area .input-hint:after {
     border-left-color:#222 !important;
+  }
+  .s-progress-bar .-fill {
+    border-top: #444 1px solid !important;
+    border-bottom: #444 1px solid !important;
   }
 
   /* === No/hide border === */
@@ -623,7 +631,7 @@
   }
 
   /*New navigation tabs*/
-  .intellitab a, .s-progress-bar .-bar:before, .s-progress-bar .-bar:after {
+  .intellitab a {
     background: transparent !important;
     border: none !important;
   }
