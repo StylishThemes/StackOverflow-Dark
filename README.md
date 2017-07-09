@@ -49,6 +49,7 @@ See the [full changelog](https://github.com/StylishThemes/Stackoverflow-Dark/wik
 
 ### Version 2.10.9 (2017-07-09)
 * Add Grunt watch task
+* Update before and after images
 * SO:
   * Fix blocky progress bar corners. Fixes [issue #74](https://github.com/StylishThemes/StackOverflow-Dark/issues/74).
   * Fix tab bottom borders for selected tabs and when hovering.
