@@ -393,7 +393,8 @@
   }
 
   .s-progress-bar .-bar:before, .s-progress-bar .-bar:after {
-    border-color: #222 !important;
+    border-top-color: #222 !important;
+    border-bottom-color: #222 !important;
   }
 
   .welovestackoverflow, .question-summary, .subheader,
