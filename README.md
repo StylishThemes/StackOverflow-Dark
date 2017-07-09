@@ -54,6 +54,7 @@ See the [full changelog](https://github.com/StylishThemes/Stackoverflow-Dark/wik
 * SO:
   * Fix blocky progress bar corners. Fixes [issue #74](https://github.com/StylishThemes/StackOverflow-Dark/issues/74).
   * Fix tab bottom borders for selected tabs and when hovering.
+  * Fix non-selected subtabs having bottom borders
 
 ### Version 2.10.6 - 2.10.8 (2017-07-08)
 
