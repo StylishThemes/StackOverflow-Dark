@@ -22,13 +22,13 @@
 - Install from [userstyles.org](http://userstyles.org/styles/35345) (with customization options) or [manually](https://raw.githubusercontent.com/StylishThemes/Stackoverflow-Dark/master/stackoverflow-dark.css).
 - Stylus is available for [Firefox](https://addons.mozilla.org/en-US/firefox/addon/styl-us/), [Chrome](https://chrome.google.com/webstore/detail/stylus/clngdbkpkpeebahjckkjfobafhncgmne) and [Opera](https://addons.opera.com/en-gb/extensions/details/stylus/).
 - Stylish is available for [Firefox](https://addons.mozilla.org/en-US/firefox/addon/2108/), [Chrome](https://chrome.google.com/extensions/detail/fjnbnpbmkenffdnngjfgmeleoegfcffe), [Opera](https://addons.opera.com/en/extensions/details/stylish/), [Safari](http://sobolev.us/stylish/) and [Firefox Mobile](https://addons.mozilla.org/en-US/firefox/addon/2108/).
-- In versions 2.8.0+, this style will apply to *almost all* Stack Exchange sites.
+- In versions 2.8.0+, this style will apply to *almost* all Stack Exchange sites.
 - Use the [grunt build process](https://github.com/StylishThemes/StackOverflow-Dark/wiki/Build) to customize your StackOverflow Dark theme.
 - Please refer to the [installation documentation](https://github.com/StylishThemes/StackOverflow-Dark/wiki/Install) for more details.
 
 ## Preview
 
-![Stack Overflow Dark preview](http://StylishThemes.github.com/StackOverflow-Dark/images/screenshots/after.png)
+![Stack Overflow Dark preview](images/screenshots/after.png)
 
 ## Available Syntax Highlighting Themes
 
@@ -50,6 +50,7 @@ See the [full changelog](https://github.com/StylishThemes/Stackoverflow-Dark/wik
 ### Version 2.10.9 (2017-07-09)
 * Add Grunt watch task
 * Update before and after images
+* Make preview link relative in the README
 * SO:
   * Fix blocky progress bar corners. Fixes [issue #74](https://github.com/StylishThemes/StackOverflow-Dark/issues/74).
   * Fix tab bottom borders for selected tabs and when hovering.
