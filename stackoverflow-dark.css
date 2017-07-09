@@ -141,8 +141,9 @@
     background-color: #191919 !important;
     border-color: #444 !important;
   }
-  .tabs a.youarehere {
-    border-bottom: 0 !important;
+  
+  #tabs a.youarehere, .tabs a.youarehere {
+    border-bottom-color: transparent !important;
   }
 
   #user-about-me, .user-about-me, .mine .messages, .avatar-card, .tag-container, .dropdown {
@@ -375,6 +376,7 @@
   #tabs a:hover, .tabs a:hover {
     background-color: #191919 !important;
     border: 1px solid #444 !important;
+    border-bottom-color: transparent !important;
   }
 
   .highcharts-container rect[fill="#FFFFFF"], rect[fill="rgb(255, 255, 255)"] {
