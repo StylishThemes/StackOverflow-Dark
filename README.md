@@ -49,6 +49,8 @@ See the [full changelog](https://github.com/StylishThemes/Stackoverflow-Dark/wik
 
 ### Version 2.10.9 (2017-07-09)
 * Add Grunt watch task
+* SO:
+  * Fix blocky progress bar corners. Fixes [issue #74](https://github.com/StylishThemes/StackOverflow-Dark/issues/74).
 
 ### Version 2.10.6 - 2.10.8 (2017-07-08)
 
