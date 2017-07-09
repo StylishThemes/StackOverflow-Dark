@@ -232,7 +232,7 @@
 
   .tagged-interesting, .tagged-interesting .views, .highlight-row, .highlighted, .card.rep-card .graph,
   .badge-progress:hover, #newsletter-ad, .search-form .icon-advanced-search,
-  .message.gray, .choose-tracker-menu li:hover {
+  .message.gray, .menu-popout li:hover, .menu-popout .is-selected {
     background-color: #242424 !important;
     background-image: none !important;
   }
@@ -246,7 +246,7 @@
   }
 
   .youarehere, .dropdown li.selected a, .dropdown li.selected a:hover, .ob-docs .example-metric,
-  .choose-tracker-menu, .version-row, .version-name, .post-tag, .post-tag:visited,
+  .menu-popout, .version-row, .version-name, .post-tag, .post-tag:visited,
   .switcher input[type="radio"]:checked+label, .double-input .separator, .geo-tag {
     background: #333 !important;
     color: #ccc !important;
