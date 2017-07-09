@@ -146,6 +146,10 @@
     border-bottom-color: transparent !important;
   }
 
+  .subtabs :not(.youarehere) {
+    border: 0 !important;
+  }
+
   #user-about-me, .user-about-me, .mine .messages, .avatar-card, .tag-container, .dropdown {
     background: #191919 !important;
     border: 0 !important;
