@@ -184,12 +184,17 @@ module.exports = function (grunt) {
 					advanced: false
 				}
 			}
+		},
+		watch: {
+			files: [ '<%= config.sourceFile %>' ],
+			tasks: [ 'default' ]
 		}
 	});
 
 	grunt.loadNpmTasks('grunt-string-replace');
 	grunt.loadNpmTasks('grunt-contrib-clean');
 	grunt.loadNpmTasks('grunt-contrib-cssmin');
+	grunt.loadNpmTasks('grunt-contrib-watch');
 
 	// build custom stackoverflow-Dark style using build.json settings
 	grunt.registerTask('default', 'Building custom style', function() {
