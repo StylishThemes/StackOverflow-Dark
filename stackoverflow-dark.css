@@ -136,12 +136,12 @@
 
   #tabs a.youarehere, .tabs a.youarehere, .tag-suggestions, .dropdown li,
   .proposed-change .diff-buttons a:not(.selected), #logout-form, .snippet-holder,
-  .CodeMirror, .CodeMirror-gutters, .snippet-box-edit, .badge-progress.completed,
+  .CodeMirror, .CodeMirror-gutters, .badge-progress.completed,
   .timeline-item:before, .item-select-table .item, .title-box, .-list-item {
     background-color: #191919 !important;
     border-color: #444 !important;
   }
-  
+
   #tabs a.youarehere, .tabs a.youarehere {
     border-bottom-color: transparent !important;
   }
