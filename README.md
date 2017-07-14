@@ -47,7 +47,13 @@
 
 See the [full changelog](https://github.com/StylishThemes/Stackoverflow-Dark/wiki).
 
+### Version 2.10.10 (2017-07-14)
+
+* SO: Remove code snippet result iframe background color. See [issue #75](https://github.com/StylishThemes/StackOverflow-Dark/issues/75).
+* Meta: update authors.
+
 ### Version 2.10.9 (2017-07-09)
+
 * Add Grunt watch task
 * Update before and after images
 * Make preview link relative in the README
@@ -64,13 +70,3 @@ See the [full changelog](https://github.com/StylishThemes/Stackoverflow-Dark/wik
   * Fix text contrast on badge descriptions.
   * Fix progress bar corners. See [issue #74](https://github.com/StylishThemes/StackOverflow-Dark/issues/74).
   * Fix other user top tags background. See [issue #74](https://github.com/StylishThemes/StackOverflow-Dark/issues/74).
-
-### Version 2.10.5 (2017-06-29)
-
-* SO: update new style for reputation panels & progress bars. Fixes [issue #74](https://github.com/StylishThemes/StackOverflow-Dark/issues/74).
-
-### Version 2.10.4 (2017-06-27)
-
-* SO:
-  * Add `code` selector to font setting. See [issue #73](https://github.com/StylishThemes/StackOverflow-Dark/issues/73).
-  * Style job recommendations panel.
