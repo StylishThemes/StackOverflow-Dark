@@ -47,6 +47,10 @@
 
 See the [full changelog](https://github.com/StylishThemes/Stackoverflow-Dark/wiki).
 
+### Version 2.10.11 (2017-07-21)
+
+* SO: Fix jobs page styling.
+
 ### Version 2.10.10 (2017-07-14)
 
 * SO: Remove code snippet result iframe background color. See [issue #75](https://github.com/StylishThemes/StackOverflow-Dark/issues/75).
@@ -62,11 +66,3 @@ See the [full changelog](https://github.com/StylishThemes/Stackoverflow-Dark/wik
   * Fix tab bottom borders for selected tabs and when hovering.
   * Fix non-selected subtabs having bottom borders
   * Fix badge tracking selection popup being white
-
-### Version 2.10.6 - 2.10.8 (2017-07-08)
-
-* SO:
-  * Remove progress bar edges. Fixes [issue #74](https://github.com/StylishThemes/StackOverflow-Dark/issues/74).
-  * Fix text contrast on badge descriptions.
-  * Fix progress bar corners. See [issue #74](https://github.com/StylishThemes/StackOverflow-Dark/issues/74).
-  * Fix other user top tags background. See [issue #74](https://github.com/StylishThemes/StackOverflow-Dark/issues/74).
