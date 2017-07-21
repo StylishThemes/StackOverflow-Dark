@@ -232,7 +232,7 @@
 
   .tagged-interesting, .tagged-interesting .views, .highlight-row, .highlighted, .card.rep-card .graph,
   .badge-progress:hover, #newsletter-ad, .search-form .icon-advanced-search,
-  .message.gray, .menu-popout li:hover, .menu-popout .is-selected {
+  .message.gray, .menu-popout li:hover, .menu-popout .is-selected, #job-detail .-sticky-tabs {
     background-color: #242424 !important;
     background-image: none !important;
   }
@@ -373,7 +373,7 @@
   .cv-story .avatar-wrapper, .btn-clear, .header-edit-section, .personal-statement, .link-text,
   .match-preferences .seniority-selector, .field-with-bg, #tags .message.regular,
   #profile-side #side-menu a, .sidebar-profile .-header, .sidebar-profile .-footer,
-  #popup-next-badge .-header, .popup-close .-link {
+  #popup-next-badge .-header, .popup-close .-link, .job-cover-image.-no-image, #job-detail {
     background-color: transparent !important;
   }
 
