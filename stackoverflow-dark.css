@@ -933,6 +933,9 @@
 }
 @-moz-document domain("dba.stackexchange.com") {
   /* database administrators */
+  body {
+    background-image: none !important;
+  }
   #hlogo a {
     background-image: url(https://StylishThemes.github.io/StackOverflow-Dark/images/database-admin-logo.svg) !important;
   }
