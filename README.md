@@ -47,9 +47,11 @@
 
 See the [full changelog](https://github.com/StylishThemes/Stackoverflow-Dark/wiki).
 
-### Version 2.10.12 (2017-07-31)
+### Version 2.10.12 &ndash; 2.10.13 (2017-07-31)
 
-* Ask Ubuntu: Fix footer background. Fixes [issue #79](https://github.com/StylishThemes/StackOverflow-Dark/issues/79).
+* Ask Ubuntu:
+  * Fix footer background. Fixes [issue #79](https://github.com/StylishThemes/StackOverflow-Dark/issues/79).
+  * Fix footer text color.
 
 ### Version 2.10.11 (2017-07-21)
 
