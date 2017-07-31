@@ -47,6 +47,10 @@
 
 See the [full changelog](https://github.com/StylishThemes/Stackoverflow-Dark/wiki).
 
+### Version 2.10.12 (2017-07-31)
+
+* Ask Ubuntu: Fix footer background. Fixes [issue #79](https://github.com/StylishThemes/StackOverflow-Dark/issues/79).
+
 ### Version 2.10.11 (2017-07-21)
 
 * SO: Fix jobs page styling.
@@ -55,14 +59,3 @@ See the [full changelog](https://github.com/StylishThemes/Stackoverflow-Dark/wik
 
 * SO: Remove code snippet result iframe background color. See [issue #75](https://github.com/StylishThemes/StackOverflow-Dark/issues/75).
 * Meta: update authors.
-
-### Version 2.10.9 (2017-07-09)
-
-* Add Grunt watch task
-* Update before and after images
-* Make preview link relative in the README
-* SO:
-  * Fix blocky progress bar corners. Fixes [issue #74](https://github.com/StylishThemes/StackOverflow-Dark/issues/74).
-  * Fix tab bottom borders for selected tabs and when hovering.
-  * Fix non-selected subtabs having bottom borders
-  * Fix badge tracking selection popup being white
