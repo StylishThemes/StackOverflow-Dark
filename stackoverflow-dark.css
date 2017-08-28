@@ -221,7 +221,7 @@
   }
 
   .answer, #system-message, .commentlist, .revision td, #hero-content, .mdhelp-tabs .selected, .tabs .selected,
-  .rep-card .rep-col, .sort select, .-job._highlighted {
+  .rep-card .rep-col, .sort select, .-job._highlighted, .MathJax_MenuDisabled {
     background: #232323 !important;
     color: #999 !important;
   }
@@ -247,7 +247,8 @@
 
   .youarehere, .dropdown li.selected a, .dropdown li.selected a:hover, .ob-docs .example-metric,
   .menu-popout, .version-row, .version-name, .post-tag, .post-tag:visited,
-  .switcher input[type="radio"]:checked+label, .double-input .separator, .geo-tag {
+  .switcher input[type="radio"]:checked+label, .double-input .separator, .geo-tag,
+  .MathJax_Menu, .MathJax_MenuLabel:focus {
     background: #333 !important;
     color: #ccc !important;
   }
@@ -271,7 +272,7 @@
   tr.comment:hover, .reply-parent, .timestamp, .usercard, .page-numbers.current,
   .comment-help, .answer-help-background, .mdhelp-tabs, .tabs li, .hi, .seNavLinks a:hover,
   .seNavLinks a:focus, .itemBoxNew, .pagination a.current, .pagination a.selected, .pagination a:hover,
-  .wb-wearing, .impact-card hr {
+  .wb-wearing, .impact-card hr, .MathJax_MenuActive {
     background-color: #444 !important;
     color: #ddd !important;
   }
