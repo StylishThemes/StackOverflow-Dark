@@ -47,6 +47,11 @@
 
 See the [full changelog](https://github.com/StylishThemes/Stackoverflow-Dark/wiki).
 
+### Version 2.10.14 (2017-08-27)
+
+* SE: Style MathJax context menu. Fixes [issue #81](https://github.com/StylishThemes/StackOverflow-Dark/issues/81).
+* Meta: update dependencies.
+
 ### Version 2.10.12 &ndash; 2.10.13 (2017-07-31)
 
 * Ask Ubuntu:
@@ -56,8 +61,3 @@ See the [full changelog](https://github.com/StylishThemes/Stackoverflow-Dark/wik
 ### Version 2.10.11 (2017-07-21)
 
 * SO: Fix jobs page styling.
-
-### Version 2.10.10 (2017-07-14)
-
-* SO: Remove code snippet result iframe background color. See [issue #75](https://github.com/StylishThemes/StackOverflow-Dark/issues/75).
-* Meta: update authors.
