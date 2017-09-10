@@ -296,9 +296,12 @@
   .message.regular {
     background-color: rgba(51,34,17,.4) !important;
   }
-  pre .spaces {
+  pre .spaces, .message.message-warning {
     background-color: #321 !important;
     color: #eee !important;
+  }
+  .message.message-warning .message-tip-left-top:before {
+    border-top-color: #321 !important;
   }
 
   /* chat room buttons */
@@ -483,7 +486,7 @@
   .message.message-config h1, .message.message-config h2, .message.message-config h3, .message.message-config h4,
   .spoiler:hover, .company-module a:hover *, .search-form .label, .search-form label, .list.companies p,
   #snpte-button-run, .comment-link, .timeline .header h4, .-title, #profile-side #side-menu a:hover,
-  .-rep, .-total, .-list-item .-description {
+  .-rep, .-total, .-list-item .-description, .message.message-error a {
     color: #ddd !important;
   }
 
