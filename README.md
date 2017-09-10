@@ -47,6 +47,11 @@
 
 See the [full changelog](https://github.com/StylishThemes/Stackoverflow-Dark/wiki).
 
+### Version 2.10.15 (2017-09-09)
+
+* Fix badges.
+* Style warning & error messages. Fixes [issue #82](https://github.com/StylishThemes/StackOverflow-Dark/issues/82).
+
 ### Version 2.10.14 (2017-08-27)
 
 * SE: Style MathJax context menu. Fixes [issue #81](https://github.com/StylishThemes/StackOverflow-Dark/issues/81).
@@ -57,7 +62,3 @@ See the [full changelog](https://github.com/StylishThemes/Stackoverflow-Dark/wik
 * Ask Ubuntu:
   * Fix footer background. Fixes [issue #79](https://github.com/StylishThemes/StackOverflow-Dark/issues/79).
   * Fix footer text color.
-
-### Version 2.10.11 (2017-07-21)
-
-* SO: Fix jobs page styling.
