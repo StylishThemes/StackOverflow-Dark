@@ -375,7 +375,7 @@
   .match-preferences .seniority-selector, .field-with-bg, #tags .message.regular,
   #profile-side #side-menu a, .sidebar-profile .-header, .sidebar-profile .-footer,
   #popup-next-badge .-header, .popup-close .-link, .job-cover-image.-no-image, #job-detail,
-  .s-footer .-container {
+  .s-footer .-container, .p-top-tags .badge-tag {
     background-color: transparent !important;
   }
 
@@ -445,7 +445,7 @@
     border-right: 0 !important;
   }
   .module, .tabs a, div.message, .full-diff td, .post-tag:not(.required-tag),
-  .wb-outer:not(.wb-selected), .page-numbers.dots {
+  .wb-outer:not(.wb-selected), .page-numbers.dots, .p-top-tags .badge-tag {
     border-color: transparent !important;
   }
   .left-arrow, .right-arrow {
