@@ -49,7 +49,9 @@ See the [full changelog](https://github.com/StylishThemes/Stackoverflow-Dark/wik
 
 ### Version 2.10.16 (2017-09-15)
 
-* SO: Darken signup screen. Fixes [issue #83](https://github.com/StylishThemes/StackOverflow-Dark/issues/83).
+* SO:
+  * Darken signup screen. Fixes [issue #83](https://github.com/StylishThemes/StackOverflow-Dark/issues/83).
+  * Fix google button.
 
 ### Version 2.10.15 (2017-09-09)
 
