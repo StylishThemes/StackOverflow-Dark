@@ -47,6 +47,10 @@
 
 See the [full changelog](https://github.com/StylishThemes/Stackoverflow-Dark/wiki).
 
+### Version 2.10.16 (2017-09-15)
+
+* SO: Darken signup screen. Fixes [issue #83](https://github.com/StylishThemes/StackOverflow-Dark/issues/83).
+
 ### Version 2.10.15 (2017-09-09)
 
 * Fix badges.
@@ -56,9 +60,3 @@ See the [full changelog](https://github.com/StylishThemes/Stackoverflow-Dark/wik
 
 * SE: Style MathJax context menu. Fixes [issue #81](https://github.com/StylishThemes/StackOverflow-Dark/issues/81).
 * Meta: update dependencies.
-
-### Version 2.10.12 &ndash; 2.10.13 (2017-07-31)
-
-* Ask Ubuntu:
-  * Fix footer background. Fixes [issue #79](https://github.com/StylishThemes/StackOverflow-Dark/issues/79).
-  * Fix footer text color.
