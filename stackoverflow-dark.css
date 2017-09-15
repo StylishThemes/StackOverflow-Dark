@@ -115,7 +115,7 @@
 
   .onebox, .profile-ad, .message.message-config,
   .so-header a:hover, .so-header a.topbar-icon-on, .topbar-dialog .header, .header-edit-section:hover,
-  .timeline-item, .sidebar-profile .-item {
+  .timeline-item, .sidebar-profile .-item, .btn-outlined.-white:hover {
     background: #151515 !important;
   }
 
@@ -189,7 +189,7 @@
 
   #header #topbar, .revision-comment, .date-span, .form-submit input, .preferred-login,
   .mdhelp, .wmd-help-button.active-help, .date_brick, .more-info, .review-stats-current-user,
-  .review-stats-count-current-user, .topbar-menu-links {
+  .review-stats-count-current-user, .topbar-menu-links, .input-group .-fill {
     background: #222 !important;
     color: #ddd !important;
     -webkit-border-radius: 3px !important;
@@ -352,7 +352,7 @@
     color: #ff4a15 !important;
   }
 
-  .summary a.moderator-tag {
+  .summary a.moderator-tag, .btn._googl {
     background-color: #400 !important;
   }
 
@@ -477,6 +477,12 @@
   }
   .review-actions input:hover, .btn:hover, .btn-secondary:hover, #job-board-save:hover {
     background: #273045 !important;
+  }
+  .s-hero {
+    background-image: url(https://cdn.sstatic.net/img/hero/pattern.svg),linear-gradient(to right, #121723 0, #182030 100%) !important;
+  }
+  .s-hero:after {
+    background: #182030 !important;
   }
 
   /* === Text Color === */
