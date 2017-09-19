@@ -115,7 +115,7 @@
 
   .onebox, .profile-ad, .message.message-config,
   .so-header a:hover, .so-header a.topbar-icon-on, .topbar-dialog .header, .header-edit-section:hover,
-  .timeline-item, .sidebar-profile .-item, .btn-outlined.-white:hover {
+  .timeline-item, .sidebar-profile .-item, .btn-outlined.-white:hover, .top-bar a:hover, .top-bar a:focus {
     background: #151515 !important;
   }
 
