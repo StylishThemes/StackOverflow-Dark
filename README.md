@@ -47,6 +47,12 @@
 
 See the [full changelog](https://github.com/StylishThemes/Stackoverflow-Dark/wiki).
 
+### Version 2.10.17 (2017-09-20)
+
+* SO:
+  * Fix topbar hover and focus.
+  * Fix pager size hover.
+
 ### Version 2.10.16 (2017-09-15)
 
 * SO:
@@ -57,8 +63,3 @@ See the [full changelog](https://github.com/StylishThemes/Stackoverflow-Dark/wik
 
 * Fix badges.
 * Style warning & error messages. Fixes [issue #82](https://github.com/StylishThemes/StackOverflow-Dark/issues/82).
-
-### Version 2.10.14 (2017-08-27)
-
-* SE: Style MathJax context menu. Fixes [issue #81](https://github.com/StylishThemes/StackOverflow-Dark/issues/81).
-* Meta: update dependencies.
