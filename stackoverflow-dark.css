@@ -50,7 +50,7 @@
   span.bounty-indicator-tab, #change-picture, .top-badge,.supernovabg, .hotbg,
   .nav li.youarehere a, .nav a:hover, a.button:hover, .edit-count, .pager a:hover span,
   .bounties-tab, .login-link, #sidebar a[href*="/questions/ask"],
-  #sidebar a[href*="/questions/ask"]:visited {
+  #sidebar a[href*="/questions/ask"]:visited, .page-numbers:hover {
     background-color: /*[[base-color]]*/ #008080 !important;
     color: #eee !important;
   }
