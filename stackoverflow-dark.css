@@ -71,12 +71,14 @@
   }
 
   /* === input focus hightlight === */
-  input:focus, textarea:focus {
+  input:focus, textarea:focus, .chosen-container.chosen-container-active .chosen-choices,
+  .chosen-container .active-result.highlighted {
     border-color: /*[[base-color]]*/ #008080 !important;
     box-shadow: inset 0 1px 2px rgba(0,0,0,0.075), 0 0 2px /*[[base-color]]*/ #008080 !important;
     outline-color: transparent !important;
   }
-  .tag-editor input:focus, .previous-button, .next-button, .btn-clear {
+  .tag-editor input:focus, .previous-button, .next-button, .btn-clear,
+  .chosen-container.chosen-container-active .chosen-choices input {
     border: 0 !important;
     box-shadow: none !important;
   }
@@ -92,10 +94,6 @@
 
   /* === background color === */
   /* from darkest to lightest grey */
-  .search-container input[type=text], .-link:focus {
-    background-color: #000 !important;
-  }
-
   .popup-badges .all-badge-progress .completed:before, .previous-button, .next-button, #footer,
   /* === herobox when not logged in === */ #herobox.alternate,
   .message-title {
@@ -108,7 +106,8 @@
 
   #custom-header, .review-bar, .diff-choices a.selected, #header #topbar, td.owner, a.owner, .question-status,
   .profile-popup, .profile-popup div, .profile-popup th, .profile-popup td, #global, .actual-edit-overlay,
-  input:not([type='submit']), textarea, #search input, .tag-editor, .f-select > select, textarea#input {
+  input:not([type='submit']), textarea, #search input, .tag-editor, .f-select > select, textarea#input,
+  .search-form .chosen-container .chosen-choices, .pac-container, select {
     background-color: #111 !important;
     color: #ddd !important;
   }
@@ -124,11 +123,12 @@
 
   html, blockquote, #post-preview, .nav .primarynav li a, #chat, #hsearch .textbox, .form-item, .grippie,
   .welovestackoverflow, #wmd-button-bar, .wmd-button-bar, .qa-block, .content-block, .user-info-rep, .sidebar,
-  .popup, .full-diff, .val-success, .search-form .filter-pane nav, .s-card {
+  .popup, .full-diff, .val-success, .search-form .filter-pane nav, .s-card, .chosen-container .chosen-drop,
+  .pac-item.pac-item-selected, .pac-item:hover {
     background: #191919 !important
   }
 
-  .authcomment, .seIntro, .seFooter {
+  .authcomment, .seIntro, .seFooter, .title-banner {
     background-color: #191919 !important;
     border: 2px solid #262626 !important;
   }
@@ -174,7 +174,8 @@
   .wmd-prompt-dialog, .wb-popup-content, .wb-hat-details, .docs-review-page .history-table tr.even td,
   kbd, kbd code, .switcher label, .timeline-item-actions, .cv-story .section-opener h2,
   .cv-story .section-opener:after, .header-edit-section .ctas,
-  .item-select-table .item:hover, .visa-wrapper, .chosen-choices, .p-top-tags .-tag-group {
+  .item-select-table .item:hover, .visa-wrapper, .chosen-choices, .p-top-tags .-tag-group,
+  .chosen-results .active-result {
     background-color: #222 !important;
     color: #ddd !important;
   }
@@ -496,7 +497,7 @@
   .message.message-config h1, .message.message-config h2, .message.message-config h3, .message.message-config h4,
   .spoiler:hover, .company-module a:hover *, .search-form .label, .search-form label, .list.companies p,
   #snpte-button-run, .comment-link, .timeline .header h4, .-title, #profile-side #side-menu a:hover,
-  .-rep, .-total, .-list-item .-description, .message.message-error a {
+  .-rep, .-total, .-list-item .-description, .message.message-error a, .chosen-container .chosen-results li {
     color: #ddd !important;
   }
 
@@ -523,7 +524,8 @@
     color: #999 !important;
   }
 
-  .answered-accepted strong, .youarehere, .nav .primarynav li a, .nav a, a:hover, .rep-up.special-rep {
+  .answered-accepted strong, .youarehere, .nav .primarynav li a, .nav a, a:hover, .rep-up.special-rep,
+  .pac-item-query {
     color: #fff !important;
   }
 
