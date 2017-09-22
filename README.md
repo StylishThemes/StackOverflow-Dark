@@ -47,6 +47,14 @@
 
 See the [full changelog](https://github.com/StylishThemes/Stackoverflow-Dark/wiki).
 
+### Version 2.10.18 (2017-09-22)
+
+* SO:
+  * Fix topbar focus styling.
+  * Darken topbar dialog.
+  * Style Annual Salary input page. See [issue #86](https://github.com/StylishThemes/StackOverflow-Dark/issues/86).
+  * Style Annual Salary results page. Fixes [issue #86](https://github.com/StylishThemes/StackOverflow-Dark/issues/86).
+
 ### Version 2.10.17 (2017-09-20)
 
 * SO:
@@ -58,8 +66,3 @@ See the [full changelog](https://github.com/StylishThemes/Stackoverflow-Dark/wik
 * SO:
   * Darken signup screen. Fixes [issue #83](https://github.com/StylishThemes/StackOverflow-Dark/issues/83).
   * Fix google button.
-
-### Version 2.10.15 (2017-09-09)
-
-* Fix badges.
-* Style warning & error messages. Fixes [issue #82](https://github.com/StylishThemes/StackOverflow-Dark/issues/82).
