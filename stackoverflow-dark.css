@@ -117,7 +117,8 @@
   .so-header a:hover, .so-header a.topbar-icon-on, .topbar-dialog .header, .header-edit-section:hover,
   .timeline-item, .sidebar-profile .-item, .btn-outlined.-white:hover, .top-bar a:hover, .top-bar a:focus,
   .top-bar .-item._active, .top-bar .-link.topbar-icon-on, .top-bar .-link.topbar-icon-on:hover,
-  .top-bar .-feature-notice:hover, .top-bar .-feature-notice.topbar-icon-on {
+  .top-bar .-feature-notice:hover, .top-bar .-feature-notice.topbar-icon-on, .topbar-dialog .dialog-content,
+  .feature-notice-dialog:before {
     background: #151515 !important;
   }
 
@@ -415,7 +416,7 @@
     border-color: #333 !important;
   }
 
-  a.required-tag {
+  a.required-tag, .topbar-dialog.feature-notice-dialog:before {
     border-color: #555 !important;
   }
 
@@ -472,12 +473,13 @@
   .hero-box {
     background: #182030 !important;
   }
-  .review-actions input, .btn, .chosen-choices .search-choice {
+  .review-actions input, .btn, .chosen-choices .search-choice, .topbar-dialog a.btn-secondary {
     background: #182030 !important;
     color: #ccc !important;
     border: 1px solid #135 !important;
   }
-  .review-actions input:hover, .btn:hover, .btn-secondary:hover, #job-board-save:hover {
+  .review-actions input:hover, .btn:hover, .btn-secondary:hover, #job-board-save:hover,
+  .topbar-dialog a.btn-secondary:hover {
     background: #273045 !important;
   }
   .s-hero {
