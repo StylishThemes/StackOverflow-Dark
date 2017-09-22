@@ -117,18 +117,19 @@
   .timeline-item, .sidebar-profile .-item, .btn-outlined.-white:hover, .top-bar a:hover, .top-bar a:focus,
   .top-bar .-item._active, .top-bar .-link.topbar-icon-on, .top-bar .-link.topbar-icon-on:hover,
   .top-bar .-feature-notice:hover, .top-bar .-feature-notice.topbar-icon-on, .topbar-dialog .dialog-content,
-  .feature-notice-dialog:before {
+  .feature-notice-dialog:before, .-item.social, .salary-results-container .collection, .sidebar #post-job,
+  .sidebar .salary-survey-sidebar, .ui-dialog {
     background: #151515 !important;
   }
 
   html, blockquote, #post-preview, .nav .primarynav li a, #chat, #hsearch .textbox, .form-item, .grippie,
   .welovestackoverflow, #wmd-button-bar, .wmd-button-bar, .qa-block, .content-block, .user-info-rep, .sidebar,
   .popup, .full-diff, .val-success, .search-form .filter-pane nav, .s-card, .chosen-container .chosen-drop,
-  .pac-item.pac-item-selected, .pac-item:hover {
+  .pac-item.pac-item-selected, .pac-item:hover, .-item.social:hover {
     background: #191919 !important
   }
 
-  .authcomment, .seIntro, .seFooter, .title-banner {
+  .authcomment, .seIntro, .seFooter, .title-banner, .salary-results-wrapper {
     background-color: #191919 !important;
     border: 2px solid #262626 !important;
   }
@@ -175,7 +176,7 @@
   kbd, kbd code, .switcher label, .timeline-item-actions, .cv-story .section-opener h2,
   .cv-story .section-opener:after, .header-edit-section .ctas,
   .item-select-table .item:hover, .visa-wrapper, .chosen-choices, .p-top-tags .-tag-group,
-  .chosen-results .active-result {
+  .chosen-results .active-result, .salary-results-wrapper .inline-survey-cta {
     background-color: #222 !important;
     color: #ddd !important;
   }
@@ -185,7 +186,7 @@
   .list-originals .body-summary, .review-instructions-reason, .room-mini, #formContainer, #switch,
   .login-topbar, .newsletter-category, .newsletter-item, .blogcontainer, .usercard-xxl, .roomcard-xxl,
   .docs-review-page .topic-draft-bar, .badge-progress, .avatar-wrapper, .timeline-line,
-  .s-progress-bar .-bar {
+  .s-progress-bar .-bar, .-job-badges .-badge, .search-form .job-alert-tooltip {
     background-color: #222 !important;
     border-color: #555 !important;
     color: #ddd !important;
@@ -252,7 +253,7 @@
   .youarehere, .dropdown li.selected a, .dropdown li.selected a:hover, .ob-docs .example-metric,
   .menu-popout, .version-row, .version-name, .post-tag, .post-tag:visited,
   .switcher input[type="radio"]:checked+label, .double-input .separator, .geo-tag,
-  .MathJax_Menu, .MathJax_MenuLabel:focus {
+  .MathJax_Menu, .MathJax_MenuLabel:focus, .salary-calc-inputs {
     background: #333 !important;
     color: #ccc !important;
   }
@@ -411,6 +412,9 @@
     border-top-color: #222 !important;
     border-bottom-color: #222 !important;
   }
+  .search-form .job-alert-tooltip:after {
+    border-top-color: #222 !important;
+  }
 
   .welovestackoverflow, .question-summary, .subheader,
   .company-module .-details strong:before {
@@ -497,7 +501,9 @@
   .message.message-config h1, .message.message-config h2, .message.message-config h3, .message.message-config h4,
   .spoiler:hover, .company-module a:hover *, .search-form .label, .search-form label, .list.companies p,
   #snpte-button-run, .comment-link, .timeline .header h4, .-title, #profile-side #side-menu a:hover,
-  .-rep, .-total, .-list-item .-description, .message.message-error a, .chosen-container .chosen-results li {
+  .-rep, .-total, .-list-item .-description, .message.message-error a, .chosen-container .chosen-results li,
+  .salary-calc-inputs span, .salary-survey-dialog .header h3, .title-banner h1, .salary-results-container h1,
+  .topbar-dialog h4 {
     color: #ddd !important;
   }
 
@@ -646,6 +652,9 @@
   .industries:before, .js-reputation-graph, .js-reputation-graph * {
     -webkit-filter: invert(100%) !important;
     filter: invert(100%) !important;
+  }
+  .collection img, .salary-survey-sidebar .header-img, #post-job .header-img {
+    filter: invert(80%) hue-rotate(180deg);
   }
 
   .axis .tick, .pie text {
