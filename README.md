@@ -47,6 +47,10 @@
 
 See the [full changelog](https://github.com/StylishThemes/Stackoverflow-Dark/wiki).
 
+### Version 2.10.19 (2017-09-23)
+
+* Global: Brighten RSS feed. Fixes [issue #87](https://github.com/StylishThemes/StackOverflow-Dark/issues/87).
+
 ### Version 2.10.18 (2017-09-22)
 
 * SO:
@@ -60,9 +64,3 @@ See the [full changelog](https://github.com/StylishThemes/Stackoverflow-Dark/wik
 * SO:
   * Fix topbar hover and focus.
   * Fix pager size hover.
-
-### Version 2.10.16 (2017-09-15)
-
-* SO:
-  * Darken signup screen. Fixes [issue #83](https://github.com/StylishThemes/StackOverflow-Dark/issues/83).
-  * Fix google button.
