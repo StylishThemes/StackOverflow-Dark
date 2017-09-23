@@ -146,6 +146,12 @@
     border-color: #444 !important;
   }
 
+  /* RSS Feed - issue #87 */
+  body > pre:not(.prettyprint):not(.CodeMirror-line) {
+    background: #191919 !important;
+    color: #ddd;
+  }
+
   #tabs a.youarehere, .tabs a.youarehere {
     border-bottom-color: transparent !important;
   }
