@@ -691,6 +691,10 @@
   .accepted-answer .prettyprint .pln, .accepted-answer .youarehere, .accepted-answer pre:not(.prettyprint) {
     background: #202A20 !important;
   }
+  /*asked date and viewed #*/
+  .label-key > b {
+    color: #ddd;
+  }
 
   /*[[syntax-theme]]*/
   /* grunt-webkit-remove-to-end-of-file */
