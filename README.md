@@ -47,6 +47,10 @@
 
 See the [full changelog](https://github.com/StylishThemes/Stackoverflow-Dark/wiki).
 
+### Version 2.10.20 (2017-09-27)
+
+* SO: Added code to fixed asked date and viewed #. See [PR #88](https://github.com/StylishThemes/StackOverflow-Dark/pull/88); thanks [@jmona789](https://github.com/jmona789)!
+
 ### Version 2.10.19 (2017-09-23)
 
 * Global: Brighten RSS feed. Fixes [issue #87](https://github.com/StylishThemes/StackOverflow-Dark/issues/87).
@@ -58,9 +62,3 @@ See the [full changelog](https://github.com/StylishThemes/Stackoverflow-Dark/wik
   * Darken topbar dialog.
   * Style Annual Salary input page. See [issue #86](https://github.com/StylishThemes/StackOverflow-Dark/issues/86).
   * Style Annual Salary results page. Fixes [issue #86](https://github.com/StylishThemes/StackOverflow-Dark/issues/86).
-
-### Version 2.10.17 (2017-09-20)
-
-* SO:
-  * Fix topbar hover and focus.
-  * Fix pager size hover.
