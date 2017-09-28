@@ -486,7 +486,7 @@
   .message.message-config h1, .message.message-config h2, .message.message-config h3, .message.message-config h4,
   .spoiler:hover, .company-module a:hover *, .search-form .label, .search-form label, .list.companies p,
   #snpte-button-run, .comment-link, .timeline .header h4, .-title, #profile-side #side-menu a:hover,
-  .-rep, .-total, .-list-item .-description, .message.message-error a {
+  .-rep, .-total, .-list-item .-description, .message.message-error a, .label-key > b {
     color: #ddd !important;
   }
 
@@ -690,10 +690,6 @@
   .accepted-answer pre, .accepted-answer code, .accepted-answer pre.prettyprint,
   .accepted-answer .prettyprint .pln, .accepted-answer .youarehere, .accepted-answer pre:not(.prettyprint) {
     background: #202A20 !important;
-  }
-  /*asked date and viewed #*/
-  .label-key > b {
-    color: #ddd;
   }
 
   /*[[syntax-theme]]*/
