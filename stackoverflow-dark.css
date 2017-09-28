@@ -509,7 +509,7 @@
   #snpte-button-run, .comment-link, .timeline .header h4, .-title, #profile-side #side-menu a:hover,
   .-rep, .-total, .-list-item .-description, .message.message-error a, .chosen-container .chosen-results li,
   .salary-calc-inputs span, .salary-survey-dialog .header h3, .title-banner h1, .salary-results-container h1,
-  .topbar-dialog h4 {
+  .topbar-dialog h4, .label-key > b {
     color: #ddd !important;
   }
 
