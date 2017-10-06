@@ -47,7 +47,7 @@
 
 See the [full changelog](https://github.com/StylishThemes/Stackoverflow-Dark/wiki).
 
-### Version 2.10.21 (2017-10-0?)
+### Version 2.10.21 (2017-10-06)
 
 * Global: Fix "per page" text on questions page having a border.
 
@@ -58,11 +58,3 @@ See the [full changelog](https://github.com/StylishThemes/Stackoverflow-Dark/wik
 ### Version 2.10.19 (2017-09-23)
 
 * Global: Brighten RSS feed. Fixes [issue #87](https://github.com/StylishThemes/StackOverflow-Dark/issues/87).
-
-### Version 2.10.18 (2017-09-22)
-
-* SO:
-  * Fix topbar focus styling.
-  * Darken topbar dialog.
-  * Style Annual Salary input page. See [issue #86](https://github.com/StylishThemes/StackOverflow-Dark/issues/86).
-  * Style Annual Salary results page. Fixes [issue #86](https://github.com/StylishThemes/StackOverflow-Dark/issues/86).
