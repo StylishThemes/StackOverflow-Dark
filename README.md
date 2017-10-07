@@ -47,7 +47,7 @@
 
 See the [full changelog](https://github.com/StylishThemes/Stackoverflow-Dark/wiki).
 
-### Version 2.10.22 (2017-10-0?)
+### Version 2.10.22 (2017-10-07)
 
 * SO: Fix intellitab borders.
 
@@ -58,7 +58,3 @@ See the [full changelog](https://github.com/StylishThemes/Stackoverflow-Dark/wik
 ### Version 2.10.20 (2017-09-27)
 
 * SO: Added code to fixed asked date and viewed #. See [PR #88](https://github.com/StylishThemes/StackOverflow-Dark/pull/88); thanks [@jmona789](https://github.com/jmona789)!
-
-### Version 2.10.19 (2017-09-23)
-
-* Global: Brighten RSS feed. Fixes [issue #87](https://github.com/StylishThemes/StackOverflow-Dark/issues/87).
