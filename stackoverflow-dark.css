@@ -462,7 +462,8 @@
     border-right: 0 !important;
   }
   .module, .tabs a, div.message, .full-diff td, .post-tag:not(.required-tag),
-  .wb-outer:not(.wb-selected), .page-numbers.dots, .p-top-tags .badge-tag, .page-numbers.desc {
+  .wb-outer:not(.wb-selected), .page-numbers.dots, .p-top-tags .badge-tag, .page-numbers.desc,
+  .intellitab:not(.selected) a {
     border-color: transparent !important;
   }
   .left-arrow, .right-arrow {
@@ -673,10 +674,12 @@
   /*New navigation tabs*/
   .intellitab a {
     background: transparent !important;
-    border: none !important;
   }
   .intellitab.selected a {
     background-color: rgba(51, 51, 51, .5) !important;
+  }
+  .intellitab a.youarehere {
+    border-bottom-color: #242729 !important;
   }
   .intellitab .menu-switcher {
     background-color: #333 !important;

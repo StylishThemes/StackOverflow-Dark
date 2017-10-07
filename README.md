@@ -47,6 +47,10 @@
 
 See the [full changelog](https://github.com/StylishThemes/Stackoverflow-Dark/wiki).
 
+### Version 2.10.22 (2017-10-0?)
+
+* SO: Fix intellitab borders.
+
 ### Version 2.10.21 (2017-10-06)
 
 * Global: Fix "per page" text on questions page having a border.
