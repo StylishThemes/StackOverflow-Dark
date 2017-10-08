@@ -383,7 +383,7 @@
   #mainbar, #mainbar-full, .mainbar-full, #logout-page, #sidebar, .footerwrap, #footer-menu, .module,
   #sidebar #newsletter-ad, #sidebar .ad-container, #sidebar .everyonelovesstackoverflow, .mention,
   .tag-suggestions>div .more-info, .user-tags .answer-votes, .expanded:hover, .sidebar-accordion,
-  .sidebar-accordion a:hover, .sidebar, .sidebar *, .tag-filter-isany, .col-section.expanded,
+  .sidebar-accordion a:hover, .sidebar, .sidebar *:not(.post-tag), .tag-filter-isany, .col-section.expanded,
   .timeline-mine header, .timeline-sidebar header, .sidebar-profile.is-visible, .cv-section,
   .cv-story .avatar-wrapper, .btn-clear, .header-edit-section, .personal-statement, .link-text,
   .match-preferences .seniority-selector, .field-with-bg, #tags .message.regular,
@@ -461,9 +461,8 @@
   div.list > div {
     border-right: 0 !important;
   }
-  .module, .tabs a, div.message, .full-diff td, .post-tag:not(.required-tag),
-  .wb-outer:not(.wb-selected), .page-numbers.dots, .p-top-tags .badge-tag, .page-numbers.desc,
-  .intellitab:not(.selected) a {
+  .module, .tabs a, div.message, .full-diff td, .wb-outer:not(.wb-selected),
+  .page-numbers.dots, .p-top-tags .badge-tag, .page-numbers.desc, .intellitab:not(.selected) a {
     border-color: transparent !important;
   }
   .left-arrow, .right-arrow {
