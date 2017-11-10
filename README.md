@@ -47,7 +47,11 @@
 
 See the [full changelog](https://github.com/StylishThemes/Stackoverflow-Dark/wiki).
 
-### Version 2.10.23 (2017-10-0?)
+### Version 2.10.24 (2017-11-10)
+
+* Global: Make visited link styling less agressive. Now it only applies to the same kinds of links as it does without the style.
+
+### Version 2.10.23 (2017-10-07)
 
 * SO: Fix tags on the sidebar in the jobs section.
 

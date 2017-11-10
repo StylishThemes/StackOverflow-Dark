@@ -545,7 +545,7 @@
     -webkit-text-fill-color: #fff !important;
   }
 
-  a:visited {
+  .post-text a:visited, .comment-text a:not(.comment-user):visited {
     color: /*[[visited-color]]*/ #4183C4 !important;
   }
   .rep-up {
