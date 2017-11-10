@@ -53,7 +53,9 @@ See the [full changelog](https://github.com/StylishThemes/Stackoverflow-Dark/wik
 
 ### Version 2.10.23 (2017-10-07)
 
-* SO: Fix tags on the sidebar in the jobs section.
+* SO:
+  * Fix tags on the sidebar in the jobs section.
+  * Make job preferences editing dialog close button dark.
 
 ### Version 2.10.22 (2017-10-07)
 
