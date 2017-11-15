@@ -74,7 +74,7 @@
   input:focus, textarea:focus, .chosen-container.chosen-container-active .chosen-choices,
   .chosen-container .active-result.highlighted {
     border-color: /*[[base-color]]*/ #008080 !important;
-    box-shadow: inset 0 1px 2px rgba(0,0,0,0.075), 0 0 2px /*[[base-color]]*/ #008080 !important;
+    box-shadow: inset 0 1px 2px rgba(0,0,0,.075), 0 0 2px /*[[base-color]]*/ #008080 !important;
     outline-color: transparent !important;
   }
   .tag-editor input:focus, .previous-button, .next-button, .btn-clear,
@@ -97,7 +97,7 @@
   .popup-badges .all-badge-progress .completed:before, .previous-button, .next-button, #footer,
   /* === herobox when not logged in === */ #herobox.alternate,
   .message-title {
-    background-color: rgba(0,0,0,0.4) !important;
+    background-color: rgba(0,0,0,.4) !important;
   }
 
   header {
@@ -106,7 +106,7 @@
 
   #custom-header, .review-bar, .diff-choices a.selected, #header #topbar, td.owner, a.owner, .question-status,
   .profile-popup, .profile-popup div, .profile-popup th, .profile-popup td, #global, .actual-edit-overlay,
-  input:not([type='submit']), textarea, #search input, .tag-editor, .f-select > select, textarea#input,
+  input:not([type="submit"]), textarea, #search input, .tag-editor, .f-select > select, textarea#input,
   .search-form .chosen-container .chosen-choices, .pac-container, select, #match-preferences-editor .close:hover {
     background-color: #111 !important;
     color: #ddd !important;
@@ -126,7 +126,7 @@
   .welovestackoverflow, #wmd-button-bar, .wmd-button-bar, .qa-block, .content-block, .user-info-rep, .sidebar,
   .popup, .full-diff, .val-success, .search-form .filter-pane nav, .s-card, .chosen-container .chosen-drop,
   .pac-item.pac-item-selected, .pac-item:hover, .-item.social:hover {
-    background: #191919 !important
+    background: #191919 !important;
   }
 
   .authcomment, .seIntro, .seFooter, .title-banner, .salary-results-wrapper {
@@ -252,7 +252,7 @@
     padding: 10px !important;
   }
   #newsletter-ad:before {
-    content: 'Love this site?';
+    content: "Love this site?";
     font-size: 18px !important;
   }
 
@@ -292,7 +292,7 @@
     background: #666 !important;
   }
   #post-text-container div span {
-    background: #c1beba !important
+    background: #c1beba !important;
   }
   .-logo img {
     background: #fff !important;
@@ -335,17 +335,17 @@
 
   .answered, .answer-votes, .answered .vote-count-post {
     background: #232323 !important;
-    color: #4b553c !important
+    color: #4b553c !important;
   }
 
   .answered-accepted, .answered-accepted strong, .rep-up.bounty-indicator-tab, .user-rep-chart-summary-bar,
   .special-rep {
     background: #4b553c !important;
-    color: #fff !important
+    color: #fff !important;
   }
 
   .answered strong {
-    color: #4b553c !important
+    color: #4b553c !important;
   }
 
   .vote-count-post [style="color:green"] {
@@ -438,19 +438,19 @@
     border-bottom-color: #c0c0c0 !important;
   }
   .left-arrow, .timeline-item:nth-child(odd):after {
-    border-right-color: rgba(119,119,119,0.4) !important;
+    border-right-color: rgba(119,119,119,.4) !important;
   }
   .previous-button:hover .left-arrow {
     border-right-color: #c0c0c0 !important;
   }
   .right-arrow, .timeline-item:nth-child(even):after {
-    border-left-color: rgba(119,119,119,0.4) !important;
+    border-left-color: rgba(119,119,119,.4) !important;
   }
   .next-button:hover .right-arrow {
     border-left-color: #c0c0c0 !important;
   }
   #input-area .input-hint:after {
-    border-left-color:#222 !important;
+    border-left-color: #222 !important;
   }
   .s-progress-bar .-fill {
     border-top: #444 1px solid !important;
@@ -523,7 +523,7 @@
 
   .user-details td, .content-page, h2, h2 a, .profile-popup a:hover, .module h4, .page-description,
   #openid_identifier, .form-item label, .subheader h2 {
-    color: #c1beba !important
+    color: #c1beba !important;
   }
   .comment, #top-menu a, .subheader a, .reputation a, .reputation-score, .relativetime.old,
   .votes-cast-stats td, .mini-counts span, #chat .system-message, .card .rep, a.badge, a.badge-tag,
@@ -604,12 +604,12 @@
 
   .nav .primarynav li a, .list-originals .stats {
     display: block !important;
-    float: left !important
+    float: left !important;
   }
 
   /* === badges === */
   a.badge[title^="bronze"], a.badge-tag[title^="bronze"], .badge3 + .badgecount {
-    color: #cc9966 !important;
+    color: #c96 !important;
   }
   a.badge[title^="silver"], a.badge-tag[title^="silver"], .badge2 + .badgecount {
     color: #c5c5c5 !important;
@@ -639,7 +639,7 @@
     background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyODMgNjAiIHdpZHRoPSIyODMiIGhlaWdodD0iNjAiPgogIDxnIGZpbGw9IiNjNmM2YzYiPgogICAgPHBhdGggZD0iTTEyOCAxNC40aDguNlYxNkgxMjh2LTEuNnptMC01LjNoOC42djJIMTI4Vjl6bTAtNWg4LjZ2MS43SDEyOFY0em0tMi42LTF2My42aC0xVjRoLS44VjNoMS44em0tMSA3djFoMS44djFoLTIuNnYtMmwxLjctMXYtLjdoLTEuN3YtLjhoMi42djJsLTEuNy43em0xLjggMi43VjE3aC0yLjZ2LTFoMS43di0uN2gtMS43di0xaDEuN3YtLjhoLTEuN3YtMWgyLjZ6bTc4LTUuM0wyMDkgMTJWOS4zYzEuMyAwIDQuNyAwIDQuNyAzLjcgMCAyLTEuMyAzLjYtMyA0IDIuNi0uNCA0LjgtMyA0LjgtNiAwLTUuNi01LjgtNS42LTYuNi01LjZWM2wtNC40IDQuNHptMzEgMEwyMzEgMTJWOS4zYy0xLjMgMC00LjcgMC00LjcgMy43IDAgMiAxLjUgMy42IDMuMyA0LTIuNy0uNC01LTMtNS02IDAtNS42IDYtNS42IDYuNy01LjZWM2w0LjMgNC40ek01Ny43IDRDNTYuMyAyLjcgNTQgMi43IDUzIDRsLTMgM2MtMS40IDEuMy0xLjQgMy40IDAgNC43IDAgMCAwIC4yLjMuM2wxLTFjMC0uMi0uMi0uMy0uMy0uNC0uNy0uNy0uNy0xLjggMC0yLjVsMy0zYy43LS41IDEuOC0uNSAyLjUgMCAuNyAxIC43IDIgMCAyLjdMNTUgOWMuMy42LjUgMS4yLjUgMS44bDItMkM1OSA3LjMgNTkgNS4yIDU3LjUgNHptLTQuNCA0LjNMNTMgOGwtMS4yIDFjMCAuMi4zLjMuNC40LjcuNy43IDEuOCAwIDIuNWwtMyAzYy0uNy41LTEuOC41LTIuNSAwLS43LTEtLjctMiAwLTIuN0w0OCAxMWMtLjItLjYtLjQtMS4yLS40LTEuOGwtMiAyYy0xLjQgMS40LTEuNCAzLjUgMCA0LjggMS4yIDEuMyAzLjMgMS4zIDQuNiAwbDMtM2MxLjItMS4yIDEuMi0zLjQgMC00Ljd6TTE0OSA0aDguNnYxLjdIMTQ5VjR6bTAgNWg4LjZ2MkgxNDlWOXptMCA1LjRoOC42djEuOEgxNDl2LTEuOHptLTUuNC05LjZjMC0xIC44LTEuOCAxLjgtMS44czEuOC44IDEuOCAxLjgtLjggMS44LTEuOCAxLjgtMS44LTEtMS44LTEuOHptMCA1LjJjMC0xIC44LTEuOCAxLjgtMS44czEuOC44IDEuOCAxLjgtLjggMS44LTEuOCAxLjgtMS44LS44LTEuOC0xLjh6bTAgNS4yYzAtMSAuOC0xLjggMS44LTEuOHMxLjguOCAxLjggMS44LS44IDEuOC0xLjggMS44LTEuOC0uOC0xLjgtMS44em0tNzgtNi43YzIgMCAzLjUgMS41IDMuNSAzLjVzLTEuMyAzLjUtMy4zIDMuNVM2MiAxNCA2MiAxMnYtLjVjMC0zLjggMy4yLTcgNy03djJjLTEuMiAwLTIuNS41LTMuNCAxLjVsLS41LjZoLjd6bTkgMGMyIDAgMy41IDEuNSAzLjUgMy41cy0xLjMgMy41LTMuMyAzLjVTNzEgMTQgNzEgMTJ2LS41YzAtMy44IDMuMy03IDctN3YyYy0xLjIgMC0yLjUuNS0zLjQgMS41bC0uNS42aC43ek0yNTAgM2MtMy44IDAtNyAzLTcgN3MzLjIgNyA3IDcgNy0zIDctNy0zLjItNy03LTd6bTEgMTEuNGgtMnYtMS44aDJ2MS44em0yLjUtNC40bC0yLjYgMS44aC0ydi0xbDIuNi0xLjd2LS43aC00LjRWNi41aDUuMmMuNSAwIDEgLjQgMSAxVjEwek0xMyA5LjZDMTMuNyA5IDE0IDggMTQgN2MwLTIuMi0xLjgtNC00LTRINXYxNGg2YzIuMiAwIDQtMS44IDQtNCAwLTEuNS0uOC0yLjctMi0zLjR6TTggNWgxLjZjMSAwIDEuNiAxIDEuNiAycy0uNyAyLTEuNiAySDhWNXptMi41IDEwSDh2LTRoMi41YzEgMCAxLjcgMSAxLjcgMnMtLjggMi0xLjcgMnptMjktMTJ2MWgtMmwtNSAxMmgydjFoLTd2LTFoMmw1LTEyaC0yVjNoN3ptNDcuMiA2LjJ2LTNjMC0uNS4yLTEgLjUtMS4yLjMtLjMuOC0uNCAxLS40VjNDODYuNiAzIDg1IDQuNCA4NSA2djIuNGMwIC40LS4zLjgtLjguOGgtLjh2MS42aC44Yy41IDAgLjguMy44LjhWMTRjMCAxLjYgMS41IDMgMy4zIDN2LTEuNmMtLjQgMC0uOC0uMi0xLS40LS40LS4zLS42LS43LS42LTF2LTMuMmMwLS40LS4zLS44LS44LS44LjIgMCAuNi0uMy42LS44eiIvPgogICAgPHBhdGggZD0iTTE2NSAxMmgxMHYyaC0xMHYtMnptLTMtM2gxNnYyaC0xNlY5em0wIDZoMTZ2MmgtMTZ2LTJ6IiBvcGFjaXR5PSIuNCIvPgogICAgPHBhdGggZD0iTTE2MiAzaDE2djJoLTE2em0zIDNoMTB2MmgtMTB6bTE4LjYgM2gyLjN2MmgtMi41em0zLjQgMGgyLjN2MkgxODd6Ii8+CiAgICA8cGF0aCBkPSJNMTg2LjYgMTJoMTB2MmgtMTB2LTJ6bS0zIDNoMTZ2MmgtMTZ2LTJ6bTAtMTJoMTZ2MmgtMTZ6bTMgM2gxMHYyaC0xMHoiIG9wYWNpdHk9Ii40Ii8+CiAgICA8cGF0aCBkPSJNMTkwLjQgOWgyLjN2MmgtMi4zem0zLjQgMGgyLjN2MmgtMnptMy40IDBoMi4zdjJoLTIuM3pNOTMuNiAxMC44djNjMCAuNS0uMiAxLS41IDEuMiAwIC4zLS41LjQtMSAuNFYxN2MyIDAgMy4zLTEuNCAzLjMtM3YtMi40YzAtLjQuMy0uOC44LS44aDFWOS4yaC0xYy0uNSAwLS44LS4zLS44LS44VjZjMC0xLjYtMS41LTMtMy4zLTN2MS42bDEgLjRjLjIuMy40LjcuNCAxdjMuMmMwIC40LjMuOC44LjgtLjMgMC0uNy4zLS43Ljh6TTExOC4yIDR2MTJoLTE1VjRoMTVtMS0xaC0xN3YxNGgxN1YzeiIvPgogICAgPHBhdGggZD0iTTExNCA2LjhjMC0xIC42LTEuNiAxLjUtMS42IDEgMCAxLjYuNyAxLjYgMS42cy0uNSAxLjYtMS40IDEuNmMtLjggMC0xLjYtLjctMS42LTEuNnptMyA4aC0xMi42bDMtOC42IDQuNCA1LjQgMi0xLjZNMjY4LjUgOS44bC0uOC0uOC0yLjcgMi41IDIuNyAyLjUuOC0uOC0xLjgtMS43bTMuNyAxLjdsLjguOCAyLjgtMi41LTIuOC0yLjUtLjguOCAxLjggMS43TTI3MS4zIDN2NC43aDQuNyIvPgogICAgPHBhdGggZD0iTTI3NSA2LjdWMTZoLTExVjRoOC4zbC0xLTFIMjY0Yy0uNiAwLTEgLjUtMSAxdjEyYzAgLjUuNCAxIDEgMWgxMWMuNSAwIDEtLjUgMS0xVjcuN2wtMS0xeiIvPgogIDwvZz4KICA8ZyBmaWxsPSIjZjkwIj4KICAgIDxwYXRoIGQ9Ik0xMjggNTQuNGg4LjZWNTZIMTI4em0wLTUuM2g4LjZ2MkgxMjh2LTJ6bTAtNWg4LjZ2MS43SDEyOFY0NHptLTIuNi0xdjMuNmgtMVY0NGgtLjh2LTFoMS44em0tMSA3djFoMS44djFoLTIuNnYtMmwxLjctMXYtLjdoLTEuN3YtLjhoMi42djJsLTEuNy43em0xLjggMi43VjU3aC0yLjZ2LTFoMS43di0uN2gtMS43di0xaDEuN3YtLjhoLTEuN3YtMWgyLjZ6bTc4LTUuM0wyMDkgNTJ2LTIuN2MxLjMgMCA0LjcgMCA0LjcgMy43IDAgMi0xLjMgMy42LTMgNCAyLjYtLjQgNC44LTMgNC44LTYgMC01LjYtNS44LTUuNi02LjYtNS42VjQzem0zMSAwTDIzMSA1MnYtMi43Yy0xLjMgMC00LjcgMC00LjcgMy43IDAgMiAxLjUgMy42IDMuMyA0LTIuNy0uNC01LTMtNS02IDAtNS42IDYtNS42IDYuNy01LjZWNDN6TTU3LjcgNDRjLTEuMy0xLjMtMy41LTEuMy00LjcgMGwtMyAzYy0xLjUgMS4zLTEuNSAzLjQgMCA0LjcgMCAwIDAgLjIuMi4zbDEtMWMwLS4yLS4yLS4zLS4zLS40LS44LS43LS44LTEuOCAwLTIuNWwzLTNjLjYtLjUgMS43LS41IDIuNCAwIC43IDEgLjcgMiAwIDIuN0w1NSA0OWMuMy42LjUgMS4yLjUgMS44bDItMmMxLjMtMS40IDEuMy0zLjUgMC00Ljh6bS00LjQgNC4zTDUzIDQ4bC0xLjIgMWMwIC4yLjMuMy40LjQuNy43LjcgMS44IDAgMi41bC0zIDNjLS43LjUtMS44LjUtMi41IDAtLjctMS0uNy0yIDAtMi43TDQ4IDUxYy0uMi0uNi0uNC0xLjItLjQtMS44bC0yIDJjLTEuNCAxLjQtMS40IDMuNSAwIDQuOCAxLjIgMS4zIDMuMyAxLjMgNC42IDBsMy0zYzEuMi0xLjIgMS4yLTMuNCAwLTQuN3pNMTQ5IDQ0aDguNnYxLjdIMTQ5em0wIDVoOC42djJIMTQ5em0wIDUuNGg4LjZ2MS44SDE0OXptLTUuNC05LjZjMC0xIC44LTEuOCAxLjgtMS44czEuOC44IDEuOCAxLjgtLjggMS44LTEuOCAxLjgtMS44LTEtMS44LTEuOHptMCA1LjJjMC0xIC44LTEuOCAxLjgtMS44czEuOC44IDEuOCAxLjgtLjggMS44LTEuOCAxLjgtMS44LS44LTEuOC0xLjh6bTAgNS4yYzAtMSAuOC0xLjggMS44LTEuOHMxLjguOCAxLjggMS44LS44IDEuOC0xLjggMS44LTEuOC0uOC0xLjgtMS44em0tNzgtNi43YzIgMCAzLjUgMS41IDMuNSAzLjVzLTEuMyAzLjUtMy4zIDMuNWMtMiAwLTMuNy0xLjUtMy43LTMuNXYtLjVjMC0zLjggMy4yLTcgNy03djJjLTEuMiAwLTIuNS41LTMuNCAxLjVsLS41LjZoLjd6bTkgMGMyIDAgMy41IDEuNSAzLjUgMy41cy0xLjMgMy41LTMuMyAzLjVjLTIgMC0zLjctMS41LTMuNy0zLjV2LS41YzAtMy44IDMuMy03IDctN3YyYy0xLjIgMC0yLjUuNS0zLjQgMS41bC0uNS42aC43ek0yNTAgNDNjLTMuOCAwLTcgMy03IDdzMy4yIDcgNyA3IDctMyA3LTctMy4yLTctNy03em0xIDExLjRoLTJ2LTEuOGgyem0yLjUtNC40bC0yLjYgMS44aC0ydi0xbDIuNi0xLjd2LS43aC00LjR2LTEuN2g1LjJjLjUgMCAxIC40IDEgMVY1MHpNMTMgNDkuNmMuNi0uNyAxLTEuNiAxLTIuNiAwLTIuMi0xLjgtNC00LTRINXYxNGg2YzIuMiAwIDQtMS44IDQtNCAwLTEuNS0uOC0yLjctMi0zLjR6TTggNDVoMS42YzEgMCAxLjYgMSAxLjYgMnMtLjcgMi0xLjYgMkg4em0yLjUgMTBIOHYtNGgyLjVjMSAwIDEuNyAxIDEuNyAycy0uOCAyLTEuNyAyem0yOS0xMnYxaC0ybC01IDEyaDJ2MWgtN3YtMWgybDUtMTJoLTJ2LTF6bTQ3LjIgNi4ydi0zYzAtLjUuMi0xIC41LTEuMmwxLS40VjQzYy0xLjcgMC0zLjIgMS40LTMuMiAzdjIuNGMwIC40LS4zLjgtLjguOGgtLjh2MS42aC44Yy41IDAgLjguMy44LjhWNTRjMCAxLjYgMS41IDMgMy4zIDN2LTEuNmMtLjQgMC0uOC0uMi0xLS40LS40LS4zLS42LS43LS42LTF2LTMuMmMwLS40LS4zLS44LS44LS44LjIgMCAuNi0uMy42LS44eiIvPgogICAgPHBhdGggZD0iTTE2NSA1MmgxMHYyaC0xMHptLTMtM2gxNnYyaC0xNnptMCA2aDE2djJoLTE2ek0xODYuNiA1MmgxMHYyaC0xMHptLTMgM2gxNnYyaC0xNnptMC0xMmgxNnYyaC0xNnptMyAzaDEwdjJoLTEweiIgb3BhY2l0eT0iLjQiLz4KICAgIDxwYXRoIGQ9Ik05My42IDUwLjh2M2MwIC41LS4yIDEtLjUgMS4yIDAgLjMtLjUuNC0xIC40VjU3YzIgMCAzLjMtMS40IDMuMy0zdi0yLjRjMC0uNC4zLS44LjgtLjhoMXYtMS42aC0xYy0uNSAwLS44LS4zLS44LS44VjQ2YzAtMS42LTEuNi0zLTMuMy0zdjEuNmwxIC40Yy4yLjMuNC43LjQgMXYzLjJjMCAuNC4zLjguOC44LS4zIDAtLjcuMy0uNy44em0yNC42LTYuOHYxMmgtMTVWNDRoMTVtMS0xaC0xN3YxNGgxN3oiLz4KICAgIDxwYXRoIGQ9Ik0xMTQgNDYuOGMwLTEgLjYtMS42IDEuNS0xLjYgMSAwIDEuNi43IDEuNiAxLjYgMCAxLS41IDEuNi0xLjQgMS42LS44IDAtMS42LS43LTEuNi0xLjZ6bTMgOGgtMTIuNmwzLTguNiA0LjQgNS40IDItMS42TTI2OC41IDQ5LjhsLS44LS44LTIuNyAyLjUgMi43IDIuNS44LS44LTEuOC0xLjdtMy43IDEuN2wuOC44IDIuOC0yLjUtMi44LTIuNS0uOC44IDEuOCAxLjdNMjcxLjMgNDN2NC43aDQuNyIvPgogICAgPHBhdGggZD0iTTI3NSA0Ni43VjU2aC0xMVY0NGg4LjNsLTEtMUgyNjRjLS42IDAtMSAuNS0xIDF2MTJjMCAuNS40IDEgMSAxaDExYy41IDAgMS0uNSAxLTF2LTguM3pNMTgzLjYgNDguOGgyLjN2MmgtMi41em0zLjQgMGgyLjN2MkgxODd6TTE5MC40IDQ4LjhoMi4zdjJoLTIuNHptMy40IDBoMi4zdjJIMTk0ek0xOTcuMiA0OC44aDIuM3YySDE5N3pNMTYyIDQzaDE2djJoLTE2em0zIDNoMTB2MmgtMTB6Ii8+CiAgPC9nPgo8L3N2Zz4=) !important;
   }
 
-  #hlogo img, .everyonelovesstackoverflow, button[disabled] { opacity: 0.3 !important; }
+  #hlogo img, .everyonelovesstackoverflow, button[disabled] { opacity: .3 !important; }
   .everyonelovesstackoverflow:empty { display: none !important; }
 
   #hlogo a, #footer-logo {
@@ -1016,7 +1016,7 @@
     color: #ddd !important;
   }
   .topic-request-vote-up .vote-arrow {
-    border-color: transparent transparent #fff transparent !important;
+    border-color: transparent transparent #fff !important;
   }
   /* score box hidden behind up vote arrow, why? */
   .collapsed-example-score {
@@ -1033,7 +1033,7 @@
     padding-bottom: 520px !important;
   }
   /* blue */
-  .hero-box .blue ,input[type="submit"].btn-secondary, input[type="button"].btn-secondary,
+  .hero-box .blue, input[type="submit"].btn-secondary, input[type="button"].btn-secondary,
   button.btn-secondary, .btn-secondary, .privacy-switch-btn, .topic-request-vote-up, .message-info {
     background: #182030 !important;
   }
@@ -1109,7 +1109,7 @@
   }
   .answered .mini-counts span {
     font-weight: bold !important;
-    color: #4b553c !important
+    color: #4b553c !important;
   }
 }
 @-moz-document domain("ja.stackoverflow.com") {
@@ -1152,7 +1152,7 @@
   }
   #footer {
     background-color: #182030 !important;
-    background-image: url('https://meta.stackexchange.com/content/Sites/stackexchangemeta/img/icon-cloud-footer.png?v=ac80a4525ace') !important;
+    background-image: url("https://meta.stackexchange.com/content/Sites/stackexchangemeta/img/icon-cloud-footer.png?v=ac80a4525ace") !important;
   }
 }
 @-moz-document domain("photo.stackexchange.com") {
@@ -1238,7 +1238,7 @@
   }
   .container .answered, .container .answered-accepted {
     border: 2px transparent !important;
-    padding: 5px 5px 6px 5px !important;
+    padding: 5px 5px 6px !important;
     height: 38px !important;
   }
 }
@@ -1321,7 +1321,7 @@
     position: relative !important;
   }
   .container:after {
-    content: ' ';
+    content: " ";
     background: url(https://cdn.sstatic.net/Sites/travel/img/bg-map.png?v=78dabedcf17b) no-repeat center -34px !important;
     position: absolute !important;
     top: 0 !important;
@@ -1329,14 +1329,14 @@
     width: 100% !important;
     height: 100% !important;
     z-index: 0 !important;
-    opacity: 0.1 !important;
+    opacity: .1 !important;
     pointer-events: none !important;
   }
   .nav li, .nav a, .narrow .status, #content {
     background: transparent !important;
   }
   .nav a:hover, .nav li.youarehere a {
-    background: rgba(0, 0, 0, 0.3) !important;
+    background: rgba(0, 0, 0, .3) !important;
   }
   .answered-accepted .mini-counts {
     background-color: /*[[base-color]]*/ #6D8048  !important;
