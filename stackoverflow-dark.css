@@ -839,6 +839,9 @@
   table td hr {
     border-style: solid !important;
   }
+  footer .iconLogoSE path:first-child {
+    fill: #ededed !important;
+  }
 }
 @-moz-document regexp("^https?://((?!(academia|dba|electronics|meta|tex)).*\\.)?stackexchange.com.*") {
   /* target sites to *NOT* hide the header background */
