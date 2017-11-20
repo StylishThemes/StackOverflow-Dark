@@ -78,7 +78,8 @@
     outline-color: transparent !important;
   }
   .tag-editor input:focus, .previous-button, .next-button, .btn-clear,
-  .chosen-container.chosen-container-active .chosen-choices input {
+  .chosen-container.chosen-container-active .chosen-choices input,
+  .gsc-webResult.gsc-result, .gsc-results .gsc-imageResult {
     border: 0 !important;
     box-shadow: none !important;
   }
@@ -106,10 +107,15 @@
 
   #custom-header, .review-bar, .diff-choices a.selected, #header #topbar, td.owner, a.owner, .question-status,
   .profile-popup, .profile-popup div, .profile-popup th, .profile-popup td, #global, .actual-edit-overlay,
-  input:not([type="submit"]), textarea, #search input, .tag-editor, .f-select > select, textarea#input,
-  .search-form .chosen-container .chosen-choices, .pac-container, select, #match-preferences-editor .close:hover {
+  input:not([type='submit']), textarea, #search input, .tag-editor, .f-select > select, textarea#input,
+  .search-form .chosen-container .chosen-choices, .pac-container, select, #match-preferences-editor .close:hover,
+  .gsc-input-box, .gsc-option-menu {
     background-color: #111 !important;
     color: #ddd !important;
+  }
+
+  .gsc-selected-option-container {
+    background: #111 !important;
   }
 
   .onebox, .profile-ad, .message.message-config,
@@ -232,7 +238,7 @@
   }
 
   .answer, #system-message, .commentlist, .revision td, #hero-content, .mdhelp-tabs .selected, .tabs .selected,
-  .rep-card .rep-col, .sort select, .-job._highlighted, .MathJax_MenuDisabled {
+  .rep-card .rep-col, .sort select, .-job._highlighted, .MathJax_MenuDisabled, .gsc-option-menu-item-highlighted {
     background: #232323 !important;
     color: #999 !important;
   }
@@ -389,7 +395,8 @@
   .match-preferences .seniority-selector, .field-with-bg, #tags .message.regular,
   #profile-side #side-menu a, .sidebar-profile .-header, .sidebar-profile .-footer,
   #popup-next-badge .-header, .popup-close .-link, .job-cover-image.-no-image, #job-detail,
-  .s-footer .-container, .p-top-tags .badge-tag {
+  .s-footer .-container, .p-top-tags .badge-tag, .gsc-webResult.gsc-result, .gsc-imageResult,
+  .gsc-cursor-page, .gsc-cursor-current-page {
     background-color: transparent !important;
   }
 
