@@ -47,12 +47,16 @@
 
 See the [full changelog](https://github.com/StylishThemes/Stackoverflow-Dark/wiki).
 
-### Version 2.10.24 (2017-11-10)
+### Version 2.10.24 (2017-11-20)
+
+* Search Result: Darken components. Fixes [issue #97](https://github.com/StylishThemes/StackOverflow-Dark/issues/97).
+* SE:
+  * Brighten footer logo. Fixes [issue #96](https://github.com/StylishThemes/StackOverflow-Dark/issues/96).
+  * Skip styling of site tiles. Fixes [issue #95](https://github.com/StylishThemes/StackOverflow-Dark/issues/95).
+
+### Version 2.10.23 (2017-11-15)
 
 * Global: Make visited link styling less agressive. Now it only applies to the same kinds of links as it does without the style.
-
-### Version 2.10.23 (2017-10-07)
-
 * SO:
   * Fix tags on the sidebar in the jobs section.
   * Make job preferences editing dialog close button dark.
