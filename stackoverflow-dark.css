@@ -528,7 +528,7 @@
     color: #ddd !important;
   }
 
-  .user-details td, .content-page, h2, h2 a, .profile-popup a:hover, .module h4, .page-description,
+  .user-details td, .content-page, h2:not([style]), h2 a, .profile-popup a:hover, .module h4, .page-description,
   #openid_identifier, .form-item label, .subheader h2 {
     color: #c1beba !important;
   }
@@ -841,6 +841,9 @@
   }
   footer .iconLogoSE path:first-child {
     fill: #ededed !important;
+  }
+  div[class^="gv-"], table.gv-stats tr, table.gv-stats td {
+    color: initial !important;
   }
 }
 @-moz-document regexp("^https?://((?!(academia|dba|electronics|meta|tex)).*\\.)?stackexchange.com.*") {
