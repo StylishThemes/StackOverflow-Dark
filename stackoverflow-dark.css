@@ -936,7 +936,7 @@
   #hlogo a {
     background-image: url(https://StylishThemes.github.io/StackOverflow-Dark/images/stackoverflow-logo.svg) !important;
   }
-  .so-header .-logo:not(._glyph) .-img {
+  .-logo .-img:not(._glyph) {
     background-image: url(https://StylishThemes.github.io/StackOverflow-Dark/images/stackoverflow-logo.svg) !important;
     background-size: cover !important;
     background-position: 0 0  !important;
@@ -1080,7 +1080,7 @@
 }
 @-moz-document domain("es.stackoverflow.com") {
   /* es.stackoverflow.com (Spanish) */
-  .so-header .-logo:not(._glyph) .-img {
+  .-logo .-img:not(._glyph) {
     background-image: url(https://StylishThemes.github.io/StackOverflow-Dark/images/es-stackoverflow-logo.svg) !important;
     background-size: cover !important;
     height: 50px !important;
@@ -1088,7 +1088,7 @@
 }
 @-moz-document domain("es.meta.stackoverflow.com") {
   /* es.meta.stackoverflow.com (Spanish) */
-  .so-header .-logo:not(._glyph) .-img {
+  .-logo .-img:not(._glyph) {
     background-image: url(https://StylishThemes.github.io/StackOverflow-Dark/images/es-meta-stackoverflow-logo.svg) !important;
     background-size: cover !important;
     height: 50px !important;
@@ -1127,7 +1127,7 @@
 }
 @-moz-document domain("ja.stackoverflow.com") {
   /* ja.stackoverflow.com (Japanese) */
-  .so-header .-logo:not(._glyph) .-img {
+  .-logo .-img:not(._glyph) {
     background-image: url(https://StylishThemes.github.io/StackOverflow-Dark/images/ja-stackoverflow-logo.svg) !important;
     background-size: contain !important;
     height: 60px !important;
@@ -1135,7 +1135,7 @@
 }
 @-moz-document domain("ja.meta.stackoverflow.com") {
   /* ja.meta.stackoverflow.com (Japanese) */
-  .so-header .-logo:not(._glyph) .-img {
+  .-logo .-img:not(._glyph) {
     background-image: url(https://StylishThemes.github.io/StackOverflow-Dark/images/ja-meta-stackoverflow-logo.png) !important;
     background-size: contain !important;
     height: 60px !important;
@@ -1190,7 +1190,7 @@
 }
 @-moz-document domain("pt.stackoverflow.com") {
   /* pt.stackoverflow.com (Portuguese) */
-  .so-header .-logo:not(._glyph) .-img {
+  .-logo .-img:not(._glyph) {
     background-image: url(https://StylishThemes.github.io/StackOverflow-Dark/images/pt-stackoverflow-logo.svg) !important;
     background-size: cover !important;
     height: 60px !important;
@@ -1198,7 +1198,7 @@
 }
 @-moz-document domain("pt.meta.stackoverflow.com") {
   /* pt.meta.stackoverflow.com (Portuguese) */
-  .so-header .-logo:not(._glyph) .-img {
+  .-logo .-img:not(._glyph) {
     background-image: url(https://StylishThemes.github.io/StackOverflow-Dark/images/pt-meta-stackoverflow-logo.svg) !important;
     background-size: contain !important;
     height: 60px !important;
@@ -1225,13 +1225,13 @@
 }
 @-moz-document domain("ru.stackoverflow.com") {
   /* ru.stackoverflow.com (Russian) */
-  .so-header .-logo:not(._glyph) .-img {
+  .-logo .-img:not(._glyph) {
     background-image: url(https://StylishThemes.github.io/StackOverflow-Dark/images/ru-stackoverflow-logo.svg) !important;
   }
 }
 @-moz-document domain("ru.meta.stackoverflow.com") {
   /* meta.ru.stackoverflow.com (Russian) */
-  .so-header .-logo:not(._glyph) .-img {
+  .-logo .-img:not(._glyph) {
     background-image: url(https://StylishThemes.github.io/StackOverflow-Dark/images/ru-meta-stackoverflow-logo.svg) !important;
     background-size: contain !important;
     height: 60px !important;
