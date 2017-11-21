@@ -47,6 +47,11 @@
 
 See the [full changelog](https://github.com/StylishThemes/Stackoverflow-Dark/wiki).
 
+### Version 2.10.25 (2017-11-21)
+
+* SO sites: Fix logo selector. See [issue #94](https://github.com/StylishThemes/StackOverflow-Dark/issues/94).
+* Meta: Fix config & lint issues.
+
 ### Version 2.10.24 (2017-11-20)
 
 * Search Result: Darken components. Fixes [issue #97](https://github.com/StylishThemes/StackOverflow-Dark/issues/97).
@@ -60,15 +65,3 @@ See the [full changelog](https://github.com/StylishThemes/Stackoverflow-Dark/wik
 * SO:
   * Fix tags on the sidebar in the jobs section.
   * Make job preferences editing dialog close button dark.
-
-### Version 2.10.22 (2017-10-07)
-
-* SO: Fix intellitab borders.
-
-### Version 2.10.21 (2017-10-06)
-
-* Global: Fix "per page" text on questions page having a border.
-
-### Version 2.10.20 (2017-09-27)
-
-* SO: Added code to fixed asked date and viewed #. See [PR #88](https://github.com/StylishThemes/StackOverflow-Dark/pull/88); thanks [@jmona789](https://github.com/jmona789)!
