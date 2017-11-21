@@ -3,6 +3,14 @@ build.json
 *.build.css
 *.build.min.css
 
+# lockfiles
+package-lock.json
+yarn.lock
+
+# debug files from npm/yarn
+npm-debug.log
+yarn-error.log
+
 #################
 ## Eclipse
 #################

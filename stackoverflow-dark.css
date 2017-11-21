@@ -107,7 +107,7 @@
 
   #custom-header, .review-bar, .diff-choices a.selected, #header #topbar, td.owner, a.owner, .question-status,
   .profile-popup, .profile-popup div, .profile-popup th, .profile-popup td, #global, .actual-edit-overlay,
-  input:not([type='submit']), textarea, #search input, .tag-editor, .f-select > select, textarea#input,
+  input:not([type="submit"]), textarea, #search input, .tag-editor, .f-select > select, textarea#input,
   .search-form .chosen-container .chosen-choices, .pac-container, select, #match-preferences-editor .close:hover,
   .gsc-input-box, .gsc-option-menu {
     background-color: #111 !important;
