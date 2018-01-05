@@ -508,7 +508,7 @@
   }
 
   /* === Text Color === */
-  div, input, .accepted-answer .post-text, .accepted-answer .user-action-time, #question-header a,
+  input, .accepted-answer .post-text, .accepted-answer .user-action-time, #question-header a,
   .post-text, .user-info, .topbar-dialog .header h3, .topbar-dialog .header h3 a, .topbar-dialog span,
   .search-result .answered .vote-count-post strong, .votes-cast-stats th, .subheader h1, .vote.accepted,
   .message.message-config h1, .message.message-config h2, .message.message-config h3, .message.message-config h4,
@@ -518,6 +518,10 @@
   .salary-calc-inputs span, .salary-survey-dialog .header h3, .title-banner h1, .salary-results-container h1,
   .topbar-dialog h4, .label-key > b {
     color: #ddd !important;
+  }
+  /* no !important for general div text to avoid conflict with other browser extension like Vimium/SurfingKeys */
+  div {
+    color: #ddd;
   }
 
   /* placeholder */
