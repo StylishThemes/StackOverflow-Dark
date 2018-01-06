@@ -1,0 +1,32 @@
+/* ==UserStyle==
+@name        Stackoverflow Dark
+@namespace   StylishThemes
+@version     {{version}}
+@homepageURL https://github.com/StylishThemes/Stackoverflow-Dark
+@updateURL   https://raw.githubusercontent.com/StylishThemes/Stackoverflow-Dark/master/stackoverflow-dark.user.css
+@license     CC-BY-SA-4.0
+@author      StylishThemes
+@advanced color base-color "Base color scheme" {{color}}
+@advanced color visited-color "Visited link color" {{visited}}
+@advanced dropdown syntax-theme "Syntax theme" {
+  {{Themes}}
+}
+@advanced text bg-choice "Background image [wrap in url()]" "{{image}}"
+@advanced dropdown bg-options "Background image type" {
+  Tiled "Tiled" <<<EOT
+  background-repeat: repeat !important;
+  background-size: auto !important;
+  background-position: left top !important; EOT;
+  Fit window size "Fit window size" <<<EOT
+  background-repeat: no-repeat !important;
+  background-size: cover !important;
+  background-position: center top !important; EOT;
+}
+@advanced dropdown bg-attachment "Background image attachment" {
+  Scroll "Scroll" <<<EOT
+  scroll EOT;
+  Fixed "Fixed" <<<EOT
+  fixed EOT;
+}
+@advanced text font-choice "Code Font" "{{font}}"
+==/UserStyle== */

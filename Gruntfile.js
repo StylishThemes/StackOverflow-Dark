@@ -2,28 +2,21 @@ module.exports = function(grunt) {
   "use strict";
 
   let config, file;
+  const defaults = require("./defaults.json");
+  const pkg = require("./package.json");
 
   try {
-    config = grunt.file.readJSON("build.json");
+    config = Object.assign({}, defaults, grunt.file.readJSON("build.json"));
   } catch (err) {
     console.info("build.json not found - using defaults");
-    config = {
-      "theme"    : "desert",
-      "color"    : "#4183C4",
-      "visited"  : "#4183C4",
-      "font"     : "Menlo",
-      "image"    : 'url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEYAAABGCAAAAABURb1YAAAFnklEQVR4AWWXCY4cwXbE6h4JMhCvMPc/ov+3Ox9QsLCGpKlFHILd+UQ559AGDkBSFXWmomonqkL/XuUcIPUcONjHCJyE36KaqNiaRnVCG9TGpgIU9hIfohCBVGj24ammo04lU3Fy0NZDAyZi5AElHjgEGlRbG1WjraIt7TmADQkAaoEHsOXAAaeqat9RVTqjosyEH5W+DQCQt8BzIJMfXJI3e5tGRefSlRn3NrO3scnvNl26FN5RITGNfjm3GM/+FhQgnlQeImC+dEm8rzHVTNGL9EADVsTAIfGJBziRy7RlmcZU1IYpHIj+4JrWym8/XSwzompmFNVOFdTOAAfs61KZ6eXcp57fykQUOxNBmTesz2HpCnCg3UV/bA7VRpWGNqKtrYLTs0ilCjgxiZxjeLC5dDPBFn4Pn2ja6BRUL10DTgET4Focq8rn8casxV4E5tIlZvytqtfivCOKZrqc38G7egnkXecyPZdzubc57VtUnbfL+a0u3b1N3d9Mci7cKocHoh3xihLQ6fXUlgTOOfVkXSUFINoWHhqxE23RTmCqtoEJaITkIrUCkU9fnqpqm+40VSXS3CLaSzfGBb4rPuOSfN0ylLve6/jpcrbL2dTlnOdv5AamKjLvLN1XruMNS/cul/hx8twKpKYRaE2DOp8+c+lW7uVXVQ7Vx0x1G3HXjNocsHCac7NbWc6egwJVHu2kRTVNC2pqv2U4XNsv5/yWJlV9+NJ1C7xluInlcr7rK+Kg+qy7onQqgnbi7UHcS3qXjdw3bO5tumycYlVssMI5EXXpRnatPK362KodtVU60cm+eQT10sVLFwJYlVaf7UGSoi5dQF3DvnTX3UvXTPO8quKH7jsXhm/PxfKWZXqBM5sS33kmKtC31Q05fI095i5IPpyzRXqSy1Sr17p1F7NE8vMtnNbLpVVtk8c0OrfF0sKxHnIpYgHW4puMomTz8mgmrSjpvrxhX97l7LqLpl7bW9BH9/MNzF8XwRqL8/m7c30eFYV5VX3QTquK06XbLt16F4ks+8Z9m6gPtpcuk3OvibCekng4lzMHi9MoqZmKj9tdbQCbc7bcEA+oEJduRNNL1waf1tuI9MDBUK8t3k9uFz3rrqadO9Ln9TL/ezlwDvky3TW7ZmXfpc77TN0yhOXnP939LvVDV9s+tgLTm0TqYd1lea3PRFuVjLa562HdPbCfascGrvO3DMeIATVqVRO8vfHrbupdfo1dzlXUdkVLZsS1mLPG3rWcl+4B1l1537h0VXzU1tyLG7cCu+LSrSqo06hocy3WCcil65qHDbuEYzQN2HpT3jFt9LEFvHTP1nxbXOEkbhkKmd+6BTfVZ/I143z/Fyz6Za92o0I7I6gzfeYAHPwy/Rb43L9TLtMt8CtwW1xvQvbR1g9n7qJRNN1kdxcdH7cM58Szxq679MdLOhE72t6VNEpHHkzwRyjBcGth+dE99pIkVbWaEWmvnQ8Yl7Mp59zpRWXdNo6odrO754Zzvxf/010nP7onb1TR+bgbVPB9PcADJvH/043Kvk0UzLRxQ6UiaeTAcyxYl2lyrrvZv8v2wE7U1uVcST0821jJeIDKWuyxiqnuko7q3+zJYXJ46nV3D67EyL+lQ9F2qkr+3kUafQpwYE8T329p6y7OX1TF97fQv/c+l87zj7Hsgpig4qRLd9fMPs74rLGyCzRbhmVqpy7nqvPmTD1gvKe7b2U8u1QzmtuDuEtbgT3c8QBJveo6cueFkUwv59nVmfFw1jl4/unuOT9qERV76ers8n23z/c8/Xy7a4lwwLplmGusbRp33Up13+ZDN3KPxNVMhY62vUQyRTse6+cKHtZYjIfDh260Cjbb3Vy6R8H8SMBzqSwrsB1UTacoknlnOb8V4JD9Njfpwz/fHjpBUeevcAtcl65sqXPX9D87RUTLc/dfOgAAAABJRU5ErkJggg==")',
-      "tiled"    : true,
-      "attach"   : "scroll",
-      "webkit"   : false
-    };
+    config = defaults;
   }
 
   file = (config.theme || "").toLowerCase().replace(/\s+/g, "-");
 
   function getVersion(level) {
     const semver = require("semver");
-    const version = require("./package.json").version;
+    const version = pkg.version;
     return semver.inc(version, level);
   }
 
@@ -109,7 +102,7 @@ module.exports = function(grunt) {
   }];
 
   grunt.initConfig({
-    pkg: grunt.file.readJSON("package.json"),
+    pkg: pkg,
     config: config,
 
     "string-replace": {
@@ -167,25 +160,11 @@ module.exports = function(grunt) {
           }]
         }
       },
-      patch: {
+      newVersion: {
         files: {"stackoverflow-dark.css": "stackoverflow-dark.css"},
         options: {replacements: [{
           pattern: /v[0-9.]+ \(.+\)/,
-          replacement: "v" + getVersion("patch") + " (" + getDate() + ")"
-        }]}
-      },
-      minor: {
-        files: {"stackoverflow-dark.css": "stackoverflow-dark.css"},
-        options: {replacements: [{
-          pattern: /v[0-9.]+ \(.+\)/,
-          replacement: "v" + getVersion("minor") + " (" + getDate() + ")"
-        }]}
-      },
-      major: {
-        files: {"stackoverflow-dark.css": "stackoverflow-dark.css"},
-        options: {replacements: [{
-          pattern: /v[0-9.]+ \(.+\)/,
-          replacement: "v" + getVersion("major") + " (" + getDate() + ")"
+          replacement: "v<%= config.version %> (" + getDate() + ")"
         }]}
       }
     },
@@ -217,13 +196,15 @@ module.exports = function(grunt) {
       }
     },
     exec: {
-      stylelint: "npm -s run stylelint",
-      eslint: "npm -s run eslint",
+      add: "git add stackoverflow-dark.css stackoverflow-dark.user.css",
       authors: "bash tools/authors.sh",
-      add: "git add stackoverflow-dark.css",
-      patch: "npm version -f patch",
-      minor: "npm version -f minor",
+      eslint: "npm -s run eslint",
       major: "npm version -f major",
+      minor: "npm version -f minor",
+      patch: "npm version -f patch",
+      stylelint: "npm -s run stylelint",
+      update: "npm -s run update",
+      usercss: "node tools/build-usercss",
     },
     watch: {
       files: ["<%= config.sourceFile %>"],
@@ -277,6 +258,13 @@ module.exports = function(grunt) {
     ]);
   });
 
+  grunt.registerTask("usercss", "building usercss file", () => {
+    grunt.task.run([
+      "user",
+      "exec:usercss"
+    ]);
+  });
+
   // build custom minified stackoverflow-Dark style
   grunt.registerTask("themes", "Rebuild minified theme files", function() {
     grunt.task.run([
@@ -295,30 +283,36 @@ module.exports = function(grunt) {
 
   // version bump tasks
   grunt.registerTask("patch", "Bump patch version", () => {
+    config.version = getVersion("patch");
     grunt.task.run([
       "lint",
-      "string-replace:patch",
+      "string-replace:newVersion",
+      "user",
+      "exec:usercss",
       "exec:add",
-      "exec:patch",
-      "user"
+      "exec:patch"
     ]);
   });
   grunt.registerTask("minor", "Bump minor version", () => {
+    config.version = getVersion("minor");
     grunt.task.run([
       "lint",
-      "string-replace:minor",
+      "string-replace:newVersion",
+      "user",
+      "exec:usercss",
       "exec:add",
-      "exec:minor",
-      "user"
+      "exec:minor"
     ]);
   });
   grunt.registerTask("major", "Bump major version", () => {
+    config.version = getVersion("major");
     grunt.task.run([
       "lint",
-      "string-replace:major",
+      "string-replace:newVersion",
+      "user",
+      "exec:usercss",
       "exec:add",
-      "exec:major",
-      "user"
+      "exec:major"
     ]);
   });
 };
