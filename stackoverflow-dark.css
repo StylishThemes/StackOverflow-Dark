@@ -605,12 +605,10 @@
   }
   .stats {
     margin-top: 5px !important;
+    margin-bottom: 4px !important;
   }
   #hsearch, .statscontainer {
     margin-right: 5px !important;
-  }
-  .stats {
-    margin-bottom: 4px !important;
   }
 
   .nav .primarynav li a, .list-originals .stats {
@@ -896,12 +894,8 @@
 }
 @-moz-document regexp("^https?://((photo|security|wordpress)\\.)?stackexchange\\.com.*") {
   /* nav manu text coloring only */
-  .nav li.youarehere a, .nav li a:hover,
   .nav li.youarehere a, .nav li a:hover {
     background-color: transparent !important;
-    color: #ddd !important;
-  }
-  .nav li.youarehere a, .nav li a:hover {
     color: /*[[base-color]]*/ #008080 !important;
   }
 }
@@ -1058,7 +1052,7 @@
     border-bottom-color: #182030 !important;
   }
   /* brown */
-  .handling-improvement-request, .shared-draft, .topic-request, .shared-draft, .pending-review,
+  .handling-improvement-request, .shared-draft, .topic-request, .pending-review,
   .deleting-topic, .has-changed, .missing-example, .pending-proposed-change, .undeleting-topic,
   .undeleting-example, .edit-notifications, .hero-box .btn, .moved, .section-help {
     background: rgba(51,34,17,.4) !important;
