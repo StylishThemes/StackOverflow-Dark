@@ -42,26 +42,3 @@
 | Tranquil Heart          | Vibrant Ink              | VSCode Monaco         |                         |
 
 \* Reference the [Themes wiki](https://github.com/StylishThemes/StackOverflow-Dark/wiki/Themes) for more details.
-
-## Changelog
-
-See the [full changelog](https://github.com/StylishThemes/Stackoverflow-Dark/wiki).
-
-### Version 2.10.25 (2017-11-21)
-
-* SO sites: Fix logo selector. See [issue #94](https://github.com/StylishThemes/StackOverflow-Dark/issues/94).
-* Meta: Fix config & lint issues.
-
-### Version 2.10.24 (2017-11-20)
-
-* Search Result: Darken components. Fixes [issue #97](https://github.com/StylishThemes/StackOverflow-Dark/issues/97).
-* SE:
-  * Brighten footer logo. Fixes [issue #96](https://github.com/StylishThemes/StackOverflow-Dark/issues/96).
-  * Skip styling of site tiles. Fixes [issue #95](https://github.com/StylishThemes/StackOverflow-Dark/issues/95).
-
-### Version 2.10.23 (2017-11-15)
-
-* Global: Make visited link styling less agressive. Now it only applies to the same kinds of links as it does without the style.
-* SO:
-  * Fix tags on the sidebar in the jobs section.
-  * Make job preferences editing dialog close button dark.
