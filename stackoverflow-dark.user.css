@@ -1,3 +1,80 @@
+/* ==UserStyle==
+@name        Stackoverflow Dark
+@namespace   StylishThemes
+@version     2.11.0
+@homepageURL https://github.com/StylishThemes/Stackoverflow-Dark
+@updateURL   https://raw.githubusercontent.com/StylishThemes/Stackoverflow-Dark/master/stackoverflow-dark.user.css
+@license     CC-BY-SA-4.0
+@author      StylishThemes
+@advanced color base-color "Base color scheme" #4183C4
+@advanced color visited-color "Visited link color" #4183C4
+@advanced dropdown syntax-theme "Syntax theme" {
+  Atelier-cave-dark "Atelier-cave-dark" <<<EOT
+  /*! Atelier-cave-dark *\/.prettyprint{background:#19171c!important;font-family:Menlo,"Bitstream Vera Sans Mono","DejaVu Sans Mono",Monaco,Consolas,monospace!important;border:0!important}.pln{color:#efecf4!important}ol.linenums{margin-top:0!important;margin-bottom:0!important;color:#655f6d!important}li.L0,li.L1,li.L2,li.L3,li.L4,li.L5,li.L6,li.L7,li.L8,li.L9{padding-left:1em!important;background-color:#19171c!important;list-style-type:decimal!important}@media screen{.str{color:#2a9292!important}.kwd{color:#955ae7!important}.com{color:#655f6d!important}.typ{color:#576ddb!important}.lit{color:#aa573c!important}.pun{color:#efecf4!important}.opn{color:#efecf4!important}.clo{color:#efecf4!important}.tag{color:#be4678!important}.atn{color:#aa573c!important}.atv{color:#398bc6!important}.dec{color:#aa573c!important}.var{color:#be4678!important}.fun{color:#576ddb!important}} EOT;
+  Atelier-dune-dark "Atelier-dune-dark" <<<EOT
+  /*! Atelier-dune-dark *\/.prettyprint{background:#20201d!important;font-family:Menlo,"Bitstream Vera Sans Mono","DejaVu Sans Mono",Monaco,Consolas,monospace!important;border:0!important}.pln{color:#fefbec!important}ol.linenums{margin-top:0!important;margin-bottom:0!important;color:#7d7a68!important}li.L0,li.L1,li.L2,li.L3,li.L4,li.L5,li.L6,li.L7,li.L8,li.L9{padding-left:1em!important;background-color:#20201d!important;list-style-type:decimal!important}@media screen{.str{color:#60ac39!important}.kwd{color:#b854d4!important}.com{color:#7d7a68!important}.typ{color:#6684e1!important}.lit{color:#b65611!important}.pun{color:#fefbec!important}.opn{color:#fefbec!important}.clo{color:#fefbec!important}.tag{color:#d73737!important}.atn{color:#b65611!important}.atv{color:#1fad83!important}.dec{color:#b65611!important}.var{color:#d73737!important}.fun{color:#6684e1!important}} EOT;
+  Atelier-estuary-dark "Atelier-estuary-dark" <<<EOT
+  /*! Atelier-estuary-dark *\/.prettyprint{background:#22221b!important;font-family:Menlo,"Bitstream Vera Sans Mono","DejaVu Sans Mono",Monaco,Consolas,monospace!important;border:0!important}.pln{color:#f4f3ec!important}ol.linenums{margin-top:0!important;margin-bottom:0!important;color:#6c6b5a!important}li.L0,li.L1,li.L2,li.L3,li.L4,li.L5,li.L6,li.L7,li.L8,li.L9{padding-left:1em!important;background-color:#22221b!important;list-style-type:decimal!important}@media screen{.str{color:#7d9726!important}.kwd{color:#5f9182!important}.com{color:#6c6b5a!important}.typ{color:#36a166!important}.lit{color:#ae7313!important}.pun{color:#f4f3ec!important}.opn{color:#f4f3ec!important}.clo{color:#f4f3ec!important}.tag{color:#ba6236!important}.atn{color:#ae7313!important}.atv{color:#5b9d48!important}.dec{color:#ae7313!important}.var{color:#ba6236!important}.fun{color:#36a166!important}} EOT;
+  Atelier-forest-dark "Atelier-forest-dark" <<<EOT
+  /*! Atelier-forest-dark *\/.prettyprint{background:#1b1918!important;font-family:Menlo,"Bitstream Vera Sans Mono","DejaVu Sans Mono",Monaco,Consolas,monospace!important;border:0!important}.pln{color:#f1efee!important}ol.linenums{margin-top:0!important;margin-bottom:0!important;color:#766e6b!important}li.L0,li.L1,li.L2,li.L3,li.L4,li.L5,li.L6,li.L7,li.L8,li.L9{padding-left:1em!important;background-color:#1b1918!important;list-style-type:decimal!important}@media screen{.str{color:#7b9726!important}.kwd{color:#6666ea!important}.com{color:#766e6b!important}.typ{color:#407ee7!important}.lit{color:#df5320!important}.pun{color:#f1efee!important}.opn{color:#f1efee!important}.clo{color:#f1efee!important}.tag{color:#f22c40!important}.atn{color:#df5320!important}.atv{color:#3d97b8!important}.dec{color:#df5320!important}.var{color:#f22c40!important}.fun{color:#407ee7!important}} EOT;
+  Atelier-heath-dark "Atelier-heath-dark" <<<EOT
+  /*! Atelier-heath-dark *\/.prettyprint{background:#1b181b!important;font-family:Menlo,"Bitstream Vera Sans Mono","DejaVu Sans Mono",Monaco,Consolas,monospace!important;border:0!important}.pln{color:#f7f3f7!important}ol.linenums{margin-top:0!important;margin-bottom:0!important;color:#776977!important}li.L0,li.L1,li.L2,li.L3,li.L4,li.L5,li.L6,li.L7,li.L8,li.L9{padding-left:1em!important;background-color:#1b181b!important;list-style-type:decimal!important}@media screen{.str{color:#918b3b!important}.kwd{color:#7b59c0!important}.com{color:#776977!important}.typ{color:#516aec!important}.lit{color:#a65926!important}.pun{color:#f7f3f7!important}.opn{color:#f7f3f7!important}.clo{color:#f7f3f7!important}.tag{color:#ca402b!important}.atn{color:#a65926!important}.atv{color:#159393!important}.dec{color:#a65926!important}.var{color:#ca402b!important}.fun{color:#516aec!important}} EOT;
+  Atelier-lakeside-dark "Atelier-lakeside-dark" <<<EOT
+  /*! Atelier-lakeside-dark *\/.prettyprint{background:#161b1d!important;font-family:Menlo,"Bitstream Vera Sans Mono","DejaVu Sans Mono",Monaco,Consolas,monospace!important;border:0!important}.pln{color:#ebf8ff!important}ol.linenums{margin-top:0!important;margin-bottom:0!important;color:#5a7b8c!important}li.L0,li.L1,li.L2,li.L3,li.L4,li.L5,li.L6,li.L7,li.L8,li.L9{padding-left:1em!important;background-color:#161b1d!important;list-style-type:decimal!important}@media screen{.str{color:#568c3b!important}.kwd{color:#6b6bb8!important}.com{color:#5a7b8c!important}.typ{color:#257fad!important}.lit{color:#935c25!important}.pun{color:#ebf8ff!important}.opn{color:#ebf8ff!important}.clo{color:#ebf8ff!important}.tag{color:#d22d72!important}.atn{color:#935c25!important}.atv{color:#2d8f6f!important}.dec{color:#935c25!important}.var{color:#d22d72!important}.fun{color:#257fad!important}} EOT;
+  Atelier-plateau-dark "Atelier-plateau-dark" <<<EOT
+  /*! Atelier-plateau-dark *\/.prettyprint{background:#1b1818!important;font-family:Menlo,"Bitstream Vera Sans Mono","DejaVu Sans Mono",Monaco,Consolas,monospace!important;border:0!important}.pln{color:#f4ecec!important}ol.linenums{margin-top:0!important;margin-bottom:0!important;color:#655d5d!important}li.L0,li.L1,li.L2,li.L3,li.L4,li.L5,li.L6,li.L7,li.L8,li.L9{padding-left:1em!important;background-color:#1b1818!important;list-style-type:decimal!important}@media screen{.str{color:#4b8b8b!important}.kwd{color:#8464c4!important}.com{color:#655d5d!important}.typ{color:#7272ca!important}.lit{color:#b45a3c!important}.pun{color:#f4ecec!important}.opn{color:#f4ecec!important}.clo{color:#f4ecec!important}.tag{color:#ca4949!important}.atn{color:#b45a3c!important}.atv{color:#5485b6!important}.dec{color:#b45a3c!important}.var{color:#ca4949!important}.fun{color:#7272ca!important}} EOT;
+  Atelier-savanna-dark "Atelier-savanna-dark" <<<EOT
+  /*! Atelier-savanna-dark *\/.prettyprint{background:#171c19!important;font-family:Menlo,"Bitstream Vera Sans Mono","DejaVu Sans Mono",Monaco,Consolas,monospace!important;border:0!important}.pln{color:#ecf4ee!important}ol.linenums{margin-top:0!important;margin-bottom:0!important;color:#5f6d64!important}li.L0,li.L1,li.L2,li.L3,li.L4,li.L5,li.L6,li.L7,li.L8,li.L9{padding-left:1em!important;background-color:#171c19!important;list-style-type:decimal!important}@media screen{.str{color:#489963!important}.kwd{color:#55859b!important}.com{color:#5f6d64!important}.typ{color:#478c90!important}.lit{color:#9f713c!important}.pun{color:#ecf4ee!important}.opn{color:#ecf4ee!important}.clo{color:#ecf4ee!important}.tag{color:#b16139!important}.atn{color:#9f713c!important}.atv{color:#1c9aa0!important}.dec{color:#9f713c!important}.var{color:#b16139!important}.fun{color:#478c90!important}} EOT;
+  Atelier-seaside-dark "Atelier-seaside-dark" <<<EOT
+  /*! Atelier-seaside-dark *\/.prettyprint{background:#131513!important;font-family:Menlo,"Bitstream Vera Sans Mono","DejaVu Sans Mono",Monaco,Consolas,monospace!important;border:0!important}.pln{color:#f4fbf4!important}ol.linenums{margin-top:0!important;margin-bottom:0!important;color:#687d68!important}li.L0,li.L1,li.L2,li.L3,li.L4,li.L5,li.L6,li.L7,li.L8,li.L9{padding-left:1em!important;background-color:#131513!important;list-style-type:decimal!important}@media screen{.str{color:#29a329!important}.kwd{color:#ad2bee!important}.com{color:#687d68!important}.typ{color:#3d62f5!important}.lit{color:#87711d!important}.pun{color:#f4fbf4!important}.opn{color:#f4fbf4!important}.clo{color:#f4fbf4!important}.tag{color:#e6193c!important}.atn{color:#87711d!important}.atv{color:#1999b3!important}.dec{color:#87711d!important}.var{color:#e6193c!important}.fun{color:#3d62f5!important}} EOT;
+  Atelier-sulphurpool-dark "Atelier-sulphurpool-dark" <<<EOT
+  /*! Atelier-sulphurpool-dark *\/.prettyprint{background:#202746!important;font-family:Menlo,"Bitstream Vera Sans Mono","DejaVu Sans Mono",Monaco,Consolas,monospace!important;border:0!important}.pln{color:#f5f7ff!important}ol.linenums{margin-top:0!important;margin-bottom:0!important;color:#6b7394!important}li.L0,li.L1,li.L2,li.L3,li.L4,li.L5,li.L6,li.L7,li.L8,li.L9{padding-left:1em!important;background-color:#202746!important;list-style-type:decimal!important}@media screen{.str{color:#ac9739!important}.kwd{color:#6679cc!important}.com{color:#6b7394!important}.typ{color:#3d8fd1!important}.lit{color:#c76b29!important}.pun{color:#f5f7ff!important}.opn{color:#f5f7ff!important}.clo{color:#f5f7ff!important}.tag{color:#c94922!important}.atn{color:#c76b29!important}.atv{color:#22a2c9!important}.dec{color:#c76b29!important}.var{color:#c94922!important}.fun{color:#3d8fd1!important}} EOT;
+  Desert "Desert" <<<EOT
+  /*! Desert *\/pre.prettyprint{display:block;background-color:#333!important;line-height:1.4em!important}pre .nocode{background-color:none!important;color:#000!important}code .str,pre .str{color:#ffa0a0!important}code .kwd,pre .kwd{color:khaki!important;font-weight:700!important}code .com,pre .com{color:#87ceeb!important}code .typ,pre .typ{color:#98fb98!important}code .lit,pre .lit{color:#cd5c5c!important}code .pun,pre .pun{color:#fff!important}code .pln,pre .pln{color:#fff!important}code .tag,pre .tag{color:khaki!important;font-weight:700!important}code .atn,pre .atn{color:#bdb76b!important;font-weight:700!important}code .atv,pre .atv{color:#ffa0a0!important}code .dec,pre .dec{color:#98fb98!important}ol.linenums{margin-top:0;margin-bottom:0;color:#aeaeae}li.L0,li.L1,li.L2,li.L3,li.L5,li.L6,li.L7,li.L8{list-style-type:none!important}@media print{pre.prettyprint{background-color:none!important}code .str,pre .str{color:#060!important}code .kwd,pre .kwd{color:#006!important;font-weight:700!important}code .com,pre .com{color:#600!important;font-style:italic!important}code .typ,pre .typ{color:#404!important;font-weight:700!important}code .lit,pre .lit{color:#044!important}code .pun,pre .pun{color:#440!important}code .pln,pre .pln{color:#000!important}code .tag,pre .tag{color:#006!important;font-weight:700!important}code .atn,pre .atn{color:#404!important}code .atv,pre .atv{color:#060!important}} EOT;
+  Doxy "Doxy" <<<EOT
+  /*! Doxy *\/code .str,pre .str{color:#fec243!important}code .kwd,pre .kwd{color:#8470ff!important}code .com,pre .com{color:#32cd32!important;font-style:italic!important}code .typ,pre .typ{color:#6ecbcc!important}code .lit,pre .lit{color:#d06!important}code .pun,pre .pun{color:#8b8970!important}code .pln,pre .pln{color:#f0f0f0!important}code .tag,pre .tag{color:#9c9cff!important}code .htm,pre .htm{color:plum!important}code .xsl,pre .xsl{color:#d0a0d0!important}code .atn,pre .atn{color:#46eeee!important;font-weight:400!important}code .atv,pre .atv{color:#eeb4b4!important}code .dec,pre .dec{color:#3387cc!important}a{text-decoration:none!important}code.prettyprint,pre.prettyprint{font-family:'Droid Sans Mono','CPMono_v07 Bold','Droid Sans'!important;font-weight:700!important;background-color:#0f0f0f!important}pre.prettyprint{width:95%!important;margin:1em auto!important;padding:1em!important;white-space:pre-wrap!important;line-height:1.4em!important}code.prettyprint a,pre.prettyprint a{text-decoration:none!important}ol.linenums{margin-top:0!important;margin-bottom:0!important;color:#8b8970!important}li.L0,li.L1,li.L2,li.L3,li.L5,li.L6,li.L7,li.L8{list-style-type:none!important}@media print{code.prettyprint,pre.prettyprint{background-color:#fff!important}code .str,pre .str{color:#088!important}code .kwd,pre .kwd{color:#006!important;font-weight:700!important}code .com,pre .com{color:#0c3!important;font-style:italic!important}code .typ,pre .typ{color:#404!important;font-weight:700!important}code .lit,pre .lit{color:#044!important}code .pun,pre .pun{color:#440!important}code .pln,pre .pln{color:#000!important}code .tag,pre .tag{color:#b66ff7!important;font-weight:700!important}code .htm,pre .htm{color:#606!important;font-weight:700!important}code .xsl,pre .xsl{color:#606!important;font-weight:700!important}code .atn,pre .atn{color:#c71585!important;font-weight:400!important}code .atv,pre .atv{color:#088!important;font-weight:400!important}} EOT;
+  Hemisu Dark "Hemisu Dark" <<<EOT
+  /*! Hemisu Dark *\/.prettyprint{background:#000!important;font-family:Menlo,'Bitstream Vera Sans Mono','DejaVu Sans Mono',Monaco,Consolas,monospace!important;line-height:1.4em!important;padding:10px!important}.pln{color:#eee!important}@media screen{.str{color:#b1d631!important}.kwd{color:#b1d631!important}.com{color:#777!important}.typ{color:#bfa!important}.lit{color:#9fd3e6!important}.pun{color:#eee!important}.opn{color:#eee!important}.clo{color:#eee!important}.tag{color:#eee!important}.atn{color:#b1d631!important}.atv{color:#bfa!important}.dec{color:#eee!important}.var{color:#eee!important}.fun{color:#9fd3e6!important}}@media print,projection{.str{color:#060!important}.kwd{color:#006!important;font-weight:700!important}.com{color:#600!important;font-style:italic!important}.typ{color:#404!important;font-weight:700!important}.lit{color:#044!important}.clo,.opn,.pun{color:#440!important}.tag{color:#006!important;font-weight:700!important}.atn{color:#404!important}.atv{color:#060!important}}ol.linenums{margin-top:0!important;margin-bottom:0!important} EOT;
+  Monokai-RaphaelDDL "Monokai-RaphaelDDL" <<<EOT
+  /*! Monokai-RaphaelDDL *\/code .str,pre .str{color:#e6db5a!important}code .kwd,pre .kwd{color:#66d9ef!important}code .com,pre .com{color:#75715e!important;font-style:italic!important}code .typ,pre .typ{color:#66d9ef!important}code .lit,pre .lit{color:#ae81ff!important}code .pun,pre .pun{color:#fff!important}code .pln,pre .pln{color:#fff!important}code .tag,pre .tag{color:#f92672!important}code .atn,pre .atn{color:#a6e22a!important}code .atv,pre .atv{color:#e6db74!important}code .dec,pre .dec{color:#ae81ff!important}code.prettyprint,pre.prettyprint{background-color:#272822!important;font-family:consolas,menlo,courier,monospace!important}ol.linenums{margin-top:0!important;margin-bottom:0!important;color:#75715e!important;list-style:decimal inside!important}@media print{code.prettyprint,pre.prettyprint,pre.prettyprinted{background-color:#fff;color:#000}code .str,pre .str{color:#060}code .kwd,pre .kwd{color:#006;font-weight:700}code .com,pre .com{color:#600;font-style:italic}code .typ,pre .typ{color:#404;font-weight:700}code .lit,pre .lit{color:#044}code .pun,pre .pun{color:#440}code .pln,pre .pln{color:#000}code .tag,pre .tag{color:#006;font-weight:700}code .atn,pre .atn{color:#404}code .atv,pre .atv{color:#060}} EOT;
+  Sons of Obsidian "Sons of Obsidian" <<<EOT
+  /*! Sons of Obsidian *\/.str{color:#ec7600!important}.kwd{color:#93c763!important}.com{color:#66747b!important}.typ{color:#678cb1!important}.lit{color:#facd22!important}.pun{color:#f1f2f3!important}.pln{color:#f1f2f3!important}.tag{color:#8ac763!important}.atn{color:#e0e2e4!important}.atv{color:#ec7600!important}.dec{color:purple!important}pre.prettyprint{border:0 solid #888!important}ol.linenums{margin-top:0!important;margin-bottom:0!important}.prettyprint{background:#000!important;line-height:1.4em!important}li.L0,li.L1,li.L2,li.L3,li.L4,li.L5,li.L6,li.L7,li.L8,li.L9{color:#555!important;list-style-type:decimal!important}li.L1,li.L3,li.L5,li.L7,li.L9{background:#111!important}@media print{.str{color:#060!important}.kwd{color:#006!important;font-weight:700!important}.com{color:#600!important;font-style:italic!important}.typ{color:#404!important;font-weight:700!important}.lit{color:#044!important}.pun{color:#440!important}.pln{color:#000!important}.tag{color:#006!important;font-weight:700!important}.atn{color:#404!important}.atv{color:#060!important}} EOT;
+  Sunburst "Sunburst" <<<EOT
+  /*! Sunburst *\/code .str,pre .str{color:#65b042!important}code .kwd,pre .kwd{color:#e28964!important}code .com,pre .com{color:#aeaeae!important;font-style:italic!important}code .typ,pre .typ{color:#89bdff!important}code .lit,pre .lit{color:#3387cc!important}code .pun,pre .pun{color:#fff!important}code .pln,pre .pln{color:#fff!important}code .tag,pre .tag{color:#89bdff!important}code .atn,pre .atn{color:#bdb76b!important}code .atv,pre .atv{color:#65b042!important}code .dec,pre .dec{color:#3387cc!important}code.prettyprint,pre.prettyprint{background-color:#000!important}pre.prettyprint{width:95%!important;margin:1em auto!important;padding:1em!important;white-space:pre-wrap!important;line-height:1.4em!important}ol.linenums{margin-top:0!important;margin-bottom:0!important;color:#aeaeae!important}li.L0,li.L1,li.L2,li.L3,li.L5,li.L6,li.L7,li.L8{list-style-type:none!important}@media print{code .str,pre .str{color:#060!important}code .kwd,pre .kwd{color:#006!important;font-weight:700!important}code .com,pre .com{color:#600!important;font-style:italic!important}code .typ,pre .typ{color:#404!important;font-weight:700!important}code .lit,pre .lit{color:#044!important}code .pun,pre .pun{color:#440!important}code .pln,pre .pln{color:#000!important}code .tag,pre .tag{color:#006!important;font-weight:700!important}code .atn,pre .atn{color:#404!important}code .atv,pre .atv{color:#060!important}} EOT;
+  Tomorrow Night Blue "Tomorrow Night Blue" <<<EOT
+  /*! Tomorrow Night Blue *\/.prettyprint{background:#002451!important;font-family:Menlo,'Bitstream Vera Sans Mono','DejaVu Sans Mono',Monaco,Consolas,monospace!important;line-height:1.4em!important;padding:10px!important}.pln{color:#fff!important}@media screen{.str{color:#d1f1a9!important}.kwd{color:#ebbbff!important}.com{color:#7285b7!important}.typ{color:#bbdaff!important}.lit{color:#ffc58f!important}.pun{color:#fff!important}.opn{color:#fff!important}.clo{color:#fff!important}.tag{color:#ff9da4!important}.atn{color:#ffc58f!important}.atv{color:#9ff!important}.dec{color:#ffc58f!important}.var{color:#ff9da4!important}.fun{color:#bbdaff!important}}@media print,projection{.str{color:#060!important}.kwd{color:#006!important;font-weight:700!important}.com{color:#600!important;font-style:italic!important}.typ{color:#404!important;font-weight:700!important}.lit{color:#044!important}.clo,.opn,.pun{color:#440!important}.tag{color:#006!important;font-weight:700!important}.atn{color:#404!important}.atv{color:#060!important}}ol.linenums{margin-top:0!important;margin-bottom:0!important} EOT;
+  Tomorrow Night Bright "Tomorrow Night Bright" <<<EOT
+  /*! Tomorrow Night Bright *\/.prettyprint{background:#000!important;font-family:Menlo,'Bitstream Vera Sans Mono','DejaVu Sans Mono',Monaco,Consolas,monospace!important;line-height:1.4em!important;padding:10px!important}.pln{color:#eaeaea!important}@media screen{.str{color:#b9ca4a!important}.kwd{color:#c397d8!important}.com{color:#969896!important}.typ{color:#7aa6da!important}.lit{color:#e78c45!important}.pun{color:#eaeaea!important}.opn{color:#eaeaea!important}.clo{color:#eaeaea!important}.tag{color:#d54e53!important}.atn{color:#e78c45!important}.atv{color:#70c0b1!important}.dec{color:#e78c45!important}.var{color:#d54e53!important}.fun{color:#7aa6da!important}}@media print,projection{.str{color:#060!important}.kwd{color:#006!important;font-weight:700!important}.com{color:#600!important;font-style:italic!important}.typ{color:#404!important;font-weight:700!important}.lit{color:#044!important}.clo,.opn,.pun{color:#440!important}.tag{color:#006!important;font-weight:700!important}.atn{color:#404!important}.atv{color:#060!important}}ol.linenums{margin-top:0!important;margin-bottom:0!important} EOT;
+  Tomorrow Night Eighties "Tomorrow Night Eighties" <<<EOT
+  /*! Tomorrow Night Eighties *\/.prettyprint{background:#2d2d2d!important;font-family:Menlo,'Bitstream Vera Sans Mono','DejaVu Sans Mono',Monaco,Consolas,monospace!important;line-height:1.4em!important;padding:10px!important}.pln{color:#ccc!important}@media screen{.str{color:#9c9!important}.kwd{color:#c9c!important}.com{color:#999!important}.typ{color:#69c!important}.lit{color:#f99157!important}.pun{color:#ccc!important}.opn{color:#ccc!important}.clo{color:#ccc!important}.tag{color:#f2777a!important}.atn{color:#f99157!important}.atv{color:#6cc!important}.dec{color:#f99157!important}.var{color:#f2777a!important}.fun{color:#69c!important}}@media print,projection{.str{color:#060!important}.kwd{color:#006!important;font-weight:700!important}.com{color:#600!important;font-style:italic!important}.typ{color:#404!important;font-weight:700!important}.lit{color:#044!important}.clo,.opn,.pun{color:#440!important}.tag{color:#006!important;font-weight:700!important}.atn{color:#404!important}.atv{color:#060!important}}ol.linenums{margin-top:0!important;margin-bottom:0!important} EOT;
+  Tomorrow Night "Tomorrow Night" <<<EOT
+  /*! Tomorrow Night *\/.prettyprint{background:#1d1f21!important;font-family:Menlo,'Bitstream Vera Sans Mono','DejaVu Sans Mono',Monaco,Consolas,monospace!important;line-height:1.4em!important;padding:10px!important}.pln{color:#c5c8c6!important}@media screen{.str{color:#b5bd68!important}.kwd{color:#b294bb!important}.com{color:#969896!important}.typ{color:#81a2be!important}.lit{color:#de935f!important}.pun{color:#c5c8c6!important}.opn{color:#c5c8c6!important}.clo{color:#c5c8c6!important}.tag{color:#c66!important}.atn{color:#de935f!important}.atv{color:#8abeb7!important}.dec{color:#de935f!important}.var{color:#c66!important}.fun{color:#81a2be!important}}@media print,projection{.str{color:#060!important}.kwd{color:#006!important;font-weight:700!important}.com{color:#600!important;font-style:italic!important}.typ{color:#404!important;font-weight:700!important}.lit{color:#044!important}.clo,.opn,.pun{color:#440!important}.tag{color:#006!important;font-weight:700!important}.atn{color:#404!important}.atv{color:#060!important}}ol.linenums{margin-top:0!important;margin-bottom:0!important} EOT;
+  Tranquil-heart "Tranquil-heart" <<<EOT
+  /*! Tranquil-heart *\/.prettyprint{background:#2f3640!important;font-family:Menlo,"Bitstream Vera Sans Mono","DejaVu Sans Mono",Monaco,Consolas,monospace!important;border:0!important}.pln{color:#e6e9ed!important}ol.linenums{margin-top:0!important;margin-bottom:0!important;color:#656d78!important}li.L0,li.L1,li.L2,li.L3,li.L4,li.L5,li.L6,li.L7,li.L8,li.L9{padding-left:1em!important;background-color:#2f3640!important;list-style-type:decimal!important}@media screen{.str{color:#ffce54!important}.kwd{color:#4fc1e9!important}.com{color:#656d78!important}.typ{color:#4fc1e9!important}.lit{color:#ac92ec!important}.pun{color:#e6e9ed!important}.opn{color:#e6e9ed!important}.clo{color:#e6e9ed!important}.tag{color:#ed5565!important}.atn{color:#a0d468!important}.atv{color:#ffce54!important}.dec{color:#ac92ec!important}.var{color:#e6e9ed!important}.fun{color:#e6e9ed!important}} EOT;
+  Vibrant Ink "Vibrant Ink" <<<EOT
+  /*! Vibrant Ink *\/.prettyprint{background:#000!important;font-family:Menlo,'Bitstream Vera Sans Mono','DejaVu Sans Mono',Monaco,Consolas,monospace!important;line-height:1.4em!important;padding:10px!important}.pln{color:#fff!important}@media screen{.str{color:#6f0!important}.kwd{color:#f60!important}.com{color:#93c!important}.typ{color:#458!important}.lit{color:#458!important}.pun{color:#fff!important}.opn{color:#fff!important}.clo{color:#fff!important}.tag{color:#fff!important}.atn{color:#9c9!important}.atv{color:#6f0!important}.dec{color:#fff!important}.var{color:#fff!important}.fun{color:#fc0!important}}@media print,projection{.str{color:#060!important}.kwd{color:#006!important;font-weight:700!important}.com{color:#600!important;font-style:italic!important}.typ{color:#404!important;font-weight:700!important}.lit{color:#044!important}.clo,.opn,.pun{color:#440!important}.tag{color:#006!important;font-weight:700!important}.atn{color:#404!important}.atv{color:#060!important}}ol.linenums{margin-top:0!important;margin-bottom:0!important} EOT;
+  vscode-monaco "vscode-monaco" <<<EOT
+  /*! vscode-monaco *\/code .com,pre .com{color:rgba(96,139,78,1)!important}code .str,pre .str{color:rgba(206,145,120,1)!important}code .atv,pre .atv{color:rgba(206,145,120,1)!important}code .kwd,pre .kwd{color:rgba(197,134,192,1)!important}code .typ,pre .typ{color:rgba(156,220,254,1)!important}code .tag,pre .tag{color:rgba(78,201,176,1)!important}code .atn,pre .atn{color:rgba(156,220,254,1)!important}code .pun,pre .pun{color:rgba(212,212,212,1)!important}code .pln,pre .pln{color:rgba(220,220,170,1)!important}code .lit,pre .lit{color:rgba(181,206,168,1)!important}code .dec,pre .dec{color:rgba(181,206,168,1)!important}code.prettyprint,pre.prettyprint{border:0!important;border-radius:3px!important;color:#bbb!important;background-color:#1e1e1e!important;width:95%!important}pre.prettyprint{margin:1em auto!important;padding:1em!important;white-space:pre-wrap!important;font-family:Consolas,'Courier New',monospace!important;font-size:14px!important;line-height:19px!important}ol.linenums{margin-top:0!important;margin-bottom:0!important;color:#5a5a5a!important}li.L0,li.L1,li.L2,li.L3,li.L5,li.L6,li.L7,li.L8{padding-left:5px!important}@media print{code .str,pre .str{color:#060!important}code .kwd,pre .kwd{color:#006!important;font-weight:700!important}code .com,pre .com{color:#600!important;font-style:italic!important}code .typ,pre .typ{color:#404!important;font-weight:700!important}code .lit,pre .lit{color:#044!important}code .pun,pre .pun{color:#440!important}code .pln,pre .pln{color:#000!important}code .tag,pre .tag{color:#006!important;font-weight:700!important}code .atn,pre .atn{color:#404!important}code .atv,pre .atv{color:#060!important}} EOT;
+}
+@advanced text bg-choice "Background image [wrap in url()]" "url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEYAAABGCAAAAABURb1YAAAFnklEQVR4AWWXCY4cwXbE6h4JMhCvMPc/ov+3Ox9QsLCGpKlFHILd+UQ559AGDkBSFXWmomonqkL/XuUcIPUcONjHCJyE36KaqNiaRnVCG9TGpgIU9hIfohCBVGj24ammo04lU3Fy0NZDAyZi5AElHjgEGlRbG1WjraIt7TmADQkAaoEHsOXAAaeqat9RVTqjosyEH5W+DQCQt8BzIJMfXJI3e5tGRefSlRn3NrO3scnvNl26FN5RITGNfjm3GM/+FhQgnlQeImC+dEm8rzHVTNGL9EADVsTAIfGJBziRy7RlmcZU1IYpHIj+4JrWym8/XSwzompmFNVOFdTOAAfs61KZ6eXcp57fykQUOxNBmTesz2HpCnCg3UV/bA7VRpWGNqKtrYLTs0ilCjgxiZxjeLC5dDPBFn4Pn2ja6BRUL10DTgET4Focq8rn8casxV4E5tIlZvytqtfivCOKZrqc38G7egnkXecyPZdzubc57VtUnbfL+a0u3b1N3d9Mci7cKocHoh3xihLQ6fXUlgTOOfVkXSUFINoWHhqxE23RTmCqtoEJaITkIrUCkU9fnqpqm+40VSXS3CLaSzfGBb4rPuOSfN0ylLve6/jpcrbL2dTlnOdv5AamKjLvLN1XruMNS/cul/hx8twKpKYRaE2DOp8+c+lW7uVXVQ7Vx0x1G3HXjNocsHCac7NbWc6egwJVHu2kRTVNC2pqv2U4XNsv5/yWJlV9+NJ1C7xluInlcr7rK+Kg+qy7onQqgnbi7UHcS3qXjdw3bO5tumycYlVssMI5EXXpRnatPK362KodtVU60cm+eQT10sVLFwJYlVaf7UGSoi5dQF3DvnTX3UvXTPO8quKH7jsXhm/PxfKWZXqBM5sS33kmKtC31Q05fI095i5IPpyzRXqSy1Sr17p1F7NE8vMtnNbLpVVtk8c0OrfF0sKxHnIpYgHW4puMomTz8mgmrSjpvrxhX97l7LqLpl7bW9BH9/MNzF8XwRqL8/m7c30eFYV5VX3QTquK06XbLt16F4ks+8Z9m6gPtpcuk3OvibCekng4lzMHi9MoqZmKj9tdbQCbc7bcEA+oEJduRNNL1waf1tuI9MDBUK8t3k9uFz3rrqadO9Ln9TL/ezlwDvky3TW7ZmXfpc77TN0yhOXnP939LvVDV9s+tgLTm0TqYd1lea3PRFuVjLa562HdPbCfascGrvO3DMeIATVqVRO8vfHrbupdfo1dzlXUdkVLZsS1mLPG3rWcl+4B1l1537h0VXzU1tyLG7cCu+LSrSqo06hocy3WCcil65qHDbuEYzQN2HpT3jFt9LEFvHTP1nxbXOEkbhkKmd+6BTfVZ/I143z/Fyz6Za92o0I7I6gzfeYAHPwy/Rb43L9TLtMt8CtwW1xvQvbR1g9n7qJRNN1kdxcdH7cM58Szxq679MdLOhE72t6VNEpHHkzwRyjBcGth+dE99pIkVbWaEWmvnQ8Yl7Mp59zpRWXdNo6odrO754Zzvxf/010nP7onb1TR+bgbVPB9PcADJvH/043Kvk0UzLRxQ6UiaeTAcyxYl2lyrrvZv8v2wE7U1uVcST0821jJeIDKWuyxiqnuko7q3+zJYXJ46nV3D67EyL+lQ9F2qkr+3kUafQpwYE8T329p6y7OX1TF97fQv/c+l87zj7Hsgpig4qRLd9fMPs74rLGyCzRbhmVqpy7nqvPmTD1gvKe7b2U8u1QzmtuDuEtbgT3c8QBJveo6cueFkUwv59nVmfFw1jl4/unuOT9qERV76ers8n23z/c8/Xy7a4lwwLplmGusbRp33Up13+ZDN3KPxNVMhY62vUQyRTse6+cKHtZYjIfDh260Cjbb3Vy6R8H8SMBzqSwrsB1UTacoknlnOb8V4JD9Njfpwz/fHjpBUeevcAtcl65sqXPX9D87RUTLc/dfOgAAAABJRU5ErkJggg==')"
+@advanced dropdown bg-options "Background image type" {
+  Tiled "Tiled" <<<EOT
+  background-repeat: repeat !important;
+  background-size: auto !important;
+  background-position: left top !important; EOT;
+  Fit window size "Fit window size" <<<EOT
+  background-repeat: no-repeat !important;
+  background-size: cover !important;
+  background-position: center top !important; EOT;
+}
+@advanced dropdown bg-attachment "Background image attachment" {
+  Scroll "Scroll" <<<EOT
+  scroll EOT;
+  Fixed "Fixed" <<<EOT
+  fixed EOT;
+}
+@advanced text font-choice "Code Font" "Menlo"
+==/UserStyle== */
 @-moz-document regexp("^https?://((chat|meta|es|ja|pt|ru)\\.)*stackoverflow\\.com.*"), domain("serverfault.com"), domain("superuser.com"), domain("stackapps.com"), domain("mathoverflow.net"), domain("askubuntu.com"), regexp("^https?://((?!(www|area51|gaming)).*\\.)?stackexchange\\.com.*") {
   /***************************************************************
   Stack Overflow Dark v2.11.0 (2018-01-06)
@@ -23,10 +100,10 @@
 
   body {
     background-color: #191919 !important;
-    background-image: /*[[bg-choice]]*/ url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEYAAABGCAAAAABURb1YAAAFnklEQVR4AWWXCY4cwXbE6h4JMhCvMPc/ov+3Ox9QsLCGpKlFHILd+UQ559AGDkBSFXWmomonqkL/XuUcIPUcONjHCJyE36KaqNiaRnVCG9TGpgIU9hIfohCBVGj24ammo04lU3Fy0NZDAyZi5AElHjgEGlRbG1WjraIt7TmADQkAaoEHsOXAAaeqat9RVTqjosyEH5W+DQCQt8BzIJMfXJI3e5tGRefSlRn3NrO3scnvNl26FN5RITGNfjm3GM/+FhQgnlQeImC+dEm8rzHVTNGL9EADVsTAIfGJBziRy7RlmcZU1IYpHIj+4JrWym8/XSwzompmFNVOFdTOAAfs61KZ6eXcp57fykQUOxNBmTesz2HpCnCg3UV/bA7VRpWGNqKtrYLTs0ilCjgxiZxjeLC5dDPBFn4Pn2ja6BRUL10DTgET4Focq8rn8casxV4E5tIlZvytqtfivCOKZrqc38G7egnkXecyPZdzubc57VtUnbfL+a0u3b1N3d9Mci7cKocHoh3xihLQ6fXUlgTOOfVkXSUFINoWHhqxE23RTmCqtoEJaITkIrUCkU9fnqpqm+40VSXS3CLaSzfGBb4rPuOSfN0ylLve6/jpcrbL2dTlnOdv5AamKjLvLN1XruMNS/cul/hx8twKpKYRaE2DOp8+c+lW7uVXVQ7Vx0x1G3HXjNocsHCac7NbWc6egwJVHu2kRTVNC2pqv2U4XNsv5/yWJlV9+NJ1C7xluInlcr7rK+Kg+qy7onQqgnbi7UHcS3qXjdw3bO5tumycYlVssMI5EXXpRnatPK362KodtVU60cm+eQT10sVLFwJYlVaf7UGSoi5dQF3DvnTX3UvXTPO8quKH7jsXhm/PxfKWZXqBM5sS33kmKtC31Q05fI095i5IPpyzRXqSy1Sr17p1F7NE8vMtnNbLpVVtk8c0OrfF0sKxHnIpYgHW4puMomTz8mgmrSjpvrxhX97l7LqLpl7bW9BH9/MNzF8XwRqL8/m7c30eFYV5VX3QTquK06XbLt16F4ks+8Z9m6gPtpcuk3OvibCekng4lzMHi9MoqZmKj9tdbQCbc7bcEA+oEJduRNNL1waf1tuI9MDBUK8t3k9uFz3rrqadO9Ln9TL/ezlwDvky3TW7ZmXfpc77TN0yhOXnP939LvVDV9s+tgLTm0TqYd1lea3PRFuVjLa562HdPbCfascGrvO3DMeIATVqVRO8vfHrbupdfo1dzlXUdkVLZsS1mLPG3rWcl+4B1l1537h0VXzU1tyLG7cCu+LSrSqo06hocy3WCcil65qHDbuEYzQN2HpT3jFt9LEFvHTP1nxbXOEkbhkKmd+6BTfVZ/I143z/Fyz6Za92o0I7I6gzfeYAHPwy/Rb43L9TLtMt8CtwW1xvQvbR1g9n7qJRNN1kdxcdH7cM58Szxq679MdLOhE72t6VNEpHHkzwRyjBcGth+dE99pIkVbWaEWmvnQ8Yl7Mp59zpRWXdNo6odrO754Zzvxf/010nP7onb1TR+bgbVPB9PcADJvH/043Kvk0UzLRxQ6UiaeTAcyxYl2lyrrvZv8v2wE7U1uVcST0821jJeIDKWuyxiqnuko7q3+zJYXJ46nV3D67EyL+lQ9F2qkr+3kUafQpwYE8T329p6y7OX1TF97fQv/c+l87zj7Hsgpig4qRLd9fMPs74rLGyCzRbhmVqpy7nqvPmTD1gvKe7b2U8u1QzmtuDuEtbgT3c8QBJveo6cueFkUwv59nVmfFw1jl4/unuOT9qERV76ers8n23z/c8/Xy7a4lwwLplmGusbRp33Up13+ZDN3KPxNVMhY62vUQyRTse6+cKHtZYjIfDh260Cjbb3Vy6R8H8SMBzqSwrsB1UTacoknlnOb8V4JD9Njfpwz/fHjpBUeevcAtcl65sqXPX9D87RUTLc/dfOgAAAABJRU5ErkJggg==") !important;
+    background-image: /*[[bg-choice]]*/ !important;
     background-clip: border-box !important;
     background-origin: padding-box !important;
-    background-attachment: /*[[bg-attachment]]*/ fixed !important;
+    background-attachment: /*[[bg-attachment]]*/ !important;
     /*[[bg-options]]*/
   }
 
@@ -37,13 +114,13 @@
 
   /* === custom color === */
   a, .profile-popup a, .seWrapper a, .gs-title b, .spoiler:hover a {
-    color: /*[[base-color]]*/ #008080 !important;
+    color: /*[[base-color]]*/ !important;
   }
 
   .nav .primarynav li a:hover, .message.message-config .actions .button, .btn-careers:hover,
   .btn-careers:visited, .question-list-layout a:hover {
     color: #fff !important;
-    background: /*[[base-color]]*/ #008080 !important;
+    background: /*[[base-color]]*/ !important;
   }
 
   a.post-tag:hover, .bounty-indicator, .bounty-indicator-tab, .bounty-award,
@@ -51,30 +128,30 @@
   .nav li.youarehere a, .nav a:hover, a.button:hover, .edit-count, .pager a:hover span,
   .bounties-tab, .login-link, #sidebar a[href*="/questions/ask"],
   #sidebar a[href*="/questions/ask"]:visited, .page-numbers:hover {
-    background-color: /*[[base-color]]*/ #008080 !important;
+    background-color: /*[[base-color]]*/ !important;
     color: #eee !important;
   }
 
   #tabs a.youarehere:before, .tabs a.youarehere:before,
   .newnav .tabs-list-container .tabs-list .intellitab a.youarehere:before {
-    background-color: /*[[base-color]]*/ #008080 !important;
+    background-color: /*[[base-color]]*/ !important;
   }
 
   /* === text selection === */
   ::selection {
-    background: /*[[base-color]]*/ #008080 !important;
+    background: /*[[base-color]]*/ !important;
     color: #fff !important;
   }
   ::-moz-selection {
-    background: /*[[base-color]]*/ #008080 !important;
+    background: /*[[base-color]]*/ !important;
     color: #fff !important;
   }
 
   /* === input focus hightlight === */
   input:focus, textarea:focus, .chosen-container.chosen-container-active .chosen-choices,
   .chosen-container .active-result.highlighted {
-    border-color: /*[[base-color]]*/ #008080 !important;
-    box-shadow: inset 0 1px 2px rgba(0,0,0,.075), 0 0 2px /*[[base-color]]*/ #008080 !important;
+    border-color: /*[[base-color]]*/ !important;
+    box-shadow: inset 0 1px 2px rgba(0,0,0,.075), 0 0 2px /*[[base-color]]*/ !important;
     outline-color: transparent !important;
   }
   .tag-editor input:focus, .previous-button, .next-button, .btn-clear,
@@ -557,7 +634,7 @@
   }
 
   .post-text a:visited, .comment-text a:not(.comment-user):visited {
-    color: /*[[visited-color]]*/ #4183C4 !important;
+    color: /*[[visited-color]]*/ !important;
   }
   .rep-up {
     color: #4b553c !important;
@@ -731,24 +808,7 @@
   }
 
   /*[[syntax-theme]]*/
-  /* grunt-webkit-remove-to-end-of-file */
-  /* grunt-remove-block-below */
-
-  /* === basic dark code & syntax highlighting === */
-  pre, code, .pln {
-    background: #333 !important;
-    color: #ccc !important;
-  }
-  .str { color: #0a0 !important; }
-  .lit { color: #d65 !important; }
-  .pun { color: #999 !important; } /* parenthesis */
-  .kwd { color: #08f !important; } /* keyword */
-  .tag { color: #999 !important; } /* html tag */
-  .atn { color: #088 !important; } /* attribute */
-  .atv { color: #0a0 !important; } /* attribute value*/
-  .dec { color: #90a !important; } /* doc type */
-
-  /* grunt-remove-block-above */
+ 
 }
 
 /* These extra @-moz-document definitions will not be included in the "grunt user"
@@ -778,7 +838,7 @@
   }
   /* login button (input type=button")*/
   .login-page input.fr {
-    background-color: /*[[base-color]]*/ #008080 !important;
+    background-color: /*[[base-color]]*/ !important;
   }
   /* remove content border */
   #content {
@@ -896,7 +956,7 @@
   /* nav manu text coloring only */
   .nav li.youarehere a, .nav li a:hover {
     background-color: transparent !important;
-    color: /*[[base-color]]*/ #008080 !important;
+    color: /*[[base-color]]*/ !important;
   }
 }
 @-moz-document regexp("^https?://((android|apple|dba|drupal|gis|mathematica|photo|scifi|security|tex|wordpress)\\.)?stackexchange\\.com.*") {
@@ -974,7 +1034,7 @@
     border-top-color: #eee !important;
   }
   .nav li.youarehere, .nav li:hover {
-    background-color: /*[[base-color]]*/ #008080 !important;
+    background-color: /*[[base-color]]*/ !important;
   }
 }
 @-moz-document domain("dba.stackexchange.com") {
@@ -1017,11 +1077,11 @@
   }
   a.button, input[type="button"]:hover, button:hover, .button:hover, .btn:hover, button:focus,
   .button:focus, .btn:focus, .btn-clear:hover {
-    background-color: /*[[base-color]]*/ #008080 !important;
+    background-color: /*[[base-color]]*/ !important;
     color: #ddd !important;
   }
   .btn-outlined:hover {
-    border-color: /*[[base-color]]*/ #008080 !important;
+    border-color: /*[[base-color]]*/ !important;
   }
   .relativetime, .edit-summary .edited-sections li:not(.example-list).section-being-edited {
     color: #ddd !important;
@@ -1101,7 +1161,7 @@
     color: #ddd !important;
   }
   .nav li.youarehere a, .nav li a:hover {
-    color: /*[[base-color]]*/ #008080 !important;
+    color: /*[[base-color]]*/ !important;
   }
   .answered-accepted .mini-counts span {
     color: #fff !important;
@@ -1151,7 +1211,7 @@
     background-image: url(https://StylishThemes.github.io/StackOverflow-Dark/images/meta-stackoverflow-logo.svg) !important;
   }
   #sidebar .community-bulletin .bulletin-item-content a, #sidebar .community-bulletin .bulletin-item-content a:hover {
-    color: /*[[base-color]]*/ #008080 !important;
+    color: /*[[base-color]]*/ !important;
   }
   #sidebar .community-bulletin .bulletin-item-content a:hover {
     color: #fff !important;
@@ -1350,7 +1410,7 @@
     background: rgba(0, 0, 0, .3) !important;
   }
   .answered-accepted .mini-counts {
-    background-color: /*[[base-color]]*/ #6D8048  !important;
+    background-color: /*[[base-color]]*/  !important;
   }
 }
 @-moz-document domain("wordpress.stackexchange.com") {
@@ -1365,7 +1425,7 @@
   }
   /* override !important flag set in site css */
   a.question-hyperlink {
-    color: /*[[base-color]]*/ #008080 !important;
+    color: /*[[base-color]]*/ !important;
   }
   a.question-hyperlink:hover, a.question-hyperlink:visited {
     color: #aaa !important;
