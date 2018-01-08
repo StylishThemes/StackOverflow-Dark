@@ -520,7 +520,7 @@
     color: #ddd !important;
   }
   /* patch for hint text of SurfingKeys browser extension */
-  #sk-hint div {
+  #sk_hints div {
     color: #000 !important;
   }
 
