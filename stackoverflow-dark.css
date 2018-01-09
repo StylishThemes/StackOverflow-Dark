@@ -89,7 +89,7 @@
   }
 
   /* === hidden === */
-  div.hireme, div#hireme, .next-answer-hook-container, .intellitab:after {
+  div.hireme, div#hireme, .next-answer-hook-container, .intellitab:after, .s-hero .-container  {
     display: none !important;
   }
 
@@ -120,7 +120,7 @@
 
   .onebox, .profile-ad, .message.message-config,
   .so-header a:hover, .so-header a.topbar-icon-on, .topbar-dialog .header, .header-edit-section:hover,
-  .timeline-item, .sidebar-profile .-item, .btn-outlined.-white:hover, .top-bar a:hover, .top-bar a:focus,
+  .timeline-item, .sidebar-profile .-item, .btn-outlined.-white:hover, .btn-outlined:hover, .top-bar a:hover, .top-bar a:focus,
   .top-bar .-item._active, .top-bar .-link.topbar-icon-on, .top-bar .-link.topbar-icon-on:hover,
   .top-bar .-feature-notice:hover, .top-bar .-feature-notice.topbar-icon-on, .topbar-dialog .dialog-content,
   .feature-notice-dialog:before, .-item.social, .salary-results-container .collection, .sidebar #post-job,
