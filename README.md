@@ -2,7 +2,7 @@
   <img alt="stackexchange-logo" src="https://rawgit.com/StylishThemes/logos/master/se.dark/sedark.svg" width="508">
   <br>
   <a href="https://github.com/StylishThemes/Stackoverflow-Dark/tags">
-    <img src="https://img.shields.io/github/tag/StylishThemes/Stackoverflow-Dark.svg?label=%20tag%20" alt="Tag">
+    <img src="https://img.shields.io/github/tag/StylishThemes/Stackoverflow-Dark.svg?label=tag" alt="Tag">
   </a>
   <a href="https://github.com/StylishThemes/Stackoverflow-Dark/stargazers">
     <img src="http://github-svg-buttons.herokuapp.com/star.svg?user=StylishThemes&repo=Stackoverflow-Dark&style=flat&background=007ec6" alt="Star">
