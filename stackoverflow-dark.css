@@ -131,7 +131,7 @@
   html, blockquote, #post-preview, .nav .primarynav li a, #chat, #hsearch .textbox, .form-item, .grippie,
   .welovestackoverflow, #wmd-button-bar, .wmd-button-bar, .qa-block, .content-block, .user-info-rep, .sidebar,
   .popup, .full-diff, .val-success, .search-form .filter-pane nav, .s-card, .chosen-container .chosen-drop,
-  .pac-item.pac-item-selected, .pac-item:hover, .-item.social:hover {
+  .pac-item.pac-item-selected, .pac-item:hover, .-item.social:hover, #add-tags-button, #filter-preview {
     background: #191919 !important;
   }
 
@@ -218,8 +218,9 @@
   .calendar, .calendar-small, .mspark .mspbar, #promo-box, #input-area .input-hint,
   .tour-page .feature-selection li a.triggered, .ob-docs,
   .topbar.newheader .topbar-wrapper .topbar-links .search-container #search input[name="q"],
-  .mainbar.discussion .discussion-item, #input-area {
+  .mainbar.discussion .discussion-item, #input-area, .pager a span, .page-sizer a {
     background: #222 !important;
+    color: #ddd !important;
   }
 
   .tour-page .tour-content section:nth-child(n+1), .users-page .user-info:hover {
@@ -265,7 +266,7 @@
   .youarehere, .dropdown li.selected a, .dropdown li.selected a:hover, .ob-docs .example-metric,
   .menu-popout, .version-row, .version-name, .post-tag, .post-tag:visited,
   .switcher input[type="radio"]:checked+label, .double-input .separator, .geo-tag,
-  .MathJax_Menu, .MathJax_MenuLabel:focus, .salary-calc-inputs {
+  .MathJax_Menu, .MathJax_MenuLabel:focus, .salary-calc-inputs, .question-container.unread {
     background: #333 !important;
     color: #ccc !important;
   }
@@ -286,12 +287,16 @@
     background: #404040 !important;
   }
 
-  tr.comment:hover, .reply-parent, .timestamp, .usercard, .page-numbers.current,
+  tr.comment:hover, .reply-parent, .timestamp, .usercard,
   .comment-help, .answer-help-background, .mdhelp-tabs, .tabs li, .hi, .seNavLinks a:hover,
   .seNavLinks a:focus, .itemBoxNew, .pagination a.current, .pagination a.selected, .pagination a:hover,
   .wb-wearing, .impact-card hr, .MathJax_MenuActive {
     background-color: #444 !important;
     color: #ddd !important;
+  }
+
+  .page-numbers.current {
+    background: #444 !important;
   }
 
   #chat .messages .mention {
@@ -310,7 +315,7 @@
 
   /* === Brown(ish) === */
   .new-post-activity, #new-answer-activity, .val-info, .highlight, a.youarehere:before,
-  .message.regular {
+  .message.regular, .filter-dashboard-edit .floating-help {
     background-color: rgba(51,34,17,.4) !important;
   }
   pre .spaces, .message.message-warning {
@@ -330,7 +335,7 @@
   /* === Green === */
   .accepted-answer, .suggested-edit .inserted, .markdown-diff .inserted, .rep-increase, .progress-bar .percent,
   .recommended, .vote.accepted, .suggested-edit .inserted>div, .full-diff .inserted>div,
-  .message.success, .p-highlights .-rep-increase, .s-progress-bar .-fill {
+  .message.success, .p-highlights .-rep-increase, .s-progress-bar .-fill, .answerBox.accepted {
     background: #232 !important;
   }
 
@@ -400,7 +405,7 @@
   #profile-side #side-menu a, .sidebar-profile .-header, .sidebar-profile .-footer,
   #popup-next-badge .-header, .popup-close .-link, .job-cover-image.-no-image, #job-detail,
   .s-footer .-container, .p-top-tags .badge-tag, .gsc-webResult.gsc-result, .gsc-imageResult,
-  .gsc-cursor-page, .gsc-cursor-current-page {
+  .gsc-cursor-page, .gsc-cursor-current-page, .metaInfo .owner {
     background-color: transparent !important;
   }
 
@@ -492,16 +497,17 @@
     color: #ccc !important;
     border: 1px solid #135 !important;
   }
-  .hero-box {
+  .hero-box, .filter-show-more {
     background: #182030 !important;
   }
-  .review-actions input, .btn, .chosen-choices .search-choice, .topbar-dialog a.btn-secondary {
+  .review-actions input, .btn, .chosen-choices .search-choice, .topbar-dialog a.btn-secondary,
+  .filter-dashboard, input[type=submit] {
     background: #182030 !important;
     color: #ccc !important;
     border: 1px solid #135 !important;
   }
   .review-actions input:hover, .btn:hover, .btn-secondary:hover, #job-board-save:hover,
-  .topbar-dialog a.btn-secondary:hover {
+  .topbar-dialog a.btn-secondary:hover, input[type=submit]:hover {
     background: #273045 !important;
   }
   .s-hero {
@@ -520,7 +526,7 @@
   #snpte-button-run, .comment-link, .timeline .header h4, .-title, #profile-side #side-menu a:hover,
   .-rep, .-total, .-list-item .-description, .message.message-error a, .chosen-container .chosen-results li,
   .salary-calc-inputs span, .salary-survey-dialog .header h3, .title-banner h1, .salary-results-container h1,
-  .topbar-dialog h4, .label-key > b {
+  .topbar-dialog h4, .label-key > b, .heading, .module h3 {
     color: #ddd !important;
   }
   /* patch for hint text of SurfingKeys browser extension */
@@ -812,6 +818,10 @@
   .podcast-container {
     -webkit-filter: invert(100%) !important;
     filter: invert(100%) !important;
+  }
+  .filters-sidebar .filters ul li.current,
+  .filters-sidebar .filters ul li.current .filter-unread-count {
+    background: #182030 !important;
   }
   /* end blog.stackexchange.com */
   /* chat.stackexchange.com */
