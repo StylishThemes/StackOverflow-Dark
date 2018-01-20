@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name        Stackoverflow Dark
 @namespace   StylishThemes
-@version     2.11.1
+@version     2.11.2
 @homepageURL https://github.com/StylishThemes/Stackoverflow-Dark
 @updateURL   https://raw.githubusercontent.com/StylishThemes/Stackoverflow-Dark/master/stackoverflow-dark.user.css
 @license     CC-BY-SA-4.0
@@ -77,7 +77,7 @@
 ==/UserStyle== */
 @-moz-document regexp("^https?://((chat|meta|es|ja|pt|ru)\\.)*stackoverflow\\.com.*"), domain("serverfault.com"), domain("superuser.com"), domain("stackapps.com"), domain("mathoverflow.net"), domain("askubuntu.com"), regexp("^https?://((?!(www|area51|gaming)).*\\.)?stackexchange\\.com.*") {
   /***************************************************************
-  Stack Overflow Dark v2.11.1 (2018-01-09)
+  Stack Overflow Dark v2.11.2 (2018-01-20)
   https://github.com/StylishThemes/StackOverflow-Dark
   http://userstyles.org/styles/35345
 
@@ -441,6 +441,10 @@
   .message.error {
     background-color: #200 !important;
   }
+  .post-timeline-v2 .post-timeline tr.deleted-event td,
+  .post-timeline-v2 .post-timeline tr.deleted-event-details td {
+    background-color: rgba(34, 0, 0, .4) !important;
+  }
   span.diff-delete {
     background-color: #400f00 !important;
     color: #ff4a15 !important;
@@ -617,7 +621,7 @@
   .votes-cast-stats td, .mini-counts span, #chat .system-message, .card .rep, a.badge, a.badge-tag,
   .user-card .user-stats .number, .user-card .user-card-name, a.question-hyperlink:hover,
   a.answer-hyperlink:hover, .cv-story .time-frame, .-list-item.is-completed .-description,
-  .s-footer .-toc th {
+  .s-footer .-toc th, .event-count, .post-timeline td, .post-timeline th {
     color: #aaa !important;
   }
   .ob-post-tag, .ob-user-tag {
@@ -772,7 +776,8 @@
   .intellitab .menu-switcher:hover{
     background-color: #222 !important;
   }
-  .intellitab.dropdown-enabled:hover .menu-switcher, .intellitab .dropdown a:hover {
+  .intellitab.dropdown-enabled:hover .menu-switcher, .intellitab .dropdown a:hover,
+  .post-timeline-v2 .post-timeline tr.separator > td > div {
     background-color: #444 !important;
   }
   .dropdown:before {
