@@ -278,7 +278,7 @@
   #side-menu ul li a:hover, .conversation-info, .message.reply-parent, .message.reply-child,
   .sidebar-element .list li .rep-and-badges, .congrats .actions, .newsletters-toggle,
   .tag-suggestions>div:focus, .current-site a.site-link:hover, #sub-navs>a:hover,
-  #sub-navs .menu-item:hover, .popup-close .-link:hover {
+  #sub-navs .menu-item:hover, .popup-close .-link:hover, .p-highlights .-reputation .-meta-rep {
     background-color: #333 !important;
   }
 
@@ -1384,5 +1384,57 @@
   }
   a.question-hyperlink:hover, a.question-hyperlink:visited {
     color: #aaa !important;
+  }
+}
+@-moz-document domain("data.stackexchange.com") {
+  .cm-sql-word,
+  .relativetime,
+  .profiler-number,
+  #query-options .options,
+  #query-options label {
+    color: #ccc !important;
+  }
+  #messagesTab,
+  .querylist .views {
+    background: transparent !important;
+  }
+  #history li,
+  #recaptcha_table,
+  #query .right-group,
+  #schema .heading, #history .heading,
+  .slick-header .slick-header-column,
+  .profiler-result .profiler-timings th {
+    border-color: #555 !important;
+    background: #111 !important;
+  }
+  #schema dl dd {
+    background: #181818 !important;
+  }
+  #schema .schema-table,
+  nav.primary .site-selector-popup,
+  .profiler-results .profiler-popup,
+  .slick-row.odd, #messagesTab:hover,
+  .profiler-results .profiler-controls,
+  .profiler-results .profiler-button:not(.profiler-button-active) {
+    background: #1d1d1d !important;
+    color: #ddd !important;
+  }
+  .error-message {
+    background: #320000 !important;
+    border-color: #430 !important;
+    color: #ddd !important;
+  }
+  .cm-sql-keyword {
+    color: #00a2ff !important;
+  }
+  .cm-s-default span.cm-sql-var,
+  .cm-variable-2 {
+    color: #f53636 !important;
+  }
+  .cm-sql-type {
+    color: #a84eff !important;
+  }
+  .cm-sql-function {
+    color: #b571e2 !important;
   }
 }
