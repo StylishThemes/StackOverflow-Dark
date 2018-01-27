@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name        Stackoverflow Dark
 @namespace   StylishThemes
-@version     2.11.3
+@version     2.11.4
 @homepageURL https://github.com/StylishThemes/Stackoverflow-Dark
 @updateURL   https://raw.githubusercontent.com/StylishThemes/Stackoverflow-Dark/master/stackoverflow-dark.user.css
 @license     CC-BY-SA-4.0
@@ -77,7 +77,7 @@
 ==/UserStyle== */
 @-moz-document regexp("^https?://((chat|meta|es|ja|pt|ru)\\.)*stackoverflow\\.com.*"), domain("serverfault.com"), domain("superuser.com"), domain("stackapps.com"), domain("mathoverflow.net"), domain("askubuntu.com"), regexp("^https?://((?!(www|area51|gaming)).*\\.)?stackexchange\\.com.*") {
   /***************************************************************
-  Stack Overflow Dark v2.11.3 (2018-01-20)
+  Stack Overflow Dark v2.11.4 (2018-01-27)
   https://github.com/StylishThemes/StackOverflow-Dark
   http://userstyles.org/styles/35345
 
@@ -355,7 +355,7 @@
   #side-menu ul li a:hover, .conversation-info, .message.reply-parent, .message.reply-child,
   .sidebar-element .list li .rep-and-badges, .congrats .actions, .newsletters-toggle,
   .tag-suggestions>div:focus, .current-site a.site-link:hover, #sub-navs>a:hover,
-  #sub-navs .menu-item:hover, .popup-close .-link:hover {
+  #sub-navs .menu-item:hover, .popup-close .-link:hover, .p-highlights .-reputation .-meta-rep {
     background-color: #333 !important;
   }
 
@@ -1444,5 +1444,57 @@
   }
   a.question-hyperlink:hover, a.question-hyperlink:visited {
     color: #aaa !important;
+  }
+}
+@-moz-document domain("data.stackexchange.com") {
+  .cm-sql-word,
+  .relativetime,
+  .profiler-number,
+  #query-options .options,
+  #query-options label {
+    color: #ccc !important;
+  }
+  #messagesTab,
+  .querylist .views {
+    background: transparent !important;
+  }
+  #history li,
+  #recaptcha_table,
+  #query .right-group,
+  #schema .heading, #history .heading,
+  .slick-header .slick-header-column,
+  .profiler-result .profiler-timings th {
+    border-color: #555 !important;
+    background: #111 !important;
+  }
+  #schema dl dd {
+    background: #181818 !important;
+  }
+  #schema .schema-table,
+  nav.primary .site-selector-popup,
+  .profiler-results .profiler-popup,
+  .slick-row.odd, #messagesTab:hover,
+  .profiler-results .profiler-controls,
+  .profiler-results .profiler-button:not(.profiler-button-active) {
+    background: #1d1d1d !important;
+    color: #ddd !important;
+  }
+  .error-message {
+    background: #320000 !important;
+    border-color: #430 !important;
+    color: #ddd !important;
+  }
+  .cm-sql-keyword {
+    color: #00a2ff !important;
+  }
+  .cm-s-default span.cm-sql-var,
+  .cm-variable-2 {
+    color: #f53636 !important;
+  }
+  .cm-sql-type {
+    color: #a84eff !important;
+  }
+  .cm-sql-function {
+    color: #b571e2 !important;
   }
 }
