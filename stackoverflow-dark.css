@@ -566,7 +566,8 @@
     -webkit-text-fill-color: #fff !important;
   }
 
-  .post-text a:visited, .comment-text a:not(.comment-user):visited {
+  .post-text a:visited, .comment-text a:not(.comment-user):visited, #chat-body .content a:visited,
+  .question-hyperlink:visited, .answer-hyperlink:visited, #hot-network-questions ul a:visited {
     color: /*[[visited-color]]*/ #4183C4 !important;
   }
   .rep-up {
@@ -1382,7 +1383,7 @@
   a.question-hyperlink {
     color: /*[[base-color]]*/ #008080 !important;
   }
-  a.question-hyperlink:hover, a.question-hyperlink:visited {
+  a.question-hyperlink:hover {
     color: #aaa !important;
   }
 }
