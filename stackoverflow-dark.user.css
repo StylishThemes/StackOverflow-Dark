@@ -643,7 +643,8 @@
     -webkit-text-fill-color: #fff !important;
   }
 
-  .post-text a:visited, .comment-text a:not(.comment-user):visited {
+  .post-text a:visited, .comment-text a:not(.comment-user):visited, #chat-body .content a:visited,
+  .question-hyperlink:visited, .answer-hyperlink:visited, #hot-network-questions ul a:visited{
     color: /*[[visited-color]]*/ !important;
   }
   .rep-up {
