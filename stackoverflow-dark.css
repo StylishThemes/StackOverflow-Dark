@@ -406,7 +406,7 @@
   #profile-side #side-menu a, .sidebar-profile .-header, .sidebar-profile .-footer,
   #popup-next-badge .-header, .popup-close .-link, .job-cover-image.-no-image, #job-detail,
   .s-footer .-container, .p-top-tags .badge-tag, .gsc-webResult.gsc-result, .gsc-imageResult,
-  .gsc-cursor-page, .gsc-cursor-current-page, .metaInfo .owner {
+  .gsc-cursor-page, .gsc-cursor-current-page, .metaInfo .owner, #content > .subheader {
     background-color: transparent !important;
   }
 
