@@ -239,7 +239,8 @@
   }
 
   .answer, #system-message, .commentlist, .revision td, #hero-content, .mdhelp-tabs .selected, .tabs .selected,
-  .rep-card .rep-col, .sort select, .-job._highlighted, .MathJax_MenuDisabled, .gsc-option-menu-item-highlighted {
+  .rep-card .rep-col, .sort select, .-job._highlighted, .MathJax_MenuDisabled, .gsc-option-menu-item-highlighted,
+  .secondary-job-results-identifier {
     background: #232323 !important;
     color: #999 !important;
   }
