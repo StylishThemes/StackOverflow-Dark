@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name        Stackoverflow Dark
 @namespace   StylishThemes
-@version     2.11.4
+@version     2.11.6
 @homepageURL https://github.com/StylishThemes/Stackoverflow-Dark
 @updateURL   https://raw.githubusercontent.com/StylishThemes/Stackoverflow-Dark/master/stackoverflow-dark.user.css
 @license     CC-BY-SA-4.0
@@ -77,7 +77,7 @@
 ==/UserStyle== */
 @-moz-document regexp("^https?://((chat|meta|es|ja|pt|ru)\\.)*stackoverflow\\.com.*"), domain("serverfault.com"), domain("superuser.com"), domain("stackapps.com"), domain("mathoverflow.net"), domain("askubuntu.com"), regexp("^https?://((?!(www|area51|gaming)).*\\.)?stackexchange\\.com.*") {
   /***************************************************************
-  Stack Overflow Dark v2.11.4 (2018-01-27)
+  Stack Overflow Dark v2.11.6 (2018-04-10)
   https://github.com/StylishThemes/StackOverflow-Dark
   http://userstyles.org/styles/35345
 
@@ -316,7 +316,8 @@
   }
 
   .answer, #system-message, .commentlist, .revision td, #hero-content, .mdhelp-tabs .selected, .tabs .selected,
-  .rep-card .rep-col, .sort select, .-job._highlighted, .MathJax_MenuDisabled, .gsc-option-menu-item-highlighted {
+  .rep-card .rep-col, .sort select, .-job._highlighted, .MathJax_MenuDisabled, .gsc-option-menu-item-highlighted,
+  .secondary-job-results-identifier {
     background: #232323 !important;
     color: #999 !important;
   }
@@ -482,7 +483,7 @@
   #profile-side #side-menu a, .sidebar-profile .-header, .sidebar-profile .-footer,
   #popup-next-badge .-header, .popup-close .-link, .job-cover-image.-no-image, #job-detail,
   .s-footer .-container, .p-top-tags .badge-tag, .gsc-webResult.gsc-result, .gsc-imageResult,
-  .gsc-cursor-page, .gsc-cursor-current-page, .metaInfo .owner {
+  .gsc-cursor-page, .gsc-cursor-current-page, .metaInfo .owner, #content > .subheader {
     background-color: transparent !important;
   }
 
@@ -644,7 +645,7 @@
   }
 
   .post-text a:visited, .comment-text a:not(.comment-user):visited, #chat-body .content a:visited,
-  .question-hyperlink:visited, .answer-hyperlink:visited, #hot-network-questions ul a:visited{
+  .question-hyperlink:visited, .answer-hyperlink:visited, #hot-network-questions ul a:visited {
     color: /*[[visited-color]]*/ !important;
   }
   .rep-up {
@@ -1443,7 +1444,7 @@
   a.question-hyperlink {
     color: /*[[base-color]]*/ !important;
   }
-  a.question-hyperlink:hover, a.question-hyperlink:visited {
+  a.question-hyperlink:hover {
     color: #aaa !important;
   }
 }
