@@ -551,7 +551,7 @@
   .votes-cast-stats td, .mini-counts span, #chat .system-message, .card .rep, a.badge, a.badge-tag,
   .user-card .user-stats .number, .user-card .user-card-name, a.question-hyperlink:hover,
   a.answer-hyperlink:hover, .cv-story .time-frame, .-list-item.is-completed .-description,
-  .s-footer .-toc th, .event-count, .post-timeline td, .post-timeline th {
+  .s-footer .-toc th, .event-count, .post-timeline td, .post-timeline th, #side-menu ul .category {
     color: #aaa !important;
   }
   .ob-post-tag, .ob-user-tag {
