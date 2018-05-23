@@ -124,18 +124,19 @@
   .top-bar .-item._active, .top-bar .-link.topbar-icon-on, .top-bar .-link.topbar-icon-on:hover,
   .top-bar .-feature-notice:hover, .top-bar .-feature-notice.topbar-icon-on, .topbar-dialog .dialog-content,
   .feature-notice-dialog:before, .-item.social, .salary-results-container .collection, .sidebar #post-job,
-  .sidebar .salary-survey-sidebar, .ui-dialog {
+  .sidebar .salary-survey-sidebar, .ui-dialog, .salary-calculator-calculator, .sticky-menu-wrapper._sticky {
     background: #151515 !important;
   }
 
   html, blockquote, #post-preview, .nav .primarynav li a, #chat, #hsearch .textbox, .form-item, .grippie,
   .welovestackoverflow, #wmd-button-bar, .wmd-button-bar, .qa-block, .content-block, .user-info-rep, .sidebar,
   .popup, .full-diff, .val-success, .search-form .filter-pane nav, .s-card, .chosen-container .chosen-drop,
-  .pac-item.pac-item-selected, .pac-item:hover, .-item.social:hover, #add-tags-button, #filter-preview {
+  .pac-item.pac-item-selected, .pac-item:hover, .-item.social:hover, #add-tags-button, #filter-preview,
+  .salary-results {
     background: #191919 !important;
   }
 
-  .authcomment, .seIntro, .seFooter, .title-banner, .salary-results-wrapper {
+  .authcomment, .seIntro, .seFooter, .title-banner, .salary-results-wrapper, .salary-skill-legend {
     background-color: #191919 !important;
     border: 2px solid #262626 !important;
   }
@@ -172,7 +173,7 @@
     color: #C1BEBA !important;
   }
 
-  #chat .mine .messages {
+  #chat .mine .messages, .salary-share {
     background-color: #292929 !important;
     border: 1px solid #444 !important;
   }
@@ -559,7 +560,7 @@
   }
 
   .answered-accepted strong, .youarehere, .nav .primarynav li a, .nav a, a:hover, .rep-up.special-rep,
-  .pac-item-query {
+  .pac-item-query, #content .salary-subheader, .salary-skill-legend-li .-score {
     color: #fff !important;
   }
 
