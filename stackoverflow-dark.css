@@ -189,7 +189,8 @@
   kbd, kbd code, .switcher label, .timeline-item-actions, .cv-story .section-opener h2,
   .cv-story .section-opener:after, .header-edit-section .ctas,
   .item-select-table .item:hover, .visa-wrapper, .chosen-choices, .p-top-tags .-tag-group,
-  .chosen-results .active-result, .salary-results-wrapper .inline-survey-cta {
+  .chosen-results .active-result, .salary-results-wrapper .inline-survey-cta,
+  #messages-interface .callout {
     background-color: #222 !important;
     color: #ddd !important;
   }
@@ -224,7 +225,8 @@
     color: #ddd !important;
   }
 
-  .tour-page .tour-content section:nth-child(n+1), .users-page .user-info:hover {
+  .tour-page .tour-content section:nth-child(n+1), .users-page .user-info:hover,
+  .nav-left-col a {
     background: rgba(34,34,34,.5) !important;
   }
 
@@ -252,7 +254,8 @@
 
   .tagged-interesting, .tagged-interesting .views, .highlight-row, .highlighted, .card.rep-card .graph,
   .badge-progress:hover, #newsletter-ad, .search-form .icon-advanced-search,
-  .message.gray, .menu-popout li:hover, .menu-popout .is-selected, #job-detail .-sticky-tabs {
+  .message.gray, .menu-popout li:hover, .menu-popout .is-selected, #job-detail .-sticky-tabs,
+  .nav-left-col a:hover {
     background-color: #242424 !important;
     background-image: none !important;
   }
@@ -280,7 +283,8 @@
   #side-menu ul li a:hover, .conversation-info, .message.reply-parent, .message.reply-child,
   .sidebar-element .list li .rep-and-badges, .congrats .actions, .newsletters-toggle,
   .tag-suggestions>div:focus, .current-site a.site-link:hover, #sub-navs>a:hover,
-  #sub-navs .menu-item:hover, .popup-close .-link:hover, .p-highlights .-reputation .-meta-rep {
+  #sub-navs .menu-item:hover, .popup-close .-link:hover, .p-highlights .-reputation .-meta-rep,
+  .nav-left-col a.is-active {
     background-color: #333 !important;
   }
 
@@ -474,13 +478,20 @@
     border-top: #444 1px solid !important;
     border-bottom: #444 1px solid !important;
   }
+  #sub-navs .youarehere {
+    border-top-color: /*[[base-color]]*/ #008080 !important;
+  }
+  .nav-left-col .is-active {
+    border-right-color: /*[[base-color]]*/ #008080 !important;
+  }
 
   /* === No/hide border === */
   div.list > div {
     border-right: 0 !important;
   }
   .module, .tabs a, div.message, .full-diff td, .wb-outer:not(.wb-selected),
-  .page-numbers.dots, .p-top-tags .badge-tag, .page-numbers.desc, .intellitab:not(.selected) a {
+  .page-numbers.dots, .p-top-tags .badge-tag, .page-numbers.desc, .intellitab:not(.selected) a,
+  #sub-navs .menu-item .menu-switcher {
     border-color: transparent !important;
   }
   .left-arrow, .right-arrow {
@@ -696,7 +707,8 @@
   }
 
   #sound, .vote-count-container.stars .img, #sub-navs>a:hover .messages-icon,
-  .industries:before, .js-reputation-graph, .js-reputation-graph * {
+  .industries:before, .js-reputation-graph, .js-reputation-graph *,
+  #sub-navs .messages-icon {
     -webkit-filter: invert(100%) !important;
     filter: invert(100%) !important;
   }
