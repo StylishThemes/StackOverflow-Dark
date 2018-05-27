@@ -109,7 +109,7 @@
   .profile-popup, .profile-popup div, .profile-popup th, .profile-popup td, #global, .actual-edit-overlay,
   input:not([type="submit"]), textarea, #search input, .tag-editor, .f-select > select, textarea#input,
   .search-form .chosen-container .chosen-choices, .pac-container, select, #match-preferences-editor .close:hover,
-  .gsc-input-box, .gsc-option-menu {
+  .gsc-input-box, .gsc-option-menu, .subheader {
     background-color: #111 !important;
     color: #ddd !important;
   }
@@ -124,7 +124,8 @@
   .top-bar .-item._active, .top-bar .-link.topbar-icon-on, .top-bar .-link.topbar-icon-on:hover,
   .top-bar .-feature-notice:hover, .top-bar .-feature-notice.topbar-icon-on, .topbar-dialog .dialog-content,
   .feature-notice-dialog:before, .-item.social, .salary-results-container .collection, .sidebar #post-job,
-  .sidebar .salary-survey-sidebar, .ui-dialog, .salary-calculator-calculator, .sticky-menu-wrapper._sticky {
+  .sidebar .salary-survey-sidebar, .ui-dialog, .salary-calculator-calculator, .sticky-menu-wrapper._sticky,
+  .-summary {
     background: #151515 !important;
   }
 
@@ -347,6 +348,9 @@
 
   span.diff-add {
     background: #3F4E1D !important;
+    color: #92CC09 !important;
+  }
+  .topbar-dialog.achievements-dialog .rep-up {
     color: #92CC09 !important;
   }
 
@@ -708,7 +712,7 @@
 
   #sound, .vote-count-container.stars .img, #sub-navs>a:hover .messages-icon,
   .industries:before, .js-reputation-graph, .js-reputation-graph *,
-  #sub-navs .messages-icon {
+  #sub-navs .messages-icon, .topbar-dialog .header .icon-close {
     -webkit-filter: invert(100%) !important;
     filter: invert(100%) !important;
   }
