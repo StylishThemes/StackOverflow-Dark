@@ -459,7 +459,8 @@
     border-color: #333 !important;
   }
 
-  a.required-tag, .topbar-dialog.feature-notice-dialog:before {
+  a.required-tag, .topbar-dialog.feature-notice-dialog:before,
+  .site-footer .-link._expandable:after {
     border-color: #555 !important;
   }
 
