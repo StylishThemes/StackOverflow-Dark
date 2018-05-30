@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name        Stackoverflow Dark
 @namespace   StylishThemes
-@version     2.11.11
+@version     2.11.12
 @homepageURL https://github.com/StylishThemes/Stackoverflow-Dark
 @updateURL   https://raw.githubusercontent.com/StylishThemes/Stackoverflow-Dark/master/stackoverflow-dark.user.css
 @license     CC-BY-SA-4.0
@@ -77,7 +77,7 @@
 ==/UserStyle== */
 @-moz-document regexp("^https?://((chat|meta|es|ja|pt|ru)\\.)*stackoverflow\\.com.*"), domain("serverfault.com"), domain("superuser.com"), domain("stackapps.com"), domain("mathoverflow.net"), domain("askubuntu.com"), regexp("^https?://((?!(www|area51|gaming)).*\\.)?stackexchange\\.com.*") {
   /***************************************************************
-  Stack Overflow Dark v2.11.11 (2018-05-30)
+  Stack Overflow Dark v2.11.12 (2018-05-30)
   https://github.com/StylishThemes/StackOverflow-Dark
   http://userstyles.org/styles/35345
 
@@ -497,7 +497,8 @@
   #profile-side #side-menu a, .sidebar-profile .-header, .sidebar-profile .-footer,
   #popup-next-badge .-header, .popup-close .-link, .job-cover-image.-no-image, #job-detail,
   .s-footer .-container, .p-top-tags .badge-tag, .gsc-webResult.gsc-result, .gsc-imageResult,
-  .gsc-cursor-page, .gsc-cursor-current-page, .metaInfo .owner, #content > .subheader, header.job-details--header {
+  .gsc-cursor-page, .gsc-cursor-current-page, .metaInfo .owner, #content > .subheader,
+  header.job-details--header, .site-footer--container {
     background-color: transparent !important;
   }
 
@@ -535,7 +536,8 @@
     border-color: #333 !important;
   }
 
-  a.required-tag, .topbar-dialog.feature-notice-dialog:before {
+  a.required-tag, .topbar-dialog.feature-notice-dialog:before,
+  .site-footer .-link._expandable:after {
     border-color: #555 !important;
   }
 
