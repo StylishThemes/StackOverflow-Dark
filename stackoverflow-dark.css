@@ -50,7 +50,8 @@
   span.bounty-indicator-tab, #change-picture, .top-badge,.supernovabg, .hotbg,
   .nav li.youarehere a, .nav a:hover, a.button:hover, .edit-count, .pager a:hover span,
   .bounties-tab, .login-link, #sidebar a[href*="/questions/ask"],
-  #sidebar a[href*="/questions/ask"]:visited, .page-numbers:hover {
+  #sidebar a[href*="/questions/ask"]:visited, .page-numbers:hover, .s-btn__primary,
+  .s-btn__primary:focus {
     background-color: /*[[base-color]]*/ #008080 !important;
     color: #eee !important;
   }
@@ -58,6 +59,10 @@
   #tabs a.youarehere:before, .tabs a.youarehere:before,
   .newnav .tabs-list-container .tabs-list .intellitab a.youarehere:before {
     background-color: /*[[base-color]]*/ #008080 !important;
+  }
+
+  .s-btn__primary:hover {
+    filter: brightness(1.1) !important;
   }
 
   /* === text selection === */
@@ -201,7 +206,7 @@
   .list-originals .body-summary, .review-instructions-reason, .room-mini, #formContainer, #switch,
   .login-topbar, .newsletter-category, .newsletter-item, .blogcontainer, .usercard-xxl, .roomcard-xxl,
   .docs-review-page .topic-draft-bar, .badge-progress, .avatar-wrapper, .timeline-line,
-  .s-progress-bar .-bar, .-job-badges .-badge, .search-form .job-alert-tooltip {
+  .s-progress-bar .-bar, .-job-badges .-badge, .search-form .job-alert-tooltip, .bg-white {
     background-color: #222 !important;
     border-color: #555 !important;
     color: #ddd !important;
@@ -415,7 +420,7 @@
   #profile-side #side-menu a, .sidebar-profile .-header, .sidebar-profile .-footer,
   #popup-next-badge .-header, .popup-close .-link, .job-cover-image.-no-image, #job-detail,
   .s-footer .-container, .p-top-tags .badge-tag, .gsc-webResult.gsc-result, .gsc-imageResult,
-  .gsc-cursor-page, .gsc-cursor-current-page, .metaInfo .owner, #content > .subheader {
+  .gsc-cursor-page, .gsc-cursor-current-page, .metaInfo .owner, #content > .subheader, header.job-details--header {
     background-color: transparent !important;
   }
 
@@ -575,7 +580,8 @@
   }
 
   .answered-accepted strong, .youarehere, .nav .primarynav li a, .nav a, a:hover, .rep-up.special-rep,
-  .pac-item-query, #content .salary-subheader, .salary-skill-legend-li .-score {
+  .pac-item-query, #content .salary-subheader, .salary-skill-legend-li .-score,
+  header.job-details--header a {
     color: #fff !important;
   }
 
