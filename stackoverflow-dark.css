@@ -130,7 +130,7 @@
   .top-bar .-feature-notice:hover, .top-bar .-feature-notice.topbar-icon-on, .topbar-dialog .dialog-content,
   .feature-notice-dialog:before, .-item.social, .salary-results-container .collection, .sidebar #post-job,
   .sidebar .salary-survey-sidebar, .ui-dialog, .salary-calculator-calculator, .sticky-menu-wrapper._sticky,
-  .-summary {
+  .-summary, .field._toolbar .-toolbar {
     background: #151515 !important;
   }
 
@@ -261,7 +261,7 @@
   .tagged-interesting, .tagged-interesting .views, .highlight-row, .highlighted, .card.rep-card .graph,
   .badge-progress:hover, #newsletter-ad, .search-form .icon-advanced-search,
   .message.gray, .menu-popout li:hover, .menu-popout .is-selected, #job-detail .-sticky-tabs,
-  .nav-left-col a:hover {
+  .nav-left-col a:hover, .deleted-answer footer .user-info, .util-bar, .user-info {
     background-color: #242424 !important;
     background-image: none !important;
   }
@@ -277,7 +277,8 @@
   .youarehere, .dropdown li.selected a, .dropdown li.selected a:hover, .ob-docs .example-metric,
   .menu-popout, .version-row, .version-name, .post-tag, .post-tag:visited,
   .switcher input[type="radio"]:checked+label, .double-input .separator, .geo-tag,
-  .MathJax_Menu, .MathJax_MenuLabel:focus, .salary-calc-inputs, .question-container.unread {
+  .MathJax_Menu, .MathJax_MenuLabel:focus, .salary-calc-inputs, .question-container.unread,
+  .comments-wrap {
     background: #333 !important;
     color: #ccc !important;
   }
@@ -290,7 +291,9 @@
   .sidebar-element .list li .rep-and-badges, .congrats .actions, .newsletters-toggle,
   .tag-suggestions>div:focus, .current-site a.site-link:hover, #sub-navs>a:hover,
   #sub-navs .menu-item:hover, .popup-close .-link:hover, .p-highlights .-reputation .-meta-rep,
-  .nav-left-col a.is-active {
+  .nav-left-col a.is-active, .comment__highlight:not([style*="background-color"]),
+  ul.comments-list .comment__highlight .comment-text,
+  ul.comments-list .comment__highlight .comment-actions  {
     background-color: #333 !important;
   }
 
@@ -311,9 +314,15 @@
     background: #444 !important;
   }
 
+  .comment__highlight:not([style*="background-color"]),
+  ul.comments-list .comment__highlight .comment-text,
+  ul.comments-list .comment__highlight .comment-actions {
+    background: rgba(102, 102, 102, .8) !important;
+  }
   #chat .messages .mention {
     background: #666 !important;
   }
+
   #post-text-container div span {
     background: #c1beba !important;
   }
@@ -355,13 +364,17 @@
     background: #3F4E1D !important;
     color: #92CC09 !important;
   }
-  .topbar-dialog.achievements-dialog .rep-up {
+  .topbar-dialog.achievements-dialog .rep-up, .-activity .-stat.answered {
     color: #92CC09 !important;
   }
 
   .answered, .answer-votes, .answered .vote-count-post {
     background: #232323 !important;
     color: #4b553c !important;
+  }
+  .user-show-new .user-rep .rep-amount .rep-up, .-stats.rep-up {
+    color: #4b553c !important;
+    border-color: #4b553c !important;
   }
 
   .answered-accepted, .answered-accepted strong, .rep-up.bounty-indicator-tab, .user-rep-chart-summary-bar,
@@ -370,7 +383,7 @@
     color: #fff !important;
   }
 
-  .answered strong {
+  .answered strong, .user-show-new .user-rep-full .rep-up {
     color: #4b553c !important;
   }
 
@@ -381,13 +394,19 @@
   /* === Red === */
   .deleted-answer, .suggested-edit .deleted, .markdown-diff .deleted, .suggested-edit .deleted>div,
   .full-diff .deleted>div, .realtime-post-deleted-notification p, .message.incomplete,
-  .message.error {
+  .message.error, .deleted-answer .comments-wrap, .deleted-answer .user-info,
+  .deleted-answer .util-bar, .deleted-answer .comment {
     background-color: #200 !important;
   }
   .post-timeline-v2 .post-timeline tr.deleted-event td,
   .post-timeline-v2 .post-timeline tr.deleted-event-details td {
     background-color: rgba(34, 0, 0, .4) !important;
   }
+  /* Mobile */
+  .-summary .-votes, .deleted-answer .votes {
+    background-color: rgba(214, 217, 220, .2) !important;
+  }
+
   span.diff-delete {
     background-color: #400f00 !important;
     color: #ff4a15 !important;
@@ -421,7 +440,8 @@
   #popup-next-badge .-header, .popup-close .-link, .job-cover-image.-no-image, #job-detail,
   .s-footer .-container, .p-top-tags .badge-tag, .gsc-webResult.gsc-result, .gsc-imageResult,
   .gsc-cursor-page, .gsc-cursor-current-page, .metaInfo .owner, #content > .subheader,
-  header.job-details--header, .site-footer--container {
+  header.job-details--header, .site-footer--container, .-activity .-stat.answered,
+  .deleted-answer .comment-actions {
     background-color: transparent !important;
   }
 
@@ -550,7 +570,7 @@
   #snpte-button-run, .comment-link, .timeline .header h4, .-title, #profile-side #side-menu a:hover,
   .-rep, .-total, .-list-item .-description, .message.message-error a, .chosen-container .chosen-results li,
   .salary-calc-inputs span, .salary-survey-dialog .header h3, .title-banner h1, .salary-results-container h1,
-  .topbar-dialog h4, .label-key > b, .heading, .module h3 {
+  .topbar-dialog h4, .label-key > b, .heading, .module h3, .badge-tag {
     color: #ddd !important;
   }
   /* patch for hint text of SurfingKeys browser extension */
@@ -577,7 +597,7 @@
   .s-footer .-toc th, .event-count, .post-timeline td, .post-timeline th, #side-menu ul .category {
     color: #aaa !important;
   }
-  .ob-post-tag, .ob-user-tag {
+  .ob-post-tag, .ob-user-tag, .deleted-answer .util-bar a {
     color: #999 !important;
   }
 
@@ -684,15 +704,15 @@
     border-color: #111 !important;
   }
   .badge3-alternate, .progress-bar.badge-3 .bar .percent,
-  .s-progress-bar._badge._badge3 .-fill {
+  .s-progress-bar._badge._badge3 .-fill, .badge-wrapper._badge3 {
     background-color: #7C4318 !important; /* bronze */
   }
   .badge2-alternate, .progress-bar.badge-2 .bar .percent,
-  .s-progress-bar._badge._badge2 .-fill {
+  .s-progress-bar._badge._badge2 .-fill, .badge-wrapper._badge2 {
     background-color: #464a4f !important; /* silver */
   }
   .badge1-alternate, .progress-bar.badge-1 .bar .percent,
-  .s-progress-bar._badge._badge1 .-fill {
+  .s-progress-bar._badge._badge1 .-fill, .badge-wrapper._badge1 {
     background-color: #957000 !important; /* gold */
   }
 
