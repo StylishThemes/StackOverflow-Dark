@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name        Stackoverflow Dark
 @namespace   StylishThemes
-@version     2.11.13
+@version     2.11.14
 @homepageURL https://github.com/StylishThemes/Stackoverflow-Dark
 @updateURL   https://raw.githubusercontent.com/StylishThemes/Stackoverflow-Dark/master/stackoverflow-dark.user.css
 @license     CC-BY-SA-4.0
@@ -77,7 +77,7 @@
 ==/UserStyle== */
 @-moz-document regexp("^https?://((chat|meta|es|ja|pt|ru)\\.)*stackoverflow\\.com.*"), domain("serverfault.com"), domain("superuser.com"), domain("stackapps.com"), domain("mathoverflow.net"), domain("askubuntu.com"), regexp("^https?://((?!(www|area51|gaming)).*\\.)?stackexchange\\.com.*") {
   /***************************************************************
-  Stack Overflow Dark v2.11.13 (2018-06-01)
+  Stack Overflow Dark v2.11.14 (2018-06-12)
   https://github.com/StylishThemes/StackOverflow-Dark
   http://userstyles.org/styles/35345
 
@@ -231,7 +231,8 @@
   #tabs a.youarehere, .tabs a.youarehere, .tag-suggestions, .dropdown li,
   .proposed-change .diff-buttons a:not(.selected), #logout-form, .snippet-holder,
   .CodeMirror, .CodeMirror-gutters, .badge-progress.completed,
-  .timeline-item:before, .item-select-table .item, .title-box, .-list-item {
+  .timeline-item:before, .item-select-table .item, .title-box, .-list-item,
+  .bg-powder-050 {
     background-color: #191919 !important;
     border-color: #444 !important;
   }
@@ -552,12 +553,12 @@
   }
 
   .welovestackoverflow, .question-summary, .subheader,
-  .company-module .-details strong:before {
+  .company-module .-details strong:before, .bc-black-1 {
     border-color: #333 !important;
   }
 
   a.required-tag, .topbar-dialog.feature-notice-dialog:before,
-  .site-footer .-link._expandable:after {
+  .site-footer .-link._expandable:after, .bc-black-2 {
     border-color: #555 !important;
   }
 
@@ -622,13 +623,13 @@
     background: #182030 !important;
   }
   .review-actions input, .btn, .chosen-choices .search-choice, .topbar-dialog a.btn-secondary,
-  .filter-dashboard, input[type=submit] {
+  .filter-dashboard, input[type=submit], .bg-blue-500, .s-btn__filled {
     background: #182030 !important;
     color: #ccc !important;
     border: 1px solid #135 !important;
   }
   .review-actions input:hover, .btn:hover, .btn-secondary:hover, #job-board-save:hover,
-  .topbar-dialog a.btn-secondary:hover, input[type=submit]:hover {
+  .topbar-dialog a.btn-secondary:hover, input[type=submit]:hover, .s-btn__filled:hover {
     background: #273045 !important;
   }
   .s-hero {
@@ -647,7 +648,8 @@
   #snpte-button-run, .comment-link, .timeline .header h4, .-title, #profile-side #side-menu a:hover,
   .-rep, .-total, .-list-item .-description, .message.message-error a, .chosen-container .chosen-results li,
   .salary-calc-inputs span, .salary-survey-dialog .header h3, .title-banner h1, .salary-results-container h1,
-  .topbar-dialog h4, .label-key > b, .heading, .module h3, .badge-tag {
+  .topbar-dialog h4, .label-key > b, .heading, .module h3, .badge-tag, .s-label,
+  .-link__with-icon:hover .svg-icon {
     color: #ddd !important;
   }
   /* patch for hint text of SurfingKeys browser extension */
