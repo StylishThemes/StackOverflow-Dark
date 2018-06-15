@@ -298,6 +298,10 @@
     background-color: #333 !important;
   }
 
+  .nav-links .youarehere .nav-links--link .svg-icon {
+    color: #666;
+  } 
+
   .owner-answer, .question-status, .notification, #feed-ticker, #top-menu, .vote-revision td,
   .topbar-dialog .unread-item, .privileges-wrapper .stroke, .progress-bar .bar {
     background: #404040 !important;
