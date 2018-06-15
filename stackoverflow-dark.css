@@ -503,7 +503,7 @@
     border-bottom-color: #191919 !important;
   }
   .search-form .filter-pane a._active, .search-form .filter-pane a:hover {
-    border-bottom-color: #c0c0c0 !important;
+    border-bottom-color: /*[[base-color]]*/ #F48024 !important;
   }
   .left-arrow, .timeline-item:nth-child(odd):after {
     border-right-color: rgba(119,119,119,.4) !important;
