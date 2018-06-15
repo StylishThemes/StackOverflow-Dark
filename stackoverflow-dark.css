@@ -46,6 +46,10 @@
     background: /*[[base-color]]*/ #008080 !important;
   }
 
+  input[type="submit"].btn-clear, input[type="button"].btn-clear, button.btn-clear, .btn-clear {
+    color: /*[[base-color]]*/ #07C !important;
+  }
+ 
   a.post-tag:hover, .bounty-indicator, .bounty-indicator-tab, .bounty-award,
   span.bounty-indicator-tab, #change-picture, .top-badge,.supernovabg, .hotbg,
   .nav li.youarehere a, .nav a:hover, a.button:hover, .edit-count, .pager a:hover span,
