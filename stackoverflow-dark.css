@@ -50,6 +50,12 @@
     color: /*[[base-color]]*/ #07C !important;
   }
  
+  input[type="submit"].btn-clear:hover, input[type="button"].btn-clear:hover, button.btn-clear:hover, .btn-clear:hover,
+  input[type="submit"].btn-clear:focus, input[type="button"].btn-clear:focus, button.btn-clear:focus, .btn-clear:focus {
+    color: /*[[base-color]]*/ #005999 !important;
+    background: #273045 !important;
+  }
+ 
   a.post-tag:hover, .bounty-indicator, .bounty-indicator-tab, .bounty-award,
   span.bounty-indicator-tab, #change-picture, .top-badge,.supernovabg, .hotbg,
   .nav li.youarehere a, .nav a:hover, a.button:hover, .edit-count, .pager a:hover span,
