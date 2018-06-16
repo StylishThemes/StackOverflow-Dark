@@ -207,7 +207,7 @@
   .cv-story .section-opener:after, .header-edit-section .ctas,
   .item-select-table .item:hover, .visa-wrapper, .chosen-choices, .p-top-tags .-tag-group,
   .chosen-results .active-result, .salary-results-wrapper .inline-survey-cta,
-  #messages-interface .callout, .tour-bubble .-body {
+  #messages-interface .callout, .tour-bubble .-body, .why-jobs-v2 .developers-first select option {
     background-color: #222 !important;
     color: #ddd !important;
   }
@@ -456,7 +456,8 @@
   .s-footer .-container, .p-top-tags .badge-tag, .gsc-webResult.gsc-result, .gsc-imageResult,
   .gsc-cursor-page, .gsc-cursor-current-page, .metaInfo .owner, #content > .subheader,
   header.job-details--header, .site-footer--container, .-activity .-stat.answered,
-  .deleted-answer .comment-actions, .min-ds-wizard .current, .input-group .-fill._clean {
+  .deleted-answer .comment-actions, .min-ds-wizard .current, .input-group .-fill._clean,
+  .why-jobs-v2 .slanted-background:before {
     background-color: transparent !important;
   }
 
