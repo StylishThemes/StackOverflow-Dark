@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name        Stackoverflow Dark
 @namespace   StylishThemes
-@version     2.11.14
+@version     2.11.15
 @homepageURL https://github.com/StylishThemes/Stackoverflow-Dark
 @updateURL   https://raw.githubusercontent.com/StylishThemes/Stackoverflow-Dark/master/stackoverflow-dark.user.css
 @license     CC-BY-SA-4.0
@@ -77,7 +77,7 @@
 ==/UserStyle== */
 @-moz-document regexp("^https?://((chat|meta|es|ja|pt|ru)\\.)*stackoverflow\\.com.*"), domain("serverfault.com"), domain("superuser.com"), domain("stackapps.com"), domain("mathoverflow.net"), domain("askubuntu.com"), regexp("^https?://((?!(www|area51|gaming)).*\\.)?stackexchange\\.com.*") {
   /***************************************************************
-  Stack Overflow Dark v2.11.14 (2018-06-12)
+  Stack Overflow Dark v2.11.15 (2018-06-15)
   https://github.com/StylishThemes/StackOverflow-Dark
   http://userstyles.org/styles/35345
 
@@ -121,6 +121,16 @@
   .btn-careers:visited, .question-list-layout a:hover {
     color: #fff !important;
     background: /*[[base-color]]*/ !important;
+  }
+
+  input[type="submit"].btn-clear, input[type="button"].btn-clear, button.btn-clear, .btn-clear {
+    color: /*[[base-color]]*/ !important;
+  }
+
+  input[type="submit"].btn-clear:hover, input[type="button"].btn-clear:hover, button.btn-clear:hover, .btn-clear:hover,
+  input[type="submit"].btn-clear:focus, input[type="button"].btn-clear:focus, button.btn-clear:focus, .btn-clear:focus {
+    color: /*[[base-color]]*/ !important;
+    background: #273045 !important;
   }
 
   a.post-tag:hover, .bounty-indicator, .bounty-indicator-tab, .bounty-award,
@@ -191,7 +201,7 @@
   .profile-popup, .profile-popup div, .profile-popup th, .profile-popup td, #global, .actual-edit-overlay,
   input:not([type="submit"]), textarea, #search input, .tag-editor, .f-select > select, textarea#input,
   .search-form .chosen-container .chosen-choices, .pac-container, select, #match-preferences-editor .close:hover,
-  .gsc-input-box, .gsc-option-menu, .subheader {
+  .gsc-input-box, .gsc-option-menu, .subheader, .min-ds-wizard .min-ds-box.jobs {
     background-color: #111 !important;
     color: #ddd !important;
   }
@@ -207,7 +217,7 @@
   .top-bar .-feature-notice:hover, .top-bar .-feature-notice.topbar-icon-on, .topbar-dialog .dialog-content,
   .feature-notice-dialog:before, .-item.social, .salary-results-container .collection, .sidebar #post-job,
   .sidebar .salary-survey-sidebar, .ui-dialog, .salary-calculator-calculator, .sticky-menu-wrapper._sticky,
-  .-summary, .field._toolbar .-toolbar {
+  .-summary, .field._toolbar .-toolbar, .timeline .feature-banner__background {
     background: #151515 !important;
   }
 
@@ -232,7 +242,7 @@
   .proposed-change .diff-buttons a:not(.selected), #logout-form, .snippet-holder,
   .CodeMirror, .CodeMirror-gutters, .badge-progress.completed,
   .timeline-item:before, .item-select-table .item, .title-box, .-list-item,
-  .bg-powder-050 {
+  .bg-powder-050, .textarea-with-counter .-counter {
     background-color: #191919 !important;
     border-color: #444 !important;
   }
@@ -274,7 +284,7 @@
   .cv-story .section-opener:after, .header-edit-section .ctas,
   .item-select-table .item:hover, .visa-wrapper, .chosen-choices, .p-top-tags .-tag-group,
   .chosen-results .active-result, .salary-results-wrapper .inline-survey-cta,
-  #messages-interface .callout {
+  #messages-interface .callout, .tour-bubble .-body, .why-jobs-v2 .developers-first select option {
     background-color: #222 !important;
     color: #ddd !important;
   }
@@ -373,6 +383,10 @@
   ul.comments-list .comment__highlight .comment-text,
   ul.comments-list .comment__highlight .comment-actions  {
     background-color: #333 !important;
+  }
+
+  .nav-links .youarehere .nav-links--link .svg-icon {
+    color: #666;
   }
 
   .owner-answer, .question-status, .notification, #feed-ticker, #top-menu, .vote-revision td,
@@ -519,7 +533,8 @@
   .s-footer .-container, .p-top-tags .badge-tag, .gsc-webResult.gsc-result, .gsc-imageResult,
   .gsc-cursor-page, .gsc-cursor-current-page, .metaInfo .owner, #content > .subheader,
   header.job-details--header, .site-footer--container, .-activity .-stat.answered,
-  .deleted-answer .comment-actions {
+  .deleted-answer .comment-actions, .min-ds-wizard .current, .input-group .-fill._clean,
+  .why-jobs-v2 .slanted-background:before {
     background-color: transparent !important;
   }
 
@@ -566,7 +581,7 @@
     border-bottom-color: #191919 !important;
   }
   .search-form .filter-pane a._active, .search-form .filter-pane a:hover {
-    border-bottom-color: #c0c0c0 !important;
+    border-bottom-color: /*[[base-color]]*/ !important;
   }
   .left-arrow, .timeline-item:nth-child(odd):after {
     border-right-color: rgba(119,119,119,.4) !important;
@@ -590,7 +605,7 @@
   #sub-navs .youarehere {
     border-top-color: /*[[base-color]]*/ !important;
   }
-  .nav-left-col .is-active {
+  .nav-left-col .is-active, .nav-links .youarehere .nav-links--link {
     border-right-color: /*[[base-color]]*/ !important;
   }
 
@@ -600,7 +615,7 @@
   }
   .module, .tabs a, div.message, .full-diff td, .wb-outer:not(.wb-selected),
   .page-numbers.dots, .p-top-tags .badge-tag, .page-numbers.desc, .intellitab:not(.selected) a,
-  #sub-navs .menu-item .menu-switcher {
+  #sub-navs .menu-item .menu-switcher, .input-group .-fill._clean {
     border-color: transparent !important;
   }
   .left-arrow, .right-arrow {
@@ -649,7 +664,8 @@
   .-rep, .-total, .-list-item .-description, .message.message-error a, .chosen-container .chosen-results li,
   .salary-calc-inputs span, .salary-survey-dialog .header h3, .title-banner h1, .salary-results-container h1,
   .topbar-dialog h4, .label-key > b, .heading, .module h3, .badge-tag, .s-label,
-  .-link__with-icon:hover .svg-icon {
+  .-link__with-icon:hover .svg-icon, .youarehere a, .youarehere .svg-icon, h1, h2, h3, h4, h5, h6,
+  .h1, .h2, .h3, .h4, .h5, .h6, .tour-bubble p {
     color: #ddd !important;
   }
   /* patch for hint text of SurfingKeys browser extension */
@@ -666,7 +682,7 @@
   }
 
   .user-details td, .content-page, h2:not([style]), h2 a, .profile-popup a:hover, .module h4, .page-description,
-  #openid_identifier, .form-item label, .subheader h2 {
+  #openid_identifier, .form-item label, .subheader h2, .nav-links a.nav-links--link:hover {
     color: #c1beba !important;
   }
   .comment, #top-menu a, .subheader a, .reputation a, .reputation-score, .relativetime.old,
@@ -676,7 +692,7 @@
   .s-footer .-toc th, .event-count, .post-timeline td, .post-timeline th, #side-menu ul .category {
     color: #aaa !important;
   }
-  .ob-post-tag, .ob-user-tag, .deleted-answer .util-bar a {
+  .ob-post-tag, .ob-user-tag, .deleted-answer .util-bar a, .nav-links--link {
     color: #999 !important;
   }
 
@@ -709,6 +725,9 @@
   /* brown/dark orange */
   .warm {
     color: #840 !important;
+  }
+  #profile-summary>.-popout._incomplete, .s-sidebarwidget:after {
+    border-color: #840 !important;
   }
 
   /* orange */
@@ -749,6 +768,10 @@
   .nav .primarynav li a, .list-originals .stats {
     display: block !important;
     float: left !important;
+  }
+
+  .nav-links--link .svg-icon {
+    fill: currentColor !important;
   }
 
   /* scroll bar */
