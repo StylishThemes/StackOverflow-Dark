@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name        Stackoverflow Dark
 @namespace   StylishThemes
-@version     2.11.17
+@version     2.11.18
 @homepageURL https://github.com/StylishThemes/Stackoverflow-Dark
 @updateURL   https://raw.githubusercontent.com/StylishThemes/Stackoverflow-Dark/master/stackoverflow-dark.user.css
 @license     CC-BY-SA-4.0
@@ -77,7 +77,7 @@
 ==/UserStyle== */
 @-moz-document regexp("^https?://((chat|meta|es|ja|pt|ru)\\.)*stackoverflow\\.com.*"), domain("serverfault.com"), domain("superuser.com"), domain("stackapps.com"), domain("mathoverflow.net"), domain("askubuntu.com"), regexp("^https?://((?!(www|area51|gaming)).*\\.)?stackexchange\\.com.*") {
   /***************************************************************
-  Stack Overflow Dark v2.11.17 (2018-07-08)
+  Stack Overflow Dark v2.11.18 (2018-07-09)
   https://github.com/StylishThemes/StackOverflow-Dark
   http://userstyles.org/styles/35345
 
@@ -171,7 +171,7 @@
   }
   .tag-editor input:focus, .previous-button, .next-button, .btn-clear,
   .chosen-container.chosen-container-active .chosen-choices input,
-  .gsc-webResult.gsc-result, .gsc-results .gsc-imageResult {
+  .gsc-webResult.gsc-result, .gsc-results .gsc-imageResult, .s-sidebarwidget:after {
     border: 0 !important;
     box-shadow: none !important;
   }
@@ -284,8 +284,7 @@
   .cv-story .section-opener:after, .header-edit-section .ctas,
   .item-select-table .item:hover, .visa-wrapper, .chosen-choices, .p-top-tags .-tag-group,
   .chosen-results .active-result, .salary-results-wrapper .inline-survey-cta,
-  #messages-interface .callout, .tour-bubble .-body, .why-jobs-v2 .developers-first select option,
-  .s-sidebarwidget--header {
+  #messages-interface .callout, .tour-bubble .-body, .why-jobs-v2 .developers-first select option {
     background-color: #222 !important;
     color: #ddd !important;
   }
@@ -295,7 +294,8 @@
   .list-originals .body-summary, .review-instructions-reason, .room-mini, #formContainer, #switch,
   .login-topbar, .newsletter-category, .newsletter-item, .blogcontainer, .usercard-xxl, .roomcard-xxl,
   .docs-review-page .topic-draft-bar, .badge-progress, .avatar-wrapper, .timeline-line,
-  .s-progress-bar .-bar, .-job-badges .-badge, .search-form .job-alert-tooltip, .bg-white {
+  .s-progress-bar .-bar, .-job-badges .-badge, .search-form .job-alert-tooltip, .bg-white,
+  .s-sidebarwidget--header, .tag-popup .-container, .tag-popup .-arrow:before {
     background-color: #222 !important;
     border-color: #555 !important;
     color: #ddd !important;
@@ -727,7 +727,7 @@
   .warm {
     color: #840 !important;
   }
-  #profile-summary>.-popout._incomplete, .s-sidebarwidget:after {
+  #profile-summary>.-popout._incomplete {
     border-color: #840 !important;
   }
 
