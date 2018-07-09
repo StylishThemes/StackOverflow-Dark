@@ -218,7 +218,7 @@
   .login-topbar, .newsletter-category, .newsletter-item, .blogcontainer, .usercard-xxl, .roomcard-xxl,
   .docs-review-page .topic-draft-bar, .badge-progress, .avatar-wrapper, .timeline-line,
   .s-progress-bar .-bar, .-job-badges .-badge, .search-form .job-alert-tooltip, .bg-white,
-  .s-sidebarwidget--header {
+  .s-sidebarwidget--header, .tag-popup .-container, .tag-popup .-arrow:before {
     background-color: #222 !important;
     border-color: #555 !important;
     color: #ddd !important;
