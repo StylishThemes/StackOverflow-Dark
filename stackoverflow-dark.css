@@ -94,7 +94,7 @@
   }
   .tag-editor input:focus, .previous-button, .next-button, .btn-clear,
   .chosen-container.chosen-container-active .chosen-choices input,
-  .gsc-webResult.gsc-result, .gsc-results .gsc-imageResult {
+  .gsc-webResult.gsc-result, .gsc-results .gsc-imageResult, .s-sidebarwidget:after {
     border: 0 !important;
     box-shadow: none !important;
   }
@@ -207,8 +207,7 @@
   .cv-story .section-opener:after, .header-edit-section .ctas,
   .item-select-table .item:hover, .visa-wrapper, .chosen-choices, .p-top-tags .-tag-group,
   .chosen-results .active-result, .salary-results-wrapper .inline-survey-cta,
-  #messages-interface .callout, .tour-bubble .-body, .why-jobs-v2 .developers-first select option,
-  .s-sidebarwidget--header {
+  #messages-interface .callout, .tour-bubble .-body, .why-jobs-v2 .developers-first select option {
     background-color: #222 !important;
     color: #ddd !important;
   }
@@ -218,7 +217,8 @@
   .list-originals .body-summary, .review-instructions-reason, .room-mini, #formContainer, #switch,
   .login-topbar, .newsletter-category, .newsletter-item, .blogcontainer, .usercard-xxl, .roomcard-xxl,
   .docs-review-page .topic-draft-bar, .badge-progress, .avatar-wrapper, .timeline-line,
-  .s-progress-bar .-bar, .-job-badges .-badge, .search-form .job-alert-tooltip, .bg-white {
+  .s-progress-bar .-bar, .-job-badges .-badge, .search-form .job-alert-tooltip, .bg-white,
+  .s-sidebarwidget--header {
     background-color: #222 !important;
     border-color: #555 !important;
     color: #ddd !important;
@@ -650,7 +650,7 @@
   .warm {
     color: #840 !important;
   }
-  #profile-summary>.-popout._incomplete, .s-sidebarwidget:after {
+  #profile-summary>.-popout._incomplete {
     border-color: #840 !important;
   }
 
