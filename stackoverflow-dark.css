@@ -309,8 +309,8 @@
     background-color: #333 !important;
   }
 
-  .nav-links .youarehere .nav-links--link .svg-icon {
-    color: #666;
+  .nav-links .youarehere .nav-links--link .svg-icon, .nav-links .fc-medium {
+    color: #666 !important;
   }
 
   .owner-answer, .question-status, .notification, #feed-ticker, #top-menu, .vote-revision td,
