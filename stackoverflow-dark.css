@@ -394,7 +394,7 @@
   }
 
   .answered-accepted, .answered-accepted strong, .rep-up.bounty-indicator-tab, .user-rep-chart-summary-bar,
-  .special-rep {
+  .special-rep, .s-progress__privilege .s-progress--bar {
     background: #4b553c !important;
     color: #fff !important;
   }
