@@ -634,11 +634,15 @@
   .question-hyperlink:visited, .answer-hyperlink:visited, #hot-network-questions ul a:visited {
     color: /*[[visited-color]]*/ #4183C4 !important;
   }
+
   .rep-up {
     color: #4b553c !important;
+    filter: brightness(140%) !important;
   }
-  .rep-down {
+
+  .rep-down, .user-show-new .user-rep .rep-down {
     color: #d65 !important;
+    filter: brightness(140%) !important;
   }
 
   /* dark blue */
