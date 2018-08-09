@@ -113,7 +113,8 @@
   }
 
   /* === custom color === */
-  a, .profile-popup a, .seWrapper a, .gs-title b, .spoiler:hover a {
+  a:not([class*="comment-"]), .profile-popup a, .seWrapper a, .gs-title b, .spoiler:hover a,
+  .comment-up-on, .comment-up-off:hover {
     color: /*[[base-color]]*/ !important;
   }
 
@@ -386,10 +387,6 @@
     background-color: #333 !important;
   }
 
-  .nav-links .youarehere .nav-links--link .svg-icon {
-    color: #666;
-  }
-
   .owner-answer, .question-status, .notification, #feed-ticker, #top-menu, .vote-revision td,
   .topbar-dialog .unread-item, .privileges-wrapper .stroke, .progress-bar .bar {
     background: #404040 !important;
@@ -429,7 +426,7 @@
 
   /* === Brown(ish) === */
   .new-post-activity, #new-answer-activity, .val-info, .highlight, a.youarehere:before,
-  .message.regular, .filter-dashboard-edit .floating-help {
+  .message.regular, .filter-dashboard-edit .floating-help, .review-post-author-guidance {
     background-color: rgba(51,34,17,.4) !important;
   }
   pre .spaces, .message.message-warning {
@@ -471,7 +468,7 @@
   }
 
   .answered-accepted, .answered-accepted strong, .rep-up.bounty-indicator-tab, .user-rep-chart-summary-bar,
-  .special-rep {
+  .special-rep, .s-progress__privilege .s-progress--bar {
     background: #4b553c !important;
     color: #fff !important;
   }
@@ -697,6 +694,14 @@
     color: #999 !important;
   }
 
+  .nav-links .youarehere .nav-links--link .svg-icon, .nav-links .fc-medium {
+    color: #666 !important;
+  }
+
+  .comment-up-off, .comment-flag, .comment-flag-off {
+    color: #444 !important;
+  }
+
   .answered-accepted strong, .youarehere, .nav .primarynav li a, .nav a, a:hover, .rep-up.special-rep,
   .pac-item-query, #content .salary-subheader, .salary-skill-legend-li .-score,
   header.job-details--header a {
@@ -711,11 +716,19 @@
   .question-hyperlink:visited, .answer-hyperlink:visited, #hot-network-questions ul a:visited {
     color: /*[[visited-color]]*/ !important;
   }
+
   .rep-up {
     color: #4b553c !important;
+    filter: brightness(140%) !important;
   }
-  .rep-down {
+
+  .rep-down, .user-show-new .user-rep .rep-down {
     color: #d65 !important;
+    filter: brightness(140%) !important;
+  }
+
+  .comment-flag-on, .comment-flag:hover, .flag-on {
+    color: #622 !important;
   }
 
   /* dark blue */
