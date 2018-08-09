@@ -36,7 +36,8 @@
   }
 
   /* === custom color === */
-  a, .profile-popup a, .seWrapper a, .gs-title b, .spoiler:hover a {
+  a:not([class*="comment-"]), .profile-popup a, .seWrapper a, .gs-title b, .spoiler:hover a,
+  .comment-up-on, .comment-up-off:hover {
     color: /*[[base-color]]*/ #008080 !important;
   }
 
@@ -307,10 +308,6 @@
   ul.comments-list .comment__highlight .comment-text,
   ul.comments-list .comment__highlight .comment-actions  {
     background-color: #333 !important;
-  }
-
-  .nav-links .youarehere .nav-links--link .svg-icon, .nav-links .fc-medium {
-    color: #666 !important;
   }
 
   .owner-answer, .question-status, .notification, #feed-ticker, #top-menu, .vote-revision td,
@@ -620,6 +617,14 @@
     color: #999 !important;
   }
 
+  .nav-links .youarehere .nav-links--link .svg-icon, .nav-links .fc-medium {
+    color: #666 !important;
+  }
+
+  .comment-up-off, .comment-flag, .comment-flag-off {
+    color: #444 !important;
+  }
+
   .answered-accepted strong, .youarehere, .nav .primarynav li a, .nav a, a:hover, .rep-up.special-rep,
   .pac-item-query, #content .salary-subheader, .salary-skill-legend-li .-score,
   header.job-details--header a {
@@ -643,6 +648,10 @@
   .rep-down, .user-show-new .user-rep .rep-down {
     color: #d65 !important;
     filter: brightness(140%) !important;
+  }
+
+  .comment-flag-on, .comment-flag:hover, .flag-on {
+    color: #622 !important;
   }
 
   /* dark blue */
