@@ -18,29 +18,23 @@
   </a>
 </p>
 
-- This dark theme applied to Stack Overflow and almost all Stack Exchange sites (except [Gaming](http://gaming.stackexchange.com/) and [Area 51](http://area51.stackexchange.com/)).
-- Install from [userstyles.org](http://userstyles.org/styles/35345) (with customization options) or [manually](https://raw.githubusercontent.com/StylishThemes/Stackoverflow-Dark/master/stackoverflow-dark.css).
-
-<p></p>
-
-- If you're using a browser extension:
-  - Stylus - get the addon for [Firefox](https://addons.mozilla.org/en-US/firefox/addon/styl-us/), [Chrome](https://chrome.google.com/webstore/detail/stylus/clngdbkpkpeebahjckkjfobafhncgmne) and [Opera](https://addons.opera.com/en-gb/extensions/details/stylus/).
-  - Stylish - get the addon for [Firefox](https://addons.mozilla.org/en-US/firefox/addon/2108/), [Chrome](https://chrome.google.com/extensions/detail/fjnbnpbmkenffdnngjfgmeleoegfcffe), [Opera](https://addons.opera.com/en/extensions/details/stylish/), [Safari](http://sobolev.us/stylish/) and [Firefox Mobile](https://addons.mozilla.org/en-US/firefox/addon/2108/).
-  - FreeStyler is available for [Chrome](https://chrome.google.com/webstore/detail/freestyler/hihigldmabkodfpehkgdemjklmaebmca).
-
-<p></p>
-
-- Or, **[install directly](https://github.com/StylishThemes/Stackoverflow-Dark/raw/master/stackoverflow-dark.user.css)** from this repository by opening the user.css file; only available using Stylus or FreeStyler (see the [documentation](https://github.com/openstyles/stylus/wiki/Usercss)). :tada:
-
-<br>
-
-- In versions 2.8.0+, this style will apply to *almost* all Stack Exchange sites.
-- Use the [grunt build process](https://github.com/StylishThemes/StackOverflow-Dark/wiki/Build) to customize your StackOverflow Dark theme.
-- Please refer to the [installation documentation](https://github.com/StylishThemes/StackOverflow-Dark/wiki/Install) for more details.
+This dark theme applied to Stack Overflow and almost all Stack Exchange sites (except [Gaming](http://gaming.stackexchange.com/) and [Area 51](http://area51.stackexchange.com/)).
 
 ## Preview
 
 ![Stack Overflow Dark preview](images/screenshots/after.png)
+
+## Installation
+
+A userstyle manager is required, common ones include:
+
+🎨 Stylus for [Firefox](https://addons.mozilla.org/en-US/firefox/addon/styl-us/), [Chrome](https://chrome.google.com/webstore/detail/stylus/clngdbkpkpeebahjckkjfobafhncgmne) or [Opera](https://addons.opera.com/en-gb/extensions/details/stylus/).<br>
+🎨 xStyle for [Firefox](https://addons.mozilla.org/firefox/addon/xstyle/) or [Chrome](https://chrome.google.com/webstore/detail/xstyle/hncgkmhphmncjohllpoleelnibpmccpj).
+
+Then install using one of these methods:
+
+📦 [Install the usercss](https://github.com/StylishThemes/StackOverflow-Dark/raw/master/stackoverflow-dark.user.css) with Stylus or xStyle. Supports automatic updates.<br>
+📦 [Install from userstyles.org](http://userstyles.org/styles/35345) with customization, does not support automatic updates (NO LONGER UPDATED).<br>
 
 ## Available Syntax Highlighting Themes
 
@@ -54,3 +48,19 @@
 | Tranquil Heart          | Vibrant Ink              | VSCode Monaco         |                         |
 
 \* Reference the [Themes wiki](https://github.com/StylishThemes/StackOverflow-Dark/wiki/Themes) for more details.
+
+## Notes
+
+- In versions 2.8.0+, this style will apply to *almost* all Stack Exchange sites.
+- Use the [grunt build process](https://github.com/StylishThemes/StackOverflow-Dark/wiki/Build) to customize your StackOverflow Dark theme.
+- Please refer to the [installation documentation](https://github.com/StylishThemes/StackOverflow-Dark/wiki/Install) for more details.
+
+## Contributions
+
+If you would like to contribute to this repository, please...
+
+1. 👓 Read the [contribution guidelines](./CONTRIBUTING.md).
+1. ![repo-forked](https://user-images.githubusercontent.com/136959/42383736-c4cb0db8-80fd-11e8-91ca-12bae108bccc.png) [Fork](https://github.com/StylishThemes/StackOverflow-Dark/fork) or ![cloud-download](https://user-images.githubusercontent.com/136959/42401932-9ee9cae0-813d-11e8-8691-16e29a85d3b9.png) [download](https://github.com/StylishThemes/StackOverflow-Dark/archive/master.zip) this repository.
+1. 👌 Create a pull request!
+
+Thanks to all that have [contributed](./AUTHORS) so far!
