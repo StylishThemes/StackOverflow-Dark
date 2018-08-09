@@ -61,8 +61,8 @@
   span.bounty-indicator-tab, #change-picture, .top-badge,.supernovabg, .hotbg,
   .nav li.youarehere a, .nav a:hover, a.button:hover, .edit-count, .pager a:hover span,
   .bounties-tab, .login-link, #sidebar a[href*="/questions/ask"],
-  #sidebar a[href*="/questions/ask"]:visited, .page-numbers:hover, .s-btn__primary,
-  .s-btn__primary:focus {
+  #sidebar a[href*="/questions/ask"]:visited, .page-numbers:hover, .s-btn.s-btn__primary,
+  .s-btn.s-btn__primary:focus {
     background-color: /*[[base-color]]*/ #008080 !important;
     color: #eee !important;
   }
@@ -72,7 +72,7 @@
     background-color: /*[[base-color]]*/ #008080 !important;
   }
 
-  .s-btn__primary:hover {
+  .s-btn.s-btn__primary:hover {
     filter: brightness(1.1) !important;
   }
 
@@ -559,13 +559,13 @@
     background: #182030 !important;
   }
   .review-actions input, .btn, .chosen-choices .search-choice, .topbar-dialog a.btn-secondary,
-  .filter-dashboard, input[type=submit], .bg-blue-500, .s-btn__filled {
+  .filter-dashboard, input[type=submit], .bg-blue-500, .s-btn.s-btn__filled {
     background: #182030 !important;
     color: #ccc !important;
     border: 1px solid #135 !important;
   }
   .review-actions input:hover, .btn:hover, .btn-secondary:hover, #job-board-save:hover,
-  .topbar-dialog a.btn-secondary:hover, input[type=submit]:hover, .s-btn__filled:hover {
+  .topbar-dialog a.btn-secondary:hover, input[type=submit]:hover, .s-btn.s-btn__filled:hover {
     background: #273045 !important;
   }
   .s-hero {
