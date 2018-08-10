@@ -1,6 +1,6 @@
 @-moz-document regexp("^https?://((chat|meta|es|ja|pt|ru)\\.)*stackoverflow\\.com.*"), domain("serverfault.com"), domain("superuser.com"), domain("stackapps.com"), domain("mathoverflow.net"), domain("askubuntu.com"), regexp("^https?://((?!(www|area51|gaming)).*\\.)?stackexchange\\.com.*") {
   /***************************************************************
-  Stack Overflow Dark v2.11.20 (2018-08-09)
+  Stack Overflow Dark v2.11.21 (2018-08-09)
   https://github.com/StylishThemes/StackOverflow-Dark
   http://userstyles.org/styles/35345
 
@@ -62,7 +62,9 @@
   .nav li.youarehere a, .nav a:hover, a.button:hover, .edit-count, .pager a:hover span,
   .bounties-tab, .login-link, #sidebar a[href*="/questions/ask"],
   #sidebar a[href*="/questions/ask"]:visited, .page-numbers:hover, .s-btn.s-btn__primary,
-  .s-btn.s-btn__primary:focus {
+  .s-btn.s-btn__primary:focus,
+  .top-bar .-secondary .-ctas .btn-topbar-primary, .top-bar .-secondary .-ctas .btn-topbar-primary:focus,
+  .top-bar .-secondary .-ctas .btn-topbar-clear, .top-bar .-secondary .-ctas .btn-topbar-clear:focus {
     background-color: /*[[base-color]]*/ #008080 !important;
     color: #eee !important;
   }
@@ -72,7 +74,9 @@
     background-color: /*[[base-color]]*/ #008080 !important;
   }
 
-  .s-btn.s-btn__primary:hover {
+  .s-btn.s-btn__primary:hover,
+  .top-bar .-secondary .-ctas .btn-topbar-clear, 
+  .top-bar .-secondary .-ctas .btn-topbar-clear:focus {
     filter: brightness(1.1) !important;
   }
 
@@ -362,7 +366,7 @@
 
   /* chat room buttons */
   a.button {
-    background: #840 !important;
+    background: #f67400 !important;
     color: #eee !important;
   }
 
@@ -383,25 +387,25 @@
 
   .answered, .answer-votes, .answered .vote-count-post {
     background: #232323 !important;
-    color: #4b553c !important;
+    color: #27ae60 !important;
   }
   .user-show-new .user-rep .rep-amount .rep-up, .-stats.rep-up {
-    color: #4b553c !important;
-    border-color: #4b553c !important;
+    color: #27ae60 !important;
+    border-color: #27ae60 !important;
   }
 
   .answered-accepted, .answered-accepted strong, .rep-up.bounty-indicator-tab, .user-rep-chart-summary-bar,
   .special-rep, .s-progress__privilege .s-progress--bar {
-    background: #4b553c !important;
+    background: #27ae60 !important;
     color: #fff !important;
   }
 
   .answered strong, .user-show-new .user-rep-full .rep-up {
-    color: #4b553c !important;
+    color: #27ae60 !important;
   }
 
   .vote-count-post [style="color:green"] {
-    color: green !important;
+    color: #27ae60 !important;
   }
 
   /* === Red === */
@@ -611,7 +615,7 @@
   .user-card .user-stats .number, .user-card .user-card-name, a.question-hyperlink:hover,
   a.answer-hyperlink:hover, .cv-story .time-frame, .-list-item.is-completed .-description,
   .s-footer .-toc th, .event-count, .post-timeline td, .post-timeline th, #side-menu ul .category {
-    color: #aaa !important;
+    color: #ccc !important;
   }
   .ob-post-tag, .ob-user-tag, .deleted-answer .util-bar a, .nav-links--link {
     color: #999 !important;
@@ -641,7 +645,7 @@
   }
 
   .rep-up {
-    color: #4b553c !important;
+    color: #27ae60 !important;
     filter: brightness(140%) !important;
   }
 
@@ -654,22 +658,22 @@
     color: #622 !important;
   }
 
-  /* dark blue */
+  /* dark yellow */
   .result-highlight {
     color: #aa0 !important;
   }
 
-  /* brown/dark orange */
+  /* red */
   .warm {
-    color: #840 !important;
+    color: #da4453 !important;
   }
   #profile-summary>.-popout._incomplete {
-    border-color: #840 !important;
+    border-color: #da4453 !important;
   }
 
   /* orange */
   .hot {
-    color: #a20 !important;
+    color: #f67400 !important;
   }
 
   /* light brown */
@@ -1235,12 +1239,12 @@
   }
 
   .answered-accepted .mini-counts {
-    background-color: #4b553c !important;
+    background-color: #27ae60 !important;
     color: #ddd !important;
   }
   .answered .mini-counts span {
     font-weight: bold !important;
-    color: #4b553c !important;
+    color: #27ae60 !important;
   }
 }
 @-moz-document domain("ja.stackoverflow.com") {
