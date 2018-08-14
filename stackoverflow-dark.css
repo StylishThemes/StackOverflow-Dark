@@ -844,11 +844,6 @@
   .prettyprint code {
     background: transparent !important;
   }
-  /* accepted answer code blocks */
-  .accepted-answer pre, .accepted-answer code, .accepted-answer pre.prettyprint,
-  .accepted-answer .prettyprint .pln, .accepted-answer .youarehere, .accepted-answer pre:not(.prettyprint) {
-    background: #202A20 !important;
-  }
 
   /*[[syntax-theme]]*/
   /* grunt-webkit-remove-to-end-of-file */
