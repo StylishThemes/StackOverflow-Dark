@@ -141,7 +141,7 @@
   #sidebar a[href*="/questions/ask"]:visited, .page-numbers:hover, .s-btn.s-btn__primary,
   .s-btn.s-btn__primary:focus,
   .top-bar .-secondary .-ctas .btn-topbar-primary, .top-bar .-secondary .-ctas .btn-topbar-primary:focus,
-  .top-bar .-secondary .-ctas .btn-topbar-clear, .top-bar .-secondary .-ctas .btn-topbar-clear:focus.
+  .top-bar .-secondary .-ctas .btn-topbar-clear, .top-bar .-secondary .-ctas .btn-topbar-clear:focus,
   .user-card-name .top-badge, .user-card-name .top-badge a {
     background-color: /*[[base-color]]*/ !important;
     color: #eee !important;
