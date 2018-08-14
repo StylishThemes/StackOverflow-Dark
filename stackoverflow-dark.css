@@ -373,7 +373,8 @@
   /* === Green === */
   .accepted-answer, .suggested-edit .inserted, .markdown-diff .inserted, .rep-increase, .progress-bar .percent,
   .recommended, .vote.accepted, .suggested-edit .inserted>div, .full-diff .inserted>div,
-  .message.success, .p-highlights .-rep-increase, .s-progress-bar .-fill, .answerBox.accepted {
+  .message.success, .p-highlights .-rep-increase, .s-progress-bar .-fill, .answerBox.accepted,
+  .accepted-answer .user-info {
     background: #232 !important;
   }
 
@@ -843,6 +844,12 @@
   }
   .prettyprint code {
     background: transparent !important;
+  }
+
+  /* accepted answer code blocks */
+  .accepted-answer code, .accepted-answer .youarehere,
+  .accepted-answer pre:not(.prettyprint) {
+    background: #202A20 !important;
   }
 
   /*[[syntax-theme]]*/
