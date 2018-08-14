@@ -843,12 +843,13 @@
   code, pre:not(.prettyprint):not(.CodeMirror-line) {
     background: #333 !important;
   }
-  .prettyprint code {
+  .prettyprint code, .accepted-answer pre > code {
     background: transparent !important;
   }
 
   /* accepted answer code blocks */
-  .accepted-answer code, .accepted-answer .youarehere,
+  .accepted-answer a > code, .accepted-answer li > code,
+  .accepted-answer .post-text > p > code, .accepted-answer .youarehere,
   .accepted-answer pre:not(.prettyprint) {
     background: #202A20 !important;
   }
