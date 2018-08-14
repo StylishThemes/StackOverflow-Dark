@@ -565,13 +565,14 @@
     background: #182030 !important;
   }
   .review-actions input, .btn, .chosen-choices .search-choice, .topbar-dialog a.btn-secondary,
-  .filter-dashboard, input[type=submit], .bg-blue-500, .s-btn.s-btn__filled {
+  .filter-dashboard, input[type=submit], .bg-blue-500, .s-btn.s-btn__filled, .old-hero.z-base {
     background: #182030 !important;
     color: #ccc !important;
     border: 1px solid #135 !important;
   }
   .review-actions input:hover, .btn:hover, .btn-secondary:hover, #job-board-save:hover,
-  .topbar-dialog a.btn-secondary:hover, input[type=submit]:hover, .s-btn.s-btn__filled:hover {
+  .topbar-dialog a.btn-secondary:hover, input[type=submit]:hover, .s-btn.s-btn__filled:hover,
+  .old-hero._small._darken {
     background: #273045 !important;
   }
   .s-hero {
