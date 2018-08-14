@@ -675,7 +675,7 @@
   }
 
   /* orange */
-  .hot {
+  .hot, .fc-orange-400 .iconRss, .fc-orange-400.iconRss {
     color: #f67400 !important;
   }
 
