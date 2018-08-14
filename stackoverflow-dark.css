@@ -1,6 +1,6 @@
 @-moz-document regexp("^https?://((chat|meta|es|ja|pt|ru)\\.)*stackoverflow\\.com.*"), domain("serverfault.com"), domain("superuser.com"), domain("stackapps.com"), domain("mathoverflow.net"), domain("askubuntu.com"), regexp("^https?://((?!(www|area51|gaming)).*\\.)?stackexchange\\.com.*") {
   /***************************************************************
-  Stack Overflow Dark v2.11.21 (2018-08-09)
+  Stack Overflow Dark v2.11.21 (2018-08-14)
   https://github.com/StylishThemes/StackOverflow-Dark
   http://userstyles.org/styles/35345
 
@@ -75,7 +75,7 @@
   }
 
   .s-btn.s-btn__primary:hover,
-  .top-bar .-secondary .-ctas .btn-topbar-clear, 
+  .top-bar .-secondary .-ctas .btn-topbar-clear,
   .top-bar .-secondary .-ctas .btn-topbar-clear:focus {
     filter: brightness(1.1) !important;
   }

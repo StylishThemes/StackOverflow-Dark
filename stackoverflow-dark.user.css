@@ -77,7 +77,7 @@
 ==/UserStyle== */
 @-moz-document regexp("^https?://((chat|meta|es|ja|pt|ru)\\.)*stackoverflow\\.com.*"), domain("serverfault.com"), domain("superuser.com"), domain("stackapps.com"), domain("mathoverflow.net"), domain("askubuntu.com"), regexp("^https?://((?!(www|area51|gaming)).*\\.)?stackexchange\\.com.*") {
   /***************************************************************
-  Stack Overflow Dark v2.11.21 (2018-08-09)
+  Stack Overflow Dark v2.11.21 (2018-08-14)
   https://github.com/StylishThemes/StackOverflow-Dark
   http://userstyles.org/styles/35345
 
@@ -139,7 +139,7 @@
   .nav li.youarehere a, .nav a:hover, a.button:hover, .edit-count, .pager a:hover span,
   .bounties-tab, .login-link, #sidebar a[href*="/questions/ask"],
   #sidebar a[href*="/questions/ask"]:visited, .page-numbers:hover, .s-btn.s-btn__primary,
-  .s-btn.s-btn__primary:focus, 
+  .s-btn.s-btn__primary:focus,
   .top-bar .-secondary .-ctas .btn-topbar-primary, .top-bar .-secondary .-ctas .btn-topbar-primary:focus,
   .top-bar .-secondary .-ctas .btn-topbar-clear, .top-bar .-secondary .-ctas .btn-topbar-clear:focus {
     background-color: /*[[base-color]]*/ !important;
@@ -920,14 +920,9 @@
   .prettyprint code {
     background: transparent !important;
   }
-  /* accepted answer code blocks */
-  .accepted-answer pre, .accepted-answer code, .accepted-answer pre.prettyprint,
-  .accepted-answer .prettyprint .pln, .accepted-answer .youarehere, .accepted-answer pre:not(.prettyprint) {
-    background: #202A20 !important;
-  }
 
   /*[[syntax-theme]]*/
- 
+
 }
 
 /* These extra @-moz-document definitions will not be included in the "grunt user"
