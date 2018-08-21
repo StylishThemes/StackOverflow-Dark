@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name        Stackoverflow Dark
 @namespace   StylishThemes
-@version     2.11.23
+@version     2.12.0
 @homepageURL https://github.com/StylishThemes/Stackoverflow-Dark
 @updateURL   https://raw.githubusercontent.com/StylishThemes/Stackoverflow-Dark/master/stackoverflow-dark.user.css
 @license     CC-BY-SA-4.0
@@ -77,7 +77,7 @@
 ==/UserStyle== */
 @-moz-document regexp("^https?://((chat|meta|es|ja|pt|ru)\\.)*stackoverflow\\.com.*"), domain("serverfault.com"), domain("superuser.com"), domain("stackapps.com"), domain("mathoverflow.net"), domain("askubuntu.com"), regexp("^https?://((?!(www|area51|gaming)).*\\.)?stackexchange\\.com.*") {
   /***************************************************************
-  Stack Overflow Dark v2.11.23 (2018-08-14)
+  Stack Overflow Dark v2.12.0 (2018-08-21)
   https://github.com/StylishThemes/StackOverflow-Dark
   http://userstyles.org/styles/35345
 
@@ -619,7 +619,7 @@
   }
   .module, .tabs a, div.message, .full-diff td, .wb-outer:not(.wb-selected),
   .page-numbers.dots, .p-top-tags .badge-tag, .page-numbers.desc, .intellitab:not(.selected) a,
-  #sub-navs .menu-item .menu-switcher, .input-group .-fill._clean {
+  #sub-navs .menu-item .menu-switcher, .input-group .-fill._clean, .nav-left-col a {
     border-color: transparent !important;
   }
   .left-arrow, .right-arrow {
@@ -642,13 +642,14 @@
     background: #182030 !important;
   }
   .review-actions input, .btn, .chosen-choices .search-choice, .topbar-dialog a.btn-secondary,
-  .filter-dashboard, input[type=submit], .bg-blue-500, .s-btn.s-btn__filled {
+  .filter-dashboard, input[type=submit], .bg-blue-500, .s-btn.s-btn__filled, .old-hero.z-base {
     background: #182030 !important;
     color: #ccc !important;
     border: 1px solid #135 !important;
   }
   .review-actions input:hover, .btn:hover, .btn-secondary:hover, #job-board-save:hover,
-  .topbar-dialog a.btn-secondary:hover, input[type=submit]:hover, .s-btn.s-btn__filled:hover {
+  .topbar-dialog a.btn-secondary:hover, input[type=submit]:hover, .s-btn.s-btn__filled:hover,
+  .old-hero._small._darken {
     background: #273045 !important;
   }
   .s-hero {
@@ -751,7 +752,7 @@
   }
 
   /* orange */
-  .hot {
+  .hot, .fc-orange-400 .iconRss, .fc-orange-400.iconRss {
     color: #f67400 !important;
   }
 
