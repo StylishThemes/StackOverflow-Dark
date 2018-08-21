@@ -545,7 +545,7 @@
   }
   .module, .tabs a, div.message, .full-diff td, .wb-outer:not(.wb-selected),
   .page-numbers.dots, .p-top-tags .badge-tag, .page-numbers.desc, .intellitab:not(.selected) a,
-  #sub-navs .menu-item .menu-switcher, .input-group .-fill._clean {
+  #sub-navs .menu-item .menu-switcher, .input-group .-fill._clean, .nav-left-col a {
     border-color: transparent !important;
   }
   .left-arrow, .right-arrow {
