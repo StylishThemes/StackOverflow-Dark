@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name        Stackoverflow Dark
 @namespace   StylishThemes
-@version     2.11.23
+@version     2.11.24
 @homepageURL https://github.com/StylishThemes/Stackoverflow-Dark
 @updateURL   https://raw.githubusercontent.com/StylishThemes/Stackoverflow-Dark/master/stackoverflow-dark.user.css
 @license     CC-BY-SA-4.0
@@ -77,7 +77,7 @@
 ==/UserStyle== */
 @-moz-document regexp("^https?://((chat|meta|es|ja|pt|ru)\\.)*stackoverflow\\.com.*"), domain("serverfault.com"), domain("superuser.com"), domain("stackapps.com"), domain("mathoverflow.net"), domain("askubuntu.com"), regexp("^https?://((?!(www|area51|gaming)).*\\.)?stackexchange\\.com.*") {
   /***************************************************************
-  Stack Overflow Dark v2.11.23 (2018-08-14)
+  Stack Overflow Dark v2.11.24 (2018-08-21)
   https://github.com/StylishThemes/StackOverflow-Dark
   http://userstyles.org/styles/35345
 
@@ -938,7 +938,7 @@
   }
 
   /*[[syntax-theme]]*/
- 
+
 }
 
 /* These extra @-moz-document definitions will not be included in the "grunt user"
