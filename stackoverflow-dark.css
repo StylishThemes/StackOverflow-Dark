@@ -790,7 +790,8 @@
 
   #sound, .vote-count-container.stars .img, #sub-navs>a:hover .messages-icon,
   .industries:before, .js-reputation-graph, .js-reputation-graph *,
-  #sub-navs .messages-icon, .topbar-dialog .header .icon-close {
+  #sub-navs .messages-icon, .topbar-dialog .header .icon-close,
+  .menu-item span.settings-icon:hover {
     -webkit-filter: invert(100%) !important;
     filter: invert(100%) !important;
   }
