@@ -65,7 +65,7 @@
   .s-btn.s-btn__primary:focus,
   .top-bar .-secondary .-ctas .btn-topbar-primary, .top-bar .-secondary .-ctas .btn-topbar-primary:focus,
   .top-bar .-secondary .-ctas .btn-topbar-clear, .top-bar .-secondary .-ctas .btn-topbar-clear:focus,
-	.user-card-name .top-badge, .user-card-name .top-badge a {
+  .user-card-name .top-badge, .user-card-name .top-badge a {
     background-color: /*[[base-color]]*/ #008080 !important;
     color: #eee !important;
   }
