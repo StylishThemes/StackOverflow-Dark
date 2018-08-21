@@ -142,7 +142,7 @@
   .s-btn.s-btn__primary:focus,
   .top-bar .-secondary .-ctas .btn-topbar-primary, .top-bar .-secondary .-ctas .btn-topbar-primary:focus,
   .top-bar .-secondary .-ctas .btn-topbar-clear, .top-bar .-secondary .-ctas .btn-topbar-clear:focus,
-	.user-card-name .top-badge, .user-card-name .top-badge a {
+  .user-card-name .top-badge, .user-card-name .top-badge a {
     background-color: /*[[base-color]]*/ !important;
     color: #eee !important;
   }
@@ -622,7 +622,7 @@
   }
   .module, .tabs a, div.message, .full-diff td, .wb-outer:not(.wb-selected),
   .page-numbers.dots, .p-top-tags .badge-tag, .page-numbers.desc, .intellitab:not(.selected) a,
-  #sub-navs .menu-item .menu-switcher, .input-group .-fill._clean {
+  #sub-navs .menu-item .menu-switcher, .input-group .-fill._clean, .nav-left-col a {
     border-color: transparent !important;
   }
   .left-arrow, .right-arrow {
@@ -867,7 +867,8 @@
 
   #sound, .vote-count-container.stars .img, #sub-navs>a:hover .messages-icon,
   .industries:before, .js-reputation-graph, .js-reputation-graph *,
-  #sub-navs .messages-icon, .topbar-dialog .header .icon-close {
+  #sub-navs .messages-icon, .topbar-dialog .header .icon-close,
+  .menu-item span.settings-icon:hover {
     -webkit-filter: invert(100%) !important;
     filter: invert(100%) !important;
   }
