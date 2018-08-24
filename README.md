@@ -31,21 +31,37 @@ A userstyle manager is required, common ones include:
 🎨 Stylus for [Firefox](https://addons.mozilla.org/en-US/firefox/addon/styl-us/), [Chrome](https://chrome.google.com/webstore/detail/stylus/clngdbkpkpeebahjckkjfobafhncgmne) or [Opera](https://addons.opera.com/en-gb/extensions/details/stylus/).<br>
 🎨 xStyle for [Firefox](https://addons.mozilla.org/firefox/addon/xstyle/) or [Chrome](https://chrome.google.com/webstore/detail/xstyle/hncgkmhphmncjohllpoleelnibpmccpj).
 
-Then install using one of these methods:
+Then:
 
-📦 [Install the usercss](https://github.com/StylishThemes/StackOverflow-Dark/raw/master/stackoverflow-dark.user.css) with Stylus or xStyle. Supports automatic updates.<br>
-📦 [Install from userstyles.org](http://userstyles.org/styles/35345) with customization, does not support automatic updates (NO LONGER UPDATED).<br>
+📦 [Install the usercss](https://github.com/StylishThemes/StackOverflow-Dark/raw/master/stackoverflow-dark.user.css) with Stylus or xStyle. Supports automatic updates.
 
 ## Available Syntax Highlighting Themes
 
-|                         |                          |                       |                         |
-|-------------------------|--------------------------|-----------------------|-------------------------|
-| Atelier-cave-dark       | Atelier-dune-dark        | Atelier-estuary-dark  | Atelier-forest-dark     |
-| Atelier-heath-dark      | Atelier-lakeside-dark    | Atelier-plateau-dark  | Atelier-savanna-dark    |
-| Atelier-seaside-dark    | Atelier-sulphurpool-dark | Desert                | Doxy                    |
-| Hemisu Dark             | Monokai                  | Sons of Obsidian      | Sunburst                |
-| Tomorrow Night          | Tomorrow Night Blue      | Tomorrow Night Bright | Tomorrow Night Eigthies |
-| Tranquil Heart          | Vibrant Ink              | VSCode Monaco         |                         |
+| Theme                    |     |
+|--------------------------|:---:|
+| Atelier-cave-dark        | ✔️ |
+| Atelier-dune-dark        | ✔️ |
+| Atelier-estuary-dark     | ✔️ |
+| Atelier-forest-dark      | ✔️ |
+| Atelier-heath-dark       | ✔️ |
+| Atelier-lakeside-dark    | ✔️ |
+| Atelier-plateau-dark     | ✔️ |
+| Atelier-savanna-dark     | ✔️ |
+| Atelier-seaside-dark     | ✔️ |
+| Atelier-sulphurpool-dark | ✔️ |
+| Desert                   | ✔️ |
+| Doxy                     | ✔️ |
+| Hemisu Dark              | ✔️ |
+| Monokai                  | ✔️ |
+| Sons of Obsidian         | ✔️ |
+| Sunburst                 | ✔️ |
+| Tomorrow Night           | ✔️ |
+| Tomorrow Night Blue      | ✔️ |
+| Tomorrow Night Bright    | ✔️ |
+| Tomorrow Night Eigthies  | ✔️ |
+| Tranquil Heart           | ✔️ |
+| Vibrant Ink              | ✔️ |
+| VSCode Monaco            | ✔️ |
 
 \* Reference the [Themes wiki](https://github.com/StylishThemes/StackOverflow-Dark/wiki/Themes) for more details.
 
