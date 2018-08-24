@@ -154,7 +154,7 @@
   .welovestackoverflow, #wmd-button-bar, .wmd-button-bar, .qa-block, .content-block, .user-info-rep, .sidebar,
   .popup, .full-diff, .val-success, .search-form .filter-pane nav, .s-card, .chosen-container .chosen-drop,
   .pac-item.pac-item-selected, .pac-item:hover, .-item.social:hover, #add-tags-button, #filter-preview,
-  .salary-results, .msg-form.msg-controls {
+  .salary-results, .msg-form .msg-controls {
     background: #191919 !important;
   }
 
