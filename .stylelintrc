@@ -2,7 +2,6 @@
 # https://github.com/stylelint/stylelint-config-standard/blob/master/index.js
 
 extends: stylelint-config-standard
-ignoreFiles: "**/*.min.css"
 
 rules:
   at-rule-empty-line-before: null
@@ -15,15 +14,15 @@ rules:
   comment-whitespace-inside: null
   declaration-bang-space-before: null
   declaration-block-no-duplicate-properties: null
-  declaration-block-no-shorthand-property-overrides: null
   declaration-block-single-line-max-declarations: null
   declaration-colon-newline-after: null
   font-family-name-quotes: always-where-recommended
   font-family-no-duplicate-names: true
-  function-comma-space-after: null
-  function-url-quotes: null
+  function-url-quotes: always
   indentation: null
+  max-empty-lines: 0
   no-descending-specificity: null
+  no-duplicate-selectors: null
   number-leading-zero: never
   number-max-precision: 3
   number-no-trailing-zeros: true
