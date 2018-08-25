@@ -1110,6 +1110,32 @@ regexp("^https?://((?!(www|area51|gaming)).*\\.)?stackexchange\\.com.*") {
     background-repeat: no-repeat !important;
   }
 }
+
+@-moz-document domain("api.stackexchange.com") {
+  .logo [fill="#0A0B09"] {
+    fill: #aaa !important;
+  }
+  .outside.content {
+    background-color: transparent !important;
+  }
+  .module.help a.youarehere:before {
+    background-color: /*[[base-color]]*/ !important;
+  }
+  #console .fetched-url, .filter-popup .filter-controls {
+    background-color: #111 !important;
+  }
+  .home-links-version-value, .permalink-popup, .filter-popup {
+    background-color: #222 !important;
+  }
+  .run-button, .load-access-token, #login-button, .filter-save {
+    background: #222 !important;
+    color: #ddd !important;
+    border: 1px solid #444 !important;
+  }
+  .run-button:hover, .load-access-token:hover, #login-button:hover, .filter-save:hover {
+    background-color: #333 !important;
+  }
+}
 @-moz-document domain("chat.stackoverflow.com") {
   /* chat.stackoverflow.com */
   #hlogo a {
