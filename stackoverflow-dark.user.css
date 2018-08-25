@@ -923,11 +923,10 @@ regexp("^https?://((?!(www|area51|gaming)).*\\.)?stackexchange\\.com.*") {
 * If the css below changes, it will have to be manually updated
 */
 /* === StackExchange tweaks ===
- _____ _           _   _____         _                      _                 _
-|   __| |_ ___ ___| |_|   __|_ _ ___| |_ ___ ___ ___ ___   | |_ _ _ _ ___ ___| |_ ___
-|__   |  _| .'|  _| '_|   __|_'_|  _|   | .'|   | . | -_|  |  _| | | | -_| .'| '_|_ -|
-|_____|_| |__,|___|_,_|_____|_,_|___|_|_|__,|_|_|_  |___|  |_| |_____|___|__,|_,_|___|
-                                |___|
+ _                 _
+| |_ _ _ _ ___ ___| |_ ___
+|  _| | | | -_| .'| '_|_ -|
+|_| |_____|___|__,|_,_|___|
 */
 @-moz-document regexp("^https?://((?!(www|area51|gaming)).*\\.)?stackexchange.com.*") {
   /* login screen StackExchange logo replacement */
@@ -1113,7 +1112,6 @@ regexp("^https?://((?!(www|area51|gaming)).*\\.)?stackexchange\\.com.*") {
     background-repeat: no-repeat !important;
   }
 }
-
 @-moz-document domain("api.stackexchange.com") {
   .logo [fill="#0A0B09"] {
     fill: #aaa !important;
@@ -1135,7 +1133,8 @@ regexp("^https?://((?!(www|area51|gaming)).*\\.)?stackexchange\\.com.*") {
     color: #ddd !important;
     border: 1px solid #444 !important;
   }
-  .run-button:hover, .load-access-token:hover, #login-button:hover, .filter-save:hover {
+  .run-button:hover, .load-access-token:hover, #login-button:hover,
+  .filter-save:hover {
     background-color: #333 !important;
   }
 }
