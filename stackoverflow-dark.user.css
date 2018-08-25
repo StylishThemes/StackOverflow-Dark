@@ -538,7 +538,7 @@ regexp("^https?://((?!(www|area51|gaming)).*\\.)?stackexchange\\.com.*") {
   .min-ds-wizard .current, .input-group .-fill._clean,
   .why-jobs-v2 .slanted-background:before, .msg-list .list-item,
   .msg-list .list-item.is-read, .msg-list .list-item header,
-  .message-detail header {
+  .message-detail header, .grid--cell {
     background-color: transparent !important;
   }
   #tabs a:hover, .tabs a:hover {
@@ -605,6 +605,9 @@ regexp("^https?://((?!(www|area51|gaming)).*\\.)?stackexchange\\.com.*") {
   .nav-left-col .is-active, .nav-links .youarehere .nav-links--link {
     border-right-color: /*[[base-color]]*/ !important;
   }
+  .s-sidebarwidget [aria-current="page"]:before {
+    border-left-color: /*[[base-color]]*/ !important;
+  }
   /* === No/hide border === */
   div.list > div {
     border-right: 0 !important;
@@ -669,7 +672,7 @@ regexp("^https?://((?!(www|area51|gaming)).*\\.)?stackexchange\\.com.*") {
   .salary-results-container h1, .topbar-dialog h4, .label-key > b, .heading,
   .module h3, .badge-tag, .s-label, .-link__with-icon:hover .svg-icon,
   .youarehere a, .youarehere .svg-icon, h1, h2, h3, h4, h5, h6, .h1, .h2, .h3,
-  .h4, .h5, .h6, .tour-bubble p {
+  .h4, .h5, .h6, .tour-bubble p, .fc-dark {
     color: #ddd !important;
   }
   /* patch for hint text of SurfingKeys browser extension */
@@ -699,7 +702,7 @@ regexp("^https?://((?!(www|area51|gaming)).*\\.)?stackexchange\\.com.*") {
     color: #ccc !important;
   }
   .ob-post-tag, .ob-user-tag, .deleted-answer .util-bar a, .nav-links--link,
-  .msg-list .msg-text {
+  .msg-list .msg-text, .fc-medium {
     color: #999 !important;
   }
   .nav-links .youarehere .nav-links--link .svg-icon, .nav-links .fc-medium {
