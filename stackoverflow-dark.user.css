@@ -253,7 +253,8 @@ regexp("^https?://((?!(www|area51|gaming)).*\\.)?stackexchange\\.com.*") {
   .proposed-change .diff-buttons a:not(.selected), #logout-form, .snippet-holder,
   .CodeMirror, .CodeMirror-gutters, .badge-progress.completed,
   .timeline-item:before, .item-select-table .item, .title-box, .-list-item,
-  .bg-powder-050, .textarea-with-counter .-counter {
+  .bg-powder-050, .textarea-with-counter .-counter, .new-contributor-indicator,
+  .temp-popover {
     background-color: #191919 !important;
     border-color: #444 !important;
   }
@@ -326,7 +327,8 @@ regexp("^https?://((?!(www|area51|gaming)).*\\.)?stackexchange\\.com.*") {
   .ob-docs,
   .topbar.newheader .topbar-wrapper .topbar-links .search-container #search input[name="q"],
   .mainbar.discussion .discussion-item, #input-area, .pager a span,
-  .page-sizer a {
+  .page-sizer a, .s-sidebarwidget__yellow .s-sidebarwidget--header,
+  .s-sidebarwidget__yellow .s-sidebarwidget--content {
     background: #222 !important;
     color: #ddd !important;
   }
@@ -538,7 +540,8 @@ regexp("^https?://((?!(www|area51|gaming)).*\\.)?stackexchange\\.com.*") {
   .min-ds-wizard .current, .input-group .-fill._clean,
   .why-jobs-v2 .slanted-background:before, .msg-list .list-item,
   .msg-list .list-item.is-read, .msg-list .list-item header,
-  .message-detail header, .grid--cell {
+  .message-detail header, .grid--cell, .post-signature:not(.owner) .user-info,
+  .answers-subheader {
     background-color: transparent !important;
   }
   #tabs a:hover, .tabs a:hover {
@@ -559,6 +562,11 @@ regexp("^https?://((?!(www|area51|gaming)).*\\.)?stackexchange\\.com.*") {
   .body-diffs table * {
     border-color: #111 !important;
   }
+  .temp-popover.temp-popover__bottom .temp-popover--arrow:after,
+  .temp-popover.temp-popover__bottom-left .temp-popover--arrow:after,
+  .temp-popover.temp-popover__bottom-right .temp-popover--arrow:after {
+    border-bottom-color: #191919 !important;
+  }
   .s-progress-bar .-bar:before, .s-progress-bar .-bar:after {
     border-top-color: #222 !important;
     border-bottom-color: #222 !important;
@@ -570,8 +578,14 @@ regexp("^https?://((?!(www|area51|gaming)).*\\.)?stackexchange\\.com.*") {
   .company-module .-details strong:before, .bc-black-1 {
     border-color: #333 !important;
   }
+  .temp-popover.temp-popover__bottom .temp-popover--arrow:before,
+  .temp-popover.temp-popover__bottom-left .temp-popover--arrow:before,
+  .temp-popover.temp-popover__bottom-right .temp-popover--arrow:before {
+    border-bottom-color: #444 !important;
+  }
   a.required-tag, .topbar-dialog.feature-notice-dialog:before,
-  .site-footer .-link._expandable:after, .bc-black-2 {
+  .site-footer .-link._expandable:after, .bc-black-2,
+  .message.message-info .message-close {
     border-color: #555 !important;
   }
   .message .message-tip-top-right:before, .message .message-tip-top-left:before {
@@ -615,7 +629,7 @@ regexp("^https?://((?!(www|area51|gaming)).*\\.)?stackexchange\\.com.*") {
   .module, .tabs a, div.message, .full-diff td, .wb-outer:not(.wb-selected),
   .page-numbers.dots, .p-top-tags .badge-tag, .page-numbers.desc,
   .intellitab:not(.selected) a, #sub-navs .menu-item .menu-switcher,
-  .input-group .-fill._clean, .nav-left-col a {
+  .input-group .-fill._clean, .nav-left-col a, .comment-actions .s-btn {
     border-color: transparent !important;
   }
   .left-arrow, .right-arrow {
@@ -629,7 +643,7 @@ regexp("^https?://((?!(www|area51|gaming)).*\\.)?stackexchange\\.com.*") {
   /* blue label count */
   .bounty-indicator-tab, .hero.profile, .jobs-banner.-blue,
   #reg-alert-modal:hover, .-popout .btn-secondary:hover, .search-btn,
-  .tags .jobs a, .btn-secondary, #job-board-save {
+  .tags .jobs a, .btn-secondary, #job-board-save, .message.message-info {
     background: #046 !important;
     color: #ccc !important;
     border: 1px solid #135 !important;
@@ -655,6 +669,9 @@ regexp("^https?://((?!(www|area51|gaming)).*\\.)?stackexchange\\.com.*") {
   }
   .s-hero:after {
     background: #182030 !important;
+  }
+  .message.message-info .message-tip-left-top:before {
+    border-top-color: #046 !important;
   }
   /* === Text Color === */
   div, input, .accepted-answer .post-text, .accepted-answer .user-action-time,
