@@ -1426,6 +1426,18 @@ regexp("^https?://((?!(www|area51|gaming)).*\\.)?stackexchange\\.com.*") {
     height: 60px !important;
   }
 }
+@-moz-document domain("raspberrypi.stackexchange.com"), domain("raspberrypi.meta.stackexchange.com") {
+  .nav li, .nav a {
+    background-color: transparent !important;
+    border: 0 !important;
+  }
+  .vote-up-off, .vote-down-off {
+    filter: brightness(.6) !important;
+  }
+  .container, .site-footer {
+    background-image: none !important;
+  }
+}
 @-moz-document domain("rpg.stackexchange.com") {
   #content, #hmenus, #mainbar .subheader, .mainbar .subheader,
   #footer .footerwrap {
