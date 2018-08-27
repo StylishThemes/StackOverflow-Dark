@@ -212,7 +212,8 @@ regexp("^https?://((?!(www|area51|gaming)).*\\.)?stackexchange\\.com.*") {
   .f-select > select, textarea#input,
   .search-form .chosen-container .chosen-choices, .pac-container, select,
   #match-preferences-editor .close:hover, .gsc-input-box, .gsc-option-menu,
-  .subheader, .min-ds-wizard .min-ds-box.jobs {
+  .subheader, .min-ds-wizard .min-ds-box.jobs, body input:-webkit-autofill,
+  body textarea:-webkit-autofill, body select:-webkit-autofill {
     background-color: #111 !important;
     color: #ddd !important;
   }
