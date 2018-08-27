@@ -254,7 +254,7 @@ regexp("^https?://((?!(www|area51|gaming)).*\\.)?stackexchange\\.com.*") {
   .CodeMirror, .CodeMirror-gutters, .badge-progress.completed,
   .timeline-item:before, .item-select-table .item, .title-box, .-list-item,
   .bg-powder-050, .textarea-with-counter .-counter, .new-contributor-indicator,
-  .temp-popover {
+  .temp-popover, .google-login, .btn._google {
     background-color: #191919 !important;
     border-color: #444 !important;
   }
@@ -504,7 +504,7 @@ regexp("^https?://((?!(www|area51|gaming)).*\\.)?stackexchange\\.com.*") {
     background-color: #400f00 !important;
     color: #ff4a15 !important;
   }
-  .summary a.moderator-tag, .btn._google {
+  .summary a.moderator-tag {
     background-color: #400 !important;
   }
   .summary a.moderator-tag:hover {
