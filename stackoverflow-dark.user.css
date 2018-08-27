@@ -834,15 +834,18 @@ regexp("^https?://((?!(www|area51|gaming)).*\\.)?stackexchange\\.com.*") {
     border-color: #111 !important;
   }
   .badge3-alternate, .progress-bar.badge-3 .bar .percent,
-  .s-progress-bar._badge._badge3 .-fill, .badge-wrapper._badge3 {
+  .s-progress-bar._badge._badge3 .-fill, .badge-wrapper._badge3,
+  .s-progress__bronze .s-progress--bar {
     background-color: #7c4318 !important; /* bronze */
   }
   .badge2-alternate, .progress-bar.badge-2 .bar .percent,
-  .s-progress-bar._badge._badge2 .-fill, .badge-wrapper._badge2 {
+  .s-progress-bar._badge._badge2 .-fill, .badge-wrapper._badge2,
+  .s-progress__silver .s-progress--bar {
     background-color: #464a4f !important; /* silver */
   }
   .badge1-alternate, .progress-bar.badge-1 .bar .percent,
-  .s-progress-bar._badge._badge1 .-fill, .badge-wrapper._badge1 {
+  .s-progress-bar._badge._badge1 .-fill, .badge-wrapper._badge1,
+  .s-progress__gold .s-progress--bar {
     background-color: #957000 !important; /* gold */
   }
   /* === Images === */
