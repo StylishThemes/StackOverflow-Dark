@@ -435,7 +435,7 @@ regexp("^https?://((?!(www|area51|gaming)).*\\.)?stackexchange\\.com.*") {
   /* === Brown(ish) === */
   .new-post-activity, #new-answer-activity, .val-info, .highlight,
   a.youarehere:before, .message.regular, .filter-dashboard-edit .floating-help,
-  .review-post-author-guidance {
+  .review-post-author-guidance, .bg-black-050 {
     background-color: rgba(51, 34, 17, .4) !important;
   }
   pre .spaces, .message.message-warning {
