@@ -1374,7 +1374,7 @@ regexp("^https?://((?!(www|area51|gaming)).*\\.)?stackexchange\\.com.*") {
 }
 @-moz-document domain("meta.stackoverflow.com") {
   /* meta.stackoverflow.com */
-  #hlogo a {
+  #hlogo a, .-logo > .-img {
     background-image: url("https://StylishThemes.github.io/StackOverflow-Dark/images/meta-stackoverflow-logo.svg") !important;
   }
   #sidebar .community-bulletin .bulletin-item-content a,
