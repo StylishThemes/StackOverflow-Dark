@@ -802,6 +802,22 @@ regexp("^https?://((?!(www|area51|gaming)).*\\.)?stackexchange\\.com.*") {
   .nav-links--link .svg-icon {
     fill: currentColor !important;
   }
+  /* weird hack - see #123 */
+  @-webkit-keyframes autofill {
+    to {
+      background-color: #111 !important;
+      background-image: none;
+      color: #ddd !important;
+    }
+  }
+  input:-webkit-autofill,
+  textarea:-webkit-autofill,
+  select:-webkit-autofill {
+    -webkit-animation-name: autofill !important;
+    -webkit-animation-fill-mode: both !important;
+    background-color: #111 !important;
+    color: #ddd !important;
+  }
   /* scroll bar */
   ::-webkit-scrollbar {
     max-width: 10px !important;
