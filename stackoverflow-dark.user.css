@@ -810,9 +810,7 @@ regexp("^https?://((?!(www|area51|gaming)).*\\.)?stackexchange\\.com.*") {
       color: #ddd !important;
     }
   }
-  input:-webkit-autofill,
-  textarea:-webkit-autofill,
-  select:-webkit-autofill {
+  input:-webkit-autofill, textarea:-webkit-autofill, select:-webkit-autofill {
     -webkit-animation-name: autofill !important;
     -webkit-animation-fill-mode: both !important;
     background-color: #111 !important;
