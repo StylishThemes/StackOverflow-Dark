@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name         Stack Overflow Dark
-@version      3.0.7
+@version      3.0.8
 @description  Dark theme for Stack Overflow & most Stack Exchange network sites
 @namespace    StylishThemes
 @author       StylishThemes
@@ -143,9 +143,9 @@ regexp("^https?://((?!(www|area51|gaming)).*\\.)?stackexchange\\.com.*") {
   a.post-tag:hover, .bounty-indicator, .bounty-indicator-tab, .bounty-award,
   span.bounty-indicator-tab, #change-picture, .supernovabg, .hotbg,
   .nav li.youarehere a, .nav a:hover, a.button:hover, .edit-count,
-  .pager a:hover span, .bounties-tab,
-  #sidebar a[href*="/questions/ask"], #sidebar a[href*="/questions/ask"]:visited,
-  .page-numbers:hover, .s-btn.s-btn__primary, .s-btn.s-btn__primary:focus,
+  .pager a:hover span, .bounties-tab, #sidebar a[href*="/questions/ask"],
+  #sidebar a[href*="/questions/ask"]:visited, .page-numbers:hover,
+  .s-btn.s-btn__primary, .s-btn.s-btn__primary:focus,
   .top-bar .-secondary .-ctas .btn-topbar-primary,
   .top-bar .-secondary .-ctas .btn-topbar-primary:focus,
   .user-card-name .top-badge, .user-card-name .top-badge a {
@@ -731,7 +731,7 @@ regexp("^https?://((?!(www|area51|gaming)).*\\.)?stackexchange\\.com.*") {
   .profile-cards--graph .grid--cell {
     color: #444 !important;
   }
-  .user-show-new .user-rep .rep-amount .rep-up.special-rep  {
+  .user-show-new .user-rep .rep-amount .rep-up.special-rep {
     color: #000 !important;
   }
   .answered-accepted strong, .youarehere, .nav .primarynav li a, .nav a, a:hover,
