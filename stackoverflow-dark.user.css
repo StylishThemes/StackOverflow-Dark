@@ -143,13 +143,11 @@ regexp("^https?://((?!(www|area51|gaming)).*\\.)?stackexchange\\.com.*") {
   a.post-tag:hover, .bounty-indicator, .bounty-indicator-tab, .bounty-award,
   span.bounty-indicator-tab, #change-picture, .supernovabg, .hotbg,
   .nav li.youarehere a, .nav a:hover, a.button:hover, .edit-count,
-  .pager a:hover span, .bounties-tab, .login-link,
+  .pager a:hover span, .bounties-tab,
   #sidebar a[href*="/questions/ask"], #sidebar a[href*="/questions/ask"]:visited,
   .page-numbers:hover, .s-btn.s-btn__primary, .s-btn.s-btn__primary:focus,
   .top-bar .-secondary .-ctas .btn-topbar-primary,
   .top-bar .-secondary .-ctas .btn-topbar-primary:focus,
-  .top-bar .-secondary .-ctas .btn-topbar-clear,
-  .top-bar .-secondary .-ctas .btn-topbar-clear:focus,
   .user-card-name .top-badge, .user-card-name .top-badge a {
     background-color: /*[[base-color]]*/ !important;
     color: #eee !important;
