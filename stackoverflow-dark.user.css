@@ -733,6 +733,9 @@ regexp("^https?://((?!(www|area51|gaming)).*\\.)?stackexchange\\.com.*") {
   .profile-cards--graph .grid--cell {
     color: #444 !important;
   }
+  .user-show-new .user-rep .rep-amount .rep-up.special-rep  {
+    color: #000 !important;
+  }
   .answered-accepted strong, .youarehere, .nav .primarynav li a, .nav a, a:hover,
   .rep-up.special-rep, .pac-item-query, #content .salary-subheader,
   .salary-skill-legend-li .-score, header.job-details--header a,
