@@ -182,9 +182,12 @@ regexp("^https?://((?!(www|area51|gaming)).*\\.)?stackexchange\\.com.*") {
   .tag-editor input:focus, .previous-button, .next-button, .btn-clear,
   .chosen-container.chosen-container-active .chosen-choices input,
   .gsc-webResult.gsc-result, .gsc-results .gsc-imageResult,
-  .s-sidebarwidget:after {
+  .s-sidebarwidget:after, .profile-top-tags .badge-tag {
     border: 0 !important;
     box-shadow: none !important;
+  }
+  .profile-avatar {
+    box-shadow: inset 0 10em 0 #333 !important;
   }
   .menu-switcher {
             filter: none !important;
@@ -305,7 +308,8 @@ regexp("^https?://((?!(www|area51|gaming)).*\\.)?stackexchange\\.com.*") {
   .badge-progress, .avatar-wrapper, .timeline-line, .s-progress-bar .-bar,
   .-job-badges .-badge, .search-form .job-alert-tooltip, .bg-white,
   .s-sidebarwidget--header, .tag-popup .-container, .tag-popup .-arrow:before,
-  .l-main-col a.btn-secondary, .messaging-v2 .btn-secondary.is-active {
+  .l-main-col a.btn-secondary, .messaging-v2 .btn-secondary.is-active, .s-card,
+  .bar-sm.bg-black-025 {
     background-color: #222 !important;
     border-color: #555 !important;
     color: #ddd !important;
@@ -328,7 +332,7 @@ regexp("^https?://((?!(www|area51|gaming)).*\\.)?stackexchange\\.com.*") {
   .topbar.newheader .topbar-wrapper .topbar-links .search-container #search input[name="q"],
   .mainbar.discussion .discussion-item, #input-area, .pager a span,
   .page-sizer a, .s-sidebarwidget__yellow .s-sidebarwidget--header,
-  .s-sidebarwidget__yellow .s-sidebarwidget--content {
+  .s-sidebarwidget__yellow .s-sidebarwidget--content, .self {
     background: #222 !important;
     color: #ddd !important;
   }
@@ -337,7 +341,7 @@ regexp("^https?://((?!(www|area51|gaming)).*\\.)?stackexchange\\.com.*") {
     background: rgba(34, 34, 34, .5) !important;
   }
   .ad502-room, .message.message-config .actions, .tag-container .col, .congrats,
-  .task-stat-table td {
+  .task-stat-table tdm {
     background-color: #232323 !important;
     border: 1px solid #191919 !important;
   }
@@ -395,7 +399,7 @@ regexp("^https?://((?!(www|area51|gaming)).*\\.)?stackexchange\\.com.*") {
   .comment__highlight:not([style*="background-color"]),
   ul.comments-list .comment__highlight .comment-text,
   ul.comments-list .comment__highlight .comment-actions,
-  .l-main-col .btn-secondary:hover {
+  .l-main-col .btn-secondary:hover, .grid--cell.s-progress {
     background-color: #333 !important;
   }
   .owner-answer, .question-status, .notification, #feed-ticker, #top-menu,
@@ -541,7 +545,7 @@ regexp("^https?://((?!(www|area51|gaming)).*\\.)?stackexchange\\.com.*") {
   .why-jobs-v2 .slanted-background:before, .msg-list .list-item,
   .msg-list .list-item.is-read, .msg-list .list-item header,
   .message-detail header, .grid--cell, .post-signature:not(.owner) .user-info,
-  .answers-subheader {
+  .answers-subheader, .profile-top-tags .badge-tag {
     background-color: transparent !important;
   }
   #tabs a:hover, .tabs a:hover {
@@ -585,7 +589,7 @@ regexp("^https?://((?!(www|area51|gaming)).*\\.)?stackexchange\\.com.*") {
   }
   a.required-tag, .topbar-dialog.feature-notice-dialog:before,
   .site-footer .-link._expandable:after, .bc-black-2,
-  .message.message-info .message-close {
+  .message.message-info .message-close, .bc-black-3 {
     border-color: #555 !important;
   }
   .message .message-tip-top-right:before, .message .message-tip-top-left:before {
@@ -715,7 +719,7 @@ regexp("^https?://((?!(www|area51|gaming)).*\\.)?stackexchange\\.com.*") {
   a.question-hyperlink:hover, a.answer-hyperlink:hover, .cv-story .time-frame,
   .-list-item.is-completed .-description, .s-footer .-toc th, .event-count,
   .post-timeline td, .post-timeline th, #side-menu ul .category,
-  .msg-select-all-label {
+  .msg-select-all-label, .fc-light {
     color: #ccc !important;
   }
   .ob-post-tag, .ob-user-tag, .deleted-answer .util-bar a, .nav-links--link,
@@ -725,7 +729,8 @@ regexp("^https?://((?!(www|area51|gaming)).*\\.)?stackexchange\\.com.*") {
   .nav-links .youarehere .nav-links--link .svg-icon, .nav-links .fc-medium {
     color: #666 !important;
   }
-  .comment-up-off, .comment-flag, .comment-flag-off {
+  .comment-up-off, .comment-flag, .comment-flag-off,
+  .profile-cards--graph .grid--cell {
     color: #444 !important;
   }
   .answered-accepted strong, .youarehere, .nav .primarynav li a, .nav a, a:hover,
