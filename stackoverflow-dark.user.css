@@ -731,7 +731,8 @@ regexp("^https?://((?!(www|area51|gaming)).*\\.)?stackexchange\\.com.*") {
   .profile-cards--graph .grid--cell {
     color: #444 !important;
   }
-  .user-show-new .user-rep .rep-amount .rep-up.special-rep {
+  .user-show-new .user-rep .rep-amount .rep-up.special-rep,
+  .user-show-new .user-rep-full .accept-indicator-tab {
     color: #000 !important;
   }
   .answered-accepted strong, .youarehere, .nav .primarynav li a, .nav a, a:hover,
