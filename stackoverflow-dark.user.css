@@ -948,6 +948,7 @@ regexp("^https?://((?!(www|area51|gaming)).*\\.)?stackexchange\\.com.*") {
   /* style non-prettyprint code */
   code, pre:not(.prettyprint):not(.CodeMirror-line) {
     background: #333 !important;
+    color: #ddd !important;
   }
   .prettyprint code, .accepted-answer pre > code {
     background: transparent !important;
