@@ -543,7 +543,7 @@ regexp("^https?://((?!(www|area51|gaming)).*\\.)?stackexchange\\.com.*") {
   .why-jobs-v2 .slanted-background:before, .msg-list .list-item,
   .msg-list .list-item.is-read, .msg-list .list-item header,
   .message-detail header, .grid--cell, .post-signature:not(.owner) .user-info,
-  .answers-subheader, .profile-top-tags .badge-tag {
+  .answers-subheader, .profile-top-tags .badge-tag, .msg-controls {
     background-color: transparent !important;
   }
   #tabs a:hover, .tabs a:hover {
