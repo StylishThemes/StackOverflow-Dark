@@ -86,18 +86,18 @@ domain("stackapps.com"),
 domain("mathoverflow.net"),
 domain("askubuntu.com"),
 regexp("^https?://((?!(www|area51|gaming)).*\\.)?stackexchange\\.com.*") {
-  /***************************************************************
-  Stack Overflow Dark v2.11.24 (2018-08-21)
-  https://github.com/StylishThemes/StackOverflow-Dark
-  http://userstyles.org/styles/35345
-  ** Will apply to almost all Stack Exchange Sites **
-  Except:
-  * Area 51 (area51.stackexchange.com)
-  * Gaming (gaming.stackexchange.com)
-  ** Please open an issue to report sites where the style breaks **
-  https://github.com/StylishThemes/StackOverflow-Dark/issues
-  previous version information contained at the userstyles site
-  ****************************************************************/
+  /**
+   * Stack Overflow Dark
+   * https://github.com/StylishThemes/StackOverflow-Dark
+   * http://userstyles.org/styles/35345
+   * ** Will apply to almost all Stack Exchange Sites **
+   * Except:
+   * - Area 51 (area51.stackexchange.com)
+   * - Gaming (gaming.stackexchange.com)
+   * ** Please open an issue to report sites where the style breaks **
+   * https://github.com/StylishThemes/StackOverflow-Dark/issues
+   * previous version information contained at the userstyles site
+   */
   * {
     border-color: #444 !important;
     text-shadow: none !important;
