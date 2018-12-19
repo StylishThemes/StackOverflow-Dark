@@ -20,6 +20,7 @@
   },
   "scripts": {
     "authors": "bash tools/authors",
+    "build": "node tools/add-themes.js && node tools/update-usercss.js",
     "clean": "npm run perfectionist && node tools/fix-perfectionist.js",
     "eslint": "eslint --quiet --color tools/*.js",
     "lint": "npm run eslint && npm run stylelint",
