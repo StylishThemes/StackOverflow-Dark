@@ -54,6 +54,7 @@ Then:
 | Desert                   | ✔️ |
 | Doxy                     | ✔️ |
 | Hemisu Dark              | ✔️ |
+| Material                 | ✔️ |
 | Monokai                  | ✔️ |
 | Sons of Obsidian         | ✔️ |
 | Sunburst                 | ✔️ |
