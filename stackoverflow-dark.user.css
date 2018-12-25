@@ -87,7 +87,7 @@ domain("superuser.com"),
 domain("stackapps.com"),
 domain("mathoverflow.net"),
 domain("askubuntu.com"),
-regexp("^https?://((?!(www|area51|gaming)).*\\.)?stackexchange\\.com.*") {
+regexp("^https?://((?!(www|area51)).*\\.)?stackexchange\\.com.*") {
   /**
    * Stack Overflow Dark
    * https://github.com/StylishThemes/StackOverflow-Dark
@@ -95,7 +95,6 @@ regexp("^https?://((?!(www|area51|gaming)).*\\.)?stackexchange\\.com.*") {
    * ** Will apply to almost all Stack Exchange Sites **
    * Except:
    * - Area 51 (area51.stackexchange.com)
-   * - Gaming (gaming.stackexchange.com)
    * ** Please open an issue to report sites where the style breaks **
    * https://github.com/StylishThemes/StackOverflow-Dark/issues
    * previous version information contained at the userstyles site
@@ -983,7 +982,7 @@ regexp("^https?://((?!(www|area51|gaming)).*\\.)?stackexchange\\.com.*") {
 |  _| | | | -_| .'| '_|_ -|
 |_| |_____|___|__,|_,_|___|
 */
-@-moz-document regexp("^https?://((?!(www|area51|gaming)).*\\.)?stackexchange.com.*") {
+@-moz-document regexp("^https?://((?!(www|area51)).*\\.)?stackexchange.com.*") {
   /* login screen StackExchange logo replacement */
   .login-page .se-logo {
     -moz-box-sizing: border-box !important;

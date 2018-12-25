@@ -18,7 +18,7 @@
   </a>
 </p>
 
-This dark theme applied to Stack Overflow and almost all Stack Exchange sites (except [Gaming](http://gaming.stackexchange.com/) and [Area 51](http://area51.stackexchange.com/)).
+This dark theme applied to Stack Overflow and almost all Stack Exchange sites (except [Area 51](http://area51.stackexchange.com/)).
 
 ## Preview
 
