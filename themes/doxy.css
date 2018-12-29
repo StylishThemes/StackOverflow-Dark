@@ -30,7 +30,6 @@ pre.prettyprint {
   margin: 1em auto !important;
   padding: 1em !important;
   white-space: pre-wrap !important;
-  line-height: 1.4em !important;
 }
 
 pre.prettyprint a, code.prettyprint a {

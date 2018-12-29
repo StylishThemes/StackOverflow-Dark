@@ -1,7 +1,7 @@
 /*! Desert */
 /* scheme ported from vim to google prettify by by techto…@ */
 /* https://github.com/jmblog/color-themes-for-google-code-prettify/issues/7 */
-pre.prettyprint { display: block; background-color: #333 !important; line-height: 1.4em !important; }
+pre.prettyprint { display: block; background-color: #333 !important; }
 pre .nocode { background-color: none !important; color: #000 !important; }
 pre .str, code .str { color: #ffa0a0 !important; } /* string  - pink */
 pre .kwd, code .kwd { color: #f0e68c !important; font-weight: bold !important; }
