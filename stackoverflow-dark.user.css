@@ -219,6 +219,10 @@ regexp("^https?://((?!(www|area51)).*\\.)?stackexchange\\.com.*") {
     background-color: #111 !important;
     color: #ddd !important;
   }
+  .actual-edit-overlay, input, input:-webkit-autofill {
+    -webkit-box-shadow: 0 0 0px 1000px #111 inset;
+    -webkit-text-fill-color: #fff !important;
+  }
   .gsc-selected-option-container {
     background: #111 !important;
   }
@@ -746,9 +750,6 @@ regexp("^https?://((?!(www|area51)).*\\.)?stackexchange\\.com.*") {
   .salary-skill-legend-li .-score, header.job-details--header a,
   .msg-list .list-item.is-unread span {
     color: #fff !important;
-  }
-  input, .actual-edit-overlay {
-    -webkit-text-fill-color: #fff !important;
   }
   .post-text a:visited, .comment-text a:not(.comment-user):visited,
   #chat-body .content a:visited, .question-hyperlink:visited,
