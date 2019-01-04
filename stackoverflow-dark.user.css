@@ -327,7 +327,8 @@ regexp("^https?://((?!(www|area51)).*\\.)?stackexchange\\.com.*") {
     -webkit-border-radius: 3px !important;
             border-radius: 3px !important;
   }
-  .topbar.newheader, .network-items>a, .icon-help, .icon-help:hover {
+  .topbar.newheader, .network-items>a, .icon-help, .icon-help:hover,
+  .s-notice__important, .s-notice.s-notice__outlined {
     background-color: #222 !important;
   }
   .calendar, .calendar-small, .mspark .mspbar, #promo-box,
@@ -446,8 +447,16 @@ regexp("^https?://((?!(www|area51)).*\\.)?stackexchange\\.com.*") {
   .review-post-author-guidance, .bg-black-050 {
     background-color: rgba(51, 34, 17, .4) !important;
   }
-  pre .spaces, .message.message-warning {
+  pre .spaces, .message.message-warning, .s-notice__warning {
     background-color: #321 !important;
+    color: #eee !important;
+  }
+  .s-notice__warning.s-notice__important {
+    background-color: #432 !important;
+    color: #eee !important;
+  }
+  .s-notice__warning.s-notice__outlined {
+    border-color: #321 !important;
     color: #eee !important;
   }
   .message.message-warning .message-tip-left-top:before {
@@ -463,12 +472,15 @@ regexp("^https?://((?!(www|area51)).*\\.)?stackexchange\\.com.*") {
   .rep-increase, .progress-bar .percent, .recommended, .vote.accepted,
   .suggested-edit .inserted>div, .full-diff .inserted>div, .message.success,
   .p-highlights .-rep-increase, .s-progress-bar .-fill, .answerBox.accepted,
-  .accepted-answer .user-info {
+  .accepted-answer .user-info, .s-notice__success {
     background: #232 !important;
   }
-  span.diff-add {
+  span.diff-add, .s-notice__success.s-notice__important {
     background: #3f4e1d !important;
     color: #92cc09 !important;
+  }
+  .s-notice__success.s-notice__outlined {
+    border-color: #27ae60 !important;
   }
   .topbar-dialog.achievements-dialog .rep-up, .-activity .-stat.answered {
     color: #92cc09 !important;
@@ -498,8 +510,11 @@ regexp("^https?://((?!(www|area51)).*\\.)?stackexchange\\.com.*") {
   .suggested-edit .deleted>div, .full-diff .deleted>div,
   .realtime-post-deleted-notification p, .message.incomplete, .message.error,
   .deleted-answer .comments-wrap, .deleted-answer .user-info,
-  .deleted-answer .util-bar, .deleted-answer .comment {
+  .deleted-answer .util-bar, .deleted-answer .comment, .s-notice__danger {
     background-color: #200 !important;
+  }
+  .s-notice__danger.s-notice__outlined {
+    border-color: #200 !important;
   }
   .post-timeline-v2 .post-timeline tr.deleted-event td,
   .post-timeline-v2 .post-timeline tr.deleted-event-details td {
@@ -513,7 +528,7 @@ regexp("^https?://((?!(www|area51)).*\\.)?stackexchange\\.com.*") {
     background-color: #400f00 !important;
     color: #ff4a15 !important;
   }
-  .summary a.moderator-tag {
+  .summary a.moderator-tag, .s-notice__danger.s-notice__important {
     background-color: #400 !important;
   }
   .summary a.moderator-tag:hover {
@@ -662,14 +677,15 @@ regexp("^https?://((?!(www|area51)).*\\.)?stackexchange\\.com.*") {
   }
   .review-actions input, .btn, .chosen-choices .search-choice,
   .topbar-dialog a.btn-secondary, .filter-dashboard, input[type=submit],
-  .bg-blue-500, .s-btn.s-btn__filled, .old-hero.z-base {
+  .bg-blue-500, .s-btn.s-btn__filled, .old-hero.z-base, .s-notice__info {
     background: #182030 !important;
     color: #ccc !important;
     border: 1px solid #135 !important;
   }
   .review-actions input:hover, .btn:hover, .btn-secondary:hover,
   #job-board-save:hover, .topbar-dialog a.btn-secondary:hover,
-  input[type=submit]:hover, .s-btn.s-btn__filled:hover, .old-hero._small._darken {
+  input[type=submit]:hover, .s-btn.s-btn__filled:hover, .old-hero._small._darken,
+  .s-notice__info.s-notice__important {
     background: #273045 !important;
   }
   .s-hero {
