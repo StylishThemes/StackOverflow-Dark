@@ -923,12 +923,12 @@ regexp("^https?://((?!(www|area51)).*\\.)?stackexchange\\.com.*") {
   .collection img, .salary-survey-sidebar .header-img, #post-job .header-img {
     filter: invert(80%) hue-rotate(180deg);
   }
-  p img {
+  .post-text img {
     background: #fff !important;
     opacity: /*[[img-opacity]]*/;
     border: #fff 2px solid !important;
   }
-  p img:hover {
+  .post-text img:hover {
     opacity: 1 !important;
   }
   .axis .tick, .pie text {
