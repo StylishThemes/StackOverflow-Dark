@@ -299,7 +299,8 @@ regexp("^https?://((?!(www|area51)).*\\.)?stackexchange\\.com.*") {
   .item-select-table .item:hover, .visa-wrapper, .chosen-choices,
   .p-top-tags .-tag-group, .chosen-results .active-result,
   .salary-results-wrapper .inline-survey-cta, #messages-interface .callout,
-  .tour-bubble .-body, .why-jobs-v2 .developers-first select option, .s-tag {
+  .tour-bubble .-body, .why-jobs-v2 .developers-first select option, .s-tag,
+  .wmd-button__active, .wmd-inline-dialog {
     background-color: #222 !important;
     color: #ddd !important;
   }
@@ -591,7 +592,7 @@ regexp("^https?://((?!(www|area51)).*\\.)?stackexchange\\.com.*") {
   .temp-popover.temp-popover__bottom-right .temp-popover--arrow:after {
     border-bottom-color: #191919 !important;
   }
-  .s-progress-bar .-bar:before, .s-progress-bar .-bar:after {
+  .s-progress-bar .-bar:before, .s-progress-bar .-bar:after, .wmd-button__active {
     border-top-color: #222 !important;
     border-bottom-color: #222 !important;
   }
