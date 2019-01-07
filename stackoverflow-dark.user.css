@@ -127,6 +127,10 @@ regexp("^https?://((?!(www|area51)).*\\.)?stackexchange\\.com.*") {
   .spoiler:hover a, .comment-up-on, .comment-up-off:hover {
     color: /*[[base-color]]*/ !important;
   }
+  .search-controls-responsive .-item .s-btn__outlined {
+    border-color: /*[[base-color]]*/ !important;
+    color: /*[[base-color]]*/ !important;
+  }
   .nav .primarynav li a:hover, .message.message-config .actions .button,
   .btn-careers:hover, .btn-careers:visited, .question-list-layout a:hover {
     color: #fff !important;
@@ -303,7 +307,8 @@ regexp("^https?://((?!(www|area51)).*\\.)?stackexchange\\.com.*") {
   .p-top-tags .-tag-group, .chosen-results .active-result,
   .salary-results-wrapper .inline-survey-cta, #messages-interface .callout,
   .tour-bubble .-body, .why-jobs-v2 .developers-first select option, .s-tag,
-  .wmd-button__active, .wmd-inline-dialog {
+  .wmd-button__active, .wmd-inline-dialog,
+  .search-form.responsive .filter-pane nav ul._tabs li.tab [data-tab] a span {
     background-color: #222 !important;
     color: #ddd !important;
   }
@@ -317,7 +322,7 @@ regexp("^https?://((?!(www|area51)).*\\.)?stackexchange\\.com.*") {
   .-job-badges .-badge, .search-form .job-alert-tooltip, .bg-white,
   .s-sidebarwidget--header, .tag-popup .-container, .tag-popup .-arrow:before,
   .l-main-col a.btn-secondary, .messaging-v2 .btn-secondary.is-active, .s-card,
-  .bar-sm.bg-black-025 {
+  .bar-sm.bg-black-025, .search-form.responsive .filter-pane nav ul._tabs li.tab {
     background-color: #222 !important;
     border-color: #555 !important;
     color: #ddd !important;
@@ -346,7 +351,8 @@ regexp("^https?://((?!(www|area51)).*\\.)?stackexchange\\.com.*") {
     color: #ddd !important;
   }
   .tour-page .tour-content section:nth-child(n+1), .users-page .user-info:hover,
-  .nav-left-col a {
+  .nav-left-col a, .new-post-login .stackexchange-login:hover,
+  .new-post-login .google-login:hover {
     background: rgba(34, 34, 34, .5) !important;
   }
   .ad502-room, .message.message-config .actions, .tag-container .col, .congrats,
@@ -570,7 +576,7 @@ regexp("^https?://((?!(www|area51)).*\\.)?stackexchange\\.com.*") {
   .min-ds-wizard .current, .input-group .-fill._clean,
   .why-jobs-v2 .slanted-background:before, .msg-list .list-item,
   .msg-list .list-item.is-read, .msg-list .list-item header,
-  .message-detail header, .grid--cell, .post-signature:not(.owner) .user-info,
+  .message-detail header, .grid--cell:not(.facebook-login), .post-signature:not(.owner) .user-info,
   .answers-subheader, .profile-top-tags .badge-tag, .msg-controls {
     background-color: transparent !important;
   }
@@ -736,7 +742,8 @@ regexp("^https?://((?!(www|area51)).*\\.)?stackexchange\\.com.*") {
   }
   .user-details td, .content-page, h2:not([style]), h2 a, .profile-popup a:hover,
   .module h4, .page-description, #openid_identifier, .form-item label,
-  .subheader h2, .nav-links a.nav-links--link:hover {
+  .subheader h2, .nav-links a.nav-links--link:hover,
+  #side-menu ul ul li > a:hover .svg-icon {
     color: #c1beba !important;
   }
   .comment, #top-menu a, .subheader a, .reputation a, .reputation-score,
@@ -746,14 +753,17 @@ regexp("^https?://((?!(www|area51)).*\\.)?stackexchange\\.com.*") {
   a.question-hyperlink:hover, a.answer-hyperlink:hover, .cv-story .time-frame,
   .-list-item.is-completed .-description, .s-footer .-toc th, .event-count,
   .post-timeline td, .post-timeline th, #side-menu ul .category,
-  .msg-select-all-label, .fc-light, .s-table th, .input-group .f-label {
+  .msg-select-all-label, .fc-light, .s-table th, .input-group .f-label,
+  .-job-summary .-company {
     color: #ccc !important;
   }
   .ob-post-tag, .ob-user-tag, .deleted-answer .util-bar a, .nav-links--link,
-  .msg-list .msg-text, .fc-medium, .s-table td {
+  .msg-list .msg-text, .fc-medium, .s-table td,
+  #side-menu ul ul li > a .svg-icon, .nav-links .fc-medium,
+  #top-cards .fc-black-350, .subheader a span {
     color: #999 !important;
   }
-  .nav-links .youarehere .nav-links--link .svg-icon, .nav-links .fc-medium {
+  .nav-links .youarehere .nav-links--link .svg-icon {
     color: #666 !important;
   }
   .comment-up-off, .comment-flag, .comment-flag-off,
@@ -969,7 +979,7 @@ regexp("^https?://((?!(www|area51)).*\\.)?stackexchange\\.com.*") {
     -webkit-filter: invert(76%) !important;
   }
   /* documentation editing icons */
-  .docs-menu a {
+  .docs-menu a, .favicon.favicon-stackoverflowmeta {
     -webkit-filter: brightness(200%) !important;
             filter: brightness(200%) !important;
   }
