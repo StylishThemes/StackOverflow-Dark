@@ -841,9 +841,9 @@ regexp("^https?://((?!(www|area51)).*\\.)?stackexchange\\.com.*") {
   /* weird hack - see #123 */
   @-webkit-keyframes autofill {
     to {
-      background-color: #111 !important;
+      background-color: #111;
       background-image: none;
-      color: #ddd !important;
+      color: #ddd;
     }
   }
   input:-webkit-autofill, input:-webkit-autofill:hover,
