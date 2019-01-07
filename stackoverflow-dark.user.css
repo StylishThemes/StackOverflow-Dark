@@ -189,6 +189,9 @@ regexp("^https?://((?!(www|area51)).*\\.)?stackexchange\\.com.*") {
   .profile-avatar {
     box-shadow: inset 0 10em 0 #333 !important;
   }
+  .avatar-change:hover {
+    background-color: #333 !important;
+  }
   .menu-switcher {
             filter: none !important;
     -webkit-filter: none !important;
@@ -359,7 +362,7 @@ regexp("^https?://((?!(www|area51)).*\\.)?stackexchange\\.com.*") {
   .answer, #system-message, .commentlist, .revision td, #hero-content,
   .mdhelp-tabs .selected, .tabs .selected, .rep-card .rep-col, .sort select,
   .-job._highlighted, .MathJax_MenuDisabled, .gsc-option-menu-item-highlighted,
-  .secondary-job-results-identifier {
+  .secondary-job-results-identifier, .user-page .settings-page .email-settings .-info {
     background: #232323 !important;
     color: #999 !important;
   }
@@ -406,28 +409,30 @@ regexp("^https?://((?!(www|area51)).*\\.)?stackexchange\\.com.*") {
   .comment__highlight:not([style*="background-color"]),
   ul.comments-list .comment__highlight .comment-text,
   ul.comments-list .comment__highlight .comment-actions,
-  .l-main-col .btn-secondary:hover, .grid--cell.s-progress {
+  .l-main-col .btn-secondary:hover, .grid--cell.s-progress,
+  .modal.image-upload .modal-dropzone-default, a.btn-secondary {
     background-color: #333 !important;
   }
   .owner-answer, .question-status, .notification, #feed-ticker, #top-menu,
   .vote-revision td, .topbar-dialog .unread-item, .privileges-wrapper .stroke,
-  .progress-bar .bar {
+  .progress-bar .bar, .user-page .settings-page .email-settings .-title-row {
     background: #404040 !important;
   }
   tr.comment:hover, .reply-parent, .timestamp, .usercard, .comment-help,
   .answer-help-background, .mdhelp-tabs, .tabs li, .hi, .seNavLinks a:hover,
   .seNavLinks a:focus, .itemBoxNew, .pagination a.current,
   .pagination a.selected, .pagination a:hover, .wb-wearing, .impact-card hr,
-  .MathJax_MenuActive {
+  .MathJax_MenuActive, button.btn-outlined, .btn-outlined {
     background-color: #444 !important;
     color: #ddd !important;
   }
-  .page-numbers.current {
+  .page-numbers.current, hr, input[type="button"]:not(.s-btn) {
     background: #444 !important;
   }
   .comment__highlight:not([style*="background-color"]),
   ul.comments-list .comment__highlight .comment-text,
-  ul.comments-list .comment__highlight .comment-actions {
+  ul.comments-list .comment__highlight .comment-actions,
+  input[type="button"]:not(.s-btn):hover {
     background: rgba(102, 102, 102, .8) !important;
   }
   #chat .messages .mention {
@@ -715,7 +720,7 @@ regexp("^https?://((?!(www|area51)).*\\.)?stackexchange\\.com.*") {
   .salary-results-container h1, .topbar-dialog h4, .label-key > b, .heading,
   .module h3, .badge-tag, .s-label, .-link__with-icon:hover .svg-icon,
   .youarehere a, .youarehere .svg-icon, h1, h2, h3, h4, h5, h6, .h1, .h2, .h3,
-  .h4, .h5, .h6, .tour-bubble p, .fc-dark {
+  .h4, .h5, .h6, .tour-bubble p, .fc-dark, #logins-table .group-name {
     color: #ddd !important;
   }
   /* patch for hint text of SurfingKeys browser extension */
@@ -741,7 +746,7 @@ regexp("^https?://((?!(www|area51)).*\\.)?stackexchange\\.com.*") {
   a.question-hyperlink:hover, a.answer-hyperlink:hover, .cv-story .time-frame,
   .-list-item.is-completed .-description, .s-footer .-toc th, .event-count,
   .post-timeline td, .post-timeline th, #side-menu ul .category,
-  .msg-select-all-label, .fc-light, .s-table th {
+  .msg-select-all-label, .fc-light, .s-table th, .input-group .f-label {
     color: #ccc !important;
   }
   .ob-post-tag, .ob-user-tag, .deleted-answer .util-bar a, .nav-links--link,
@@ -752,7 +757,7 @@ regexp("^https?://((?!(www|area51)).*\\.)?stackexchange\\.com.*") {
     color: #666 !important;
   }
   .comment-up-off, .comment-flag, .comment-flag-off,
-  .profile-cards--graph .grid--cell {
+  .profile-cards--graph .grid--cell, .g-col .f-label {
     color: #444 !important;
   }
   .s-btn__unset {
