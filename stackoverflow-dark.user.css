@@ -368,7 +368,8 @@ regexp("^https?://((?!(www|area51)).*\\.)?stackexchange\\.com.*") {
   .answer, #system-message, .commentlist, .revision td, #hero-content,
   .mdhelp-tabs .selected, .tabs .selected, .rep-card .rep-col, .sort select,
   .-job._highlighted, .MathJax_MenuDisabled, .gsc-option-menu-item-highlighted,
-  .secondary-job-results-identifier, .user-page .settings-page .email-settings .-info {
+  .secondary-job-results-identifier,
+  .user-page .settings-page .email-settings .-info {
     background: #232323 !important;
     color: #999 !important;
   }
@@ -384,8 +385,7 @@ regexp("^https?://((?!(www|area51)).*\\.)?stackexchange\\.com.*") {
     background-color: #242424 !important;
     background-image: none !important;
   }
-  .answer,
-  #newsletter-ad {
+  .answer, #newsletter-ad {
     padding: 10px !important;
   }
   #newsletter-ad:before {
@@ -576,8 +576,9 @@ regexp("^https?://((?!(www|area51)).*\\.)?stackexchange\\.com.*") {
   .min-ds-wizard .current, .input-group .-fill._clean,
   .why-jobs-v2 .slanted-background:before, .msg-list .list-item,
   .msg-list .list-item.is-read, .msg-list .list-item header,
-  .message-detail header, .grid--cell:not(.facebook-login), .post-signature:not(.owner) .user-info,
-  .answers-subheader, .profile-top-tags .badge-tag, .msg-controls {
+  .message-detail header, .grid--cell:not(.facebook-login),
+  .post-signature:not(.owner) .user-info, .answers-subheader,
+  .profile-top-tags .badge-tag, .msg-controls {
     background-color: transparent !important;
   }
   #tabs a:hover, .tabs a:hover {
