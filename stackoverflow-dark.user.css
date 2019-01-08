@@ -937,7 +937,8 @@ regexp("^https?://((?!(www|area51)).*\\.)?stackexchange\\.com.*") {
     -webkit-filter: invert(100%) !important;
             filter: invert(100%) !important;
   }
-  .collection img, .salary-survey-sidebar .header-img, #post-job .header-img {
+  .collection img, .salary-survey-sidebar .header-img, #post-job .header-img,
+  .hiring iframe {
     filter: invert(80%) hue-rotate(180deg);
   }
   .post-text img {
