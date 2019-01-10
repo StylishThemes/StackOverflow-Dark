@@ -158,8 +158,9 @@ regexp("^https?://((?!(www|area51)).*\\.)?stackexchange\\.com.*") {
     background-color: /*[[base-color]]*/ !important;
     color: #eee !important;
   }
-  #tabs a.youarehere:before, .tabs a.youarehere:before,
-  .newnav .tabs-list-container .tabs-list .intellitab a.youarehere:before {
+  .user-tabs-nav #tabs a.youarehere:before, .user-tabs-nav .tabs a.youarehere:before,
+  .newnav .tabs-list-container .tabs-list .intellitab a.youarehere:before,
+	#tabs a.youarehere:before, .tabs a.youarehere:before {
     background-color: /*[[base-color]]*/ !important;
   }
   .s-btn.s-btn__primary:hover, .top-bar .-secondary .-ctas .btn-topbar-clear,
@@ -260,7 +261,7 @@ regexp("^https?://((?!(www|area51)).*\\.)?stackexchange\\.com.*") {
     background-color: #191919 !important;
     border: 2px solid #262626 !important;
   }
-  #tabs a {
+  #tabs a, .tabs a {
     border: 1px solid transparent !important;
   }
   #tabs a.youarehere, .tabs a.youarehere, .tag-suggestions, .dropdown li,
@@ -280,6 +281,15 @@ regexp("^https?://((?!(www|area51)).*\\.)?stackexchange\\.com.*") {
   #tabs a.youarehere, .tabs a.youarehere {
     border-bottom-color: transparent !important;
   }
+  .subheader:not(.user-tabs-nav) .tabs a.youarehere {
+    border-bottom: 2px solid /*[[base-color]]*/ !important;
+    color: /*[[base-color]]*/ !important;
+	}
+  .subheader:not(.user-tabs-nav) .tabs a:hover,
+  .sort a.current, .subtabs a.youarehere {
+    border-bottom: 2px solid /*[[base-color]]*/ !important;
+    color: /*[[base-color]]*/ !important;
+	}
   .subtabs :not(.youarehere) {
     border: 0 !important;
   }
@@ -432,7 +442,8 @@ regexp("^https?://((?!(www|area51)).*\\.)?stackexchange\\.com.*") {
     background-color: #444 !important;
     color: #ddd !important;
   }
-  .page-numbers.current, hr, input[type="button"]:not(.s-btn) {
+  .page-numbers.current, hr, input[type="button"]:not(.s-btn),
+  .modal .modal-close:hover {
     background: #444 !important;
   }
   .comment__highlight:not([style*="background-color"]),
@@ -631,7 +642,11 @@ regexp("^https?://((?!(www|area51)).*\\.)?stackexchange\\.com.*") {
   .search-form .filter-pane a._active, .search-form .filter-pane a:hover {
     border-bottom-color: /*[[base-color]]*/ !important;
   }
-  .left-arrow, .timeline-item:nth-child(odd):after {
+	.search-form.responsive .filter-pane .popover .popover--arrow:after,
+	.search-form.responsive .filter-pane .popover .popover--arrow:before {
+    border-bottom-color: #444 !important;
+  }
+	.left-arrow, .timeline-item:nth-child(odd):after {
     border-right-color: rgba(119, 119, 119, .4) !important;
   }
   .previous-button:hover .left-arrow {
@@ -747,6 +762,10 @@ regexp("^https?://((?!(www|area51)).*\\.)?stackexchange\\.com.*") {
   #side-menu ul ul li > a:hover .svg-icon {
     color: #c1beba !important;
   }
+  #privilege-category-descriptions .privilege-icon,
+	.privilege-table-row .privilege-icon {
+    filter: grayscale(100%) !Important;
+  }
   .comment, #top-menu a, .subheader a, .reputation a, .reputation-score,
   .relativetime.old, .votes-cast-stats td, .mini-counts span,
   #chat .system-message, .card .rep, a.badge, a.badge-tag,
@@ -761,10 +780,13 @@ regexp("^https?://((?!(www|area51)).*\\.)?stackexchange\\.com.*") {
   .ob-post-tag, .ob-user-tag, .deleted-answer .util-bar a, .nav-links--link,
   .msg-list .msg-text, .fc-medium, .s-table td,
   #side-menu ul ul li > a .svg-icon, .nav-links .fc-medium,
-  #top-cards .fc-black-350, .subheader a span {
+  #top-cards .fc-black-350 svg, .subheader a span, #user-card .fc-black-350 svg,
+	.company-list .fc-black-500 svg:not(.fc-green-400):not(.fc-orange-400), .iconStar,
+	.company-list p, .-settings span, .email-settings .-info p, #tags_list span {
     color: #999 !important;
   }
-  .nav-links .youarehere .nav-links--link .svg-icon {
+  .nav-links .youarehere .nav-links--link .svg-icon,
+	label[for="sorting-options"], .company-list div.fc-black-500 {
     color: #666 !important;
   }
   .comment-up-off, .comment-flag, .comment-flag-off,
@@ -812,7 +834,8 @@ regexp("^https?://((?!(www|area51)).*\\.)?stackexchange\\.com.*") {
     border-color: #da4453 !important;
   }
   /* orange */
-  .hot, .fc-orange-400 .iconRss, .fc-orange-400.iconRss {
+  .hot, .fc-orange-400 .iconRss, .fc-orange-400.iconRss,
+  #mainbar .grid a .iconRss {
     color: #f67400 !important;
   }
   /* light brown */
