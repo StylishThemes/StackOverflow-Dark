@@ -781,7 +781,7 @@ regexp("^https?://((?!(www|area51)).*\\.)?stackexchange\\.com.*") {
   .msg-list .msg-text, .fc-medium, .s-table td,
   #side-menu ul ul li > a .svg-icon, .nav-links .fc-medium,
   #top-cards .fc-black-350 svg, .subheader a span, #user-card .fc-black-350 svg,
-	.company-list .fc-black-500 svg:not(.fc-green-400):not(.fc-orange-400), .iconStar,
+	.company-list .fc-black-500 svg:not(.fc-green-400):not(.fc-orange-400),
 	.company-list p, .-settings span, .email-settings .-info p, #tags_list span {
     color: #999 !important;
   }
