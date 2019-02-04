@@ -318,7 +318,8 @@ regexp("^https?://((?!(www|area51)).*\\.)?stackexchange\\.com.*") {
   .salary-results-wrapper .inline-survey-cta, #messages-interface .callout,
   .tour-bubble .-body, .why-jobs-v2 .developers-first select option, .s-tag,
   .wmd-button__active, .wmd-inline-dialog,
-  .search-form.responsive .filter-pane nav ul._tabs li.tab [data-tab] a span {
+  .search-form.responsive .filter-pane nav ul._tabs li.tab [data-tab] a span,
+  .s-modal--dialog {
     background-color: #222 !important;
     color: #ddd !important;
   }
@@ -587,7 +588,7 @@ regexp("^https?://((?!(www|area51)).*\\.)?stackexchange\\.com.*") {
   .min-ds-wizard .current, .input-group .-fill._clean,
   .why-jobs-v2 .slanted-background:before, .msg-list .list-item,
   .msg-list .list-item.is-read, .msg-list .list-item header,
-  .message-detail header, .grid--cell:not(.facebook-login),
+  .message-detail header, .grid--cell:not(.facebook-login):not(.s-btn__primary),
   .post-signature:not(.owner) .user-info, .answers-subheader,
   .profile-top-tags .badge-tag, .msg-controls {
     background-color: transparent !important;
@@ -782,7 +783,8 @@ regexp("^https?://((?!(www|area51)).*\\.)?stackexchange\\.com.*") {
   #side-menu ul ul li > a .svg-icon, .nav-links .fc-medium,
   #top-cards .fc-black-350 svg, .subheader a span, #user-card .fc-black-350 svg,
 	.company-list .fc-black-500 svg:not(.fc-green-400):not(.fc-orange-400),
-	.company-list p, .-settings span, .email-settings .-info p, #tags_list span {
+	.company-list p, .-settings span, .email-settings .-info p, #tags_list span,
+  .s-description {
     color: #999 !important;
   }
   .nav-links .youarehere .nav-links--link .svg-icon,
