@@ -131,6 +131,12 @@ regexp("^https?://((?!(www|area51)).*\\.)?stackexchange\\.com.*") {
     border-color: /*[[base-color]]*/ !important;
     color: /*[[base-color]]*/ !important;
   }
+  .s-sidebarwidget--item[aria-current="true"]:before,
+  .s-sidebarwidget--item > :first-child[aria-current="true"]:before,
+  .s-sidebarwidget--item[aria-current="page"]:before,
+  .s-sidebarwidget--item > :first-child[aria-current="page"]:before {
+    border-color: /*[[base-color]]*/ !important;
+  }
   .nav .primarynav li a:hover, .message.message-config .actions .button,
   .btn-careers:hover, .btn-careers:visited, .question-list-layout a:hover {
     color: #fff !important;
