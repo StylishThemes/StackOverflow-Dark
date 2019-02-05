@@ -148,7 +148,8 @@ regexp("^https?://((?!(www|area51)).*\\.)?stackexchange\\.com.*") {
   }
   input[type="submit"].btn-clear:hover, input[type="button"].btn-clear:hover,
   button.btn-clear:hover, .btn-clear:hover, input[type="submit"].btn-clear:focus,
-  input[type="button"].btn-clear:focus, button.btn-clear:focus, .btn-clear:focus {
+  input[type="button"].btn-clear:focus, button.btn-clear:focus, .btn-clear:focus,
+  a.youarehere.is-selected {
     color: /*[[base-color]]*/ !important;
     background: #273045 !important;
   }
