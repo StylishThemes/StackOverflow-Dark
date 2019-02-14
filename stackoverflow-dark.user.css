@@ -165,9 +165,10 @@ regexp("^https?://((?!(www|area51)).*\\.)?stackexchange\\.com.*") {
     background-color: /*[[base-color]]*/ !important;
     color: #eee !important;
   }
-  .user-tabs-nav #tabs a.youarehere:before, .user-tabs-nav .tabs a.youarehere:before,
+  .user-tabs-nav #tabs a.youarehere:before,
+  .user-tabs-nav .tabs a.youarehere:before,
   .newnav .tabs-list-container .tabs-list .intellitab a.youarehere:before,
-	#tabs a.youarehere:before, .tabs a.youarehere:before {
+  #tabs a.youarehere:before, .tabs a.youarehere:before {
     background-color: /*[[base-color]]*/ !important;
   }
   .s-btn.s-btn__primary:hover, .top-bar .-secondary .-ctas .btn-topbar-clear,
@@ -291,12 +292,12 @@ regexp("^https?://((?!(www|area51)).*\\.)?stackexchange\\.com.*") {
   .subheader:not(.user-tabs-nav) .tabs a.youarehere {
     border-bottom: 2px solid /*[[base-color]]*/ !important;
     color: /*[[base-color]]*/ !important;
-	}
-  .subheader:not(.user-tabs-nav) .tabs a:hover,
-  .sort a.current, .subtabs a.youarehere {
+  }
+  .subheader:not(.user-tabs-nav) .tabs a:hover, .sort a.current,
+  .subtabs a.youarehere {
     border-bottom: 2px solid /*[[base-color]]*/ !important;
     color: /*[[base-color]]*/ !important;
-	}
+  }
   .subtabs :not(.youarehere) {
     border: 0 !important;
   }
@@ -650,11 +651,11 @@ regexp("^https?://((?!(www|area51)).*\\.)?stackexchange\\.com.*") {
   .search-form .filter-pane a._active, .search-form .filter-pane a:hover {
     border-bottom-color: /*[[base-color]]*/ !important;
   }
-	.search-form.responsive .filter-pane .popover .popover--arrow:after,
-	.search-form.responsive .filter-pane .popover .popover--arrow:before {
+  .search-form.responsive .filter-pane .popover .popover--arrow:after,
+  .search-form.responsive .filter-pane .popover .popover--arrow:before {
     border-bottom-color: #444 !important;
   }
-	.left-arrow, .timeline-item:nth-child(odd):after {
+  .left-arrow, .timeline-item:nth-child(odd):after {
     border-right-color: rgba(119, 119, 119, .4) !important;
   }
   .previous-button:hover .left-arrow {
@@ -771,7 +772,7 @@ regexp("^https?://((?!(www|area51)).*\\.)?stackexchange\\.com.*") {
     color: #c1beba !important;
   }
   #privilege-category-descriptions .privilege-icon,
-	.privilege-table-row .privilege-icon {
+  .privilege-table-row .privilege-icon {
     filter: grayscale(100%) !Important;
   }
   .comment, #top-menu a, .subheader a, .reputation a, .reputation-score,
@@ -783,20 +784,20 @@ regexp("^https?://((?!(www|area51)).*\\.)?stackexchange\\.com.*") {
   .post-timeline td, .post-timeline th, #side-menu ul .category,
   .msg-select-all-label, .fc-light, .s-table th, .input-group .f-label,
   .-job-summary .-company, h1.fc-black-800, [class*="grid-"] .fc-black-700,
-  p.fc-black-800{
+  p.fc-black-800 {
     color: #ccc !important;
   }
   .ob-post-tag, .ob-user-tag, .deleted-answer .util-bar a, .nav-links--link,
   .msg-list .msg-text, .fc-medium, .s-table td,
   #side-menu ul ul li > a .svg-icon, .nav-links .fc-medium,
   #top-cards .fc-black-350 svg, .subheader a span, #user-card .fc-black-350 svg,
-	.company-list .fc-black-500 svg:not(.fc-green-400):not(.fc-orange-400),
-	.company-list p, .-settings span, .email-settings .-info p, #tags_list span,
+  .company-list .fc-black-500 svg:not(.fc-green-400):not(.fc-orange-400),
+  .company-list p, .-settings span, .email-settings .-info p, #tags_list span,
   .s-description, p.fc-black-700 {
     color: #999 !important;
   }
   .nav-links .youarehere .nav-links--link .svg-icon,
-	label[for="sorting-options"], .company-list div.fc-black-500 {
+  label[for="sorting-options"], .company-list div.fc-black-500 {
     color: #666 !important;
   }
   .comment-up-off, .comment-flag, .comment-flag-off,
@@ -852,15 +853,15 @@ regexp("^https?://((?!(www|area51)).*\\.)?stackexchange\\.com.*") {
   .unanswered {
     color: #9a4444 !important;
   }
-	.message.incomplete .message-title {
+  .message.incomplete .message-title {
     background: #6f4426 !important;
-	}
+  }
   .job-requirements-form .message {
     background: #532709 !important;
   }
-	div.message.incomplete {
-		border-color: #f67400 !important
-	}
+  div.message.incomplete {
+    border-color: #f67400 !important;
+  }
   /* === Style adjustments === */
   .nav a, .post-tag, .comment-link, .tag-synonym-link, a.post-tag:hover,
   .topbar a, .search-form .filter-pane a:hover, .comment-link:hover,
