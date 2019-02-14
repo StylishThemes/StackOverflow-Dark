@@ -759,10 +759,10 @@ regexp("^https?://((?!(www|area51)).*\\.)?stackexchange\\.com.*") {
   }
   /* placeholder */
   ::-webkit-input-placeholder {
-    color: #ddd !important;
+    color: #999 !important;
   }
   ::-moz-placeholder {
-    color: #ddd !important;
+    color: #999 !important;
   }
   .user-details td, .content-page, h2:not([style]), h2 a, .profile-popup a:hover,
   .module h4, .page-description, #openid_identifier, .form-item label,
