@@ -596,9 +596,9 @@ regexp("^https?://((?!(www|area51)).*\\.)?stackexchange\\.com.*") {
   .min-ds-wizard .current, .input-group .-fill._clean,
   .why-jobs-v2 .slanted-background:before, .msg-list .list-item,
   .msg-list .list-item.is-read, .msg-list .list-item header,
-  .message-detail header, .grid--cell:not(.facebook-login):not(.s-btn__primary),
-  .post-signature:not(.owner) .user-info, .answers-subheader,
-  .profile-top-tags .badge-tag, .msg-controls {
+  .message-detail header, .post-signature:not(.owner) .user-info,
+  .answers-subheader, .profile-top-tags .badge-tag, .msg-controls,
+  .grid--cell:not(.facebook-login):not(.s-btn__primary):not(.youarehere) {
     background-color: transparent !important;
   }
   #tabs a:hover, .tabs a:hover {
