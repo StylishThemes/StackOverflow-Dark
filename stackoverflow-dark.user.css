@@ -235,7 +235,7 @@ regexp("^https?://((?!(www|area51)).*\\.)?stackexchange\\.com.*") {
     background-color: #111 !important;
     color: #ddd !important;
   }
-  .actual-edit-overlay, input, input:-webkit-autofill {
+  .actual-edit-overlay {
     -webkit-box-shadow: 0 0 0 1000px #111 inset;
     -webkit-text-fill-color: #fff !important;
   }
