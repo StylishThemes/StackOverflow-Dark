@@ -104,7 +104,7 @@ regexp("^https?://((?!(www|area51)).*\\.)?stackexchange\\.com.*") {
     text-shadow: none !important;
     box-shadow: none !important;
   }
-  body {
+  body, .cv-story header {
     background-color: #191919 !important;
     background-image: /*[[bg-choice]]*/ !important;
     background-clip: border-box !important;
@@ -782,7 +782,8 @@ regexp("^https?://((?!(www|area51)).*\\.)?stackexchange\\.com.*") {
   .-list-item.is-completed .-description, .s-footer .-toc th, .event-count,
   .post-timeline td, .post-timeline th, #side-menu ul .category,
   .msg-select-all-label, .fc-light, .s-table th, .input-group .f-label,
-  .-job-summary .-company {
+  .-job-summary .-company, h1.fc-black-800, [class*="grid-"] .fc-black-700,
+  p.fc-black-800{
     color: #ccc !important;
   }
   .ob-post-tag, .ob-user-tag, .deleted-answer .util-bar a, .nav-links--link,
@@ -791,7 +792,7 @@ regexp("^https?://((?!(www|area51)).*\\.)?stackexchange\\.com.*") {
   #top-cards .fc-black-350 svg, .subheader a span, #user-card .fc-black-350 svg,
 	.company-list .fc-black-500 svg:not(.fc-green-400):not(.fc-orange-400),
 	.company-list p, .-settings span, .email-settings .-info p, #tags_list span,
-  .s-description {
+  .s-description, p.fc-black-700 {
     color: #999 !important;
   }
   .nav-links .youarehere .nav-links--link .svg-icon,
@@ -851,6 +852,15 @@ regexp("^https?://((?!(www|area51)).*\\.)?stackexchange\\.com.*") {
   .unanswered {
     color: #9a4444 !important;
   }
+	.message.incomplete .message-title {
+    background: #6f4426 !important;
+	}
+  .job-requirements-form .message {
+    background: #532709 !important;
+  }
+	div.message.incomplete {
+		border-color: #f67400 !important
+	}
   /* === Style adjustments === */
   .nav a, .post-tag, .comment-link, .tag-synonym-link, a.post-tag:hover,
   .topbar a, .search-form .filter-pane a:hover, .comment-link:hover,
@@ -970,7 +980,7 @@ regexp("^https?://((?!(www|area51)).*\\.)?stackexchange\\.com.*") {
             filter: invert(100%) !important;
   }
   .collection img, .salary-survey-sidebar .header-img, #post-job .header-img,
-  .hiring iframe {
+  .hiring iframe, .footer-notice a[href="http://www.crunchbase.com"] {
     filter: invert(80%) hue-rotate(180deg);
   }
   .post-text img {
