@@ -171,6 +171,9 @@ regexp("^https?://((?!(www|area51)).*\\.)?stackexchange\\.com.*") {
   #tabs a.youarehere:before, .tabs a.youarehere:before {
     background-color: /*[[base-color]]*/ !important;
   }
+  .site-footer .-link._expandable:before, .site-footer .-link._expandable:after {
+    background-color: rgba(/*[[base-color-rgb]]*/, .6) !important;
+  }
   .s-btn.s-btn__primary:hover, .top-bar .-secondary .-ctas .btn-topbar-clear,
   .top-bar .-secondary .-ctas .btn-topbar-clear:focus {
     filter: brightness(1.1) !important;
