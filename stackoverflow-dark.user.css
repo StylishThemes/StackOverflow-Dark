@@ -995,6 +995,7 @@ regexp("^https?://((?!(www|area51)).*\\.)?stackexchange\\.com.*") {
     background: #fff !important;
     opacity: /*[[img-opacity]]*/;
     border: #fff 2px solid !important;
+    transition: opacity .5s ease;
   }
   .post-text img:hover {
     opacity: 1 !important;
