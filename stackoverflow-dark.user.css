@@ -153,7 +153,7 @@ regexp("^https?://((?!(www|area51)).*\\.)?stackexchange\\.com.*") {
   input[class="w100"][type="submit"]:hover {
     background: #622 !important;
     border: 1px solid #ff4a15 !important;
-		filter: brightness(90%) !important;
+    filter: brightness(90%) !important;
   }
   input[type="submit"].btn-clear:hover, input[type="button"].btn-clear:hover,
   button.btn-clear:hover, .btn-clear:hover, input[type="submit"].btn-clear:focus,
@@ -297,9 +297,10 @@ regexp("^https?://((?!(www|area51)).*\\.)?stackexchange\\.com.*") {
   .s-popover--arrow__tr:before {
     border-bottom-color: #444 !important;
   }
-  .s-popover--arrow__tl:after, .s-popover--arrow__tc:after, .s-popover--arrow__tr:after {
-		border-bottom-color: #191919 !important;
-	}
+  .s-popover--arrow__tl:after, .s-popover--arrow__tc:after,
+  .s-popover--arrow__tr:after {
+    border-bottom-color: #191919 !important;
+  }
   /* RSS Feed - issue #87 */
   body > pre:not(.prettyprint):not(.CodeMirror-line) {
     background: #191919 !important;
@@ -597,7 +598,7 @@ regexp("^https?://((?!(www|area51)).*\\.)?stackexchange\\.com.*") {
   }
   #left-sidebar {
     background: linear-gradient(0deg, #1c3b51 0%, #371f51 100%) !important;
-    border-left: 3px solid #061 !important;;
+    border-left: 3px solid #061 !important;
   }
   /* === Transparent background === */
   div.message .meta, .spaces, .comment, span.feed-icon, a.role-switch,
@@ -784,7 +785,7 @@ regexp("^https?://((?!(www|area51)).*\\.)?stackexchange\\.com.*") {
   .h4, .h5, .h6, .tour-bubble p, .fc-dark, #logins-table .group-name {
     color: #ddd !important;
   }
-	#mainbar a.comment-user {
+  #mainbar a.comment-user {
     color: #5b93ff !important;
   }
   /* patch for hint text of SurfingKeys browser extension */
