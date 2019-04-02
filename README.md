@@ -35,8 +35,6 @@ Then:
 
 📦 [Install the usercss](https://github.com/StylishThemes/StackOverflow-Dark/raw/master/stackoverflow-dark.user.css) with Stylus or xStyle. Supports automatic updates.
 
-**NOTE** v3.0.0 will install as a separate usercss from v2.0+ because of the name change from "StackOverflow" to "Stack Overflow".
-
 ## Available Syntax Highlighting Themes
 
 | Theme                    |     |
