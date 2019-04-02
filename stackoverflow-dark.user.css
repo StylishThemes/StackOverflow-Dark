@@ -190,6 +190,9 @@ regexp("^https?://((?!(www|area51)).*\\.)?stackexchange\\.com.*") {
   .top-bar .-secondary .-ctas .btn-topbar-clear:focus {
     filter: brightness(1.1) !important;
   }
+  .top-bar .-secondary .-ctas .btn-topbar-clear {
+    border-color: transparent !important;
+  }
   /* === text selection === */
   ::selection {
     background: /*[[base-color]]*/ !important;
