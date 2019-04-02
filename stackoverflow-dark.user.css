@@ -596,10 +596,11 @@ regexp("^https?://((?!(www|area51)).*\\.)?stackexchange\\.com.*") {
   .vote-count-post [style="color:maroon"] {
     color: maroon !important;
   }
+  /* style april fools sidebar
   #left-sidebar {
     background: linear-gradient(0deg, #1c3b51 0%, #371f51 100%) !important;
     border-left: 3px solid #061 !important;
-  }
+  }*/
   /* === Transparent background === */
   div.message .meta, .spaces, .comment, span.feed-icon, a.role-switch,
   .nav.careers li, .nav.careers li:hover, .switcher-nudge-content p, #content,
