@@ -894,7 +894,9 @@ regexp("^https?://((?!(www|area51)).*\\.)?stackexchange\\.com.*") {
   .warm {
     color: #da4453 !important;
   }
-  #profile-summary>.-popout._incomplete {
+  #profile-summary>.-popout._incomplete, .has-error .s-input,
+	.has-error .s-textarea, .has-error .s-checkbox,
+	.has-error .s-radio:not(:checked), .has-error .s-select > select {
     border-color: #da4453 !important;
   }
   /* orange */
