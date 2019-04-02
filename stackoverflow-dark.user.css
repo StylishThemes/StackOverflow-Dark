@@ -122,6 +122,9 @@ regexp("^https?://((?!(www|area51)).*\\.)?stackexchange\\.com.*") {
       Courier,
       monospace !important;
   }
+  .snippet-code {
+    padding: 5px !important;
+  }
   /* === custom color === */
   a:not([class*="comment-"]), .profile-popup a, .seWrapper a, .gs-title b,
   .spoiler:hover a, .comment-up-on, .comment-up-off:hover {
@@ -246,6 +249,15 @@ regexp("^https?://((?!(www|area51)).*\\.)?stackexchange\\.com.*") {
   .subheader, .min-ds-wizard .min-ds-box.jobs {
     background-color: #111 !important;
     color: #ddd !important;
+  }
+  iframe.snippet-box-edit {
+    filter: invert(100%) hue-rotate(180deg) !important;
+  }
+  .snippet-code .popout:before, .snippet-code .popout-code:before {
+    filter: grayscale(1) brightness(180%) !important;
+  }
+  .snippet-code .popin {
+    background: #333 !important;
   }
   .actual-edit-overlay {
     -webkit-box-shadow: 0 0 0 1000px #111 inset;
