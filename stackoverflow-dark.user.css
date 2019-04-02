@@ -288,7 +288,7 @@ regexp("^https?://((?!(www|area51)).*\\.)?stackexchange\\.com.*") {
   .wmd-button-bar, .qa-block, .content-block, .user-info-rep, .sidebar, .popup,
   .full-diff, .val-success, .search-form .filter-pane nav, .s-card,
   .chosen-container .chosen-drop, .pac-item.pac-item-selected, .pac-item:hover,
-  .-item.social:hover, #add-tags-button, #filter-preview, .salary-results {
+  .-item.social:hover, #add-tags-button, #filter-preview, .salary-results, .nav {
     background: #191919 !important;
   }
   .authcomment, .seIntro, .seFooter, .title-banner, .salary-results-wrapper,
@@ -597,6 +597,9 @@ regexp("^https?://((?!(www|area51)).*\\.)?stackexchange\\.com.*") {
   /* Mobile */
   .-summary .-votes, .deleted-answer .votes {
     background-color: rgba(214, 217, 220, .2) !important;
+  }
+  .or:before, .or:after {
+    border-top: 1px solid #555 !important;;
   }
   span.diff-delete {
     background-color: #400f00 !important;
