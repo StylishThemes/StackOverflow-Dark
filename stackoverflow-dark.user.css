@@ -283,6 +283,18 @@ regexp("^https?://((?!(www|area51)).*\\.)?stackexchange\\.com.*") {
   .timeline .feature-banner__background {
     background: #151515 !important;
   }
+  .autocomplete-suggestions.is-visible {
+    border: 1px solid #555 !important;
+    background: #222 !important;
+  }
+  .autocomplete-suggestion.selected {
+    background: #333 !important;
+    color: #eee !important;
+  }
+  .s-label--status {
+    background: #444 !important;
+    color: #aaa !important;
+  }
   html, blockquote, #post-preview, .nav .primarynav li a, #chat,
   #hsearch .textbox, .form-item, .grippie, .welovestackoverflow, #wmd-button-bar,
   .wmd-button-bar, .qa-block, .content-block, .user-info-rep, .sidebar, .popup,
@@ -599,7 +611,7 @@ regexp("^https?://((?!(www|area51)).*\\.)?stackexchange\\.com.*") {
     background-color: rgba(214, 217, 220, .2) !important;
   }
   .or:before, .or:after {
-    border-top: 1px solid #555 !important;;
+    border-top: 1px solid #555 !important;
   }
   span.diff-delete {
     background-color: #400f00 !important;
@@ -895,8 +907,8 @@ regexp("^https?://((?!(www|area51)).*\\.)?stackexchange\\.com.*") {
     color: #da4453 !important;
   }
   #profile-summary>.-popout._incomplete, .has-error .s-input,
-	.has-error .s-textarea, .has-error .s-checkbox,
-	.has-error .s-radio:not(:checked), .has-error .s-select > select {
+  .has-error .s-textarea, .has-error .s-checkbox,
+  .has-error .s-radio:not(:checked), .has-error .s-select > select {
     border-color: #da4453 !important;
   }
   /* orange */
