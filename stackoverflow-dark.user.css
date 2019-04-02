@@ -648,7 +648,7 @@ regexp("^https?://((?!(www|area51)).*\\.)?stackexchange\\.com.*") {
   .msg-list .list-item.is-read, .msg-list .list-item header,
   .message-detail header, .post-signature:not(.owner) .user-info,
   .answers-subheader, .profile-top-tags .badge-tag, .msg-controls,
-  .grid--cell:not(.facebook-login):not(.s-btn__primary):not(.youarehere) {
+  .grid--cell:not(.facebook-login):not(.s-btn__primary):not(.youarehere):not(.badge1-alternate):not(.badge2-alternate):not(.badge3-alternate) {
     background-color: transparent !important;
   }
   #tabs a:hover, .tabs a:hover {
@@ -993,17 +993,17 @@ regexp("^https?://((?!(www|area51)).*\\.)?stackexchange\\.com.*") {
   }
   .badge3-alternate, .progress-bar.badge-3 .bar .percent,
   .s-progress-bar._badge._badge3 .-fill, .badge-wrapper._badge3,
-  .s-progress__bronze .s-progress--bar {
+  .s-progress__bronze .s-progress--bar, .badge-top._badge3 .-name {
     background-color: #7c4318 !important; /* bronze */
   }
   .badge2-alternate, .progress-bar.badge-2 .bar .percent,
   .s-progress-bar._badge._badge2 .-fill, .badge-wrapper._badge2,
-  .s-progress__silver .s-progress--bar {
+  .s-progress__silver .s-progress--bar, .badge-top._badge2 .-name {
     background-color: #464a4f !important; /* silver */
   }
   .badge1-alternate, .progress-bar.badge-1 .bar .percent,
   .s-progress-bar._badge._badge1 .-fill, .badge-wrapper._badge1,
-  .s-progress__gold .s-progress--bar {
+  .s-progress__gold .s-progress--bar, .badge-top._badge1 .-name {
     background-color: #957000 !important; /* gold */
   }
   /* === Images === */
