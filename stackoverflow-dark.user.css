@@ -280,7 +280,8 @@ regexp("^https?://((?!(www|area51)).*\\.)?stackexchange\\.com.*") {
   .salary-results-container .collection, .sidebar #post-job,
   .sidebar .salary-survey-sidebar, .ui-dialog, .salary-calculator-calculator,
   .sticky-menu-wrapper._sticky, .-summary, .field._toolbar .-toolbar,
-  .timeline .feature-banner__background {
+  .timeline .feature-banner__background,
+  .timeline .readings .readings-list .readings-item {
     background: #151515 !important;
   }
   .autocomplete-suggestions.is-visible {
@@ -427,7 +428,7 @@ regexp("^https?://((?!(www|area51)).*\\.)?stackexchange\\.com.*") {
     border: 1px solid #191919 !important;
   }
   .rep-recent-row, .bounty, .diff-choices a:hover, div.meter, .narrow .votes,
-  .ob-post-votes, .card, .congrats, .-card {
+  .ob-post-votes, .card, .congrats, .-card, .list-card {
     background-color: #232323 !important;
     color: #bbb !important;
   }
@@ -1115,6 +1116,9 @@ regexp("^https?://((?!(www|area51)).*\\.)?stackexchange\\.com.*") {
   .accepted-answer .post-text > p > code, .accepted-answer .youarehere,
   .accepted-answer pre:not(.prettyprint) {
     background: #202a20 !important;
+  }
+  .description.description-ellipsis .description-content-truncated:after {
+    background: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 1) 50%) !important;
   }
   /*[[syntax-theme]]*/
   }
