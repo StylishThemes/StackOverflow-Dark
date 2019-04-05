@@ -242,6 +242,10 @@ regexp("^https?://((?!(www|area51)).*\\.)?stackexchange\\.com.*") {
   header {
     background-color: #080808 !important;
   }
+  .timeline-item header {
+    background-color: #151515 !important;
+    color: #aaa !important;
+  }
   #custom-header, .review-bar, .diff-choices a.selected, #header #topbar,
   td.owner, a.owner, .question-status, .profile-popup, .profile-popup div,
   .profile-popup th, .profile-popup td, #global, .actual-edit-overlay,
@@ -315,11 +319,16 @@ regexp("^https?://((?!(www|area51)).*\\.)?stackexchange\\.com.*") {
   #tabs a.youarehere, .tabs a.youarehere, .tag-suggestions, .dropdown li,
   .proposed-change .diff-buttons a:not(.selected), #logout-form, .snippet-holder,
   .CodeMirror, .CodeMirror-gutters, .badge-progress.completed,
-  .timeline-item:before, .item-select-table .item, .title-box, .-list-item,
-  .bg-powder-050, .textarea-with-counter .-counter, .new-contributor-indicator,
-  .temp-popover, .google-login, .btn._google, .s-popover {
+  .item-select-table .item, .title-box, .-list-item, .bg-powder-050,
+  .textarea-with-counter .-counter, .new-contributor-indicator, .temp-popover,
+  .google-login, .btn._google, .s-popover {
     background-color: #191919 !important;
     border-color: #444 !important;
+  }
+  .timeline-item:before {
+    background-color: #111 !important;
+    border-color: #191919 !important;
+    filter: brightness(350%) !important;
   }
   .s-popover--arrow__tl:before, .s-popover--arrow__tc:before,
   .s-popover--arrow__tr:before {
@@ -428,9 +437,18 @@ regexp("^https?://((?!(www|area51)).*\\.)?stackexchange\\.com.*") {
     border: 1px solid #191919 !important;
   }
   .rep-recent-row, .bounty, .diff-choices a:hover, div.meter, .narrow .votes,
-  .ob-post-votes, .card, .congrats, .-card, .list-card {
+  .ob-post-votes, .card, .congrats, .-card {
     background-color: #232323 !important;
     color: #bbb !important;
+  }
+  .list-card {
+    background-color: #232323 !important;
+    border-color: #555 !important;
+  }
+  .list-card:before {
+    border-left: 12px solid transparent !important;
+    border-right: 12px solid transparent !important;
+    border-top: 9px solid #232323 !important;
   }
   .answer, #system-message, .commentlist, .revision td, #hero-content,
   .mdhelp-tabs .selected, .tabs .selected, .rep-card .rep-col, .sort select,
