@@ -1118,7 +1118,7 @@ regexp("^https?://((?!(www|area51)).*\\.)?stackexchange\\.com.*") {
     background: #202a20 !important;
   }
   .description.description-ellipsis .description-content-truncated:after {
-    background: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 1) 50%) !important;
+    background: linear-gradient(to right, rgba(21, 21, 21, 0), rgba(21, 21, 21, 1) 50%) !important;
   }
   /*[[syntax-theme]]*/
   }
