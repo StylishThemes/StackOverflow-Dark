@@ -1220,7 +1220,7 @@ regexp("^https?://((?!(www|area51)).*\\.)?stackexchange\\.com.*") {
     /* can't use color here because they added an inline !important */
     filter: invert(100%);
   }
-  table tr, table td, table td p {
+  table tr, table:not(.chess-replayer-board) td, table td p {
     background: transparent !important;
     color: #ddd !important;
   }
