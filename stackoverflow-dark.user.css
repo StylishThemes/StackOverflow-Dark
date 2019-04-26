@@ -421,8 +421,7 @@ regexp("^https?://((?!(www|area51)).*\\.)?stackexchange\\.com.*") {
   .ob-docs,
   .topbar.newheader .topbar-wrapper .topbar-links .search-container #search input[name="q"],
   .mainbar.discussion .discussion-item, #input-area, .pager a span,
-  .page-sizer a, .s-sidebarwidget__yellow .s-sidebarwidget--header,
-  .s-sidebarwidget__yellow, .self {
+  .page-sizer a, .s-sidebarwidget__yellow, .self {
     background: #222 !important;
     color: #ddd !important;
   }
