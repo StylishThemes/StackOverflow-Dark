@@ -1442,7 +1442,7 @@ regexp("^https?://((?!(www|area51)).*\\.)?stackexchange\\.com.*") {
   .split-disabled .example.expanded.change-modifies, .versions.change-modifies {
     border-color: #484848 !important;
   }
-  a.button, input[type="button"]:hover, button:hover, .button:hover, .btn:hover,
+  input[type="button"]:hover, button:hover, .button:hover, .btn:hover,
   button:focus, .button:focus, .btn:focus, .btn-clear:hover {
     background-color: /*[[base-color]]*/ !important;
     color: #ddd !important;
