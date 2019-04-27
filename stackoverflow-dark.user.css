@@ -167,7 +167,7 @@ regexp("^https?://((?!(www|area51)).*\\.)?stackexchange\\.com.*") {
   }
   a.post-tag:hover, .bounty-indicator, .bounty-indicator-tab, .bounty-award,
   span.bounty-indicator-tab, #change-picture, .supernovabg, .hotbg,
-  .nav li.youarehere a, .nav a:hover, a.button:hover, .edit-count,
+  .nav li.youarehere a, .nav a:hover, a.button, .edit-count,
   .pager a:hover span, .bounties-tab, #sidebar a[href*="/questions/ask"],
   #sidebar a[href*="/questions/ask"]:visited, .page-numbers:hover,
   .s-btn.s-btn__primary, .s-btn.s-btn__primary:focus,
@@ -175,6 +175,14 @@ regexp("^https?://((?!(www|area51)).*\\.)?stackexchange\\.com.*") {
   .top-bar .-secondary .-ctas .btn-topbar-primary:focus,
   .user-card-name .top-badge, .user-card-name .top-badge a {
     background-color: /*[[base-color]]*/ !important;
+    color: #eee !important;
+  }
+  a.button:hover {
+    filter: brightness(90%) !important;
+  }
+  /* chat room buttons */
+  a.button:not(.huge-button):not(#visit-the-faq) {
+    background: #f67400 !important;
     color: #eee !important;
   }
   .user-tabs-nav #tabs a.youarehere:before,
@@ -562,11 +570,6 @@ regexp("^https?://((?!(www|area51)).*\\.)?stackexchange\\.com.*") {
   .system-message {
     background: rgba(51, 34, 17, .4) !important;
     border: 1px solid #542 !important;
-  }
-  /* chat room buttons */
-  a.button {
-    background: #f67400 !important;
-    color: #eee !important;
   }
   /* === Green === */
   .accepted-answer, .suggested-edit .inserted, .markdown-diff .inserted,
