@@ -65,12 +65,14 @@ If you don't know CSS very well and have found a missing style, please include a
 
     * Try to wrap lines at around 80 characters.
     * Try to limit the style size:
-      * Don't add any image URI's to the css; instead add the image into the `/images` directory; then point to using the following URL: `http://stylishthemes.github.io/StackOverflow-Dark/images/`{my-image.png}.
+      * Don't add any image URI's to the CSS; instead add the image into the `/images` directory; then point to using the following URL: `http://stylishthemes.github.io/StackOverflow-Dark/images/`{my-image.png}.
       * If possible, reduce any added selectors. Remember that Stylus requires an `!important` flag to override default styling, so a selector starting from the body isn't always necessary.
       * Don't add any inline comments. If you want to make a comment, add it as a note in the commit.
-      * If your css definition already exists within the style, do not add it again! Add your selector to the existing definition.
-    * Insert any new css selectors in the available slot immediately before the style definition, or on a new line as needed.
+      * If your CSS definition already exists within the style, do not add it again! Add your selector to the existing definition.
+    * Insert any new CSS selectors in the available slot immediately before the style definition, or on a new line as needed.
     * If you want to add a new userstyle or usercss variable, please open an issue and discuss it with us first.
+    * Don't include version bumps with your contribution, all releases are handled internally.
+    * If your PR fixes an open issue or replaces another PR, include fixes/closes #issue-nr in your commit message title. [Read more on this](https://help.github.com/en/articles/closing-issues-using-keywords).
 
     ## Getting Started
 
@@ -82,8 +84,8 @@ If you don't know CSS very well and have found a missing style, please include a
 
     * Create & change into a new branch of your local StackOverflow-Dark repository.
     * Open the style in the Stylus editor, and make sure to have "live preview" checked for testing.
-    * Once you are satisfied with the changes, select all the css (<kbd>Ctrl</kbd> + <kbd>a</kbd>), copy (<kbd>Ctrl</kbd> + <kbd>c</kbd>) then paste (<kbd>Ctrl</kbd> + <kbd>v</kbd>) it into your editor.
-    * Run `npm test` to test the css changes.
+    * Once you are satisfied with the changes, select all the CSS (<kbd>Ctrl</kbd> + <kbd>a</kbd>), copy (<kbd>Ctrl</kbd> + <kbd>c</kbd>) then paste (<kbd>Ctrl</kbd> + <kbd>v</kbd>) it into your editor.
+    * Run `npm test` to test the CSS changes.
     * Now you can add and commit the changes of the `stackoverflow-dark.user.css` file to your fork's branch.
     * If you haven't already contributed, then run `npm run authors` to add your name to our list of contributors :smile:
     * Push the changes to your branch, then submit a pull request.
@@ -99,7 +101,7 @@ If you don't know CSS very well and have found a missing style, please include a
     * `npm run minor`: Creates a semantic minor release.
     * `npm run patch`: Creates a semantic patch release.
     * `npm run perfectionist`: Runs perfectionist only. CSS is not cleaned!
-    * `npm run stylelint`: Run stylelint on the css file.
+    * `npm run stylelint`: Run stylelint on the CSS file.
     * `npm run test`: Same as `npm run lint`.
     * `npm run update`: Update development dependencies.
     * `npm run usercss`: Update usercss variables using usercss template; variable data obtained from `defaults.json`.
