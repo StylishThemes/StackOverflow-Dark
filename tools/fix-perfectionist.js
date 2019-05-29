@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 "use strict";
 
-const fs = require("fs-extra");
+const fs = require("fs").promises;
 const path = require("path");
 const pkg = require("../package.json");
 
