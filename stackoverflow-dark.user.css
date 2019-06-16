@@ -1854,3 +1854,8 @@ regexp("^https?://((?!(www|area51)).*\\.)?stackexchange\\.com.*") {
     color: #b571e2 !important;
   }
 }
+@-moz-document domain("askubuntu.com"), regexp("^https?://((anime|bicycles|blender|crypto|codereview|dba|diy|electronics|emacs|gamedev|gis|graphicdesign|math|rpg|softwarerecs|unix|worldbuilding)\\.)?stackexchange\\.com.*") {
+  body {
+    background-image: none !important;
+  }
+}
