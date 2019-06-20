@@ -296,7 +296,7 @@ regexp("^https?://((?!(www|area51)).*\\.)?stackexchange\\.com.*") {
   .timeline .readings .readings-list .readings-item {
     background: #151515 !important;
   }
-  .autocomplete-suggestions.is-visible {
+  .autocomplete-suggestions.is-visible, .bg-black-025 {
     border: 1px solid #555 !important;
     background: #222 !important;
   }
@@ -725,7 +725,7 @@ regexp("^https?://((?!(www|area51)).*\\.)?stackexchange\\.com.*") {
   }
   a.required-tag, .topbar-dialog.feature-notice-dialog:before,
   .site-footer .-link._expandable:after, .bc-black-2,
-  .message.message-info .message-close, .bc-black-3 {
+  .message.message-info .message-close, .bc-black-3, .bc-black-4 {
     border-color: #555 !important;
   }
   .message .message-tip-top-right:before, .message .message-tip-top-left:before {
@@ -879,7 +879,7 @@ regexp("^https?://((?!(www|area51)).*\\.)?stackexchange\\.com.*") {
   #top-cards .fc-black-350 svg, .subheader a span, #user-card .fc-black-350 svg,
   .company-list .fc-black-500 svg:not(.fc-green-400):not(.fc-orange-400),
   .company-list p, .-settings span, .email-settings .-info p, #tags_list span,
-  .s-description, p.fc-black-700 {
+  .s-description, p.fc-black-700, a.s-link__grayscale, .s-link.s-link__grayscale {
     color: #999 !important;
   }
   .nav-links .youarehere .nav-links--link .svg-icon,
