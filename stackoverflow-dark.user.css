@@ -167,8 +167,8 @@ regexp("^https?://((?!(www|area51)).*\\.)?stackexchange\\.com.*") {
   }
   a.post-tag:hover, .bounty-indicator, .bounty-indicator-tab, .bounty-award,
   span.bounty-indicator-tab, #change-picture, .supernovabg, .hotbg,
-  .nav li.youarehere a, .nav a:hover, a.button, .edit-count,
-  .pager a:hover span, .bounties-tab, #sidebar a[href*="/questions/ask"],
+  .nav li.youarehere a, .nav a:hover, a.button, .edit-count, .pager a:hover span,
+  .bounties-tab, #sidebar a[href*="/questions/ask"],
   #sidebar a[href*="/questions/ask"]:visited, .page-numbers:hover,
   .s-btn.s-btn__primary, .s-btn.s-btn__primary:focus,
   .top-bar .-secondary .-ctas .btn-topbar-primary,
