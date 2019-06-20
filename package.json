@@ -13,12 +13,12 @@
   "devDependencies": {
     "cssmin": "^0.4.3",
     "eslint": "^5.16.0",
-    "eslint-config-silverwind": "^3.0.1",
+    "eslint-config-silverwind": "^3.0.3",
     "perfectionist": "^2.4.0",
-    "semver": "^6.1.0",
-    "stylelint": "^10.0.1",
+    "ver": "^5.0.1",
+    "stylelint": "^10.1.0",
     "stylelint-config-standard": "^18.3.0",
-    "updates": "^8.0.3"
+    "updates": "^8.1.0"
   },
   "scripts": {
     "authors": "bash tools/authors",
@@ -26,9 +26,9 @@
     "clean": "npm run perfectionist && node tools/fix-perfectionist.js",
     "eslint": "eslint --quiet --color tools/*.js",
     "lint": "npm run eslint && npm run stylelint",
-    "major": "node tools/bump-version.js major && git add . && npm version -f major",
-    "minor": "node tools/bump-version.js minor && git add . && npm version -f minor",
-    "patch": "node tools/bump-version.js patch && git add . && npm version -f patch",
+    "patch": "npx ver -p patch stackoverflow-dark.user.css",
+    "minor": "npx ver -p minor stackoverflow-dark.user.css",
+    "major": "npx ver -p major stackoverflow-dark.user.css",
     "perfectionist": "perfectionist stackoverflow-dark.user.css stackoverflow-dark.user.css --indentSize 2 --maxAtRuleLength 250",
     "stylelint": "stylelint --color -- stackoverflow-dark.user.css",
     "test": "npm run eslint && npm run stylelint",
