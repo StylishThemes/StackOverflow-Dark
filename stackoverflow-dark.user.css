@@ -192,7 +192,8 @@ regexp("^https?://((?!(www|area51)).*\\.)?stackexchange\\.com.*") {
   .user-tabs-nav #tabs a.youarehere:before,
   .user-tabs-nav .tabs a.youarehere:before,
   .newnav .tabs-list-container .tabs-list .intellitab a.youarehere:before,
-  #tabs a.youarehere:before, .tabs a.youarehere:before {
+  #tabs a.youarehere:before, .tabs a.youarehere:before,
+  html:not(#X) .p-bg-purple {
     background-color: /*[[base-color]]*/ !important;
   }
   .site-footer .-link._expandable:before, .site-footer .-link._expandable:after {
@@ -293,9 +294,8 @@ regexp("^https?://((?!(www|area51)).*\\.)?stackexchange\\.com.*") {
   .onebox, .profile-ad, .message.message-config, .so-header a:hover,
   .so-header a.topbar-icon-on, .topbar-dialog .header,
   .header-edit-section:hover, .timeline-item, .sidebar-profile .-item,
-  .btn-outlined.-white:hover, .btn-outlined:hover,
-  .top-bar a:not(.bg-orange-500):hover, .top-bar a:focus,
-  .top-bar .-item._active, .top-bar .-link.topbar-icon-on,
+  .btn-outlined.-white:hover, .btn-outlined:hover, .top-bar a:hover,
+  .top-bar a:focus, .top-bar .-item._active, .top-bar .-link.topbar-icon-on,
   .top-bar .-link.topbar-icon-on:hover, .top-bar .-feature-notice:hover,
   .top-bar .-feature-notice.topbar-icon-on, .topbar-dialog .dialog-content,
   .feature-notice-dialog:before, .-item.social,
@@ -356,7 +356,8 @@ regexp("^https?://((?!(www|area51)).*\\.)?stackexchange\\.com.*") {
     filter: brightness(350%) !important;
   }
   .s-popover--arrow__tl:before, .s-popover--arrow__tc:before,
-  .s-popover--arrow__tr:before {
+  .s-popover--arrow__tr:before,
+  .s-popover[x-placement^="bottom"] .s-popover--arrow:before {
     border-bottom-color: #444 !important;
   }
   .s-popover--arrow__tl:after, .s-popover--arrow__tc:after,
@@ -856,7 +857,8 @@ regexp("^https?://((?!(www|area51)).*\\.)?stackexchange\\.com.*") {
   .module h3, .badge-tag, .s-label, .-link__with-icon:hover .svg-icon,
   .youarehere a, .youarehere .svg-icon, h1, h2, h3, h4, h5, h6, .h1, .h2, .h3,
   .h4, .h5, .h6, .tour-bubble p, .fc-dark, #logins-table .group-name,
-  .top-bar .-marketing-link {
+  .top-bar .-marketing-link, html:not(#X) .fc-white,
+  html:not(#X) .h\:fc-black-900:hover {
     color: #ddd !important;
   }
   #mainbar a.comment-user {
@@ -959,7 +961,7 @@ regexp("^https?://((?!(www|area51)).*\\.)?stackexchange\\.com.*") {
   #mainbar .grid a .iconRss {
     color: #f67400 !important;
   }
-  .h\:bg-orange-500:hover {
+  html:not(#X) .h\:bg-orange-500:hover {
     background-color: #b05308 !important;
   }
   /* light brown */
