@@ -296,6 +296,10 @@ regexp("^https?://((?!(www|area51)).*\\.)?stackexchange\\.com.*") {
   .timeline .readings .readings-list .readings-item {
     background: #151515 !important;
   }
+  .top-bar .left-sidebar-toggle:hover,
+  .top-bar .left-sidebar-toggle.topbar-icon-on {
+    background-color: #191919 !important;
+  }
   .autocomplete-suggestions.is-visible, .bg-black-025 {
     border: 1px solid #555 !important;
     background: #222 !important;
