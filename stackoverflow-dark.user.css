@@ -131,10 +131,14 @@ regexp("^https?://((?!(www|area51)).*\\.)?stackexchange\\.com.*") {
   /* === custom color === */
   a:not([class*="comment-"]):not(.badge):not(.badge-tag):not(.lastactivity-link):not(.post-tag):not(.page-numbers),
   .profile-popup a, .seWrapper a, .gs-title b, .spoiler:hover a, .comment-up-on,
-  .comment-up-off:hover {
+  .comment-up-off:hover, #side-menu ul .category, .s-timeline .-timestamp,
+  .mod-flair {
     color: /*[[base-color]]*/;
   }
-  .search-controls-responsive .-item .s-btn__outlined {
+  .subheader h1 a {
+    color: /*[[base-color]]*/ !important;
+  }
+  .search-controls-responsive .-item .s-btn__outlined, .s-btn__outlined {
     border-color: /*[[base-color]]*/ !important;
     color: /*[[base-color]]*/ !important;
   }
@@ -149,6 +153,18 @@ regexp("^https?://((?!(www|area51)).*\\.)?stackexchange\\.com.*") {
     color: #fff !important;
     background: /*[[base-color]]*/ !important;
   }
+  .s-timeline .-event::before {
+    background: #ccc;
+    border: 4px solid #666;
+  }
+  .s-timeline::after {
+    background: #666;
+  }
+  .search-form .search-inputs .-item .iconSearch,
+  .search-form .search-inputs .-item .iconLocation {
+    opacity: .8;
+    color: #ddd;
+  }
   input[type="submit"].btn-clear, input[type="button"].btn-clear,
   button.btn-clear, .btn-clear, html:not(#X) .p-fc-purple,
   html:not(#X) .p-ff-roboto-slab.p-fc-purple div {
@@ -162,6 +178,10 @@ regexp("^https?://((?!(www|area51)).*\\.)?stackexchange\\.com.*") {
     background: #622 !important;
     border: 1px solid #ff4a15 !important;
     filter: brightness(90%) !important;
+  }
+  .why-jobs-v2 .developers-first input[type="submit"] {
+    background: #222 !important;
+    color:  /*[[base-color]]*/ !important;
   }
   input[type="submit"].btn-clear:hover, input[type="button"].btn-clear:hover,
   button.btn-clear:hover, .btn-clear:hover, input[type="submit"].btn-clear:focus,
@@ -179,6 +199,12 @@ regexp("^https?://((?!(www|area51)).*\\.)?stackexchange\\.com.*") {
     border-color: rgba(/*[[base-color-rgb]]*/, .5);
     box-shadow: none;
   }
+  .old-hero {
+    color: #eee;
+    background-color: rgba(/*[[base-color-rgb]]*/, .4);
+    background-image: url('../../img/hero/pattern.svg?v=13ca42e6c21d'),
+           linear-gradient(to right, transparent 0%, transparent 100%);
+  }
   input[type="submit"]:not(.s-btn):hover, input[type="button"]:not(.s-btn):hover,
   button:not(.s-btn):hover, .button:hover, a.button:hover,
   a.button:visited:hover, .btn:hover, input[type="submit"]:not(.s-btn):focus,
@@ -189,9 +215,9 @@ regexp("^https?://((?!(www|area51)).*\\.)?stackexchange\\.com.*") {
     border-color: rgba(/*[[base-color-rgb]]*/, .5);
     filter: brightness(120%) !important;
   }
-  a.post-tag:hover, .bounty-indicator, .bounty-indicator-tab, .bounty-award,
-  span.bounty-indicator-tab, #change-picture, .supernovabg, .hotbg,
-  .nav li.youarehere a, .nav a:hover, a.button, .edit-count,
+  a.post-tag:hover, .post-tag:hover, .bounty-indicator, .bounty-indicator-tab,
+  .bounty-award, span.bounty-indicator-tab, #change-picture, .supernovabg,
+  .hotbg, .nav li.youarehere a, .nav a:hover, a.button, .edit-count,
   .pager a:hover span:not(.page-numbers), .bounties-tab,
   #sidebar a[href*="/questions/ask"], #sidebar a[href*="/questions/ask"]:visited,
   .s-btn.s-btn__primary, .s-btn.s-btn__primary:focus,
@@ -201,12 +227,28 @@ regexp("^https?://((?!(www|area51)).*\\.)?stackexchange\\.com.*") {
     background-color: /*[[base-color]]*/ !important;
     color: #eee !important;
   }
+  .privileges-page .privilege-table-row:hover {
+    background-color: #242424;
+  }
+  .privileges-page .privilege-table-row:hover .long-description,
+  .faq-page #mainbar .content-page p a:hover, a.-link:hover, h3 strong a:hover,
+  ._icon p a:hover, a[href]:hover {
+    filter: brightness(115%);
+  }
+  html:not(#X) #tabs a, html:not(#X) .tabs a {
+    color: #aaa !important;
+    border: 1px solid transparent !important;
+  }
+  html:not(#X) #tabs a.youarehere, html:not(#X) .tabs a.youarehere,
+  html:not(#X) #tabs:hover a.youarehere, html:not(#X) .tabs:hover a.youarehere {
+    border-bottom: 1px solid transparent !important;
+  }
   a.button:hover, #questions .post-menu .button.btn:hover {
     filter: brightness(90%) !important;
   }
   .s-btn__outlined:not(.grid--cell):not(.ws-nowrap):hover {
     filter: brightness(90%) !important;
-    color: #999 !important;
+    color: #aaa !important;
   }
   /* chat room buttons */
   a.button:not(.huge-button):not(#visit-the-faq):not(.btn) {
@@ -228,6 +270,9 @@ regexp("^https?://((?!(www|area51)).*\\.)?stackexchange\\.com.*") {
   .s-btn.s-btn__primary:hover, .top-bar .-secondary .-ctas .btn-topbar-clear,
   .top-bar .-secondary .-ctas .btn-topbar-clear:focus {
     filter: brightness(120%) !important;
+  }
+  .s-btn, .s-btn:focus {
+    background-color: rgba(0, 119, 204, 0);
   }
   .top-bar .-secondary .-ctas .btn-topbar-clear {
     border-color: transparent !important;
@@ -284,6 +329,9 @@ regexp("^https?://((?!(www|area51)).*\\.)?stackexchange\\.com.*") {
   .timeline-item header {
     background-color: #151515 !important;
     color: #aaa !important;
+  }
+  .bg-black-100 {
+    background-color: #555 !important;
   }
   input[type="submit"].btn-outlined.gray, input[type="button"].btn-outlined.gray,
   button.btn-outlined.gray, .btn-outlined.gray,
@@ -351,7 +399,7 @@ regexp("^https?://((?!(www|area51)).*\\.)?stackexchange\\.com.*") {
     filter: invert(100%) hue-rotate(180deg) !important;
   }
   .profile-placeholder--image, .timeline .readings .readings-placeholder .img,
-  .timeline-item .joined-so-wrapper .img {
+  .timeline-item .joined-so-wrapper .img, .md\:w100[src*="conduct-illo.svg"] {
     filter: invert(1) hue-rotate(180deg) brightness(400%);
     mix-blend-mode: exclusion;
   }
@@ -359,7 +407,20 @@ regexp("^https?://((?!(www|area51)).*\\.)?stackexchange\\.com.*") {
     filter: invert(1) hue-rotate(180deg) saturate(200%);
     mix-blend-mode: exclusion;
   }
-  .expander-arrow-small-hide, .expander-arrow-small-show {
+  .why-jobs-v2 .cta-cards .-card._browse-tech .-image,
+  .why-jobs-v2 .cta-cards .-card._browse-salary .-image,
+  .why-jobs-v2 .cta-cards .-card._browse-newest .-image,
+  .why-jobs-v2 .cta-cards .-card._browse-near .-image,
+  .why-jobs-v2 .cta-cards .-card._browse-remote .-image,
+  .why-jobs-v2 .cta-cards .-card._browse-visa .-image {
+    filter: invert(1) hue-rotate(180deg) brightness(140%);
+  }
+  .wmx100[src*="/math/img/logo.svg"] {
+    filter: invert(1) hue-rotate(180deg) saturate(400%) brightness(70%);
+  }
+  .expander-arrow-small-hide, .expander-arrow-small-show,
+  .why-jobs-v2 .developers-first::before,
+  .why-jobs-v2 .work-from-anywhere::before {
     filter: brightness(60%);
   }
   .snippet-code .popout:before, .snippet-code .popout-code:before {
@@ -368,7 +429,7 @@ regexp("^https?://((?!(www|area51)).*\\.)?stackexchange\\.com.*") {
   .snippet-code .popin {
     background: #333 !important;
   }
-  .user-page .subheader.reloaded .additional-links a:hover {
+  .user-page .subheader.reloaded .additional-links a:hover, .bg-black-050 {
     background: #292929 !important;
   }
   .top-bar .-marketing-link.is-selected:hover,
@@ -518,14 +579,14 @@ regexp("^https?://((?!(www|area51)).*\\.)?stackexchange\\.com.*") {
     color: #ddd !important;
   }
   .profile-popup, .profile-popup tr, .profile-popup th, .profile-gravatar,
-  .newuser, .roomcard, .seWrapper, h2.index.header, .privilege-table-row:hover,
-  .list-originals .item.hover, .list-originals .body-summary,
-  .review-instructions-reason, .room-mini, #formContainer, #switch,
-  .login-topbar, .newsletter-category, .newsletter-item, .blogcontainer,
-  .usercard-xxl, .roomcard-xxl, .docs-review-page .topic-draft-bar,
-  .badge-progress, .avatar-wrapper, .timeline-line, .s-progress-bar .-bar,
-  .-job-badges .-badge, .search-form .job-alert-tooltip, .bg-white,
-  .tag-popup .-container, .tag-popup .-arrow:before, .l-main-col a.btn-secondary,
+  .newuser, .roomcard, .seWrapper, h2.index.header, .list-originals .item.hover,
+  .list-originals .body-summary, .review-instructions-reason, .room-mini,
+  #formContainer, #switch, .login-topbar, .newsletter-category, .newsletter-item,
+  .blogcontainer, .usercard-xxl, .roomcard-xxl,
+  .docs-review-page .topic-draft-bar, .badge-progress, .avatar-wrapper,
+  .timeline-line, .s-progress-bar .-bar, .-job-badges .-badge,
+  .search-form .job-alert-tooltip, .bg-white, .tag-popup .-container,
+  .tag-popup .-arrow:before, .l-main-col a.btn-secondary,
   .messaging-v2 .btn-secondary.is-active, .s-card, .bar-sm.bg-black-025,
   .search-form.responsive .filter-pane nav ul._tabs li.tab {
     background-color: #222 !important;
@@ -561,8 +622,27 @@ regexp("^https?://((?!(www|area51)).*\\.)?stackexchange\\.com.*") {
   .s-btn__muted:not(.facebook-login):focus {
     background: rgba(34, 34, 34, .5) !important;
   }
+  .why-jobs-v2 .slanted-background._light-gray::before {
+    background-color: #202020 !important;
+  }
   .facebook-login, .facebook-login:hover {
     color: #eee !important;
+    background-color: #395697;
+  }
+  .facebook-login:hover {
+    background-color: #395697;
+    filter: brightness(110%);
+  }
+  .s-btn.google-login, .stackexchange-login {
+    color: #aaa !important;
+  }
+  html:not(#X) .s-btn.google-login:hover,
+  html:not(#X) .stackexchange-login:hover {
+    color: #eee !important;
+    background: #232323 !important;
+  }
+  html:not(#X) .stackexchange-login {
+    border-color: #555 !important;
   }
   .ad502-room, .message.message-config .actions, .tag-container .col, .congrats,
   .task-stat-table tdm {
@@ -647,13 +727,19 @@ regexp("^https?://((?!(www|area51)).*\\.)?stackexchange\\.com.*") {
   }
   tr.comment:hover, .reply-parent, .timestamp, .usercard, .comment-help,
   .answer-help-background, .mdhelp-tabs, .tabs li, .hi, .seNavLinks a:hover,
-  .seNavLinks a:focus, .itemBoxNew, .pagination a.current,
-  .pagination a.selected, .pagination a:hover, .wb-wearing, .impact-card hr,
-  .MathJax_MenuActive {
+  .seNavLinks a:focus, .itemBoxNew, .pagination a.current, .wb-wearing,
+  .impact-card hr, .MathJax_MenuActive {
     background-color: #444 !important;
     color: #ddd !important;
   }
-  hr, .modal .modal-close:hover {
+  .pagination a.selected, .pagination a:hover {
+    background-color: /*[[base-color]]*/;
+    color: #fff !important;
+  }
+  .pagination .prev-next:hover {
+    color: /*[[base-color]]*/ !important;
+  }
+  hr, .modal .modal-close:hover, .currency-label::after {
     background: #444 !important;
   }
   .comment__highlight:not([style*="background-color"]),
@@ -667,8 +753,14 @@ regexp("^https?://((?!(www|area51)).*\\.)?stackexchange\\.com.*") {
   #post-text-container div span {
     background: #c1beba !important;
   }
-  .-logo img {
-    background: #fff !important;
+  html:not(#X) .post-text a img {
+    filter: brightness(50%) contrast(420%) saturate(300%);
+  }
+  html:not(#X) .post-text a img:hover {
+    opacity: .9 !important;
+  }
+  .-logo img, img#gh-logo.bg-white {
+    background: #ddd !important;
   }
   .sidebar-element .list li .rep-and-badges:before {
     background: linear-gradient(270deg, #333, rgba(51, 51, 51, 0));
@@ -676,8 +768,8 @@ regexp("^https?://((?!(www|area51)).*\\.)?stackexchange\\.com.*") {
   /* === Brown(ish) === */
   .new-post-activity, #new-answer-activity, .val-info, .highlight,
   a.youarehere:before, .message.regular, .filter-dashboard-edit .floating-help,
-  .review-post-author-guidance, .bg-black-050, .tagged-interesting,
-  .tagged-interesting .views, .tagged-interesting .user-info {
+  .review-post-author-guidance, .tagged-interesting, .tagged-interesting .views,
+  .tagged-interesting .user-info {
     background-color: rgba(51, 34, 17, .6) !important;
   }
   .s-sidebarwidget--header {
@@ -705,14 +797,6 @@ regexp("^https?://((?!(www|area51)).*\\.)?stackexchange\\.com.*") {
   .system-message {
     background: rgba(51, 34, 17, .4) !important;
     border: 1px solid #542 !important;
-  }
-  .show-votes .sidebar-linked .spacer > a:first-child .answer-votes,
-  .show-votes .sidebar-related .spacer > a:first-child .answer-votes {
-    background: #353535;
-    color: #ccc;
-  }
-  .answer-votes, .cool, .mini-counts.cool, .message.incomplete {
-    color: #ccc;
   }
   .user-show-new #user-tab-answers .answer-votes,
   .user-show-new .post-container .vote, .user-show-new .user-panel .mini-counts,
@@ -804,7 +888,18 @@ regexp("^https?://((?!(www|area51)).*\\.)?stackexchange\\.com.*") {
     background-color: #400 !important;
   }
   .summary a.moderator-tag:hover {
-    background-color: #600 !important;
+    background-color: #700 !important;
+  }
+  a.moderator-tag {
+    color: #e8260d !important;
+    background-color: #400 !important;
+    border-color: #9b2e0e !important;
+  }
+  a.moderator-tag:hover {
+    color: #ccc !important;
+    background-color: #700 !important;
+    border-color: #9b2e0e !important;
+    filter: none !important;
   }
   .vote-count-post [style="color:maroon"] {
     color: maroon !important;
@@ -812,6 +907,16 @@ regexp("^https?://((?!(www|area51)).*\\.)?stackexchange\\.com.*") {
   .s-notice {
     color: #e33;
     border: 1px solid transparent;
+  }
+  a.required-tag {
+    color: #aaa !important;
+    background-color: #242424;
+    border-color: #555 !important;
+  }
+  a.required-tag:hover {
+    color: #ccc !important;
+    background-color: #444 !important;
+    border-color: #666;
   }
   /* style april fools sidebar
   #left-sidebar {
@@ -830,7 +935,7 @@ regexp("^https?://((?!(www|area51)).*\\.)?stackexchange\\.com.*") {
   #sidebar .everyonelovesstackoverflow, .mention,
   .tag-suggestions>div .more-info, .user-tags .answer-votes, .expanded:hover,
   .sidebar-accordion, .sidebar-accordion a:hover, .sidebar,
-  .sidebar *:not(.post-tag), .tag-filter-isany, .col-section.expanded,
+  .sidebar *:not(.post-tag):not(img), .tag-filter-isany, .col-section.expanded,
   .timeline-mine header, .timeline-sidebar header, .sidebar-profile.is-visible,
   .cv-section, .cv-story .avatar-wrapper, .btn-clear, .header-edit-section,
   .personal-statement, .link-text, .match-preferences .seniority-selector,
@@ -855,9 +960,13 @@ regexp("^https?://((?!(www|area51)).*\\.)?stackexchange\\.com.*") {
     color: inherit;
     background-color: transparent;
   }
+  .nav-links li a:hover, .nav-links li a:focus {
+    background-color: transparent !important;
+  }
   #tabs a:hover, .tabs a:hover {
-    background-color: #191919 !important;
-    border-bottom: 1px solid #444 !important;
+    background-color: #292929 !important;
+    border-color: rgba(62, 62, 62, .5) !important;
+    border-bottom-color: transparent !important;
   }
   .highcharts-container rect[fill="#FFFFFF"], rect[fill="rgb(255, 255, 255)"] {
     fill: transparent !important;
@@ -1051,25 +1160,31 @@ regexp("^https?://((?!(www|area51)).*\\.)?stackexchange\\.com.*") {
   }
   /* === Text Color === */
   input, .accepted-answer .post-text, .accepted-answer .user-action-time,
-  #question-header a:not(.s-btn), .post-text, .user-info,
-  .topbar-dialog .header h3, .topbar-dialog .header h3 a, .topbar-dialog span,
+  #question-header a:not(.s-btn), .user-info, .topbar-dialog .header h3,
+  .topbar-dialog .header h3 a, .topbar-dialog span,
   .search-result .answered .vote-count-post strong, .votes-cast-stats th,
   .subheader h1, .message.message-config h1, .message.message-config h2,
   .message.message-config h3, .message.message-config h4, .spoiler:hover,
   .company-module a:hover *, .search-form .label, .search-form label,
-  .list.companies p, #snpte-button-run, .comment-link, .timeline .header h4,
-  .-title, #profile-side #side-menu a:hover, .-rep, .-total,
-  .-list-item .-description, .message.message-error a,
-  .chosen-container .chosen-results li, .salary-calc-inputs span,
-  .salary-survey-dialog .header h3, .title-banner h1,
+  .list.companies p, #snpte-button-run, .timeline .header h4, .-title,
+  #profile-side #side-menu a:hover, .-rep, .-total, .-list-item .-description,
+  .message.message-error a, .chosen-container .chosen-results li,
+  .salary-calc-inputs span, .salary-survey-dialog .header h3, .title-banner h1,
   .salary-results-container h1, .topbar-dialog h4, .label-key > b, .heading,
   .module h3, .badge-tag, .s-label, .-link__with-icon:hover .svg-icon,
   .youarehere a, .youarehere .svg-icon, h1, h2, h3, h4, h5, h6, .h1, .h2, .h3,
-  .h4, .h5, .h6, .tour-bubble p, .fc-dark, #logins-table .group-name,
-  .top-bar .-marketing-link, html:not(#X) .fc-white,
+  .h4, .h5, .h6, .tour-bubble p, header h2.fc-dark, .fc-dark,
+  #logins-table .group-name, .top-bar .-marketing-link, html:not(#X) .fc-white,
   html:not(#X) .h\:fc-black-900:hover {
     color: #ddd !important;
     filter: none !important;
+  }
+  svg.iconGlobe, svg.iconIndustry, svg.iconPeople, svg.iconBriefcase,
+  svg.iconFlag, svg.iconStar:not(:hover) {
+    color: #777 !important;
+  }
+  .fc-black-200 {
+    color: #aaa !important;
   }
   #mainbar a.comment-user {
     color: #5b93ff !important;
@@ -1092,6 +1207,9 @@ regexp("^https?://((?!(www|area51)).*\\.)?stackexchange\\.com.*") {
   .-ignore.s-btn.s-btn__muted.s-btn__outlined:not(.youarehere):hover {
     background-color: rgba(45, 45, 45, .6) !important;
   }
+  [id="React-Button"].s-btn__muted.s-btn__outlined {
+    border-color: #555 !important;
+  }
   .s-btn.s-btn__muted:not(.s-btn__outlined) {
     color: #888;
     border: none;
@@ -1106,28 +1224,47 @@ regexp("^https?://((?!(www|area51)).*\\.)?stackexchange\\.com.*") {
   }
   .user-details td, .content-page, h2:not([style]), h2 a, .profile-popup a:hover,
   .module h4, .page-description, #openid_identifier, .form-item label,
-  .subheader h2, #side-menu ul ul li > a:hover .svg-icon, .fc-black-500,
+  .subheader h2, #side-menu ul ul li > a:hover .svg-icon,
   .message.message-config .message-close:hover,
   .contributor-dropdown .message-close:hover,
   .ask-confirmation-popup .message-close:hover,
   .message.message-config .popup-close a:hover,
   .contributor-dropdown .popup-close a:hover,
   .ask-confirmation-popup .popup-close a:hover,
-  .user-page .subheader.reloaded .mini-avatar .name {
+  .user-page .subheader.reloaded .mini-avatar .name, a.h\:fc-white,
+  .static-content ._muted, html:not(#X) .fc-black-500, .fc-black-500,
+  .fc-black-700 {
     color: #c1beba !important;
   }
   #tags_list .stats-row, #tags_list .stats-row a,
   #tags_list .stats-row a:visited, .timeline .feature-banner--headline,
   .timeline-item .timeline-item-text, #side-menu ul ul li > a:focus,
-  #side-menu ul ul li > a:active {
+  #side-menu ul ul li > a:active, .currency-note,
+  .salary-input-item .salary-note, .currency-label,
+  .s-press .-item .-details .-complementary,
+  #sidebar .s-contact-box .-details ._muted {
     color: #888;
   }
   #tags_list .excerpt, #tags_list .stats-row, .excerpt,
-  .timeline-item.add .add-item-list .item-add {
+  .timeline-item.add .add-item-list .item-add, .title-box .title,
+  .title-box > .title, .title-box > p, .title-box  p, .help-text, .mute-text,
+  .why-jobs-v2 {
     color: #999;
   }
-  .timeline-item.add .add-item-list .item-add:hover {
+  .show-votes .sidebar-linked .spacer > a:first-child .answer-votes,
+  .show-votes .sidebar-related .spacer > a:first-child .answer-votes {
+    background: #353535;
+    color: #ccc;
+  }
+  .answer-votes, .cool, .mini-counts.cool, .message.incomplete, .salary-value,
+  .salary-calculator, .calculator-header {
+    color: #ccc;
+  }
+  .timeline-item.add .add-item-list .item-add:hover, .val-message {
     color: #ddd;
+  }
+  .why-jobs-v2 .developers-first, .why-jobs-v2 .developers-first h2 {
+    color: #eee !important;
   }
   .icon-job-big, .icon-project-opensource-big, .icon-project-apps-big,
   .icon-achievement-big, .icon-education-big, .icon-certification-big,
@@ -1136,11 +1273,13 @@ regexp("^https?://((?!(www|area51)).*\\.)?stackexchange\\.com.*") {
   }
   /* these arent !important, but we botch them to make them work */
   .nav-links .nav-links--link, .nav-links .nav-links--link:visited,
-  .nav-links .youarehere .nav-links--link .svg-icon {
+  .nav-links .youarehere .nav-links--link .svg-icon, li.s-sidebarwidget--item a {
     color: #aaa !important;
   }
   .nav-links .nav-links--link:hover, .nav-links .nav-links--link:focus,
-  .nav-links .nav-links--link:active, #side-menu ul ul li > a.youarehere {
+  .nav-links .nav-links--link:active, #side-menu ul ul li > a.youarehere,
+  li.s-sidebarwidget--item a:hover,
+  .s-sidebarwidget--subnav li[aria-current="page"] a {
     color: #ddd !important;
   }
   /* end not !important */
@@ -1148,15 +1287,24 @@ regexp("^https?://((?!(www|area51)).*\\.)?stackexchange\\.com.*") {
   .privilege-table-row .privilege-icon {
     filter: grayscale(100%) !Important;
   }
-  .comment, #top-menu a, .subheader a, .reputation a, .reputation-score,
-  .relativetime.old, .votes-cast-stats td, .narrow .mini-counts,
-  #chat .system-message, .card .rep, .user-card .user-stats .number,
-  .user-card .user-card-name, .cv-story .time-frame,
-  .-list-item.is-completed .-description, .s-footer .-toc th, .event-count,
-  .post-timeline td, .post-timeline th, .msg-select-all-label, .fc-light,
-  .s-table th, .input-group .f-label, .-job-summary .-company, h1.fc-black-800,
-  [class*="grid-"] .fc-black-700, p.fc-black-800,
-  .about-page .new-about-content-page h2.about-title, .fc-black-350 {
+  .user-page .settings-page h1 + div.subtitle, .fc-medium .fw-bold, .fc-medium b,
+  .fc-medium li strong, .salary-changelog, .company-module > header .-info p,
+  #index-hed h1 .description, #index-hed h2 .description,
+  #index-hed .-header .description {
+    color: #aaa;
+  }
+  .post-text, .comment {
+    color: #bbb;
+  }
+  #top-menu a, .subheader a, .reputation a, .reputation-score, .relativetime.old,
+  .votes-cast-stats td, .narrow .mini-counts, #chat .system-message, .card .rep,
+  .user-card .user-stats .number, .user-card .user-card-name,
+  .cv-story .time-frame, .-list-item.is-completed .-description,
+  .s-footer .-toc th, .event-count, .post-timeline td, .post-timeline th,
+  .msg-select-all-label, .fc-light, .s-table th, .input-group .f-label,
+  .-job-summary .-company, h1.fc-black-800, [class*="grid-"] .fc-black-700,
+  p.fc-black-800, .about-page .new-about-content-page h2.about-title,
+  .fc-black-350 {
     color: #ccc !important;
   }
   .narrow .status, .narrow .views, .search-form .job-alert-tooltip .text,
@@ -1176,7 +1324,8 @@ regexp("^https?://((?!(www|area51)).*\\.)?stackexchange\\.com.*") {
   .company-list p, .-settings span, .email-settings .-info p,
   #tags_list span:not(.page-numbers), .s-description, p.fc-black-700,
   a.s-link__grayscale, .s-link.s-link__grayscale, .site-footer--copyright p a,
-  #side-menu ul ul li > a {
+  #side-menu ul ul li > a, .comment-link, .sort label[for="sorting-options"],
+  .company-list div.fc-black-500, .site-footer--copyright p {
     color: #999 !important;
   }
   label[for="sorting-options"], .company-list div.fc-black-500,
@@ -1190,15 +1339,21 @@ regexp("^https?://((?!(www|area51)).*\\.)?stackexchange\\.com.*") {
   .s-btn__unset {
     color: rgba(119, 119, 119, .6);
   }
+  .s-btn[href*="/users/jobsearch"] {
+    border: 1px solid transparent !important;
+  }
   .user-show-new .user-rep .rep-amount .rep-up.special-rep,
   .user-show-new .user-rep-full .accept-indicator-tab {
     color: #000 !important;
   }
   .answered-accepted strong, .youarehere, .nav .primarynav li a, .nav a,
   .rep-up.special-rep, .pac-item-query, #content .salary-subheader,
-  .salary-skill-legend-li .-score, header.job-details--header a,
+  .salary-skill-legend-li .-score, header.job-details--header a:not(.s-btn),
   .msg-list .list-item.is-unread span {
     color: #ddd !important;
+  }
+  header.job-details--header a svg.iconStar {
+    color: /*[[base-color]]*/ !important;
   }
   .post-text a:visited, .comment-text a:not(.comment-user):visited,
   #chat-body .content a:visited, .question-hyperlink:visited,
@@ -1231,9 +1386,6 @@ regexp("^https?://((?!(www|area51)).*\\.)?stackexchange\\.com.*") {
   .hot, .fc-orange-400 .iconRss, .fc-orange-400.iconRss,
   #mainbar .grid a .iconRss, .mini-counts.hot {
     color: #f67400 !important;
-  }
-  #side-menu ul .category {
-    color: #f69c55;
   }
   html:not(#X) .h\:bg-orange-500:hover {
     background-color: #b05308 !important;
@@ -1322,13 +1474,13 @@ regexp("^https?://((?!(www|area51)).*\\.)?stackexchange\\.com.*") {
   }
   /* === badges === */
   a.badge[title^="bronze"], a.badge-tag[title^="bronze"], .badge3 + .badgecount {
-    color: #c96;
+    color: #c96 !important;
   }
   a.badge[title^="silver"], a.badge-tag[title^="silver"], .badge2 + .badgecount {
-    color: #c5c5c5;
+    color: #c5c5c5 !important;
   }
   a.badge[title^="gold"], a.badge-tag[title^="gold"], .badge1 + .badgecount {
-    color: #ffcc46;
+    color: #ffcc46 !important;
   }
   a.tag, .ob-post-tag, .ob-user-tag, .events-tooltip {
     background-color: #191919 !important;
@@ -1356,7 +1508,8 @@ regexp("^https?://((?!(www|area51)).*\\.)?stackexchange\\.com.*") {
   .s-progress {
     background-color: #292929;
   }
-  .s-progress--label, .hero-box .column {
+  .s-progress--label, .hero-box .column,
+  .company-module .-details .-benefits li .-text {
     color: #aaa;
   }
   /* === Images === */
@@ -1386,6 +1539,9 @@ regexp("^https?://((?!(www|area51)).*\\.)?stackexchange\\.com.*") {
   .collection img, .salary-survey-sidebar .header-img, #post-job .header-img,
   .hiring iframe, .footer-notice a[href="http://www.crunchbase.com"] {
     filter: invert(80%) hue-rotate(180deg);
+  }
+  .listResults .fav-toggle:hover {
+    color: #fd0 !important;
   }
   .post-text img {
     background: #fff !important;
