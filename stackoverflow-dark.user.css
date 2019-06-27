@@ -1782,6 +1782,14 @@ regexp("^https?://((?!(www|area51)).*\\.)?stackexchange\\.com.*") {
   .hero-box {
     border-color: #27354f !important;
   }
+  html:not(#X) body #mainArea .tabs a.youarehere {
+    color:  /*[[base-color]]*/ !important;
+    border-bottom: 1px solid /*[[base-color]]*/ !important;
+  }
+  html:not(#X) body #mainArea .tabs a:hover {
+    color:  /*[[base-color]]*/ !important;
+    border-bottom: 1px solid /*[[base-color]]*/ !important;
+  }
 }
 @-moz-document regexp("^https?://((?!(academia|dba|electronics|meta|tex)).*\\.)?stackexchange.com.*") {
   /* target sites to *NOT* hide the header background */
