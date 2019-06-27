@@ -2428,7 +2428,7 @@ regexp("^https?://((?!(www|area51)).*\\.)?stackexchange\\.com.*") {
     color: #b571e2 !important;
   }
 }
-@-moz-document regexp("https?://(www\.)?google.com/recaptcha/api2/.*"), regexp("https?://stackoverflow.com/(enterprise|teams)\\/.*") {
+@-moz-document regexp("https?://(www\.)?google.com/recaptcha/api2/.*"), regexp("https?://stackoverflow.com/(enterprise|teams)\.*") {
   html {
     background: #222;
   }
