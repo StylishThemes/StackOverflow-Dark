@@ -1264,7 +1264,7 @@ regexp("^https?://((?!(www|area51)).*\\.)?stackexchange\\.com.*") {
   }
   #tags_list .excerpt, #tags_list .stats-row, .excerpt,
   .timeline-item.add .add-item-list .item-add, .title-box .title,
-  .title-box > .title, .title-box > p, .title-box  p, .help-text, .mute-text,
+  .title-box > .title, .title-box > p, .title-box p, .help-text, .mute-text,
   .why-jobs-v2 {
     color: #999;
   }
@@ -1753,9 +1753,7 @@ regexp("^https?://((?!(www|area51)).*\\.)?stackexchange\\.com.*") {
     text-shadow: none;
   }
   .page-numbers.current {
-    background: linear-gradient(to bottom,
-  /*[[base-color]]*/,
-  /*[[base-color]]*/);
+    background: /*[[base-color]]*/;
     background-color: /*[[base-color]]*/;
     box-shadow: 0 2px 3px rgba(0, 0, 0, .4) inset, 0 1px 0 #111;
     color: #fff;
