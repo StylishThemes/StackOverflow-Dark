@@ -383,6 +383,12 @@ regexp("^https?://((?!(www|area51)).*\\.)?stackexchange\\.com.*") {
   .gsc-selected-option-container {
     background: #111 !important;
   }
+  .s-table thead th {
+    background: #181818;
+  }
+  #synonyms-table.s-table.s-table__sortable thead th a[href] {
+    color: inherit;
+  }
   .onebox, .profile-ad, .message.message-config, .so-header a:hover,
   .so-header a.topbar-icon-on, .topbar-dialog .header,
   .header-edit-section:hover, .timeline-item, .sidebar-profile .-item,
