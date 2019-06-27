@@ -1308,10 +1308,16 @@ regexp("^https?://((?!(www|area51)).*\\.)?stackexchange\\.com.*") {
   .user-page .settings-page h1 + div.subtitle, .fc-medium .fw-bold, .fc-medium b,
   .fc-medium li strong, .salary-changelog, .company-module > header .-info p,
   #index-hed h1 .description, #index-hed h2 .description,
-  #index-hed .-header .description {
+  #index-hed .-header .description,
+  .about-page .new-about-content-page .user-details,
+  .about-page .new-about-content-page .rep-block,
+  .about-page .new-about-content-page .comments {
     color: #aaa;
   }
-  .post-text, .comment {
+  .post-text, .comment, .topbar-dialog.help-dialog .item-summary,
+  .topbar-dialog.inbox-dialog .inbox-item .item-content .item-summary,
+  .topbar-dialog.modInbox-dialog .inbox-item .item-content .item-summary,
+  .topbar-dialog.achievements-dialog .inbox-item .item-content .item-summary {
     color: #bbb;
   }
   #top-menu a, .subheader a, .reputation a, .reputation-score, .relativetime.old,
