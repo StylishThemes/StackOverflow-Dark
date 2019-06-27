@@ -1781,11 +1781,11 @@ regexp("^https?://((?!(www|area51)).*\\.)?stackexchange\\.com.*") {
     border-color: #27354f !important;
   }
   html:not(#X) body #mainArea .tabs a.youarehere {
-    color:  /*[[base-color]]*/ !important;
+    color: /*[[base-color]]*/ !important;
     border-bottom: 1px solid /*[[base-color]]*/ !important;
   }
   html:not(#X) body #mainArea .tabs a:hover {
-    color:  /*[[base-color]]*/ !important;
+    color: /*[[base-color]]*/ !important;
     border-bottom: 1px solid /*[[base-color]]*/ !important;
   }
 }
