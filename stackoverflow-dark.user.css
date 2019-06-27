@@ -181,7 +181,7 @@ regexp("^https?://((?!(www|area51)).*\\.)?stackexchange\\.com.*") {
   }
   .why-jobs-v2 .developers-first input[type="submit"] {
     background: #222 !important;
-    color:  /*[[base-color]]*/ !important;
+    color: /*[[base-color]]*/ !important;
   }
   input[type="submit"].btn-clear:hover, input[type="button"].btn-clear:hover,
   button.btn-clear:hover, .btn-clear:hover, input[type="submit"].btn-clear:focus,
@@ -202,8 +202,7 @@ regexp("^https?://((?!(www|area51)).*\\.)?stackexchange\\.com.*") {
   .old-hero {
     color: #eee;
     background-color: rgba(/*[[base-color-rgb]]*/, .4);
-    background-image: url('../../img/hero/pattern.svg?v=13ca42e6c21d'),
-           linear-gradient(to right, transparent 0%, transparent 100%);
+    background-image: linear-gradient(to right, transparent 0%, transparent 100%);
   }
   input[type="submit"]:not(.s-btn):hover, input[type="button"]:not(.s-btn):hover,
   button:not(.s-btn):hover, .button:hover, a.button:hover,
@@ -227,14 +226,21 @@ regexp("^https?://((?!(www|area51)).*\\.)?stackexchange\\.com.*") {
     background-color: /*[[base-color]]*/ !important;
     color: #eee !important;
   }
-  .privileges-page .privilege-table-row:hover {
+  .privileges-page .privilege-table-row:hover, .top-bar .my-profile:hover,
+  .top-bar .-secondary .-item .-link:hover {
     background-color: #242424;
   }
   .privileges-page .privilege-table-row:hover .long-description,
   .faq-page #mainbar .content-page p a:hover, a.-link:hover, h3 strong a:hover,
-  ._icon p a:hover, a[href]:hover {
+  ._icon p a:hover {
+    color: /*[[base-color]]*/;
     filter: brightness(115%);
   }
+  /* hack around to prevent pagination hover issues on stackexchage */
+  a[href]:hover {
+    opacity: .9;
+  }
+  /* end hack */
   html:not(#X) #tabs a, html:not(#X) .tabs a {
     color: #aaa !important;
     border: 1px solid transparent !important;
@@ -453,11 +459,11 @@ regexp("^https?://((?!(www|area51)).*\\.)?stackexchange\\.com.*") {
   .onebox, .profile-ad, .message.message-config, .so-header a:hover,
   .so-header a.topbar-icon-on, .topbar-dialog .header,
   .header-edit-section:hover, .timeline-item, .sidebar-profile .-item,
-  .btn-outlined.-white:hover, .top-bar a:hover, .top-bar a:focus,
-  .top-bar .-item._active, .top-bar .-link.topbar-icon-on,
-  .top-bar .-link.topbar-icon-on:hover, .top-bar .-feature-notice:hover,
-  .top-bar .-feature-notice.topbar-icon-on, .topbar-dialog .dialog-content,
-  .feature-notice-dialog:before, .-item.social,
+  .btn-outlined.-white:hover, .top-bar a:not([href]):hover,
+  .top-bar a:not([href]):focus, .top-bar .-item._active,
+  .top-bar .-link.topbar-icon-on, .top-bar .-link.topbar-icon-on:hover,
+  .top-bar .-feature-notice:hover, .top-bar .-feature-notice.topbar-icon-on,
+  .topbar-dialog .dialog-content, .feature-notice-dialog:before, .-item.social,
   .salary-results-container .collection, .sidebar #post-job,
   .sidebar .salary-survey-sidebar, .ui-dialog, .salary-calculator-calculator,
   .sticky-menu-wrapper._sticky, .-summary, .field._toolbar .-toolbar,
@@ -472,7 +478,7 @@ regexp("^https?://((?!(www|area51)).*\\.)?stackexchange\\.com.*") {
   .top-bar a.-logo:hover {
     background: #000 !important;
   }
-  .autocomplete-suggestions.is-visible, .bg-black-025 {
+  .autocomplete-suggestions.is-visible, .bg-black-025, .subtabs a.youarehere {
     border: 1px solid #555 !important;
     background: #222 !important;
   }
@@ -483,6 +489,10 @@ regexp("^https?://((?!(www|area51)).*\\.)?stackexchange\\.com.*") {
   .s-label--status {
     background: #444 !important;
     color: #aaa !important;
+  }
+  .left-sidebar-toggle span, .left-sidebar-toggle span::before,
+  .left-sidebar-toggle span::after {
+    background-color: #bbb;
   }
   html, blockquote, #post-preview, .nav .primarynav li a, #chat,
   #hsearch .textbox, .form-item, .grippie, .welovestackoverflow, #wmd-button-bar,
@@ -1076,6 +1086,13 @@ regexp("^https?://((?!(www|area51)).*\\.)?stackexchange\\.com.*") {
     background: rgba(65, 131, 196, 1) !important;
     background: rgba(/*[[base-color-rgb]]*/, 1) !important;
   }
+  input[type="submit"].btn-secondary, input[type="button"].btn-secondary,
+  button.btn-secondary, .btn-secondary {
+    color: #ddd !important;
+    background: rgba(/*[[base-color-rgb]]*/, .5) !important;
+    border-color: rgba(/*[[base-color-rgb]]*/, .7) !important;
+    box-shadow: inset 0 1px 0 rgba(/*[[base-color-rgb]]*/, .6) !important;
+  }
   .hero-box, .filter-show-more {
     background: #182030 !important;
   }
@@ -1273,7 +1290,8 @@ regexp("^https?://((?!(www|area51)).*\\.)?stackexchange\\.com.*") {
   }
   /* these arent !important, but we botch them to make them work */
   .nav-links .nav-links--link, .nav-links .nav-links--link:visited,
-  .nav-links .youarehere .nav-links--link .svg-icon, li.s-sidebarwidget--item a {
+  .nav-links .youarehere .nav-links--link .svg-icon, li.s-sidebarwidget--item a,
+  .site-footer .-title a, html .job, html .module {
     color: #aaa !important;
   }
   .nav-links .nav-links--link:hover, .nav-links .nav-links--link:focus,
@@ -1721,33 +1739,26 @@ regexp("^https?://((?!(www|area51)).*\\.)?stackexchange\\.com.*") {
   .post-tag {
     color: /*[[base-color]]*/ !important;
   }
-  .pager .page-numbers, .page-sizer .page-numbers {
-    color: #ccc;
-    background-color: #333;
-    background: -webkit-gradient(linear, left top, left bottom, from(#111), to(#222));
-    background: -moz-linear-gradient(top, #111, #222);
-    background: -o-linear-gradient(top, #111, #222);
+  .page-numbers {
     background: linear-gradient(to bottom, #111, #222);
+    background-color: #333;
+    color: #ccc;
     border: 1px solid #555;
     text-shadow: none;
   }
-  .pager .page-numbers.current, .page-sizer .page-numbers.current,
-  .pager .page-numbers:hover, .page-sizer .page-numbers:hover {
-    background-color: /*[[base-color]]*/;
-    background: -webkit-gradient(linear, left top, left bottom, from(/*[[base-color]]*/), to(/*[[base-color]]*/));
-    background: -moz-linear-gradient(top,
-  /*[[base-color]]*/,
-  /*[[base-color]]*/);
-    background: -o-linear-gradient(top,
-  /*[[base-color]]*/,
-  /*[[base-color]]*/);
+  .page-numbers.current {
     background: linear-gradient(to bottom,
   /*[[base-color]]*/,
-  /*[[base-color]]*/) !important;
-       -moz-box-shadow: 0 2px 3px rgba(0, 0, 0, .4) inset, 0 1px 0 #111;
-    -webkit-box-shadow: 0 2px 3px rgba(0, 0, 0, .4) inset, 0 1px 0 #111;
-            box-shadow: 0 2px 3px rgba(0, 0, 0, .4) inset, 0 1px 0 #111;
+  /*[[base-color]]*/);
+    background-color: /*[[base-color]]*/;
+    box-shadow: 0 2px 3px rgba(0, 0, 0, .4) inset, 0 1px 0 #111;
     color: #fff;
+  }
+  .page-numbers:hover, .page-numbers.next:hover {
+    background: /*[[base-color]]*/;
+    background-color: /*[[base-color]]*/;
+    color: #fff;
+    text-decoration: none !important;
   }
   .pager .page-numbers.dots:hover, .pager .page-numbers.desc:hover,
   .page-sizer .page-numbers.dots:hover, .page-sizer .page-numbers.desc:hover,
