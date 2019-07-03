@@ -135,7 +135,9 @@ regexp("^https?://((?!(www|area51)).*\\.)?stackexchange\\.com.*") {
   .mod-flair {
     color: /*[[base-color]]*/;
   }
-  .subheader h1 a {
+  .subheader h1 a, input[type="submit"].btn-clear,
+  input[type="button"].btn-clear, button.btn-clear, .btn-clear,
+  html:not(#X) .p-fc-purple, html:not(#X) .p-ff-roboto-slab.p-fc-purple div {
     color: /*[[base-color]]*/ !important;
   }
   .search-controls-responsive .-item .s-btn__outlined, .s-btn__outlined {
@@ -165,11 +167,7 @@ regexp("^https?://((?!(www|area51)).*\\.)?stackexchange\\.com.*") {
     opacity: .8;
     color: #ddd;
   }
-  input[type="submit"].btn-clear, input[type="button"].btn-clear,
-  button.btn-clear, .btn-clear, html:not(#X) .p-fc-purple,
-  html:not(#X) .p-ff-roboto-slab.p-fc-purple div {
-    color: /*[[base-color]]*/ !important;
-  }
+  /* these must be here else they dont work */
   input[class="w100"][type="submit"] {
     background: #622 !important;
     border: 1px solid #ff4a15 !important;
@@ -182,6 +180,9 @@ regexp("^https?://((?!(www|area51)).*\\.)?stackexchange\\.com.*") {
   .why-jobs-v2 .developers-first input[type="submit"] {
     background: #222 !important;
     color: /*[[base-color]]*/ !important;
+  }
+  .min-ds-step-counter .step.active {
+    background: /*[[base-color]]*/;
   }
   input[type="submit"].btn-clear:hover, input[type="button"].btn-clear:hover,
   button.btn-clear:hover, .btn-clear:hover, input[type="submit"].btn-clear:focus,
@@ -236,6 +237,9 @@ regexp("^https?://((?!(www|area51)).*\\.)?stackexchange\\.com.*") {
     color: /*[[base-color]]*/;
     filter: brightness(115%);
   }
+  .old-hero a.-link {
+    color: #eee !important;
+  }
   /* hack around to prevent pagination hover issues on stackexchage */
   a[href]:hover {
     opacity: .9;
@@ -265,7 +269,7 @@ regexp("^https?://((?!(www|area51)).*\\.)?stackexchange\\.com.*") {
   .user-tabs-nav .tabs a.youarehere:before,
   .newnav .tabs-list-container .tabs-list .intellitab a.youarehere:before,
   #tabs a.youarehere:before, .tabs a.youarehere:before,
-  html:not(#X) .p-bg-purple {
+  html:not(#X) .p-bg-purple, input[type=submit][value="search"] {
     background-color: #4183c4 !important;
     background-color: /*[[base-color]]*/ !important;
   }
@@ -405,7 +409,8 @@ regexp("^https?://((?!(www|area51)).*\\.)?stackexchange\\.com.*") {
     filter: invert(100%) hue-rotate(180deg) !important;
   }
   .profile-placeholder--image, .timeline .readings .readings-placeholder .img,
-  .timeline-item .joined-so-wrapper .img, .md\:w100[src*="conduct-illo.svg"] {
+  .timeline-item .joined-so-wrapper .img, .md\:w100[src*="conduct-illo.svg"],
+  .wmx100[src*="404.svg"] {
     filter: invert(1) hue-rotate(180deg) brightness(400%);
     mix-blend-mode: exclusion;
   }
@@ -491,7 +496,7 @@ regexp("^https?://((?!(www|area51)).*\\.)?stackexchange\\.com.*") {
     color: #aaa !important;
   }
   .left-sidebar-toggle span, .left-sidebar-toggle span::before,
-  .left-sidebar-toggle span::after {
+  .left-sidebar-toggle span::after, .min-ds-step-counter .step {
     background-color: #bbb;
   }
   html, blockquote, #post-preview, .nav .primarynav li a, #chat,
@@ -987,6 +992,10 @@ regexp("^https?://((?!(www|area51)).*\\.)?stackexchange\\.com.*") {
   .spoiler:hover, .spoiler:hover * {
     color: inherit !important;
   }
+  .min-ds-wizard .min-ds-box.jobs .min-ds-title .filters input[type="radio"]:checked + label {
+    color: #ddd;
+    border-bottom-color: /*[[base-color]]*/ !important;
+  }
   /* === Dark border === */
   .body-diffs table * {
     border-color: #111 !important;
@@ -1106,7 +1115,7 @@ regexp("^https?://((?!(www|area51)).*\\.)?stackexchange\\.com.*") {
   .topbar-dialog a.btn-secondary, .filter-dashboard, input[type=submit],
   .s-btn.s-btn__filled, .old-hero.z-base, .s-notice__info,
   .old-hero._small._darken, .s-notice__info.s-notice__important, .bg-blue-500,
-  a.btn-secondary {
+  a.btn-secondary, .s-sidebarwidget .mb8 .btn-secondary:hover {
     background-color: rgba(65, 131, 196, .18) !important;
     background-color: rgba(/*[[base-color-rgb]]*/, .18) !important;
   }
@@ -1236,7 +1245,11 @@ regexp("^https?://((?!(www|area51)).*\\.)?stackexchange\\.com.*") {
   .user-show-new .user-rep-full .rep-day, .page-numbers, .statscontainer,
   .vote span, .item-multiplier-count, .item-multiplier,
   .timeline .header-edit-section .empty-description .placeholder-title,
-  .s-btn.stackexchange-login, .s-btn.google-login {
+  .s-btn.stackexchange-login, .s-btn.google-login,
+  .min-ds-wizard .min-ds-box.jobs .min-ds-title p,
+  .min-ds-wizard .min-ds-box.jobs .min-ds-content label .optional-unless-resume,
+  .min-ds-wizard .min-ds-box.jobs .min-ds-content .optional-text,
+  .resume-uploader p.upload-allowed-extensions {
     color: #999;
   }
   .user-details td, .content-page, h2:not([style]), h2 a, .profile-popup a:hover,
@@ -1277,7 +1290,8 @@ regexp("^https?://((?!(www|area51)).*\\.)?stackexchange\\.com.*") {
   .salary-calculator, .calculator-header {
     color: #ccc;
   }
-  .timeline-item.add .add-item-list .item-add:hover, .val-message {
+  .timeline-item.add .add-item-list .item-add:hover, .val-message,
+  .min-ds-wizard .min-ds-box.jobs .min-ds-title .filters label:hover {
     color: #ddd;
   }
   .why-jobs-v2 .developers-first, .why-jobs-v2 .developers-first h2 {
@@ -1285,7 +1299,8 @@ regexp("^https?://((?!(www|area51)).*\\.)?stackexchange\\.com.*") {
   }
   .icon-job-big, .icon-project-opensource-big, .icon-project-apps-big,
   .icon-achievement-big, .icon-education-big, .icon-certification-big,
-  .icon-artifact-big, .icon-generic-assessment-big, .icon-generic-big {
+  .icon-artifact-big, .icon-generic-assessment-big, .icon-generic-big,
+  .min-ds-step-counter .step.completed {
     filter: grayscale(1) brightness(200%);
   }
   /* these arent !important, but we botch them to make them work */
@@ -1311,7 +1326,8 @@ regexp("^https?://((?!(www|area51)).*\\.)?stackexchange\\.com.*") {
   #index-hed .-header .description,
   .about-page .new-about-content-page .user-details,
   .about-page .new-about-content-page .rep-block,
-  .about-page .new-about-content-page .comments {
+  .about-page .new-about-content-page .comments,
+  .min-ds-wizard .min-ds-box.jobs .min-ds-title .filters label {
     color: #aaa;
   }
   .post-text, .comment, .topbar-dialog.help-dialog .item-summary,
@@ -1413,6 +1429,10 @@ regexp("^https?://((?!(www|area51)).*\\.)?stackexchange\\.com.*") {
   }
   html:not(#X) .h\:bg-orange-500:hover {
     background-color: #b05308 !important;
+  }
+  .old-hero._orange._darken {
+    background-color: #b05308;
+    background-image: linear-gradient(to right, #b05308 0%, #d77806 100%);
   }
   /* light brown */
   .message.incomplete .message-title {
@@ -1704,12 +1724,6 @@ regexp("^https?://((?!(www|area51)).*\\.)?stackexchange\\.com.*") {
     background: #182030 !important;
   }
   /* end blog.stackexchange.com */
-  /* chat.stackexchange.com */
-  .event-banner {
-    background-color: #222 !important;
-    border-color: #555 !important;
-  }
-  /* end chat.stackexchange.com */
   /* http://stackexchange.com/newsletters/newsletter (see #36) */
   .promotion-banner-container, .promotion-banner {
     background: #222 !important;
@@ -1920,6 +1934,32 @@ regexp("^https?://((?!(www|area51)).*\\.)?stackexchange\\.com.*") {
   }
   #header-logo {
     background-size: contain !important;
+  }
+}
+@-moz-document domain("chat.stackexchange.com") {
+  .event-banner {
+    background-color: #222 !important;
+    border-color: #555 !important;
+  }
+  body.outside #container {
+    color: #aaa;
+  }
+  .pager .page-numbers.current {
+    background-color: /*[[base-color]]*/;
+    border: 1px solid /*[[base-color]]*/;
+    color: #fff !important;
+  }
+  .pager .page-numbers {
+    border: 1px solid #555 !important;
+    color: #aaa !important;
+  }
+  .pager .page-numbers.next, .pager .page-numbers.prev {
+    border: 0 !important;
+    background: none;
+  }
+  .pager .page-numbers:hover {
+    color: #eee !important;
+    text-decoration: underline;
   }
 }
 @-moz-document domain("chat.meta.stackexchange.com") {
