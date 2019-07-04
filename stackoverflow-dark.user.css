@@ -2354,7 +2354,7 @@ regexp("^https?://((?!(www|area51)).*\\.)?stackexchange\\.com.*") {
 }
 @-moz-document domain("pt.stackoverflow.com") {
   /* pt.stackoverflow.com (Portuguese) */
-  .-logo .-img:not(._glyph) {
+  .-logo > .-img._glyph {
     background-image: url("https://StylishThemes.github.io/StackOverflow-Dark/images/pt-stackoverflow-logo.svg") !important;
     background-size: cover !important;
     height: 60px !important;
@@ -2362,7 +2362,7 @@ regexp("^https?://((?!(www|area51)).*\\.)?stackexchange\\.com.*") {
 }
 @-moz-document domain("pt.meta.stackoverflow.com") {
   /* pt.meta.stackoverflow.com (Portuguese) */
-  .-logo .-img:not(._glyph) {
+  .-logo > .-img._glyph {
     background-image: url("https://StylishThemes.github.io/StackOverflow-Dark/images/pt-meta-stackoverflow-logo.svg") !important;
     background-size: contain !important;
     height: 60px !important;
