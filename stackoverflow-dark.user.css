@@ -2356,8 +2356,9 @@ regexp("^https?://((?!(www|area51)).*\\.)?stackexchange\\.com.*") {
   /* pt.stackoverflow.com (Portuguese) */
   .-logo > .-img._glyph {
     background-image: url("https://StylishThemes.github.io/StackOverflow-Dark/images/pt-stackoverflow-logo.svg") !important;
-    background-size: cover !important;
-    height: 60px !important;
+    background-size: contain !important;
+    height: 50px !important;
+    margin-top: 10px !important;
   }
 }
 @-moz-document domain("pt.meta.stackoverflow.com") {
@@ -2365,7 +2366,8 @@ regexp("^https?://((?!(www|area51)).*\\.)?stackexchange\\.com.*") {
   .-logo > .-img._glyph {
     background-image: url("https://StylishThemes.github.io/StackOverflow-Dark/images/pt-meta-stackoverflow-logo.svg") !important;
     background-size: contain !important;
-    height: 60px !important;
+    height: 50px !important;
+    margin-top: 10px !important;
   }
 }
 @-moz-document domain("raspberrypi.stackexchange.com"), domain("raspberrypi.meta.stackexchange.com") {
