@@ -204,6 +204,11 @@ regexp("^https?://((?!(www|area51)).*\\.)?stackexchange\\.com.*") {
     border-color: rgba(/*[[base-color-rgb]]*/, .5);
     box-shadow: none;
   }
+  .about-newuser .huge-button {
+    background: none !important;
+    background-color: /*[[base-color]]*/ !important;
+    border-color: rgba(/*[[base-color-rgb]]*/, .5) !important;
+  }
   .old-hero {
     color: #eee;
     background-color: rgba(/*[[base-color-rgb]]*/, .4);
