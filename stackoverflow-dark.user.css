@@ -129,7 +129,7 @@ regexp("^https?://((?!(www|area51)).*\\.)?stackexchange\\.com.*") {
     padding: 5px !important;
   }
   /* === custom color === */
-  a:not([class*="comment-"]):not(.badge):not(.badge-tag):not(.lastactivity-link):not(.post-tag):not(.page-numbers),
+  a:not([class*="comment-"]):not(.signature):not(.badge):not(.badge-tag):not(.lastactivity-link):not(.post-tag):not(.page-numbers),
   .profile-popup a, .seWrapper a, .gs-title b, .spoiler:hover a, .comment-up-on,
   .comment-up-off:hover, #side-menu ul .category, .s-timeline .-timestamp,
   .mod-flair {
