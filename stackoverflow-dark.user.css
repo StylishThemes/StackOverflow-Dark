@@ -269,11 +269,6 @@ regexp("^https?://((?!(www|area51)).*\\.)?stackexchange\\.com.*") {
     filter: brightness(90%) !important;
     color: #aaa !important;
   }
-  /* chat room buttons */
-  a.button:not(.huge-button):not(#visit-the-faq):not(.btn):not([title="Learn more"]) {
-    background: #f67400 !important;
-    color: #eee !important;
-  }
   .user-tabs-nav #tabs a.youarehere:before,
   .user-tabs-nav .tabs a.youarehere:before,
   .newnav .tabs-list-container .tabs-list .intellitab a.youarehere:before,
@@ -591,9 +586,6 @@ regexp("^https?://((?!(www|area51)).*\\.)?stackexchange\\.com.*") {
   #chat .mine .messages, .salary-share {
     background-color: #292929 !important;
     border: 1px solid #444 !important;
-  }
-  #chat div.moderator {
-    color: #366fb3 !important;
   }
   .topbar-dialog, .share-tip, .messages, #tag-menu, #overlay-header,
   .action-list .action-selected, .switcher-nudge-lightbox,
@@ -2030,35 +2022,13 @@ regexp("^https?://((?!(www|area51)).*\\.)?stackexchange\\.com.*") {
     background-size: contain !important;
   }
 }
-@-moz-document domain("chat.stackexchange.com") {
+@-moz-document domain("chat.meta.stackexchange.com"), domain("chat.stackexchange.com"), domain("chat.stackoverflow.com"), domain("meta.stackexchange.com") {
   .event-banner {
     background-color: #222 !important;
     border-color: #555 !important;
   }
   body.outside #container {
     color: #aaa;
-  }
-  .pager .page-numbers.current {
-    background-color: /*[[base-color]]*/;
-    border: 1px solid /*[[base-color]]*/;
-    color: #fff !important;
-  }
-  .pager .page-numbers {
-    border: 1px solid #555 !important;
-    color: #aaa !important;
-  }
-  .pager .page-numbers.next, .pager .page-numbers.prev {
-    border: 0 !important;
-    background: none;
-  }
-  .pager .page-numbers:hover {
-    color: #eee !important;
-    text-decoration: underline;
-  }
-}
-@-moz-document domain("chat.meta.stackexchange.com"), domain("meta.stackexchange.com") {
-  body.outside #container {
-    color: #ccc !important;
   }
   .subheader #tabs .tabcount {
     background-color: #555;
@@ -2093,6 +2063,9 @@ regexp("^https?://((?!(www|area51)).*\\.)?stackexchange\\.com.*") {
   #chat a.signature {
     color: #bbb;
   }
+  #input-area .input-hint a, a, .more, .roomcard h3, .usercard h3 {
+    color: /*[[base-color]]*/;
+  }
   #chat div.username.moderator {
     color: /*[[base-color]]*/ !important;
   }
@@ -2107,10 +2080,16 @@ regexp("^https?://((?!(www|area51)).*\\.)?stackexchange\\.com.*") {
     color: #eee;
     background-color: #343434;
   }
+  /* chat room buttons */
+  a.button:not(.huge-button):not(#visit-the-faq):not(.btn) {
+    background: #f67400 !important;
+    color: #eee !important;
+  }
   html:not(#X) #chat-body a.button[href],
   html:not(#X) #transcript-body a.button.noprint,
   #transcript-body #sidebar a.button,
-  html:not(#X) .xxl-info-layout .roomcard-xxl a.button[href], input.button {
+  html:not(#X) .xxl-info-layout .roomcard-xxl a.button[href], input.button,
+  html:not(#X) #chat-body #container span.button {
     background-color: /*[[base-color]]*/ !important;
   }
   .popup .btn-close:hover, #conversation-sel .btn-close:hover {
@@ -2166,10 +2145,19 @@ regexp("^https?://((?!(www|area51)).*\\.)?stackexchange\\.com.*") {
   img[src*="chat/Img/anon.png"] {
     filter: invert(1) hue-rotate(180deg) brightness(150%);
   }
+  #input-area .input-hint::before {
+    border-left-color: #555;
+  }
   .conversation-info {
     border--color: #555;
     color: #ccc;
     background-color: #222 !important;
+  }
+  ul#my-rooms > li.activity-1 {
+    color: #45a163;
+  }
+  ul#my-rooms > li.activity-2 {
+    color: #ccc;
   }
 }
 @-moz-document domain("askubuntu.com") {
