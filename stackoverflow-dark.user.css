@@ -96,7 +96,7 @@ regexp("^https?://((?!(www|area51)).*\\.)?stackexchange\\.com.*") {
    * https://github.com/StylishThemes/StackOverflow-Dark/issues
    * Note: fix borders by removing single glob eventually; some have been fixed.
    */
-  *:not(.site-bubble):not(.gv-item):not(.message):not(.question-status) {
+  *:not(.site-bubble):not(.gv-item):not(.message):not(.question-status):not(.ob-post-tag) {
     border-color: #444 !important;
     text-shadow: none !important;
     box-shadow: none !important;
@@ -2073,9 +2073,6 @@ regexp("^https?://((?!(www|area51)).*\\.)?stackexchange\\.com.*") {
   .ob-lpadbug, .ob-manpage, .ob-blog, .ob-exception, .ob-anime, .ob-github {
     color: #aaa;
   }
-  #chat .system-message {
-    background: #222 !important;
-  }
   div.message:hover .action-link, .timestamp:hover + div.message .action-link {
     color: #eee;
     background-color: #343434;
@@ -2101,6 +2098,16 @@ regexp("^https?://((?!(www|area51)).*\\.)?stackexchange\\.com.*") {
     background-color: rgba(/*[[base-color-rgb]]*/, .2) !important;
     border-bottom-color: rgba(/*[[base-color-rgb]]*/, .3) !important;
     border-right-color: rgba(/*[[base-color-rgb]]*/, .5) !important;
+  }
+  a:hover .ob-post-tag, a:hover .ob-user-tag {
+    color: /*[[base-color]]*/;
+    background-color: rgba(/*[[base-color-rgb]]*/, .4) !important;
+    border-color: rgba(/*[[base-color-rgb]]*/, .6) !important;
+  }
+  .ob-post-tag {
+    color: /*[[base-color]]*/ !important;
+    background-color: rgba(/*[[base-color-rgb]]*/, .2) !important;
+    border-color: rgba(/*[[base-color-rgb]]*/, .5) !important;
   }
   .popup .btn-close, #conversation-sel .btn-close {
     background-color: #555;
@@ -2158,6 +2165,17 @@ regexp("^https?://((?!(www|area51)).*\\.)?stackexchange\\.com.*") {
   }
   ul#my-rooms > li.activity-2 {
     color: #ccc;
+  }
+  ul#my-rooms > li.activity-3 {
+    color: #aaa;
+  }
+  /* These two rules below are tied somehow */
+  .system-message-container.timebreak {
+    filter: invert(1) hue-rotate(180deg);
+  }
+  #chat .system-message {
+    background: transparent !important;
+    border: 0 !important;
   }
 }
 @-moz-document domain("askubuntu.com") {
