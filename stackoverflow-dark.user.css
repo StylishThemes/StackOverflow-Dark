@@ -96,7 +96,7 @@ regexp("^https?://((?!(www|area51)).*\\.)?stackexchange\\.com.*") {
    * https://github.com/StylishThemes/StackOverflow-Dark/issues
    * Note: fix borders by removing single glob eventually; some have been fixed.
    */
-  * {
+  *:not(.site-bubble):not(.gv-item):not(.message):not(.question-status) {
     border-color: #444 !important;
     text-shadow: none !important;
     box-shadow: none !important;
