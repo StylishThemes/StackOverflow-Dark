@@ -2086,6 +2086,12 @@ regexp("^https?://((?!(www|area51)).*\\.)?stackexchange\\.com.*") {
     background-color: #111 !important;
     color: #ddd !important;
   }
+  #chat a.signature {
+    color: #bbb;
+  }
+  #chat div.username.moderator {
+    color: /*[[base-color]]*/ !important;
+  }
 }
 @-moz-document domain("askubuntu.com") {
   #header {
