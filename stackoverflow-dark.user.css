@@ -645,8 +645,8 @@ regexp("^https?://((?!(www|area51)).*\\.)?stackexchange\\.com.*") {
   #input-area .input-hint, .tour-page .feature-selection li a.triggered,
   .ob-docs,
   .topbar.newheader .topbar-wrapper .topbar-links .search-container #search input[name="q"],
-  .mainbar.discussion .discussion-item, #input-area,
-  .pager a span:not(.page-numbers), .page-sizer a:not(.page-numbers), .self {
+  .mainbar.discussion .discussion-item, .pager a span:not(.page-numbers),
+  .page-sizer a:not(.page-numbers), .self {
     background: #222 !important;
     color: #ddd !important;
   }
@@ -1413,7 +1413,7 @@ regexp("^https?://((?!(www|area51)).*\\.)?stackexchange\\.com.*") {
   .about-page .new-about-content-page .rep-block,
   .about-page .new-about-content-page .comments,
   .min-ds-wizard .min-ds-box.jobs .min-ds-title .filters label,
-  .message.message-config {
+  .message.message-config, .displaying-results {
     color: #aaa;
   }
   .post-text, .comment, .topbar-dialog.help-dialog .item-summary,
@@ -2068,18 +2068,18 @@ regexp("^https?://((?!(www|area51)).*\\.)?stackexchange\\.com.*") {
             box-shadow: 0 1px 3px #ddd;
     color: #ccc !important;
   }
-  .mini-room-chart .mspark .mspbar.now {
+  .mini-room-chart .mspark .mspbar.now, .mspark .mspbar.now {
     background-color: #4e82c2 !important;
     background-color: /*[[base-color]]*/ !important;
   }
-  .mini-room-chart .mspark .mspbar {
+  .mini-room-chart .mspark .mspbar, .mspark .mspbar {
     background-color: #555 !important;
   }
-  img[src*="img/favicon.ico"] {
+  img[src*="img/favicon.ico"], .favicon-stackexchangemeta {
     filter: grayscale(1) brightness(110%);
   }
   #header [src*="img/logo.png"][alt="Meta Stack Exchange"] {
-    filter: invert(100%) hue-rotate(180deg) brightness(450%) !important;
+    filter: grayscale(1) color-burn(300%) brightness(100%) !important;
     visibility: visible !important;
   }
   input#password {
@@ -2091,6 +2091,81 @@ regexp("^https?://((?!(www|area51)).*\\.)?stackexchange\\.com.*") {
   }
   #chat div.username.moderator {
     color: /*[[base-color]]*/ !important;
+  }
+  .msg-small, #sidebar, .ob-wikipedia, .ob-amazon, .ob-gist, .ob-message,
+  .ob-lpadbug, .ob-manpage, .ob-blog, .ob-exception, .ob-anime, .ob-github {
+    color: #aaa;
+  }
+  #chat .system-message {
+    background: #222 !important;
+  }
+  div.message:hover .action-link, .timestamp:hover + div.message .action-link {
+    color: #eee;
+    background-color: #343434;
+  }
+  html:not(#X) #chat-body a.button[href],
+  html:not(#X) #transcript-body a.button.noprint,
+  #transcript-body #sidebar a.button,
+  html:not(#X) .xxl-info-layout .roomcard-xxl a.button[href], input.button {
+    background-color: /*[[base-color]]*/ !important;
+  }
+  .popup .btn-close:hover, #conversation-sel .btn-close:hover {
+    background-color: /*[[base-color]]*/;
+    color: #ccc;
+  }
+  #room-tags a.tag {
+    color: /*[[base-color]]*/;
+    background-color: rgba(/*[[base-color-rgb]]*/, .2) !important;
+    border-bottom-color: rgba(/*[[base-color-rgb]]*/, .3) !important;
+    border-right-color: rgba(/*[[base-color-rgb]]*/, .5) !important;
+  }
+  .popup .btn-close, #conversation-sel .btn-close {
+    background-color: #555;
+    color: #aaa;
+  }
+  .popup, #main.message-admin-mode .message-controls, #conversation-sel,
+  .ob-post {
+    color: #aaa;
+  }
+  .footerwrap a {
+    color: #aaa !important;
+  }
+  #footer {
+    color: #777;
+  }
+  .ob-post-title a {
+    color: #ccc !important;
+  }
+  #roomlist [id*="room-"].roomcard, .roomcard, .usercard {
+    background: #222 !important;
+    border-color: #444 !important;
+    color: #ccc !important;
+  }
+  #loading {
+    background: rgba(52, 52, 52, .8);
+  }
+  #loading #loading-message {
+    background-color: #222;
+       -moz-box-shadow: none;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+  }
+  .ac_loading {
+    background: #321;
+  }
+  #input-area {
+    background: #111;
+  }
+  html #input-area a {
+    color: /*[[base-color]]*/;
+  }
+  img[src*="chat/Img/anon.png"] {
+    filter: invert(1) hue-rotate(180deg) brightness(150%);
+  }
+  .conversation-info {
+    border--color: #555;
+    color: #ccc;
+    background-color: #222 !important;
   }
 }
 @-moz-document domain("askubuntu.com") {
