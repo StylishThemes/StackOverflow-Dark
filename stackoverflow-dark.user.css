@@ -404,8 +404,8 @@ regexp("^https?://((?!(www|area51)).*\\.)?stackexchange\\.com.*") {
     border-color: #5fba7d;
   }
   #custom-header, .review-bar, .diff-choices a.selected, #header #topbar,
-  td.owner, a.owner, .question-status, .profile-popup, .profile-popup div,
-  .profile-popup th, .profile-popup td, #global, .actual-edit-overlay,
+  td.owner, a.owner, .profile-popup, .profile-popup div, .profile-popup th,
+  .profile-popup td, #global, .actual-edit-overlay,
   input:not([type="submit"]):not([type="button"]), textarea, #search input,
   .tag-editor, .f-select > select, textarea#input,
   .search-form .chosen-container .chosen-choices, .pac-container, select,
@@ -794,9 +794,9 @@ regexp("^https?://((?!(www|area51)).*\\.)?stackexchange\\.com.*") {
   .modal.image-upload .modal-dropzone-default {
     background-color: #333 !important;
   }
-  .owner-answer, .question-status, .notification, #feed-ticker, #top-menu,
-  .vote-revision td, .topbar-dialog .unread-item, .privileges-wrapper .stroke,
-  .progress-bar .bar, .user-page .settings-page .email-settings .-title-row {
+  .owner-answer, .notification, #feed-ticker, #top-menu, .vote-revision td,
+  .topbar-dialog .unread-item, .privileges-wrapper .stroke, .progress-bar .bar,
+  .user-page .settings-page .email-settings .-title-row {
     background: #404040 !important;
   }
   .new-contributor-indicator {
@@ -848,6 +848,10 @@ regexp("^https?://((?!(www|area51)).*\\.)?stackexchange\\.com.*") {
   .review-post-author-guidance, .tagged-interesting, .tagged-interesting .views,
   .tagged-interesting .user-info {
     background-color: rgba(51, 34, 17, .6) !important;
+  }
+  div.question-status {
+    background-color: rgba(51, 34, 17, .6);
+    border-color: #640 !important;
   }
   .s-sidebarwidget--header {
     background-color: rgba(51, 34, 17, .8) !important;
