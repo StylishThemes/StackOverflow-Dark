@@ -831,7 +831,7 @@ regexp("^https?://((?!(www|area51)).*\\.)?stackexchange\\.com.*") {
     background: #c1beba !important;
   }
   html:not(#X) .post-text a img {
-    filter: brightness(50%) contrast(420%) saturate(300%);
+    filter: brightness(70%);
   }
   html:not(#X) .post-text a img:hover {
     opacity: .9 !important;
