@@ -109,6 +109,9 @@ regexp("^https?://((?!(www|area51)).*\\.)?stackexchange\\.com.*") {
     background-attachment: /*[[bg-attachment]]*/ !important;
     /*[[bg-options]]*/
   }
+  .subheader a {
+    border-color: inherit !important;
+  }
   body {
     color: #ccc;
   }
@@ -275,7 +278,8 @@ regexp("^https?://((?!(www|area51)).*\\.)?stackexchange\\.com.*") {
   .newnav .tabs-list-container .tabs-list .intellitab a.youarehere:before,
   #tabs a.youarehere:before, .tabs a.youarehere:before,
   html:not(#X) .p-bg-purple, input[type=submit][value="search"],
-  html:not(#X) .h\:bg-orange-500:hover {
+  html:not(#X) .h\:bg-orange-500:hover,
+  html:not(#X) .wz-progress.wz-progress--active {
     background-color: #4183c4 !important;
     background-color: /*[[base-color]]*/ !important;
   }
@@ -309,6 +313,10 @@ regexp("^https?://((?!(www|area51)).*\\.)?stackexchange\\.com.*") {
     border-color: /*[[base-color]]*/ !important;
     box-shadow: inset 0 1px 2px rgba(0, 0, 0, .075), 0 0 2px /*[[base-color]]*/ !important;
     outline-color: transparent !important;
+  }
+  html:not(#X) .wz-wrapper.wz-wrapper--focused {
+    border: 1px solid /*[[base-color]]*/ !important;
+    box-shadow: inset 0 0 4px /*[[base-color]]*/, 0 0 0 4px rgba(/*[[base-color-rgb]]*/, .15) !important;
   }
   .tag-editor input:focus, .previous-button, .next-button, .btn-clear,
   .chosen-container.chosen-container-active .chosen-choices input,
@@ -422,7 +430,7 @@ regexp("^https?://((?!(www|area51)).*\\.)?stackexchange\\.com.*") {
     filter: invert(1) hue-rotate(180deg) brightness(400%);
     mix-blend-mode: exclusion;
   }
-  img[src*="iq-logo.svg"] {
+  img[src*="iq-logo.svg"], img[src*="illustration-new-question.svg"] {
     filter: invert(1) hue-rotate(180deg) saturate(200%);
     mix-blend-mode: exclusion;
   }
@@ -465,6 +473,9 @@ regexp("^https?://((?!(www|area51)).*\\.)?stackexchange\\.com.*") {
   }
   .gsc-selected-option-container {
     background: #111 !important;
+  }
+  .wz-section-container.focused {
+    background: #111;
   }
   .s-table thead th {
     background: #181818;
@@ -1045,7 +1056,7 @@ regexp("^https?://((?!(www|area51)).*\\.)?stackexchange\\.com.*") {
   .nav.careers li, .nav.careers li:hover, .switcher-nudge-content p, #content,
   #tabs a, .tabs a, #chat .username, #chat .messages, .tag-container,
   .prettyprint code, .lv-info, .lv-stats-wrapper, .lv-stats-wrapper .number,
-  .container, .bottom-notice, #question-header, .question-form .form-item,
+  .container, .bottom-notice, #question-header, #question-form .form-item,
   .post-menu>a:hover, #main-content, #mainbar, #mainbar-full, .mainbar-full,
   #logout-page, #sidebar, .footerwrap, #footer-menu, .module,
   #sidebar #newsletter-ad, #sidebar .ad-container,
