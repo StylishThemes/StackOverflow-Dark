@@ -682,11 +682,11 @@ regexp("^https?://((?!(www|area51)).*\\.)?stackexchange\\.com.*") {
   .why-jobs-v2 .slanted-background._light-gray::before {
     background-color: #202020 !important;
   }
-  .facebook-login, .facebook-login:hover {
+  .facebook-login, .facebook-login:hover, .s-btn__facebook.facebook-login {
     color: #eee !important;
     background-color: #395697;
   }
-  .facebook-login:hover {
+  .facebook-login:hover, .s-btn__facebook.facebook-login:hover {
     background-color: #395697;
     filter: brightness(110%);
   }
