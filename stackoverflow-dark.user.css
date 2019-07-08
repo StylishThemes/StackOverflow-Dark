@@ -429,11 +429,6 @@ regexp("^https?://((?!(www|area51)).*\\.)?stackexchange\\.com.*") {
     background-color: #111 !important;
     color: #ddd !important;
   }
-  iframe.snippet-box-edit,
-  a[href*="stackoverflow"] img[src*="Img/about/logo-sotalent.svg"],
-  a[href*="stackoverflow"] img[src*="Img/about/logo-so.svg"] {
-    filter: invert(100%) hue-rotate(180deg) !important;
-  }
   .profile-placeholder--image, .timeline .readings .readings-placeholder .img,
   .timeline-item .joined-so-wrapper .img, .md\:w100[src*="conduct-illo.svg"],
   .wmx100[src*="404.svg"], img[src*="ico-binoculars.svg"] {
@@ -3058,5 +3053,63 @@ regexp("^https?://((?!(www|area51)).*\\.)?stackexchange\\.com.*") {
   }
   html .g-recaptcha-bubble-arrow[style*="border-color: transparent rgb(204, 204, 204) transparent transparent; border-style: solid; border-width: 11px;"] {
     border-color: transparent #555 transparent transparent !important;
+  }
+}
+@-moz-document regexp("https?://stackexchange.com/(about|performance|leagues|sites\#)\.*"), regexp("https?://stackexchange.com/about/(moderators|security)\.*") {
+  .gv-size-huge .btn {
+    background: #555 !important;
+    color: #ddd !important;
+    text-shadow: none;
+  }
+  .gv-size-huge .btn:hover {
+    background: rgba(94, 138, 204, 1) !important;
+    color: #eee !important;
+    text-shadow: none;
+  }
+  .section-2 .data .state {
+    color: #888;
+  }
+  #mainContainer, .mainTitle span, .title span, .legend, .stat.percentage .peak,
+  .section-8 .mainTitle h2, .section-8 .mainTitle span {
+    color: #aaa;
+  }
+  .stat.throughput .number {
+    color: #146dc7;
+  }
+  .stat.percentage {
+    border-color: #555;
+  }
+  .section-8 .tag-link {
+    background: #111;
+    border-color: #444;
+    color: #ccc !important;
+  }
+  .section-8 .tag-link:hover {
+    background: #222;
+    color: #ddd !important;
+  }
+  .section-3 .illustration {
+    border-top-color: #666;
+  }
+  .mods-item, .league-container {
+    border-color: #444;
+  }
+  .bc-black-3 {
+    border-color: #444 !important;
+  }
+  .fc-blue-600 {
+    color: /*[[base-color]]*/ !important;
+  }
+  .introBlock .illustration .img1, img[src*="db.svg"] {
+    filter: invert(1) hue-rotate(180deg) contrast(90%) brightness(300%);
+    mix-blend-mode: exclusion;
+  }
+  img[src="https://cdn.sstatic.net/stackexchange/Img/performance/svg/server.svg?v=8469d56f8b0e"] {
+    filter: invert(1) hue-rotate(180deg) contrast(350%) brightness(60%);
+    mix-blend-mode: exclusion;
+  }
+  a[href*="stackoverflow"] img[src*="Img/about/logo-sotalent.svg"],
+  a[href*="stackoverflow"] img[src*="Img/about/logo-so.svg"] {
+    filter: invert(100%) hue-rotate(180deg) !important;
   }
 }
