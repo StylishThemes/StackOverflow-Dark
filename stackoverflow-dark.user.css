@@ -1367,8 +1367,8 @@ regexp("^https?://((?!(www|area51)).*\\.)?stackexchange\\.com.*") {
   html svg.svg-icon.iconEllipsisHorizontal path {
     fill: /*[[base-color]]*/ !important;
   }
-  svg.svg-icon[class*="icon"]:not(.native):not(.iconFacebook):not(.iconRss):not(.iconCheckmarkLg):not(.iconStar),
-  svg.svg-icon[class*="icon"]:not(.native):not(.iconFacebook):not(.iconRss):not(.iconCheckmarkLg):not(.iconStar) path {
+  svg.svg-icon[class*="icon"]:not(.native):not(.iconFacebook):not(.iconRss):not(.iconCheckmarkLg):not(.iconStar):not(.iconArrowUpLg):not(.iconArrowDownLg),
+  svg.svg-icon[class*="icon"]:not(.native):not(.iconFacebook):not(.iconRss):not(.iconCheckmarkLg):not(.iconStar):not(.iconArrowUpLg):not(.iconArrowDownLg) path {
     color: #999 !important;
     fill: #999 !important;
   }
