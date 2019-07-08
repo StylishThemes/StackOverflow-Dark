@@ -170,7 +170,7 @@ regexp("^https?://((?!(www|area51)).*\\.)?stackexchange\\.com.*") {
     background: #ccc;
     border: 4px solid #666;
   }
-  .s-timeline::after {
+  .s-timeline::after, .s-timeline .-period:last-child .-event:last-child::after {
     background: #666;
   }
   .search-form .search-inputs .-item .iconSearch,
