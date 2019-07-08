@@ -141,7 +141,8 @@ regexp("^https?://((?!(www|area51)).*\\.)?stackexchange\\.com.*") {
   .user-page .subheader.reloaded .additional-links a[href], .fc-blue-600,
   .h\:fc-orange-500:hover, #company-page .s-btn__outlined:hover,
   #company-page .s-btn__outlined:active,
-  .s-sidebarwidget.s-sidebarwidget__yellow a, h2 a.league-site-name {
+  .s-sidebarwidget.s-sidebarwidget__yellow a,
+	.s-sidebarwidget.s-sidebarwidget__yellow a:hover, h2 a.league-site-name {
     color: /*[[base-color]]*/ !important;
   }
   .search-controls-responsive .-item .s-btn__outlined, .s-btn__outlined {
