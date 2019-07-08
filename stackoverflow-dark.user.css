@@ -1869,7 +1869,7 @@ regexp("^https?://((?!(www|area51)).*\\.)?stackexchange\\.com.*") {
     -webkit-filter: invert(76%) !important;
   }
   /* documentation editing icons */
-  .docs-menu a, .favicon.favicon-stackoverflowmeta {
+  .docs-menu a, .favicon.favicon-stackoverflowmeta, .favicon[src*="favicon.ico"] {
     -webkit-filter: brightness(250%) !important;
             filter: brightness(250%) !important;
   }
@@ -2281,6 +2281,10 @@ regexp("^https?://((?!(www|area51)).*\\.)?stackexchange\\.com.*") {
   }
 }
 @-moz-document domain("chat.meta.stackexchange.com"), domain("chat.stackexchange.com"), domain("chat.stackoverflow.com"), domain("meta.stackexchange.com") {
+  /* chat icons topbar */
+  .topbar .icon-inbox, .topbar-icon.icon-achievements {
+    filter: brightness(150%) contrast(120%);
+  }
   .subtabs a {
     border-color: #444;
     color: #ccc !important;
