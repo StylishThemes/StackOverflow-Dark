@@ -1366,13 +1366,13 @@ regexp("^https?://((?!(www|area51)).*\\.)?stackexchange\\.com.*") {
     filter: none !important;
   }
   svg.iconGlobe path, svg.iconIndustry path, svg.iconPeople path,
-  svg.iconBriefcase path, svg.iconFlag path {
+  svg.iconBriefcase path, svg.iconFlag path, svg.iconGitHub path {
     fill: #999 !important;
   }
   html:not(#X) .fc-black-200, svg.iconStar:not(:hover), svg.iconLocation,
   svg.iconTwitter, svg.iconGitHub, svg.iconMoney, svg.iconVacation,
   svg.iconHealth, svg.iconComputer, svg.iconClock, svg.iconFood,
-  svg.iconFaceSmile, svg.iconHeart, svg.iconFitness {
+  svg.iconFaceSmile, svg.iconHeart, svg.iconFitness, svg.iconSubway {
     color: #999 !important;
   }
   svg.svg-icon.iconSearch path {
