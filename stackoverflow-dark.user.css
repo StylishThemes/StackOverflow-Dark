@@ -1081,7 +1081,7 @@ regexp("^https?://((?!(www|area51)).*\\.)?stackexchange\\.com.*") {
     border-color: #9b2e0e !important;
   }
   a.moderator-tag:hover {
-    color: #ccc !important;
+    color: #ddd !important;
     background-color: #700 !important;
     border-color: #9b2e0e !important;
     filter: none !important;
@@ -1465,9 +1465,8 @@ regexp("^https?://((?!(www|area51)).*\\.)?stackexchange\\.com.*") {
   .min-ds-wizard .min-ds-box.jobs .min-ds-content .optional-text,
   .resume-uploader p.upload-allowed-extensions, #tags_list .excerpt,
   #tags_list .stats-row, .excerpt, .timeline-item.add .add-item-list .item-add,
-  .title-box .title, .title-box > .title, .title-box > p, .title-box p,
-  .help-text, .mute-text, .why-jobs-v2, .profile-section-title span,
-  .timeline .header .meta {
+  .title-box > p, .title-box p, .help-text, .mute-text, .why-jobs-v2,
+  .profile-section-title span, .timeline .header .meta {
     color: #999;
   }
   .user-details td, .content-page, h2:not([style]), h2 a, .profile-popup a:hover,
@@ -1533,7 +1532,9 @@ regexp("^https?://((?!(www|area51)).*\\.)?stackexchange\\.com.*") {
   .about-page .new-about-content-page .comments,
   .min-ds-wizard .min-ds-box.jobs .min-ds-title .filters label,
   .message.message-config, .displaying-results, .statsBox .number,
-  .achievements-dialog .utc-clock, .placeholder-text {
+  .achievements-dialog .utc-clock, .placeholder-text,
+  .timeline-sidebar .timeline-sidebar-module .privacy-helper,
+  .s-stat .-description {
     color: #aaa;
   }
   .post-text, .comment, .topbar-dialog.help-dialog .item-summary,
