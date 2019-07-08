@@ -751,7 +751,7 @@ regexp("^https?://((?!(www|area51)).*\\.)?stackexchange\\.com.*") {
   .question-container, .featured-site, .favorite-container, .account-container,
   .divided-grid .-item, .s-widget-toreplace, .top-question-container,
   .account-container .account-icon, .wizard-container, .wz-section-container,
-  .wmd-inline-dialog, .wmd-button__active {
+  .wmd-inline-dialog, .wmd-button__active, .popup {
     border-color: #444;
   }
   ul.comments-list .comment > *, #content, .comments, #question-header,
