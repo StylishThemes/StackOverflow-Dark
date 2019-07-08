@@ -133,7 +133,8 @@ regexp("^https?://((?!(www|area51)).*\\.)?stackexchange\\.com.*") {
   a:not([class*="comment-"]):not(.badge):not(.badge-tag):not(.lastactivity-link):not(.post-tag):not(.page-numbers),
   .profile-popup a, .seWrapper a, .gs-title b, .spoiler:hover a, .comment-up-on,
   .comment-up-off:hover, #side-menu ul .category, .s-timeline .-timestamp,
-  .mod-flair, .s-btn, .s-btn:hover {
+  .mod-flair, .s-btn, .s-btn:hover, .s-stat .-value, .s-link,
+  .mini-counts.supernova, .supernova {
     color: /*[[base-color]]*/;
   }
   .subheader h1 a, input[type="submit"].btn-clear,
@@ -251,7 +252,7 @@ regexp("^https?://((?!(www|area51)).*\\.)?stackexchange\\.com.*") {
   }
   .privileges-page .privilege-table-row:hover .long-description,
   .faq-page #mainbar .content-page p a:hover, a.-link:hover, h3 strong a:hover,
-  ._icon p a:hover {
+  ._icon p a:hover, .s-link:hover, .s-btn__link:hover {
     color: /*[[base-color]]*/;
     filter: brightness(115%);
   }
@@ -363,7 +364,7 @@ regexp("^https?://((?!(www|area51)).*\\.)?stackexchange\\.com.*") {
     background-color: #151515 !important;
     color: #aaa !important;
   }
-  .bg-black-100, .uql-nav .uql-item.uql-item__separator {
+  .bg-black-100, .bg-black-200, .uql-nav .uql-item.uql-item__separator {
     background-color: #555 !important;
   }
   input[type="submit"].btn-outlined.gray, input[type="button"].btn-outlined.gray,
@@ -526,21 +527,24 @@ regexp("^https?://((?!(www|area51)).*\\.)?stackexchange\\.com.*") {
     background: #444 !important;
     color: #aaa !important;
   }
+  .top-bar .-main .navigation .-link {
+    color: #ccc !important;
+  }
+  .timeline-item {
+    color: #ccc;
+  }
   .top-bar .navigation .-link:hover, .top-bar .navigation .-link:focus {
     background-color: #242424;
     color: #eee;
-  }
-  .top-bar .-main .navigation .-link {
-    color: #ccc !important;
   }
   .left-sidebar-toggle span, .left-sidebar-toggle span::before,
   .left-sidebar-toggle span::after, .min-ds-step-counter .step {
     background-color: #bbb;
   }
-  html, blockquote, #post-preview, .nav .primarynav li a, #chat,
-  #hsearch .textbox, .form-item, .grippie, .welovestackoverflow, #wmd-button-bar,
-  .wmd-button-bar, .qa-block, .content-block, .user-info-rep, .sidebar, .popup,
-  .full-diff, .val-success, .search-form .filter-pane nav, .s-card,
+  html, #post-preview, .nav .primarynav li a, #chat, #hsearch .textbox,
+  .form-item, .grippie, .welovestackoverflow, #wmd-button-bar, .wmd-button-bar,
+  .qa-block, .content-block, .user-info-rep, .sidebar, .popup, .full-diff,
+  .val-success, .search-form .filter-pane nav, .s-card,
   .chosen-container .chosen-drop, .pac-item.pac-item-selected, .pac-item:hover,
   .-item.social:hover, #add-tags-button, #filter-preview, .salary-results, .nav {
     background: #191919 !important;
@@ -1489,7 +1493,8 @@ regexp("^https?://((?!(www|area51)).*\\.)?stackexchange\\.com.*") {
     color: #ccc;
   }
   .timeline-item.add .add-item-list .item-add:hover, .val-message,
-  .min-ds-wizard .min-ds-box.jobs .min-ds-title .filters label:hover {
+  .min-ds-wizard .min-ds-box.jobs .min-ds-title .filters label:hover,
+  .title-box .title, .title-box > .title {
     color: #ddd;
   }
   .why-jobs-v2 .developers-first, .why-jobs-v2 .developers-first h2 {
@@ -1592,7 +1597,9 @@ regexp("^https?://((?!(www|area51)).*\\.)?stackexchange\\.com.*") {
   .answered-accepted strong, .youarehere, .nav .primarynav li a, .nav a,
   .rep-up.special-rep, .pac-item-query, #content .salary-subheader,
   .salary-skill-legend-li .-score, header.job-details--header a:not(.s-btn),
-  .msg-list .list-item.is-unread span {
+  .msg-list .list-item.is-unread span,
+  .s-sidebarwidget:not(.s-anchors) a:not(.button):not(.s-btn):not(.post-tag):not(.s-sidebarwidget--action),
+  .s-sidebarwidget:not(.s-anchors) a:not(.button):not(.s-btn):not(.post-tag):not(.s-sidebarwidget--action):visited {
     color: #ddd !important;
   }
   header.job-details--header a svg.iconStar {
@@ -2133,9 +2140,106 @@ regexp("^https?://((?!(www|area51)).*\\.)?stackexchange\\.com.*") {
   .snippet-modal .-sidebar .section:not(:first-of-type) {
     border-top-color: #444;
   }
+  .icon-indent, .icon-cancel {
+    filter: grayscale(1) brightness(150%);
+  }
+  a:hover .icon-indent, a:hover .icon-cancel {
+    filter: grayscale(1) brightness(250%);
+  }
+  .modal.auto-center.snippet-modal .snippet-holder {
+    background: #222 !important;
+  }
+  iframe.snippet-box-edit {
+    filter: invert(1) hue-rotate(180deg);
+  }
   .snippet-modal .-code .column:nth-child(1),
   .snippet-modal .-code .column:nth-child(n+1), .snippet-modal .-code .column {
     border-color: #555 !important;
+  }
+  /* add Twilight to Code Snippet */
+  .CodeMirror {
+    background: #141414 !important;
+    color: #eee;
+    border-color: #444 !important;
+  }
+  .cm-comment, .cm-link {
+    font-style: italic !important;
+  }
+  .CodeMirror-gutters {
+    background: #222 !important;
+    border-right: 1px solid #484848 !important;
+  }
+  .CodeMirror-guttermarker {
+    color: #fff !important;
+  }
+  .CodeMirror-guttermarker-subtle, .CodeMirror-linenumber {
+    color: #aaa !important;
+  }
+  .CodeMirror-cursor {
+    border-left: 1px solid #fff !important;
+  }
+  .CodeMirror-activeline-background {
+    background: #27282e !important;
+  }
+  .CodeMirror-matchingbracket {
+    outline: grey solid 1px !important;
+    color: #fff !important;
+  }
+  .cm-keyword {
+    color: #f9ee98 !important;
+  }
+  .cm-atom {
+    color: #fc0 !important;
+  }
+  .cm-number {
+    color: #ca7841 !important;
+  }
+  .cm-def {
+    color: #8da6ce !important;
+  }
+  .cm-variable-2, .cm-variable-3, span.cm-def, span.cm-tag {
+    color: #607392 !important;
+  }
+  .cm-builtin, .cm-operator {
+    color: #cda869 !important;
+  }
+  .cm-comment {
+    color: #777 !important;
+    font-weight: 400 !important;
+  }
+  .cm-string {
+    color: #8f9d6a !important;
+  }
+  .cm-string-2 {
+    color: #bd6b18 !important;
+  }
+  .cm-meta {
+    background-color: #141414 !important;
+    color: #f7f7f7 !important;
+  }
+  .cm-tag {
+    color: #997643 !important;
+  }
+  .cm-attribute {
+    color: #d6bb6d !important;
+  }
+  .cm-header {
+    color: #ff6400 !important;
+  }
+  .cm-hr {
+    color: #aeaeae !important;
+  }
+  .cm-link {
+    color: #ad9361 !important;
+    text-decoration: none !important;
+  }
+  .cm-error {
+    color: #f00;
+    border-bottom: 1px solid #f00 !important;
+  }
+  .cm-qualifier {
+    color: #eee !important;
+  }
 }
 @-moz-document domain("api.stackexchange.com") {
   .logo [fill="#0A0B09"] {
