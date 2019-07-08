@@ -94,10 +94,11 @@ regexp("^https?://((?!(www|area51)).*\\.)?stackexchange\\.com.*") {
    * - Area 51 (area51.stackexchange.com)
    * ** Please open an issue to report sites where the style breaks **
    * https://github.com/StylishThemes/StackOverflow-Dark/issues
-   * Note: fix borders by removing single glob eventually; some have been fixed.
+   * Note: fix borders by removing single glob color; some have been fixed.
+	 *       if you notice any broken broders please open a new issue with page link.
    */
-  *:not(.site-bubble):not(.gv-item):not(.message):not(.question-status):not(.ob-post-tag):not(.messages):not(.s-notice):not(a) {
-    border-color: #444 !important;
+  * {
+    /* dont assign any colors here */
     text-shadow: none !important;
     box-shadow: none !important;
   }
