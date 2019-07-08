@@ -935,7 +935,7 @@ regexp("^https?://((?!(www|area51)).*\\.)?stackexchange\\.com.*") {
     background-color: #651 !important;
     color: #aaa !important;
   }
-  .event-banner {
+  .event-banner, blockquote {
     background-color: #321;
     border-color: #651;
   }
