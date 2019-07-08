@@ -1363,19 +1363,25 @@ regexp("^https?://((?!(www|area51)).*\\.)?stackexchange\\.com.*") {
     color: #ddd !important;
     filter: none !important;
   }
-  html .top-bar .-item svg.svg-icon[class*="icon"]:not(.-link) path,
-  html svg.svg-icon.iconEllipsisHorizontal path {
-    fill: /*[[base-color]]*/ !important;
-  }
-  svg.svg-icon[class*="icon"]:not(.native):not(.iconFacebook):not(.iconRss),
-  svg.svg-icon[class*="icon"]:not(.native):not(.iconFacebook):not(.iconRss) path {
-    color: #999 !important;
+	svg.iconGlobe path, svg.iconIndustry path, svg.iconPeople path, svg.iconBriefcase path,
+  svg.iconFlag path {
     fill: #999 !important;
+  }
+  html:not(#X) .fc-black-200,
+	svg.iconStar:not(:hover), svg.iconLocation, svg.iconTwitter,
+  svg.iconGitHub, svg.iconMoney, svg.iconVacation, svg.iconHealth,
+	svg.iconComputer, svg.iconClock, svg.iconFood, svg.iconFaceSmile, svg.iconHeart,
+	svg.iconFitness	{
+    color: #999 !important;
   }
   svg.svg-icon.iconSearch path {
     fill: #ddd !important;
   }
-  .fc-black-200, .fc-black-400, .fc-black-600, .started-link {
+	/* chat icons topbar */
+	.topbar .icon-inbox, .topbar-icon.icon-achievements {
+		filter: brightness(150%) contrast(120%);
+	}
+  .fc-black-400, .fc-black-600, .started-link {
     color: #aaa !important;
   }
   #mainbar a.comment-user {
