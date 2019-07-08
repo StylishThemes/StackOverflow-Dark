@@ -153,7 +153,8 @@ regexp("^https?://((?!(www|area51)).*\\.)?stackexchange\\.com.*") {
   .s-sidebarwidget--item[aria-current="true"]:before,
   .s-sidebarwidget--item > :first-child[aria-current="true"]:before,
   .s-sidebarwidget--item[aria-current="page"]:before,
-  .s-sidebarwidget--item > :first-child[aria-current="page"]:before {
+  .s-sidebarwidget--item > :first-child[aria-current="page"]:before,
+  .topbar-dialog.siteSwitcher-dialog .current-site-container {
     border-color: /*[[base-color]]*/ !important;
   }
   .top-bar {
@@ -544,6 +545,10 @@ regexp("^https?://((?!(www|area51)).*\\.)?stackexchange\\.com.*") {
   .-item.social:hover, #add-tags-button, #filter-preview, .salary-results, .nav {
     background: #191919 !important;
   }
+  .timeline-item.edit .img {
+    background-color: #333 !important;
+    border-color: #555 !important;
+  }
   .authcomment, .seIntro, .seFooter, .title-banner, .salary-results-wrapper,
   .salary-skill-legend, .msg-list .list-item.is-unread {
     background-color: #191919 !important;
@@ -565,6 +570,10 @@ regexp("^https?://((?!(www|area51)).*\\.)?stackexchange\\.com.*") {
     background-color: #111 !important;
     border-color: #191919 !important;
     filter: brightness(350%) !important;
+  }
+  .timeline-item, .timeline-item.add header, .timeline-item.job header,
+  .timeline-item.edit header {
+    border-color: #555 !important;
   }
   .s-popover--arrow__tl:before, .s-popover--arrow__tc:before,
   .s-popover--arrow__tr:before,
@@ -740,6 +749,12 @@ regexp("^https?://((?!(www|area51)).*\\.)?stackexchange\\.com.*") {
   html:not(#X) .s-btn[data-action="se-uql#cancelEditor"] {
     border-color: transparent !important;
   }
+  .question-container, .featured-site, .favorite-container, .account-container,
+  .divided-grid .-item, .s-widget-toreplace, .top-question-container,
+  .account-container .account-icon, .wizard-container, .wz-section-container,
+  .wmd-inline-dialog, .wmd-button__active {
+    border-color: #444;
+  }
   ul.comments-list .comment > *, #content, .comments, #question-header,
   .question-page #answers .answer, .wmd-button-row, .wmd-button-bar, .mdhelp,
   .s-input, .s-textarea, input, .grippie, .wmd-preview, #tags_list .tag-cell,
@@ -750,11 +765,15 @@ regexp("^https?://((?!(www|area51)).*\\.)?stackexchange\\.com.*") {
   .pagination a:visited, .s-sidebarwidget .s-sidebarwidget--header.grid,
   .-ignored .s-sidebarwidget--content, .s-sidebarwidget--header:not(.module),
   .module .s-sidebarwidget--content,
-  #jobs-sidebar-placeholder .s-sidebarwidget--header {
+  #jobs-sidebar-placeholder .s-sidebarwidget--header,
+  .s-sidebarwidget.module .s-sidebarwidget--header {
     border-color: #444 !important;
   }
   .badges-page .general .badge-hierarchy {
     border-color: #242424;
+  }
+  .wmd-button-bar.has-active-button .wmd-button:not(.wmd-button__active) {
+    opacity: 1;
   }
   .answer, #system-message, .commentlist, .revision td, #hero-content,
   .tabs .selected, .rep-card .rep-col, .sort select, .MathJax_MenuDisabled,
@@ -1218,6 +1237,9 @@ regexp("^https?://((?!(www|area51)).*\\.)?stackexchange\\.com.*") {
   /* === No/hide border === */
   div.list > div {
     border-right: 0 !important;
+  }
+  .subtabs a, .filter a {
+    border-bottom: 1px solid transparent !important;
   }
   .module, .tabs a, div.message, .full-diff td, .wb-outer:not(.wb-selected),
   .page-numbers.dots, .p-top-tags .badge-tag, .intellitab:not(.selected) a,
@@ -2108,6 +2130,12 @@ regexp("^https?://((?!(www|area51)).*\\.)?stackexchange\\.com.*") {
     background-position: 0 0 !important;
     background-repeat: no-repeat !important;
   }
+  .snippet-modal .-sidebar .section:not(:first-of-type) {
+    border-top-color: #444;
+  }
+  .snippet-modal .-code .column:nth-child(1),
+  .snippet-modal .-code .column:nth-child(n+1), .snippet-modal .-code .column {
+    border-color: #555 !important;
 }
 @-moz-document domain("api.stackexchange.com") {
   .logo [fill="#0A0B09"] {
@@ -2290,7 +2318,7 @@ regexp("^https?://((?!(www|area51)).*\\.)?stackexchange\\.com.*") {
     border-left-color: #555;
   }
   .conversation-info {
-    border--color: #555;
+    border-color: #555;
     color: #ccc;
     background-color: #222 !important;
   }
@@ -2313,6 +2341,9 @@ regexp("^https?://((?!(www|area51)).*\\.)?stackexchange\\.com.*") {
   #chat .system-message {
     background: transparent !important;
     border: 0 !important;
+  }
+  .room-header, .user-header {
+    border-color: #666;
   }
   .messages {
     border-color: #222;
