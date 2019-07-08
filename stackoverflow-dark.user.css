@@ -1840,8 +1840,8 @@ regexp("^https?://((?!(www|area51)).*\\.)?stackexchange\\.com.*") {
   }
   /* documentation editing icons */
   .docs-menu a, .favicon.favicon-stackoverflowmeta {
-    -webkit-filter: brightness(200%) !important;
-            filter: brightness(200%) !important;
+    -webkit-filter: brightness(250%) !important;
+            filter: brightness(250%) !important;
   }
   .docs-menu:hover a {
     -webkit-filter: none !important;
