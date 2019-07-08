@@ -433,7 +433,7 @@ regexp("^https?://((?!(www|area51)).*\\.)?stackexchange\\.com.*") {
   }
   .profile-placeholder--image, .timeline .readings .readings-placeholder .img,
   .timeline-item .joined-so-wrapper .img, .md\:w100[src*="conduct-illo.svg"],
-  .wmx100[src*="404.svg"] {
+  .wmx100[src*="404.svg"], img[src*="ico-binoculars.svg"] {
     filter: invert(1) hue-rotate(180deg) brightness(400%);
     mix-blend-mode: exclusion;
   }
