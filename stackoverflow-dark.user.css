@@ -2560,8 +2560,8 @@ regexp("^https?://((?!(www|area51)).*\\.)?stackexchange\\.com.*") {
   }
   .weekday {
     color: #eee;
-    background-color: #a83436;
     background: #a83436;
+    background-color: #a83436;
     border-bottom: 3px solid #772524;
             box-shadow: none;
        -moz-box-shadow: none;
