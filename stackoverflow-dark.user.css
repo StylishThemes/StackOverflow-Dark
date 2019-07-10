@@ -433,7 +433,8 @@ regexp("^https?://((?!(www|area51)).*\\.)?stackexchange\\.com.*") {
   }
   .profile-placeholder--image, .timeline .readings .readings-placeholder .img,
   .timeline-item .joined-so-wrapper .img, .md\:w100[src*="conduct-illo.svg"],
-  .wmx100[src*="404.svg"], img[src*="ico-binoculars.svg"] {
+  .wmx100[src*="404.svg"], img[src*="ico-binoculars.svg"],
+  .timeline-feed-empty .img {
     filter: invert(1) hue-rotate(180deg) brightness(400%);
     mix-blend-mode: exclusion;
   }
@@ -463,7 +464,7 @@ regexp("^https?://((?!(www|area51)).*\\.)?stackexchange\\.com.*") {
   .snippet-code .popout:before, .snippet-code .popout-code:before {
     filter: grayscale(1) brightness(180%) !important;
   }
-  .snippet-code .popin {
+  .snippet-code .popin, .user-show-new .history-table .reviewed-action {
     background: #333 !important;
   }
   .user-page .subheader.reloaded .additional-links a:hover, .bg-black-050 {
@@ -646,7 +647,7 @@ regexp("^https?://((?!(www|area51)).*\\.)?stackexchange\\.com.*") {
   .wmd-button__active, .wmd-inline-dialog,
   .search-form.responsive .filter-pane nav ul._tabs li.tab [data-tab] a span,
   .s-modal--dialog, .s-sidebarwidget .s-sidebarwidget--header.grid,
-  .s-sidebarwidget--header {
+  .s-sidebarwidget--header, .timeline-feed-empty {
     background-color: #222 !important;
     color: #ddd !important;
   }
@@ -771,7 +772,10 @@ regexp("^https?://((?!(www|area51)).*\\.)?stackexchange\\.com.*") {
   .diff-buttons a.selected, .diff-choices a.selected,
   .diff-type-controls a.selected, .diff-buttons a.selected:hover,
   .diff-choices a.selected:hover, .diff-type-controls a.selected:hover,
-  .diff-choices a, .diff-type-controls a, .diff-skipped > div {
+  .diff-choices a, .diff-type-controls a, .diff-skipped > div,
+  .user-show-new .answer-summary, .fs-category.has-border,
+  .user-show-new .history-table > tbody > tr,
+  .user-show-new .user-rep-full .rep-table-row > td, .question {
     border-color: #444;
   }
   ul.comments-list .comment > *, #content, .comments, #question-header,
@@ -1003,6 +1007,25 @@ regexp("^https?://((?!(www|area51)).*\\.)?stackexchange\\.com.*") {
     color: #aaa;
   }
   /* === Green === */
+  .user-show-new #user-tab-answers .answer-votes.accepted,
+  .user-show-new .post-container .vote.accepted,
+  .user-show-new .user-panel .mini-counts.accepted,
+  .user-show-new .user-rep .rep-amount .rep-down.accepted,
+  .user-show-new .user-rep .rep-amount .rep-up.accepted,
+  .user-show-new #user-tab-answers .answer-votes.answered-accepted,
+  .user-show-new .post-container .vote.answered-accepted,
+  .user-show-new .user-panel .mini-counts.answered-accepted,
+  .user-show-new .user-rep .rep-amount .rep-down.answered-accepted,
+  .user-show-new .user-rep .rep-amount .rep-up.answered-accepted,
+  .user-show-new #user-tab-answers .answer-votes.special-rep,
+  .user-show-new .post-container .vote.special-rep,
+  .user-show-new .user-panel .mini-counts.special-rep,
+  .user-show-new .user-rep .rep-amount .rep-down.special-rep,
+  .user-show-new .user-rep .rep-amount .rep-up.special-rep {
+    border-color: #254632;
+    background: #254632;
+    color: #ddd;
+  }
   .history-table .activity-accepted {
     background: #254632;
     color: #27ae60;
@@ -1066,8 +1089,11 @@ regexp("^https?://((?!(www|area51)).*\\.)?stackexchange\\.com.*") {
   #tm-header {
     border-bottom: 3px solid #061 !important;
   }
-  .status.answered {
+  .status.answered, .s-progress__privilege .s-progress--label {
     border-color: rgba(69, 161, 99, .8) !important;
+  }
+  .s-progress__privilege .s-progress--label {
+    color: #ddd;
   }
   /* === Red === */
   .deleted-answer, .suggested-edit .deleted, .markdown-diff .deleted,
@@ -1307,7 +1333,7 @@ regexp("^https?://((?!(www|area51)).*\\.)?stackexchange\\.com.*") {
     background: rgba(/*[[base-color-rgb]]*/, 1) !important;
   }
   input[type="submit"].btn-secondary, input[type="button"].btn-secondary,
-  button.btn-secondary, .btn-secondary {
+  button.btn-secondary, .btn-secondary, #bigsearch input[type="submit"] {
     color: #ddd !important;
     background: rgba(/*[[base-color-rgb]]*/, .5) !important;
     border-color: rgba(/*[[base-color-rgb]]*/, .7) !important;
@@ -1368,6 +1394,11 @@ regexp("^https?://((?!(www|area51)).*\\.)?stackexchange\\.com.*") {
     box-shadow: none;
     filter: brightness(120%) !important;
   }
+  #answers .form-submit #submit-button.s-btn__primary {
+    border-color: /*[[base-color]]*/ !important;
+    box-shadow: inset 0 1px 0 0 rgba(/*[[base-color-rgb]]*/, .7), 0 0 0 0 transparent !important;
+    color: #eee !important;
+  }
   .s-hero {
     background-image: url("https://cdn.sstatic.net/img/hero/pattern.svg"),
            linear-gradient(to right, #121723 0, #182030 100%) !important;
@@ -1383,30 +1414,10 @@ regexp("^https?://((?!(www|area51)).*\\.)?stackexchange\\.com.*") {
   .message.message-info .message-tip-left-top:before {
     border-top-color: #046 !important;
   }
-  .user-show-new #user-tab-answers .answer-votes.accepted,
-  .user-show-new .post-container .vote.accepted,
-  .user-show-new .user-panel .mini-counts.accepted,
-  .user-show-new .user-rep .rep-amount .rep-down.accepted,
-  .user-show-new .user-rep .rep-amount .rep-up.accepted,
-  .user-show-new #user-tab-answers .answer-votes.answered-accepted,
-  .user-show-new .post-container .vote.answered-accepted,
-  .user-show-new .user-panel .mini-counts.answered-accepted,
-  .user-show-new .user-rep .rep-amount .rep-down.answered-accepted,
-  .user-show-new .user-rep .rep-amount .rep-up.answered-accepted,
-  .user-show-new #user-tab-answers .answer-votes.special-rep,
-  .user-show-new .post-container .vote.special-rep,
-  .user-show-new .user-panel .mini-counts.special-rep,
-  .user-show-new .user-rep .rep-amount .rep-down.special-rep,
-  .user-show-new .user-rep .rep-amount .rep-up.special-rep {
-    border-color: #5fba7d;
-    background: #5fba7d;
-    color: #ddd;
-  }
   /* === Text Color === */
   input, .accepted-answer .post-text, .accepted-answer .user-action-time,
   #question-header a:not(.s-btn), .user-info, .topbar-dialog .header h3,
-  .topbar-dialog .header h3 a, .topbar-dialog span,
-  .search-result .answered .vote-count-post strong, .votes-cast-stats th,
+  .topbar-dialog .header h3 a, .topbar-dialog span, .votes-cast-stats th,
   .subheader h1, .message.message-config h1, .message.message-config h2,
   .message.message-config h3, .message.message-config h4, .spoiler:hover,
   .company-module a:hover *, .search-form .label, .search-form label,
@@ -1647,9 +1658,14 @@ regexp("^https?://((?!(www|area51)).*\\.)?stackexchange\\.com.*") {
   .comment-flag-on, .comment-flag:hover, .flag-on {
     color: #622 !important;
   }
+  /* revised */
   .history-table .activity-revised {
     color: #bf5a4c;
   }
+  td span[style="color:maroon;"] {
+    color: #bf5a4c !important;
+  }
+  /* end revised */
   /* dark yellow */
   .result-highlight {
     color: #aa0 !important;
@@ -1758,6 +1774,14 @@ regexp("^https?://((?!(www|area51)).*\\.)?stackexchange\\.com.*") {
     background: rgba(/*[[base-color-rgb]]*/, .8) !important;
   }
   /* === badges === */
+  /* stackexchange badges fixes */
+  .history-table .badge {
+    background-color: #111;
+    border-radius: 4px;
+       -moz-box-shadow: none;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+  }
   .badge-tag {
     background-color: #282828 !important;
     border-color: #444 !important;
@@ -2025,10 +2049,14 @@ regexp("^https?://((?!(www|area51)).*\\.)?stackexchange\\.com.*") {
   }
   .post-tag {
     color: /*[[base-color]]*/ !important;
+    border-radius: 3px;
+  }
+  .s-btn.s-btn__primary, .s-btn.s-btn__primary:focus {
+    background-color: /*[[base-color]]*/ !important;
   }
   .page-numbers {
-    background: linear-gradient(to bottom, #111, #222);
-    background-color: #333;
+    background: #222;
+    background-color: #222;
     color: #ccc;
     border: 1px solid #555;
     text-shadow: none;
@@ -2349,10 +2377,6 @@ regexp("^https?://((?!(www|area51)).*\\.)?stackexchange\\.com.*") {
   }
 }
 @-moz-document domain("chat.meta.stackexchange.com"), domain("chat.stackexchange.com"), domain("chat.stackoverflow.com"), domain("meta.stackexchange.com") {
-  .s-btn__primary[href="/questions/ask"],
-  .s-btn__primary[href="/questions/ask"]:focus {
-    background-color: /*[[base-color]]*/ !important;
-  }
   /* chat icons topbar */
   .topbar .icon-inbox, .topbar-icon.icon-achievements {
     filter: brightness(150%) contrast(120%);
@@ -2430,6 +2454,20 @@ regexp("^https?://((?!(www|area51)).*\\.)?stackexchange\\.com.*") {
   #transcript-body #sidebar a.button,
   html:not(#X) .xxl-info-layout .roomcard-xxl a.button[href], input.button,
   html:not(#X) #chat-body #container span.button, .page-numbers.current {
+    background-color: /*[[base-color]]*/ !important;
+  }
+  html:not(#X) #conversation-body #sidebar-content a.button,
+  html:not(#X) .roomcard-xxl .button, html:not(#X) #roomlist .fr .button,
+  #inviteForm input.button[type="submit"], .usercard-xxl input.button,
+  html:not(#X) .roomcard-xxl input.button[type="submit"] {
+    background-color: /*[[base-color]]*/ !important;
+    border-color: rgba(/*[[base-color-rgb]]*/, .7) !important;
+    box-shadow: none !important;
+    border-radius: 2px;
+    padding-bottom: 1px !important;
+  }
+  .s-btn__primary[href="/questions/ask"],
+  .s-btn__primary[href="/questions/ask"]:focus {
     background-color: /*[[base-color]]*/ !important;
   }
   .popup .btn-close:hover, #conversation-sel .btn-close:hover {
