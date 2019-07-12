@@ -87,7 +87,7 @@ domain("superuser.com"),
 domain("stackapps.com"),
 domain("mathoverflow.net"),
 domain("askubuntu.com"),
-regexp("^https?://((?!(www|area51)).*\\.)?stackexchange\\.com.*") {
+regexp("^https?://((?!(www|area51|duckduckgo)).*\\.)?stackexchange\\.com.*") {
   /**
    * ** Will apply to almost all Stack Exchange Sites **
    * Except:
