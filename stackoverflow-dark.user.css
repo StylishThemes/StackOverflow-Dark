@@ -87,7 +87,7 @@ domain("superuser.com"),
 domain("stackapps.com"),
 domain("mathoverflow.net"),
 domain("askubuntu.com"),
-regexp("^https?://((?!(www|area51|duckduckgo)).*\\.)?stackexchange\\.com.*") {
+regexp("^https?:\/\/((?!area51)\w+\.)*?stackexchange\.com.*") {
   /**
    * ** Will apply to almost all Stack Exchange Sites **
    * Except:
@@ -1962,7 +1962,7 @@ regexp("^https?://((?!(www|area51|duckduckgo)).*\\.)?stackexchange\\.com.*") {
 |  _| | | | -_| .'| '_|_ -|
 |_| |_____|___|__,|_,_|___|
 */
-@-moz-document regexp("^https?://((?!(www|area51)).*\\.)?stackexchange.com.*") {
+@-moz-document regexp("^https?:\/\/((?!area51)\w+\.)*?stackexchange\.com.*") {
   /* login screen StackExchange logo replacement */
   .login-page .se-logo {
     -moz-box-sizing: border-box !important;
@@ -2098,7 +2098,7 @@ regexp("^https?://((?!(www|area51|duckduckgo)).*\\.)?stackexchange\\.com.*") {
     border-bottom: 1px solid /*[[base-color]]*/ !important;
   }
 }
-@-moz-document regexp("^https?://((?!(academia|dba|electronics|meta|tex)).*\\.)?stackexchange.com.*") {
+@-moz-document regexp("^https?:\/\/((?!(academia|dba|electronics|meta|tex|area51))\w+\.)?stackexchange.com.*") {
   /* target sites to *NOT* hide the header background */
   #header, #hmenus {
     background-color: transparent !important;
@@ -2164,24 +2164,6 @@ regexp("^https?://((?!(www|area51|duckduckgo)).*\\.)?stackexchange\\.com.*") {
             filter: brightness(.5) !important;
   }
 }
-/*
-@-moz-document regexp("^https?://((?!(android|apple|dba|drupal|electronics|gamedev|gis|mathematica|programmers|salesforce|security|sharepoint|tex|unix|ux|webapps|webmasters|wordpress)).*\\.)?stackexchange.com.*") {
-/ * BETA SITES * /
-  div.nav ul li {
-    margin-right: 5px !important;
-  }
-  .nav a {
-    padding: 4px 6px !important;
-  }
-}
-*/
-/* === site specific (somewhat alphabetical order by (sub)domain) ===
-      _ _                          _ ___ _
-  ___|_| |_ ___    ___ ___ ___ ___|_|  _|_|___
- |_ -| |  _| -_|  |_ -| . | -_|  _| |  _| |  _|
- |___|_|_| |___|  |___|  _|___|___|_|_| |_|___|
-       |_|
-*/
 @-moz-document domain("stackoverflow.com"), domain("meta.stackexchange.com/users/login") {
   #hlogo a {
     background-image: url("https://StylishThemes.github.io/StackOverflow-Dark/images/stackoverflow-logo.svg") !important;
