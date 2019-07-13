@@ -32,7 +32,7 @@
     "perfectionist": "perfectionist stackoverflow-dark.user.css stackoverflow-dark.user.css --indentSize 2 --maxAtRuleLength 250",
     "stylelint": "stylelint --color -- stackoverflow-dark.user.css",
     "test": "npm run eslint && npm run stylelint",
-    "update": "updates -cu && npm install",
+    "update": "npx updates -cuU && npx rimraf node_modules && npm install",
     "usercss": "node tools/add-themes.js && node tools/update-usercss.js"
   }
 }
