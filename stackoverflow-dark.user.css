@@ -153,12 +153,16 @@ regexp("^https?:\/\/((?!area51)\w+\.)*?stackexchange\.com.*") {
     border-color: /*[[base-color]]*/ !important;
     color: /*[[base-color]]*/ !important;
   }
+  .search-form.responsive .filter-pane nav ul._tabs li.tab [data-tab] a .filter-indicator {
+    color: #fff !important;
+    background-color: /*[[base-color]]*/ !important;
+    border-color: #eee;
+  }
   .s-sidebarwidget--item[aria-current="true"]:before,
   .s-sidebarwidget--item > :first-child[aria-current="true"]:before,
   .s-sidebarwidget--item[aria-current="page"]:before,
   .s-sidebarwidget--item > :first-child[aria-current="page"]:before,
-  .topbar-dialog.siteSwitcher-dialog .current-site-container,
-  .s-btn__primary {
+  .topbar-dialog.siteSwitcher-dialog .current-site-container, .s-btn__primary {
     border-color: /*[[base-color]]*/ !important;
   }
   .top-bar {
@@ -180,6 +184,12 @@ regexp("^https?:\/\/((?!area51)\w+\.)*?stackexchange\.com.*") {
   .search-form .search-inputs .-item .iconLocation {
     opacity: .8;
     color: #ddd;
+  }
+  #sub-navs a:hover .messages-icon {
+    opacity: 1;
+  }
+  #sub-navs .menu-item:hover .settings-icon {
+    filter: brightness(135%);
   }
   /* these must be here else they dont work */
   input[class="w100"][type="submit"] {
@@ -777,7 +787,8 @@ regexp("^https?:\/\/((?!area51)\w+\.)*?stackexchange\.com.*") {
   .diff-choices a, .diff-type-controls a, .diff-skipped > div,
   .user-show-new .answer-summary, .fs-category.has-border,
   .user-show-new .history-table > tbody > tr,
-  .user-show-new .user-rep-full .rep-table-row > td, .question {
+  .user-show-new .user-rep-full .rep-table-row > td, .question,
+  #sub-navs .menu-item {
     border-color: #444;
   }
   ul.comments-list .comment > *, #content, .comments, #question-header,
@@ -792,10 +803,12 @@ regexp("^https?:\/\/((?!area51)\w+\.)*?stackexchange\.com.*") {
   .module .s-sidebarwidget--content,
   #jobs-sidebar-placeholder .s-sidebarwidget--header,
   .s-sidebarwidget.module .s-sidebarwidget--header,
-  .s-sidebarwidget--content.s-sidebarwidget__items {
+  .s-sidebarwidget--content.s-sidebarwidget__items, #sub-navs > a {
     border-color: #444 !important;
   }
-  .diff-buttons a:hover, .diff-choices a:hover, .diff-type-controls a:hover {
+  .diff-buttons a:hover, .diff-choices a:hover, .diff-type-controls a:hover,
+  .s-table tr:last-of-type td, .s-table tr:last-of-type th, .s-table th,
+  .s-table td {
     border-color: #555;
   }
   .badges-page .general .badge-hierarchy {
@@ -1285,6 +1298,9 @@ regexp("^https?:\/\/((?!area51)\w+\.)*?stackexchange\.com.*") {
   #sub-navs .youarehere {
     border-top-color: /*[[base-color]]*/ !important;
   }
+  body #mainArea .subheader .tabs a.youarehere {
+    margin-top: 3px;
+  }
   .nav-left-col .is-active,
   #left-sidebar .nav-links .youarehere .nav-links--link {
     border-right-color: /*[[base-color]]*/ !important;
@@ -1579,7 +1595,8 @@ regexp("^https?:\/\/((?!area51)\w+\.)*?stackexchange\.com.*") {
   .post-text, .comment, .topbar-dialog.help-dialog .item-summary,
   .topbar-dialog.inbox-dialog .inbox-item .item-content .item-summary,
   .topbar-dialog.modInbox-dialog .inbox-item .item-content .item-summary,
-  .topbar-dialog.achievements-dialog .inbox-item .item-content .item-summary {
+  .topbar-dialog.achievements-dialog .inbox-item .item-content .item-summary,
+  .subheader a span {
     color: #bbb;
   }
   #top-menu a, .subheader a, .reputation a, .reputation-score, .relativetime.old,
@@ -1604,7 +1621,7 @@ regexp("^https?:\/\/((?!area51)\w+\.)*?stackexchange\.com.*") {
   }
   .ob-post-tag, .ob-user-tag, .deleted-answer .util-bar a, .msg-list .msg-text,
   .s-table td, #side-menu ul ul li > a .svg-icon, .nav-links .fc-medium,
-  #top-cards .fc-black-350 svg, .subheader a span, #user-card .fc-black-350 svg,
+  #top-cards .fc-black-350 svg, #user-card .fc-black-350 svg,
   .company-list .fc-black-500 svg:not(.fc-green-400):not(.fc-orange-400),
   .company-list p, .-settings span, .email-settings .-info p,
   #tags_list span:not(.page-numbers), .s-description, p.fc-black-700,
@@ -1954,16 +1971,30 @@ regexp("^https?:\/\/((?!area51)\w+\.)*?stackexchange\.com.*") {
   /*[[syntax-theme]]*/
   }
 /* These extra @-moz-document definitions will not be included in the "grunt user"
-* build because Chrome Stylish puts these extra definitions into separate sections
-* with separate regexp/domain definitions.
-* If the css below changes, it will have to be manually updated
-*/
-/* === StackExchange tweaks ===
- _                 _
-| |_ _ _ _ ___ ___| |_ ___
-|  _| | | | -_| .'| '_|_ -|
-|_| |_____|___|__,|_,_|___|
-*/
+  * build because Chrome Stylish puts these extra definitions into separate sections
+  * with separate regexp/domain definitions.
+  * If the css below changes, it will have to be manually updated
+  */
+/* === StackExchange tweaks === _                 _
+ | |_ _ _ _ ___ ___| |_ ___
+ |  _| | | | -_| .'| '_|_ -|
+ |_| |_____|___|__,|_,_|___|
+ */
+@-moz-document domain(stackexchange.com) {
+  .page-numbers {
+    border-radius: 1px;
+    padding: 6px 8px;
+  }
+  .page-numbers.current, .page-numbers:hover {
+    color: #fff !important;
+    background-color: /*[[base-color]]*/ !important;
+    border-color: /*[[base-color]]*/ !important;
+    padding: 6px 8px;
+  }
+  .page-numbers.desc:hover {
+    color: #888 !important;
+  }
+}
 @-moz-document regexp("^https?:\/\/((?!area51)\w+\.)*?stackexchange\.com.*") {
   /* login screen StackExchange logo replacement */
   .login-page .se-logo {
@@ -2166,6 +2197,24 @@ regexp("^https?:\/\/((?!area51)\w+\.)*?stackexchange\.com.*") {
             filter: brightness(.5) !important;
   }
 }
+/*
+@-moz-document regexp("^https?:\/\/((?!(android|apple|dba|drupal|electronics|gamedev|gis|mathematica|programmers|salesforce|security|sharepoint|tex|unix|ux|webapps|webmasters|wordpress|area51))\w+\.)*?stackexchange\.com.*") {
+/ * BETA SITES * /
+  div.nav ul li {
+    margin-right: 5px !important;
+  }
+  .nav a {
+    padding: 4px 6px !important;
+  }
+}
+*/
+/* === site specific (somewhat alphabetical order by (sub)domain) ===
+      _ _                          _ ___ _
+  ___|_| |_ ___    ___ ___ ___ ___|_|  _|_|___
+ |_ -| |  _| -_|  |_ -| . | -_|  _| |  _| |  _|
+ |___|_|_| |___|  |___|  _|___|___|_|_| |_|___|
+       |_|
+*/
 @-moz-document domain("stackoverflow.com"), domain("meta.stackexchange.com/users/login") {
   #hlogo a {
     background-image: url("https://StylishThemes.github.io/StackOverflow-Dark/images/stackoverflow-logo.svg") !important;
@@ -2361,6 +2410,11 @@ regexp("^https?:\/\/((?!area51)\w+\.)*?stackexchange\.com.*") {
   }
 }
 @-moz-document domain("chat.meta.stackexchange.com"), domain("chat.stackexchange.com"), domain("chat.stackoverflow.com"), domain("meta.stackexchange.com") {
+  #chat-body .button {
+       -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+            border-radius: 3px;
+  }
   /* chat icons topbar */
   .topbar .icon-inbox, .topbar-icon.icon-achievements {
     filter: brightness(150%) contrast(120%);
