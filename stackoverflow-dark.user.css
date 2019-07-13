@@ -146,7 +146,7 @@ regexp("^https?:\/\/((?!area51)\w+\.)*?stackexchange\.com.*") {
   .s-sidebarwidget.s-sidebarwidget__yellow a,
   .s-sidebarwidget.s-sidebarwidget__yellow a:hover, h2 a.league-site-name,
   .summary h3 .question-hyperlink, a.realtime-question-url.realtime-title,
-  a.question-link {
+  a.question-link, a.question-hyperlink {
     color: /*[[base-color]]*/ !important;
   }
   .search-controls-responsive .-item .s-btn__outlined, .s-btn__outlined {
@@ -157,7 +157,8 @@ regexp("^https?:\/\/((?!area51)\w+\.)*?stackexchange\.com.*") {
   .s-sidebarwidget--item > :first-child[aria-current="true"]:before,
   .s-sidebarwidget--item[aria-current="page"]:before,
   .s-sidebarwidget--item > :first-child[aria-current="page"]:before,
-  .topbar-dialog.siteSwitcher-dialog .current-site-container {
+  .topbar-dialog.siteSwitcher-dialog .current-site-container,
+  .s-btn__primary {
     border-color: /*[[base-color]]*/ !important;
   }
   .top-bar {
@@ -296,7 +297,8 @@ regexp("^https?:\/\/((?!area51)\w+\.)*?stackexchange\.com.*") {
     background-color: rgba(/*[[base-color-rgb]]*/, .6) !important;
   }
   .s-btn.s-btn__primary:hover, .top-bar .-secondary .-ctas .btn-topbar-clear,
-  .top-bar .-secondary .-ctas .btn-topbar-clear:focus {
+  .top-bar .-secondary .-ctas .btn-topbar-clear:focus, .s-btn__primary:focus,
+  .s-btn:focus {
     filter: brightness(120%) !important;
   }
   .s-btn, .s-btn:focus {
@@ -1645,7 +1647,7 @@ regexp("^https?:\/\/((?!area51)\w+\.)*?stackexchange\.com.*") {
     color: /*[[base-color]]*/ !important;
   }
   .post-text a:visited, .comment-text a:not(.comment-user):visited,
-  #chat-body .content a:visited, .question-hyperlink:visited,
+  #chat-body .content a:visited, a.question-hyperlink:visited,
   .answer-hyperlink:visited, #hot-network-questions ul a:visited {
     color: /*[[visited-color]]*/ !important;
   }
