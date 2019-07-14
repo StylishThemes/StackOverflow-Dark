@@ -1980,7 +1980,7 @@ regexp("^https?:\/\/((?!area51)\w+\.)*?stackexchange\.com.*") {
  |  _| | | | -_| .'| '_|_ -|
  |_| |_____|___|__,|_,_|___|
  */
-@-moz-document domain(stackexchange.com) {
+@-moz-document domain("stackexchange.com") {
   .page-numbers {
     border-radius: 1px;
     padding: 6px 8px;
