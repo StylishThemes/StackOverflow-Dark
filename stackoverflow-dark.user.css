@@ -1509,6 +1509,7 @@ regexp("^https?:\/\/((?!area51)\w+\.)*?stackexchange\.com.*") {
     border-color: #555 !important;
   }
   .s-btn__muted.s-btn__outlined:focus {
+    box-shadow: 0 0 0 1px rgba(79, 140, 201, .5), 0 0 0 4px rgba(79, 140, 201, .1);
     box-shadow: 0 0 0 1px rgba(/*[[base-color-rgb]]*/, .5),
      0 0 0 4px rgba(/*[[base-color-rgb]]*/, .1);
   }
@@ -1838,9 +1839,11 @@ regexp("^https?:\/\/((?!area51)\w+\.)*?stackexchange\.com.*") {
     fill: #999 !important;
   }
   .highcharts-legend text {
+    fill: rgba(79, 140, 201, .8) !important;
     fill: rgba(/*[[base-color-rgb]]*/, .8) !important;
   }
   .highcharts-legend text:hover {
+    fill: rgba(79, 140, 201, 1) !important;
     fill: rgba(/*[[base-color-rgb]]*/, 1) !important;
   }
   a.badge[title^="bronze"], a.badge-tag[title^="bronze"], .badge3 + .badgecount {
