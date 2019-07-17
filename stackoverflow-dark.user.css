@@ -560,6 +560,22 @@ regexp("^https?:\/\/((?!area51)\w+\.)*?stackexchange\.com.*") {
     background-color: #242424;
     color: #eee;
   }
+  .top-bar .-secondary .-item .-link .indicator-badge,
+  .top-bar .-secondary .-link._danger-indicator::after {
+    border-color: #000;
+  }
+  .top-bar .-secondary .-item .-link:hover .indicator-badge,
+  .top-bar .-secondary .-link._danger-indicator:hover::after {
+    border-color: #242424;
+  }
+  .top-bar .-secondary .-item._active .indicator-badge,
+  .top-bar .-secondary .-item .-link.topbar-icon-on .indicator-badge,
+  .top-bar .-secondary .-item .-link.topbar-icon-on:hover .indicator-badge,
+  .top-bar .-secondary .-item._active ._danger-indicator::after,
+  .top-bar .-secondary .-item .-link.topbar-icon-on._danger-indicator::after,
+  .top-bar .-secondary .-item .-link.topbar-icon-on._danger-indicator:hover::after {
+    border-color: #111;
+  }
   .left-sidebar-toggle span, .left-sidebar-toggle span::before,
   .left-sidebar-toggle span::after, .min-ds-step-counter .step {
     background-color: #bbb;
