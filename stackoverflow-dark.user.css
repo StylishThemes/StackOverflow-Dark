@@ -564,8 +564,8 @@ regexp("^https?:\/\/((?!area51)\w+\.)*?stackexchange\.com.*") {
   .left-sidebar-toggle span::after, .min-ds-step-counter .step {
     background-color: #bbb;
   }
-  html, #post-preview, .nav .primarynav li a, #hsearch .textbox, .form-item,
-  .grippie, .welovestackoverflow, #wmd-button-bar, .wmd-button-bar, .qa-block,
+  html, #post-preview, .nav .primarynav li a, #hsearch .textbox, .grippie,
+  .welovestackoverflow, #wmd-button-bar, .wmd-button-bar, .qa-block,
   .content-block, .user-info-rep, .sidebar, .popup, .full-diff, .val-success,
   .search-form .filter-pane nav, .s-card, .chosen-container .chosen-drop,
   .pac-item.pac-item-selected, .pac-item:hover, .-item.social:hover,
@@ -1405,7 +1405,7 @@ regexp("^https?:\/\/((?!area51)\w+\.)*?stackexchange\.com.*") {
   }
   .post-tag, .geo-tag, .container .chosen-choices .search-choice,
   .container .chosen-container-multi .chosen-choices li.search-choice {
-    color: /*[[base-color]]*/;
+    color: /*[[base-color]]*/ !important;
     background-color: rgba(/*[[base-color-rgb]]*/, .2);
     border-color: rgba(/*[[base-color-rgb]]*/, .5) !important;
   }
@@ -1464,10 +1464,10 @@ regexp("^https?:\/\/((?!area51)\w+\.)*?stackexchange\.com.*") {
   #profile-side #side-menu a:hover, .-rep, .-total, .-list-item .-description,
   .message.message-error a, .chosen-container .chosen-results li,
   .salary-calc-inputs span, .salary-survey-dialog .header h3, .title-banner h1,
-  .salary-results-container h1, .topbar-dialog h4, .label-key > b, .heading,
-  .module h3, .badge-tag, .s-label, .-link__with-icon:hover .svg-icon,
-  .youarehere a, .youarehere .svg-icon, h1, h2:not([style]), h3, h4, h5, h6, .h1,
-  .h2, .h3, .h4, .h5, .h6, .tour-bubble p, header h2.fc-dark, .fc-dark,
+  .salary-results-container h1, .topbar-dialog h4, .heading, .module h3,
+  .badge-tag, .s-label, .-link__with-icon:hover .svg-icon, .youarehere a,
+  .youarehere .svg-icon, h1, h2:not([style]), h3, h4, h5, h6, .h1, .h2, .h3, .h4,
+  .h5, .h6, .tour-bubble p, header h2.fc-dark, .fc-dark,
   #logins-table .group-name, .top-bar .-marketing-link, html:not(#X) .fc-white,
   html:not(#X) .h\:fc-black-900:hover {
     color: #ddd !important;
@@ -1531,7 +1531,7 @@ regexp("^https?:\/\/((?!area51)\w+\.)*?stackexchange\.com.*") {
   #sidebar .s-contact-box .-details ._muted, .text-muted {
     color: #888;
   }
-  .label-key, .s-btn.s-btn__muted:hover, .user-show-new .user-rep-full .rep-desc,
+  .s-btn.s-btn__muted:hover, .user-show-new .user-rep-full .rep-desc,
   .user-show-new .user-rep-full .rep-info,
   .user-show-new .user-rep-full .rep-day, .page-numbers, .statscontainer,
   .vote span, .item-multiplier-count, .item-multiplier,
@@ -1622,7 +1622,7 @@ regexp("^https?:\/\/((?!area51)\w+\.)*?stackexchange\.com.*") {
   .subheader a span {
     color: #bbb;
   }
-  #top-menu a, .subheader a, .reputation a, .reputation-score, .relativetime.old,
+  #top-menu a, .subheader a, .reputation a, .relativetime.old,
   .votes-cast-stats td, .narrow .mini-counts, #chat .system-message, .card .rep,
   .user-card .user-stats .number, .user-card .user-card-name,
   .cv-story .time-frame, .-list-item.is-completed .-description,
@@ -1630,7 +1630,8 @@ regexp("^https?:\/\/((?!area51)\w+\.)*?stackexchange\.com.*") {
   .msg-select-all-label, .fc-light, .s-table th, .input-group .f-label,
   .-job-summary .-company, h1.fc-black-800, [class*="grid-"] .fc-black-700,
   p.fc-black-800, .about-page .new-about-content-page h2.about-title,
-  .fc-black-350, .fc-medium {
+  .fc-black-350, .fc-medium, .label-key > b,
+  html:not(#X) .s-sidebarwidget__yellow li.s-sidebarwidget--item a {
     color: #ccc !important;
   }
   .narrow .status, .narrow .views, .search-form .job-alert-tooltip .text,
