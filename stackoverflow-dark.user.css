@@ -129,6 +129,10 @@ regexp("^https?:\/\/((?!area51)\w+\.)*?stackexchange\.com.*") {
   .snippet-code {
     padding: 5px !important;
   }
+  /* fix offset between default style and dark */
+  .post-text pre.prettyprint {
+    margin-left: 0 !important;
+  }
   /* === custom color === */
   a:not([class*="comment-"]):not(.badge):not(.badge-tag):not(.lastactivity-link):not(.post-tag):not(.page-numbers),
   .profile-popup a, .seWrapper a, .gs-title b, .spoiler:hover a, .comment-up-on,
