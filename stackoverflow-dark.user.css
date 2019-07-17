@@ -1225,7 +1225,7 @@ regexp("^https?:\/\/((?!area51)\w+\.)*?stackexchange\.com.*") {
   .message-detail header, .post-signature:not(.owner) .user-info,
   .answers-subheader, .profile-top-tags .badge-tag, .msg-controls,
   .grid--cell:not(.facebook-login):not(.s-btn__primary):not(.youarehere):not(.badge1-alternate):not(.badge2-alternate):not(.badge3-alternate):not(.s-btn__outlined):not(.s-btn__filled):not(.bg-blue-500):not(.vote),
-  .narrow .votes, .badge-tag:hover {
+  .narrow .votes, .badge-tag:hover, .form-item {
     background-color: transparent !important;
   }
   .label-key a.lastactivity-link {
@@ -1581,13 +1581,13 @@ regexp("^https?:\/\/((?!area51)\w+\.)*?stackexchange\.com.*") {
   .icon-job-big, .icon-project-opensource-big, .icon-project-apps-big,
   .icon-achievement-big, .icon-education-big, .icon-certification-big,
   .icon-artifact-big, .icon-generic-assessment-big, .icon-generic-big,
-  .min-ds-step-counter .step.completed {
+  .min-ds-step-counter .step.completed, .icon-q-small, .icon-a-small {
     filter: grayscale(1) brightness(200%);
   }
   /* these arent !important, but we botch them to make them work */
   .nav-links .nav-links--link, .nav-links .nav-links--link:visited,
   .nav-links .youarehere .nav-links--link .svg-icon, li.s-sidebarwidget--item a,
-  .site-footer .-title a, html .job, html .module {
+  .site-footer .-title a, html .job, html .module, .label-key, .reputation-score {
     color: #aaa !important;
   }
   .nav-links .nav-links--link:hover, .nav-links .nav-links--link:focus,
@@ -1598,7 +1598,7 @@ regexp("^https?:\/\/((?!area51)\w+\.)*?stackexchange\.com.*") {
   }
   /* end not !important */
   #privilege-category-descriptions .privilege-icon,
-  .privilege-table-row .privilege-icon {
+  .privilege-table-row .privilege-icon, .favicon-stackexchangemeta {
     filter: grayscale(100%) !Important;
   }
   .user-page .settings-page h1 + div.subtitle, .fc-medium .fw-bold, .fc-medium b,
@@ -1964,7 +1964,7 @@ regexp("^https?:\/\/((?!area51)\w+\.)*?stackexchange\.com.*") {
     -webkit-filter: invert(76%) !important;
   }
   /* documentation editing icons */
-  .docs-menu a, .favicon.favicon-stackoverflowmeta, .favicon[src*="favicon.ico"] {
+  .docs-menu a, .favicon.favicon-stackoverflowmeta {
     -webkit-filter: brightness(250%) !important;
             filter: brightness(250%) !important;
   }
@@ -2043,6 +2043,17 @@ regexp("^https?:\/\/((?!area51)\w+\.)*?stackexchange\.com.*") {
     background-color: #385499 !important;
     color: #eee;
     filter: brightness(110%);
+  }
+  a[href*="crypto"] .hot-question-site-icon,
+  a[href*="mathoverflow"] .hot-question-site-icon,
+  a[href*="superuser"] .hot-question-site-icon, .favicon-mathoverflow,
+  .favicon-crypto, .favicon-superuser {
+    filter: invert(1) hue-rotate(180deg) saturate(200%) contrast(120%) brightness(80%);
+    mix-blend-mode: exclusion;
+  }
+  a[href*="tex"] .hot-question-site-icon, .favicon-tex {
+    filter: invert(1) hue-rotate(180deg) saturate(900%) brightness(200%);
+    mix-blend-mode: exclusion;
   }
 }
 @-moz-document regexp("^https?:\/\/((?!area51)\w+\.)*?stackexchange\.com.*") {
@@ -2238,6 +2249,16 @@ regexp("^https?:\/\/((?!area51)\w+\.)*?stackexchange\.com.*") {
     color: #ccc !important;
   }
 }
+@-moz-document regexp("^https?://((physics)\\.)?stackexchange\\.com.*") {
+  /* nav manu text coloring only */
+  .site-header, #footer.site-footer {
+    background-color: #143030 !important;
+    background-image: none;
+  }
+  img.wmx100[src*="logo.svg"] {
+    filter: invert(1) hue-rotate(180deg) brightness(150%) saturate(150%);
+  }
+}
 @-moz-document regexp("^https?://((android|apple|dba|drupal|gis|mathematica|photo|scifi|security|tex|wordpress)\\.)?stackexchange\\.com.*") {
   /* hide top nav background on <li>, style is on <a> */
   .nav li {
@@ -2269,6 +2290,10 @@ regexp("^https?:\/\/((?!area51)\w+\.)*?stackexchange\.com.*") {
     background-size: cover !important;
     background-position: 0 0 !important;
     background-repeat: no-repeat !important;
+  }
+  .top-bar .-marketing-link:hover, .top-bar .-marketing-link:focus {
+    background-color: #333;
+    color: #ddd !important;
   }
   .snippet-modal .-sidebar .section:not(:first-of-type) {
     border-top-color: #444;
