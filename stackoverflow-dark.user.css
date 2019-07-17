@@ -1070,8 +1070,8 @@ regexp("^https?:\/\/((?!area51)\w+\.)*?stackexchange\.com.*") {
   }
   html #content .favorite-container .accepted {
     background: #13552f;
-    color: #27ae60 !important;
-    border-top: 1px solid #1d8047 !important;
+    color: #fff !important;
+    border-top: 1px solid #13552f !important;
   }
   .suggested-edit .inserted, .markdown-diff .inserted, .rep-increase,
   .progress-bar .percent, .recommended, .suggested-edit .inserted>div,
