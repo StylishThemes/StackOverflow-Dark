@@ -802,7 +802,7 @@ regexp("^https?:\/\/((?!area51)\w+\.)*?stackexchange\.com.*") {
   .user-show-new .answer-summary, .fs-category.has-border,
   .user-show-new .history-table > tbody > tr,
   .user-show-new .user-rep-full .rep-table-row > td, .question,
-  #sub-navs .menu-item {
+  #sub-navs .menu-item, kbd, .top-answer-container {
     border-color: #444;
   }
   ul.comments-list .comment > *, #content, .comments, #question-header,
@@ -1318,8 +1318,9 @@ regexp("^https?:\/\/((?!area51)\w+\.)*?stackexchange\.com.*") {
   #sub-navs .youarehere {
     border-top-color: /*[[base-color]]*/ !important;
   }
-  body #mainArea .subheader .tabs a.youarehere {
+  body #mainArea .subheader .tabs a.youarehere, .subheader .tabs a.youarehere {
     margin-top: 3px;
+    border-color: transparent !important;
   }
   .nav-left-col .is-active,
   #left-sidebar .nav-links .youarehere .nav-links--link {
