@@ -355,7 +355,7 @@ regexp("^https?:\/\/((?!area51)\w+\.)*?stackexchange\.com.*") {
   .tag-editor input:focus, .previous-button, .next-button, .btn-clear,
   .chosen-container.chosen-container-active .chosen-choices input,
   .gsc-webResult.gsc-result, .gsc-results .gsc-imageResult,
-  .s-sidebarwidget:after, .profile-top-tags .badge-tag {
+  .profile-top-tags .badge-tag {
     border: 0 !important;
     box-shadow: none !important;
   }
@@ -818,7 +818,7 @@ regexp("^https?:\/\/((?!area51)\w+\.)*?stackexchange\.com.*") {
   .user-show-new .answer-summary, .fs-category.has-border,
   .user-show-new .history-table > tbody > tr,
   .user-show-new .user-rep-full .rep-table-row > td, .question,
-  #sub-navs .menu-item, kbd, .top-answer-container {
+  #sub-navs .menu-item, kbd, .top-answer-container, .s-sidebarwidget:after {
     border-color: #444;
   }
   ul.comments-list .comment > *, #content, .comments, #question-header,
@@ -1007,7 +1007,8 @@ regexp("^https?:\/\/((?!area51)\w+\.)*?stackexchange\.com.*") {
   .s-sidebarwidget__yellow .s-sidebarwidget .s-sidebarwidget--header,
   .s-sidebarwidget__yellow .s-sidebarwidget--content,
   #important-custom-content .s-sidebarwidget__yellow,
-  html:not(#X) .s-sidebarwidget__yellow {
+  html:not(#X) .s-sidebarwidget__yellow,
+  .s-sidebarwidget__yellow .s-sidebarwidget:after {
     border-color: #651 !important;
   }
   .bg-yellow-300, .fc-yellow-900 {
