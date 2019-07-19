@@ -439,8 +439,8 @@ regexp("^https?:\/\/((?!area51)\w+\.)*?stackexchange\.com.*") {
   }
   .f-radio-toggle._muted input[type="radio"]:checked + .f-label {
     color: #eee !important;
-    background-color: #5fba7d;
-    border-color: #5fba7d;
+    background-color: #254632;
+    border-color: #316044;
   }
   #custom-header, .review-bar, .diff-choices a.selected, #header #topbar,
   td.owner, a.owner, .profile-popup, .profile-popup div, .profile-popup th,
