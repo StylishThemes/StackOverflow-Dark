@@ -472,9 +472,6 @@ regexp("^https?:\/\/((?!area51)\w+\.)*?stackexchange\.com.*") {
   .why-jobs-v2 .cta-cards .-card._browse-visa .-image {
     filter: invert(1) hue-rotate(180deg) brightness(140%);
   }
-  .wmx100[src*="/math/img/logo.svg"] {
-    filter: invert(1) hue-rotate(180deg) saturate(400%) brightness(70%);
-  }
   .s-sidebarwidget--item .favicon {
     filter: invert(1) hue-rotate(180deg);
   }
@@ -2220,8 +2217,22 @@ regexp("^https?:\/\/((?!area51)\w+\.)*?stackexchange\.com.*") {
 }
 @-moz-document domain("tex.stackexchange.com") {
   /* target sites that need an inverted header */
-  .site-header .wmx100 {
+  .site-header .wmx100, img.va-middle[src*="LogoEmail.png"] {
     filter: invert(1) hue-rotate(180deg) saturate(900%) brightness(200%);
+  }
+}
+@-moz-document regexp("^https?://((unix|skeptics|math)\\.)?stackexchange\\.com.*") {
+  .site-header .wmx100 {
+    filter: invert(1) hue-rotate(180deg);
+  }
+  /* math */
+  .wmx100[src*="/math/img/logo.svg"], img.va-middle[src*="LogoEmail.png"] {
+    filter: invert(1) hue-rotate(180deg) saturate(400%) brightness(70%);
+  }
+}
+@-moz-document regexp("^https?://((apple)\\.)?stackexchange\\.com.*") {
+  .site-header .wmx100, img.va-middle[src*="LogoEmail.png"] {
+    filter: invert(1) hue-rotate(180deg) contrast(60%) brightness(130%);
   }
 }
 @-moz-document regexp("^https?://((academia|chess|english|meta|movies|salesforce|skeptics|judaism|ux)\\.)?stackexchange\\.com.*") {
