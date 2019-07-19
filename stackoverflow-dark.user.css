@@ -2376,7 +2376,7 @@ regexp("^https?:\/\/((?!area51)\w+\.)*?stackexchange\.com.*") {
     background: #27282e !important;
   }
   .CodeMirror-matchingbracket {
-    outline: grey solid 1px !important;
+    outline: 1px solid #808080 !important;
     color: #fff !important;
   }
   .cm-keyword {
