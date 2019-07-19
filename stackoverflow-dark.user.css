@@ -550,7 +550,7 @@ regexp("^https?:\/\/((?!area51)\w+\.)*?stackexchange\.com.*") {
   .top-bar .-main .navigation .-link {
     color: #ccc !important;
   }
-  .timeline-item, .timeline .or-separator, a.job-link span {
+  .timeline-item, .timeline .or-separator, a.job-link span, .narrow .mini-counts {
     color: #ccc;
   }
   .top-bar .navigation .-link:hover, .top-bar .navigation .-link:focus {
@@ -1127,7 +1127,7 @@ regexp("^https?:\/\/((?!area51)\w+\.)*?stackexchange\.com.*") {
   .user-rep-chart-summary-bar, .special-rep,
   .s-progress__privilege .s-progress--bar {
     background: #13552f !important;
-    color: #fff !important;
+    color: #eee !important;
   }
   .answered strong, .user-show-new .user-rep-full .rep-up {
     color: #27ae60 !important;
@@ -1589,7 +1589,9 @@ regexp("^https?:\/\/((?!area51)\w+\.)*?stackexchange\.com.*") {
     color: #ddd;
   }
   .why-jobs-v2 .developers-first, .why-jobs-v2 .developers-first h2,
-  .message.message-info a:not(.badge-tag):not(.button):not(.btn):not(.post-tag) {
+  .message.message-info a:not(.badge-tag):not(.button):not(.btn):not(.post-tag),
+  .answered-accepted, .answered-accepted .mini-counts,
+  .answered-accepted .minicounts span {
     color: #eee !important;
   }
   .icon-job-big, .icon-project-opensource-big, .icon-project-apps-big,
@@ -1637,15 +1639,14 @@ regexp("^https?:\/\/((?!area51)\w+\.)*?stackexchange\.com.*") {
     color: #bbb;
   }
   #top-menu a, .subheader a, .reputation a, .relativetime.old,
-  .votes-cast-stats td, .narrow .mini-counts, #chat .system-message, .card .rep,
+  .votes-cast-stats td, #chat .system-message, .card .rep,
   .user-card .user-stats .number, .user-card .user-card-name,
   .cv-story .time-frame, .-list-item.is-completed .-description,
   .s-footer .-toc th, .event-count, .post-timeline td, .post-timeline th,
   .msg-select-all-label, .fc-light, .s-table th, .input-group .f-label,
   .-job-summary .-company, h1.fc-black-800, [class*="grid-"] .fc-black-700,
   p.fc-black-800, .about-page .new-about-content-page h2.about-title,
-  .fc-black-350, .fc-medium, .label-key > b,
-  html:not(#X) .s-sidebarwidget__yellow li.s-sidebarwidget--item a {
+  .fc-black-350, .fc-medium, .label-key > b {
     color: #ccc !important;
   }
   .narrow .status, .narrow .views, .search-form .job-alert-tooltip .text,
