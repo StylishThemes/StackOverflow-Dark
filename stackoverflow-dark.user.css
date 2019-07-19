@@ -646,6 +646,9 @@ regexp("^https?:\/\/((?!area51)\w+\.)*?stackexchange\.com.*") {
     background: #222 !important;
     margin-top: -3px;
   }
+  .subheader.reloaded.js-user-header #tabs a.youarehere {
+    margin-top: -2px !important;
+  }
   html:not(#X) #tabs a.youarehere.is-selected {
     border-color: #555 !important;
     border-bottom-color: transparent !important;
@@ -1335,6 +1338,9 @@ regexp("^https?:\/\/((?!area51)\w+\.)*?stackexchange\.com.*") {
   body #mainArea .subheader .tabs a.youarehere, .subheader .tabs a.youarehere {
     margin-top: 3px;
     border-color: transparent !important;
+  }
+  .subheader.user-tabs-nav .tabs a.youarehere {
+    margin-top: 0;
   }
   .nav-left-col .is-active,
   #left-sidebar .nav-links .youarehere .nav-links--link {
