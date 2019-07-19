@@ -146,11 +146,11 @@ regexp("^https?:\/\/((?!area51)\w+\.)*?stackexchange\.com.*") {
   html:not(#X) .p-fc-purple, html:not(#X) .p-ff-roboto-slab.p-fc-purple div,
   .user-page .subheader.reloaded .additional-links a[href], .fc-blue-600,
   .h\:fc-orange-500:hover, #company-page .s-btn__outlined:hover,
-  #company-page .s-btn__outlined:active,
-  .s-sidebarwidget.s-sidebarwidget__yellow a,
-  .s-sidebarwidget.s-sidebarwidget__yellow a:hover, h2 a.league-site-name,
+  #company-page .s-btn__outlined:active, h2 a.league-site-name,
   .summary h3 .question-hyperlink, a.realtime-question-url.realtime-title,
-  a.question-link, a.question-hyperlink, a.s-link {
+  a.question-link, a.question-hyperlink, a.s-link,
+  .s-anchors.s-anchors__default a:not(.s-link),
+  .s-anchors .s-anchors.s-anchors__default a:not(.s-link) {
     color: /*[[base-color]]*/ !important;
   }
   .search-controls-responsive .-item .s-btn__outlined, .s-btn__outlined {
