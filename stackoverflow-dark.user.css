@@ -2170,6 +2170,17 @@ regexp("^https?:\/\/((?!area51)\w+\.)*?stackexchange\.com.*") {
     color: #ccc;
   }
 }
+@-moz-document regexp("^https?://((academia|buddhism|retrocomputing|security|codegolf)\\.)?stackexchange\\.com.*") {
+  #question-mini-list .summary .question-hyperlink {
+    color: /*[[base-color]]*/ !important;
+  }
+}
+@-moz-document regexp("^https?://((japanese|codereview)\\.)?stackexchange\\.com.*") {
+  #questions .question-summary .summary .question-hyperlink,
+  #question-mini-list .summary .question-hyperlink {
+    color: #ccc !important;
+  }
+}
 @-moz-document regexp("^https?:\/\/((?!area51)\w+\.)*?stackexchange\.com.*") {
   /* login screen StackExchange logo replacement */
   .login-page .se-logo {
