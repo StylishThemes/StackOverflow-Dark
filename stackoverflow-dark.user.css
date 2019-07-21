@@ -799,7 +799,7 @@ regexp("^https?:\/\/((?!area51)\w+\.)*?stackexchange\.com.*") {
     background-color: #232323 !important;
     color: #bbb !important;
   }
-  #jobs-sidebar-panel .s-sidebarwidget--header {
+  #jobs-sidebar-panel .s-sidebarwidget--header, .s-sidebarwidget--header {
     background-color: #292929 !important;
     color: #ddd;
   }
