@@ -709,8 +709,7 @@ regexp("^https?:\/\/((?!area51)\w+\.)*?stackexchange\.com.*") {
   .tour-bubble .-body, .why-jobs-v2 .developers-first select option, .s-tag,
   .wmd-button__active, .wmd-inline-dialog,
   .search-form.responsive .filter-pane nav ul._tabs li.tab [data-tab] a span,
-  .s-modal--dialog, .s-sidebarwidget .s-sidebarwidget--header.grid,
-  .timeline-feed-empty {
+  .s-modal--dialog, .timeline-feed-empty {
     background-color: #222 !important;
     color: #ddd !important;
   }
@@ -799,7 +798,8 @@ regexp("^https?:\/\/((?!area51)\w+\.)*?stackexchange\.com.*") {
     background-color: #232323 !important;
     color: #bbb !important;
   }
-  #jobs-sidebar-panel .s-sidebarwidget--header, .s-sidebarwidget--header {
+  #jobs-sidebar-panel .s-sidebarwidget--header, .s-sidebarwidget--header,
+  .s-sidebarwidget .s-sidebarwidget--header.grid {
     background-color: #292929 !important;
     color: #ddd;
   }
