@@ -765,15 +765,23 @@ regexp("^https?:\/\/((?!area51)\w+\.)*?stackexchange\.com.*") {
     color: #eee !important;
     background-color: #395697;
   }
+  html:not(#X) .s-btn__facebook {
+    color: #eee !important;
+    background-color: #395697 !important;
+  }
+  html:not(#X) .s-btn__facebook:hover {
+    background-color: #395697 !important;
+    filter: brightness(110%);
+  }
   .facebook-login:hover, .s-btn__facebook.facebook-login:hover {
     background-color: #395697;
     filter: brightness(110%);
   }
-  .s-btn.google-login, .stackexchange-login {
+  .s-btn.google-login, .stackexchange-login, html .s-btn__google {
     color: #aaa !important;
   }
   html:not(#X) .s-btn.google-login:hover,
-  html:not(#X) .stackexchange-login:hover {
+  html:not(#X) .stackexchange-login:hover, html .s-btn__google:hover {
     color: #eee !important;
     background: #232323 !important;
   }
@@ -1303,7 +1311,7 @@ regexp("^https?:\/\/((?!area51)\w+\.)*?stackexchange\.com.*") {
   .msg-list .list-item.is-read, .msg-list .list-item header,
   .message-detail header, .post-signature:not(.owner) .user-info,
   .answers-subheader, .profile-top-tags .badge-tag, .msg-controls,
-  .grid--cell:not(.facebook-login):not(.s-btn__primary):not(.youarehere):not(.badge1-alternate):not(.badge2-alternate):not(.badge3-alternate):not(.s-btn__outlined):not(.s-btn__filled):not(.bg-blue-500):not(.vote),
+  .grid--cell:not(.facebook-login):not(.s-btn__primary):not(.youarehere):not(.badge1-alternate):not(.badge2-alternate):not(.badge3-alternate):not(.s-btn__outlined):not(.s-btn__filled):not(.bg-blue-500):not(.vote):not([type="password"]),
   .narrow .votes, .badge-tag:hover, .form-item {
     background-color: transparent !important;
   }
