@@ -162,7 +162,8 @@ regexp("^https?:\/\/((?!area51)\w+\.)*?stackexchange\.com.*") {
   .s-anchors .s-anchors.s-anchors__default a:not(.s-link), a code,
   .company-list h2 a[href],
   #featured-company-page-ad footer a.s-btn__outlined:hover,
-  #featured-company-page-adfooter a.s-btn__outlined:active {
+  #featured-company-page-adfooter a.s-btn__outlined:active,
+  .topbar-dialog .modal-content .message-text h4 {
     color: /*[[base-color]]*/ !important;
   }
   .search-controls-responsive .-item .s-btn__outlined, .s-btn__outlined {
