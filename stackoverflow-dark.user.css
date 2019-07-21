@@ -1380,7 +1380,8 @@ regexp("^https?:\/\/((?!area51)\w+\.)*?stackexchange\.com.*") {
     border-bottom-color: #444 !important;
   }
   .search-form .filter-pane a._active, .search-form .filter-pane a:hover,
-  #tabs-interval .youarehere.is-selected {
+  #tabs-interval .youarehere.is-selected,
+  html:not(#X) #content .subheader .tabs a.youarehere {
     border-bottom-color: /*[[base-color]]*/ !important;
   }
   .left-arrow, .timeline-item:nth-child(odd):after {
