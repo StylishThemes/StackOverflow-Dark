@@ -1114,6 +1114,14 @@ regexp("^https?:\/\/((?!area51)\w+\.)*?stackexchange\.com.*") {
     background: #254632;
     color: #ddd !important;
   }
+  .s-notice {
+    border-color: transparent;
+    color: #ccc;
+  }
+  .s-notice__success {
+    border-color: #254632;
+    background: #254632;
+  }
   html:not(#X) .f-radio-toggle._muted input[type="radio"]:checked + .f-label {
     border-color: #254632 !important;
     background: #254632 !important;
@@ -1251,10 +1259,6 @@ regexp("^https?:\/\/((?!area51)\w+\.)*?stackexchange\.com.*") {
   }
   .vote-count-post [style="color:maroon"] {
     color: maroon !important;
-  }
-  .s-notice {
-    color: #e33;
-    border: 1px solid transparent;
   }
   a.required-tag {
     color: #aaa !important;
