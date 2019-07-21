@@ -140,7 +140,14 @@ regexp("^https?:\/\/((?!area51)\w+\.)*?stackexchange\.com.*") {
   .s-btn:hover, .s-stat .-value, .s-link, .mini-counts.supernova, .supernova,
   .topbar-dialog a:not(.btn-secondary):not(.nav-links--link),
   .topbar-dialog a:not(.btn-secondary):not(.nav-links--link):hover,
-  .s-sidebarwidget--action, .site-footer .-link._active {
+  .s-sidebarwidget--action, .site-footer .-link._active, ul.navMain li a,
+  ul.navMain li a:hover, .top-bar .-secondary .-ctas .btn-topbar-clear,
+  .top-bar .-secondary .-ctas .btn-topbar-clear,
+  .top-bar .-secondary .-ctas .btn-topbar-clear:hover,
+  .top-bar .-secondary .-ctas .btn-topbar-clear:focus,
+  .topbar-dialog a:not(.btn-secondary):not(.nav-links--link):visited,
+  .topbar-dialog a:not(.btn-secondary):not(.nav-links--link):visited:hover,
+  .user-details h1 a, .default-profile-site a {
     color: /*[[base-color]]*/;
   }
   .subheader h1 a, input[type="submit"].btn-clear,
