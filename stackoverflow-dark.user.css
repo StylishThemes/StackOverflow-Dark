@@ -739,7 +739,8 @@ regexp("^https?:\/\/((?!area51)\w+\.)*?stackexchange\.com.*") {
             border-radius: 3px !important;
   }
   .topbar.newheader, .network-items>a, .icon-help, .icon-help:hover,
-  .s-notice__important, .s-notice.s-notice__outlined {
+  .s-notice__important, .s-notice.s-notice__outlined,
+  ul.menu-popout li.fc-dark.bg-green-050 {
     background-color: #222 !important;
   }
   .calendar, .calendar-small, .mspark .mspbar, #promo-box,
