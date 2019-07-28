@@ -2030,7 +2030,7 @@ regexp("^https?:\/\/((?!area51)\w+\.)*?stackexchange\.com.*") {
   .post-text img {
     background: #fff !important;
     opacity: /*[[img-opacity]]*/;
-    border: #fff 2px solid !important;
+    border: 2px solid #666;
     transition: opacity .5s ease;
   }
   .post-text img:hover {
