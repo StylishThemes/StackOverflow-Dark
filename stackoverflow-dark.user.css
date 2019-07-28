@@ -1386,7 +1386,7 @@ regexp("^https?:\/\/((?!area51)\w+\.)*?stackexchange\.com.*") {
   }
   .search-form .filter-pane a._active, .search-form .filter-pane a:hover,
   #tabs-interval .youarehere.is-selected,
-  html:not(#X) #content .subheader .tabs a.youarehere {
+  html:not(#X) #content .subheader:not(.reloaded) .tabs a.youarehere {
     border-bottom-color: /*[[base-color]]*/ !important;
   }
   .left-arrow, .timeline-item:nth-child(odd):after {
@@ -1413,10 +1413,13 @@ regexp("^https?:\/\/((?!area51)\w+\.)*?stackexchange\.com.*") {
   }
   body #mainArea .subheader .tabs a.youarehere, .subheader .tabs a.youarehere {
     margin-top: 3px;
-    border-color: transparent !important;
+    border-bottom-color: transparent !important;
   }
   .subheader.user-tabs-nav .tabs a.youarehere {
     margin-top: 0;
+  }
+  .subheader.user-tabs-nav.reloaded .tabs a.youarehere {
+    margin-top: -3px;
   }
   .nav-left-col .is-active,
   #left-sidebar .nav-links .youarehere .nav-links--link {
