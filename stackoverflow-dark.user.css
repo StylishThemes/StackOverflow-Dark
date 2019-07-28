@@ -1567,6 +1567,17 @@ regexp("^https?:\/\/((?!area51)\w+\.)*?stackexchange\.com.*") {
   .message.message-info .message-tip-left-top:before {
     border-top-color: #046 !important;
   }
+  .s-sidebarwidget.s-sidebarwidget__blue::after {
+    border-color: #046;
+  }
+  #profile-summary > .-popout {
+    background-color: #182030 !important;
+    border: solid 1px #046 !important;
+  }
+  .s-sidebarwidget.s-sidebarwidget__blue {
+    border-color: #046;
+    background-color: #182030;
+  }
   /* === Text Color === */
   input, .accepted-answer .user-action-time, #question-header a:not(.s-btn),
   .user-info, .topbar-dialog .header h3, .topbar-dialog .header h3 a,
