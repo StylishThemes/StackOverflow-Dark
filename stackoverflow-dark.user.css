@@ -1436,6 +1436,19 @@ regexp("^https?:\/\/((?!area51)\w+\.)*?stackexchange\.com.*") {
   .subtabs a, .filter a {
     border-bottom: 1px solid transparent !important;
   }
+  .subtabs a.youarehere, .filter a.youarehere, .subtabs a:hover, .filter a:hover,
+  .subtabs a, .filter a {
+    color: #bbb;
+  }
+  .subtabs a.youarehere:hover, .filter a.youarehere:hover,
+  .subtabs a.active:hover, .filter a.active:hover, .subtabs a:hover,
+  .filter a:hover {
+    color: #ccc;
+  }
+  .subtabs a.active, .filter a.active {
+    color: #ddd;
+    border-color: /*[[base-color]]*/ !important;
+  }
   .module, .tabs a, div.message, .full-diff td, .wb-outer:not(.wb-selected),
   .page-numbers.dots, .p-top-tags .badge-tag, .intellitab:not(.selected) a,
   #sub-navs .menu-item .menu-switcher, .input-group .-fill._clean,
