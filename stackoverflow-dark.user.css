@@ -298,7 +298,7 @@ regexp("^https?:\/\/((?!area51)\w+\.)*?stackexchange\.com.*") {
   }
   /* hack around to prevent pagination hover issues on stackexchage */
   a[href]:hover {
-    opacity: .9;
+    color: rgba(/*[[base-color-rgb]]*/, .8);
   }
   /* end hack */
   html:not(#X) #tabs a, html:not(#X) .tabs a:not([href]) {
