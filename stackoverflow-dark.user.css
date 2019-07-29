@@ -1884,7 +1884,7 @@ regexp("^https?:\/\/((?!area51)\w+\.)*?stackexchange\.com.*") {
   .tag-synonym-link:hover, a.question-hyperlink:hover, a.answer-hyperlink:hover,
   a:not([href*=".com"]):not([href*="?page="]):hover,
   a:not([href*=".com"]):not([href*="?page="]):active {
-    filter: brightness(120%);
+    color: rgba(/*[[base-color-rgb]]*/, .8);
   }
   .form-item {
     padding-left: 20px !important;
