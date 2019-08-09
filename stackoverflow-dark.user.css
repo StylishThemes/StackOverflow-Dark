@@ -1617,6 +1617,11 @@ regexp("^https?:\/\/((?!area51)\w+\.)*?stackexchange\.com.*") {
   #mainbar a.comment-user {
     color: #5b93ff !important;
   }
+  
+  a.comment-user.owner {
+    background-color: #124fc3 !important;
+  }
+  
   /* patch for hint text of SurfingKeys browser extension */
   #sk_hints div {
     color: #000 !important;
