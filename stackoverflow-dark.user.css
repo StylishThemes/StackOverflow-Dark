@@ -261,6 +261,9 @@ regexp("^https?:\/\/((?!area51)\w+\.)*?stackexchange\.com.*") {
     background-color: rgba(/*[[base-color-rgb]]*/, .4);
     background-image: linear-gradient(to right, transparent 0%, transparent 100%);
   }
+  a.owner {
+    background-color: rgba(/*[[base-color-rgb]]*/, .3);
+  }
   input[type="submit"]:not(.s-btn):hover, input[type="button"]:not(.s-btn):hover,
   button:not(.s-btn):hover, .button:hover, a.button:hover,
   a.button:visited:hover, .btn:hover, input[type="submit"]:not(.s-btn):focus,
@@ -469,7 +472,7 @@ regexp("^https?:\/\/((?!area51)\w+\.)*?stackexchange\.com.*") {
     border-color: #316044;
   }
   #custom-header, .review-bar, .diff-choices a.selected, #header #topbar,
-  td.owner, a.owner, .profile-popup, .profile-popup div, .profile-popup th,
+  td.owner, .profile-popup, .profile-popup div, .profile-popup th,
   .profile-popup td, #global, .actual-edit-overlay,
   input:not([type="submit"]):not([type="button"]), textarea, #search input,
   .tag-editor, .f-select > select, textarea#input,
@@ -939,7 +942,7 @@ regexp("^https?:\/\/((?!area51)\w+\.)*?stackexchange\.com.*") {
   #newsletter-ad, .search-form .icon-advanced-search, .message.gray,
   .menu-popout li:hover, .menu-popout .is-selected, #job-detail .-sticky-tabs,
   .nav-left-col a:hover, .deleted-answer footer .user-info, .util-bar,
-  .user-info {
+  .user-info, .accepted-answer .user-info {
     background-color: #242424 !important;
     background-image: none !important;
   }
@@ -959,7 +962,7 @@ regexp("^https?:\/\/((?!area51)\w+\.)*?stackexchange\.com.*") {
     color: #ccc !important;
   }
   .nav li, .seNav, .topbar a.topbar-icon-on, .topbar a.topbar-icon-on:hover,
-  .owner, .nav a, .module li.current, .seCurrent, .community-bulletin,
+  .nav a, .module li.current, .seCurrent, .community-bulletin,
   .owner-revision td, .markdown-diff .skip, #footer .container,
   .body-diffs .skip, .newsletter-anon, .tag-suggestions>div:hover,
   .topbar-dialog .modal-content li:hover, .timestamp:hover+div.message .meta,
@@ -1190,8 +1193,8 @@ regexp("^https?:\/\/((?!area51)\w+\.)*?stackexchange\.com.*") {
   .suggested-edit .inserted, .markdown-diff .inserted, .rep-increase,
   .progress-bar .percent, .recommended, .suggested-edit .inserted>div,
   .full-diff .inserted>div, .message.success, .p-highlights .-rep-increase,
-  .s-progress-bar .-fill, .answerBox.accepted, .accepted-answer .user-info,
-  .s-notice__success, .answer.accepted-answer {
+  .s-progress-bar .-fill, .answerBox.accepted, .s-notice__success,
+  .answer.accepted-answer {
     background: #002810 !important;
   }
   .fc-green-500 {
@@ -1653,9 +1656,6 @@ regexp("^https?:\/\/((?!area51)\w+\.)*?stackexchange\.com.*") {
   }
   .fc-black-400, .fc-black-600, .started-link, .question-hyperlink {
     color: #aaa !important;
-  }
-  #mainbar a.comment-user {
-    color: #5b93ff !important;
   }
   /* patch for hint text of SurfingKeys browser extension */
   #sk_hints div {
