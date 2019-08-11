@@ -1640,7 +1640,6 @@ regexp("^https?:\/\/((?!area51)\w+\.)*?stackexchange\.com.*") {
   #logins-table .group-name, .top-bar .-marketing-link, html:not(#X) .fc-white,
   html:not(#X) .h\:fc-black-900:hover {
     color: #ddd !important;
-    filter: none !important;
   }
   svg.iconGlobe path, svg.iconIndustry path, svg.iconPeople path,
   svg.iconBriefcase path, svg.iconFlag path, svg.iconGitHub path {
