@@ -149,7 +149,7 @@ regexp("^https?:\/\/((?!area51)\w+\.)*?stackexchange\.com.*") {
   .topbar-dialog a:not(.btn-secondary):not(.nav-links--link):visited:hover,
   .user-details h1 a, .default-profile-site a, .answer-hyperlink,
   .answer-hyperlink:hover, .topbar-dialog .unread-item .unread-bold,
-	.started .mod-flair, .started a:not(.started-link) {
+  .started .mod-flair, .started a:not(.started-link) {
     color: /*[[base-color]]*/;
   }
   .subheader h1 a, input[type="submit"].btn-clear,
