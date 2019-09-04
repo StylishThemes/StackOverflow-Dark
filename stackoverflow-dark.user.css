@@ -1959,6 +1959,22 @@ regexp("^https?:\/\/((?!area51)\w+\.)*?stackexchange\.com.*") {
   .nav-links--link .svg-icon {
     fill: currentColor !important;
   }
+  #question[style*="background-color:"] {
+    animation-name: highlight-fade !important;
+    animation-duration: 3s !important;
+  }
+  .answer[style*="background-color:"] {
+    animation-name: highlight-fade !important;
+    animation-duration: 3s !important;
+  }
+  @keyframes highlight-fade {
+    from {
+      background-color: #3e2914;
+    }
+    to {
+      background-color: transparent;
+    }
+  }
   /* weird hack - see #123 */
   @-webkit-keyframes autofill {
     to {
