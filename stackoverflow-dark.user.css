@@ -574,13 +574,16 @@ regexp("^https?:\/\/((?!area51)\w+\.)*?stackexchange\.com.*") {
   .top-bar a.-logo:hover {
     background: #000 !important;
   }
+  .bg-black-025, .h\:bg-black-025:hover, .f\:bg-black-025:focus {
+    background: #282828 !important;
+  }
   .top-bar .-secondary .-item._active,
   .top-bar .-secondary .-item .-link.topbar-icon-on,
   .top-bar .-secondary .-item .-link.topbar-icon-on:hover {
     color: #ddd;
     background-color: #333;
   }
-  .autocomplete-suggestions.is-visible, .bg-black-025 {
+  .autocomplete-suggestions.is-visible {
     border: 1px solid #555 !important;
     background: #222 !important;
   }
@@ -898,7 +901,7 @@ regexp("^https?:\/\/((?!area51)\w+\.)*?stackexchange\.com.*") {
   .user-show-new .user-rep-chart-summary, .subscription-container, .snippet-code,
   .about-page .new-about-content-page .content-block,
   .about-page .new-about-content-page .qa-block,
-  .about-page .new-about-content-page .user-info-rep {
+  .about-page .new-about-content-page .user-info-rep, hr {
     border-color: #444;
   }
   ul.comments-list .comment > *, #content, .comments, #question-header,
@@ -914,7 +917,7 @@ regexp("^https?:\/\/((?!area51)\w+\.)*?stackexchange\.com.*") {
   #jobs-sidebar-placeholder .s-sidebarwidget--header,
   .s-sidebarwidget.module .s-sidebarwidget--header,
   .s-sidebarwidget--content.s-sidebarwidget__items, #sub-navs > a,
-  .s-sidebarwidget--content {
+  .s-sidebarwidget--content, .bc-black-3 {
     border-color: #444 !important;
   }
   .diff-buttons a:hover, .diff-choices a:hover, .diff-type-controls a:hover,
@@ -1062,8 +1065,8 @@ regexp("^https?:\/\/((?!area51)\w+\.)*?stackexchange\.com.*") {
     border-image: initial !important;
   }
   .new-post-activity, #new-answer-activity, .val-info, .highlight,
-  a.youarehere:before, .message.regular, .filter-dashboard-edit .floating-help,
-  .review-post-author-guidance, .tagged-interesting, .tagged-interesting .views,
+  a.youarehere:before, .message.regular, .review-post-author-guidance,
+  .tagged-interesting, .tagged-interesting .views,
   .tagged-interesting .user-info, .mdhelp-tabs {
     background-color: rgba(51, 34, 17, .6) !important;
   }
@@ -1103,7 +1106,7 @@ regexp("^https?:\/\/((?!area51)\w+\.)*?stackexchange\.com.*") {
     background-color: #651 !important;
     color: #aaa !important;
   }
-  .event-banner, blockquote {
+  .event-banner, blockquote, .filter-dashboard-edit .floating-help {
     background-color: #321;
     border-color: #651;
   }
@@ -1198,6 +1201,9 @@ regexp("^https?:\/\/((?!area51)\w+\.)*?stackexchange\.com.*") {
   .answer.accepted-answer {
     background: #002810 !important;
   }
+  .fc-green-400, .h\:fc-green-400:hover, .f\:fc-green-400:focus {
+    color: #5fba7d !important;
+  }
   .fc-green-500 {
     color: #27ae60 !important;
   }
@@ -1207,12 +1213,18 @@ regexp("^https?:\/\/((?!area51)\w+\.)*?stackexchange\.com.*") {
   .answered, .answered .mini-counts, .answered strong {
     color: #45a163 !important;
   }
+  html:not(#X) .bg-green-400, .h\:bg-green-400:hover, .f\:bg-green-400:focus {
+    background-color: #5fba7d !important;
+  }
   span.diff-add, .s-notice__success.s-notice__important {
     background: #3f4e1d !important;
     color: #92cc09 !important;
   }
   .s-notice__success.s-notice__outlined {
     border-color: #27ae60 !important;
+  }
+  .bc-green-4 {
+    border-color: #5fba7d !important;
   }
   .topbar-dialog.achievements-dialog .rep-up, .-activity .-stat.answered {
     color: #92cc09 !important;
@@ -2214,6 +2226,11 @@ regexp("^https?:\/\/((?!area51)\w+\.)*?stackexchange\.com.*") {
     border-radius: 1px;
     padding: 6px 8px;
   }
+  input[type="submit"][value="Save Changes"] {
+    color: #ddd !important;
+    border: 1px solid rgba(/*[[base-color-rgb]]*/, 1) !important;
+    background: linear-gradient(to bottom, rgba(/*[[base-color-rgb]]*/, .4), rgba(/*[[base-color-rgb]]*/, .5));
+  }
   html:not(#X) .s-badge.s-badge__mini {
     background-color: /*[[base-color]]*/ !important;
   }
@@ -2268,6 +2285,9 @@ regexp("^https?:\/\/((?!area51)\w+\.)*?stackexchange\.com.*") {
   }
   .site-footer .-link:hover {
     color: #ccc;
+  }
+  .filter-dashboard-edit .sites-list {
+    background-color: #182030;
   }
 }
 @-moz-document regexp("^https?://((academia|buddhism|retrocomputing|security|codegolf)\\.)?stackexchange\\.com.*") {
@@ -2843,7 +2863,7 @@ regexp("^https?:\/\/((?!area51)\w+\.)*?stackexchange\.com.*") {
     color: #aaa;
   }
   .popup, #main.message-admin-mode .message-controls, #conversation-sel,
-  .ob-post {
+  .ob-post, .answer-link span[title] {
     color: #aaa;
   }
   .footerwrap a {
