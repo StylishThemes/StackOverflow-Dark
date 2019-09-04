@@ -1897,6 +1897,12 @@ regexp("^https?:\/\/((?!area51)\w+\.)*?stackexchange\.com.*") {
   .has-error .s-radio:not(:checked), .has-error .s-select > select {
     border-color: #da4453 !important;
   }
+  .has-error .s-input-message a {
+    color: #da4453;
+  }
+  .s-input-message a {
+    color: #ddd !important;
+  }
   /* orange */
   .hot, .fc-orange-400 .iconRss, .fc-orange-400.iconRss,
   #mainbar .grid a .iconRss, .mini-counts.hot {
