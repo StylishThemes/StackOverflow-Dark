@@ -1,5 +1,5 @@
 <p align="center">
-  <img alt="stackexchange-logo" src="https://rawgit.com/StylishThemes/logos/master/se.dark/sedark.svg" width="508">
+  <img alt="stackexchange-logo" src="https://cdn.jsdelivr.net/gh/StylishThemes/logos@master/se.dark/sedark.svg" width="508">
   <br>
   <a href="https://github.com/StylishThemes/Stackoverflow-Dark/tags">
     <img src="https://img.shields.io/github/tag/StylishThemes/Stackoverflow-Dark.svg?label=tag" alt="Tag">
