@@ -2025,6 +2025,14 @@ regexp("^https?:\/\/((?!area51)\w+\.)*?stackexchange\.com.*") {
     background: rgba(65, 131, 196, .8) !important;
     background: rgba(/*[[base-color-rgb]]*/, .8) !important;
   }
+
+  /* For Firefox */
+  html {
+    scrollbar-width: thin;
+    scrollbar-color: #555 #000;
+  }
+
+  
   /* === badges === */
   /* stackexchange badges fixes */
   .history-table .badge {
