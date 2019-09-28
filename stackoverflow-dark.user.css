@@ -602,7 +602,8 @@ regexp("^https?:\/\/((?!area51)\w+\.)*?stackexchange\.com.*") {
   .s-sidebarwidget--item[aria-current="true"],
   .s-sidebarwidget--item > :first-child[aria-current="true"],
   .s-sidebarwidget--item[aria-current="page"],
-  .s-sidebarwidget--item > :first-child[aria-current="page"] {
+  .s-sidebarwidget--item > :first-child[aria-current="page"],
+  .user-page .settings-page .email-settings .-settings td.-desc strong {
     color: #ccc;
   }
   .top-bar .navigation .-link:hover, .top-bar .navigation .-link:focus {
@@ -973,10 +974,9 @@ regexp("^https?:\/\/((?!area51)\w+\.)*?stackexchange\.com.*") {
   div.message:hover .meta, #side-menu ul li a:hover, .conversation-info,
   .message.reply-parent, .message.reply-child,
   .sidebar-element .list li .rep-and-badges, .congrats .actions,
-  .newsletters-toggle, .tag-suggestions>div:focus,
-  .current-site a.site-link:hover, #sub-navs>a:hover, #sub-navs .menu-item:hover,
-  .popup-close .-link:hover, .p-highlights .-reputation .-meta-rep,
-  .nav-left-col a.is-active,
+  .tag-suggestions>div:focus, .current-site a.site-link:hover, #sub-navs>a:hover,
+  #sub-navs .menu-item:hover, .popup-close .-link:hover,
+  .p-highlights .-reputation .-meta-rep, .nav-left-col a.is-active,
   .comment__highlight:not([style*="background-color"]),
   ul.comments-list .comment__highlight .comment-text,
   ul.comments-list .comment__highlight .comment-actions,
@@ -1420,6 +1420,9 @@ regexp("^https?:\/\/((?!area51)\w+\.)*?stackexchange\.com.*") {
   .company-module .-details strong:before, .bc-black-1 {
     border-color: #333 !important;
   }
+  .user-page .settings-page .email-settings .-unsubscribe {
+    border-color: #333;
+  }
   .temp-popover.temp-popover__bottom .temp-popover--arrow:before,
   .temp-popover.temp-popover__bottom-left .temp-popover--arrow:before,
   .temp-popover.temp-popover__bottom-right .temp-popover--arrow:before,
@@ -1550,6 +1553,9 @@ regexp("^https?:\/\/((?!area51)\w+\.)*?stackexchange\.com.*") {
   }
   .hero-box, .filter-show-more {
     background: #182030 !important;
+  }
+  .newsletters-toggle {
+    background: #182030;
   }
   .review-actions input, .btn, .chosen-choices .search-choice,
   .topbar-dialog a.btn-secondary, .filter-dashboard, input[type=submit],
