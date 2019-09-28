@@ -33,7 +33,7 @@ A userstyle manager is required, common ones include:
 
 Then:
 
-📦 [Install the usercss](https://github.com/StylishThemes/StackOverflow-Dark/raw/master/stackoverflow-dark.user.css) with Stylus or xStyle. Supports automatic updates.
+📦 [Install the usercss](https://github.com/StylishThemes/StackOverflow-Dark/raw/master/stackoverflow-dark.user.css). Supports automatic updates.
 
 ## Available Syntax Highlighting Themes
 
@@ -64,13 +64,11 @@ Then:
 | Vibrant Ink              | ✔️ |
 | VSCode Monaco            | ✔️ |
 
-\* Reference the [Themes wiki](https://github.com/StylishThemes/StackOverflow-Dark/wiki/Themes) for more details.
+\* See references at the [Themes wiki](https://github.com/StylishThemes/StackOverflow-Dark/wiki/Themes) for more details.
 
 ## Notes
 
 - In versions 2.8.0+, this style will apply to *almost* all Stack Exchange sites.
-- Use the [grunt build process](https://github.com/StylishThemes/StackOverflow-Dark/wiki/Build) to customize your StackOverflow Dark theme.
-- Please refer to the [installation documentation](https://github.com/StylishThemes/StackOverflow-Dark/wiki/Install) for more details.
 
 ## Contributions
 
