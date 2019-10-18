@@ -15,6 +15,7 @@ rules:
   comment-whitespace-inside: null
   declaration-bang-space-before: null
   declaration-block-no-duplicate-properties: null
+  declaration-block-no-shorthand-property-overrides: null
   declaration-block-single-line-max-declarations: null
   declaration-colon-newline-after: null
   font-family-name-quotes: always-where-recommended
