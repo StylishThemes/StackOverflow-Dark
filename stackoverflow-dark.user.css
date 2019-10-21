@@ -1304,6 +1304,10 @@ regexp("^https?:\/\/((?!area51)\w+\.)*?stackexchange\.com.*") {
     background-color: #300 !important;
     border-color: #f00 !important;
   }
+  .val-error {
+    background-color: #300;
+    border-color: #e33;
+  }
   .deleted-answer, .suggested-edit .deleted, .markdown-diff .deleted,
   .suggested-edit .deleted>div, .full-diff .deleted>div,
   .realtime-post-deleted-notification p, .message.incomplete, .message.error,
