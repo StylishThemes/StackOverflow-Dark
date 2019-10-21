@@ -700,6 +700,10 @@ regexp("^https?:\/\/((?!area51)\w+\.)*?stackexchange\.com.*") {
     background: #222 !important;
     margin-top: -3px;
   }
+  .subheader #tabs [href*="account_recovery"],
+  .subheader #tabs a[href*="account_recovery"]:hover {
+    margin-top: 0 !important;
+  }
   #user-tab-answers .subtabs {
     margin-top: 4.4px;
   }
