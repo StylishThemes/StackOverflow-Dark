@@ -3611,102 +3611,10 @@ regexp("^https?:\/\/((?!area51)\w+\.)*?stackexchange\.com.*") {
     color: #b571e2 !important;
   }
 }
-@-moz-document regexp("https?://(www\.)?google.com/recaptcha/api2/.*"), regexp("https?://stackoverflow.com/(enterprise|teams).*") {
-  html {
-    background: #222;
-  }
+@-moz-document regexp("https?://stackoverflow.com/(enterprise|teams).*") {
   img.wmx100 {
     filter: invert(1) hue-rotate(180deg) contrast(100%) brightness(400%);
     mix-blend-mode: exclusion;
-  }
-  .rc-anchor-light {
-    background: #191919;
-    color: #eee;
-    overflow: hidden;
-  }
-  .recaptcha-checkbox-border {
-    background-color: #000;
-    border: 2px solid #555;
-  }
-  .recaptcha-checkbox-hover .recaptcha-checkbox-border,
-  .recaptcha-checkbox-hover .recaptcha-checkbox-spinner-gif {
-    border: 2px solid #999 !important;
-  }
-  .recaptcha-checkbox-focused .recaptcha-checkbox-border,
-  .recaptcha-checkbox-focused .recaptcha-checkbox-spinner-gif {
-    border: 2px solid /*[[base-color]]*/;
-  }
-  .recaptcha-checkbox-active .recaptcha-checkbox-border,
-  .recaptcha-checkbox-active .recaptcha-checkbox-spinner-gif {
-    background-color: #111;
-  }
-  .recaptcha-checkbox-disabled .recaptcha-checkbox-border,
-  .recaptcha-checkbox-disabled .recaptcha-checkbox-spinner-gif {
-    background-color: #333;
-  }
-  .recaptcha-checkbox-clearOutline.recaptcha-checkbox-focused .recaptcha-checkbox-border,
-  .recaptcha-checkbox-clearOutline.recaptcha-checkbox-focused .recaptcha-checkbox-spinner-gif {
-    border: 2px solid #ccc;
-  }
-  .recaptcha-checkbox-borderAnimation {
-    filter: invert(1) hue-rotate(180deg);
-    mix-blend-mode: exclusion;
-  }
-  .rc-response-input-field {
-    border: 1px solid #555;
-  }
-  .rc-audiochallenge-response-field input {
-    background: #010101;
-    color: #ddd;
-  }
-  #rc-imageselect {
-    background-color: #191919;
-  }
-  .rc-separator {
-    border-top: 1px solid #555;
-  }
-  .rc-button-reload, .rc-button-audio, .rc-button-help,
-  .rc-audiochallenge-tdownload-link, .rc-button-image {
-    filter: invert(1) brightness(120%);
-  }
-  .rc-controls .rc-challenge-help, .rc-audiochallenge-instructions,
-  .rc-doscaptcha-body-text, .rc-anchor-light .rc-anchor-logo-text,
-  .rc-anchor-light .rc-anchor-pt a:link,
-  .rc-anchor-light .rc-anchor-pt a:visited {
-    color: #aaa;
-  }
-  .rc-audiochallenge-play-button .rc-button-default {
-    background: #888;
-    color: #ccc;
-  }
-  a[href="https://support.google.com/recaptcha"], .rc-doscaptcha-body-text a {
-    color: /*[[base-color]]*/;
-  }
-  .rc-button-default, .rc-imageselect-desc-wrapper, .rc-doscaptcha-header {
-    background: /*[[base-color]]*/;
-    color: #fff;
-  }
-  .rc-imageselect-checkbox {
-    filter: grayscale(1);
-  }
-  .rc-imageselect-incorrect-response, .rc-imageselect-error-dynamic-more,
-  .rc-imageselect-error-select-more, .rc-imageselect-error-select-something {
-    color: #e33;
-    background-color: #191919;
-  }
-  #rc-anchor-alert, .rc-anchor-alert {
-    color: #e33;
-  }
-  .rc-anchor {
-            box-shadow: none;
-    -webkit-box-shadow: none;
-       -moz-box-shadow: none;
-  }
-  html .g-recaptcha-bubble-arrow {
-    border-color: transparent #222 transparent transparent !important;
-  }
-  html .g-recaptcha-bubble-arrow[style*="border-color: transparent rgb(204, 204, 204) transparent transparent; border-style: solid; border-width: 11px;"] {
-    border-color: transparent #555 transparent transparent !important;
   }
 }
 @-moz-document regexp("https?://stackexchange.com/(about|performance|leagues|sites\#)\.*"), regexp("https?://stackexchange.com/about/(moderators|security)\.*") {
