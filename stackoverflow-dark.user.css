@@ -894,6 +894,14 @@ regexp("^https?:\/\/((?!area51)\w+\.)*?stackexchange\.com.*") {
   div.meter {
     border-color: #555;
   }
+  .subtabs.user-panel-subtabs a.youarehere {
+    border-left: none !important;
+    border-right: none !important;
+    border-top: none !important;
+  }
+  .subtabs.user-panel-subtabs a:hover {
+    color: #eee !important;
+  }
   #index-hed .sort .select select {
     border-color: #555;
     box-shadow: 0 0 5px rgb(85, 85, 85);
