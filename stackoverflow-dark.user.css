@@ -3301,6 +3301,11 @@ regexp("^https?:\/\/((?!area51)\w+\.)*?stackexchange\.com.*") {
     color: #27ae60 !important;
   }
 }
+@-moz-document domain("hermeneutics.stackexchange.com") {
+  .bg-black-750, .h\:bg-black-750:hover, .f\:bg-black-750:focus {
+    background-color: #181818 !important;
+  }
+}
 @-moz-document domain("ja.stackoverflow.com") {
   /* ja.stackoverflow.com (Japanese) */
   .-logo .-img:not(._glyph) {
