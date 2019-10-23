@@ -1813,13 +1813,14 @@ regexp("^https?:\/\/((?!area51)\w+\.)*?stackexchange\.com.*") {
   /* these arent !important, but we botch them to make them work */
   .nav-links .nav-links--link, .nav-links .nav-links--link:visited,
   .nav-links .youarehere .nav-links--link .svg-icon, li.s-sidebarwidget--item a,
-  html .job, html .module, .label-key, .reputation-score {
+  html .job, .label-key, .reputation-score {
     color: #aaa !important;
   }
   .nav-links .nav-links--link:hover, .nav-links .nav-links--link:focus,
   .nav-links .nav-links--link:active, #side-menu ul ul li > a.youarehere,
   li.s-sidebarwidget--item a:hover,
-  .s-sidebarwidget--subnav li[aria-current="page"] a, .site-footer .-title a {
+  .s-sidebarwidget--subnav li[aria-current="page"] a, .site-footer .-title a,
+  html .module {
     color: #ddd !important;
   }
   /* end not !important */
