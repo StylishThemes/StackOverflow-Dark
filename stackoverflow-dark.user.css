@@ -721,8 +721,10 @@ regexp("^https?:\/\/((?!area51)\w+\.)*?stackexchange\.com.*") {
   .subheader.user-tabs-nav .tabs a.youarehere {
     margin-top: 0;
   }
-  .subheader.user-tabs-nav .tabs a:hover, .subheader.reloaded #tabs a:hover {
+  .subheader.user-tabs-nav .tabs a:not(.youarehere):hover,
+  .subheader.reloaded #tabs a:not(.youarehere):hover {
     margin-top: 0 !important;
+    height: 39px;
   }
   html:not(#X) #tabs a.youarehere.is-selected {
     border-color: #555 !important;
