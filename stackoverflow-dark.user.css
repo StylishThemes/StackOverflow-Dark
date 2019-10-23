@@ -1582,7 +1582,6 @@ regexp("^https?:\/\/((?!area51)\w+\.)*?stackexchange\.com.*") {
     color: #ddd !important;
     background: rgba(/*[[base-color-rgb]]*/, .5) !important;
     border-color: rgba(/*[[base-color-rgb]]*/, .7) !important;
-    box-shadow: inset 0 1px 0 rgba(/*[[base-color-rgb]]*/, .6) !important;
   }
   .hero-box, .filter-show-more {
     background: #182030 !important;
