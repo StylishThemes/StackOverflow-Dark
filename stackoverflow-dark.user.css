@@ -1900,7 +1900,10 @@ regexp("^https?:\/\/((?!area51)\w+\.)*?stackexchange\.com.*") {
     color: #444 !important;
   }
   .s-btn__unset, .disabled-link {
-    color: #888;
+    color: #bbb;
+  }
+  .disabled-link {
+    opacity: .7;
   }
   .s-btn[href*="/users/jobsearch"] {
     border: 1px solid transparent !important;
