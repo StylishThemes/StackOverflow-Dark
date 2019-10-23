@@ -890,8 +890,7 @@ regexp("^https?:\/\/((?!area51)\w+\.)*?stackexchange\.com.*") {
   .user-page .settings-page h1 + div.subtitle,
   .resume-uploader #uploader-wrapper .qq-upload-drop-area,
   .user-page .settings-page .email-settings .-info,
-  .user-page .settings-page .email-settings .-settings tr:not(:last-child) td,
-  div.meter {
+  .user-page .settings-page .email-settings .-settings tr:not(:last-child) td {
     border-color: #555;
   }
   .subtabs.user-panel-subtabs a.youarehere {
@@ -933,7 +932,7 @@ regexp("^https?:\/\/((?!area51)\w+\.)*?stackexchange\.com.*") {
   .about-page .new-about-content-page .content-block,
   .about-page .new-about-content-page .qa-block,
   .about-page .new-about-content-page .user-info-rep, hr,
-  .my-communities ul.community-site li {
+  .my-communities ul.community-site li, div.meter {
     border-color: #444;
   }
   ul.comments-list .comment > *, #content, .comments, #question-header,
@@ -1247,7 +1246,8 @@ regexp("^https?:\/\/((?!area51)\w+\.)*?stackexchange\.com.*") {
   .answered, .answered .mini-counts, .answered strong {
     color: #45a163 !important;
   }
-  html:not(#X) .bg-green-400, .h\:bg-green-400:hover, .f\:bg-green-400:focus {
+  html:not(#X) .bg-green-400, .h\:bg-green-400:hover, .f\:bg-green-400:focus,
+  div.meter div {
     background-color: #5fba7d !important;
   }
   span.diff-add, .s-notice__success.s-notice__important {
