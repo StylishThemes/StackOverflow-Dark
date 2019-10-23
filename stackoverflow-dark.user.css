@@ -568,7 +568,8 @@ regexp("^https?:\/\/((?!area51)\w+\.)*?stackexchange\.com.*") {
     background: #151515 !important;
   }
   .top-bar .left-sidebar-toggle:hover,
-  .top-bar .left-sidebar-toggle.topbar-icon-on {
+  .top-bar .left-sidebar-toggle.topbar-icon-on, .s-sidebarwidget,
+  .s-sidebarwidget.module {
     background-color: #191919 !important;
   }
   .top-bar a.-logo:hover {
@@ -1267,7 +1268,8 @@ regexp("^https?:\/\/((?!area51)\w+\.)*?stackexchange\.com.*") {
   .topbar-dialog.achievements-dialog .rep-up, .-activity .-stat.answered {
     color: #92cc09 !important;
   }
-  .answered, .message.success.text-only {
+  .answered, .message.success.text-only,
+  .s-sidebarwidget .s-btn__muted:not(.facebook-login) {
     background-color: transparent !important;
   }
   .answer-votes, .answered .vote-count-post {
