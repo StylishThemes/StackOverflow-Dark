@@ -1872,7 +1872,7 @@ regexp("^https?:\/\/((?!area51)\w+\.)*?stackexchange\.com.*") {
   a.s-link__muted.s-link__visited:hover,
   .s-link.s-link__muted.s-link__visited:hover, a.s-link__muted:active,
   .s-link.s-link__muted:active, a.s-link__muted.s-link__visited:active,
-  .s-link.s-link__muted.s-link__visited:active {
+  .s-link.s-link__muted.s-link__visited:active, .site-footer--copyright p a {
     color: #ccc;
   }
   .ob-post-tag, .ob-user-tag, .deleted-answer .util-bar a, .msg-list .msg-text,
@@ -1881,13 +1881,12 @@ regexp("^https?:\/\/((?!area51)\w+\.)*?stackexchange\.com.*") {
   .company-list .fc-black-500 svg:not(.fc-green-400):not(.fc-orange-400),
   .company-list p, .-settings span, .email-settings .-info p,
   #tags_list span:not(.page-numbers), .s-description, p.fc-black-700,
-  a.s-link__grayscale, .s-link.s-link__grayscale, .site-footer--copyright p a,
+  a.s-link__grayscale, .s-link.s-link__grayscale, .site-footer--copyright p,
   #side-menu ul ul li > a, .comment-link, .sort label[for="sorting-options"],
-  .company-list div.fc-black-500, .site-footer--copyright p {
+  .company-list div.fc-black-500 {
     color: #999 !important;
   }
-  label[for="sorting-options"], .company-list div.fc-black-500,
-  .site-footer--copyright p {
+  label[for="sorting-options"], .company-list div.fc-black-500 {
     color: #666 !important;
   }
   .comment-up-off, .comment-flag, .comment-flag-off,
