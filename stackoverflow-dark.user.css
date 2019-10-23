@@ -1231,9 +1231,12 @@ regexp("^https?:\/\/((?!area51)\w+\.)*?stackexchange\.com.*") {
   .suggested-edit .inserted, .markdown-diff .inserted, .rep-increase,
   .progress-bar .percent, .recommended, .suggested-edit .inserted>div,
   .full-diff .inserted>div, .message.success, .p-highlights .-rep-increase,
-  .s-progress-bar .-fill, .answerBox.accepted, .s-notice__success,
-  .answer.accepted-answer {
+  .s-progress-bar .-fill, .answerBox.accepted, .s-notice__success {
     background: #002810 !important;
+  }
+  #answers .answer.accepted-answer {
+    background: rgba(0, 40, 16, .5) !important;
+    border: 1px solid #13552f !important;
   }
   .fc-green-400, .h\:fc-green-400:hover, .f\:fc-green-400:focus {
     color: #5fba7d !important;
@@ -2261,7 +2264,7 @@ regexp("^https?:\/\/((?!area51)\w+\.)*?stackexchange\.com.*") {
   .accepted-answer a > code, .accepted-answer li > code,
   .accepted-answer .post-text > p > code, .accepted-answer .youarehere,
   .accepted-answer pre:not(.prettyprint) {
-    background: #202a20 !important;
+    background: #222822 !important;
   }
   .description.description-ellipsis .description-content-truncated:after {
     background: linear-gradient(to right, rgba(21, 21, 21, 0), rgba(21, 21, 21, 1) 50%) !important;
