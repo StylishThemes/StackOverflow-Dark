@@ -695,7 +695,6 @@ regexp("^https?:\/\/((?!area51)\w+\.)*?stackexchange\.com.*") {
     box-sizing: border-box !important;
   }
   html:not(#X) #tabs a.youarehere, .tabs a.youarehere {
-    border-color: #555 !important;
     border-bottom-color: transparent !important;
     background: #222 !important;
     margin-top: -3px;
@@ -1420,7 +1419,7 @@ regexp("^https?:\/\/((?!area51)\w+\.)*?stackexchange\.com.*") {
   }
   #tabs a:hover, .tabs a:hover {
     background-color: #292929 !important;
-    border-color: rgba(62, 62, 62, .5) !important;
+    border-color: rgba(62, 62, 62, .1) !important;
     border-bottom-color: transparent !important;
     margin-top: -1px !important;
   }
