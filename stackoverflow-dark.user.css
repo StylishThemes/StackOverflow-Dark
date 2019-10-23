@@ -1972,13 +1972,14 @@ regexp("^https?:\/\/((?!area51)\w+\.)*?stackexchange\.com.*") {
   }
   /* light brown */
   .message.incomplete .message-title {
-    background: #6f4426 !important;
+    background: #592d0d !important;
+    color: #f67400;
   }
   .job-requirements-form .message {
-    background: #532709 !important;
+    background: #421e06 !important;
   }
   div.message.incomplete {
-    border-color: #f67400 !important;
+    border: 1px solid #b05308 !important;
   }
   .page-numbers.current, .page-numbers:hover {
     color: #fff;
