@@ -1994,12 +1994,15 @@ regexp("^https?:\/\/((?!area51)\w+\.)*?stackexchange\.com.*") {
     text-decoration: none !important;
   }
   .tag-synonym-link:hover, a.question-hyperlink:hover, a.answer-hyperlink:hover,
-  a:not([href*=".com"]):not([href*="?page="]):not(.s-link__muted):not(.page-numbers):hover,
-  a:not([href*=".com"]):not([href*="?page="]):not(.s-link__muted):not(.page-numbers):active {
+  a:not([href*=".com"]):not([href*="?page="]):not(.s-link__muted):not(.page-numbers):not(.-link):hover,
+  a:not([href*=".com"]):not([href*="?page="]):not(.s-link__muted):not(.page-numbers):not(.-link):active {
     color: rgba(/*[[base-color-rgb]]*/, .8);
   }
   html a.page-numbers:hover {
     color: #eee;
+  }
+  .html__responsive .site-footer li.-item a.-link:hover {
+    color: #bbb;
   }
   .form-item {
     padding-left: 20px !important;
