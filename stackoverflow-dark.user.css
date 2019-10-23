@@ -1470,8 +1470,15 @@ regexp("^https?:\/\/((?!area51)\w+\.)*?stackexchange\.com.*") {
   .temp-popover.temp-popover__bottom-left .temp-popover--arrow:before,
   .temp-popover.temp-popover__bottom-right .temp-popover--arrow:before,
   .search-form.responsive .filter-pane .popover .popover--arrow:after,
-  .search-form.responsive .filter-pane .popover .popover--arrow:before {
+  .search-form.responsive .filter-pane .popover .popover--arrow:before,
+  .history-table td {
     border-bottom-color: #444 !important;
+  }
+  .league-container {
+    border-bottom-color: #444;
+  }
+  .sidebar-stats td, .sidebar-stats th {
+    border-color: #444;
   }
   a.required-tag, .topbar-dialog.feature-notice-dialog:before,
   .site-footer .-link._expandable:after, .bc-black-2,
@@ -1481,9 +1488,6 @@ regexp("^https?:\/\/((?!area51)\w+\.)*?stackexchange\.com.*") {
   }
   .message .message-tip-top-right:before, .message .message-tip-top-left:before {
     border-bottom-color: #191919 !important;
-  }
-  .history-table td {
-    border-bottom-color: #444 !important;
   }
   .search-form .filter-pane a._active, .search-form .filter-pane a:hover,
   #tabs-interval .youarehere.is-selected,
