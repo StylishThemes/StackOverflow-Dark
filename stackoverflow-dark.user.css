@@ -1588,12 +1588,6 @@ regexp("^https?:\/\/((?!area51)\w+\.)*?stackexchange\.com.*") {
     background: rgba(/*[[base-color-rgb]]*/, .5) !important;
     border-color: rgba(/*[[base-color-rgb]]*/, .7) !important;
   }
-  .hero-box, .filter-show-more {
-    background: #182030 !important;
-  }
-  .newsletters-toggle {
-    background: #182030;
-  }
   .review-actions input, .btn, .chosen-choices .search-choice,
   .topbar-dialog a.btn-secondary, .filter-dashboard, input[type=submit],
   .s-btn.s-btn__filled, .old-hero.z-base {
@@ -1655,13 +1649,20 @@ regexp("^https?:\/\/((?!area51)\w+\.)*?stackexchange\.com.*") {
     background-image: url("https://cdn.sstatic.net/img/hero/pattern.svg"),
            linear-gradient(to right, #121723 0, #182030 100%) !important;
   }
-  .s-hero:after {
+  .hero-box, .filter-show-more, .s-hero:after {
     background: #182030 !important;
+  }
+  .newsletters-toggle {
+    background: #182030;
   }
   .s-notice.s-notice__info {
     background-color: #182030;
     border-color: #035;
     color: #ccc;
+  }
+  .dateNavBox {
+    background-color: #182030;
+    border-color: #035;
   }
   .message.message-info .message-tip-left-top:before {
     border-top-color: #046 !important;
