@@ -1757,9 +1757,13 @@ regexp("^https?:\/\/((?!area51)\w+\.)*?stackexchange\.com.*") {
     box-shadow: 0 0 0 1px rgba(/*[[base-color-rgb]]*/, .5),
      0 0 0 4px rgba(/*[[base-color-rgb]]*/, .1);
   }
-  .s-btn.s-btn__muted:not(.s-btn__outlined) {
-    color: #888;
+  .s-btn.s-btn__muted:not(.s-btn__outlined),
+  .s-sidebarwidget--item .s-btn.s-btn__link {
+    color: #aaa;
     border: none;
+  }
+  .s-btn.s-btn__muted:not(.s-btn__outlined):hover {
+    color: #ddd;
   }
   #tags_list .stats-row, #tags_list .stats-row a,
   #tags_list .stats-row a:visited, .timeline .feature-banner--headline,
