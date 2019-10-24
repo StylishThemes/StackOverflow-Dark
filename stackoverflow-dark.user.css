@@ -871,13 +871,13 @@ regexp("^https?:\/\/((?!area51)\w+\.)*?stackexchange\.com.*") {
     background-color: #191919 !important;
   }
   .jobs-saved-search-editor::before {
-    box-shadow: -1px 1px 0 #555, -3px 1px 3px -1px rgba(0, 0, 0, .11);
-    background: #333;
+    box-shadow: -1px 1px 0 #444, -3px 1px 3px -1px rgba(0, 0, 0, .11);
+    background: #202020;
   }
   html:not(#X) .jobs-saved-search-editor {
-    background: #333 !important;
+    background: #202020 !important;
     box-shadow: 0 1px 3px rgba(0, 0, 0, .1);
-    border-color: #555;
+    border-color: #444;
   }
   .list-card {
     background-color: #232323 !important;
