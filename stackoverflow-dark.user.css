@@ -862,9 +862,14 @@ regexp("^https?:\/\/((?!area51)\w+\.)*?stackexchange\.com.*") {
     background-color: #292929 !important;
     color: #ddd;
   }
-	.s-sidebarwidget, .s-sidebarwidget.module {
-	}
+  .s-sidebarwidget, .s-sidebarwidget.module,
+  .s-sidebarwidget.module .s-sidebarwidget--content.s-sidebarwidget__items {
     background-color: #191919;
+  }
+  #jobs-sidebar-panel .s-sidebarwidget--content.s-sidebarwidget__items,
+  #featured-company-page-ad .company-module {
+    background-color: #191919 !important;
+  }
   .jobs-saved-search-editor::before {
     box-shadow: -1px 1px 0 #555, -3px 1px 3px -1px rgba(0, 0, 0, .11);
     background: #333;
