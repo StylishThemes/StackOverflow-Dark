@@ -568,8 +568,7 @@ regexp("^https?:\/\/((?!area51)\w+\.)*?stackexchange\.com.*") {
     background: #151515 !important;
   }
   .top-bar .left-sidebar-toggle:hover,
-  .top-bar .left-sidebar-toggle.topbar-icon-on, .s-sidebarwidget,
-  .s-sidebarwidget.module {
+  .top-bar .left-sidebar-toggle.topbar-icon-on {
     background-color: #191919 !important;
   }
   .top-bar a.-logo:hover {
@@ -863,6 +862,9 @@ regexp("^https?:\/\/((?!area51)\w+\.)*?stackexchange\.com.*") {
     background-color: #292929 !important;
     color: #ddd;
   }
+	.s-sidebarwidget, .s-sidebarwidget.module {
+		background-color: #181818;
+	}
   .jobs-saved-search-editor::before {
     box-shadow: -1px 1px 0 #555, -3px 1px 3px -1px rgba(0, 0, 0, .11);
     background: #333;
