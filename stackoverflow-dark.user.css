@@ -974,8 +974,8 @@ regexp("^https?:\/\/((?!area51)\w+\.)*?stackexchange\.com.*") {
   .wmd-button-bar.has-active-button .wmd-button:not(.wmd-button__active) {
     opacity: 1;
   }
-  .answer, #system-message, .commentlist, .revision td, #hero-content,
-  .tabs .selected, .rep-card .rep-col, .sort select, .MathJax_MenuDisabled,
+  #system-message, .commentlist, .revision td, #hero-content, .tabs .selected,
+  .rep-card .rep-col, .sort select, .MathJax_MenuDisabled,
   .gsc-option-menu-item-highlighted, .secondary-job-results-identifier,
   .user-page .settings-page .email-settings .-info {
     background: #232323 !important;
@@ -1819,8 +1819,11 @@ regexp("^https?:\/\/((?!area51)\w+\.)*?stackexchange\.com.*") {
   .answered-accepted, .answered-accepted .mini-counts,
   .answered-accepted .minicounts span, .s-btn__muted.s-btn__outlined:hover,
   .s-btn__muted.s-btn__outlined:active, .message.message-info,
-  .s-block-link:hover, .s-block-link:active {
+  .s-block-link:hover, .s-block-link:active, li.s-sidebarwidget--item a:hover {
     color: #eee !important;
+  }
+  li.s-sidebarwidget--item a[aria-current="page"] {
+    color: #fff !important;
   }
   .icon-job-big, .icon-project-opensource-big, .icon-project-apps-big,
   .icon-achievement-big, .icon-education-big, .icon-certification-big,
@@ -1830,8 +1833,8 @@ regexp("^https?:\/\/((?!area51)\w+\.)*?stackexchange\.com.*") {
   }
   /* these arent !important, but we botch them to make them work */
   .nav-links .nav-links--link, .nav-links .nav-links--link:visited,
-  .nav-links .youarehere .nav-links--link .svg-icon, li.s-sidebarwidget--item a,
-  html .job, .label-key, .reputation-score {
+  .nav-links .youarehere .nav-links--link .svg-icon, html .job, .label-key,
+  .reputation-score {
     color: #aaa !important;
   }
   .timeline-item.add .add-item-list .item-add:hover, .val-message,
@@ -1842,7 +1845,6 @@ regexp("^https?:\/\/((?!area51)\w+\.)*?stackexchange\.com.*") {
   }
   .nav-links .nav-links--link:hover, .nav-links .nav-links--link:focus,
   .nav-links .nav-links--link:active, #side-menu ul ul li > a.youarehere,
-  li.s-sidebarwidget--item a:hover,
   .s-sidebarwidget--subnav li[aria-current="page"] a, .site-footer .-title a,
   html .module {
     color: #ddd !important;
@@ -1867,12 +1869,15 @@ regexp("^https?:\/\/((?!area51)\w+\.)*?stackexchange\.com.*") {
   .statscontainer {
     color: #aaa;
   }
-  .post-text, .comment, .topbar-dialog.help-dialog .item-summary,
+  .topbar-dialog.help-dialog .item-summary,
   .topbar-dialog.inbox-dialog .inbox-item .item-content .item-summary,
   .topbar-dialog.modInbox-dialog .inbox-item .item-content .item-summary,
   .topbar-dialog.achievements-dialog .inbox-item .item-content .item-summary,
   .subheader a span, .disabled-link {
     color: #bbb;
+  }
+  li.s-sidebarwidget--item a {
+    color: #bbb !important;
   }
   #top-menu a, .subheader a, .reputation a, .relativetime.old,
   .votes-cast-stats td, #chat .system-message, .card .rep,
@@ -1897,7 +1902,8 @@ regexp("^https?:\/\/((?!area51)\w+\.)*?stackexchange\.com.*") {
   a.s-link__muted.s-link__visited:hover,
   .s-link.s-link__muted.s-link__visited:hover, a.s-link__muted:active,
   .s-link.s-link__muted:active, a.s-link__muted.s-link__visited:active,
-  .s-link.s-link__muted.s-link__visited:active, .site-footer--copyright p a {
+  .s-link.s-link__muted.s-link__visited:active, .site-footer--copyright p a,
+  .post-text, .comment {
     color: #ccc;
   }
   .ob-post-tag, .ob-user-tag, .deleted-answer .util-bar a, .msg-list .msg-text,
@@ -1932,8 +1938,8 @@ regexp("^https?:\/\/((?!area51)\w+\.)*?stackexchange\.com.*") {
   .rep-up.special-rep, .pac-item-query, #content .salary-subheader,
   .salary-skill-legend-li .-score, header.job-details--header a:not(.s-btn),
   .msg-list .list-item.is-unread span,
-  .s-sidebarwidget:not(.s-anchors) a:not(.button):not(.s-btn):not(.post-tag):not(.s-sidebarwidget--action),
-  .s-sidebarwidget:not(.s-anchors) a:not(.button):not(.s-btn):not(.post-tag):not(.s-sidebarwidget--action):visited,
+  .s-sidebarwidget:not(.s-anchors):not(#toc) a:not(.button):not(.s-btn):not(.post-tag):not(.s-sidebarwidget--action),
+  .s-sidebarwidget:not(.s-anchors):not(#toc) a:not(.button):not(.s-btn):not(.post-tag):not(.s-sidebarwidget--action):visited,
   .user-show-new .user-rep-full #stats .accept-indicator-tab {
     color: #ddd !important;
   }
