@@ -2187,8 +2187,11 @@ regexp("^https?:\/\/((?!area51)\w+\.)*?stackexchange\.com.*") {
   html:not(#X) aside.js-highlight-box-reputation .s-progress {
     background-color: #444 !important;
   }
+  button[disabled], input[disabled], a[disabled], .disabled-button {
+    opacity: .7 !important;
+  }
   /* === Images === */
-  .everyonelovesstackoverflow, button[disabled], input[disabled], a[disabled] {
+  .everyonelovesstackoverflow {
     opacity: .3 !important;
   }
   .everyonelovesstackoverflow:empty {
