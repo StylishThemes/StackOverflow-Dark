@@ -888,8 +888,8 @@ regexp("^https?:\/\/((?!area51)\w+\.)*?stackexchange\.com.*") {
     border-right: 12px solid transparent !important;
     border-top: 9px solid #232323 !important;
   }
-  .subtabs a.youarehere, .filter a.youarehere, .subtabs a.active,
-  .filter a.active, .timeline .header-edit-section .empty-description,
+  .filter a.youarehere, .subtabs a.active, .filter a.active,
+  .timeline .header-edit-section .empty-description,
   .timeline .feature-banner__background, .user-page .settings-page h1,
   .inner-container, .tag-editor:not(.s-input),
   .container .chosen-container .chosen-choices,
@@ -902,10 +902,13 @@ regexp("^https?:\/\/((?!area51)\w+\.)*?stackexchange\.com.*") {
   .user-page .settings-page .email-settings .-settings tr:not(:last-child) td {
     border-color: #555;
   }
-  .subtabs.user-panel-subtabs a.youarehere {
+  .subtabs.user-panel-subtabs a.youarehere, .subtabs.user-tab-sorts a.youarehere {
     border-left: none !important;
     border-right: none !important;
     border-top: none !important;
+  }
+  #user-tab-questions div.subheader .user-tab-sorts {
+    padding-top: 2px;
   }
   .subtabs.user-panel-subtabs a:hover {
     color: #eee !important;
@@ -1429,13 +1432,14 @@ regexp("^https?:\/\/((?!area51)\w+\.)*?stackexchange\.com.*") {
   .nav-links li a:hover, .nav-links li a:focus {
     background-color: transparent !important;
   }
-  #tabs a:hover, .tabs a:hover {
+  #tabs a:hover, .tabs a:not(.youarehere):hover {
     background-color: #292929 !important;
     border-color: rgba(62, 62, 62, .1) !important;
     border-bottom-color: transparent !important;
     margin-top: -1px !important;
   }
-  .subheader #tabs a:hover, .subheader .tabs a:hover {
+  .subheader #tabs a:hover, .subheader .tabs a:not(.youarehere):hover,
+  .subheader.user-full-tab-header .subtabs.user-tab-sorts {
     margin-top: 3px !important;
   }
   .highcharts-container rect[fill="#FFFFFF"], rect[fill="rgb(255, 255, 255)"] {
