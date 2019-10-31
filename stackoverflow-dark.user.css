@@ -2983,12 +2983,13 @@ regexp("^https?:\/\/((?!area51)\w+\.)*?stackexchange\.com.*") {
     border-bottom-color: rgba(/*[[base-color-rgb]]*/, .3) !important;
     border-right-color: rgba(/*[[base-color-rgb]]*/, .5) !important;
   }
-  a:hover .ob-post-tag, a:hover .ob-user-tag, #sidebar-content div a.tag:hover {
+  a:hover .ob-post-tag, a:hover .ob-user-tag, #sidebar-content div a.tag:hover,
+  .roomcard-xxl .tag:hover {
     color: /*[[base-color]]*/;
     background-color: rgba(/*[[base-color-rgb]]*/, .4) !important;
     border-color: rgba(/*[[base-color-rgb]]*/, .6) !important;
   }
-  .ob-post-tag, #sidebar-content div a.tag {
+  .ob-post-tag, #sidebar-content div a.tag, .roomcard-xxl .tag {
     color: /*[[base-color]]*/ !important;
     background-color: rgba(/*[[base-color-rgb]]*/, .2) !important;
     border-color: rgba(/*[[base-color-rgb]]*/, .5) !important;
