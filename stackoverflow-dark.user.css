@@ -574,6 +574,11 @@ regexp("^https?:\/\/((?!area51)\w+\.)*?stackexchange\.com.*") {
   .top-bar a.-logo:hover {
     background: #000 !important;
   }
+  .answer {
+    background: rgba(35, 35, 35, .69);
+    border-left: 1px solid #555;
+    border-right: 1px solid #555;
+  }
   .bg-black-025, .h\:bg-black-025:hover, .f\:bg-black-025:focus {
     background: #282828 !important;
   }
