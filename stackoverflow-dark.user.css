@@ -1250,6 +1250,21 @@ regexp("^https?:\/\/((?!area51)\w+\.)*?stackexchange\.com.*") {
   .s-progress-bar .-fill, .answerBox.accepted, .s-notice__success {
     background: #002810 !important;
   }
+  /* prevent animation from breaking while loading  issue #187 */
+  @keyframes blinking {
+    from {
+      background: rgba(0, 40, 16, .8);
+    }
+    to {
+      background: rgba(0, 40, 16, .5);
+    }
+  }
+  #answers .answer.accepted-answer[style*="background-color"] {
+    animation-name: blinking !important;
+    background: #001c0b !important;
+    border: 1px solid #13552f !important;
+  }
+  /* Assign */
   #answers .answer.accepted-answer {
     background: rgba(0, 40, 16, .5) !important;
     border: 1px solid #13552f !important;
