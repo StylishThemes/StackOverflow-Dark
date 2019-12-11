@@ -26,13 +26,13 @@
     "clean": "npm run perfectionist && node tools/fix-perfectionist.js",
     "eslint": "eslint --quiet --color tools/*.js",
     "lint": "npm run eslint && npm run stylelint",
-    "patch": "npx versions -p patch stackoverflow-dark.user.css",
-    "minor": "npx versions -p minor stackoverflow-dark.user.css",
-    "major": "npx versions -p major stackoverflow-dark.user.css",
+    "patch": "versions -p -C patch stackoverflow-dark.user.css",
+    "minor": "versions -p -C minor stackoverflow-dark.user.css",
+    "major": "versions -p -C major stackoverflow-dark.user.css",
     "perfectionist": "perfectionist stackoverflow-dark.user.css stackoverflow-dark.user.css --indentSize 2 --maxAtRuleLength 250",
     "stylelint": "stylelint --color -- stackoverflow-dark.user.css",
     "test": "npm run eslint && npm run stylelint",
-    "update": "npx updates -cuU && npx rimraf node_modules && npm install",
+    "update": "updates -cuU && rimraf node_modules && npm install",
     "usercss": "node tools/add-themes.js && node tools/update-usercss.js"
   }
 }
