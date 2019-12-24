@@ -199,8 +199,8 @@ regexp("^https?:\/\/((?!area51)\w+\.)*?stackexchange\.com.*") {
   .s-sidebarwidget--item[aria-current="page"]:before,
   .s-sidebarwidget--item > :first-child[aria-current="page"]:before,
   .topbar-dialog.siteSwitcher-dialog .current-site-container, .s-btn__primary,
-	.min-ds-wizard .min-ds-box.jobs .min-ds-content .tag-editor-wrapper .tag-editor.hover,
-	.min-ds-wizard .min-ds-box.jobs .min-ds-content .tag-editor-wrapper .tag-editor.focus {
+  .min-ds-wizard .min-ds-box.jobs .min-ds-content .tag-editor-wrapper .tag-editor.hover,
+  .min-ds-wizard .min-ds-box.jobs .min-ds-content .tag-editor-wrapper .tag-editor.focus {
     border-color: /*[[base-color]]*/ !important;
   }
   .top-bar {
@@ -322,6 +322,18 @@ regexp("^https?:\/\/((?!area51)\w+\.)*?stackexchange\.com.*") {
   /* hack around to prevent pagination hover issues on stackexchage */
   a[href]:hover {
     color: rgba(/*[[base-color-rgb]]*/, .8);
+  }
+  .s-pagination--item.is-selected {
+    background-color: rgba(/*[[base-color-rgb]]*/, .8);
+  }
+  .s-pagination--item {
+    border-color: #555;
+    color: #ccc;
+  }
+  .s-pagination--item:hover {
+    background-color: rgba(/*[[base-color-rgb]]*/, .8) !important;
+    border-color: #555;
+    color: #eee !important;
   }
   /* end hack */
   html:not(#X) #tabs a, html:not(#X) .tabs a:not([href]) {
