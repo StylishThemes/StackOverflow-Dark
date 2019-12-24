@@ -1106,12 +1106,6 @@ regexp("^https?:\/\/((?!area51)\w+\.)*?stackexchange\.com.*") {
   #post-text-container div span {
     background: #c1beba !important;
   }
-  html:not(#X) .post-text a img {
-    filter: brightness(70%);
-  }
-  html:not(#X) .post-text a img:hover {
-    opacity: .9 !important;
-  }
   .-logo img, img#gh-logo.bg-white {
     background: #ddd !important;
   }
@@ -2257,9 +2251,8 @@ regexp("^https?:\/\/((?!area51)\w+\.)*?stackexchange\.com.*") {
     color: #fd0 !important;
   }
   .post-text img {
-    background: #fff !important;
+    background: inherit;
     opacity: /*[[img-opacity]]*/;
-    border: 2px solid #666;
     transition: opacity .5s ease;
   }
   .post-text img:hover {
