@@ -198,7 +198,9 @@ regexp("^https?:\/\/((?!area51)\w+\.)*?stackexchange\.com.*") {
   .s-sidebarwidget--item > :first-child[aria-current="true"]:before,
   .s-sidebarwidget--item[aria-current="page"]:before,
   .s-sidebarwidget--item > :first-child[aria-current="page"]:before,
-  .topbar-dialog.siteSwitcher-dialog .current-site-container, .s-btn__primary {
+  .topbar-dialog.siteSwitcher-dialog .current-site-container, .s-btn__primary,
+	.min-ds-wizard .min-ds-box.jobs .min-ds-content .tag-editor-wrapper .tag-editor.hover,
+	.min-ds-wizard .min-ds-box.jobs .min-ds-content .tag-editor-wrapper .tag-editor.focus {
     border-color: /*[[base-color]]*/ !important;
   }
   .top-bar {
