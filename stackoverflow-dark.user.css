@@ -2254,7 +2254,7 @@ regexp("^https?:\/\/((?!area51)\w+\.)*?stackexchange\.com.*") {
   .s-progress__gold .s-progress--bar, .badge-top._badge1 .-name {
     background-color: #957000 !important; /* gold */
   }
-  .s-progress {
+  .s-progress, .pico-content {
     background-color: #292929;
   }
   .s-progress--label, .hero-box .column,
