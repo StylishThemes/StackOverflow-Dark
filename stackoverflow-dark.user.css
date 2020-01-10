@@ -3700,7 +3700,7 @@ regexp("^https?:\/\/((?!area51)\w+\.)*?stackexchange\.com.*") {
     background: rgba(0, 0, 0, .3) !important;
   }
   .answered-accepted .mini-counts {
-    background-color: /*[[base-color]]*/  !important;
+    background-color: /*[[base-color]]*/ !important;
   }
 }
 @-moz-document domain("wordpress.stackexchange.com") {
