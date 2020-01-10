@@ -497,8 +497,8 @@ regexp("^https?:\/\/((?!area51)\w+\.)*?stackexchange\.com.*") {
   input[type="button"]:not(.s-btn)._disabled, button:not(.s-btn)._disabled,
   .button._disabled, a.button._disabled, a.button:visited._disabled,
   .btn._disabled {
-    color: #fff !important;
-    background-color: #aaa !important;
+    color: #aaa !important;
+    background-color: #555 !important;
     border-color: #555 !important;
   }
   .f-radio-toggle._muted .f-label {
