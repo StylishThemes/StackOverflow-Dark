@@ -1082,7 +1082,10 @@ regexp("^https?:\/\/((?!area51)\w+\.)*?stackexchange\.com.*") {
     color: #ccc !important;
   }
   .modal.image-upload .modal-dropzone-default,
-  .modal.image-upload .modal-dropzone-preview {
+  .modal.image-upload .modal-dropzone-preview,
+  .search-form.responsive .filter-pane .chosen-container .chosen-choices,
+  .chosen-container .chosen-drop,
+  .search-form.responsive .filter-pane .tag-editor {
     border-color: #555;
   }
   .modal.image-upload .modal-dropzone-default:hover,
