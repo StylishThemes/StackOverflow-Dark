@@ -3762,10 +3762,36 @@ regexp("^https?:\/\/((?!area51)\w+\.)*?stackexchange\.com.*") {
     color: #b571e2 !important;
   }
 }
-@-moz-document regexp("https?://stackoverflow.com/(enterprise|teams).*") {
+@-moz-document regexp("https?://stackoverflow\.com/(enterprise|teams|talent|advertising).*") {
   img.wmx100 {
     filter: invert(1) hue-rotate(180deg) contrast(100%) brightness(400%);
     mix-blend-mode: exclusion;
+  }
+  .p-bg-white-tint, .p-bg-blue-tint {
+    background: #222;
+  }
+  .bg-black-300, .h\:bg-black-300:hover, .f\:bg-black-300:focus {
+    background-color: #444 !important;
+  }
+  .p-bg-blue, .s-navigation--item.is-selected {
+    background-color: rgba(65, 131, 196, .6) !important;
+    background-color: rgba(/*[[base-color-rgb]]*/, .6) !important;
+  }
+  .p-fc-blue, h2.p-fc-blue {
+    color: /*[[base-color]]*/ !important;
+  }
+  .fc-powder-900 {
+    color: #999 !important;
+  }
+  .p-bg-beige-pastel, .p-bg-blue-pastel {
+    background: #282828;
+  }
+  .p-bg-yellow {
+    background: #ffb500;
+    color: #111 !important;
+  }
+  .h\:p-bg-yellow-tint:hover {
+    background: #f1ab00 !important;
   }
 }
 @-moz-document regexp("https?://stackexchange.com/(about|performance|leagues|sites\#)\.*"), regexp("https?://stackexchange.com/about/(moderators|security)\.*") {
