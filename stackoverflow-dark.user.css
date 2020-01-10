@@ -472,8 +472,7 @@ regexp("^https?:\/\/((?!area51)\w+\.)*?stackexchange\.com.*") {
   input[type="button"].btn-outlined.-gray.youarehere,
   button.btn-outlined.-gray.youarehere, .btn-outlined.-gray.youarehere,
   .chosen-container .chosen-results .active-result.highlighted,
-  .avatar-change:hover
-   .nav li, .seNav, .topbar a.topbar-icon-on,
+  .avatar-change:hover, .nav li, .seNav, .topbar a.topbar-icon-on,
   .topbar a.topbar-icon-on:hover, .nav a, .module li.current, .seCurrent,
   .community-bulletin, .owner-revision td, .markdown-diff .skip,
   #footer .container, .body-diffs .skip, .newsletter-anon,

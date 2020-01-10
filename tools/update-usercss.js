@@ -27,7 +27,7 @@ function addVars(template, usercss) {
         .join("\n  ")}\n}`;
     return `@advanced ${e.type} ${e.label} "${key}" ` +
       // Wrap url(...) in quotes
-      `${v.includes("url(") ? '"' + v + '"' : v}`;
+      `${v.includes("url(") ? `"${v}"` : v}`;
   }).join("\n");
   return replaceHolders(
     pkg,
@@ -45,5 +45,5 @@ fs.readFile(files.template, "utf8")
       .then(usercss => addVars(template, usercss))
   )
   .then(css => fs.writeFile(files.usercss, css))
-  .then(() => console.log("\x1b[32m%s\x1b[0m", `${pkg.title} usercss update complete`))
+  .then(() => console.info("\x1b[32m%s\x1b[0m", `${pkg.title} usercss update complete`))
   .catch(exit);
