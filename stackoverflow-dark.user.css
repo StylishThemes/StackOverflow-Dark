@@ -368,7 +368,8 @@ regexp("^https?:\/\/((?!area51)\w+\.)*?stackexchange\.com.*") {
   }
   .s-btn.s-btn__primary:hover, .top-bar .-secondary .-ctas .btn-topbar-clear,
   .top-bar .-secondary .-ctas .btn-topbar-clear:focus, .s-btn__primary:focus,
-  .s-btn:focus {
+  .s-btn:focus,
+  .min-ds-wizard .min-ds-box.jobs .min-ds-content .tag-editor-wrapper .tag-editor .post-tag .delete-tag {
     filter: brightness(120%) !important;
   }
   .s-btn, .s-btn:focus {
@@ -726,6 +727,9 @@ regexp("^https?:\/\/((?!area51)\w+\.)*?stackexchange\.com.*") {
     background-color: #111 !important;
     border-color: #191919 !important;
     filter: brightness(350%) !important;
+  }
+  .chosen-container-multi .chosen-choices li.search-choice .search-choice-close:hover {
+    filter: brightness(250%);
   }
   .timeline-item, .timeline-item.add header, .timeline-item.job header,
   .timeline-item.edit header {
