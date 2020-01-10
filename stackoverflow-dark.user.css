@@ -333,7 +333,7 @@ regexp("^https?:\/\/((?!area51)\w+\.)*?stackexchange\.com.*") {
   .s-pagination--item:hover {
     background-color: rgba(/*[[base-color-rgb]]*/, .8) !important;
     border-color: #555;
-    color: #eee !important;
+    color: #ccc;
   }
   /* end hack */
   html:not(#X) #tabs a, html:not(#X) .tabs a:not([href]) {
@@ -666,7 +666,7 @@ regexp("^https?:\/\/((?!area51)\w+\.)*?stackexchange\.com.*") {
   .s-sidebarwidget--item[aria-current="page"],
   .s-sidebarwidget--item > :first-child[aria-current="page"],
   .user-page .settings-page .email-settings .-settings td.-desc strong,
-  #logins-table .pretty-login {
+  #logins-table .pretty-login, .activity-status-prompt > .-fields > .-label {
     color: #ccc;
   }
   .top-bar .navigation .-link:hover, .top-bar .navigation .-link:focus {
@@ -897,9 +897,6 @@ regexp("^https?:\/\/((?!area51)\w+\.)*?stackexchange\.com.*") {
     background-color: #395697;
     filter: brightness(110%);
   }
-  .s-btn.google-login, .stackexchange-login, html .s-btn__google {
-    color: #aaa !important;
-  }
   html:not(#X) .s-btn.google-login:hover,
   html:not(#X) .stackexchange-login:hover, html .s-btn__google:hover {
     color: #eee !important;
@@ -979,9 +976,6 @@ regexp("^https?:\/\/((?!area51)\w+\.)*?stackexchange\.com.*") {
   .subtabs.user-panel-subtabs a:hover,
   .s-navigation .s-navigation--item.is-selected:hover {
     color: #eee !important;
-  }
-  .s-navigation .s-navigation--item {
-    color: #aaa;
   }
   .s-navigation .s-navigation--item:hover,
   .s-navigation .s-navigation--item:active {
@@ -1796,9 +1790,6 @@ regexp("^https?:\/\/((?!area51)\w+\.)*?stackexchange\.com.*") {
   svg.svg-icon.iconSearch path {
     fill: #ddd !important;
   }
-  .fc-black-400, .fc-black-600, .started-link, .question-hyperlink {
-    color: #aaa !important;
-  }
   /* patch for hint text of SurfingKeys browser extension */
   #sk_hints div {
     color: #000 !important;
@@ -1904,7 +1895,9 @@ regexp("^https?:\/\/((?!area51)\w+\.)*?stackexchange\.com.*") {
   /* these arent !important, but we botch them to make them work */
   .nav-links .nav-links--link, .nav-links .nav-links--link:visited,
   .nav-links .youarehere .nav-links--link .svg-icon, html .job, .label-key,
-  .reputation-score {
+  .reputation-score, .fc-black-400, .fc-black-600, .started-link,
+  .question-hyperlink, .s-btn.google-login, .stackexchange-login,
+  html .s-btn__google {
     color: #aaa !important;
   }
   .timeline-item.add .add-item-list .item-add:hover, .val-message,
@@ -1936,7 +1929,7 @@ regexp("^https?:\/\/((?!area51)\w+\.)*?stackexchange\.com.*") {
   .achievements-dialog .utc-clock, .placeholder-text,
   .timeline-sidebar .timeline-sidebar-module .privacy-helper,
   .s-stat .-description, .top-bar .-secondary .-link, .post-menu > a,
-  .statscontainer {
+  .statscontainer, .s-navigation .s-navigation--item {
     color: #aaa;
   }
   .topbar-dialog.help-dialog .item-summary,
@@ -2255,7 +2248,8 @@ regexp("^https?:\/\/((?!area51)\w+\.)*?stackexchange\.com.*") {
   .s-progress--label, .hero-box .column,
   .company-module .-details .-benefits li .-text,
   .faq-page #mainbar .col-section .col-section h2 a,
-  .faq-page #mainbar .col-section .col-section h3 a {
+  .faq-page #mainbar .col-section .col-section h3 a, label:not(.s-label),
+  .label:not(.s-label) {
     color: #aaa;
   }
   html:not(#X) aside.js-highlight-box-reputation .s-progress {
