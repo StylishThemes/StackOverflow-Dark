@@ -412,9 +412,6 @@ regexp("^https?:\/\/((?!area51)\w+\.)*?stackexchange\.com.*") {
   .profile-avatar {
     box-shadow: inset 0 10em 0 #333 !important;
   }
-  .avatar-change:hover {
-    background-color: #333 !important;
-  }
   .menu-switcher {
             filter: none !important;
     -webkit-filter: none !important;
@@ -468,7 +465,25 @@ regexp("^https?:\/\/((?!area51)\w+\.)*?stackexchange\.com.*") {
   button.btn-outlined.gray.youarehere, .btn-outlined.gray.youarehere,
   input[type="submit"].btn-outlined.-gray.youarehere,
   input[type="button"].btn-outlined.-gray.youarehere,
-  button.btn-outlined.-gray.youarehere, .btn-outlined.-gray.youarehere {
+  button.btn-outlined.-gray.youarehere, .btn-outlined.-gray.youarehere,
+  .chosen-container .chosen-results .active-result.highlighted,
+  .avatar-change:hover
+   .nav li, .seNav, .topbar a.topbar-icon-on,
+  .topbar a.topbar-icon-on:hover, .nav a, .module li.current, .seCurrent,
+  .community-bulletin, .owner-revision td, .markdown-diff .skip,
+  #footer .container, .body-diffs .skip, .newsletter-anon,
+  .tag-suggestions>div:hover, .topbar-dialog .modal-content li:hover,
+  .timestamp:hover+div.message .meta, div.message:hover .meta,
+  #side-menu ul li a:hover, .conversation-info, .message.reply-parent,
+  .message.reply-child, .sidebar-element .list li .rep-and-badges,
+  .congrats .actions, .tag-suggestions>div:focus,
+  .current-site a.site-link:hover, #sub-navs>a:hover, #sub-navs .menu-item:hover,
+  .popup-close .-link:hover, .p-highlights .-reputation .-meta-rep,
+  .nav-left-col a.is-active,
+  .comment__highlight:not([style*="background-color"]),
+  ul.comments-list .comment__highlight .comment-text,
+  ul.comments-list .comment__highlight .comment-actions,
+  .l-main-col .btn-secondary:hover, .modal.image-upload .modal-dropzone-default {
     background-color: #333 !important;
   }
   input[type="submit"]:not(.s-btn)[disabled],
@@ -1063,23 +1078,6 @@ regexp("^https?:\/\/((?!area51)\w+\.)*?stackexchange\.com.*") {
   .question-container.unread, .comments-wrap {
     background: #333 !important;
     color: #ccc !important;
-  }
-  .nav li, .seNav, .topbar a.topbar-icon-on, .topbar a.topbar-icon-on:hover,
-  .nav a, .module li.current, .seCurrent, .community-bulletin,
-  .owner-revision td, .markdown-diff .skip, #footer .container,
-  .body-diffs .skip, .newsletter-anon, .tag-suggestions>div:hover,
-  .topbar-dialog .modal-content li:hover, .timestamp:hover+div.message .meta,
-  div.message:hover .meta, #side-menu ul li a:hover, .conversation-info,
-  .message.reply-parent, .message.reply-child,
-  .sidebar-element .list li .rep-and-badges, .congrats .actions,
-  .tag-suggestions>div:focus, .current-site a.site-link:hover, #sub-navs>a:hover,
-  #sub-navs .menu-item:hover, .popup-close .-link:hover,
-  .p-highlights .-reputation .-meta-rep, .nav-left-col a.is-active,
-  .comment__highlight:not([style*="background-color"]),
-  ul.comments-list .comment__highlight .comment-text,
-  ul.comments-list .comment__highlight .comment-actions,
-  .l-main-col .btn-secondary:hover, .modal.image-upload .modal-dropzone-default {
-    background-color: #333 !important;
   }
   .modal.image-upload .modal-dropzone-default,
   .modal.image-upload .modal-dropzone-preview {
