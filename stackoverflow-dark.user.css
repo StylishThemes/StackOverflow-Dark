@@ -534,6 +534,13 @@ regexp("^https?:\/\/((?!area51)\w+\.)*?stackexchange\.com.*") {
     background-color: #111 !important;
     color: #ddd !important;
   }
+  img[src*="robot-raising-hand"] {
+    filter: invert(1) hue-rotate(180deg);
+    mix-blend-mode: exclusion;
+  }
+  img[src*="list-"] {
+    filter: grayscale(1);
+  }
   img[src*="illo-feats-vote.svg"], img[src*="illo-feats-tags.svg"],
   img[src*="illo-feats-answer.svg"], img[src*="illo-feats-accept.svg"],
   img[src*="illo-feats-ask.svg"], img[src*="ask-a-question.svg"],
