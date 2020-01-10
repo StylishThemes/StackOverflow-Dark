@@ -1393,6 +1393,14 @@ regexp("^https?:\/\/((?!area51)\w+\.)*?stackexchange\.com.*") {
     background-color: #300;
     border-color: #e33;
   }
+  .min-ds-wizard .min-ds-box.jobs .min-ds-content .tag-editor-wrapper .tag-editor.error {
+    border-color: #e33;
+  }
+  .input-group.has-error .f-input, .input-group.has-error .tag-editor,
+  .input-group.has-error .autocomplete input,
+  .input-group.has-error .f-select select {
+    border-color: #e33 !important;
+  }
   .deleted-answer, .suggested-edit .deleted, .markdown-diff .deleted,
   .suggested-edit .deleted>div, .full-diff .deleted>div,
   .realtime-post-deleted-notification p, .message.incomplete, .message.error,
