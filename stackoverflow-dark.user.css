@@ -165,7 +165,9 @@ regexp("^https?:\/\/((?!area51)\w+\.)*?stackexchange\.com.*") {
   .topbar-dialog a:not(.btn-secondary):not(.nav-links--link):visited:hover,
   .user-details h1 a, .default-profile-site a, .answer-hyperlink,
   .answer-hyperlink:hover, .topbar-dialog .unread-item .unread-bold,
-  .started .mod-flair, .started a:not(.started-link) {
+  .started .mod-flair, .started a:not(.started-link),
+  .search-form.responsive .added-filters .-clear-filters a,
+  .search-form.responsive .added-filters .-more a {
     color: /*[[base-color]]*/;
   }
   .subheader h1 a, input[type="submit"].btn-clear,
@@ -1713,6 +1715,18 @@ regexp("^https?:\/\/((?!area51)\w+\.)*?stackexchange\.com.*") {
     color: /*[[base-color]]*/ !important;
     background-color: rgba(/*[[base-color-rgb]]*/, .2);
     border-color: rgba(/*[[base-color-rgb]]*/, .5) !important;
+  }
+  .search-form.responsive .added-filters .post-tag.disliked,
+  .tag-editor-wrapper #td ~ .tag-editor .post-tag,
+  .tag-editor-wrapper #td ~ .tag-suggestions .post-tag {
+    color: #ccc !important;
+    background-color: rgba(51, 51, 51, .8) !important;
+    border-color: rgba(119, 119, 119, .8) !important;
+  }
+  .search-form.responsive .added-filters .post-tag.disliked:hover {
+    color: #eee !important;
+    background-color: #777 !important;
+    border-color: #777 !important;
   }
   .s-btn__muted.s-btn__outlined.is-selected, .youarehere:hover,
   .youarehere.is-selected, .nav-links .youarehere .nav-links--link, .s-tag:hover {
