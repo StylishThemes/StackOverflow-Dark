@@ -2079,6 +2079,9 @@ regexp("^https?:\/\/((?!area51)\w+\.)*?stackexchange\.com.*") {
   #mainbar .grid a .iconRss, .mini-counts.hot {
     color: #f67400 !important;
   }
+  svg.iconRss path {
+    fill: #f67400 !important;
+  }
   html:not(#X) .bg-orange-400 {
     background-color: #f48024 !important;
   }
