@@ -368,6 +368,16 @@ regexp("^https?:\/\/((?!area51)\w+\.)*?stackexchange\.com.*") {
     background-color: rgba(65, 131, 196, .6) !important;
     background-color: rgba(/*[[base-color-rgb]]*/, .6) !important;
   }
+  .jobsfooter .footerContent > a, .companiesfooter .footerContent > a {
+    color: #777 !important;
+    border: 1px solid #555;
+  }
+  .jobsfooter .footerContent > a:hover,
+  .companiesfooter .footerContent > a:hover {
+    background-color: rgba(65, 131, 196, .6) !important;
+    background-color: rgba(/*[[base-color-rgb]]*/, .6) !important;
+    color: #ccc !important;
+  }
   .s-btn.s-btn__primary:hover, .top-bar .-secondary .-ctas .btn-topbar-clear,
   .top-bar .-secondary .-ctas .btn-topbar-clear:focus, .s-btn__primary:focus,
   .s-btn:focus,
