@@ -385,6 +385,10 @@ regexp("^https?:\/\/((?!area51)\w+\.)*?stackexchange\.com.*") {
     background-color: rgba(65, 131, 196, .6) !important;
     background-color: rgba(/*[[base-color-rgb]]*/, .2) !important;
   }
+  .s-btn[disabled] {
+    color: #777;
+    background-color: #333;
+  }
   .top-bar .-secondary .-ctas .btn-topbar-clear {
     border-color: transparent !important;
   }
