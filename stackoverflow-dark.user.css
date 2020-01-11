@@ -1588,7 +1588,7 @@ regexp("^https?:\/\/((?!area51)\w+\.)*?stackexchange\.com.*") {
   .history-table td {
     border-bottom-color: #444 !important;
   }
-  .league-container {
+  .league-container, .-job {
     border-bottom-color: #444;
   }
   .sidebar-stats td, .sidebar-stats th {
