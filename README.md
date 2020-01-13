@@ -22,7 +22,7 @@ This dark theme applied to Stack Overflow and almost all Stack Exchange sites (e
 
 ## Preview
 
-![Stack Overflow Dark preview](images/screenshots/after.png)
+![Stack Overflow Dark preview](images/screenshots/before-after.gif)
 
 ## Installation
 
