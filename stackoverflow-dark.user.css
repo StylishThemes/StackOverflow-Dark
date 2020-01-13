@@ -908,7 +908,7 @@ regexp("^https?:\/\/((?!area51)\w+\.)*?stackexchange\.com.*") {
   }
   .facebook-login, .facebook-login:hover, .s-btn__facebook.facebook-login {
     color: #eee !important;
-    background-color: #395697;
+    background-color: #395697 !important;
   }
   html:not(#X) .s-btn__facebook {
     color: #eee !important;
