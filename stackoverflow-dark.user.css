@@ -3768,6 +3768,22 @@ regexp("^https?:\/\/((?!area51)\w+\.)*?stackexchange\.com.*") {
     color: #eee !important;
   }
 }
+@-moz-document domain("blender.stackexchange.com") {
+  .site-footer--copyright p {
+    color: #bbb !important;
+  }
+  .site-footer .-link {
+    color: #ccc;
+  }
+  .site-footer .-link:hover, .site-footer--copyright p a,
+  .site-footer--copyright p a:visited {
+    color: #ddd !important;
+  }
+  .site-footer .-title, .site-footer .-title a,
+  .site-footer--copyright p a:hover {
+    color: #eee !important;
+  }
+}
 @-moz-document domain("data.stackexchange.com") {
   .cm-sql-word, .relativetime, .profiler-number, #query-options .options,
   #query-options label {
