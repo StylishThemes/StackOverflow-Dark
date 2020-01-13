@@ -2916,11 +2916,6 @@ regexp("^https?:\/\/((?!area51)\w+\.)*?stackexchange\.com.*") {
   }
 }
 @-moz-document domain("worldbuilding.stackexchange.com"), url-prefix("https://worldbuilding.stackexchange.com/users/login") {
-  #footer.site-footer {
-    background-color: #222 !important;
-    background-image: none !important;
-    color: #eee !important;
-  }
   .s-btn.s-btn__primary {
     border-color: /*[[base-color]]*/;
   }
@@ -2947,6 +2942,15 @@ regexp("^https?:\/\/((?!area51)\w+\.)*?stackexchange\.com.*") {
     border-color: #666 !important;
     background-color: #282828 !important;
     color: #eee !important;
+  }
+  #footer.site-footer {
+    background-color: rgba(0, 0, 0, .5) !important;
+    background-image: none !important;
+    color: #eee !important;
+  }
+  /* becasue we remove bg image padding must be adjustedalso */
+  .site-footer {
+    padding-top: 0;
   }
 }
 @-moz-document domain("chat.stackoverflow.com") {
