@@ -3764,6 +3764,9 @@ regexp("^https?:\/\/((?!area51)\w+\.)*?stackexchange\.com.*") {
   a.question-hyperlink:hover {
     color: #aaa !important;
   }
+  .site-footer {
+    color: #eee !important;
+  }
 }
 @-moz-document domain("data.stackexchange.com") {
   .cm-sql-word, .relativetime, .profiler-number, #query-options .options,
