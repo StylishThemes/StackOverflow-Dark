@@ -740,7 +740,7 @@ regexp("^https?:\/\/((?!area51)\w+\.)*?stackexchange\.com.*") {
   .CodeMirror, .CodeMirror-gutters, .badge-progress.completed,
   .item-select-table .item, .title-box, .-list-item, .bg-powder-050,
   .textarea-with-counter .-counter, .temp-popover, .google-login, .btn._google,
-  .s-popover {
+  .s-popover, #user-menu {
     background-color: #191919 !important;
     border-color: #444 !important;
   }
