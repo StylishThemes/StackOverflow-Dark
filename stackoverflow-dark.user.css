@@ -2422,6 +2422,13 @@ regexp("^https?:\/\/((?!area51)\w+\.)*?stackexchange\.com.*") {
   |_| |_____|___|__,|_,_|___|
  */
 @-moz-document domain("stackexchange.com") {
+  header.siteHeader h1 {
+    background: transparent url('https://cdn.sstatic.net/stackexchange/img/se-logo.png?v=8f7dca5b94db') no-repeat left top !important;
+    filter: invert(80%) hue-rotate(180deg) contrast(160%);
+  }
+  html #footer.site-footer {
+    background: rgba(0, 0, 0, .5) !important;
+  }
   #question-mini-list .summary .question-hyperlink {
     color: #aaa !important;
   }
