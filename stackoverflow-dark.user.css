@@ -2657,6 +2657,11 @@ regexp("^https?:\/\/((?!area51)\w+\.)*?stackexchange\.com.*") {
     filter: invert(1) hue-rotate(180deg) saturate(900%) brightness(200%);
   }
 }
+@-moz-document domain("music.stackexchange.com") {
+  .site-header {
+    background-color: #ffd972 !important;
+  }
+}
 @-moz-document regexp("^https?://((unix|skeptics|math)\\.)?stackexchange\\.com.*") {
   .site-header .wmx100 {
     filter: invert(1) hue-rotate(180deg);
