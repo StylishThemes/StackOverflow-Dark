@@ -640,27 +640,22 @@ regexp("^https?:\/\/((?!area51)\w+\.)*?stackexchange\.com.*") {
   .timeline .readings .readings-list .readings-item {
     background: #151515 !important;
   }
-  #post-job {
-    background: #202020;
-  }
   .top-bar .left-sidebar-toggle:hover,
   .top-bar .left-sidebar-toggle.topbar-icon-on {
     background-color: #191919 !important;
   }
-  .top-bar a.-logo:hover {
-    background: #000 !important;
+  #post-job, .top-bar a.-logo.topbar-icon-on, .company-module footer,
+  .company-module > header > h2, .company-module .-details strong span {
+    background: #202020;
   }
   .answer {
     background: rgba(35, 35, 35, .69);
     border-left: 1px solid #555;
     border-right: 1px solid #555;
   }
-  .bg-black-025, .h\:bg-black-025:hover, .f\:bg-black-025:focus {
+  .bg-black-025, .h\:bg-black-025:hover, .f\:bg-black-025:focus,
+  .top-bar a.-logo:hover {
     background: #282828 !important;
-  }
-  .company-module footer, .company-module > header > h2,
-  .company-module .-details strong span {
-    background: #202020;
   }
   .top-bar .-secondary .-item._active,
   .top-bar .-secondary .-item .-link.topbar-icon-on,
