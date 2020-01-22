@@ -405,6 +405,11 @@ regexp("^https?:\/\/((?!area51)\w+\.)*?stackexchange\.com.*") {
     background-color: rgba(79, 140, 201, .2) !important;
     background-color: rgba(/*[[base-color-rgb]]*/, .2) !important;
   }
+  .s-btn.s-btn__primary:hover, .s-btn.s-btn__primary:focus,
+  .s-btn.s-btn__primary:active {
+    background-color: rgba(79, 140, 201, .8) !important;
+    background-color: rgba(/*[[base-color-rgb]]*/, .8) !important;
+  }
   button[id="submit-button"].s-btn:hover {
     background-color: rgba(79, 140, 201, .9) !important;
     background-color: rgba(/*[[base-color-rgb]]*/, .9) !important;
