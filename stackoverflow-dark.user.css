@@ -401,7 +401,7 @@ regexp("^https?:\/\/((?!area51)\w+\.)*?stackexchange\.com.*") {
     border-color: rgba(/*[[base-color-rgb]]*/, .6);
     box-shadow: none;
   }
-  .s-btn:hover, .s-btn:focus, .s-btn:active {
+  .s-btn:not(.s-btn__link):hover, .s-btn:focus, .s-btn:active {
     background-color: rgba(79, 140, 201, .2) !important;
     background-color: rgba(/*[[base-color-rgb]]*/, .2) !important;
   }
