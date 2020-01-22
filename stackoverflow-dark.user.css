@@ -695,7 +695,8 @@ regexp("^https?:\/\/((?!area51)\w+\.)*?stackexchange\.com.*") {
   .s-sidebarwidget--item[aria-current="page"],
   .s-sidebarwidget--item > :first-child[aria-current="page"],
   .user-page .settings-page .email-settings .-settings td.-desc strong,
-  #logins-table .pretty-login, .activity-status-prompt > .-fields > .-label {
+  #logins-table .pretty-login, .activity-status-prompt > .-fields > .-label,
+  .stats-mainbar .task-stat-table .review-stats-count {
     color: #ccc;
   }
   .top-bar .navigation .-link:hover, .top-bar .navigation .-link:focus {
@@ -792,6 +793,15 @@ regexp("^https?:\/\/((?!area51)\w+\.)*?stackexchange\.com.*") {
     border-bottom-color: transparent !important;
     background: #222 !important;
     margin-top: -3px;
+  }
+  .subheader.tools-rev #tabs:nth-child(2) {
+    margin-top: -2px !important;
+  }
+  .subheader.tools-rev #tabs a {
+    margin-top: 3px !important;
+  }
+  #tabs a.youarehere::before, .tabs a.youarehere::before {
+    background-color: /*[[base-color]]*/ !important;
   }
   .subheader #tabs [href*="account_recovery"],
   .subheader #tabs a[href*="account_recovery"]:hover {
@@ -994,7 +1004,8 @@ regexp("^https?:\/\/((?!area51)\w+\.)*?stackexchange\.com.*") {
   .min-ds-wizard .min-ds-box.jobs,
   .min-ds-wizard .min-ds-box.jobs .min-ds-content .tag-editor-wrapper .tag-editor,
   .min-ds-wizard .min-ds-box.jobs .min-ds-cta-section,
-  .min-ds-wizard .min-ds-box.jobs .min-ds-title {
+  .min-ds-wizard .min-ds-box.jobs .min-ds-title,
+  .review-bar-container .review-bar {
     border-color: #555;
   }
   .subtabs.user-panel-subtabs a.youarehere, .subtabs.user-tab-sorts a.youarehere {
@@ -1061,7 +1072,8 @@ regexp("^https?:\/\/((?!area51)\w+\.)*?stackexchange\.com.*") {
   #jobs-sidebar-placeholder .s-sidebarwidget--header,
   .s-sidebarwidget.module .s-sidebarwidget--header,
   .s-sidebarwidget--content.s-sidebarwidget__items, #sub-navs > a,
-  .s-sidebarwidget--content, .bc-black-3 {
+  .s-sidebarwidget--content, .bc-black-3,
+  td[style*="border-bottom: 1px solid #727272;"] {
     border-color: #444 !important;
   }
   .diff-buttons a:hover, .diff-choices a:hover, .diff-type-controls a:hover,
@@ -1093,6 +1105,10 @@ regexp("^https?:\/\/((?!area51)\w+\.)*?stackexchange\.com.*") {
   .user-info, .accepted-answer .user-info {
     background-color: #242424 !important;
     background-image: none !important;
+  }
+  td.review-stats-all-count {
+    background-color: #242424;
+    border: 4px solid #181818;
   }
   .answer, #newsletter-ad {
     padding: 10px !important;
@@ -1179,7 +1195,7 @@ regexp("^https?:\/\/((?!area51)\w+\.)*?stackexchange\.com.*") {
     background: linear-gradient(270deg, #333, rgba(51, 51, 51, 0));
   }
   /* === Brown(ish) === */
-  #sideBar .newuser {
+  #sideBar .newuser, .stats-sidebar .newuser {
     background-color: #321 !important;
     border: 1px solid #542 !important;
        -moz-box-shadow: none !important;
@@ -1375,7 +1391,8 @@ regexp("^https?:\/\/((?!area51)\w+\.)*?stackexchange\.com.*") {
     color: #92cc09 !important;
   }
   .answered, .message.success.text-only,
-  .s-sidebarwidget .s-btn__muted:not(.facebook-login) {
+  .s-sidebarwidget .s-btn__muted:not(.facebook-login),
+  .task-stat-leaderboard.user-info {
     background-color: transparent !important;
   }
   .answer-votes, .answered .vote-count-post {
@@ -2160,6 +2177,9 @@ regexp("^https?:\/\/((?!area51)\w+\.)*?stackexchange\.com.*") {
   .html__responsive .site-footer li.-item a.-link:hover {
     color: #bbb;
   }
+  .tools-rev h1 .lsep {
+    color: #555;
+  }
   .form-item {
     padding-left: 20px !important;
   }
@@ -2315,6 +2335,9 @@ regexp("^https?:\/\/((?!area51)\w+\.)*?stackexchange\.com.*") {
   }
   button[disabled], input[disabled], a[disabled], .disabled-button {
     opacity: .7 !important;
+  }
+  .o30 {
+    opacity: .6 !important;
   }
   /* === Images === */
   .everyonelovesstackoverflow {
