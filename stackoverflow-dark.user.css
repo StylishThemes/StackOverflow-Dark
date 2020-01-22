@@ -196,6 +196,13 @@ regexp("^https?:\/\/((?!area51)\w+\.)*?stackexchange\.com.*") {
     background-color: /*[[base-color]]*/ !important;
     border-color: #eee;
   }
+  .stats-mainbar .task-stat-table {
+    background-color: #282828;
+  }
+  .stats-mainbar .task-stat-table td {
+    background-color: #282828;
+    border: 5px solid #181818;
+  }
   .s-sidebarwidget--item[aria-current="true"]:before,
   .s-sidebarwidget--item > :first-child[aria-current="true"]:before,
   .s-sidebarwidget--item[aria-current="page"]:before,
