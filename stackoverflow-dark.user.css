@@ -291,6 +291,7 @@ regexp("^https?:\/\/((?!area51)\w+\.)*?stackexchange\.com.*") {
     background-image: linear-gradient(to right, transparent 0%, transparent 100%);
   }
   a.owner {
+    background-color: rgba(79, 140, 201, .3);
     background-color: rgba(/*[[base-color-rgb]]*/, .3);
   }
   input[type="submit"]:not(.s-btn):hover, input[type="button"]:not(.s-btn):hover,
@@ -330,9 +331,11 @@ regexp("^https?:\/\/((?!area51)\w+\.)*?stackexchange\.com.*") {
   }
   /* hack around to prevent pagination hover issues on stackexchage */
   a[href]:hover {
+    color: rgba(79, 140, 201, .8);
     color: rgba(/*[[base-color-rgb]]*/, .8);
   }
   .s-pagination--item.is-selected {
+    background-color: rgba(79, 140, 201, .8);
     background-color: rgba(/*[[base-color-rgb]]*/, .8);
   }
   .s-pagination--item {
@@ -340,6 +343,7 @@ regexp("^https?:\/\/((?!area51)\w+\.)*?stackexchange\.com.*") {
     color: #ccc;
   }
   .s-pagination--item:hover {
+    background-color: rgba(79, 140, 201, .8) !important;
     background-color: rgba(/*[[base-color-rgb]]*/, .8) !important;
     border-color: #555;
     color: #eee !important;
@@ -368,11 +372,10 @@ regexp("^https?:\/\/((?!area51)\w+\.)*?stackexchange\.com.*") {
   html:not(#X) .p-bg-purple:not(.teams-slope),
   input[type=submit][value="search"], html:not(#X) .h\:bg-orange-500:hover,
   html:not(#X) .wz-progress.wz-progress--active {
-    background-color: #4183c4 !important;
     background-color: /*[[base-color]]*/ !important;
   }
   .site-footer .-link._expandable:before, .site-footer .-link._expandable:after {
-    background-color: rgba(65, 131, 196, .6) !important;
+    background-color: rgba(79, 140, 201, .6) !important;
     background-color: rgba(/*[[base-color-rgb]]*/, .6) !important;
   }
   .jobsfooter .footerContent > a, .companiesfooter .footerContent > a {
@@ -381,7 +384,7 @@ regexp("^https?:\/\/((?!area51)\w+\.)*?stackexchange\.com.*") {
   }
   .jobsfooter .footerContent > a:hover,
   .companiesfooter .footerContent > a:hover {
-    background-color: rgba(65, 131, 196, .6) !important;
+    background-color: rgba(79, 140, 201, .6) !important;
     background-color: rgba(/*[[base-color-rgb]]*/, .6) !important;
     color: #ccc !important;
   }
@@ -399,11 +402,11 @@ regexp("^https?:\/\/((?!area51)\w+\.)*?stackexchange\.com.*") {
     box-shadow: none;
   }
   .s-btn:hover, .s-btn:focus, .s-btn:active {
-    background-color: rgba(65, 131, 196, .2) !important;
+    background-color: rgba(79, 140, 201, .2) !important;
     background-color: rgba(/*[[base-color-rgb]]*/, .2) !important;
   }
   button[id="submit-button"].s-btn:hover {
-    background-color: rgba(65, 131, 196, .9) !important;
+    background-color: rgba(79, 140, 201, .9) !important;
     background-color: rgba(/*[[base-color-rgb]]*/, .9) !important;
   }
   .s-btn[disabled] {
@@ -626,7 +629,7 @@ regexp("^https?:\/\/((?!area51)\w+\.)*?stackexchange\.com.*") {
     -webkit-text-fill-color: #fff !important;
   }
   .gsc-selected-option-container {
-    background: #111 !important;
+    background-color: #111 !important;
   }
   .wz-section-container.focused {
     background: #111;
@@ -1722,12 +1725,14 @@ regexp("^https?:\/\/((?!area51)\w+\.)*?stackexchange\.com.*") {
   .bounty-indicator-tab, .hero.profile, .jobs-banner.-blue,
   #reg-alert-modal:hover, .-popout .btn-secondary:hover, .search-btn,
   .tags .jobs a, .btn-secondary, #job-board-save, .message.message-info, .btn {
-    background: rgba(65, 131, 196, 1) !important;
+    background: rgba(79, 140, 201, 1) !important;
     background: rgba(/*[[base-color-rgb]]*/, 1) !important;
   }
   input[type="submit"].btn-secondary, input[type="button"].btn-secondary,
   button.btn-secondary, .btn-secondary, #bigsearch input[type="submit"] {
     color: #ddd !important;
+    background: rgba(79, 140, 201, .5) !important;
+    border-color: rgba(79, 140, 201, .7) !important;
     background: rgba(/*[[base-color-rgb]]*/, .5) !important;
     border-color: rgba(/*[[base-color-rgb]]*/, .7) !important;
   }
@@ -1743,19 +1748,21 @@ regexp("^https?:\/\/((?!area51)\w+\.)*?stackexchange\.com.*") {
   .s-btn.s-btn__filled, .old-hero.z-base, .old-hero._small._darken,
   .s-notice__info.s-notice__important, .bg-blue-500, a.btn-secondary,
   .s-sidebarwidget .mb8 .btn-secondary:hover {
-    background-color: rgba(65, 131, 196, .18) !important;
+    background-color: rgba(79, 140, 201, .18) !important;
     background-color: rgba(/*[[base-color-rgb]]*/, .18) !important;
   }
   .review-actions input:hover, .btn:not(.button):hover, .btn-secondary:hover,
   #job-board-save:hover, .topbar-dialog a.btn-secondary:hover,
   input[type=submit]:hover, .s-btn.s-btn__filled:hover {
-    background: rgba(65, 131, 196, .5) !important;
+    background: rgba(79, 140, 201, .5) !important;
     background: rgba(/*[[base-color-rgb]]*/, .5) !important;
     filter: brightness(110%);
   }
   .post-tag, .geo-tag, .container .chosen-choices .search-choice,
   .container .chosen-container-multi .chosen-choices li.search-choice, .s-tag {
     color: /*[[base-color]]*/ !important;
+    background-color: rgba(79, 140, 201, .2);
+    border-color: rgba(79, 140, 201, .5) !important;
     background-color: rgba(/*[[base-color-rgb]]*/, .2);
     border-color: rgba(/*[[base-color-rgb]]*/, .5) !important;
   }
@@ -1773,7 +1780,7 @@ regexp("^https?:\/\/((?!area51)\w+\.)*?stackexchange\.com.*") {
   }
   .s-btn__muted.s-btn__outlined.is-selected, .youarehere:hover,
   .youarehere.is-selected, .nav-links .youarehere .nav-links--link, .s-tag:hover {
-    background-color: rgba(65, 131, 196, .15) !important;
+    background-color: rgba(79, 140, 201, .15) !important;
     background-color: rgba(/*[[base-color-rgb]]*/, .15) !important;
   }
   input[type="submit"].btn-outlined, input[type="button"].btn-outlined,
@@ -1781,6 +1788,7 @@ regexp("^https?:\/\/((?!area51)\w+\.)*?stackexchange\.com.*") {
   html:not(#X) .-edit-email-address button.btn-outlined {
     color: /*[[base-color]]*/;
     background-color: transparent;
+    border-color: rgba(79, 140, 201, 1) !important;
     border-color: rgba(/*[[base-color-rgb]]*/, 1) !important;
     box-shadow: none;
   }
@@ -1790,6 +1798,8 @@ regexp("^https?:\/\/((?!area51)\w+\.)*?stackexchange\.com.*") {
   input[type="button"].btn-outlined:focus, button.btn-outlined:focus,
   .btn-outlined:focus {
     color: /*[[base-color]]*/;
+    background-color: rgba(79, 140, 201, .15);
+    border-color: rgba(79, 140, 201, 1);
     background-color: rgba(/*[[base-color-rgb]]*/, .15);
     border-color: rgba(/*[[base-color-rgb]]*/, 1);
     box-shadow: none;
@@ -1797,6 +1807,7 @@ regexp("^https?:\/\/((?!area51)\w+\.)*?stackexchange\.com.*") {
   }
   #answers .form-submit #submit-button.s-btn__primary {
     border-color: /*[[base-color]]*/ !important;
+    box-shadow: inset 0 1px 0 0 rgba(79, 140, 201, .7), 0 0 0 0 transparent !important;
     box-shadow: inset 0 1px 0 0 rgba(/*[[base-color-rgb]]*/, .7), 0 0 0 0 transparent !important;
     color: #eee !important;
   }
@@ -2173,8 +2184,9 @@ regexp("^https?:\/\/((?!area51)\w+\.)*?stackexchange\.com.*") {
     text-decoration: none !important;
   }
   .tag-synonym-link:hover, a.question-hyperlink:hover, a.answer-hyperlink:hover,
-  a:not([href*=".com"]):not([href*="?page="]):not(.s-link__muted):not(.page-numbers):not(.-link):hover,
+  a:not([href*=".com"]):not(.review-stats-count):not([href*="?page="]):not(.s-link__muted):not(.page-numbers):not(.-link):hover,
   a:not([href*=".com"]):not([href*="?page="]):not(.s-link__muted):not(.page-numbers):not(.-link):active {
+    color: rgba(79, 140, 201, .8);
     color: rgba(/*[[base-color-rgb]]*/, .8);
   }
   html a.page-numbers:hover {
@@ -2255,7 +2267,7 @@ regexp("^https?:\/\/((?!area51)\w+\.)*?stackexchange\.com.*") {
     background: rgba(175, 175, 175, .5) !important;
   }
   ::-webkit-scrollbar-thumb:hover {
-    background: rgba(65, 131, 196, .8) !important;
+    background: rgba(79, 140, 201, .8) !important;
     background: rgba(/*[[base-color-rgb]]*/, .8) !important;
   }
   /* === badges === */
@@ -3081,7 +3093,6 @@ regexp("^https?:\/\/((?!area51)\w+\.)*?stackexchange\.com.*") {
     color: #ccc !important;
   }
   .mini-room-chart .mspark .mspbar.now, .mspark .mspbar.now {
-    background-color: #4e82c2 !important;
     background-color: /*[[base-color]]*/ !important;
   }
   .mini-room-chart .mspark .mspbar, .mspark .mspbar {
@@ -3121,8 +3132,8 @@ regexp("^https?:\/\/((?!area51)\w+\.)*?stackexchange\.com.*") {
   html:not(#X) .xxl-info-layout .roomcard-xxl a.button[href], input.button,
   html:not(#X) #chat-body #container span.button, .page-numbers.current,
   html:not(#X) a#join-all.button {
-    background-color: /*[[base-color]]*/ !important;
     background: none;
+    background-color: /*[[base-color]]*/ !important;
   }
   html:not(#X) #conversation-body #sidebar-content a.button,
   html:not(#X) .roomcard-xxl .button, html:not(#X) #roomlist .fr .button,
@@ -3874,7 +3885,7 @@ regexp("^https?:\/\/((?!area51)\w+\.)*?stackexchange\.com.*") {
     background-color: #444 !important;
   }
   .p-bg-blue, .s-navigation--item.is-selected {
-    background-color: rgba(65, 131, 196, .6) !important;
+    background-color: rgba(79, 140, 201, .6) !important;
     background-color: rgba(/*[[base-color-rgb]]*/, .6) !important;
   }
   .p-fc-blue, h2.p-fc-blue {
@@ -3901,7 +3912,7 @@ regexp("^https?:\/\/((?!area51)\w+\.)*?stackexchange\.com.*") {
     text-shadow: none;
   }
   .gv-size-huge .btn:hover {
-    background: rgba(94, 138, 204, 1) !important;
+    background: /*[[base-color]]*/ !important;
     color: #eee !important;
     text-shadow: none;
   }
