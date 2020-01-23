@@ -401,7 +401,9 @@ regexp("^https?:\/\/((?!area51)\w+\.)*?stackexchange\.com.*") {
     border-color: rgba(/*[[base-color-rgb]]*/, .6);
     box-shadow: none;
   }
-  .s-btn:not(.s-btn__link):hover, .s-btn:focus, .s-btn:active {
+  .s-btn:not(.s-btn__link):not(.h\:p-bg-yellow-tint):hover,
+  .s-btn:not(.s-btn__link):not(.h\:p-bg-yellow-tint):focus,
+  .s-btn:not(.s-btn__link):not(.h\:p-bg-yellow-tint):active {
     background-color: rgba(79, 140, 201, .2) !important;
     background-color: rgba(/*[[base-color-rgb]]*/, .2) !important;
   }
@@ -961,6 +963,20 @@ regexp("^https?:\/\/((?!area51)\w+\.)*?stackexchange\.com.*") {
   select, html:not(#X) .f-radio-toggle._muted .f-label {
     border-color: #555 !important;
   }
+  .s-btn__muted.is-selected {
+    color: #ccc !important;
+    background-color: #282828 !important;
+  }
+  .s-btn__muted.is-selected:hover, .s-btn__muted.is-selected:focus,
+  .s-btn__muted.is-selected:active, .s-btn.s-btn__muted:hover,
+  .s-btn.s-btn__muted:focus, .s-btn.s-btn__muted:active {
+    color: #ccc !important;
+    background-color: #282828 !important;
+  }
+  .s-btn.s-btn__unset, .s-btn.s-btn__unset:hover, .s-btn.s-btn__unset:active {
+    background: transparent !important;
+    color: unset;
+  }
   .ad502-room, .message.message-config .actions, .tag-container .col, .congrats,
   .task-stat-table tdm {
     background-color: #232323 !important;
@@ -1036,7 +1052,10 @@ regexp("^https?:\/\/((?!area51)\w+\.)*?stackexchange\.com.*") {
   .s-navigation .s-navigation--item:hover,
   .s-navigation .s-navigation--item:active {
     background: #343434;
-    color: #ccc !important;
+    color: #ccc;
+  }
+  .s-navigation .s-navigation--item {
+    color: #ccc;
   }
   #index-hed .sort .select select {
     border-color: #555;
@@ -1225,8 +1244,11 @@ regexp("^https?:\/\/((?!area51)\w+\.)*?stackexchange\.com.*") {
   .new-post-activity, #new-answer-activity, .val-info, .highlight,
   a.youarehere:before, .message.regular, .review-post-author-guidance,
   .tagged-interesting, .tagged-interesting .views,
-  .tagged-interesting .user-info, .mdhelp-tabs {
+  .tagged-interesting .user-info {
     background-color: rgba(51, 34, 17, .6) !important;
+  }
+  .mdhelp-tabs {
+    background-color: rgba(51, 34, 17, .6);
   }
   .mdhelp-tabs li.selected, .wmd-help-button.active-help {
     background-color: #321;
@@ -1561,7 +1583,7 @@ regexp("^https?:\/\/((?!area51)\w+\.)*?stackexchange\.com.*") {
   .msg-list .list-item.is-read, .msg-list .list-item header,
   .message-detail header, .post-signature:not(.owner) .user-info,
   .answers-subheader, .profile-top-tags .badge-tag, .msg-controls,
-  .grid--cell:not(.facebook-login):not(.s-btn__primary):not(.youarehere):not(.badge1-alternate):not(.badge2-alternate):not(.badge3-alternate):not(.s-btn__outlined):not(.s-btn__filled):not(.bg-blue-500):not(.vote):not([type="password"]),
+  .grid--cell:not(.s-btn):not(.facebook-login):not(.s-btn__primary):not(.youarehere):not(.badge1-alternate):not(.badge2-alternate):not(.badge3-alternate):not(.s-btn__outlined):not(.s-btn__filled):not(.bg-blue-500):not(.vote):not([type="password"]),
   .narrow .votes, .badge-tag:hover, .form-item {
     background-color: transparent !important;
   }
@@ -1896,6 +1918,13 @@ regexp("^https?:\/\/((?!area51)\w+\.)*?stackexchange\.com.*") {
   .bg-yellow-500 h1, .bg-yellow-500 p, .bg-powder-100 h3 {
     color: #111 !important;
   }
+  .p-bg-yellow {
+    background: #ffb500 !important;
+    color: #ccc !important;
+  }
+  .h\:p-bg-yellow-tint:hover {
+    background: #f1ab00 !important;
+  }
   .p-bg-purple-light {
     background-color: #0f012d !important;
   }
@@ -2028,7 +2057,7 @@ regexp("^https?:\/\/((?!area51)\w+\.)*?stackexchange\.com.*") {
   .achievements-dialog .utc-clock, .placeholder-text,
   .timeline-sidebar .timeline-sidebar-module .privacy-helper,
   .s-stat .-description, .top-bar .-secondary .-link, .post-menu > a,
-  .statscontainer, .s-navigation .s-navigation--item {
+  .statscontainer {
     color: #aaa;
   }
   .topbar-dialog.help-dialog .item-summary,
