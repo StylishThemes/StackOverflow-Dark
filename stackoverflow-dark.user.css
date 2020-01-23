@@ -612,11 +612,15 @@ regexp("^https?:\/\/((?!area51)\w+\.)*?stackexchange\.com.*") {
   .why-jobs-v2 .work-from-anywhere::before {
     filter: brightness(60%);
   }
-  .search-form.responsive .filter-pane .chosen-container .chosen-choices li.search-field input[type="text"] {
+  .search-form.responsive .filter-pane .chosen-container .chosen-choices li.search-field input[type="text"],
+  .bg-black-050, .h\:bg-black-050:hover, .f\:bg-black-050:focus {
     color: #ccc !important;
   }
   .snippet-code .popout:before, .snippet-code .popout-code:before {
     filter: grayscale(1) brightness(180%) !important;
+  }
+  .user-page .subheader.reloaded .additional-links a:hover, code.bg-black-050 {
+    background: #333 !important;
   }
   .snippet-code .popin, .user-show-new .history-table .reviewed-action {
     background: #333 !important;
@@ -694,7 +698,8 @@ regexp("^https?:\/\/((?!area51)\w+\.)*?stackexchange\.com.*") {
     background: #444 !important;
     color: #aaa !important;
   }
-  .top-bar .-main .navigation .-link {
+  .top-bar .-main .navigation .-link, .fc-black-800, .h\:fc-black-800:hover,
+  .f\:fc-black-800:focus {
     color: #ccc !important;
   }
   .timeline-item, .timeline .or-separator, a.job-link span, .narrow .mini-counts,
@@ -769,7 +774,7 @@ regexp("^https?:\/\/((?!area51)\w+\.)*?stackexchange\.com.*") {
     filter: brightness(250%);
   }
   .timeline-item, .timeline-item.add header, .timeline-item.job header,
-  .timeline-item.edit header {
+  .timeline-item.edit header, .bc-black-9 {
     border-color: #555 !important;
   }
   .s-popover--arrow__tl:before, .s-popover--arrow__tc:before,
