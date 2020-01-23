@@ -791,6 +791,18 @@ regexp("^https?:\/\/((?!area51)\w+\.)*?stackexchange\.com.*") {
   .s-popover--arrow__tr::after {
     border-bottom-color: #191919;
   }
+  .s-popover--arrow, .s-popover--arrow__tl, .s-popover--arrow__tc,
+  .s-popover--arrow__tr, .s-popover--arrow__bl, .s-popover--arrow__bc,
+  .s-popover--arrow__br, .s-popover--arrow__lt, .s-popover--arrow__lc,
+  .s-popover--arrow__lb, .s-popover--arrow__rt, .s-popover--arrow__rc,
+  .s-popover--arrow__rb {
+    color: #181818;
+  }
+  .s-popover[x-placement^="top"] .s-popover--arrow::before,
+  .s-popover--arrow__bl::before, .s-popover--arrow__bc::before,
+  .s-popover--arrow__br::before {
+    border-top-color: #555;
+  }
   .s-popover {
     background-color: #191919;
     border-color: #444;
