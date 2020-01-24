@@ -1781,8 +1781,7 @@ regexp("^https?:\/\/((?!area51)\w+\.)*?stackexchange\.com.*") {
   .bounty-indicator-tab, .hero.profile, .jobs-banner.-blue,
   #reg-alert-modal:hover, .-popout .btn-secondary:hover, .search-btn,
   .tags .jobs a, .btn-secondary, #job-board-save, .message.message-info, .btn {
-    background: rgba(79, 140, 201, 1) !important;
-    background: rgba(/*[[base-color-rgb]]*/, 1) !important;
+    background: /*[[base-color]]*/ !important;
   }
   input[type="submit"].btn-secondary, input[type="button"].btn-secondary,
   button.btn-secondary, .btn-secondary, #bigsearch input[type="submit"] {
