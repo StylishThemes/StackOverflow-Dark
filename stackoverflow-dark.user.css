@@ -1075,6 +1075,10 @@ regexp("^https?:\/\/((?!area51)\w+\.)*?stackexchange\.com.*") {
   .s-navigation .s-navigation--item {
     color: #ccc;
   }
+  .s-navigation.s-navigation__muted .s-navigation--item.is-selected {
+    background: #333;
+    color: #ddd;
+  }
   #index-hed .sort .select select {
     border-color: #555;
     box-shadow: 0 0 5px rgb(85, 85, 85);
