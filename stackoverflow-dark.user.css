@@ -3085,7 +3085,7 @@ regexp("^https?:\/\/((?!area51)\w+\.)*?stackexchange\.com.*") {
     background-size: contain !important;
   }
 }
-@-moz-document domain("chat.meta.stackexchange.com"), domain("chat.stackexchange.com"), domain("chat.stackoverflow.com"), domain("meta.stackexchange.com") {
+@-moz-document regexp("^https://(chat|meta|chat\.meta)\.stackexchange\.com.*$"), domain("chat.stackoverflow.com") {
   img[src*="stackoverflow/img/logo.png"],
   img[src*="stackoverflow/img/logo.png"]:hover {
     filter: invert(1) hue-rotate(180deg);
