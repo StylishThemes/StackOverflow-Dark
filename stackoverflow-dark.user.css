@@ -2087,8 +2087,9 @@ regexp("^https?:\/\/((?!area51)\w+\.)*?stackexchange\.com.*") {
   .subheader a span, .disabled-link {
     color: #bbb;
   }
-  li.s-sidebarwidget--item a {
-    color: #bbb !important;
+  .s-sidebarwidget:not(.s-anchors) a:not(.button):not(.s-btn):not(.post-tag):not(.s-sidebarwidget--action),
+  .s-sidebarwidget:not(.s-anchors) a:not(.button):not(.s-btn):not(.post-tag):not(.s-sidebarwidget--action):visited {
+    color: #bbb;
   }
   #top-menu a, .subheader a, .reputation a, .relativetime.old,
   .votes-cast-stats td, #chat .system-message, .card .rep,
