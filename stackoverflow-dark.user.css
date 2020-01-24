@@ -1835,8 +1835,8 @@ regexp("^https?:\/\/((?!area51)\w+\.)*?stackexchange\.com.*") {
   }
   .s-btn__muted.s-btn__outlined.is-selected, .youarehere:hover,
   .youarehere.is-selected, .nav-links .youarehere .nav-links--link, .s-tag:hover {
-    background-color: rgba(79, 140, 201, .15) !important;
-    background-color: rgba(/*[[base-color-rgb]]*/, .15) !important;
+    background-color: rgba(79, 140, 201, .3) !important;
+    background-color: rgba(/*[[base-color-rgb]]*/, .3) !important;
   }
   input[type="submit"].btn-outlined, input[type="button"].btn-outlined,
   button.btn-outlined, .btn-outlined,
