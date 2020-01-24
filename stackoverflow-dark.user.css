@@ -3432,6 +3432,10 @@ regexp("^https?:\/\/((?!area51)\w+\.)*?stackexchange\.com.*") {
     color: #fff;
     background: #796619 !important;
   }
+  .faq-page #top-section .col-section {
+    border: solid 1px #542;
+    background-color: #321;
+  }
 }
 @-moz-document domain("askubuntu.com") {
   .site-header {
