@@ -254,7 +254,7 @@ regexp("^https?:\/\/((?!area51)\w+\.)*?stackexchange\.com.*") {
     border: 1px solid #ff4a15 !important;
     filter: brightness(90%) !important;
   }
-  .delete-tag, .icon-i, .icon-i-blue, .icon-i-orange {
+  .icon-i, .icon-i-blue, .icon-i-orange {
     filter: brightness(70%) contrast(170%) !important;
   }
   .why-jobs-v2 .developers-first input[type="submit"] {
@@ -391,7 +391,8 @@ regexp("^https?:\/\/((?!area51)\w+\.)*?stackexchange\.com.*") {
   .s-btn.s-btn__primary:hover, .top-bar .-secondary .-ctas .btn-topbar-clear,
   .top-bar .-secondary .-ctas .btn-topbar-clear:focus, .s-btn__primary:focus,
   .s-btn:focus,
-  .min-ds-wizard .min-ds-box.jobs .min-ds-content .tag-editor-wrapper .tag-editor .post-tag .delete-tag {
+  .min-ds-wizard .min-ds-box.jobs .min-ds-content .tag-editor-wrapper .tag-editor .post-tag .delete-tag,
+  .delete-tag {
     filter: brightness(120%) !important;
   }
   .s-btn, .s-btn:focus {
