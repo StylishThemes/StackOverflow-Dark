@@ -3076,6 +3076,10 @@ regexp("^https?:\/\/((?!area51)\w+\.)*?stackexchange\.com.*") {
   img[src*="stackoverflow/img/logo.png"]:hover {
     filter: invert(1) hue-rotate(180deg);
   }
+  .page-numbers {
+    border-radius: 2px !important;
+    padding: 2px 8px !important;
+  }
   #chat-body .button {
        -moz-border-radius: 3px;
     -webkit-border-radius: 3px;
@@ -3646,6 +3650,11 @@ regexp("^https?:\/\/((?!area51)\w+\.)*?stackexchange\.com.*") {
   }
   .fc-powder-700 {
     color: #46a2d9 !important;
+  }
+  .page-numbers {
+    border-radius: 2px !important;
+    padding: 4px 8px !important;
+    font-size: 100%;
   }
 }
 @-moz-document domain("photo.stackexchange.com") {
