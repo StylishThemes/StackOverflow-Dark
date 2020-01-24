@@ -3078,7 +3078,7 @@ regexp("^https?:\/\/((?!area51)\w+\.)*?stackexchange\.com.*") {
   #hlogo a {
     background-image: none !important;
   }
-  #header-logo, #footer-logo {
+  #footer-logo {
     background-image: url("https://StylishThemes.github.io/StackOverflow-Dark/images/stackoverflow-logo.svg") !important;
   }
   #header-logo {
