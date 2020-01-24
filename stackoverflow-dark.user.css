@@ -1667,6 +1667,9 @@ regexp("^https?:\/\/((?!area51)\w+\.)*?stackexchange\.com.*") {
   .user-page .settings-page .email-settings .-unsubscribe {
     border-color: #333;
   }
+  .history-table td {
+    border-bottom-color: #444 !important;
+  }
   .temp-popover.temp-popover__bottom .temp-popover--arrow:before,
   .temp-popover.temp-popover__bottom-left .temp-popover--arrow:before,
   .temp-popover.temp-popover__bottom-right .temp-popover--arrow:before,
@@ -1720,7 +1723,7 @@ regexp("^https?:\/\/((?!area51)\w+\.)*?stackexchange\.com.*") {
   }
   .nav-left-col .is-active,
   #left-sidebar .nav-links .youarehere .nav-links--link {
-    border-right-color: /*[[base-color]]*/ !important;
+    border-right-color: /*[[base-color]]*/;
   }
   .s-sidebarwidget [aria-current="page"]:before {
     border-left-color: /*[[base-color]]*/ !important;
@@ -2146,6 +2149,9 @@ regexp("^https?:\/\/((?!area51)\w+\.)*?stackexchange\.com.*") {
   .s-radio:checked {
     border-color: /*[[base-color]]*/;
     background-color: #111;
+  }
+  .s-checkbox:checked {
+    border-color: /*[[base-color]]*/ !important;
   }
   .answered-accepted strong, .youarehere, .nav .primarynav li a, .nav a,
   .rep-up.special-rep, .pac-item-query, #content .salary-subheader,
