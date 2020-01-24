@@ -3090,6 +3090,14 @@ regexp("^https?:\/\/((?!area51)\w+\.)*?stackexchange\.com.*") {
   img[src*="stackoverflow/img/logo.png"]:hover {
     filter: invert(1) hue-rotate(180deg);
   }
+  .weekday-small {
+    color: #111;
+    background: #b5b5b5;
+    border-bottom: 3px solid #b5b5b5;
+  }
+  .weekday, .weekday-small {
+    border-radius: 4px 4px 0 0;
+  }
   .page-numbers {
     border-radius: 2px !important;
     padding: 2px 8px !important;
