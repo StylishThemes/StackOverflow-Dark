@@ -1297,7 +1297,8 @@ regexp("^https?:\/\/((?!area51)\w+\.)*?stackexchange\.com.*") {
   .s-sidebarwidget__yellow .s-sidebarwidget--content,
   #important-custom-content .s-sidebarwidget__yellow,
   html:not(#X) .s-sidebarwidget__yellow,
-  .s-sidebarwidget__yellow .s-sidebarwidget:after {
+  .s-sidebarwidget__yellow .s-sidebarwidget:after,
+  .s-sidebarwidget__yellow::after {
     border-color: #651 !important;
   }
   .bg-yellow-300, .fc-yellow-900 {
