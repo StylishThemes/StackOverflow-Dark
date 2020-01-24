@@ -2022,10 +2022,6 @@ regexp("^https?:\/\/((?!area51)\w+\.)*?stackexchange\.com.*") {
     background: #353535;
     color: #ccc;
   }
-  .answer-votes, .cool, .mini-counts.cool, .message.incomplete, .salary-value,
-  .salary-calculator, .calculator-header, .accepted-answer .post-text {
-    color: #ccc;
-  }
   .why-jobs-v2 .developers-first, .why-jobs-v2 .developers-first h2,
   .message.message-info a:not(.badge-tag):not(.button):not(.btn):not(.post-tag),
   .answered-accepted, .answered-accepted .mini-counts,
@@ -2044,13 +2040,12 @@ regexp("^https?:\/\/((?!area51)\w+\.)*?stackexchange\.com.*") {
     filter: grayscale(1) brightness(200%);
   }
   /* these arent !important, but we botch them to make them work */
-  .nav-links .nav-links--link, .nav-links .nav-links--link:visited,
-  .nav-links .youarehere .nav-links--link .svg-icon, html .job, .label-key,
-  .reputation-score, .fc-black-400, .fc-black-600, .started-link,
-  .question-hyperlink, .s-btn.google-login, .stackexchange-login,
-  html .s-btn__google {
+  .svg-icon, html .job, .label-key, .reputation-score, .fc-black-400,
+  .fc-black-600, .started-link, .question-hyperlink, .s-btn.google-login,
+  .stackexchange-login, html .s-btn__google {
     color: #aaa !important;
   }
+  .nav-links .youarehere .nav-links--link,
   .timeline-item.add .add-item-list .item-add:hover, .val-message,
   .min-ds-wizard .min-ds-box.jobs .min-ds-title .filters label:hover,
   .title-box .title, .title-box > .title,
@@ -2087,7 +2082,8 @@ regexp("^https?:\/\/((?!area51)\w+\.)*?stackexchange\.com.*") {
   .topbar-dialog.inbox-dialog .inbox-item .item-content .item-summary,
   .topbar-dialog.modInbox-dialog .inbox-item .item-content .item-summary,
   .topbar-dialog.achievements-dialog .inbox-item .item-content .item-summary,
-  .subheader a span, .disabled-link {
+  .subheader a span, .disabled-link, .nav-links .nav-links--link,
+  .nav-links .nav-links--link:visited {
     color: #bbb;
   }
   .s-sidebarwidget:not(.s-anchors) a:not(.button):not(.s-btn):not(.post-tag):not(.s-sidebarwidget--action),
@@ -2119,6 +2115,8 @@ regexp("^https?:\/\/((?!area51)\w+\.)*?stackexchange\.com.*") {
   .s-link.s-link__muted:active, a.s-link__muted.s-link__visited:active,
   .s-link.s-link__muted.s-link__visited:active, .site-footer--copyright p a,
   .post-text, .comment {
+  .answer-votes, .cool, .mini-counts.cool, .message.incomplete, .salary-value,
+  .salary-calculator, .calculator-header, .accepted-answer .post-text {
     color: #ccc;
   }
   .ob-post-tag, .ob-user-tag, .deleted-answer .util-bar a, .msg-list .msg-text,
