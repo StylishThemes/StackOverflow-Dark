@@ -780,6 +780,11 @@ regexp("^https?:\/\/((?!area51)\w+\.)*?stackexchange\.com.*") {
   .timeline-item.edit header, .bc-black-9 {
     border-color: #555 !important;
   }
+  .s-popover[x-placement^="right"] .s-popover--arrow::before,
+  .s-popover--arrow__lt::before, .s-popover--arrow__lc::before,
+  .s-popover--arrow__lb::before {
+    border-right-color: #555;
+  }
   .s-popover--arrow__tl:before, .s-popover--arrow__tc:before,
   .s-popover--arrow__tr:before,
   .s-popover[x-placement^="bottom"] .s-popover--arrow:before {
@@ -1660,10 +1665,11 @@ regexp("^https?:\/\/((?!area51)\w+\.)*?stackexchange\.com.*") {
   .temp-popover.temp-popover__bottom .temp-popover--arrow:before,
   .temp-popover.temp-popover__bottom-left .temp-popover--arrow:before,
   .temp-popover.temp-popover__bottom-right .temp-popover--arrow:before,
-  .search-form.responsive .filter-pane .popover .popover--arrow:after,
-  .search-form.responsive .filter-pane .popover .popover--arrow:before,
-  .history-table td {
-    border-bottom-color: #444 !important;
+  .search-form.responsive .filter-pane .popover .popover--arrow:before {
+    border-bottom-color: #555 !important;
+  }
+  .search-form.responsive .filter-pane .popover .popover--arrow:after {
+    border-bottom-color: #222 !important;
   }
   .league-container, .-job {
     border-bottom-color: #444;
