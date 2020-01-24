@@ -1863,6 +1863,9 @@ regexp("^https?:\/\/((?!area51)\w+\.)*?stackexchange\.com.*") {
     box-shadow: none;
     filter: brightness(120%) !important;
   }
+  .bs-sm.bs-hover:hover {
+    box-shadow: 0 2px 4px #111, 0 0 0 0 transparent !important;
+  }
   #answers .form-submit #submit-button.s-btn__primary {
     border-color: /*[[base-color]]*/ !important;
     box-shadow: inset 0 1px 0 0 rgba(79, 140, 201, .7), 0 0 0 0 transparent !important;
