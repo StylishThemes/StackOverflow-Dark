@@ -3102,6 +3102,19 @@ regexp("^https?:\/\/((?!area51)\w+\.)*?stackexchange\.com.*") {
     border-radius: 2px !important;
     padding: 2px 8px !important;
   }
+  .refine-search {
+    vertical-align: bottom !important;
+  }
+  input.button[value="search again"], a.button, input.button {
+    padding: 4px 8px;
+    border-radius: 2px;
+  }
+  #refine-search input:not(.button) {
+    vertical-align: middle;
+  }
+  input#q, input#user, input#room {
+    line-height: 1.4em;
+  }
   #chat-body .button {
        -moz-border-radius: 3px;
     -webkit-border-radius: 3px;
@@ -3142,7 +3155,7 @@ regexp("^https?:\/\/((?!area51)\w+\.)*?stackexchange\.com.*") {
   img:hover {
     filter: none;
   }
-  img[src*="img/favicon.ico"], .favicon-stackexchangemeta {
+  img[src*="img/favicon.ico"]:not(.small-site-logo), .favicon-stackexchangemeta {
     filter: grayscale(1) brightness(110%);
   }
   .subtabs a {
@@ -3226,7 +3239,7 @@ regexp("^https?:\/\/((?!area51)\w+\.)*?stackexchange\.com.*") {
   html:not(#X) #conversation-body #sidebar-content a.button,
   html:not(#X) .roomcard-xxl .button, html:not(#X) #roomlist .fr .button,
   #inviteForm input.button[type="submit"], .usercard-xxl input.button,
-  html:not(#X) .roomcard-xxl input.button[type="submit"], .button {
+  html:not(#X) .roomcard-xxl input.button[type="submit"], .button:not(input) {
     background-color: /*[[base-color]]*/ !important;
     border-color: rgba(/*[[base-color-rgb]]*/, .7) !important;
     box-shadow: none !important;
@@ -3408,7 +3421,7 @@ regexp("^https?:\/\/((?!area51)\w+\.)*?stackexchange\.com.*") {
   #conversation {
     background: transparent;
   }
-  #input-area .input-hint {
+  #input-area .input-hint, .faq-page #top-section {
     border-color: #444;
   }
   .dismiss-input-hint.button {
