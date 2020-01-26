@@ -45,5 +45,5 @@ function updateDefaults(themes) {
 
 getThemesInFolder()
   .then(themes => fs.writeFile(path.join(__dirname, "..", "defaults.json"), updateDefaults(themes)))
-  .then(() => console.info("\x1b[32m%s\x1b[0m", "Themes updated in defaults.json"))
+  .then(() => console.info("\u001B[32m%s\u001B[0m", "Themes updated in defaults.json"))
   .catch(exit);

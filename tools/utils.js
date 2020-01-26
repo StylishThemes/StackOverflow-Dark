@@ -8,7 +8,7 @@ function replaceHolders(pkg, css) {
   if (placeholders) {
     new Set(placeholders).forEach((name) => {
       let val = (pkg[name.replace(/[{}]/g, "")] || name);
-      if (val.indexOf(domain) > -1) {
+      if (val.includes(domain)) {
         val = val.substring(domain.length, val.length);
       }
       css = css.replace(new RegExp(escapeRegex(name), "gi"), val);
