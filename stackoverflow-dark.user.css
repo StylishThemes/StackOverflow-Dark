@@ -1410,16 +1410,16 @@ regexp("^https?:\/\/((?!area51)\w+\.)*?stackexchange\.com.*") {
   /* prevent animation from breaking while loading  issue #187 */
   @keyframes blinking {
     from {
-      background: rgba(0, 40, 16, .8);
+      background: rgba(/*[[accepted-color-rgb]]*/, .8);
     }
     to {
-      background: rgba(0, 40, 16, .5);
+      background: rgba(/*[[accepted-color-rgb]]*/, .5);
     }
   }
   #answers .answer.accepted-answer[style*="background-color"] {
     animation-name: blinking !important;
-    background: #001c0b !important;
-    border: 1px solid #13552f !important;
+    background: rgb(/*[[accepted-color-rgb]]*/) !important;
+    border: 1px solid rgb(/*[[base-color-rgb]]*/) !important;
   }
   /* Assign */
   #answers .answer.accepted-answer {
