@@ -10,6 +10,7 @@
 @license      CC-BY-SA-4.0
 @advanced color base-color "Base color scheme" #4183C4
 @advanced color visited-color "Visited link color" #4183C4
+@advanced color accepted-color "Accepted answer background color" #002810
 @advanced text font-choice "Code Font" Menlo
 @advanced dropdown bg-choice "Background" {
   crosshatch "crosshatch" <<<EOT
@@ -1824,24 +1825,13 @@ regexp("^https?:\/\/stackoverflow.[^\.]*\.com.*") {
     border: 1px solid #444;
     background-color: #181818;
   }
-  /* prevent animation from breaking while loading  issue #187 */
-  @keyframes blinking {
-    from {
-      background: rgba(0, 40, 16, .8);
-    }
-    to {
-      background: rgba(0, 40, 16, .5);
-    }
-  }
   #answers .answer.accepted-answer[style*="background-color"] {
-    animation-name: blinking !important;
-    background: #001c0b !important;
-    border: 1px solid #13552f !important;
+    background: inherit !important;
+    border: 1px solid /*[[accepted-color]]*/ !important;
   }
-  /* Assign */
   #answers .answer.accepted-answer {
-    background: rgba(0, 40, 16, .5) !important;
-    border: 1px solid #13552f !important;
+    background: rgba(/*[[accepted-color-rgb]]*/, .5) !important;
+    border: 1px solid /*[[accepted-color]]*/ !important;
   }
   .fc-green-400, .h\:fc-green-400:hover, .f\:fc-green-400:focus {
     color: #5fba7d !important;
