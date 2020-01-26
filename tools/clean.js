@@ -22,7 +22,7 @@ function cleanup(css) {
 async function postPerfectionist() {
   const css = await fs.readFile(fileName, "utf8");
   await fs.writeFile(fileName, cleanup(css));
-  console.info("\x1b[32m%s\x1b[0m", `${pkg.title} usercss cleanup completed`);
+  console.info("\u001B[32m%s\u001B[0m", `${pkg.title} usercss cleanup completed`);
 }
 
 postPerfectionist();
