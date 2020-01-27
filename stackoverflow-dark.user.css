@@ -3850,6 +3850,9 @@ regexp("^https?:\/\/((?!area51)\w+\.)*?stackexchange\.com.*") {
     background-image: url("https://StylishThemes.github.io/StackOverflow-Dark/images/stackapps-logo.png") !important;
     background-size: contain !important;
   }
+  img.wmx100 {
+    filter: invert(1) hue-rotate(180deg) brightness(80%);
+  }
 }
 @-moz-document regexp("^https?://stackexchange\\.com.*") {
   /* stackExchange.com */
