@@ -1290,6 +1290,10 @@ regexp("^https?:\/\/((?!area51)\w+\.)*?stackexchange\.com.*") {
   pre .spaces {
     color: #433211;
   }
+  .fc-yellow-600, .h\:fc-yellow-600:hover, .f\:fc-yellow-600:focus, .fc-warning,
+  .fc-yellow-600 .iconStar, .fc-yellow-600:hover .iconStar {
+    color: #fc3 !important;
+  }
   div.question-status {
     background-color: rgba(51, 34, 17, .6);
     border-color: #640 !important;
