@@ -185,7 +185,8 @@ regexp("^https?:\/\/((?!area51)\w+\.)*?stackexchange\.com.*") {
   #featured-company-page-ad footer a.s-btn__outlined:hover,
   #featured-company-page-adfooter a.s-btn__outlined:active,
   .topbar-dialog .modal-content .message-text h4, .fc-orange-400,
-  .h\:fc-orange-400:hover, .f\:fc-orange-400:focus {
+  .h\:fc-orange-400:hover, .f\:fc-orange-400:focus,
+  .svg-icon.iconArrowDownLg:hover, .svg-icon.iconArrowUpLg:hover {
     color: /*[[base-color]]*/ !important;
   }
   .search-controls-responsive .-item .s-btn__outlined, .s-btn__outlined {
@@ -1946,11 +1947,14 @@ regexp("^https?:\/\/((?!area51)\w+\.)*?stackexchange\.com.*") {
   svg.iconBriefcase path, svg.iconFlag path, svg.iconGitHub path {
     fill: #999 !important;
   }
-  html:not(#X) .fc-black-200, svg.iconStar:not(:hover), svg.iconLocation,
-  svg.iconTwitter, svg.iconGitHub, svg.iconMoney, svg.iconVacation,
-  svg.iconHealth, svg.iconComputer, svg.iconClock, svg.iconFood,
-  svg.iconFaceSmile, svg.iconHeart, svg.iconFitness, svg.iconSubway {
+  html:not(#X) .fc-black-200, svg.iconLocation, svg.iconTwitter, svg.iconGitHub,
+  svg.iconMoney, svg.iconVacation, svg.iconHealth, svg.iconComputer,
+  svg.iconClock, svg.iconFood, svg.iconFaceSmile, svg.iconHeart, svg.iconFitness,
+  svg.iconSubway {
     color: #999 !important;
+  }
+  svg.iconStar:not(:hover) {
+    color: #999;
   }
   svg.svg-icon.iconSearch path {
     fill: #ddd !important;
@@ -2062,9 +2066,9 @@ regexp("^https?:\/\/((?!area51)\w+\.)*?stackexchange\.com.*") {
     filter: grayscale(1) brightness(200%);
   }
   /* these arent !important, but we botch them to make them work */
-  .svg-icon, html .job, .label-key, .reputation-score, .fc-black-400,
-  .fc-black-600, .started-link, .question-hyperlink, .s-btn.google-login,
-  .stackexchange-login, html .s-btn__google {
+  html .job, .label-key, .reputation-score, .fc-black-400, .fc-black-600,
+  .started-link, .question-hyperlink, .s-btn.google-login, .stackexchange-login,
+  html .s-btn__google {
     color: #aaa !important;
   }
   .nav-links .youarehere .nav-links--link,
