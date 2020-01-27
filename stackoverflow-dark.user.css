@@ -262,7 +262,7 @@ regexp("^https?:\/\/((?!area51)\w+\.)*?stackexchange\.com.*") {
     background: #222 !important;
     color: /*[[base-color]]*/ !important;
   }
-  .min-ds-step-counter .step.active {
+  .min-ds-step-counter .step.active, .s-badge__bounty {
     background: /*[[base-color]]*/;
   }
   input[type="submit"].btn-clear:hover, input[type="button"].btn-clear:hover,
@@ -2502,6 +2502,17 @@ regexp("^https?:\/\/((?!area51)\w+\.)*?stackexchange\.com.*") {
   .intellitab .dropdown a:hover,
   .post-timeline-v2 .post-timeline tr.separator > td > div {
     background-color: #444 !important;
+  }
+  .post-timeline-v2 .post-timeline .event-type > span.history {
+    background-color: #444;
+    color: #ccc;
+  }
+  .post-timeline-v2 .post-timeline .event-type > span.comment {
+    color: #ccc;
+    background-color: #555;
+  }
+  .comment:not([style*="background-color"]) {
+    transition: background-color linear 2s;
   }
   .dropdown:before {
             filter: invert(76%) !important;
