@@ -1479,7 +1479,8 @@ regexp("^https?:\/\/((?!area51)\w+\.)*?stackexchange\.com.*") {
   .answered strong, .user-show-new .user-rep-full .rep-up {
     color: #27ae60 !important;
   }
-  .vote-count-post [style="color:green"] {
+  .vote-count-post [style="color:green"], .fc-green-500,
+  .svg-icon.iconCheckmarkLg {
     color: #27ae60 !important;
   }
   #tm-header {
