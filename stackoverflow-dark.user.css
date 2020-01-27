@@ -2378,7 +2378,8 @@ regexp("^https?:\/\/((?!area51)\w+\.)*?stackexchange\.com.*") {
     fill: rgba(79, 140, 201, .8) !important;
     fill: rgba(/*[[base-color-rgb]]*/, .8) !important;
   }
-  .highcharts-legend text:hover {
+  .highcharts-legend text:hover,
+  button.s-btn.s-btn__unset.fc-theme-primary .svg-icon:not(.native) * {
     fill: rgba(79, 140, 201, 1) !important;
     fill: rgba(/*[[base-color-rgb]]*/, 1) !important;
   }
