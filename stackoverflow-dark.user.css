@@ -153,7 +153,7 @@ regexp("^https?:\/\/((?!area51)\w+\.)*?stackexchange\.com.*") {
   a, a:hover, a:active, .profile-popup a, .seWrapper a, .gs-title b,
   .spoiler:hover a, .comment-up-on, .comment-up-off:hover,
   #side-menu ul .category, .s-timeline .-timestamp, .mod-flair, .s-btn,
-  .s-btn:hover, .s-stat .-value, .s-link, .mini-counts.supernova, .supernova,
+  .s-stat .-value, .s-link, .mini-counts.supernova, .supernova,
   .topbar-dialog a:not(.btn-secondary):not(.nav-links--link),
   .topbar-dialog a:not(.btn-secondary):not(.nav-links--link):hover,
   .s-sidebarwidget--action, .site-footer .-link._active, ul.navMain li a,
@@ -167,7 +167,8 @@ regexp("^https?:\/\/((?!area51)\w+\.)*?stackexchange\.com.*") {
   .answer-hyperlink:hover, .topbar-dialog .unread-item .unread-bold,
   .started .mod-flair, .started a:not(.started-link),
   .search-form.responsive .added-filters .-clear-filters a,
-  .search-form.responsive .added-filters .-more a {
+  .search-form.responsive .added-filters .-more a, .s-btn:hover, .s-btn:focus,
+  .s-btn:active {
     color: /*[[base-color]]*/;
   }
   .subheader h1 a, input[type="submit"].btn-clear,
