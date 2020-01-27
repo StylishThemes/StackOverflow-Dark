@@ -714,7 +714,9 @@ regexp("^https?:\/\/((?!area51)\w+\.)*?stackexchange\.com.*") {
   .s-sidebarwidget--item > :first-child[aria-current="page"],
   .user-page .settings-page .email-settings .-settings td.-desc strong,
   #logins-table .pretty-login, .activity-status-prompt > .-fields > .-label,
-  .stats-mainbar .task-stat-table .review-stats-count {
+  .stats-mainbar .task-stat-table .review-stats-count,
+  .s-anchors.s-anchors__grayscale a:not(.s-link),
+  .s-anchors .s-anchors.s-anchors__grayscale a:not(.s-link) {
     color: #ccc;
   }
   .top-bar .navigation .-link:hover, .top-bar .navigation .-link:focus {
