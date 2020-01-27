@@ -1584,9 +1584,9 @@ regexp("^https?:\/\/((?!area51)\w+\.)*?stackexchange\.com.*") {
     border-left: 3px solid #061 !important;
   }*/
   /* === Transparent background === */
-  div.message .meta, .spaces, .comment, span.feed-icon, a.role-switch,
-  .nav.careers li, .nav.careers li:hover, .switcher-nudge-content p, #content,
-  #tabs a, .tabs a, #chat .username, .tag-container, .prettyprint code, .lv-info,
+  div.message .meta, .spaces, span.feed-icon, a.role-switch, .nav.careers li,
+  .nav.careers li:hover, .switcher-nudge-content p, #content, #tabs a, .tabs a,
+  #chat .username, .tag-container, .prettyprint code, .lv-info,
   .lv-stats-wrapper, .lv-stats-wrapper .number, .container, .bottom-notice,
   #question-header, #question-form .form-item, .post-menu>a:hover, #main-content,
   #mainbar, #mainbar-full, .mainbar-full, #logout-page, #sidebar, .footerwrap,
