@@ -1467,7 +1467,7 @@ regexp("^https?:\/\/((?!area51)\w+\.)*?stackexchange\.com.*") {
   }
   html:not(#X) .bg-green-400, .h\:bg-green-400:hover, .f\:bg-green-400:focus,
   div.meter div {
-    background-color: #5fba7d !important;
+    background-color: #27ae60 !important;
   }
   span.diff-add, .s-notice__success.s-notice__important {
     background: #3f4e1d !important;
