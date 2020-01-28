@@ -1727,6 +1727,11 @@ regexp("^https?:\/\/((?!area51)\w+\.)*?stackexchange\.com.*") {
   .timeline .user-technologies .top .score, .subheader {
     border-color: #555 !important;
   }
+  .message.message-info .message-close:hover {
+    background-color: /*[[base-color]]*/;
+    border-color: #ccc !important;
+    color: #fff !important;
+  }
   .message .message-tip-top-right:before, .message .message-tip-top-left:before {
     border-bottom-color: #191919 !important;
   }
