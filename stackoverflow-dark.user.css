@@ -1501,17 +1501,15 @@ regexp("^https?:\/\/((?!area51)\w+\.)*?stackexchange\.com.*") {
   .fc-green-400, .h\:fc-green-400:hover, .f\:fc-green-400:focus {
     color: #5fba7d !important;
   }
-  .fc-green-500 {
+  .fc-green-500, .vote-count-post [style="color:green"], .fc-green-500,
+  .svg-icon.iconCheckmarkLg, .answered strong,
+  .user-show-new .user-rep-full .rep-up, .movedUp, .status.answered,
+  .status.answered .mini-counts, .status.answered strong, .answered,
+  .answered .mini-counts, .answered strong {
     color: #27ae60 !important;
   }
-  .status.answered, .status.answered .mini-counts, .status.answered strong {
-    color: #45a163 !important;
-  }
-  .answered, .answered .mini-counts, .answered strong {
-    color: #45a163 !important;
-  }
   html:not(#X) .bg-green-400, .h\:bg-green-400:hover, .f\:bg-green-400:focus,
-  div.meter div {
+  div.meter div, .s-progress--bar {
     background-color: #27ae60 !important;
   }
   span.diff-add, .s-notice__success.s-notice__important {
@@ -1544,13 +1542,6 @@ regexp("^https?:\/\/((?!area51)\w+\.)*?stackexchange\.com.*") {
   .s-progress__privilege .s-progress--bar {
     background: #13552f !important;
     color: #eee !important;
-  }
-  .answered strong, .user-show-new .user-rep-full .rep-up {
-    color: #27ae60 !important;
-  }
-  .vote-count-post [style="color:green"], .fc-green-500,
-  .svg-icon.iconCheckmarkLg {
-    color: #27ae60 !important;
   }
   #tm-header {
     border-bottom: 3px solid #061 !important;
