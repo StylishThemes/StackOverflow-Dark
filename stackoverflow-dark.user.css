@@ -3189,7 +3189,7 @@ regexp("^https?:\/\/((?!area51)\w+\.)*?stackexchange\.com.*") {
   .refine-search {
     vertical-align: bottom !important;
   }
-  input.button[value="search again"], a.button, input.button {
+  input.button[value="search again"], a:not([href]).button, input.button {
     padding: 4px 8px;
     border-radius: 2px;
   }
