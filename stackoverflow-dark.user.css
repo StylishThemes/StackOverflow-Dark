@@ -1714,6 +1714,10 @@ regexp("^https?:\/\/((?!area51)\w+\.)*?stackexchange\.com.*") {
   .sidebar-stats td, .sidebar-stats th {
     border-color: #444;
   }
+  .profile-cards .bg-powder-800 {
+    border: 1px solid #035;
+    border-top: 0;
+  }
   .user-show-new .user-tab .subheader .subtabs {
     top: 2px;
   }
