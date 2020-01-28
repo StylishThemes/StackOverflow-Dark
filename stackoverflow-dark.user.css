@@ -720,7 +720,8 @@ regexp("^https?:\/\/((?!area51)\w+\.)*?stackexchange\.com.*") {
   #logins-table .pretty-login, .activity-status-prompt > .-fields > .-label,
   .stats-mainbar .task-stat-table .review-stats-count,
   .s-anchors.s-anchors__grayscale a:not(.s-link),
-  .s-anchors .s-anchors.s-anchors__grayscale a:not(.s-link) {
+  .s-anchors .s-anchors.s-anchors__grayscale a:not(.s-link),
+  .-votes .mini-counts {
     color: #ccc;
   }
   .top-bar .navigation .-link:hover, .top-bar .navigation .-link:focus {
@@ -775,6 +776,9 @@ regexp("^https?:\/\/((?!area51)\w+\.)*?stackexchange\.com.*") {
   .s-popover, #user-menu {
     background-color: #191919 !important;
     border-color: #444 !important;
+  }
+  .old-hero a.-link, a.s-btn.fc-black-900 {
+    color: #111 !important;
   }
   .timeline-item:before {
     background-color: #111 !important;
@@ -1083,7 +1087,7 @@ regexp("^https?:\/\/((?!area51)\w+\.)*?stackexchange\.com.*") {
     background: #343434;
     color: #ccc;
   }
-  .s-navigation .s-navigation--item {
+  .s-navigation .s-navigation--item, .footer {
     color: #ccc;
   }
   .s-navigation.s-navigation__muted .s-navigation--item.is-selected {
@@ -1517,7 +1521,7 @@ regexp("^https?:\/\/((?!area51)\w+\.)*?stackexchange\.com.*") {
   .status.answered, .s-progress__privilege .s-progress--label {
     border-color: rgba(69, 161, 99, .8) !important;
   }
-  .s-progress__privilege .s-progress--label {
+  .s-progress__privilege .s-progress--label, .s-progress--label {
     color: #ddd;
   }
   /* === Red === */
@@ -1567,6 +1571,9 @@ regexp("^https?:\/\/((?!area51)\w+\.)*?stackexchange\.com.*") {
   /* Mobile */
   .-summary .-votes, .deleted-answer .votes {
     background-color: rgba(214, 217, 220, .2) !important;
+  .comment-text, .topbar .login-links-container a:hover {
+    color: #ddd;
+  }
   }
   .or:before, .or:after {
     border-top: 1px solid #555 !important;
@@ -1999,7 +2006,7 @@ regexp("^https?:\/\/((?!area51)\w+\.)*?stackexchange\.com.*") {
   svg.iconSubway {
     color: #999 !important;
   }
-  svg.iconStar:not(:hover) {
+  svg.iconStar:not(:hover), .favorites-count-off {
     color: #999;
   }
   svg.svg-icon.iconSearch path {
@@ -2156,7 +2163,9 @@ regexp("^https?:\/\/((?!area51)\w+\.)*?stackexchange\.com.*") {
   .achievements-dialog .utc-clock, .placeholder-text,
   .timeline-sidebar .timeline-sidebar-module .privacy-helper,
   .s-stat .-description, .top-bar .-secondary .-link, .post-menu > a,
-  .statscontainer, .users-page .user-info .user-tags > a {
+  .statscontainer, .users-page .user-info .user-tags > a,
+  .new-about-content-page .user-details, .new-about-content-page .rep-block,
+  .new-about-content-page .comments {
     color: #aaa;
   }
   .topbar-dialog.help-dialog .item-summary,
