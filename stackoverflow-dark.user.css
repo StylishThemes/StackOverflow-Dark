@@ -1768,6 +1768,14 @@ regexp("^https?:\/\/((?!area51)\w+\.)*?stackexchange\.com.*") {
   .s-sidebarwidget [aria-current="page"]:before {
     border-left-color: /*[[base-color]]*/ !important;
   }
+  td[style*="border-left: 8px solid rgb(244, 168, 61); background-color: rgb("] {
+    border-left: 8px solid /*[[base-color]]*/ !important;
+    background-color: #111 !important;
+  }
+  td[class*="event-"][style*="background-color: rgb("],
+  td[style*="background-color: rgb("] {
+    background-color: transparent !important;
+  }
   /* === No/hide border === */
   div.list > div {
     border-right: 0 !important;
