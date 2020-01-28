@@ -119,7 +119,7 @@ regexp("^https?:\/\/((?!area51)\w+\.)*?stackexchange\.com.*") {
     box-shadow: none !important;
   }
   body, .cv-story header {
-    background-color: #191919;
+    background-color: #191919 !important;
     background-image: var(--bg-img);
     background-clip: border-box;
     background-origin: padding-box;
@@ -200,7 +200,9 @@ regexp("^https?:\/\/((?!area51)\w+\.)*?stackexchange\.com.*") {
     background-color: /*[[base-color]]*/ !important;
     border-color: #eee;
   }
-  .stats-mainbar .task-stat-table {
+  .stats-mainbar .task-stat-table,
+  .topbar-dialog.siteSwitcher-dialog .current-site li:hover,
+  .topbar-dialog .modal-content li:hover {
     background-color: #282828;
   }
   .stats-mainbar .task-stat-table td {
@@ -494,9 +496,6 @@ regexp("^https?:\/\/((?!area51)\w+\.)*?stackexchange\.com.*") {
     background-color: #222 !important;
     border-color: #444 !important;
   }
-  .topbar-dialog .modal-content li:hover {
-    background-color: #282828;
-  }
   input[type="submit"].btn-outlined.gray:hover,
   input[type="button"].btn-outlined.gray:hover, button.btn-outlined.gray:hover,
   .btn-outlined.gray:hover, input[type="submit"].btn-outlined.-gray:hover,
@@ -577,6 +576,14 @@ regexp("^https?:\/\/((?!area51)\w+\.)*?stackexchange\.com.*") {
     background-color: #111 !important;
     color: #ddd !important;
   }
+  input[type="text"]:not(.s-input), input[type="password"]:not(.s-input),
+  input[type="number"]:not(.s-input), input[type="email"]:not(.s-input),
+  input[type="url"]:not(.s-input), input[type="search"]:not(.s-input),
+  input[type="tel"]:not(.s-input), input[type="datetime"]:not(.s-input),
+  input[type="datetime-local"]:not(.s-input), input[type="date"]:not(.s-input),
+  textarea:not(.s-input), .table._whiteBg {
+    background-color: #111 !important;
+  }
   img[src*="robot-raising-hand"] {
     filter: invert(1) hue-rotate(180deg);
     mix-blend-mode: exclusion;
@@ -649,7 +656,7 @@ regexp("^https?:\/\/((?!area51)\w+\.)*?stackexchange\.com.*") {
   .gsc-selected-option-container {
     background-color: #111 !important;
   }
-  .wz-section-container.focused {
+  .wz-section-container.focused, .topbar-dialog .header {
     background: #111;
   }
   .s-table thead th {
@@ -686,7 +693,7 @@ regexp("^https?:\/\/((?!area51)\w+\.)*?stackexchange\.com.*") {
     border-right: 1px solid #555;
   }
   .bg-black-025, .h\:bg-black-025:hover, .f\:bg-black-025:focus,
-  .top-bar a.-logo:hover {
+  .top-bar a.-logo:hover, .current-site a.site-link:hover {
     background: #282828 !important;
   }
   .top-bar .-secondary .-item._active,
@@ -899,12 +906,14 @@ regexp("^https?:\/\/((?!area51)\w+\.)*?stackexchange\.com.*") {
     background-color: #292929 !important;
     border: 1px solid #444 !important;
   }
-  .topbar-dialog, #tag-menu, #overlay-header, .action-list .action-selected,
-  .switcher-nudge-lightbox, .user-rep-chart-summary-tooltip:hover,
-  .current-site-container, #or, .account-number, .topbar, .wmd-prompt-dialog,
-  .wb-popup-content, .wb-hat-details,
-  .docs-review-page .history-table tr.even td, kbd, kbd code, .switcher label,
-  .timeline-item-actions, .cv-story .section-opener h2,
+  .topbar-dialog.siteSwitcher-dialog .current-site-container, .topbar-dialog {
+    background-color: #191919;
+  }
+  #tag-menu, #overlay-header, .action-list .action-selected,
+  .switcher-nudge-lightbox, .user-rep-chart-summary-tooltip:hover, #or,
+  .account-number, .topbar, .wmd-prompt-dialog, .wb-popup-content,
+  .wb-hat-details, .docs-review-page .history-table tr.even td, kbd, kbd code,
+  .switcher label, .timeline-item-actions, .cv-story .section-opener h2,
   .cv-story .section-opener:after, .header-edit-section .ctas,
   .item-select-table .item:hover, .visa-wrapper, .chosen-choices,
   .p-top-tags .-tag-group, .chosen-results .active-result,
@@ -1242,7 +1251,8 @@ regexp("^https?:\/\/((?!area51)\w+\.)*?stackexchange\.com.*") {
     color: /*[[base-color]]*/ !important;
     border: 1px solid transparent !important;
   }
-  .timeline .or-separator::before, .timeline .or-separator .text {
+  .timeline .or-separator::before, .timeline .or-separator .text,
+  .pac-container::before {
     background: #444;
   }
   hr, .modal .modal-close:hover, .currency-label::after {
@@ -1303,6 +1313,9 @@ regexp("^https?:\/\/((?!area51)\w+\.)*?stackexchange\.com.*") {
   .fc-yellow-600, .h\:fc-yellow-600:hover, .f\:fc-yellow-600:focus, .fc-warning,
   .fc-yellow-600 .iconStar, .fc-yellow-600:hover .iconStar {
     color: #fc3 !important;
+  }
+  .product-hero-background {
+    background-color: transparent;
   }
   div.question-status {
     background-color: rgba(51, 34, 17, .6);
