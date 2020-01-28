@@ -2433,6 +2433,9 @@ regexp("^https?:\/\/((?!area51)\w+\.)*?stackexchange\.com.*") {
   .profile-communities--rep-badges {
     background-color: #222;
   }
+  .about-post-body-gradient {
+    background: linear-gradient(to top, #191919 15%, transparent 100%);
+  }
   #reputation-graph .highcharts-container rect[fill="#FDFDFD"] {
     fill: transparent;
   }
