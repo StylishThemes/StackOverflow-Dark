@@ -2045,6 +2045,14 @@ regexp("^https?:\/\/((?!area51)\w+\.)*?stackexchange\.com.*") {
     color: #aaa;
     border: none;
   }
+  .s-tag .s-tag--dismiss {
+    color: #aaa;
+    background-color: transparent;
+  }
+  .s-tag .s-tag--dismiss:hover {
+    color: #fff;
+    background-color: /*[[base-color]]*/;
+  }
   #tags_list .stats-row, #tags_list .stats-row a,
   #tags_list .stats-row a:visited, .timeline .feature-banner--headline,
   .timeline-item .timeline-item-text, #side-menu ul ul li > a:focus,
