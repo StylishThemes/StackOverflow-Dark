@@ -494,6 +494,9 @@ regexp("^https?:\/\/((?!area51)\w+\.)*?stackexchange\.com.*") {
     background-color: #222 !important;
     border-color: #444 !important;
   }
+  .topbar-dialog .modal-content li:hover {
+    background-color: #282828;
+  }
   input[type="submit"].btn-outlined.gray:hover,
   input[type="button"].btn-outlined.gray:hover, button.btn-outlined.gray:hover,
   .btn-outlined.gray:hover, input[type="submit"].btn-outlined.-gray:hover,
