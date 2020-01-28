@@ -305,7 +305,11 @@ regexp("^https?:\/\/((?!area51)\w+\.)*?stackexchange\.com.*") {
   a.button:visited:hover, .btn:hover, input[type="submit"]:not(.s-btn):focus,
   input[data-push="true"][type="button"]:not(.s-btn):focus,
   button:not(.s-btn):focus, .button:focus, a.button:focus,
-  a.button:visited:focus, .btn:focus {
+  a.button:visited:focus, .btn:focus, input[type="submit"]:not(.s-btn):hover,
+  input[type="button"]:not(.s-btn):hover, button:not(.s-btn):hover,
+  .button:hover, .btn:hover, input[type="submit"]:not(.s-btn):focus,
+  input[type="button"]:not(.s-btn):focus, button:not(.s-btn):focus,
+  .button:focus, .btn:focus {
     background-color: /*[[base-color]]*/;
     border-color: rgba(/*[[base-color-rgb]]*/, .5);
     filter: brightness(120%) !important;
@@ -364,7 +368,7 @@ regexp("^https?:\/\/((?!area51)\w+\.)*?stackexchange\.com.*") {
   html:not(#X) .tabs:hover a.youarehere:not([id*="category-"]) {
     border-bottom: 1px solid transparent !important;
   }
-  a.button:hover, #questions .post-menu .button.btn:hover {
+  a.button:hover, #questions .post-menu .button.btn:hover, .star-off {
     filter: brightness(90%) !important;
   }
   .s-btn__outlined:not(.grid--cell):not(.ws-nowrap):not(.s-btn__muted):hover {
@@ -398,7 +402,12 @@ regexp("^https?:\/\/((?!area51)\w+\.)*?stackexchange\.com.*") {
   .top-bar .-secondary .-ctas .btn-topbar-clear:focus, .s-btn__primary:focus,
   .s-btn:focus,
   .min-ds-wizard .min-ds-box.jobs .min-ds-content .tag-editor-wrapper .tag-editor .post-tag .delete-tag,
-  .delete-tag {
+  .delete-tag, .mb16, .icon-site, .icon-location, .icon-github, .icon-twitter,
+  .icon-time, .icon-calendar, .icon-eye, .icon-se, .icon-q, .icon-a,
+  .icon-q-small, .icon-a-small, .icon-ppl-helped, .icon-helpful-edit,
+  .icon-vote-cast, .icon-lock, .icon-so-gray, .icon-external-link,
+  .icon-helpful-flags, .icon-history, .icon-settings, .icon-settings-off,
+  .icon-arrow-bottom, .icon-user-dark {
     filter: brightness(120%) !important;
   }
   .s-btn, .s-btn:focus {
@@ -666,8 +675,7 @@ regexp("^https?:\/\/((?!area51)\w+\.)*?stackexchange\.com.*") {
     color: inherit;
   }
   .profile-ad, .message.message-config, .so-header a:hover,
-  .so-header a.topbar-icon-on, .topbar-dialog .header,
-  .header-edit-section:hover, .timeline-item, .sidebar-profile .-item,
+  .so-header a.topbar-icon-on, .timeline-item, .sidebar-profile .-item,
   .btn-outlined.-white:hover, .top-bar a:not([href]):hover,
   .top-bar a:not([href]):focus, .top-bar .-item._active,
   .top-bar .-feature-notice:hover, .top-bar .-feature-notice.topbar-icon-on,
@@ -792,7 +800,8 @@ regexp("^https?:\/\/((?!area51)\w+\.)*?stackexchange\.com.*") {
     border-color: #191919 !important;
     filter: brightness(350%) !important;
   }
-  .chosen-container-multi .chosen-choices li.search-choice .search-choice-close:hover {
+  .chosen-container-multi .chosen-choices li.search-choice .search-choice-close:hover,
+  .-votes .icon-vote, .-votes .icon-answer {
     filter: brightness(250%);
   }
   .timeline-item, .timeline-item.add header, .timeline-item.job header,
@@ -1137,6 +1146,9 @@ regexp("^https?:\/\/((?!area51)\w+\.)*?stackexchange\.com.*") {
   .my-communities ul.community-site li, div.meter,
   #badge-progress-menu .tm-heading {
     border-color: #444;
+  }
+  .pac-container .pac-item .pac-icon {
+    filter: brightness(600%);
   }
   ul.comments-list .comment > *, #content, .comments, #question-header,
   .question-page #answers .answer, .wmd-button-row, .wmd-button-bar, .mdhelp,
@@ -1587,6 +1599,9 @@ regexp("^https?:\/\/((?!area51)\w+\.)*?stackexchange\.com.*") {
   .comment-text, .topbar .login-links-container a:hover {
     color: #ddd;
   }
+  .vote-up-on, .vote-up-off, .vote-down-off, .vote-down-on, .star-on,
+  .vote-accepted-off, .vote-accepted-on {
+    filter: grayscale(1) brightness(150%);
   }
   .or:before, .or:after {
     border-top: 1px solid #555 !important;
@@ -2609,7 +2624,8 @@ regexp("^https?:\/\/((?!area51)\w+\.)*?stackexchange\.com.*") {
     -webkit-filter: invert(76%) !important;
   }
   /* documentation editing icons */
-  .docs-menu a, .favicon.favicon-stackoverflowmeta {
+  .docs-menu a, .favicon.favicon-stackoverflowmeta, .icon-se, .icon-q,
+  .icon-q-small, .icon-a-small {
     -webkit-filter: brightness(250%) !important;
             filter: brightness(250%) !important;
   }
