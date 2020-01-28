@@ -1421,6 +1421,19 @@ regexp("^https?:\/\/((?!area51)\w+\.)*?stackexchange\.com.*") {
     background: #27ae60;
     color: #eee;
   }
+  .bg-powder-800, .h\:bg-powder-800:hover, .f\:bg-powder-800:focus {
+    background-color: #182030 !important;
+  }
+  .bg-black-025, .h\:bg-black-025:hover, .f\:bg-black-025:focus {
+    background-color: #181818 !important;
+  }
+  .bc-black-2 {
+    border-color: #444 !important;
+  }
+  .s-card {
+    border: 1px solid #444;
+    background-color: #181818;
+  }
   /* prevent animation from breaking while loading  issue #187 */
   @keyframes blinking {
     from {
