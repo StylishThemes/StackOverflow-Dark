@@ -2118,7 +2118,7 @@ regexp("^https?:\/\/((?!area51)\w+\.)*?stackexchange\.com.*") {
   /* these arent !important, but we botch them to make them work */
   html .job, .label-key, .reputation-score, .fc-black-400, .fc-black-600,
   .started-link, .question-hyperlink, .s-btn.google-login, .stackexchange-login,
-  html .s-btn__google {
+  html .s-btn__google, [style="color: #8C9298;"] {
     color: #aaa !important;
   }
   .nav-links .youarehere .nav-links--link,
