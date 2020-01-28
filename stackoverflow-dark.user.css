@@ -2325,7 +2325,7 @@ regexp("^https?:\/\/((?!area51)\w+\.)*?stackexchange\.com.*") {
     text-decoration: none !important;
   }
   .tag-synonym-link:hover, a.question-hyperlink:hover, a.answer-hyperlink:hover,
-  a:not(.s-navigation--item):not([href*=".com"]):not([href*="question"]):not(.review-stats-count):not([href*="?page="]):not(.s-link__muted):not(.page-numbers):not(.-link):hover,
+  a:not(.s-tag--dismiss):not(.s-navigation--item):not([href*=".com"]):not([href*="question"]):not(.review-stats-count):not([href*="?page="]):not(.s-link__muted):not(.page-numbers):not(.-link):hover,
   a:not([href*=".com"]):not([href*="?page="]):not(.s-link__muted):not(.page-numbers):not(.-link):active {
     color: rgba(79, 140, 201, .8);
     color: rgba(/*[[base-color-rgb]]*/, .8);
