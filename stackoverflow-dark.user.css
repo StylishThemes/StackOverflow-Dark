@@ -1417,6 +1417,10 @@ regexp("^https?:\/\/((?!area51)\w+\.)*?stackexchange\.com.*") {
   .s-progress-bar .-fill, .answerBox.accepted, .s-notice__success {
     background: #002810 !important;
   }
+  .profile-cards--checkmark {
+    background: #27ae60;
+    color: #eee;
+  }
   /* prevent animation from breaking while loading  issue #187 */
   @keyframes blinking {
     from {
