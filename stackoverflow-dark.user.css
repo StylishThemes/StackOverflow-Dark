@@ -1722,9 +1722,8 @@ regexp("^https?:\/\/((?!area51)\w+\.)*?stackexchange\.com.*") {
     top: 2px;
   }
   a.required-tag, .topbar-dialog.feature-notice-dialog:before,
-  .site-footer .-link._expandable:after, .bc-black-2,
-  .message.message-info .message-close, .bc-black-3, .bc-black-4,
-  .timeline .user-technologies .top .score, .subheader {
+  .site-footer .-link._expandable:after, .message.message-info .message-close,
+  .bc-black-3, .bc-black-4, .timeline .user-technologies .top .score, .subheader {
     border-color: #555 !important;
   }
   .message.message-info .message-close:hover {
