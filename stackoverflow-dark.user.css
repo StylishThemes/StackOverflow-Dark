@@ -1144,7 +1144,19 @@ regexp("^https?:\/\/((?!area51)\w+\.)*?stackexchange\.com.*") {
   .about-page .new-about-content-page .qa-block,
   .about-page .new-about-content-page .user-info-rep, hr,
   .my-communities ul.community-site li, div.meter,
-  #badge-progress-menu .tm-heading {
+  #badge-progress-menu .tm-heading, input[type="text"]:not(.s-input),
+  input[type="password"]:not(.s-input), input[type="number"]:not(.s-input),
+  input[type="email"]:not(.s-input), input[type="url"]:not(.s-input),
+  input[type="search"]:not(.s-input), input[type="tel"]:not(.s-input),
+  input[type="datetime"]:not(.s-input),
+  input[type="datetime-local"]:not(.s-input), input[type="date"]:not(.s-input),
+  textarea:not(.s-input), .table._borders > thead > tr > th,
+  .table._borders > tbody > tr > th, .table._borders > tfoot > tr > th,
+  .table._borders > thead > tr > td, .table._borders > tbody > tr > td,
+  .table._borders > tfoot > tr > td, .new-about-content-page .qa-block,
+  .new-about-content-page .content-block, .sidebar-stats td, .sidebar-stats th,
+  .new-about-content-page .user-info-rep, .-summary,
+  .user-show-new .user-panel .subheader {
     border-color: #444;
   }
   .pac-container .pac-item .pac-icon {
@@ -1596,6 +1608,10 @@ regexp("^https?:\/\/((?!area51)\w+\.)*?stackexchange\.com.*") {
   /* Mobile */
   .-summary .-votes, .deleted-answer .votes {
     background-color: rgba(214, 217, 220, .2) !important;
+  .util-bar, #question > footer, .answer > footer, #question .user-info,
+  .answer .user-info, .comment, .field._toolbar .-toolbar, fieldset {
+    border-color: #444;
+  }
   .comment-text, .topbar .login-links-container a:hover {
     color: #ddd;
   }
@@ -1750,9 +1766,6 @@ regexp("^https?:\/\/((?!area51)\w+\.)*?stackexchange\.com.*") {
   .league-container, .-job {
     border-bottom-color: #444;
   }
-  .sidebar-stats td, .sidebar-stats th {
-    border-color: #444;
-  }
   .profile-cards .bg-powder-800 {
     border: 1px solid #035;
     border-top: 0;
@@ -1762,7 +1775,7 @@ regexp("^https?:\/\/((?!area51)\w+\.)*?stackexchange\.com.*") {
   }
   a.required-tag, .topbar-dialog.feature-notice-dialog:before,
   .site-footer .-link._expandable:after, .message.message-info .message-close,
-  .bc-black-3, .bc-black-4, .timeline .user-technologies .top .score, .subheader {
+  .bc-black-3, .bc-black-4, .timeline .user-technologies .top .score {
     border-color: #555 !important;
   }
   .message.message-info .message-close:hover {
