@@ -2920,6 +2920,7 @@ regexp("^https?:\/\/((?!area51)\w+\.)*?stackexchange\.com.*") {
   div[class^="gv-"], table.gv-stats tr, table.gv-stats td {
     color: initial !important;
   }
+  .gv-item {
   div[style*="background-color: rgb(27"] table.gv-stats tr,
   div[style*="background-color: rgb(27"] table.gv-stats td,
   div[style*="background-color: rgb(27"] div.gv-expanded-site-name,
