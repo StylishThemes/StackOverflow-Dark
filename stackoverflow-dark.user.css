@@ -2636,7 +2636,7 @@ regexp("^https?:\/\/((?!area51)\w+\.)*?stackexchange\.com.*") {
   #sound, .vote-count-container.stars .img, #sub-navs>a:hover .messages-icon,
   .industries:before, .js-reputation-graph, .js-reputation-graph *,
   #sub-navs .messages-icon, .topbar-dialog .header .icon-close,
-  .menu-item span.settings-icon:hover {
+  .menu-item span.settings-icon:hover, .icon-imgur-black {
     -webkit-filter: invert(100%) !important;
             filter: invert(100%) !important;
   }
