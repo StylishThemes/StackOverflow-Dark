@@ -2542,7 +2542,7 @@ regexp("^https?:\/\/((?!area51)\w+\.)*?stackexchange\.com.*") {
   .highcharts-container [stroke="#bbb"], .highcharts-container [stroke="#aaa"] {
     stroke: #555;
   }
-  .highcharts-container span[style*='color: rgb(51, 51, 51); padding: 0px; white-space: nowrap; line-height: 200%; fill: rgb(51, 51, 51)'] {
+  .highcharts-container span[style*="color: rgb(51, 51, 51); padding: 0px; white-space: nowrap; line-height: 200%; fill: rgb(51, 51, 51)"] {
     color: #ccc !important;
     fill: #ccc !important;
   }
