@@ -409,12 +409,12 @@ regexp("^https?:\/\/((?!area51)\w+\.)*?stackexchange\.com.*") {
   .top-bar .-secondary .-ctas .btn-topbar-clear:focus, .s-btn__primary:focus,
   .s-btn:focus,
   .min-ds-wizard .min-ds-box.jobs .min-ds-content .tag-editor-wrapper .tag-editor .post-tag .delete-tag,
-  .delete-tag, .mb16, .icon-site, .icon-location, .icon-github, .icon-twitter,
-  .icon-time, .icon-calendar, .icon-eye, .icon-se, .icon-q, .icon-a,
-  .icon-q-small, .icon-a-small, .icon-ppl-helped, .icon-helpful-edit,
-  .icon-vote-cast, .icon-lock, .icon-so-gray, .icon-external-link,
-  .icon-helpful-flags, .icon-history, .icon-settings, .icon-settings-off,
-  .icon-arrow-bottom, .icon-user-dark {
+  .delete-tag, .mb16:not(.profile-placeholder--image), .icon-site,
+  .icon-location, .icon-github, .icon-twitter, .icon-time, .icon-calendar,
+  .icon-eye, .icon-se, .icon-q, .icon-a, .icon-q-small, .icon-a-small,
+  .icon-ppl-helped, .icon-helpful-edit, .icon-vote-cast, .icon-lock,
+  .icon-so-gray, .icon-external-link, .icon-helpful-flags, .icon-history,
+  .icon-settings, .icon-settings-off, .icon-arrow-bottom, .icon-user-dark {
     filter: brightness(120%) !important;
   }
   .s-btn, .s-btn:focus {
