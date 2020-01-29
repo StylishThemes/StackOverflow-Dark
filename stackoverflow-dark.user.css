@@ -2921,6 +2921,8 @@ regexp("^https?:\/\/((?!area51)\w+\.)*?stackexchange\.com.*") {
     color: initial !important;
   }
   .gv-item {
+    border-radius: 10px !important;
+  }
   div[style*="background-color: rgb(27"] table.gv-stats tr,
   div[style*="background-color: rgb(27"] table.gv-stats td,
   div[style*="background-color: rgb(27"] div.gv-expanded-site-name,
