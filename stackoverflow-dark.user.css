@@ -2530,6 +2530,28 @@ regexp("^https?:\/\/((?!area51)\w+\.)*?stackexchange\.com.*") {
   .about-post-body-gradient {
     background: linear-gradient(to top, #191919 15%, transparent 100%);
   }
+  .highcharts-container rect[fill="#FFFFFF"], rect[fill="rgb(255, 255, 255)"] {
+    fill: transparent;
+  }
+  .highcharts-tooltip rect[fill="rgb(255,255,255)"] {
+    fill: #181818;
+  }
+  .highcharts-tooltip text[fill="#333333"] {
+    fill: #fff !important;
+  }
+  .highcharts-container [stroke="#bbb"], .highcharts-container [stroke="#aaa"] {
+    stroke: #555;
+  }
+  .highcharts-container span[style*='color: rgb(51, 51, 51); padding: 0px; white-space: nowrap; line-height: 200%; fill: rgb(51, 51, 51)'] {
+    color: #ccc !important;
+    fill: #ccc !important;
+  }
+  .highcharts-container text[x="28.149999618530273"][style*="fill:#6D869F;"] {
+    fill: #aaa !important;
+  }
+  #rep-page-container #graph-help {
+    color: #ccc !important;
+  }
   #reputation-graph .highcharts-container rect[fill="#FDFDFD"] {
     fill: transparent;
   }
