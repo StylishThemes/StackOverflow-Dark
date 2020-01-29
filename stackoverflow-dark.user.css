@@ -309,7 +309,7 @@ regexp("^https?:\/\/((?!area51)\w+\.)*?stackexchange\.com.*") {
   input[type="button"]:not(.s-btn):hover, button:not(.s-btn):hover,
   .button:hover, .btn:hover, input[type="submit"]:not(.s-btn):focus,
   input[type="button"]:not(.s-btn):focus, button:not(.s-btn):focus,
-  .button:focus, .btn:focus {
+  .button:focus, .btn:focus, #site-picker input[type="submit"]:hover {
     background-color: /*[[base-color]]*/;
     border-color: rgba(/*[[base-color-rgb]]*/, .5);
     filter: brightness(120%) !important;
@@ -322,7 +322,9 @@ regexp("^https?:\/\/((?!area51)\w+\.)*?stackexchange\.com.*") {
   .s-btn.s-btn__primary, .s-btn.s-btn__primary:focus,
   .top-bar .-secondary .-ctas .btn-topbar-primary,
   .top-bar .-secondary .-ctas .btn-topbar-primary:focus,
-  .user-card-name .top-badge, .user-card-name .top-badge a {
+  .user-card-name .top-badge, .user-card-name .top-badge a,
+  #site-picker input[type="submit"] {
+    background: /*[[base-color]]*/ !important;
     background-color: /*[[base-color]]*/ !important;
     color: #eee !important;
   }
