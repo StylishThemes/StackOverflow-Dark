@@ -1134,6 +1134,9 @@ regexp("^https?:\/\/((?!area51)\w+\.)*?stackexchange\.com.*") {
     border-color: /*[[base-color]]*/;
     box-shadow: 0 0 5px rgba(/*[[base-color-rgb]]*/, .5);
   }
+  .filter-dashboard-edit .tag-list {
+    border-color: /*[[base-color]]*/;
+  }
   .s-btn[data-action="se-uql-list#editCurrent"],
   html:not(#X) .s-btn[data-action="se-uql#cancelEditor"],
   .prev-next.test-pagination-next {
@@ -1190,7 +1193,8 @@ regexp("^https?:\/\/((?!area51)\w+\.)*?stackexchange\.com.*") {
   .s-sidebarwidget.module .s-sidebarwidget--header,
   .s-sidebarwidget--content.s-sidebarwidget__items, #sub-navs > a,
   .s-sidebarwidget--content, .bc-black-3,
-  td[style*="border-bottom: 1px solid #727272;"] {
+  td[style*="border-bottom: 1px solid #727272;"], .s-tag.bg-black-075:hover,
+  .s-tag.bg-black-075 {
     border-color: #444 !important;
   }
   .diff-buttons a:hover, .diff-choices a:hover, .diff-type-controls a:hover,
@@ -1612,7 +1616,10 @@ regexp("^https?:\/\/((?!area51)\w+\.)*?stackexchange\.com.*") {
     background-color: rgba(214, 217, 220, .1) !important;
   }
   .util-bar, #question > footer, .answer > footer, #question .user-info,
-  .answer .user-info, .comment, .field._toolbar .-toolbar, fieldset {
+  .answer .user-info, .comment, .field._toolbar .-toolbar, fieldset,
+  .wrapper._card, .vertical-list .-item, .user-panel._card, .badge-top._badge2,
+  .badge-top._badge1, .badge-top._badge3, .badge-top._badge1 .-name,
+  .badge-top._badge2 .-name, .badge-top._badge3 .-name {
     border-color: #444;
   }
   .comment-text, .topbar .login-links-container a:hover,
@@ -1625,6 +1632,8 @@ regexp("^https?:\/\/((?!area51)\w+\.)*?stackexchange\.com.*") {
   }
   .tabs._full li {
     background-color: #181818 !important;
+    border-bottom: 1px solid #555;
+  }
   .vote-up-on, .vote-up-off, .vote-down-off, .vote-down-on, .star-on,
   .vote-accepted-off, .vote-accepted-on {
     filter: grayscale(1) brightness(150%);
@@ -1756,6 +1765,10 @@ regexp("^https?:\/\/((?!area51)\w+\.)*?stackexchange\.com.*") {
   }
   .user-page .settings-page .email-settings .-unsubscribe {
     border-color: #333;
+  }
+  a.s-card:not(.s-card__muted):hover, a.s-card:not(.s-card__muted):focus,
+  a.s-card:not(.s-card__muted):active {
+    border-color: #666;
   }
   .history-table td {
     border-bottom-color: #444 !important;
