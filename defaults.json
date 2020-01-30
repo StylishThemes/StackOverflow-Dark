@@ -16,6 +16,17 @@
       "label": "font-choice",
       "value": "Menlo"
     },
+    "Background": {
+      "type": "dropdown",
+      "label": "bg-choice",
+      "value": {
+        "crosshatch": "url('https://camo.githubusercontent.com/5b8e4cd1a5ce69b6affa17ebd8e4aee00c147618/68747470733a2f2f7374796c6973687468656d65732e6769746875622e696f2f4769744875622d4461726b2f696d616765732f6261636b67726f756e64732f62672d63726f737368617463682e706e67')",
+        "uniform": "url('https://camo.githubusercontent.com/f83a9a60a2c64be0c88833ccb436e32a458cd2ce/68747470733a2f2f7374796c6973687468656d65732e6769746875622e696f2f4769744875622d4461726b2f696d616765732f6261636b67726f756e64732f62672d74696c652d756e69666f726d2e706e67')",
+        "random": "url('https://camo.githubusercontent.com/3beb850d8069e424480199a09899030c9e58e85f/68747470733a2f2f7374796c6973687468656d65732e6769746875622e696f2f4769744875622d4461726b2f696d616765732f6261636b67726f756e64732f62672d74696c65312e706e67')",
+        "custom": "var(--bg-custom)",
+        "none": "none"
+      }
+    },
     "Background image [wrap in url()]": {
       "type": "text",
       "label": "bg-custom",
