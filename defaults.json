@@ -19,7 +19,7 @@
     "Background image [wrap in url()]": {
       "type": "text",
       "label": "bg-custom",
-      "value": "url('url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA8AAAAPCAMAAAAMCGV4AAAAD1BMVEUREREREREAAAAREREWFhkN5cwCAAAABHRSTlNfGAAwFBG7CgAAACxJREFUeAFjYGJiZGBhhhMMYIIRTjCgcIE8VC4TKpeRmYEZiTtIzGNihhNMAJJAATdKr5xFAAAAAElFTkSuQmCC)')"
+      "value": "url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA8AAAAPCAMAAAAMCGV4AAAAD1BMVEUREREREREAAAAREREWFhkN5cwCAAAABHRSTlNfGAAwFBG7CgAAACxJREFUeAFjYGJiZGBhhhMMYIIRTjCgcIE8VC4TKpeRmYEZiTtIzGNihhNMAJJAATdKr5xFAAAAAElFTkSuQmCC')"
     },
     "Background image type": {
       "type": "dropdown",

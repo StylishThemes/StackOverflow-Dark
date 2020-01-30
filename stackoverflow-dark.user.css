@@ -23,7 +23,7 @@
   none "None" <<<EOT
   none EOT;
 }
-@advanced text bg-custom "Background image [wrap in url()]" "url('url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA8AAAAPCAMAAAAMCGV4AAAAD1BMVEUREREREREAAAAREREWFhkN5cwCAAAABHRSTlNfGAAwFBG7CgAAACxJREFUeAFjYGJiZGBhhhMMYIIRTjCgcIE8VC4TKpeRmYEZiTtIzGNihhNMAJJAATdKr5xFAAAAAElFTkSuQmCC)')"
+@advanced text bg-custom "Background image [wrap in url()]" "url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA8AAAAPCAMAAAAMCGV4AAAAD1BMVEUREREREREAAAAREREWFhkN5cwCAAAABHRSTlNfGAAwFBG7CgAAACxJREFUeAFjYGJiZGBhhhMMYIIRTjCgcIE8VC4TKpeRmYEZiTtIzGNihhNMAJJAATdKr5xFAAAAAElFTkSuQmCC')"
 @advanced dropdown bg-options "Background image type" {
   Tiled "Tiled" <<<EOT
   background-repeat: repeat !important;
