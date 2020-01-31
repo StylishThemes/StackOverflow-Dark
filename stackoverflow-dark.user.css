@@ -170,7 +170,8 @@ regexp("^https?:\/\/((?!area51)\w+\.)*?stackexchange\.com.*") {
   .search-form.responsive .added-filters .-more a, .s-btn:hover, .s-btn:focus,
   .s-btn:active, .top-bar .-secondary .-link._highlighted-positive,
   .top-bar .-secondary .-link._highlighted-positive:hover,
-  .top-bar .-secondary .-link._highlighted-positive.topbar-icon-on {
+  .top-bar .-secondary .-link._highlighted-positive.topbar-icon-on,
+  .timeline .readings .readings-item .description .description-expander ~ .description-expander-label {
     color: /*[[base-color]]*/;
   }
   .subheader h1 a, input[type="submit"].btn-clear,
@@ -701,6 +702,12 @@ regexp("^https?:\/\/((?!area51)\w+\.)*?stackexchange\.com.*") {
   .timeline .readings .readings-list .readings-item {
     background: #151515 !important;
   }
+  .timeline .readings .readings-list .readings-item .readings-image {
+    background: #444;
+  }
+  .timeline .readings .readings-list .readings-item {
+    border-color: #444;
+  }
   .top-bar .left-sidebar-toggle:hover,
   .top-bar .left-sidebar-toggle.topbar-icon-on {
     background-color: #191919 !important;
@@ -741,7 +748,8 @@ regexp("^https?:\/\/((?!area51)\w+\.)*?stackexchange\.com.*") {
     color: #ccc !important;
   }
   .s-anchors.s-anchors__grayscale a:not(.s-link),
-  .s-anchors .s-anchors.s-anchors__grayscale a:not(.s-link) {
+  .s-anchors .s-anchors.s-anchors__grayscale a:not(.s-link),
+  .timeline .readings .readings-list .readings-item .readings-item-text .readings-item-author {
     color: #bbb;
   }
   .timeline-item, .timeline .or-separator, a.job-link span, .narrow .mini-counts,
