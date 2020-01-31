@@ -329,6 +329,10 @@ regexp("^https?:\/\/((?!area51)\w+\.)*?stackexchange\.com.*") {
     background-color: /*[[base-color]]*/ !important;
     color: #eee !important;
   }
+  a.post-tag.user-tag:hover {
+    background-color: rgba(79, 140, 201, .8) !important;
+    background-color: rgba(/*[[base-color-rgb]]*/, .8) !important;
+  }
   .privileges-page .privilege-table-row:hover, .top-bar .my-profile:hover,
   .top-bar .-secondary .-item .-link:hover {
     background-color: #242424;
