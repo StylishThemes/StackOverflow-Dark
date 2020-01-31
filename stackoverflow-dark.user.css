@@ -1051,8 +1051,9 @@ regexp("^https?:\/\/((?!area51)\w+\.)*?stackexchange\.com.*") {
     background-color: #282828 !important;
   }
   .s-btn__muted.is-selected:hover, .s-btn__muted.is-selected:focus,
-  .s-btn__muted.is-selected:active, .s-btn.s-btn__muted:hover,
-  .s-btn.s-btn__muted:focus, .s-btn.s-btn__muted:active {
+  .s-btn__muted.is-selected:active,
+  .s-btn.s-btn__muted:not(.facebook-login):hover, .s-btn.s-btn__muted:focus,
+  .s-btn.s-btn__muted:active {
     color: #ccc !important;
     background-color: #282828 !important;
   }
