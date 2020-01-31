@@ -2317,7 +2317,7 @@ regexp("^https?:\/\/((?!area51)\w+\.)*?stackexchange\.com.*") {
     border: 1px solid transparent !important;
   }
   .s-radio:checked {
-    border-color: /*[[base-color]]*/;
+    border-color: /*[[base-color]]*/ !important;
     background-color: #111;
   }
   .s-checkbox:checked {
