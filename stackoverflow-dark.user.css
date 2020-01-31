@@ -4022,10 +4022,8 @@ regexp("^https?:\/\/((?!area51)\w+\.)*?stackexchange\.com.*") {
 }
 @-moz-document domain("serverfault.com") {
   /* serverfault.com */
-  #hlogo a {
-    background-size: cover !important;
-    background-image: url("https://StylishThemes.github.io/StackOverflow-Dark/images/serverfault-logo.svg") !important;
-  }
+  .site-header img {
+    filter: invert(1) hue-rotate(180deg) brightness(80%);
   }
 }
 @-moz-document domain("skeptics.stackexchange.com") {
