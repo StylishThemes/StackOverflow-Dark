@@ -1643,6 +1643,9 @@ regexp("^https?:\/\/((?!area51)\w+\.)*?stackexchange\.com.*") {
     color: #ddd;
   }
   /* === Red === */
+  .bg-red-200, .h\:bg-red-200:hover, .f\:bg-red-200:focus {
+    background-color: #e33 !important;
+  }
   input[type="submit"].btn-outlined.-warning,
   input[type="button"].btn-outlined.-warning, button.btn-outlined.-warning,
   .btn-outlined.-warning {
