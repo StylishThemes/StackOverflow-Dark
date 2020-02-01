@@ -1982,6 +1982,10 @@ regexp("^https?:\/\/((?!area51)\w+\.)*?stackexchange\.com.*") {
     color: #ccc !important;
     border: 1px solid #135 !important;
   }
+  .fc-powder-600, .fc-powder-600 a, .h\:fc-powder-600:hover,
+  .f\:fc-powder-600:focus {
+    color: #1e98d5 !important;
+  }
   .fc-blue-700, .h\:fc-blue-700:hover, .f\:fc-blue-700:focus, .fc-blue-700 a,
   .s-badge__votes.h\:fc-blue-700:hover a, .s-badge__votes.f\:fc-blue-700:focus a {
     color: #1e98d5 !important;
