@@ -612,6 +612,32 @@ regexp("^https?:\/\/((?!area51)\w+\.)*?stackexchange\.com.*") {
     background-color: #111 !important;
     color: #ddd !important;
   }
+  .s-input:focus, .s-input.has-focus, .s-textarea:focus,
+  .s-select > select:focus {
+    border-color: /*[[base-color]]*/ !important;
+    box-shadow: 0 0 0 1px /*[[base-color]]*/ !important;
+  }
+  textarea:not(.s-input):focus, input[type="text"]:not(.s-input):focus,
+  input[type="password"]:not(.s-input):focus,
+  input[type="number"]:not(.s-input):focus,
+  input[type="email"]:not(.s-input):focus, input[type="url"]:not(.s-input):focus,
+  input[type="search"]:not(.s-input):focus,
+  input[type="tel"]:not(.s-input):focus,
+  input[type="datetime"]:not(.s-input):focus, .input:not(.s-input):focus,
+  .input._uneditable:not(.s-input):focus, textarea:not(.s-input)._focus,
+  input[type="text"]:not(.s-input)._focus,
+  input[type="password"]:not(.s-input)._focus,
+  input[type="number"]:not(.s-input)._focus,
+  input[type="email"]:not(.s-input)._focus,
+  input[type="url"]:not(.s-input)._focus,
+  input[type="search"]:not(.s-input)._focus,
+  input[type="tel"]:not(.s-input)._focus,
+  input[type="datetime"]:not(.s-input)._focus, .input:not(.s-input)._focus,
+  .input._uneditable:not(.s-input)._focus {
+    background-color: #111;
+    border-color: /*[[base-color]]*/ ;
+    box-shadow: inset 0 2px 2px #111, 0 0 5px rgba(/*[[base-color-rgb]]*/, .8);
+  }
   input[type="text"]:not(.s-input), input[type="password"]:not(.s-input),
   input[type="number"]:not(.s-input), input[type="email"]:not(.s-input),
   input[type="url"]:not(.s-input), input[type="search"]:not(.s-input),
