@@ -422,12 +422,12 @@ regexp("^https?:\/\/((?!area51)\w+\.)*?stackexchange\.com.*") {
   .top-bar .-secondary .-ctas .btn-topbar-clear:focus, .s-btn__primary:focus,
   .s-btn:focus,
   .min-ds-wizard .min-ds-box.jobs .min-ds-content .tag-editor-wrapper .tag-editor .post-tag .delete-tag,
-  .mb16:not(.profile-placeholder--image), .icon-site, .icon-location,
-  .icon-github, .icon-twitter, .icon-time, .icon-calendar, .icon-eye, .icon-se,
-  .icon-q, .icon-a, .icon-q-small, .icon-a-small, .icon-ppl-helped,
-  .icon-helpful-edit, .icon-vote-cast, .icon-lock, .icon-so-gray,
-  .icon-external-link, .icon-helpful-flags, .icon-history, .icon-settings,
-  .icon-settings-off, .icon-arrow-bottom, .icon-user-dark,
+  .mb16:not(.profile-placeholder--image):not(.bg-yellow-200), .icon-site,
+  .icon-location, .icon-github, .icon-twitter, .icon-time, .icon-calendar,
+  .icon-eye, .icon-se, .icon-q, .icon-a, .icon-q-small, .icon-a-small,
+  .icon-ppl-helped, .icon-helpful-edit, .icon-vote-cast, .icon-lock,
+  .icon-so-gray, .icon-external-link, .icon-helpful-flags, .icon-history,
+  .icon-settings, .icon-settings-off, .icon-arrow-bottom, .icon-user-dark,
   .delete-tag:hover::after {
     filter: brightness(120%) !important;
   }
@@ -1347,6 +1347,10 @@ regexp("^https?:\/\/((?!area51)\w+\.)*?stackexchange\.com.*") {
     background: linear-gradient(270deg, #333, rgba(51, 51, 51, 0));
   }
   /* === Brown(ish) === */
+  .bg-yellow-200, .h\:bg-yellow-200:hover, .f\:bg-yellow-200:focus {
+    background-color: #fc3 !important;
+    color: #111;
+  }
   #sideBar .newuser, .stats-sidebar .newuser {
     background-color: #321 !important;
     border: 1px solid #542 !important;
