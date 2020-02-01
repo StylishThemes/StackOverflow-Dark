@@ -2451,6 +2451,9 @@ regexp("^https?:\/\/((?!area51)\w+\.)*?stackexchange\.com.*") {
     color: #ddd !important;
   }
   /* orange */
+  .bg-orange-200, .h\:bg-orange-200:hover, .f\:bg-orange-200:focus {
+    background-color: #f67400 !important;
+  }
   .hot, .fc-orange-400 .iconRss, .fc-orange-400.iconRss,
   #mainbar .grid a .iconRss, .mini-counts.hot {
     color: #f67400 !important;
