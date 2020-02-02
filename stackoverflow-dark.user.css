@@ -2170,8 +2170,7 @@ regexp("^https?:\/\/((?!area51)\w+\.)*?stackexchange\.com.*") {
   html:not(#X) .fc-black-200, svg.iconLocation, svg.iconTwitter, svg.iconGitHub,
   svg.iconMoney, svg.iconVacation, svg.iconHealth, svg.iconComputer,
   svg.iconClock, svg.iconFood, svg.iconFaceSmile, svg.iconHeart, svg.iconFitness,
-  svg.iconSubway, .fc-black-300, .h\:fc-black-300:hover, .f\:fc-black-300:focus,
-  .s-anchors.s-anchors__muted a:not(.s-link),
+  svg.iconSubway, .s-anchors.s-anchors__muted a:not(.s-link),
   .s-anchors .s-anchors.s-anchors__muted a:not(.s-link) {
     color: #999 !important;
   }
@@ -2316,6 +2315,9 @@ regexp("^https?:\/\/((?!area51)\w+\.)*?stackexchange\.com.*") {
     color: #ddd !important;
   }
   /* end not !important */
+  .fc-black-300, .h\:fc-black-300:hover, .f\:fc-black-300:focus {
+    color: #aaa !important;
+  }
   #privilege-category-descriptions .privilege-icon,
   .privilege-table-row .privilege-icon, .favicon-stackexchangemeta {
     filter: grayscale(100%) !Important;
