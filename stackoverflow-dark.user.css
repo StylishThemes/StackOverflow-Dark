@@ -1555,9 +1555,6 @@ regexp("^https?:\/\/((?!area51)\w+\.)*?stackexchange\.com.*") {
     background: #27ae60;
     color: #eee;
   }
-  .bg-powder-800, .h\:bg-powder-800:hover, .f\:bg-powder-800:focus {
-    background-color: #182030 !important;
-  }
   .bg-black-025, .h\:bg-black-025:hover, .f\:bg-black-025:focus {
     background-color: #181818 !important;
   }
@@ -2104,6 +2101,10 @@ regexp("^https?:\/\/((?!area51)\w+\.)*?stackexchange\.com.*") {
   }
   .hero-box, .filter-show-more, .s-hero::after {
     background: #182030 !important;
+  }
+  .module.filters-sidebar, .bg-powder-800, .h\:bg-powder-800:hover,
+  .f\:bg-powder-800:focus {
+    background-color: #182030 !important;
   }
   .newsletters-toggle, .topbar-dialog .unread-item {
     background-color: #182030;
