@@ -746,7 +746,7 @@ regexp("^https?:\/\/((?!area51)\w+\.)*?stackexchange\.com.*") {
     background: #444;
   }
   .timeline .readings .readings-list .readings-item,
-  .badges-page .single-badge-table .single-badge-row-reason {
+  .badges-page .single-badge-table .single-badge-row-reason, .s-press .-item {
     border-color: #444;
   }
   .top-bar .left-sidebar-toggle:hover,
@@ -1247,7 +1247,7 @@ regexp("^https?:\/\/((?!area51)\w+\.)*?stackexchange\.com.*") {
   .table._borders > tfoot > tr > td, .new-about-content-page .qa-block,
   .new-about-content-page .content-block, .sidebar-stats td, .sidebar-stats th,
   .new-about-content-page .user-info-rep, .-summary,
-  .user-show-new .user-panel .subheader {
+  .user-show-new .user-panel .subheader, .s-jobs .-department {
     border-color: #444;
   }
   .pac-container .pac-item .pac-icon {
