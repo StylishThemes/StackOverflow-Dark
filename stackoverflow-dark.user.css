@@ -2303,7 +2303,7 @@ regexp("^https?:\/\/((?!area51)\w+\.)*?stackexchange\.com.*") {
   /* these arent !important, but we botch them to make them work */
   html .job, .label-key, .reputation-score, .fc-black-400, .fc-black-600,
   .started-link, .question-hyperlink, .s-btn.google-login, .stackexchange-login,
-  html .s-btn__google, [style="color: #8C9298;"] {
+  html .s-btn__google, [style="color: #8C9298;"], .comment-link {
     color: #aaa !important;
   }
   .nav-links .youarehere .nav-links--link,
@@ -2342,7 +2342,8 @@ regexp("^https?:\/\/((?!area51)\w+\.)*?stackexchange\.com.*") {
   .s-stat .-description, .top-bar .-secondary .-link, .post-menu > a,
   .statscontainer, .users-page .user-info .user-tags > a,
   .new-about-content-page .user-details, .new-about-content-page .rep-block,
-  .new-about-content-page .comments {
+  .new-about-content-page .comments, .top-question-meta-info,
+  .top-question-score {
     color: #aaa;
   }
   .topbar-dialog.help-dialog .item-summary,
@@ -2393,7 +2394,7 @@ regexp("^https?:\/\/((?!area51)\w+\.)*?stackexchange\.com.*") {
   .company-list p, .-settings span, .email-settings .-info p,
   #tags_list span:not(.page-numbers), .s-description, p.fc-black-700,
   a.s-link__grayscale, .s-link.s-link__grayscale, .site-footer--copyright p,
-  #side-menu ul ul li > a, .comment-link, .sort label[for="sorting-options"],
+  #side-menu ul ul li > a, .sort label[for="sorting-options"],
   .company-list div.fc-black-500 {
     color: #999 !important;
   }
@@ -2932,7 +2933,7 @@ regexp("^https?:\/\/((?!area51)\w+\.)*?stackexchange\.com.*") {
     filter: invert(1) hue-rotate(180deg) saturate(900%) brightness(200%);
     mix-blend-mode: exclusion;
   }
-  .site-footer .-title a {
+  .site-footer .-title a, .question-title-link, .metainfo-link {
     color: /*[[base-color]]*/ !important;
   }
   .site-footer .-link:hover {
