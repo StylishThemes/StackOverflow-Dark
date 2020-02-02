@@ -119,7 +119,7 @@ regexp("^https?:\/\/((?!area51)\w+\.)*?stackexchange\.com.*") {
     box-shadow: none !important;
   }
   body, .cv-story header {
-    background-color: #191919 !important;
+    background-color: #202020 !important;
     background-image: var(--bg-img);
     background-clip: border-box;
     background-origin: padding-box;
