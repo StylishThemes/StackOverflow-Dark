@@ -948,10 +948,21 @@ regexp("^https?:\/\/((?!area51)\w+\.)*?stackexchange\.com.*") {
   .subheader.reloaded.js-user-header #tabs a.youarehere {
     margin-top: 0 !important;
   }
-  body #mainArea .subheader .tabs a.youarehere, .subheader .tabs a.youarehere,
+  body #mainArea .subheader .tabs a.youarehere,
+  .subheader .tabs a.youarehere:not([href*="company"]),
   #mainbar .subheader #tabs {
     margin-top: 3px;
     border-bottom-color: transparent !important;
+  }
+  .subheader .tabs a.youarehere[href*="company"] {
+    margin-top: 2px;
+    border-bottom-color: transparent !important;
+  }
+  .subheader .tabs a[href*="company"] {
+    margin-top: 3px;
+  }
+  .subheader .tabs a:not(.youarehere)[href*="company"]:hover {
+    margin-top: 0;
   }
   .subheader.user-tabs-nav .tabs a.youarehere {
     margin-top: 0;
@@ -967,7 +978,7 @@ regexp("^https?:\/\/((?!area51)\w+\.)*?stackexchange\.com.*") {
     background: #222 !important;
     margin-top: -1px;
   }
-  .subheader:not(.user-tabs-nav) .tabs a.youarehere {
+  .subheader:not(.user-tabs-nav) .tabs a.youarehere:not([href*="company"]) {
     border-bottom-color: /*[[base-color]]*/ !important;
     color: /*[[base-color]]*/ !important;
   }
@@ -1895,7 +1906,7 @@ regexp("^https?:\/\/((?!area51)\w+\.)*?stackexchange\.com.*") {
   }
   .search-form .filter-pane a._active, .search-form .filter-pane a:hover,
   #tabs-interval .youarehere.is-selected,
-  html:not(#X) #content .subheader:not(.reloaded) .tabs a.youarehere {
+  html:not(#X) #content .subheader:not(.reloaded) .tabs a.youarehere:not([href*="company"]) {
     border-bottom-color: /*[[base-color]]*/ !important;
   }
   .left-arrow, .timeline-item:nth-child(odd)::after {
