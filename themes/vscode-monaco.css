@@ -2,7 +2,6 @@
 /* Pretty printing styles. Used with prettify.js. */
 /* Visual Studio Code - Monaco theme by Alex Rodin, based on Vim sunburst theme by David Leibovic */
 /* Source: https://github.com/google/code-prettify/pull/447 */
-
 pre .com, code .com { color: rgba(96, 139, 78, 1) !important; }    /* comment */
 pre .str, code .str { color: rgba(206, 145, 120, 1) !important; }  /* string */
 pre .atv, code .atv { color: rgba(206, 145, 120, 1) !important; }  /* html/xml attribute value */
@@ -14,7 +13,6 @@ pre .pun, code .pun { color: rgba(212, 212, 212, 1) !important; }  /* punctuatio
 pre .pln, code .pln { color: rgba(220, 220, 170, 1) !important; }  /* plaintext*/
 pre .lit, code .lit { color: rgba(181, 206, 168, 1) !important; }  /* literal */
 pre .dec, code .dec { color: rgba(181, 206, 168, 1) !important; }  /* decimal*/
-
 pre.prettyprint,
 code.prettyprint {
     border: 0 !important;
@@ -23,22 +21,18 @@ code.prettyprint {
     background-color: #1e1e1e !important;
     width: 95% !important;
 }
-
 pre.prettyprint {
     margin: 1em auto !important;
     padding: 1em !important;
     white-space: pre-wrap !important;
-    font-family: Consolas, 'Courier New', monospace !important;
+    font-family: Consolas, "Courier New", monospace !important;
     font-size: 14px !important;
 }
-
-
 /* Specify class=linenums on a pre to get line numbering */
-ol.linenums { margin-top: 0 !important; margin-bottom: 0 !important; color: #5a5a5a !important;} /* IE indents via margin-left */
+ol.linenums { margin-top: 0 !important; margin-bottom: 0 !important; color: #5a5a5a !important; } /* IE indents via margin-left */
 li.L0,li.L1,li.L2,li.L3,li.L5,li.L6,li.L7,li.L8 { padding-left: 5px !important; }
 /* Alternate shading for lines */
 li.L1,li.L3,li.L5,li.L7,li.L9 { }
-
 @media print {
     pre .str, code .str { color: #060 !important; }
     pre .kwd, code .kwd { color: #006 !important; font-weight: bold !important; }

@@ -5,20 +5,18 @@
  * http://CodeTunnel.com/blog/post/71/google-code-prettify-obsidian-theme
  * https://code.google.com/p/google-code-prettify/source/browse/trunk/styles/sons-of-obsidian.css
  */
-
-.str { color: #EC7600 !important; }
-.kwd { color: #93C763 !important; }
-.com { color: #66747B !important; }
-.typ { color: #678CB1 !important; }
-.lit { color: #FACD22 !important; }
-.pun { color: #F1F2F3 !important; }
-.pln { color: #F1F2F3 !important; }
-.tag { color: #8AC763 !important; }
-.atn { color: #E0E2E4 !important; }
-.atv { color: #EC7600 !important; }
+.str { color: #ec7600 !important; }
+.kwd { color: #93c763 !important; }
+.com { color: #66747b !important; }
+.typ { color: #678cb1 !important; }
+.lit { color: #facd22 !important; }
+.pun { color: #f1f2f3 !important; }
+.pln { color: #f1f2f3 !important; }
+.tag { color: #8ac763 !important; }
+.atn { color: #e0e2e4 !important; }
+.atv { color: #ec7600 !important; }
 .dec { color: purple !important; }
-
-pre.prettyprint { border: 0px solid #888 !important; }
+pre.prettyprint { border: 0 solid #888 !important; }
 ol.linenums {
   margin-top: 0 !important;
   margin-bottom: 0 !important;

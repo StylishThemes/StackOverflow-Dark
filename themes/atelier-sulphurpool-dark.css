@@ -5,18 +5,15 @@
   font-family: Menlo, "Bitstream Vera Sans Mono", "DejaVu Sans Mono", Monaco, Consolas, monospace !important;
   border: 0 !important;
 }
-
 .pln {
   color: #f5f7ff !important;
 }
-
 /* Specify class=linenums on a pre to get line numbering */
 ol.linenums {
   margin-top: 0 !important;
   margin-bottom: 0 !important;
   color: #6b7394 !important;
 }
-
 li.L0,
 li.L1,
 li.L2,
@@ -31,89 +28,60 @@ li.L9 {
   background-color: #202746 !important;
   list-style-type: decimal !important;
 }
-
 @media screen {
-
   /* string content */
-
   .str {
     color: #ac9739 !important;
   }
-
   /* keyword */
-
   .kwd {
     color: #6679cc !important;
   }
-
   /* comment */
-
   .com {
     color: #6b7394 !important;
   }
-
   /* type name */
-
   .typ {
     color: #3d8fd1 !important;
   }
-
   /* literal value */
-
   .lit {
     color: #c76b29 !important;
   }
-
   /* punctuation */
-
   .pun {
     color: #f5f7ff !important;
   }
-
   /* lisp open bracket */
-
   .opn {
     color: #f5f7ff !important;
   }
-
   /* lisp close bracket */
-
   .clo {
     color: #f5f7ff !important;
   }
-
   /* markup tag name */
-
   .tag {
     color: #c94922 !important;
   }
-
   /* markup attribute name */
-
   .atn {
     color: #c76b29 !important;
   }
-
   /* markup attribute value */
-
   .atv {
     color: #22a2c9 !important;
   }
-
   /* declaration */
-
   .dec {
     color: #c76b29 !important;
   }
-
   /* variable name */
-
   .var {
     color: #c94922 !important;
   }
-
   /* function name */
-
   .fun {
     color: #3d8fd1 !important;
   }

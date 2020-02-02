@@ -14,13 +14,11 @@ pre .tag, code .tag { color: #f0e68c !important; font-weight: bold !important; }
 pre .atn, code .atn { color: #bdb76b !important; font-weight: bold !important; } /* attribute name  - khaki */
 pre .atv, code .atv { color: #ffa0a0 !important; } /* attribute value - pink */
 pre .dec, code .dec { color: #98fb98 !important; } /* decimal         - lightgreen */
-
 /* Specify class=linenums on a pre to get line numbering */
-ol.linenums { margin-top: 0; margin-bottom: 0; color: #AEAEAE } /* IE indents via margin-left */
+ol.linenums { margin-top: 0; margin-bottom: 0; color: #aeaeae; } /* IE indents via margin-left */
 li.L0,li.L1,li.L2,li.L3,li.L5,li.L6,li.L7,li.L8 { list-style-type: none !important; }
 /* Alternate shading for lines */
 li.L1,li.L3,li.L5,li.L7,li.L9 { }
-
 @media print {
   pre.prettyprint { background-color: none !important; }
   pre .str, code .str { color: #060 !important; }

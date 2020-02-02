@@ -1,21 +1,18 @@
 /*! Material */
-
 code {
-    background-color: transparent
+    background-color: transparent;
 }
-
-pre .str, code .str { color: #C3E88D !important; } /* string */
+pre .str, code .str { color: #c3e88d !important; } /* string */
 pre .kwd, code .kwd { color: #c792ea !important; } /* keyword */
-pre .com, code .com { color: #546E7A !important; font-style: italic !important; } /* comment */
+pre .com, code .com { color: #546e7a !important; font-style: italic !important; } /* comment */
 pre .typ, code .typ { color: #ff8282 !important; } /* type */
 pre .lit, code .lit { color: #ae81ff !important; } /* literal */
-pre .pun, code .pun { color: #80CBC4 !important; } /* punctuation */
-pre .pln, code .pln { color: #ffffff !important; } /* plaintext */
+pre .pun, code .pun { color: #80cbc4 !important; } /* punctuation */
+pre .pln, code .pln { color: #fff !important; } /* plaintext */
 pre .tag, code .tag { color: #ff5370 !important; } /* html/xml tag */
-pre .atn, code .atn { color: #FFCB6B !important; } /* html/xml attribute name */
-pre .atv, code .atv { color: #C3E88D !important; } /* html/xml attribute value */
+pre .atn, code .atn { color: #ffcb6b !important; } /* html/xml attribute name */
+pre .atv, code .atv { color: #c3e88d !important; } /* html/xml attribute value */
 pre .dec, code .dec { color: #ae81ff !important; } /* decimal */
-
 pre.prettyprint, code.prettyprint {
 	background-color: #272822 !important;
 	font-family: consolas, menlo, courier, monospace !important;

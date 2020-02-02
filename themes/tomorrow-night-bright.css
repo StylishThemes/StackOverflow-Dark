@@ -2,14 +2,12 @@
 /* Original theme - https://github.com/chriskempson/tomorrow-theme */
 .prettyprint {
   background: black !important;
-  font-family: Menlo, 'Bitstream Vera Sans Mono', 'DejaVu Sans Mono', Monaco, Consolas, monospace !important;
+  font-family: Menlo, "Bitstream Vera Sans Mono", "DejaVu Sans Mono", Monaco, Consolas, monospace !important;
   padding: 10px !important;
 }
-
 .pln {
   color: #eaeaea !important;
 }
-
 @media screen {
   .str { color: #b9ca4a !important; }
   .kwd { color: #c397d8 !important; }
@@ -27,22 +25,21 @@
   .fun { color: #7aa6da !important; }
 }
 @media print, projection {
-  .str { color: #006600 !important; }
+  .str { color: #060 !important; }
   .kwd { color: #006 !important; font-weight: bold !important; }
   .com { color: #600 !important; font-style: italic !important; }
   .typ { color: #404 !important; font-weight: bold !important; }
-  .lit { color: #004444 !important; }
-  .pun, .opn, .clo { color: #444400 !important; }
+  .lit { color: #044 !important; }
+  .pun, .opn, .clo { color: #440 !important; }
   .tag { color: #006 !important; font-weight: bold !important; }
-  .atn { color: #440044 !important; }
-  .atv { color: #006600 !important; }
+  .atn { color: #404 !important; }
+  .atv { color: #060 !important; }
 }
 /* Specify class=linenums on a pre to get line numbering */
 ol.linenums {
   margin-top: 0 !important;
   margin-bottom: 0 !important;
 }
-
 /* IE indents via margin-left */
 li.L0, li.L1, li.L2, li.L3, li.L4, li.L5, li.L6, li.L7, li.L8, li.L9 {}
 /* Alternate shading for lines */
