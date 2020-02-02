@@ -2844,6 +2844,21 @@ regexp("^https?:\/\/((?!area51)\w+\.)*?stackexchange\.com.*") {
     background: transparent url("https://cdn.sstatic.net/stackexchange/img/se-logo.png?v=8f7dca5b94db") no-repeat left top !important;
     filter: invert(80%) hue-rotate(180deg) contrast(160%);
   }
+  #fancybox-outer, .background-table, .content {
+    background: #181818;
+  }
+  #fancybox-content {
+    border-color: #181818;
+  }
+  #fancybox-content .question {
+    background-color: #181818;
+    border-bottom: 1px solid #444;
+  }
+  .background-table a.tag {
+    background: rgba(/*[[base-color-rgb]]*/, .6) !important;
+    border-color: rgba(/*[[base-color-rgb]]*/, 1) !important;
+    color: #ccc !important;
+  }
   html #footer.site-footer {
     background: rgba(0, 0, 0, .5) !important;
   }
