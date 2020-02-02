@@ -831,8 +831,15 @@ regexp("^https?:\/\/((?!area51)\w+\.)*?stackexchange\.com.*") {
   .content-block, .user-info-rep, .sidebar, .popup, .full-diff, .val-success,
   .search-form .filter-pane nav, .s-card, .chosen-container .chosen-drop,
   .pac-item.pac-item-selected, .pac-item:hover, .-item.social:hover,
-  #add-tags-button, #filter-preview, .salary-results, .nav {
+  .salary-results, .nav {
     background: #191919 !important;
+  }
+  .filter-dashboard-edit #add-tags-button,
+  .filter-dashboard-edit #filter-preview {
+    color: #ccc !important;
+    border: 1px solid #444;
+    background: #333;
+    background: linear-gradient(to bottom, #222, #333);
   }
   .timeline-item.edit .img {
     background-color: #333 !important;
@@ -1019,10 +1026,9 @@ regexp("^https?:\/\/((?!area51)\w+\.)*?stackexchange\.com.*") {
   .bg-black-750, .h\:bg-black-750:hover, .f\:bg-black-750:focus {
     background-color: #232323 !important;
   }
-  #header #topbar, .revision-comment, .date-span,
-  .form-submit input:not([type="button"]), .preferred-login, .date_brick,
-  .more-info, .review-stats-current-user, .review-stats-count-current-user,
-  .topbar-menu-links, .input-group .-fill {
+  #header #topbar, .date-span, .form-submit input:not([type="button"]),
+  .preferred-login, .date_brick, .more-info, .review-stats-current-user,
+  .review-stats-count-current-user, .topbar-menu-links, .input-group .-fill {
     background: #222 !important;
     color: #ddd !important;
     -webkit-border-radius: 3px !important;
@@ -1390,7 +1396,7 @@ regexp("^https?:\/\/((?!area51)\w+\.)*?stackexchange\.com.*") {
     background-color: #fc3 !important;
     color: #111;
   }
-  #sideBar .newuser, .stats-sidebar .newuser {
+  #sideBar .newuser, .stats-sidebar .newuser, .module.newuser, .module.emailsub {
     background-color: #321 !important;
     border: 1px solid #542 !important;
        -moz-box-shadow: none !important;
@@ -1410,7 +1416,7 @@ regexp("^https?:\/\/((?!area51)\w+\.)*?stackexchange\.com.*") {
   .mdhelp-tabs li.selected, .wmd-help-button.active-help {
     background-color: #321;
   }
-  .mdhelp {
+  .mdhelp, .revision-comment {
     background-color: #321;
     color: #ccc;
   }
@@ -2130,7 +2136,7 @@ regexp("^https?:\/\/((?!area51)\w+\.)*?stackexchange\.com.*") {
   .s-sidebarwidget.s-sidebarwidget__blue::after {
     border-color: #046;
   }
-  #profile-summary > .-popout {
+  #profile-summary > .-popout, .filter-dashboard-summary {
     background-color: #182030 !important;
     border: solid 1px #046 !important;
   }
