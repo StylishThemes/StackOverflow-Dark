@@ -1396,6 +1396,10 @@ regexp("^https?:\/\/((?!area51)\w+\.)*?stackexchange\.com.*") {
     background-color: #fc3 !important;
     color: #111;
   }
+  .timeline-page .post-timeline-v2 .post-timeline tr.deleted-event td,
+  .timeline-page .post-timeline-v2 .post-timeline tr.deleted-event-details td {
+    background-color: rgba(40, 25, 10, .8) !important;
+  }
   #sideBar .newuser, .stats-sidebar .newuser, .module.newuser, .module.emailsub {
     background-color: #321 !important;
     border: 1px solid #542 !important;
