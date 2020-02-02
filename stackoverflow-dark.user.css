@@ -745,7 +745,8 @@ regexp("^https?:\/\/((?!area51)\w+\.)*?stackexchange\.com.*") {
   .timeline .readings .readings-list .readings-item .readings-image {
     background: #444;
   }
-  .timeline .readings .readings-list .readings-item {
+  .timeline .readings .readings-list .readings-item,
+  .badges-page .single-badge-table .single-badge-row-reason {
     border-color: #444;
   }
   .top-bar .left-sidebar-toggle:hover,
@@ -1547,7 +1548,7 @@ regexp("^https?:\/\/((?!area51)\w+\.)*?stackexchange\.com.*") {
     background: #254632;
     color: #27ae60;
     border-bottom: 1px solid #111;
-    border-top: 1px solid #27ae60;
+    border-top: 1px solid #13552f;
     text-shadow: none;
   }
   html #content .favorite-container .accepted {
