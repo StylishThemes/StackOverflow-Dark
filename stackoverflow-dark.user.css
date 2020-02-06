@@ -1350,7 +1350,7 @@ regexp("^https?:\/\/((?!area51)\w+\.)*?stackexchange\.com.*") {
   .ob-docs .example-metric, .menu-popout, .version-row, .version-name,
   .switcher input[type="radio"]:checked+label, .double-input .separator,
   .geo-tag, .MathJax_Menu, .MathJax_MenuLabel:focus, .salary-calc-inputs,
-  .question-container.unread, .comments-wrap {
+  .comments-wrap {
     background: #333 !important;
     color: #ccc !important;
   }
@@ -1470,7 +1470,7 @@ regexp("^https?:\/\/((?!area51)\w+\.)*?stackexchange\.com.*") {
   .product-hero-background, .search-form.responsive .filter-pane .-nav {
     background-color: transparent;
   }
-  div.question-status {
+  div.question-status, .unread {
     background-color: rgba(51, 34, 17, .6);
     border-color: #640 !important;
   }
