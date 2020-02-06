@@ -1083,7 +1083,8 @@ regexp("^https?:\/\/((?!area51)\w+\.)*?stackexchange\.com.*") {
   }
   .why-jobs-v2 .slanted-background._light-gray::before,
   #jobs-sidebar-panel .s-sidebarwidget--header.bg-white,
-  html:not(#X) .fc-orange-400.bg-white, html:not(#X) .p-bg-purple .bg-white {
+  html:not(#X) .fc-orange-400.bg-white, html:not(#X) .p-bg-purple .bg-white,
+  aside .s-anchors .s-sidebarwidget--header {
     background-color: #202020 !important;
   }
   .bg-powder-100 {
