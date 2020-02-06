@@ -1426,6 +1426,11 @@ regexp("^https?:\/\/((?!area51)\w+\.)*?stackexchange\.com.*") {
     background-color: #fc3 !important;
     color: #111;
   }
+  .filter-dashboard-summary.preview-summary {
+    background-color: #321 !important;
+    border-top: 1px solid transparent !important;
+    border: 1px solid #542 !important;
+  }
   .comment-help {
     background-color: #321;
     border: 1px solid #542;
