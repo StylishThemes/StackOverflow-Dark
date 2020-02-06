@@ -1301,12 +1301,16 @@ regexp("^https?:\/\/((?!area51)\w+\.)*?stackexchange\.com.*") {
   .wmd-button-bar.has-active-button .wmd-button:not(.wmd-button__active) {
     opacity: 1;
   }
-  #system-message, .commentlist, .revision td, #hero-content, .tabs .selected,
+  #system-message, .commentlist, #hero-content, .tabs .selected,
   .rep-card .rep-col, .sort select, .MathJax_MenuDisabled,
   .gsc-option-menu-item-highlighted, .secondary-job-results-identifier,
   .user-page .settings-page .email-settings .-info {
     background: #232323 !important;
     color: #999 !important;
+  }
+  .revcell2, .revision td {
+    background: #232323;
+    color: #999;
   }
   .search-form.responsive .filter-pane .-nav ul._tabs li.tab {
     background-color: #282828;
