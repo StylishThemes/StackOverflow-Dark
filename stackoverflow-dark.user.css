@@ -437,16 +437,25 @@ regexp("^https?:\/\/((?!area51)\w+\.)*?stackexchange\.com.*") {
   .delete-tag::after {
     content: "✖️";
   }
-  .s-btn, .s-btn:focus {
+  .s-btn:not(.s-btn.s-btn__google) {
     background-color: transparent;
   }
   .s-btn:focus {
     border-color: rgba(/*[[base-color-rgb]]*/, .6);
     box-shadow: none;
   }
-  .s-btn:not(.fc-dark):not(.s-btn__primary):not(.s-btn__muted):not(.s-btn__unset):not(.s-btn__link):not(.h\:p-bg-yellow-tint):hover,
-  .s-btn:not(.fc-dark):not(.s-btn__primary):not(.s-btn__muted):not(.s-btn__unset):not(.s-btn__link):not(.h\:p-bg-yellow-tint):focus,
-  .s-btn:not(.fc-dark):not(.s-btn__primary):not(.s-btn__muted):not(.s-btn__unset):not(.s-btn__link):not(.h\:p-bg-yellow-tint):active {
+  .s-btn:hover, .s-btn:focus, .s-btn:active {
+    background-color: #282828;
+  }
+  .s-btn.s-btn__google {
+    background-color: #222;
+  }
+  .s-btn.s-btn__google:hover, .s-btn__google:focus {
+    background-color: #282828 !important;
+  }
+  .s-btn:not(.s-btn__google):not(.s-btn__launchpad):not(.fc-dark):not(.s-btn__primary):not(.s-btn__muted):not(.s-btn__unset):not(.s-btn__link):not(.h\:p-bg-yellow-tint):hover,
+  .s-btn:not(.s-btn__google):not(.s-btn__launchpad):not(.fc-dark):not(.s-btn__primary):not(.s-btn__muted):not(.s-btn__unset):not(.s-btn__link):not(.h\:p-bg-yellow-tint):focus,
+  .s-btn:not(.s-btn__google):not(.s-btn__launchpad):not(.fc-dark):not(.s-btn__primary):not(.s-btn__muted):not(.s-btn__unset):not(.s-btn__link):not(.h\:p-bg-yellow-tint):active {
     background-color: rgba(79, 140, 201, .2) !important;
     background-color: rgba(/*[[base-color-rgb]]*/, .2) !important;
   }
