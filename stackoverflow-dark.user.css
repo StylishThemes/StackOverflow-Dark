@@ -3070,7 +3070,7 @@ regexp("^https?:\/\/((?!area51)\w+\.)*?stackexchange\.com.*") {
     background: transparent !important;
     color: #ddd !important;
   }
-  table td a[href*="questions/tagged"] {
+  table td a[href*="questions/tagged"]:not(.post-tag) {
     background: #222 !important;
     color: #ddd !important;
     border: none !important;
