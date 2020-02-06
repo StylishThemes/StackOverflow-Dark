@@ -189,7 +189,8 @@ regexp("^https?:\/\/((?!area51)\w+\.)*?stackexchange\.com.*") {
   #featured-company-page-adfooter a.s-btn__outlined:active,
   .topbar-dialog .modal-content .message-text h4, .fc-orange-400,
   .h\:fc-orange-400:hover, .f\:fc-orange-400:focus,
-  .svg-icon.iconArrowDownLg:hover, .svg-icon.iconArrowUpLg:hover {
+  .svg-icon.iconArrowDownLg:hover, .svg-icon.iconArrowUpLg:hover,
+  span[style*="color: #5C7796;"] {
     color: /*[[base-color]]*/ !important;
   }
   .search-controls-responsive .-item .s-btn__outlined, .s-btn__outlined {
@@ -1297,7 +1298,7 @@ regexp("^https?:\/\/((?!area51)\w+\.)*?stackexchange\.com.*") {
   #badge-progress-menu {
     border: 1px solid #444;
     background-color: #333;
-    color: #e4e6e8;
+    color: #eee;
   }
   .wmd-button-bar.has-active-button .wmd-button:not(.wmd-button__active) {
     opacity: 1;
@@ -1686,9 +1687,6 @@ regexp("^https?:\/\/((?!area51)\w+\.)*?stackexchange\.com.*") {
   .status.answered, .s-progress__privilege .s-progress--label {
     border-color: rgba(69, 161, 99, .8) !important;
   }
-  .s-progress__privilege .s-progress--label, .s-progress--label, .topbar-dialog {
-    color: #ddd;
-  }
   /* === Red === */
   .bg-red-200, .h\:bg-red-200:hover, .f\:bg-red-200:focus {
     background-color: #e33 !important;
@@ -1747,14 +1745,6 @@ regexp("^https?:\/\/((?!area51)\w+\.)*?stackexchange\.com.*") {
   .badge-top._badge2 .-name, .badge-top._badge3 .-name,
   .contact-page .popup-content .content {
     border-color: #444;
-  }
-  .comment-text, .topbar .login-links-container a:hover,
-  .badge-top._badge1 .-name, .badge-top._badge2 .-name,
-  .badge-top._badge3 .-name {
-    color: #ddd;
-  }
-  .empty {
-    color: #ccc;
   }
   .tabs._full li {
     background-color: #181818 !important;
@@ -2293,13 +2283,12 @@ regexp("^https?:\/\/((?!area51)\w+\.)*?stackexchange\.com.*") {
   .s-btn.s-btn__muted:hover, .user-show-new .user-rep-full .rep-desc,
   .user-show-new .user-rep-full .rep-info,
   .user-show-new .user-rep-full .rep-day, .page-numbers, .vote span,
-  .item-multiplier-count, .item-multiplier,
   .timeline .header-edit-section .empty-description .placeholder-title,
   .s-btn.stackexchange-login, .s-btn.google-login,
   .min-ds-wizard .min-ds-box.jobs .min-ds-title p,
   .min-ds-wizard .min-ds-box.jobs .min-ds-content label .optional-unless-resume,
   .min-ds-wizard .min-ds-box.jobs .min-ds-content .optional-text,
-  .resume-uploader p.upload-allowed-extensions, #tags_list .stats-row,
+  .resume-uploader p.upload-allowed-extensions,
   .timeline-item.add .add-item-list .item-add, .title-box > p, .title-box p,
   .help-text, .mute-text, .why-jobs-v2, .profile-section-title span,
   .timeline .header .meta, .site-footer .-link, .s-btn__unset {
@@ -2353,7 +2342,10 @@ regexp("^https?:\/\/((?!area51)\w+\.)*?stackexchange\.com.*") {
   .timeline-item.add .add-item-list .item-add:hover, .val-message,
   .min-ds-wizard .min-ds-box.jobs .min-ds-title .filters label:hover,
   .title-box .title, .title-box > .title,
-  .s-btn.s-btn__muted:not(.s-btn__outlined):hover {
+  .s-btn.s-btn__muted:not(.s-btn__outlined):hover, .comment-text,
+  .topbar .login-links-container a:hover, .badge-top._badge1 .-name,
+  .badge-top._badge2 .-name, .badge-top._badge3 .-name,
+  .s-progress__privilege .s-progress--label, .s-progress--label, .topbar-dialog {
     color: #ddd;
   }
   .nav-links .nav-links--link:hover, .nav-links .nav-links--link:focus,
@@ -2364,7 +2356,8 @@ regexp("^https?:\/\/((?!area51)\w+\.)*?stackexchange\.com.*") {
     color: #ddd !important;
   }
   /* end not !important */
-  .fc-black-300, .h\:fc-black-300:hover, .f\:fc-black-300:focus {
+  .fc-black-300, .h\:fc-black-300:hover, .f\:fc-black-300:focus,
+  span[style="color: #444;"] {
     color: #aaa !important;
   }
   #privilege-category-descriptions .privilege-icon,
@@ -2386,19 +2379,22 @@ regexp("^https?:\/\/((?!area51)\w+\.)*?stackexchange\.com.*") {
   .statscontainer, .users-page .user-info .user-tags > a,
   .new-about-content-page .user-details, .new-about-content-page .rep-block,
   .new-about-content-page .comments, .top-question-meta-info,
-  .top-question-score {
+  .top-question-score, .action-list:not(.popup-condensed) .action-desc,
+  #tags_list .excerpt, #tags_list .stats-row, .hero-box .column,
+  .company-module .-details .-benefits li .-text,
+  .faq-page #mainbar .col-section .col-section h2 a,
+  .faq-page #mainbar .col-section .col-section h3 a, label:not(.s-label),
+  .label:not(.s-label), .answerBox, .answerBox:visited, .community-option {
     color: #aaa;
   }
+  .s-sidebarwidget:not(.s-anchors) a:not(.button):not(.s-btn):not(.post-tag):not(.s-sidebarwidget--action),
+  .s-sidebarwidget:not(.s-anchors) a:not(.button):not(.s-btn):not(.post-tag):not(.s-sidebarwidget--action):visited,
   .topbar-dialog.help-dialog .item-summary,
   .topbar-dialog.inbox-dialog .inbox-item .item-content .item-summary,
   .topbar-dialog.modInbox-dialog .inbox-item .item-content .item-summary,
   .topbar-dialog.achievements-dialog .inbox-item .item-content .item-summary,
   .subheader a span, .disabled-link, .nav-links .nav-links--link,
   .nav-links .nav-links--link:visited {
-    color: #bbb;
-  }
-  .s-sidebarwidget:not(.s-anchors) a:not(.button):not(.s-btn):not(.post-tag):not(.s-sidebarwidget--action),
-  .s-sidebarwidget:not(.s-anchors) a:not(.button):not(.s-btn):not(.post-tag):not(.s-sidebarwidget--action):visited {
     color: #bbb;
   }
   #top-menu a, .subheader a, .reputation a, .relativetime.old,
@@ -2427,18 +2423,20 @@ regexp("^https?:\/\/((?!area51)\w+\.)*?stackexchange\.com.*") {
   .s-link.s-link__muted.s-link__visited:active, .site-footer--copyright p a,
   .post-text, .comment, .users-page .user-info .user-tags > a:hover,
   .answer-votes, .cool, .mini-counts.cool, .message.incomplete, .salary-value,
-  .salary-calculator, .calculator-header, .accepted-answer .post-text {
+  .salary-calculator, .calculator-header, .accepted-answer .post-text,
+  #tags_list .stats-row a, #tags_list .stats-row a:visited,
+  #tags_list span:not(.page-numbers):not(.item-multiplier-x), .item-multiplier,
+  .item-multiplier-count, .empty {
     color: #ccc;
   }
   .ob-post-tag, .ob-user-tag, .deleted-answer .util-bar a, .msg-list .msg-text,
   .s-table td, #side-menu ul ul li > a .svg-icon, .nav-links .fc-medium,
   #top-cards .fc-black-350 svg, #user-card .fc-black-350 svg,
   .company-list .fc-black-500 svg:not(.fc-green-400):not(.fc-orange-400),
-  .company-list p, .-settings span, .email-settings .-info p,
-  #tags_list span:not(.page-numbers), .s-description, p.fc-black-700,
-  a.s-link__grayscale, .s-link.s-link__grayscale, .site-footer--copyright p,
-  #side-menu ul ul li > a, .sort label[for="sorting-options"],
-  .company-list div.fc-black-500 {
+  .company-list p, .-settings span, .email-settings .-info p, .s-description,
+  p.fc-black-700, a.s-link__grayscale, .s-link.s-link__grayscale,
+  .site-footer--copyright p, #side-menu ul ul li > a,
+  .sort label[for="sorting-options"], .company-list div.fc-black-500 {
     color: #999 !important;
   }
   label[for="sorting-options"], .company-list div.fc-black-500 {
@@ -2749,12 +2747,6 @@ regexp("^https?:\/\/((?!area51)\w+\.)*?stackexchange\.com.*") {
   }
   .s-progress, .pico-content {
     background-color: #292929;
-  }
-  .hero-box .column, .company-module .-details .-benefits li .-text,
-  .faq-page #mainbar .col-section .col-section h2 a,
-  .faq-page #mainbar .col-section .col-section h3 a, label:not(.s-label),
-  .label:not(.s-label) {
-    color: #aaa;
   }
   html:not(#X) aside.js-highlight-box-reputation .s-progress {
     background-color: #444 !important;
