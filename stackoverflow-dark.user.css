@@ -768,6 +768,10 @@ regexp("^https?:\/\/((?!area51)\w+\.)*?stackexchange\.com.*") {
   .company-module > header > h2, .company-module .-details strong span {
     background: #202020;
   }
+  #privilege-category-descriptions .privilege-icon,
+  .privilege-table-row .privilege-icon, .favicon-stackexchangemeta {
+    filter: grayscale(100%) !Important;
+  }
   .answer {
     background: rgba(35, 35, 35, .69);
     border-left: 1px solid #555;
@@ -795,15 +799,151 @@ regexp("^https?:\/\/((?!area51)\w+\.)*?stackexchange\.com.*") {
     background: #444 !important;
     color: #aaa !important;
   }
-  .top-bar .-main .navigation .-link, .fc-black-800, .h\:fc-black-800:hover,
-  .f\:fc-black-800:focus {
-    color: #ccc !important;
+  /* === Text Color === */
+  .comment-up-off, .comment-flag, .comment-flag-off,
+  .profile-cards--graph .grid--cell, .g-col .f-label {
+    color: #444 !important;
   }
+  label[for="sorting-options"], .company-list div.fc-black-500 {
+    color: #666 !important;
+  }
+  .timeline .feature-banner--headline, .timeline-item .timeline-item-text,
+  #side-menu ul ul li > a:focus, #side-menu ul ul li > a:active, .currency-note,
+  .salary-input-item .salary-note, .currency-label,
+  .s-press .-item .-details .-complementary,
+  #sidebar .s-contact-box .-details ._muted, .text-muted {
+    color: #888;
+  }
+  .s-btn.s-btn__muted:hover, .user-show-new .user-rep-full .rep-desc,
+  .user-show-new .user-rep-full .rep-info,
+  .user-show-new .user-rep-full .rep-day, .page-numbers, .vote span,
+  .timeline .header-edit-section .empty-description .placeholder-title,
+  .s-btn.stackexchange-login, .s-btn.google-login,
+  .min-ds-wizard .min-ds-box.jobs .min-ds-title p,
+  .min-ds-wizard .min-ds-box.jobs .min-ds-content label .optional-unless-resume,
+  .min-ds-wizard .min-ds-box.jobs .min-ds-content .optional-text,
+  .resume-uploader p.upload-allowed-extensions,
+  .timeline-item.add .add-item-list .item-add, .title-box > p, .title-box p,
+  .help-text, .mute-text, .why-jobs-v2, .profile-section-title span,
+  .timeline .header .meta, .site-footer .-link, .s-btn__unset,
+  svg.iconStar:not(:hover), .favorites-count-off {
+    color: #999;
+  }
+  .ob-post-tag, .ob-user-tag, .deleted-answer .util-bar a, .msg-list .msg-text,
+  .s-table td, #side-menu ul ul li > a .svg-icon, .nav-links .fc-medium,
+  #top-cards .fc-black-350 svg, #user-card .fc-black-350 svg,
+  .company-list .fc-black-500 svg:not(.fc-green-400):not(.fc-orange-400),
+  .company-list p, .-settings span, .email-settings .-info p, .s-description,
+  p.fc-black-700, a.s-link__grayscale, .s-link.s-link__grayscale,
+  .site-footer--copyright p, #side-menu ul ul li > a,
+  .sort label[for="sorting-options"], .company-list div.fc-black-500,
+  html:not(#X) .fc-black-200, svg.iconLocation, svg.iconTwitter, svg.iconGitHub,
+  svg.iconMoney, svg.iconVacation, svg.iconHealth, svg.iconComputer,
+  svg.iconClock, svg.iconFood, svg.iconFaceSmile, svg.iconHeart, svg.iconFitness,
+  svg.iconSubway, .s-anchors.s-anchors__muted a:not(.s-link),
+  .s-anchors .s-anchors.s-anchors__muted a:not(.s-link) {
+    color: #999 !important;
+  }
+  .user-details td, .content-page, h2:not([style]), h2 a, .profile-popup a:hover,
+  .module h4, .page-description, #openid_identifier, .form-item label,
+  .subheader h2, #side-menu ul ul li > a:hover .svg-icon,
+  .message.message-config .message-close:hover,
+  .contributor-dropdown .message-close:hover,
+  .ask-confirmation-popup .message-close:hover,
+  .message.message-config .popup-close a:hover,
+  .contributor-dropdown .popup-close a:hover,
+  .ask-confirmation-popup .popup-close a:hover,
+  .user-page .subheader.reloaded .mini-avatar .name, a.h\:fc-white,
+  .static-content ._muted, html:not(#X) .fc-black-500, .fc-black-500,
+  .fc-black-700, .s-btn__muted.s-btn__outlined {
+    color: #c1beba !important;
+  }
+  /* these arent !important, but we botch them to make them work */
+  html .job, .label-key, .reputation-score, .fc-black-400, .fc-black-600,
+  .started-link, .question-hyperlink, .s-btn.google-login, .stackexchange-login,
+  html .s-btn__google, [style="color: #8C9298;"], .comment-link {
+    color: #aaa !important;
+  }
+  /* end not !important */
+  .fc-black-300, .h\:fc-black-300:hover, .f\:fc-black-300:focus,
+  span[style="color: #444;"] {
+    color: #aaa !important;
+  }
+  .user-page .settings-page h1 + div.subtitle, .fc-medium .fw-bold, .fc-medium b,
+  .fc-medium li strong, .salary-changelog, .company-module > header .-info p,
+  #index-hed h1 .description, #index-hed h2 .description,
+  #index-hed .-header .description,
+  .about-page .new-about-content-page .user-details,
+  .about-page .new-about-content-page .rep-block,
+  .about-page .new-about-content-page .comments,
+  .min-ds-wizard .min-ds-box.jobs .min-ds-title .filters label,
+  .message.message-config, .displaying-results, .statsBox .number,
+  .achievements-dialog .utc-clock, .placeholder-text,
+  .timeline-sidebar .timeline-sidebar-module .privacy-helper,
+  .s-stat .-description, .top-bar .-secondary .-link, .post-menu > a,
+  .statscontainer, .users-page .user-info .user-tags > a,
+  .new-about-content-page .user-details, .new-about-content-page .rep-block,
+  .new-about-content-page .comments, .top-question-meta-info,
+  .top-question-score, .action-list:not(.popup-condensed) .action-desc,
+  #tags_list .excerpt, #tags_list .stats-row, .hero-box .column,
+  .company-module .-details .-benefits li .-text,
+  .faq-page #mainbar .col-section .col-section h2 a,
+  .faq-page #mainbar .col-section .col-section h3 a, label:not(.s-label),
+  .label:not(.s-label), .answerBox, .answerBox:visited, .community-option {
+    color: #aaa;
+  }
+  .s-sidebarwidget:not(.s-anchors) a:not(.button):not(.s-btn):not(.post-tag):not(.s-sidebarwidget--action),
+  .s-sidebarwidget:not(.s-anchors) a:not(.button):not(.s-btn):not(.post-tag):not(.s-sidebarwidget--action):visited,
+  .topbar-dialog.help-dialog .item-summary,
+  .topbar-dialog.inbox-dialog .inbox-item .item-content .item-summary,
+  .topbar-dialog.modInbox-dialog .inbox-item .item-content .item-summary,
+  .topbar-dialog.achievements-dialog .inbox-item .item-content .item-summary,
+  .subheader a span, .disabled-link, .nav-links .nav-links--link,
+  .nav-links .nav-links--link:visited,
   .s-anchors.s-anchors__grayscale a:not(.s-link),
   .s-anchors .s-anchors.s-anchors__grayscale a:not(.s-link),
   .timeline .readings .readings-list .readings-item .readings-item-text .readings-item-author {
     color: #bbb;
   }
+  #top-menu a, .subheader a, .reputation a, .relativetime.old,
+  .votes-cast-stats td, #chat .system-message, .card .rep,
+  .user-card .user-stats .number, .user-card .user-card-name,
+  .cv-story .time-frame, .-list-item.is-completed .-description,
+  .s-footer .-toc th, .event-count, .post-timeline td, .post-timeline th,
+  .msg-select-all-label, .fc-light, .s-table th, .input-group .f-label,
+  .-job-summary .-company, h1.fc-black-800, [class*="grid-"] .fc-black-700,
+  p.fc-black-800, .about-page .new-about-content-page h2.about-title,
+  .fc-black-350, .fc-medium, .label-key > b, .top-bar .-main .navigation .-link,
+  .fc-black-800, .h\:fc-black-800:hover, .f\:fc-black-800:focus {
+    color: #ccc !important;
+  }
+  .narrow .status, .narrow .views, .search-form .job-alert-tooltip .text,
+  .user-show-new .user-tab .subheader .count, .message.message-config h1,
+  .message.message-config h2, .message.message-config h3,
+  .message.message-config h4, .message.message-config .popup-nav li a,
+  .message.message-config.tooltip .message-text,
+  .user-show-new .user-rep-full .rep-time,
+  .user-show-new .user-rep-full .timeline-date,
+  .top-bar .-secondary .-item .-link:hover, .post-menu > a:hover,
+  a.s-link__muted:hover, .s-link.s-link__muted:hover,
+  a.s-link__muted.s-link__visited:hover,
+  .s-link.s-link__muted.s-link__visited:hover, a.s-link__muted:active,
+  .s-link.s-link__muted:active, a.s-link__muted.s-link__visited:active,
+  .s-link.s-link__muted.s-link__visited:active, .site-footer--copyright p a,
+  .post-text, .comment, .users-page .user-info .user-tags > a:hover,
+  .answer-votes, .cool, .mini-counts.cool, .message.incomplete, .salary-value,
+  .salary-calculator, .calculator-header, .accepted-answer .post-text,
+  #tags_list .stats-row a, #tags_list .stats-row a:visited,
+  #tags_list span:not(.page-numbers):not(.item-multiplier-x), .item-multiplier,
+  .item-multiplier-count, .empty, .subtabs a.youarehere:hover,
+  .filter a.youarehere:hover, .subtabs a.active:hover, .filter a.active:hover,
+  .subtabs a:hover, .filter a:hover, .s-block-link,
+  .modal.image-upload .modal-options,
+  .modal.image-upload .modal-dropzone-default p,
+  .modal.image-upload .modal-dropzone-default p b,
+  .s-navigation .s-navigation--item, .footer,
+  .timeline-feed-empty .placeholder-text > p,
+  .search-form.responsive .filter-pane .-nav ul._tabs li.tab [data-tab] a span,
   .timeline-item, .timeline .or-separator, a.job-link span, .narrow .mini-counts,
   .s-sidebarwidget--item[aria-current="true"],
   .s-sidebarwidget--item > :first-child[aria-current="true"],
@@ -814,9 +954,68 @@ regexp("^https?:\/\/((?!area51)\w+\.)*?stackexchange\.com.*") {
   .stats-mainbar .task-stat-table .review-stats-count, .-votes .mini-counts {
     color: #ccc;
   }
+  .nav-links .youarehere .nav-links--link,
+  .timeline-item.add .add-item-list .item-add:hover, .val-message,
+  .min-ds-wizard .min-ds-box.jobs .min-ds-title .filters label:hover,
+  .title-box .title, .title-box > .title,
+  .s-btn.s-btn__muted:not(.s-btn__outlined):hover, .comment-text,
+  .topbar .login-links-container a:hover, .badge-top._badge1 .-name,
+  .badge-top._badge2 .-name, .badge-top._badge3 .-name,
+  .s-progress__privilege .s-progress--label, .s-progress--label, .topbar-dialog {
+    color: #ddd;
+  }
+  .nav-links .nav-links--link:hover, .nav-links .nav-links--link:focus,
+  .nav-links .nav-links--link:active, #side-menu ul ul li > a.youarehere,
+  .s-sidebarwidget--subnav li[aria-current="page"] a, .site-footer .-title a,
+  html .module, .subtabs .youarehere.is-selected, .svg-icon.iconShare,
+  .iconBriefcaseSm, #tabs-interval.subtabs a:hover, input,
+  .accepted-answer .user-action-time, #question-header a:not(.s-btn), .user-info,
+  .topbar-dialog .header h3, .topbar-dialog .header h3 a, .topbar-dialog span,
+  .votes-cast-stats th, .subheader h1, .message.message-config h1,
+  .message.message-config h2, .message.message-config h3,
+  .message.message-config h4, .company-module a:hover *, .search-form .label,
+  .search-form label, .list.companies p, #snpte-button-run, .timeline .header h4,
+  .-title, #profile-side #side-menu a:hover, .-rep, .-total,
+  .-list-item .-description, .message.message-error a,
+  .chosen-container .chosen-results li, .salary-calc-inputs span,
+  .salary-survey-dialog .header h3, .title-banner h1,
+  .salary-results-container h1, .topbar-dialog h4, .heading, .module h3,
+  .badge-tag, .s-label, .-link__with-icon:hover .svg-icon, .youarehere a,
+  .youarehere .svg-icon, h1, h2:not([style]), h3, h4, h5, h6, .h1, .h2, .h3, .h4,
+  .h5, .h6, .tour-bubble p, header h2.fc-dark, .fc-dark,
+  #logins-table .group-name, .top-bar .-marketing-link, html:not(#X) .fc-white,
+  html:not(#X) .h\:fc-black-900:hover, .new-about-content-page h2.about-title {
+    color: #ddd !important;
+  }
+  .subtabs.user-panel-subtabs a:hover,
+  .s-navigation .s-navigation--item.is-selected:hover,
+  .why-jobs-v2 .developers-first, .why-jobs-v2 .developers-first h2,
+  .message.message-info a:not(.badge-tag):not(.button):not(.btn):not(.post-tag),
+  .answered-accepted, .answered-accepted .mini-counts,
+  .answered-accepted .minicounts span, .s-btn__muted.s-btn__outlined:hover,
+  .s-btn__muted.s-btn__outlined:active, .message.message-info,
+  .s-block-link:hover, .s-block-link:active, li.s-sidebarwidget--item a:hover,
+  #more-actions a.fc-black-500:hover, html:not(#X) .s-card a.fc-black-500:hover,
+  .gv-size-huge .btn {
+    color: #eee !important;
+  }
   .top-bar .navigation .-link:hover, .top-bar .navigation .-link:focus {
     background-color: #242424;
     color: #eee;
+  }
+  li.s-sidebarwidget--item a[aria-current="page"] {
+    color: #fff !important;
+  }
+  .show-votes .sidebar-linked .spacer > a:first-child .answer-votes,
+  .show-votes .sidebar-related .spacer > a:first-child .answer-votes {
+    background: #353535;
+    color: #ccc;
+  }
+  .icon-job-big, .icon-project-opensource-big, .icon-project-apps-big,
+  .icon-achievement-big, .icon-education-big, .icon-certification-big,
+  .icon-artifact-big, .icon-generic-assessment-big, .icon-generic-big,
+  .min-ds-step-counter .step.completed, .icon-q-small, .icon-a-small {
+    filter: grayscale(1) brightness(200%);
   }
   .top-bar .-secondary .-item .-link .indicator-badge,
   .top-bar .-secondary .-link._danger-indicator::after {
@@ -1199,17 +1398,9 @@ regexp("^https?:\/\/((?!area51)\w+\.)*?stackexchange\.com.*") {
   #user-tab-questions div.subheader .user-tab-sorts {
     padding-top: 2px;
   }
-  .subtabs.user-panel-subtabs a:hover,
-  .s-navigation .s-navigation--item.is-selected:hover {
-    color: #eee !important;
-  }
   .s-navigation .s-navigation--item:hover,
   .s-navigation .s-navigation--item:active {
     background: #343434;
-    color: #ccc;
-  }
-  .s-navigation .s-navigation--item, .footer,
-  .timeline-feed-empty .placeholder-text > p {
     color: #ccc;
   }
   .s-navigation.s-navigation__muted .s-navigation--item.is-selected {
@@ -1317,9 +1508,6 @@ regexp("^https?:\/\/((?!area51)\w+\.)*?stackexchange\.com.*") {
   .search-form.responsive .filter-pane .-nav ul._tabs li.tab {
     background-color: #282828;
     border: 1px solid #444;
-  }
-  .search-form.responsive .filter-pane .-nav ul._tabs li.tab [data-tab] a span {
-    color: #ccc;
   }
   .search-form.responsive .filter-pane .-nav ul._tabs li.tab:not(.remote)::after {
     border: 4px solid transparent;
@@ -1980,13 +2168,6 @@ regexp("^https?:\/\/((?!area51)\w+\.)*?stackexchange\.com.*") {
   .s-link.s-link__muted {
     color: #bbb;
   }
-  .subtabs a.youarehere:hover, .filter a.youarehere:hover,
-  .subtabs a.active:hover, .filter a.active:hover, .subtabs a:hover,
-  .filter a:hover, .s-block-link, .modal.image-upload .modal-options,
-  .modal.image-upload .modal-dropzone-default p,
-  .modal.image-upload .modal-dropzone-default p b {
-    color: #ccc;
-  }
   .subtabs a.active, .filter a.active {
     color: #ddd;
     border-color: /*[[base-color]]*/ !important;
@@ -2193,38 +2374,9 @@ regexp("^https?:\/\/((?!area51)\w+\.)*?stackexchange\.com.*") {
   .owner {
     background-color: #182030;
   }
-  /* === Text Color === */
-  input, .accepted-answer .user-action-time, #question-header a:not(.s-btn),
-  .user-info, .topbar-dialog .header h3, .topbar-dialog .header h3 a,
-  .topbar-dialog span, .votes-cast-stats th, .subheader h1,
-  .message.message-config h1, .message.message-config h2,
-  .message.message-config h3, .message.message-config h4,
-  .company-module a:hover *, .search-form .label, .search-form label,
-  .list.companies p, #snpte-button-run, .timeline .header h4, .-title,
-  #profile-side #side-menu a:hover, .-rep, .-total, .-list-item .-description,
-  .message.message-error a, .chosen-container .chosen-results li,
-  .salary-calc-inputs span, .salary-survey-dialog .header h3, .title-banner h1,
-  .salary-results-container h1, .topbar-dialog h4, .heading, .module h3,
-  .badge-tag, .s-label, .-link__with-icon:hover .svg-icon, .youarehere a,
-  .youarehere .svg-icon, h1, h2:not([style]), h3, h4, h5, h6, .h1, .h2, .h3, .h4,
-  .h5, .h6, .tour-bubble p, header h2.fc-dark, .fc-dark,
-  #logins-table .group-name, .top-bar .-marketing-link, html:not(#X) .fc-white,
-  html:not(#X) .h\:fc-black-900:hover, .new-about-content-page h2.about-title {
-    color: #ddd !important;
-  }
   svg.iconGlobe path, svg.iconIndustry path, svg.iconPeople path,
   svg.iconBriefcase path, svg.iconFlag path, svg.iconGitHub path {
     fill: #999 !important;
-  }
-  html:not(#X) .fc-black-200, svg.iconLocation, svg.iconTwitter, svg.iconGitHub,
-  svg.iconMoney, svg.iconVacation, svg.iconHealth, svg.iconComputer,
-  svg.iconClock, svg.iconFood, svg.iconFaceSmile, svg.iconHeart, svg.iconFitness,
-  svg.iconSubway, .s-anchors.s-anchors__muted a:not(.s-link),
-  .s-anchors .s-anchors.s-anchors__muted a:not(.s-link) {
-    color: #999 !important;
-  }
-  svg.iconStar:not(:hover), .favorites-count-off {
-    color: #999;
   }
   svg.svg-icon.iconSearch path {
     fill: #ddd !important;
@@ -2281,179 +2433,6 @@ regexp("^https?:\/\/((?!area51)\w+\.)*?stackexchange\.com.*") {
     color: #fff;
     background-color: /*[[base-color]]*/;
   }
-  .timeline .feature-banner--headline, .timeline-item .timeline-item-text,
-  #side-menu ul ul li > a:focus, #side-menu ul ul li > a:active, .currency-note,
-  .salary-input-item .salary-note, .currency-label,
-  .s-press .-item .-details .-complementary,
-  #sidebar .s-contact-box .-details ._muted, .text-muted {
-    color: #888;
-  }
-  .s-btn.s-btn__muted:hover, .user-show-new .user-rep-full .rep-desc,
-  .user-show-new .user-rep-full .rep-info,
-  .user-show-new .user-rep-full .rep-day, .page-numbers, .vote span,
-  .timeline .header-edit-section .empty-description .placeholder-title,
-  .s-btn.stackexchange-login, .s-btn.google-login,
-  .min-ds-wizard .min-ds-box.jobs .min-ds-title p,
-  .min-ds-wizard .min-ds-box.jobs .min-ds-content label .optional-unless-resume,
-  .min-ds-wizard .min-ds-box.jobs .min-ds-content .optional-text,
-  .resume-uploader p.upload-allowed-extensions,
-  .timeline-item.add .add-item-list .item-add, .title-box > p, .title-box p,
-  .help-text, .mute-text, .why-jobs-v2, .profile-section-title span,
-  .timeline .header .meta, .site-footer .-link, .s-btn__unset {
-    color: #999;
-  }
-  .user-details td, .content-page, h2:not([style]), h2 a, .profile-popup a:hover,
-  .module h4, .page-description, #openid_identifier, .form-item label,
-  .subheader h2, #side-menu ul ul li > a:hover .svg-icon,
-  .message.message-config .message-close:hover,
-  .contributor-dropdown .message-close:hover,
-  .ask-confirmation-popup .message-close:hover,
-  .message.message-config .popup-close a:hover,
-  .contributor-dropdown .popup-close a:hover,
-  .ask-confirmation-popup .popup-close a:hover,
-  .user-page .subheader.reloaded .mini-avatar .name, a.h\:fc-white,
-  .static-content ._muted, html:not(#X) .fc-black-500, .fc-black-500,
-  .fc-black-700, .s-btn__muted.s-btn__outlined {
-    color: #c1beba !important;
-  }
-  .show-votes .sidebar-linked .spacer > a:first-child .answer-votes,
-  .show-votes .sidebar-related .spacer > a:first-child .answer-votes {
-    background: #353535;
-    color: #ccc;
-  }
-  .why-jobs-v2 .developers-first, .why-jobs-v2 .developers-first h2,
-  .message.message-info a:not(.badge-tag):not(.button):not(.btn):not(.post-tag),
-  .answered-accepted, .answered-accepted .mini-counts,
-  .answered-accepted .minicounts span, .s-btn__muted.s-btn__outlined:hover,
-  .s-btn__muted.s-btn__outlined:active, .message.message-info,
-  .s-block-link:hover, .s-block-link:active, li.s-sidebarwidget--item a:hover,
-  #more-actions a.fc-black-500:hover, html:not(#X) .s-card a.fc-black-500:hover,
-  .gv-size-huge .btn {
-    color: #eee !important;
-  }
-  li.s-sidebarwidget--item a[aria-current="page"] {
-    color: #fff !important;
-  }
-  .icon-job-big, .icon-project-opensource-big, .icon-project-apps-big,
-  .icon-achievement-big, .icon-education-big, .icon-certification-big,
-  .icon-artifact-big, .icon-generic-assessment-big, .icon-generic-big,
-  .min-ds-step-counter .step.completed, .icon-q-small, .icon-a-small {
-    filter: grayscale(1) brightness(200%);
-  }
-  /* these arent !important, but we botch them to make them work */
-  html .job, .label-key, .reputation-score, .fc-black-400, .fc-black-600,
-  .started-link, .question-hyperlink, .s-btn.google-login, .stackexchange-login,
-  html .s-btn__google, [style="color: #8C9298;"], .comment-link {
-    color: #aaa !important;
-  }
-  .nav-links .youarehere .nav-links--link,
-  .timeline-item.add .add-item-list .item-add:hover, .val-message,
-  .min-ds-wizard .min-ds-box.jobs .min-ds-title .filters label:hover,
-  .title-box .title, .title-box > .title,
-  .s-btn.s-btn__muted:not(.s-btn__outlined):hover, .comment-text,
-  .topbar .login-links-container a:hover, .badge-top._badge1 .-name,
-  .badge-top._badge2 .-name, .badge-top._badge3 .-name,
-  .s-progress__privilege .s-progress--label, .s-progress--label, .topbar-dialog {
-    color: #ddd;
-  }
-  .nav-links .nav-links--link:hover, .nav-links .nav-links--link:focus,
-  .nav-links .nav-links--link:active, #side-menu ul ul li > a.youarehere,
-  .s-sidebarwidget--subnav li[aria-current="page"] a, .site-footer .-title a,
-  html .module, .subtabs .youarehere.is-selected, .svg-icon.iconShare,
-  .iconBriefcaseSm, #tabs-interval.subtabs a:hover {
-    color: #ddd !important;
-  }
-  /* end not !important */
-  .fc-black-300, .h\:fc-black-300:hover, .f\:fc-black-300:focus,
-  span[style="color: #444;"] {
-    color: #aaa !important;
-  }
-  #privilege-category-descriptions .privilege-icon,
-  .privilege-table-row .privilege-icon, .favicon-stackexchangemeta {
-    filter: grayscale(100%) !Important;
-  }
-  .user-page .settings-page h1 + div.subtitle, .fc-medium .fw-bold, .fc-medium b,
-  .fc-medium li strong, .salary-changelog, .company-module > header .-info p,
-  #index-hed h1 .description, #index-hed h2 .description,
-  #index-hed .-header .description,
-  .about-page .new-about-content-page .user-details,
-  .about-page .new-about-content-page .rep-block,
-  .about-page .new-about-content-page .comments,
-  .min-ds-wizard .min-ds-box.jobs .min-ds-title .filters label,
-  .message.message-config, .displaying-results, .statsBox .number,
-  .achievements-dialog .utc-clock, .placeholder-text,
-  .timeline-sidebar .timeline-sidebar-module .privacy-helper,
-  .s-stat .-description, .top-bar .-secondary .-link, .post-menu > a,
-  .statscontainer, .users-page .user-info .user-tags > a,
-  .new-about-content-page .user-details, .new-about-content-page .rep-block,
-  .new-about-content-page .comments, .top-question-meta-info,
-  .top-question-score, .action-list:not(.popup-condensed) .action-desc,
-  #tags_list .excerpt, #tags_list .stats-row, .hero-box .column,
-  .company-module .-details .-benefits li .-text,
-  .faq-page #mainbar .col-section .col-section h2 a,
-  .faq-page #mainbar .col-section .col-section h3 a, label:not(.s-label),
-  .label:not(.s-label), .answerBox, .answerBox:visited, .community-option {
-    color: #aaa;
-  }
-  .s-sidebarwidget:not(.s-anchors) a:not(.button):not(.s-btn):not(.post-tag):not(.s-sidebarwidget--action),
-  .s-sidebarwidget:not(.s-anchors) a:not(.button):not(.s-btn):not(.post-tag):not(.s-sidebarwidget--action):visited,
-  .topbar-dialog.help-dialog .item-summary,
-  .topbar-dialog.inbox-dialog .inbox-item .item-content .item-summary,
-  .topbar-dialog.modInbox-dialog .inbox-item .item-content .item-summary,
-  .topbar-dialog.achievements-dialog .inbox-item .item-content .item-summary,
-  .subheader a span, .disabled-link, .nav-links .nav-links--link,
-  .nav-links .nav-links--link:visited {
-    color: #bbb;
-  }
-  #top-menu a, .subheader a, .reputation a, .relativetime.old,
-  .votes-cast-stats td, #chat .system-message, .card .rep,
-  .user-card .user-stats .number, .user-card .user-card-name,
-  .cv-story .time-frame, .-list-item.is-completed .-description,
-  .s-footer .-toc th, .event-count, .post-timeline td, .post-timeline th,
-  .msg-select-all-label, .fc-light, .s-table th, .input-group .f-label,
-  .-job-summary .-company, h1.fc-black-800, [class*="grid-"] .fc-black-700,
-  p.fc-black-800, .about-page .new-about-content-page h2.about-title,
-  .fc-black-350, .fc-medium, .label-key > b {
-    color: #ccc !important;
-  }
-  .narrow .status, .narrow .views, .search-form .job-alert-tooltip .text,
-  .user-show-new .user-tab .subheader .count, .message.message-config h1,
-  .message.message-config h2, .message.message-config h3,
-  .message.message-config h4, .message.message-config .popup-nav li a,
-  .message.message-config.tooltip .message-text,
-  .user-show-new .user-rep-full .rep-time,
-  .user-show-new .user-rep-full .timeline-date,
-  .top-bar .-secondary .-item .-link:hover, .post-menu > a:hover,
-  a.s-link__muted:hover, .s-link.s-link__muted:hover,
-  a.s-link__muted.s-link__visited:hover,
-  .s-link.s-link__muted.s-link__visited:hover, a.s-link__muted:active,
-  .s-link.s-link__muted:active, a.s-link__muted.s-link__visited:active,
-  .s-link.s-link__muted.s-link__visited:active, .site-footer--copyright p a,
-  .post-text, .comment, .users-page .user-info .user-tags > a:hover,
-  .answer-votes, .cool, .mini-counts.cool, .message.incomplete, .salary-value,
-  .salary-calculator, .calculator-header, .accepted-answer .post-text,
-  #tags_list .stats-row a, #tags_list .stats-row a:visited,
-  #tags_list span:not(.page-numbers):not(.item-multiplier-x), .item-multiplier,
-  .item-multiplier-count, .empty {
-    color: #ccc;
-  }
-  .ob-post-tag, .ob-user-tag, .deleted-answer .util-bar a, .msg-list .msg-text,
-  .s-table td, #side-menu ul ul li > a .svg-icon, .nav-links .fc-medium,
-  #top-cards .fc-black-350 svg, #user-card .fc-black-350 svg,
-  .company-list .fc-black-500 svg:not(.fc-green-400):not(.fc-orange-400),
-  .company-list p, .-settings span, .email-settings .-info p, .s-description,
-  p.fc-black-700, a.s-link__grayscale, .s-link.s-link__grayscale,
-  .site-footer--copyright p, #side-menu ul ul li > a,
-  .sort label[for="sorting-options"], .company-list div.fc-black-500 {
-    color: #999 !important;
-  }
-  label[for="sorting-options"], .company-list div.fc-black-500 {
-    color: #666 !important;
-  }
-  .comment-up-off, .comment-flag, .comment-flag-off,
-  .profile-cards--graph .grid--cell, .g-col .f-label {
-    color: #444 !important;
-  }
   .disabled-link {
     opacity: .7;
   }
@@ -2473,7 +2452,7 @@ regexp("^https?:\/\/((?!area51)\w+\.)*?stackexchange\.com.*") {
   .msg-list .list-item.is-unread span,
   .s-sidebarwidget:not(.s-anchors):not(#toc) a:not(.button):not(.s-btn):not(.post-tag):not(.s-sidebarwidget--action),
   .s-sidebarwidget:not(.s-anchors):not(#toc) a:not(.button):not(.s-btn):not(.post-tag):not(.s-sidebarwidget--action):visited,
-  .user-show-new .user-rep-full #stats .accept-indicator-tab {
+  .user-show-new .user-rep-full #stats .accept-indicator-tab, .s-input-message a {
     color: #ddd !important;
   }
   header.job-details--header a svg.iconStar {
@@ -2519,9 +2498,6 @@ regexp("^https?:\/\/((?!area51)\w+\.)*?stackexchange\.com.*") {
   }
   .has-error .s-input-message a, div.form-error {
     color: #da4453;
-  }
-  .s-input-message a {
-    color: #ddd !important;
   }
   /* orange */
   .bg-orange-200, .h\:bg-orange-200:hover, .f\:bg-orange-200:focus {
