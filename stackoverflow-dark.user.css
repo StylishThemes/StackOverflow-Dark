@@ -1284,7 +1284,7 @@ regexp("^https?:\/\/((?!area51)\w+\.)*?stackexchange\.com.*") {
   .s-sidebarwidget--content.s-sidebarwidget__items, #sub-navs > a,
   .s-sidebarwidget--content, .bc-black-3,
   td[style*="border-bottom: 1px solid #727272;"], .s-tag.bg-black-075:hover,
-  .s-tag.bg-black-075 {
+  .s-tag.bg-black-075, .bc-black-5 {
     border-color: #444 !important;
   }
   .diff-buttons a:hover, .diff-choices a:hover, .diff-type-controls a:hover,
@@ -1954,6 +1954,9 @@ regexp("^https?:\/\/((?!area51)\w+\.)*?stackexchange\.com.*") {
   #left-sidebar .nav-links .youarehere .nav-links--link {
     border-right-color: /*[[base-color]]*/;
   }
+  .s-block-link.is-selected.s-block-link__left {
+    border-left-color: /*[[base-color]]*/;
+  }
   .s-sidebarwidget [aria-current="page"]::before {
     border-left-color: /*[[base-color]]*/ !important;
   }
@@ -2064,6 +2067,11 @@ regexp("^https?:\/\/((?!area51)\w+\.)*?stackexchange\.com.*") {
   .filter-dashboard-edit .sites-list {
     background-color: rgba(79, 140, 201, .3) !important;
     background-color: rgba(/*[[base-color-rgb]]*/, .3) !important;
+  }
+  .s-block-link.is-selected {
+    color: #eee;
+    background-color: rgba(79, 140, 201, .3) !important;
+    background-color: rgba(76, 137, 13, .3) !important;
   }
   .review-actions input, .chosen-choices .search-choice,
   .topbar-dialog a.btn-secondary, .filter-dashboard, input[type=submit],
