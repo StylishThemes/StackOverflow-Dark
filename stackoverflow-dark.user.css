@@ -624,7 +624,8 @@ regexp("^https?:\/\/((?!area51)\w+\.)*?stackexchange\.com.*") {
     background-color: #111;
   }
   .s-input:focus, .s-input.has-focus, .s-textarea:focus,
-  .s-select > select:focus {
+  .s-select > select:focus,
+  input#tageditor-replacing-tagnames--input.s-input:focus {
     border-color: /*[[base-color]]*/ !important;
     box-shadow: 0 0 0 1px /*[[base-color]]*/ !important;
   }
@@ -2263,10 +2264,8 @@ regexp("^https?:\/\/((?!area51)\w+\.)*?stackexchange\.com.*") {
     color: #fff;
     background-color: /*[[base-color]]*/;
   }
-  #tags_list .stats-row, #tags_list .stats-row a,
-  #tags_list .stats-row a:visited, .timeline .feature-banner--headline,
-  .timeline-item .timeline-item-text, #side-menu ul ul li > a:focus,
-  #side-menu ul ul li > a:active, .currency-note,
+  .timeline .feature-banner--headline, .timeline-item .timeline-item-text,
+  #side-menu ul ul li > a:focus, #side-menu ul ul li > a:active, .currency-note,
   .salary-input-item .salary-note, .currency-label,
   .s-press .-item .-details .-complementary,
   #sidebar .s-contact-box .-details ._muted, .text-muted {
