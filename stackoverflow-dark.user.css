@@ -1374,7 +1374,7 @@ regexp("^https?:\/\/((?!area51)\w+\.)*?stackexchange\.com.*") {
   .history-table .reviewed-action {
     background-color: #383838;
   }
-  tr.comment:hover, .reply-parent, .timestamp, .usercard, .comment-help,
+  tr.comment:hover, .reply-parent, .timestamp, .usercard,
   .answer-help-background, .tabs li, .hi, .seNavLinks a:hover,
   .seNavLinks a:focus, .itemBoxNew, .pagination a.current, .wb-wearing,
   .impact-card hr, .MathJax_MenuActive, .timeline-item.edit .img .remove {
@@ -1425,6 +1425,11 @@ regexp("^https?:\/\/((?!area51)\w+\.)*?stackexchange\.com.*") {
   .bg-yellow-200, .h\:bg-yellow-200:hover, .f\:bg-yellow-200:focus {
     background-color: #fc3 !important;
     color: #111;
+  }
+  .comment-help {
+    background-color: #321;
+    border: 1px solid #542;
+    color: #ccc;
   }
   .timeline-page .post-timeline-v2 .post-timeline tr.deleted-event td,
   .timeline-page .post-timeline-v2 .post-timeline tr.deleted-event-details td {
