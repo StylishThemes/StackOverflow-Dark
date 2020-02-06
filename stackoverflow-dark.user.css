@@ -3046,7 +3046,9 @@ regexp("^https?:\/\/((?!area51)\w+\.)*?stackexchange\.com.*") {
     -webkit-filter: invert(100%) !important;
             filter: invert(100%) !important;
   }
-  .filters-sidebar .filters ul li.current,
+  .filters-sidebar .filters ul li.current {
+    filter: brightness(80%);
+  }
   .filters-sidebar .filters ul li.current .filter-unread-count {
     background: #182030 !important;
   }
