@@ -704,7 +704,8 @@ regexp("^https?:\/\/((?!area51)\w+\.)*?stackexchange\.com.*") {
   .bg-black-050, .h\:bg-black-050:hover, .f\:bg-black-050:focus {
     color: #ccc !important;
   }
-  .snippet-code .popout::before, .snippet-code .popout-code::before {
+  .snippet-code .popout::before, .snippet-code .popout-code::before,
+  .snippet-code .hideResults::before {
     filter: grayscale(1) brightness(180%) !important;
   }
   .user-page .subheader.reloaded .additional-links a:hover, code.bg-black-050 {
@@ -3275,6 +3276,9 @@ regexp("^https?:\/\/((?!area51)\w+\.)*?stackexchange\.com.*") {
   }
   iframe.snippet-box-edit {
     filter: invert(1) hue-rotate(180deg);
+  }
+  .snippet-code .snippet-result .snippet-result-code {
+    border-top: 1px solid #444;
   }
   .snippet-modal .-code .column:nth-child(1),
   .snippet-modal .-code .column:nth-child(n+1), .snippet-modal .-code .column {
