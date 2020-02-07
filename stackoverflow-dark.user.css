@@ -3571,6 +3571,12 @@ regexp("^https?:\/\/((?!area51)\w+\.)*?stackexchange\.com.*") {
   .mini-room-chart .mspark .mspbar, .mspark .mspbar {
     background-color: #555 !important;
   }
+  #chat .messages .content {
+    background: #222;
+  }
+  #chat .signature .owner {
+    background: transparent;
+  }
   input#password {
     background-color: #111 !important;
     color: #ddd !important;
