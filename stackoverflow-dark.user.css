@@ -2017,7 +2017,6 @@ regexp("^https?:\/\/((?!area51)\w+\.)*?stackexchange\.com.*") {
   .msg-list .list-item.is-read, .msg-list .list-item header,
   .message-detail header, .post-signature:not(.owner) .user-info,
   .answers-subheader, .profile-top-tags .badge-tag, .msg-controls,
-  .grid--cell:not(input):not(textarea):not(.s-btn):not(.facebook-login):not(.s-btn__primary):not(.youarehere):not(.badge1-alternate):not(.badge2-alternate):not(.badge3-alternate):not(.s-btn__outlined):not(.s-btn__filled):not(.bg-blue-500):not(.vote):not([type="password"]),
   .narrow .votes, .badge-tag:hover, .form-item, .nav-links li a:hover,
   .nav-links li a:focus {
     background-color: transparent !important;
