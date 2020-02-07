@@ -118,12 +118,12 @@ regexp("^https?:\/\/((?!area51)\w+\.)*?stackexchange\.com.*") {
     text-shadow: none !important;
     box-shadow: none !important;
   }
-  body, .cv-story header {
+  body, .cv-story header, .container.bg-black-050 {
     background-color: #202020 !important;
-    background-image: var(--bg-img);
-    background-clip: border-box;
-    background-origin: padding-box;
-    background-attachment: /*[[bg-attachment]]*/;
+    background-image: var(--bg-img) !important;
+    background-clip: border-box !important;
+    background-origin: padding-box !important;
+    background-attachment: /*[[bg-attachment]]*/ !important;
     /*[[bg-options]]*/
   }
   .subheader a {
