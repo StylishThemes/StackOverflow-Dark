@@ -1827,8 +1827,8 @@ regexp("^https?:\/\/((?!area51)\w+\.)*?stackexchange\.com.*") {
   .fc-green-400, .h\:fc-green-400:hover, .f\:fc-green-400:focus {
     color: #5fba7d !important;
   }
-  .fc-green-500, .vote-count-post [style="color:green"], .fc-green-500,
-  .svg-icon.iconCheckmarkLg, .answered strong,
+  .fc-green-500, .h\:fc-green-500:hover, .f\:fc-green-500:focus,
+  .vote-count-post [style="color:green"], .answered strong,
   .user-show-new .user-rep-full .rep-up, .movedUp, .status.answered,
   .status.answered .mini-counts, .status.answered strong, .answered,
   .answered .mini-counts, .answered strong {
