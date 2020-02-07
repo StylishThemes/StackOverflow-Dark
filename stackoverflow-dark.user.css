@@ -1662,9 +1662,6 @@ regexp("^https?:\/\/((?!area51)\w+\.)*?stackexchange\.com.*") {
   #mdhelp .mdhelp-tab pre:not(.bg-transparent):not(.bg-black-050) {
     background-color: rgba(102, 85, 17, .3) !important;
   }
-  #mdhelp .mdhelp-tab pre:not.bg-transparent {
-    background-color: transparent !important;
-  }
   pre .spaces {
     color: #433211;
   }
@@ -1674,9 +1671,6 @@ regexp("^https?:\/\/((?!area51)\w+\.)*?stackexchange\.com.*") {
   .fc-yellow-600, .h\:fc-yellow-600:hover, .f\:fc-yellow-600:focus, .fc-warning,
   .fc-yellow-600 .iconStar, .fc-yellow-600:hover .iconStar {
     color: #fc3 !important;
-  }
-  .product-hero-background, .search-form.responsive .filter-pane .-nav {
-    background-color: transparent;
   }
   div.question-status, .unread {
     background-color: rgba(51, 34, 17, .6);
@@ -1859,11 +1853,6 @@ regexp("^https?:\/\/((?!area51)\w+\.)*?stackexchange\.com.*") {
   .topbar-dialog.achievements-dialog .rep-up, .-activity .-stat.answered {
     color: #92cc09 !important;
   }
-  .answered, .message.success.text-only,
-  .s-sidebarwidget .s-btn__muted:not(.facebook-login),
-  .task-stat-leaderboard.user-info {
-    background-color: transparent !important;
-  }
   .answer-votes, .answered .vote-count-post {
     color: #27ae60;
   }
@@ -2021,9 +2010,16 @@ regexp("^https?:\/\/((?!area51)\w+\.)*?stackexchange\.com.*") {
   .message-detail header, .post-signature:not(.owner) .user-info,
   .answers-subheader, .profile-top-tags .badge-tag, .msg-controls,
   .narrow .votes, .badge-tag:hover, .form-item, .nav-links li a:hover,
-  .nav-links li a:focus {
+  .nav-links li a:focus, .answered, .message.success.text-only,
+  .s-sidebarwidget .s-btn__muted:not(.facebook-login),
+  .task-stat-leaderboard.user-info, #mdhelp .mdhelp-tab pre:not.bg-transparent {
     background-color: transparent !important;
   }
+  /* this selector on its own */
+  .timeline header.header {
+    background-color: transparent !important;
+  }
+  .product-hero-background, .search-form.responsive .filter-pane .-nav,
   .mdhelp-tab .spaces {
     background-color: transparent;
   }
