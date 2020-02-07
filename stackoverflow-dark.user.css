@@ -2049,6 +2049,11 @@ regexp("^https?:\/\/((?!area51)\w+\.)*?stackexchange\.com.*") {
     color: #ddd;
     border-bottom-color: /*[[base-color]]*/ !important;
   }
+  .s-badge__votes {
+    border-color: #444;
+    background-color: #181818;
+    color: #eee;
+  }
   /* === Dark border === */
   .body-diffs table * {
     border-color: #111 !important;
