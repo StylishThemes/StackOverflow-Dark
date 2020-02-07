@@ -442,7 +442,8 @@ regexp("^https?:\/\/((?!area51)\w+\.)*?stackexchange\.com.*") {
     border-color: rgba(/*[[base-color-rgb]]*/, .6);
     box-shadow: none;
   }
-  .s-btn:hover, .s-btn:focus, .s-btn:active {
+  .s-btn:not([data-action="se-uql-list#editCurrent"]):hover, .s-btn:focus,
+  .s-btn:active {
     background-color: #282828;
   }
   .s-btn.s-btn__google {
