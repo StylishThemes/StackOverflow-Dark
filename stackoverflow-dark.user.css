@@ -2386,7 +2386,8 @@ regexp("^https?:\/\/((?!area51)\w+\.)*?stackexchange\.com.*") {
     background-color: #182030;
   }
   svg.iconGlobe path, svg.iconIndustry path, svg.iconPeople path,
-  svg.iconBriefcase path, svg.iconFlag path, svg.iconGitHub path {
+  svg.iconBriefcase path, button:not(:hover) svg.iconFlag path,
+  svg.iconGitHub path {
     fill: #999 !important;
   }
   svg.svg-icon.iconSearch path {
@@ -2499,6 +2500,9 @@ regexp("^https?:\/\/((?!area51)\w+\.)*?stackexchange\.com.*") {
     color: #bb9603;
   }
   /* red */
+  .fc-red-500, .h\:fc-red-500:hover, .f\:fc-red-500:focus, .fc-error, .fc-danger {
+    color: #da4453 !important;
+  }
   html:not(#X) .warm {
     color: #da4453 !important;
   }
