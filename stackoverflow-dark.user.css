@@ -1559,7 +1559,8 @@ regexp("^https?:\/\/((?!area51)\w+\.)*?stackexchange\.com.*") {
   .privileges-wrapper .stroke, .progress-bar .bar {
     background: #404040 !important;
   }
-  .history-table .reviewed-action {
+  .history-table .reviewed-action,
+  .user-page .settings-page .email-settings .-title-row {
     background-color: #383838;
   }
   tr.comment:hover, .reply-parent, .timestamp, .usercard,
