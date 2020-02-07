@@ -2013,7 +2013,7 @@ regexp("^https?:\/\/((?!area51)\w+\.)*?stackexchange\.com.*") {
   .task-stat-leaderboard.user-info, #mdhelp .mdhelp-tab pre:not.bg-transparent {
     background-color: transparent !important;
   }
-  #content, .subheader #tabs a, .subheader .tabs a,
+  #content, .subheader #tabs a, .subheader .tabs a:not(.youarehere),
   .story-preferences .link-text {
     background-color: transparent !important;
   }
@@ -2033,10 +2033,8 @@ regexp("^https?:\/\/((?!area51)\w+\.)*?stackexchange\.com.*") {
     background-color: #292929 !important;
     border-color: rgba(62, 62, 62, .1) !important;
     border-bottom-color: transparent !important;
-    margin-top: -1px !important;
   }
   .subheader #tabs a:hover,
-  .subheader .tabs a:not(.youarehere):not([href*="company"]):hover,
   .subheader.user-full-tab-header .subtabs.user-tab-sorts {
     margin-top: 3px !important;
   }
