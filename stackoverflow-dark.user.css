@@ -451,9 +451,9 @@ regexp("^https?:\/\/((?!area51)\w+\.)*?stackexchange\.com.*") {
   .s-btn.s-btn__google:hover, .s-btn__google:focus {
     background-color: #282828 !important;
   }
-  .s-btn:not(.s-btn__google):not(.s-btn__launchpad):not(.fc-dark):not(.s-btn__primary):not(.s-btn__muted):not(.s-btn__unset):not(.s-btn__link):not(.h\:p-bg-yellow-tint):hover,
-  .s-btn:not(.s-btn__google):not(.s-btn__launchpad):not(.fc-dark):not(.s-btn__primary):not(.s-btn__muted):not(.s-btn__unset):not(.s-btn__link):not(.h\:p-bg-yellow-tint):focus,
-  .s-btn:not(.s-btn__google):not(.s-btn__launchpad):not(.fc-dark):not(.s-btn__primary):not(.s-btn__muted):not(.s-btn__unset):not(.s-btn__link):not(.h\:p-bg-yellow-tint):active {
+  .s-btn:not(.print-btn):not(.s-btn__google):not(.s-btn__launchpad):not(.fc-dark):not(.s-btn__primary):not(.s-btn__muted):not(.s-btn__unset):not(.s-btn__link):not(.h\:p-bg-yellow-tint):hover,
+  .s-btn:not(.print-btn):not(.s-btn__google):not(.s-btn__launchpad):not(.fc-dark):not(.s-btn__primary):not(.s-btn__muted):not(.s-btn__unset):not(.s-btn__link):not(.h\:p-bg-yellow-tint):focus,
+  .s-btn:not(.print-btn):not(.s-btn__google):not(.s-btn__launchpad):not(.fc-dark):not(.s-btn__primary):not(.s-btn__muted):not(.s-btn__unset):not(.s-btn__link):not(.h\:p-bg-yellow-tint):active {
     background-color: rgba(79, 140, 201, .2) !important;
     background-color: rgba(/*[[base-color-rgb]]*/, .2) !important;
   }
@@ -692,7 +692,8 @@ regexp("^https?:\/\/((?!area51)\w+\.)*?stackexchange\.com.*") {
   .why-jobs-v2 .cta-cards .-card._browse-visa .-image {
     filter: invert(1) hue-rotate(180deg) brightness(140%);
   }
-  .s-sidebarwidget--item .favicon {
+  .s-sidebarwidget--item .favicon,
+  .timeline-public .timeline-public-header .logo {
     filter: invert(1) hue-rotate(180deg);
   }
   .expander-arrow-small-hide, .expander-arrow-small-show,
@@ -705,7 +706,7 @@ regexp("^https?:\/\/((?!area51)\w+\.)*?stackexchange\.com.*") {
     color: #ccc !important;
   }
   .snippet-code .popout::before, .snippet-code .popout-code::before,
-  .snippet-code .hideResults::before {
+  .snippet-code .hideResults::before, .icon-print {
     filter: grayscale(1) brightness(180%) !important;
   }
   .user-page .subheader.reloaded .additional-links a:hover, code.bg-black-050 {
@@ -756,7 +757,8 @@ regexp("^https?:\/\/((?!area51)\w+\.)*?stackexchange\.com.*") {
     background: #444;
   }
   .timeline .readings .readings-list .readings-item,
-  .badges-page .single-badge-table .single-badge-row-reason, .s-press .-item {
+  .badges-page .single-badge-table .single-badge-row-reason, .s-press .-item,
+  .timeline-public .timeline-public-header {
     border-color: #444;
   }
   .top-bar .left-sidebar-toggle:hover,
@@ -2238,7 +2240,9 @@ regexp("^https?:\/\/((?!area51)\w+\.)*?stackexchange\.com.*") {
   }
   a.button:not(.huge-button):not(#visit-the-faq):not(.btn),
   a.button.popup-action-link:not(.huge-button):not(#visit-the-faq):not(.btn),
-  a.button.popup-submit:not(.huge-button):not(#visit-the-faq):not(.btn) {
+  a.button.popup-submit:not(.huge-button):not(#visit-the-faq):not(.btn),
+  .timeline-public .s-btn.s-btn__filled.print-btn,
+  .timeline-public .s-btn.s-btn__filled:hover {
     color: #ddd !important;
     background: rgba(79, 140, 201, 1) !important;
     background: rgba(/*[[base-color-rgb]]*/, 1) !important;
