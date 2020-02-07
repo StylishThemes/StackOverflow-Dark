@@ -238,9 +238,6 @@ regexp("^https?:\/\/((?!area51)\w+\.)*?stackexchange\.com.*") {
     background: #ccc;
     border: 4px solid #666;
   }
-  .s-timeline::after, .s-timeline .-period:last-child .-event:last-child::after {
-    background: #666;
-  }
   .search-form .search-inputs .-item .iconSearch,
   .search-form .search-inputs .-item .iconLocation {
     opacity: .8;
@@ -1602,6 +1599,9 @@ regexp("^https?:\/\/((?!area51)\w+\.)*?stackexchange\.com.*") {
   }
   #chat .messages .mention, .timeline-item.edit .img .remove:hover {
     background: #666 !important;
+  }
+  .s-timeline::after, .s-timeline .-period:last-child .-event:last-child::after {
+    background: #666;
   }
   #post-text-container div span {
     background: #c1beba !important;
