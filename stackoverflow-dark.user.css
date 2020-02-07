@@ -714,7 +714,8 @@ regexp("^https?:\/\/((?!area51)\w+\.)*?stackexchange\.com.*") {
   .snippet-code .popin, .user-show-new .history-table .reviewed-action {
     background: #333 !important;
   }
-  .user-page .subheader.reloaded .additional-links a:hover, .bg-black-050 {
+  .user-page .subheader.reloaded .additional-links a:hover, .bg-black-050,
+  .h\:bg-black-050:hover, .f\:bg-black-050:focus {
     background: #292929 !important;
   }
   .top-bar .-marketing-link.is-selected:hover,
