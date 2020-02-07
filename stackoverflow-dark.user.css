@@ -1664,6 +1664,9 @@ regexp("^https?:\/\/((?!area51)\w+\.)*?stackexchange\.com.*") {
   pre .spaces {
     color: #433211;
   }
+  .spaces {
+    background-color: #542;
+  }
   .fc-yellow-600, .h\:fc-yellow-600:hover, .f\:fc-yellow-600:focus, .fc-warning,
   .fc-yellow-600 .iconStar, .fc-yellow-600:hover .iconStar {
     color: #fc3 !important;
