@@ -190,7 +190,7 @@ regexp("^https?:\/\/((?!area51)\w+\.)*?stackexchange\.com.*") {
   .topbar-dialog .modal-content .message-text h4, .fc-orange-400,
   .h\:fc-orange-400:hover, .f\:fc-orange-400:focus,
   .svg-icon.iconArrowDownLg:hover, .svg-icon.iconArrowUpLg:hover,
-  span[style*="color: #5C7796;"] {
+  span[style*="color: #5C7796;"], h2.bottom-share-links a[href] {
     color: /*[[base-color]]*/ !important;
   }
   .search-controls-responsive .-item .s-btn__outlined, .s-btn__outlined {
@@ -830,15 +830,16 @@ regexp("^https?:\/\/((?!area51)\w+\.)*?stackexchange\.com.*") {
   .s-table td, #side-menu ul ul li > a .svg-icon, .nav-links .fc-medium,
   #top-cards .fc-black-350 svg, #user-card .fc-black-350 svg,
   .company-list .fc-black-500 svg:not(.fc-green-400):not(.fc-orange-400),
-  .company-list p, .-settings span, .email-settings .-info p, .s-description,
-  p.fc-black-700, a.s-link__grayscale, .s-link.s-link__grayscale,
-  .site-footer--copyright p, #side-menu ul ul li > a,
-  .sort label[for="sorting-options"], .company-list div.fc-black-500,
-  html:not(#X) .fc-black-200, svg.iconLocation, svg.iconTwitter, svg.iconGitHub,
-  svg.iconMoney, svg.iconVacation, svg.iconHealth, svg.iconComputer,
-  svg.iconClock, svg.iconFood, svg.iconFaceSmile, svg.iconHeart, svg.iconFitness,
-  svg.iconSubway, .s-anchors.s-anchors__muted a:not(.s-link),
-  .s-anchors .s-anchors.s-anchors__muted a:not(.s-link) {
+  .company-list p, .-settings span, .s-description, p.fc-black-700,
+  a.s-link__grayscale, .s-link.s-link__grayscale, .site-footer--copyright p,
+  #side-menu ul ul li > a, .sort label[for="sorting-options"],
+  .company-list div.fc-black-500, html:not(#X) .fc-black-200, svg.iconLocation,
+  svg.iconTwitter, svg.iconGitHub, svg.iconMoney, svg.iconVacation,
+  svg.iconHealth, svg.iconComputer, svg.iconClock, svg.iconFood,
+  svg.iconFaceSmile, svg.iconHeart, svg.iconFitness, svg.iconSubway,
+  .s-anchors.s-anchors__muted a:not(.s-link),
+  .s-anchors .s-anchors.s-anchors__muted a:not(.s-link), .fc-black-300,
+  .h\:fc-black-300:hover, .f\:fc-black-300:focus {
     color: #999 !important;
   }
   .user-details td, .content-page, h2:not([style]), h2 a, .profile-popup a:hover,
@@ -862,8 +863,7 @@ regexp("^https?:\/\/((?!area51)\w+\.)*?stackexchange\.com.*") {
     color: #aaa !important;
   }
   /* end not !important */
-  .fc-black-300, .h\:fc-black-300:hover, .f\:fc-black-300:focus,
-  span[style="color: #444;"] {
+  span[style="color: #444;"], .email-settings .-info p {
     color: #aaa !important;
   }
   .user-page .settings-page h1 + div.subtitle, .fc-medium .fw-bold, .fc-medium b,
@@ -982,7 +982,9 @@ regexp("^https?:\/\/((?!area51)\w+\.)*?stackexchange\.com.*") {
   .youarehere .svg-icon, h1, h2:not([style]), h3, h4, h5, h6, .h1, .h2, .h3, .h4,
   .h5, .h6, .tour-bubble p, header h2.fc-dark, .fc-dark,
   #logins-table .group-name, .top-bar .-marketing-link, html:not(#X) .fc-white,
-  html:not(#X) .h\:fc-black-900:hover, .new-about-content-page h2.about-title {
+  html:not(#X) .h\:fc-black-900:hover, .new-about-content-page h2.about-title,
+  li.s-sidebarwidget--item a[aria-current="page"],
+  .s-sidebarwidget--item[aria-current="true"] a {
     color: #ddd !important;
   }
   .subtabs.user-panel-subtabs a:hover,
@@ -1000,9 +1002,6 @@ regexp("^https?:\/\/((?!area51)\w+\.)*?stackexchange\.com.*") {
   .top-bar .navigation .-link:hover, .top-bar .navigation .-link:focus {
     background-color: #242424;
     color: #eee;
-  }
-  li.s-sidebarwidget--item a[aria-current="page"] {
-    color: #fff !important;
   }
   .show-votes .sidebar-linked .spacer > a:first-child .answer-votes,
   .show-votes .sidebar-related .spacer > a:first-child .answer-votes {
@@ -1556,7 +1555,7 @@ regexp("^https?:\/\/((?!area51)\w+\.)*?stackexchange\.com.*") {
   }
   .owner-answer, .notification, #feed-ticker, #top-menu, .vote-revision td,
   .privileges-wrapper .stroke, .progress-bar .bar,
-  .user-page .settings-page .email-settings .-title-row {
+  .privileges-wrapper .stroke, .progress-bar .bar {
     background: #404040 !important;
   }
   .history-table .reviewed-action {
