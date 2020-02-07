@@ -889,7 +889,8 @@ regexp("^https?:\/\/((?!area51)\w+\.)*?stackexchange\.com.*") {
   .company-module .-details .-benefits li .-text,
   .faq-page #mainbar .col-section .col-section h2 a,
   .faq-page #mainbar .col-section .col-section h3 a, label:not(.s-label),
-  .label:not(.s-label), .answerBox, .answerBox:visited, .community-option {
+  .label:not(.s-label), .answerBox, .answerBox:visited, .community-option,
+  .message.message-config a:not(.badge-tag):not(.button):not(.btn):not(.post-tag) {
     color: #aaa;
   }
   .s-sidebarwidget:not(.s-anchors) a:not(.button):not(.s-btn):not(.post-tag):not(.s-sidebarwidget--action),
