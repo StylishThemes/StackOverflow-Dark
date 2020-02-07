@@ -1554,7 +1554,6 @@ regexp("^https?:\/\/((?!area51)\w+\.)*?stackexchange\.com.*") {
     border-color: #666;
   }
   .owner-answer, .notification, #feed-ticker, #top-menu, .vote-revision td,
-  .privileges-wrapper .stroke, .progress-bar .bar,
   .privileges-wrapper .stroke, .progress-bar .bar {
     background: #404040 !important;
   }
