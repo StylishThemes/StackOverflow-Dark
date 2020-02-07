@@ -2567,9 +2567,6 @@ regexp("^https?:\/\/((?!area51)\w+\.)*?stackexchange\.com.*") {
   .tools-rev h1 .lsep {
     color: #555;
   }
-  .form-item {
-    padding-left: 20px !important;
-  }
   .tag-container .col {
     margin: 0 !important;
     border: #333 1px solid !important;
