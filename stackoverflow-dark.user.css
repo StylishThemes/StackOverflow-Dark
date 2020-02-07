@@ -758,7 +758,7 @@ regexp("^https?:\/\/((?!area51)\w+\.)*?stackexchange\.com.*") {
   }
   .timeline .readings .readings-list .readings-item,
   .badges-page .single-badge-table .single-badge-row-reason, .s-press .-item,
-  .timeline-public .timeline-public-header {
+  .timeline-public .timeline-public-header, .s-btn__google, .s-btn__google:hover {
     border-color: #444;
   }
   .top-bar .left-sidebar-toggle:hover,
