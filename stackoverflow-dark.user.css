@@ -1170,14 +1170,11 @@ regexp("^https?:\/\/((?!area51)\w+\.)*?stackexchange\.com.*") {
     border-bottom-color: transparent !important;
   }
   .subheader .tabs a.youarehere[href*="company"] {
-    margin-top: 2px;
+    margin-top: 3px;
     border-bottom-color: transparent !important;
   }
   .subheader .tabs a[href*="company"] {
-    margin-top: 3px;
-  }
-  .subheader .tabs a:not(.youarehere)[href*="company"]:hover {
-    margin-top: 0;
+    margin-top: -1px;
   }
   .subheader.user-tabs-nav .tabs a.youarehere {
     margin-top: 0;
@@ -1197,8 +1194,8 @@ regexp("^https?:\/\/((?!area51)\w+\.)*?stackexchange\.com.*") {
     border-bottom-color: /*[[base-color]]*/ !important;
     color: /*[[base-color]]*/ !important;
   }
-  .subheader:not(.user-tabs-nav) .tabs a:hover, .sort a.current,
-  .subtabs a.youarehere, .subtabs a:hover {
+  .subheader:not(.user-tabs-nav) .tabs a:not([href*="company"]):hover,
+  .sort a.current, .subtabs a.youarehere, .subtabs a:hover {
     border-bottom-color: /*[[base-color]]*/ !important;
     color: /*[[base-color]]*/ !important;
   }
@@ -2015,8 +2012,12 @@ regexp("^https?:\/\/((?!area51)\w+\.)*?stackexchange\.com.*") {
   .task-stat-leaderboard.user-info, #mdhelp .mdhelp-tab pre:not.bg-transparent {
     background-color: transparent !important;
   }
+  #content, .subheader #tabs a, .subheader .tabs a,
+  .story-preferences .link-text {
+    background-color: transparent !important;
+  }
   /* this selector on its own */
-  .timeline header.header {
+  .timeline header.header, #content, #tabs a::before, .tabs a::before {
     background-color: transparent !important;
   }
   .product-hero-background, .search-form.responsive .filter-pane .-nav,
@@ -2033,7 +2034,8 @@ regexp("^https?:\/\/((?!area51)\w+\.)*?stackexchange\.com.*") {
     border-bottom-color: transparent !important;
     margin-top: -1px !important;
   }
-  .subheader #tabs a:hover, .subheader .tabs a:not(.youarehere):hover,
+  .subheader #tabs a:hover,
+  .subheader .tabs a:not(.youarehere):not([href*="company"]):hover,
   .subheader.user-full-tab-header .subtabs.user-tab-sorts {
     margin-top: 3px !important;
   }
