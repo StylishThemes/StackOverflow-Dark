@@ -893,8 +893,6 @@ regexp("^https?:\/\/((?!area51)\w+\.)*?stackexchange\.com.*") {
   .message.message-config a:not(.badge-tag):not(.button):not(.btn):not(.post-tag) {
     color: #aaa;
   }
-  .s-sidebarwidget:not(.s-anchors) a:not(.button):not(.s-btn):not(.post-tag):not(.s-sidebarwidget--action),
-  .s-sidebarwidget:not(.s-anchors) a:not(.button):not(.s-btn):not(.post-tag):not(.s-sidebarwidget--action):visited,
   .topbar-dialog.help-dialog .item-summary,
   .topbar-dialog.inbox-dialog .inbox-item .item-content .item-summary,
   .topbar-dialog.modInbox-dialog .inbox-item .item-content .item-summary,
@@ -952,7 +950,9 @@ regexp("^https?:\/\/((?!area51)\w+\.)*?stackexchange\.com.*") {
   .s-sidebarwidget--item > :first-child[aria-current="page"],
   .user-page .settings-page .email-settings .-settings td.-desc strong,
   #logins-table .pretty-login, .activity-status-prompt > .-fields > .-label,
-  .stats-mainbar .task-stat-table .review-stats-count, .-votes .mini-counts {
+  .stats-mainbar .task-stat-table .review-stats-count, .-votes .mini-counts,
+  .s-sidebarwidget:not(.s-anchors) a:not(.button):not(.s-btn):not(.post-tag):not(.s-sidebarwidget--action),
+  .s-sidebarwidget:not(.s-anchors) a:not(.button):not(.s-btn):not(.post-tag):not(.s-sidebarwidget--action):visited {
     color: #ccc;
   }
   .nav-links .youarehere .nav-links--link,
