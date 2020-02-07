@@ -1562,9 +1562,9 @@ regexp("^https?:\/\/((?!area51)\w+\.)*?stackexchange\.com.*") {
     background-color: #383838;
   }
   tr.comment:hover, .reply-parent, .timestamp, .usercard,
-  .answer-help-background, .tabs li, .hi, .seNavLinks a:hover,
-  .seNavLinks a:focus, .itemBoxNew, .pagination a.current, .wb-wearing,
-  .impact-card hr, .MathJax_MenuActive, .timeline-item.edit .img .remove {
+  .answer-help-background, .tabs li, .seNavLinks a:hover, .seNavLinks a:focus,
+  .itemBoxNew, .pagination a.current, .wb-wearing, .impact-card hr,
+  .MathJax_MenuActive, .timeline-item.edit .img .remove {
     background-color: #444 !important;
     color: #ddd !important;
   }
@@ -1599,7 +1599,8 @@ regexp("^https?:\/\/((?!area51)\w+\.)*?stackexchange\.com.*") {
   #chat .messages .mention, .timeline-item.edit .img .remove:hover {
     background: #666 !important;
   }
-  .s-timeline::after, .s-timeline .-period:last-child .-event:last-child::after {
+  .s-timeline::after, .s-timeline .-period:last-child .-event:last-child::after,
+  .hi {
     background: #666;
   }
   #post-text-container div span {
