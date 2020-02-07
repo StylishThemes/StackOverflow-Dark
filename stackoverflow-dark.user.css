@@ -3586,11 +3586,6 @@ regexp("^https?:\/\/((?!area51)\w+\.)*?stackexchange\.com.*") {
     color: #eee;
     background-color: #343434;
   }
-  /* chat room buttons */
-  a.button:not(.huge-button):not(#visit-the-faq):not(.btn) {
-    background: #f67400 !important;
-    color: #eee !important;
-  }
   html:not(#X) #chat-body a.button[href],
   html:not(#X) #transcript-body a.button.noprint,
   #transcript-body #sidebar a.button,
