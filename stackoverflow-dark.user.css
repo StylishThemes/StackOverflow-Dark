@@ -1986,7 +1986,7 @@ regexp("^https?:\/\/((?!area51)\w+\.)*?stackexchange\.com.*") {
     border-left: 3px solid #061 !important;
   }*/
   /* === Transparent background === */
-  div.message .meta, .spaces, span.feed-icon, a.role-switch, .nav.careers li,
+  div.message .meta, span.feed-icon, a.role-switch, .nav.careers li,
   .nav.careers li:hover, .switcher-nudge-content p, #content, #tabs a, .tabs a,
   #chat .username, .tag-container, .prettyprint code, .lv-info,
   .lv-stats-wrapper, .lv-stats-wrapper .number, .container, .bottom-notice,
@@ -2015,6 +2015,9 @@ regexp("^https?:\/\/((?!area51)\w+\.)*?stackexchange\.com.*") {
   .grid--cell:not(input):not(textarea):not(.s-btn):not(.facebook-login):not(.s-btn__primary):not(.youarehere):not(.badge1-alternate):not(.badge2-alternate):not(.badge3-alternate):not(.s-btn__outlined):not(.s-btn__filled):not(.bg-blue-500):not(.vote):not([type="password"]),
   .narrow .votes, .badge-tag:hover, .form-item {
     background-color: transparent !important;
+  }
+  .mdhelp-tab .spaces {
+    background-color: transparent;
   }
   .label-key a.lastactivity-link {
     color: inherit;
