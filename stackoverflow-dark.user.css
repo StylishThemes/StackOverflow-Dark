@@ -902,7 +902,7 @@ regexp("^https?:\/\/((?!area51)\w+\.)*?stackexchange\.com.*") {
   .subheader a span, .disabled-link, .nav-links .nav-links--link,
   .nav-links .nav-links--link:visited,
   .s-anchors.s-anchors__grayscale a:not(.s-link),
-  .s-anchors .s-anchors.s-anchors__grayscale a:not(.s-link)
+  .s-anchors .s-anchors.s-anchors__grayscale a:not(.s-link),
   .timeline .readings .readings-list .readings-item .readings-item-text .readings-item-author,
   .s-anchors.s-anchors__grayscale a:not(.s-link):hover,
   .s-anchors .s-anchors.s-anchors__grayscale a:not(.s-link):hover,
