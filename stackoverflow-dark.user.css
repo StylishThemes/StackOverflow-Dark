@@ -1721,6 +1721,9 @@ regexp("^https?:\/\/((?!area51)\w+\.)*?stackexchange\.com.*") {
     background-color: #321 !important;
     color: #ccc !important;
   }
+  .flag-quality-warning {
+    background-color: #321;
+  }
   .icon-warning-label {
     background: #321;
   }
