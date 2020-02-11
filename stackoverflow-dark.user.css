@@ -100,7 +100,7 @@ domain("stackapps.com"),
 domain("mathoverflow.net"),
 domain("askubuntu.com"),
 regexp("^https?:\/\/((?!area51)\w+\.)*?stackexchange\.com.*"),
-regexp("^https?:\\/\\/stackoverflow.[^\\.]*\\.com/.*")
+regexp("^https?:\/\/stackoverflow.[^\.]*\.com.*")
 {
   :root {
     --bg-custom: /*[[bg-custom]]*/;
