@@ -3173,6 +3173,15 @@ regexp("^https?:\/\/((?!area51)\w+\.)*?stackexchange\.com.*") {
     background-color: #ffd972 !important;
   }
 }
+@-moz-document domain("stats.stackexchange.com") {
+  .site-header {
+    background-image: none;
+    background: repeating-linear-gradient(-45deg, #111, #333 2px, #111 4px);
+  }
+  .site-header .site-header--sponsored {
+    color: #ccc;
+  }
+}
 @-moz-document regexp("^https?://((unix|skeptics|math)\\.)?stackexchange\\.com.*") {
   .site-header .wmx100 {
     filter: invert(1) hue-rotate(180deg);
