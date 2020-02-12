@@ -1417,14 +1417,13 @@ regexp("^https?:\/\/((?!area51)\w+\.)*?stackexchange\.com.*") {
     }
   }
   #answers .answer.accepted-answer[style*="background-color"] {
-    animation-name: blinking !important;
-    background: rgb(/*[[accepted-color-rgb]]*/) !important;
-    border: 1px solid rgb(/*[[base-color-rgb]]*/) !important;
+    background: inherit !important;
+    border: 1px solid /*[[accepted-color]]*/ !important;
   }
   /* Assign */
   #answers .answer.accepted-answer {
     background: rgba(/*[[accepted-color-rgb]]*/, .5) !important;
-    border: 1px solid rgb(/*[[base-color-rgb]]*/) !important;
+    border: 1px solid /*[[accepted-color]]*/ !important;
   }
   .fc-green-400, .h\:fc-green-400:hover, .f\:fc-green-400:focus {
     color: #5fba7d !important;
