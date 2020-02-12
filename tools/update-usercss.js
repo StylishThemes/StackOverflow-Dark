@@ -27,7 +27,7 @@ function addVars(template, usercss) {
         .join("\n  ")}\n}`;
     return `@advanced ${e.type} ${e.label} "${key}" ` +
       // Wrap url(...) in quotes
-      `${v.includes("url(") ? `"${v}"` : v}`;
+      `${v.indexOf("url(") === 0 ? `"${v}"` : v}`;
   }).join("\n");
   return replaceHolders(
     pkg,

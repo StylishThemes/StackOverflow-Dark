@@ -2,47 +2,44 @@
 /* Original theme - https://github.com/chriskempson/tomorrow-theme */
 .prettyprint {
   background: #2d2d2d !important;
-  font-family: Menlo, 'Bitstream Vera Sans Mono', 'DejaVu Sans Mono', Monaco, Consolas, monospace !important;
+  font-family: Menlo, "Bitstream Vera Sans Mono", "DejaVu Sans Mono", Monaco, Consolas, monospace !important;
   padding: 10px !important;
 }
-
 .pln {
   color: #ccc !important;
 }
-
 @media screen {
-  .str { color: #99cc99 !important; }
-  .kwd { color: #cc99cc !important; }
-  .com { color: #999999 !important; }
-  .typ { color: #6699cc !important; }
+  .str { color: #9c9 !important; }
+  .kwd { color: #c9c !important; }
+  .com { color: #999 !important; }
+  .typ { color: #69c !important; }
   .lit { color: #f99157 !important; }
-  .pun { color: #cccccc !important; }
-  .opn { color: #cccccc !important; }
-  .clo { color: #cccccc !important; }
+  .pun { color: #ccc !important; }
+  .opn { color: #ccc !important; }
+  .clo { color: #ccc !important; }
   .tag { color: #f2777a !important; }
   .atn { color: #f99157 !important; }
-  .atv { color: #66cccc !important; }
+  .atv { color: #6cc !important; }
   .dec { color: #f99157 !important; }
   .var { color: #f2777a !important; }
-  .fun { color: #6699cc !important; }
+  .fun { color: #69c !important; }
 }
 @media print, projection {
-  .str { color: #006600 !important; }
+  .str { color: #060 !important; }
   .kwd { color: #006 !important; font-weight: bold !important; }
   .com { color: #600 !important; font-style: italic !important; }
   .typ { color: #404 !important; font-weight: bold !important; }
-  .lit { color: #004444 !important; }
-  .pun, .opn, .clo { color: #444400 !important; }
+  .lit { color: #044 !important; }
+  .pun, .opn, .clo { color: #440 !important; }
   .tag { color: #006 !important; font-weight: bold !important; }
-  .atn { color: #440044 !important; }
-  .atv { color: #006600 !important; }
+  .atn { color: #404 !important; }
+  .atv { color: #060 !important; }
 }
 /* Specify class=linenums on a pre to get line numbering */
 ol.linenums {
   margin-top: 0 !important;
   margin-bottom: 0 !important;
 }
-
 /* IE indents via margin-left */
 li.L0, li.L1, li.L2, li.L3, li.L4, li.L5, li.L6, li.L7, li.L8, li.L9 {}
 /* Alternate shading for lines */

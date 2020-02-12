@@ -6,7 +6,6 @@
 //#Github: https://github.com/RaphaelDDL/google-prettify-monokai-theme/
 //For use with Google Code Prettify, HTML Syntax only
 //======================== */
-
 pre .str, code .str { color: #e6db5a !important; } /* string */
 pre .kwd, code .kwd { color: #66d9ef !important; } /* keyword */
 pre .com, code .com { color: #75715e !important; font-style: italic !important; } /* comment */
@@ -18,12 +17,10 @@ pre .tag, code .tag { color: #f92672 !important; } /* html/xml tag */
 pre .atn, code .atn { color: #a6e22a !important; } /* html/xml attribute name */
 pre .atv, code .atv { color: #e6db74 !important; } /* html/xml attribute value */
 pre .dec, code .dec { color: #ae81ff !important; } /* decimal */
-
 pre.prettyprint, code.prettyprint {
 	background-color: #272822 !important;
 	font-family: consolas, menlo, courier, monospace !important;
 }
-
 /* ------------------------
 //Section: class 'linenums' for line numbering
 //------------------------ */
@@ -33,16 +30,14 @@ ol.linenums {
 	color: #75715e !important;
 	list-style: decimal inside !important;
 } /* IE indents via margin-left */
-
 /* =============================================
 //Section: Print Styles (partially from Sunburn Theme)
 //================================================ */
 @media print {
 	pre.prettyprinted, pre.prettyprint, code.prettyprint {
-		background-color:#fff;
-		color:#000;
+		background-color: #fff;
+		color: #000;
 	}
-
 	pre .str, code .str { color: #060; }
 	pre .kwd, code .kwd { color: #006; font-weight: bold; }
 	pre .com, code .com { color: #600; font-style: italic; }
