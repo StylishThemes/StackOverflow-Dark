@@ -1407,15 +1407,6 @@ regexp("^https?:\/\/((?!area51)\w+\.)*?stackexchange\.com.*") {
   .s-progress-bar .-fill, .answerBox.accepted, .s-notice__success {
     background: #002810 !important;
   }
-  /* prevent animation from breaking while loading  issue #187 */
-  @keyframes blinking {
-    from {
-      background: rgba(/*[[accepted-color-rgb]]*/, .8);
-    }
-    to {
-      background: rgba(/*[[accepted-color-rgb]]*/, .5);
-    }
-  }
   #answers .answer.accepted-answer[style*="background-color"] {
     background: inherit !important;
     border: 1px solid /*[[accepted-color]]*/ !important;
