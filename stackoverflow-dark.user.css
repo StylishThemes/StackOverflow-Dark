@@ -2260,8 +2260,8 @@ regexp("^https?:\/\/stackoverflow.[^\.]*\.com.*") {
     background: rgba(/*[[base-color-rgb]]*/, 1) !important;
   }
   .review-actions input, .btn, .chosen-choices .search-choice,
-  .topbar-dialog a.btn-secondary, .filter-dashboard, input[type=submit],
-  .s-btn.s-btn__filled, .old-hero.z-base {
+  .topbar-dialog a.btn-secondary, input[type=submit], .s-btn.s-btn__filled,
+  .old-hero.z-base {
     color: #ddd !important;
     border: 1px solid rgba(/*[[base-color-rgb]]*/, .4) !important;
     box-shadow: none;
@@ -2276,8 +2276,8 @@ regexp("^https?:\/\/stackoverflow.[^\.]*\.com.*") {
     background-color: rgba(76, 137, 13, .3) !important;
   }
   .review-actions input, .chosen-choices .search-choice,
-  .topbar-dialog a.btn-secondary, .filter-dashboard, input[type=submit],
-  .s-btn.s-btn__filled, .old-hero.z-base, .old-hero._small._darken,
+  .topbar-dialog a.btn-secondary, input[type=submit], .s-btn.s-btn__filled,
+  .old-hero.z-base, .old-hero._small._darken,
   .s-notice__info.s-notice__important, .bg-blue-500, a.btn-secondary,
   .s-sidebarwidget .mb8 .btn-secondary:hover {
     background-color: rgba(79, 140, 201, .18) !important;
@@ -2362,6 +2362,10 @@ regexp("^https?:\/\/stackoverflow.[^\.]*\.com.*") {
   }
   .new-contributor-indicator {
     background-color: #035;
+  }
+  .filter-dashboard {
+    background-color: #182030;
+    border-color: #035;
   }
   .s-notice.s-notice__info {
     background-color: #182030;
