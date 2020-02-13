@@ -2353,7 +2353,7 @@ regexp("^https?:\/\/stackoverflow.[^\.]*\.com.*") {
   .hero-box, .filter-show-more, .s-hero::after {
     background: #182030 !important;
   }
-  .module.filters-sidebar, .bg-powder-800, .h\:bg-powder-800:hover,
+  .bg-powder-800, .h\:bg-powder-800:hover,
   .f\:bg-powder-800:focus {
     background-color: #182030 !important;
   }
@@ -2363,9 +2363,9 @@ regexp("^https?:\/\/stackoverflow.[^\.]*\.com.*") {
   .new-contributor-indicator {
     background-color: #035;
   }
-  .filter-dashboard {
+  .filter-dashboard, .module.filters-sidebar {
     background-color: #182030;
-    border-color: #035;
+    border-color: #035 !important;
   }
   .s-notice.s-notice__info {
     background-color: #182030;
