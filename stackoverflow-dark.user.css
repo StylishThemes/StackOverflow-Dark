@@ -2984,6 +2984,9 @@ regexp("^https?:\/\/stackoverflow.[^\.]*\.com.*")
   .filter-dashboard-edit .sites-list {
     background-color: #182030;
   }
+  .answerBox.accepted {
+    border-top: #002810;
+  }
 }
 @-moz-document regexp("^https?://((academia|buddhism|retrocomputing|security|codegolf)\\.)?stackexchange\\.com.*") {
   #question-mini-list .summary .question-hyperlink {
