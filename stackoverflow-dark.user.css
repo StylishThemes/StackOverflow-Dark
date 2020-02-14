@@ -2365,8 +2365,7 @@ regexp("^https?:\/\/stackoverflow.[^\.]*\.com.*") {
   .hero-box, .filter-show-more, .s-hero::after {
     background: #182030 !important;
   }
-  .bg-powder-800, .h\:bg-powder-800:hover,
-  .f\:bg-powder-800:focus {
+  .bg-powder-800, .h\:bg-powder-800:hover, .f\:bg-powder-800:focus {
     background-color: #182030 !important;
   }
   .newsletters-toggle, .topbar-dialog .unread-item {
