@@ -1538,6 +1538,15 @@ regexp("^https?:\/\/stackoverflow.[^\.]*\.com.*") {
   .answer, #newsletter-ad {
     padding: 10px !important;
   }
+  /* tweak answer and tab distance */
+  .answer {
+    margin-top: -10px;
+    margin-bottom: 10px !important;
+  }
+  .answer.accepted-answer {
+    margin-top: -11px;
+    margin-bottom: 11px !important;
+  }
   #newsletter-ad::before {
     content: "Love this site?";
     font-size: 18px !important;
