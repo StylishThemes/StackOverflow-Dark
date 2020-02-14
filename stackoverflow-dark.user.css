@@ -1940,6 +1940,9 @@ regexp("^https?:\/\/stackoverflow.[^\.]*\.com.*") {
   .-summary .-votes, .deleted-answer .votes {
     background-color: rgba(214, 217, 220, .1) !important;
   }
+  #question .user-info, .answer .user-info {
+    background: transparent !important;
+  }
   .util-bar, #question > footer, .answer > footer, #question .user-info,
   .answer .user-info, .comment, .field._toolbar .-toolbar, fieldset,
   .wrapper._card, .vertical-list .-item, .user-panel._card, .badge-top._badge2,
