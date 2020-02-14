@@ -1527,7 +1527,7 @@ regexp("^https?:\/\/stackoverflow.[^\.]*\.com.*") {
   #newsletter-ad, .search-form .icon-advanced-search, .message.gray,
   .menu-popout li:hover, .menu-popout .is-selected, #job-detail .-sticky-tabs,
   .nav-left-col a:hover, .deleted-answer footer .user-info, .util-bar,
-  .user-info, .accepted-answer .user-info {
+  .accepted-answer .user-info {
     background-color: #242424 !important;
     background-image: none !important;
   }
@@ -2393,7 +2393,7 @@ regexp("^https?:\/\/stackoverflow.[^\.]*\.com.*") {
     border-color: #046;
     background-color: #182030;
   }
-  .bg-blue-050, .h\:bg-blue-050:hover, .f\:bg-blue-050:focus, .owner .user-info {
+  .bg-blue-050, .h\:bg-blue-050:hover, .f\:bg-blue-050:focus {
     background-color: #182030 !important;
   }
   .owner {
