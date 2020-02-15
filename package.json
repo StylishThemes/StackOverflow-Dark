@@ -13,10 +13,10 @@
   "devDependencies": {
     "cssmin": "^0.4.3",
     "eslint": "^6.8.0",
-    "eslint-config-silverwind": "^6.0.1",
+    "eslint-config-silverwind": "^6.0.2",
     "perfectionist": "^2.4.0",
-    "stylelint": "^13.0.0",
-    "stylelint-config-standard": "^19.0.0",
+    "stylelint": "^13.2.0",
+    "stylelint-config-standard": "^20.0.0",
     "updates": "^9.3.3",
     "versions": "^7.0.5"
   },
