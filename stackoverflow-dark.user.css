@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name         Stack Overflow Dark
-@version      4.1.7
+@version      4.2.2
 @description  Dark theme for Stack Overflow & most Stack Exchange network sites
 @namespace    StylishThemes
 @author       StylishThemes
@@ -101,8 +101,7 @@ domain("stackapps.com"),
 domain("mathoverflow.net"),
 domain("askubuntu.com"),
 regexp("^https?:\/\/((?!area51)\w+\.)*?stackexchange\.com.*"),
-regexp("^https?:\/\/stackoverflow.[^\.]*\.com.*")
-{
+regexp("^https?:\/\/stackoverflow.[^\.]*\.com.*") {
   :root {
     --bg-custom: /*[[bg-custom]]*/;
     --bg-img: /*[[bg-choice]]*/;
@@ -1529,7 +1528,7 @@ regexp("^https?:\/\/stackoverflow.[^\.]*\.com.*")
   #newsletter-ad, .search-form .icon-advanced-search, .message.gray,
   .menu-popout li:hover, .menu-popout .is-selected, #job-detail .-sticky-tabs,
   .nav-left-col a:hover, .deleted-answer footer .user-info, .util-bar,
-  .user-info, .accepted-answer .user-info {
+  .accepted-answer .user-info {
     background-color: #242424 !important;
     background-image: none !important;
   }
@@ -1539,6 +1538,15 @@ regexp("^https?:\/\/stackoverflow.[^\.]*\.com.*")
   }
   .answer, #newsletter-ad {
     padding: 10px !important;
+  }
+  /* tweak answer and tab distance */
+  .answer {
+    margin-top: -10px;
+    margin-bottom: 10px !important;
+  }
+  .answer.accepted-answer {
+    margin-top: -11px;
+    margin-bottom: 11px !important;
   }
   #newsletter-ad::before {
     content: "Love this site?";
@@ -1923,6 +1931,9 @@ regexp("^https?:\/\/stackoverflow.[^\.]*\.com.*")
   .-summary .-votes, .deleted-answer .votes {
     background-color: rgba(214, 217, 220, .1) !important;
   }
+  #question .user-info, .answer .user-info {
+    background: transparent !important;
+  }
   .util-bar, #question > footer, .answer > footer, #question .user-info,
   .answer .user-info, .comment, .field._toolbar .-toolbar, fieldset,
   .wrapper._card, .vertical-list .-item, .user-panel._card, .badge-top._badge2,
@@ -2252,8 +2263,8 @@ regexp("^https?:\/\/stackoverflow.[^\.]*\.com.*")
     background: rgba(/*[[base-color-rgb]]*/, 1) !important;
   }
   .review-actions input, .btn, .chosen-choices .search-choice,
-  .topbar-dialog a.btn-secondary, .filter-dashboard, input[type=submit],
-  .s-btn.s-btn__filled, .old-hero.z-base {
+  .topbar-dialog a.btn-secondary, input[type=submit], .s-btn.s-btn__filled,
+  .old-hero.z-base {
     color: #ddd !important;
     border: 1px solid rgba(/*[[base-color-rgb]]*/, .4) !important;
     box-shadow: none;
@@ -2268,8 +2279,8 @@ regexp("^https?:\/\/stackoverflow.[^\.]*\.com.*")
     background-color: rgba(76, 137, 13, .3) !important;
   }
   .review-actions input, .chosen-choices .search-choice,
-  .topbar-dialog a.btn-secondary, .filter-dashboard, input[type=submit],
-  .s-btn.s-btn__filled, .old-hero.z-base, .old-hero._small._darken,
+  .topbar-dialog a.btn-secondary, input[type=submit], .s-btn.s-btn__filled,
+  .old-hero.z-base, .old-hero._small._darken,
   .s-notice__info.s-notice__important, .bg-blue-500, a.btn-secondary,
   .s-sidebarwidget .mb8 .btn-secondary:hover {
     background-color: rgba(79, 140, 201, .18) !important;
@@ -2345,8 +2356,7 @@ regexp("^https?:\/\/stackoverflow.[^\.]*\.com.*")
   .hero-box, .filter-show-more, .s-hero::after {
     background: #182030 !important;
   }
-  .module.filters-sidebar, .bg-powder-800, .h\:bg-powder-800:hover,
-  .f\:bg-powder-800:focus {
+  .bg-powder-800, .h\:bg-powder-800:hover, .f\:bg-powder-800:focus {
     background-color: #182030 !important;
   }
   .newsletters-toggle, .topbar-dialog .unread-item {
@@ -2354,6 +2364,10 @@ regexp("^https?:\/\/stackoverflow.[^\.]*\.com.*")
   }
   .new-contributor-indicator {
     background-color: #035;
+  }
+  .filter-dashboard, .module.filters-sidebar {
+    background-color: #182030;
+    border-color: #035 !important;
   }
   .s-notice.s-notice__info {
     background-color: #182030;
@@ -2381,7 +2395,7 @@ regexp("^https?:\/\/stackoverflow.[^\.]*\.com.*")
     border-color: #046;
     background-color: #182030;
   }
-  .bg-blue-050, .h\:bg-blue-050:hover, .f\:bg-blue-050:focus, .owner .user-info {
+  .bg-blue-050, .h\:bg-blue-050:hover, .f\:bg-blue-050:focus {
     background-color: #182030 !important;
   }
   .owner {
@@ -2728,17 +2742,17 @@ regexp("^https?:\/\/stackoverflow.[^\.]*\.com.*")
     background-color: #111;
     border-color: transparent;
   }
-  .badge3-alternate, .progress-bar.badge-3 .bar .percent,
+  .badge3-alternate:not(.badge-tag), .progress-bar.badge-3 .bar .percent,
   .s-progress-bar._badge._badge3 .-fill, .badge-wrapper._badge3,
   .s-progress__bronze .s-progress--bar, .badge-top._badge3 .-name {
     background-color: #7c4318 !important; /* bronze */
   }
-  .badge2-alternate, .progress-bar.badge-2 .bar .percent,
+  .badge2-alternate:not(.badge-tag), .progress-bar.badge-2 .bar .percent,
   .s-progress-bar._badge._badge2 .-fill, .badge-wrapper._badge2,
   .s-progress__silver .s-progress--bar, .badge-top._badge2 .-name {
     background-color: #464a4f !important; /* silver */
   }
-  .badge1-alternate, .progress-bar.badge-1 .bar .percent,
+  .badge1-alternate:not(.badge-tag), .progress-bar.badge-1 .bar .percent,
   .s-progress-bar._badge._badge1 .-fill, .badge-wrapper._badge1,
   .s-progress__gold .s-progress--bar, .badge-top._badge1 .-name {
     background-color: #957000 !important; /* gold */
@@ -2974,6 +2988,9 @@ regexp("^https?:\/\/stackoverflow.[^\.]*\.com.*")
   }
   .filter-dashboard-edit .sites-list {
     background-color: #182030;
+  }
+  .answerBox.accepted {
+    border-top: #002810;
   }
 }
 @-moz-document regexp("^https?://((academia|buddhism|retrocomputing|security|codegolf)\\.)?stackexchange\\.com.*") {
