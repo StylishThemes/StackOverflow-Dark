@@ -4419,7 +4419,7 @@ regexp("^https?:\/\/stackoverflow.[^\.]*\.com.*") {
     background: #181818;
   }
   body nav.primary .nav .youarehere, html nav.primary .nav li a:hover {
-    background:  /*[[base-color]]*/;
+    background: /*[[base-color]]*/;
   }
   nav.primary .site-selector-popup {
     background-color: #111;
