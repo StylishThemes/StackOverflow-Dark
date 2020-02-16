@@ -4402,9 +4402,6 @@ regexp("^https?:\/\/stackoverflow.[^\.]*\.com.*") {
   .CodeMirror-focused {
     border: 1px solid /*[[base-color]]*/ !important;
   }
-  .CodeMirror {
-    color: #ccc;
-  }
   #history li.selected {
     background-color: #321 !important;
   }
