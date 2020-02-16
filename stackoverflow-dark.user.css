@@ -173,7 +173,8 @@ regexp("^https?:\/\/stackoverflow.[^\.]*\.com.*") {
   .s-btn:active, .top-bar .-secondary .-link._highlighted-positive,
   .top-bar .-secondary .-link._highlighted-positive:hover,
   .top-bar .-secondary .-link._highlighted-positive.topbar-icon-on,
-  .timeline .readings .readings-item .description .description-expander ~ .description-expander-label {
+  .timeline .readings .readings-item .description .description-expander ~ .description-expander-label,
+  a, ul.linkbar li {
     color: /*[[base-color]]*/;
   }
   .subheader h1 a, input[type="submit"].btn-clear,
@@ -4347,6 +4348,19 @@ regexp("^https?:\/\/stackoverflow.[^\.]*\.com.*") {
   }
 }
 @-moz-document domain("data.stackexchange.com") {
+  #logo {
+    filter: invert(1) hue-rotate(180deg) contrast(120%);
+  }
+  div.grippie {
+    background-color: #444;
+    border-color: #555 !important;
+  }
+  #schema dl dd, #schema .schema-table {
+    border-color: #555;
+  }
+  p.tagline {
+    color: #ccc;
+  }
   .cm-sql-word, .relativetime, .profiler-number, #query-options .options,
   #query-options label {
     color: #ccc !important;
@@ -4386,6 +4400,40 @@ regexp("^https?:\/\/stackoverflow.[^\.]*\.com.*") {
   }
   .cm-sql-function {
     color: #b571e2 !important;
+  }
+  .CodeMirror-focused {
+    border: 1px solid /*[[base-color]]*/ !important;
+  }
+  .CodeMirror {
+    color: #ccc;
+  }
+  #history li.selected {
+    background-color: #321 !important;
+  }
+  #history li {
+    background: #181818 !important;
+    border-bottom: 1px dotted #444 !important;
+  }
+  .icon-sort-by-alphabet.button.sort, .icon-plus.button.expand,
+  .icon-minus.button.collapse, .button.sort.icon-sort-by-order,
+  .icon-info.button.table-data {
+    background: #181818;
+  }
+  body nav.primary .nav .youarehere, html nav.primary .nav li a:hover {
+    background:  /*[[base-color]]*/ !important;
+  }
+  nav.primary .site-selector-popup {
+    background-color: #111;
+    border: 1px solid /*[[base-color]]*/;
+    border-top-color: /*[[base-color]]*/;
+  }
+  nav.primary .site-selector-popup input.ac_input:focus {
+    border-color: #444 !important;
+  }
+}
+@-moz-document url-prefix("https://data.stackexchange.com/apple") {
+  img[src*="apple/img/logo.png"] {
+    filter: invert(1) hue-rotate(180deg) brightness(120%);
   }
 }
 @-moz-document regexp("https?://stackoverflow\.com/(enterprise|teams|talent|advertising).*") {
