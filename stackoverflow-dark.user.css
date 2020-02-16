@@ -174,7 +174,7 @@ regexp("^https?:\/\/stackoverflow.[^\.]*\.com.*") {
   .top-bar .-secondary .-link._highlighted-positive:hover,
   .top-bar .-secondary .-link._highlighted-positive.topbar-icon-on,
   .timeline .readings .readings-item .description .description-expander ~ .description-expander-label,
-  a, ul.linkbar li {
+  a, ul.linkbar li, .site-list li .stats li {
     color: /*[[base-color]]*/;
   }
   .subheader h1 a, input[type="submit"].btn-clear,
@@ -4429,6 +4429,9 @@ regexp("^https?:\/\/stackoverflow.[^\.]*\.com.*") {
   }
   nav.primary .site-selector-popup input.ac_input:focus {
     border-color: #444 !important;
+  }
+  .CodeMirror-code pre:not(.CodeMirror-line):not(.bg-transparent) {
+    background: #191919 !important;
   }
 }
 @-moz-document url-prefix("https://data.stackexchange.com/apple") {
