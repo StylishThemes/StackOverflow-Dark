@@ -20,6 +20,7 @@ rules:
   declaration-colon-newline-after: null
   font-family-name-quotes: always-where-recommended
   font-family-no-duplicate-names: true
+  font-family-no-missing-generic-family-keyword: null
   function-url-quotes: always
   function-comma-space-after: null
   indentation: null

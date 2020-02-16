@@ -24,7 +24,7 @@
     "authors": "bash tools/authors",
     "build": "node tools/add-themes.js && node tools/update-usercss.js",
     "clean": "npm run perfectionist && node tools/clean.js",
-    "lint": "eslint tools/*.js && stylelint stackoverflow-dark.user.css",
+    "lint": "eslint --fix tools/*.js && stylelint stackoverflow-dark.user.css themes/",
     "patch": "versions -p -C patch stackoverflow-dark.user.css",
     "minor": "versions -p -C minor stackoverflow-dark.user.css",
     "major": "versions -p -C major stackoverflow-dark.user.css",
