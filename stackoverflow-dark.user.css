@@ -1149,7 +1149,6 @@ regexp("^https?:\/\/stackoverflow.[^\.]*\.com.*") {
   html:not(#X) #tabs a.youarehere, .tabs a.youarehere {
     border-bottom-color: transparent !important;
     background: #222 !important;
-    margin-top: -3px;
   }
   .subheader.tools-rev #tabs:nth-child(2) {
     margin-top: -2px !important;
@@ -2047,7 +2046,6 @@ regexp("^https?:\/\/stackoverflow.[^\.]*\.com.*") {
     border-color: rgba(62, 62, 62, .1) !important;
     border-bottom-color: transparent !important;
   }
-  .subheader #tabs a:hover,
   .subheader.user-full-tab-header .subtabs.user-tab-sorts {
     margin-top: 3px !important;
   }
