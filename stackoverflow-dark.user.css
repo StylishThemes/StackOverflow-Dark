@@ -899,7 +899,8 @@ regexp("^https?:\/\/stackoverflow.[^\.]*\.com.*") {
   .faq-page #mainbar .col-section .col-section h2 a,
   .faq-page #mainbar .col-section .col-section h3 a, label:not(.s-label),
   .label:not(.s-label), .answerBox, .answerBox:visited, .community-option,
-  .message.message-config a:not(.badge-tag):not(.button):not(.btn):not(.post-tag) {
+  .message.message-config a:not(.badge-tag):not(.button):not(.btn):not(.post-tag),
+  .user-summary-details .user-created, .user-summary-details .user-saved-queries {
     color: #aaa;
   }
   .topbar-dialog.help-dialog .item-summary,
@@ -3333,11 +3334,17 @@ regexp("^https?:\/\/stackoverflow.[^\.]*\.com.*") {
     color: rgba(0, 0, 0, .35) !important;
     border: 1px solid #fff !important;
   }
-  /* add Twilight highlighter to Code Snippet */
+}
+@-moz-document domain("stackoverflow.com"), domain("data.stackexchange.com") {
+  /* Codemirror Only
+   * add Twilight syntax highlighter to Code Snippet */
   .CodeMirror {
     background: #141414 !important;
     color: #eee;
     border-color: #444 !important;
+  }
+  code, pre:not(.prettyprint):not(.CodeMirror-line):not(.bg-transparent) {
+    background: #141414 !important;
   }
   .cm-comment, .cm-link {
     font-style: italic !important;
@@ -3354,6 +3361,12 @@ regexp("^https?:\/\/stackoverflow.[^\.]*\.com.*") {
   }
   .CodeMirror-cursor {
     border-left: 1px solid #fff !important;
+  }
+  .CodeMirror-focused {
+    border: 1px solid /*[[base-color]]*/ !important;
+  }
+  .CodeMirror .CodeMirror-code pre:not(.CodeMirror-line) {
+    background: transparent !important;
   }
   .CodeMirror-activeline-background {
     background: #27282e !important;
@@ -3416,6 +3429,183 @@ regexp("^https?:\/\/stackoverflow.[^\.]*\.com.*") {
   }
   .cm-qualifier {
     color: #eee !important;
+  }
+  .cm-sql-keyword {
+    color: #f9ee98 !important;
+  }
+  .cm-sql-type {
+    color: #bd6b18 !important;
+  }
+  .cm-sql-function {
+    color: #8f9d6a !important;
+  }
+  .cm-sql-var {
+    color: #607392 !important;
+  }
+  .cm-sql-comment {
+    color: #777 !important;
+    font-weight: 400 !important;
+  }
+  .cm-sql-operators, .cm-sql-operator {
+    color: #cda869 !important;
+  }
+  .cm-sql-number {
+    color: #ca7841 !important;
+  }
+  .cm-sql-literal {
+    color: #ff6400 !important;
+  }
+  .cm-sql-word {
+    color: #8da6ce !important;
+  }
+  .cm-sql-special {
+    color: #c78800 !important;
+  }
+}
+@-moz-document domain("data.stackexchange.com") {
+  #logo, #aboutSite img.site {
+    filter: invert(1) hue-rotate(180deg) contrast(120%);
+  }
+  div.grippie {
+    background-color: #444;
+    border-color: #555 !important;
+  }
+  #schema dl dd, #schema .schema-table, #query-results .panel, #queryBodyText {
+    border-color: #555;
+  }
+  .user-info.owner {
+    background-color: #182030;
+  }
+  .slick-header .slick-header-column {
+    color: #ddd;
+  }
+  p.tagline, .user-info .relativetime, .site-list li .stats li.link a,
+  .site-list li .stats li.link a:visited {
+    color: #ccc;
+  }
+  #execution-stats, .summarycount, .relativetime, #copyright,
+  .site-list li .stats li .desc {
+    color: #aaa;
+  }
+  #copyright a {
+    color: #eee;
+  }
+  relativetime, .profiler-number, #query-options .options, #query-options label {
+    color: #ccc !important;
+  }
+  #messagesTab, .querylist .views {
+    background: transparent !important;
+  }
+  #history li, #recaptcha_table, #query .right-group, #schema .heading,
+  #history .heading, .slick-header .slick-header-column,
+  .profiler-result .profiler-timings th {
+    border-color: #555 !important;
+    background: #111 !important;
+  }
+  #schema dl dd {
+    background: #181818 !important;
+  }
+  #schema .schema-table, nav.primary .site-selector-popup,
+  .profiler-results .profiler-popup, .slick-row.odd, #messagesTab:hover,
+  .profiler-results .profiler-controls,
+  .profiler-results .profiler-button:not(.profiler-button-active) {
+    background: #1d1d1d !important;
+    color: #ddd !important;
+  }
+  .error-message {
+    background: #320000 !important;
+    border-color: #430 !important;
+    color: #ddd !important;
+  }
+  #history li.selected {
+    background-color: #321 !important;
+  }
+  #history li {
+    background: #181818 !important;
+    border-bottom: 1px dotted #444 !important;
+  }
+  .icon-sort-by-alphabet.button.sort, .icon-plus.button.expand,
+  .icon-minus.button.collapse, .button.sort.icon-sort-by-order,
+  .icon-info.button.table-data {
+    background: #181818;
+  }
+  #query-results .download-button:hover {
+    background-color: #303030;
+  }
+  .site-list li .stats li.link a:hover {
+    color: /*[[base-color]]*/;
+  }
+  h2 a {
+    color: /*[[base-color]]*/ !important;
+  }
+  body nav.primary .nav .youarehere, html nav.primary .nav li a:hover {
+    background: /*[[base-color]]*/ !important;
+  }
+  body nav.primary .nav li a#compose-button:not(.youarehere) {
+    background: #333 !important;
+  }
+  nav.primary .nav li:hover + .site-selector-arrow,
+  nav.primary .nav .site-selector-arrow:hover,
+  nav.primary .nav .site-selector-arrow.youarehere {
+    background-color: /*[[base-color]]*/;
+    border-left-color: /*[[base-color]]*/;
+  }
+  nav.primary .site-selector-popup {
+    background-color: #111;
+    border: 1px solid /*[[base-color]]*/;
+    border-top-color: /*[[base-color]]*/;
+  }
+  nav.primary .site-selector-popup input.ac_input:focus {
+    border-color: #444 !important;
+  }
+  #tabs a.youarehere, .miniTabs a.youarehere {
+    background: none repeat scroll 0 0 #222 !important;
+    border-color: #444 #444 #222 !important;
+    color: #eee !important;
+    border-top: 3px solid /*[[base-color]]*/ !important;
+  }
+  .miniTabs a.youarehere {
+    margin-top: 3px;
+  }
+  #tabs a, .miniTabs a {
+    background: none repeat scroll 0 0 transparent !important;
+    border: 1px solid transparent !important;
+    color: #aaa !important;
+  }
+  #tabs a:hover, .miniTabs a:hover {
+    background: none repeat scroll 0 0 #222 !important;
+    border-color: #444 #444 transparent !important;
+  }
+  #tabs a.youarehere, .miniTabs a.youarehere {
+    background: none repeat scroll 0 0 #222 !important;
+    border-color: #444 #444 #222 !important;
+    color: #eee !important;
+    border-top: 3px solid #4c890d !important;
+  }
+  html:not(#X) #tabs a.youarehere {
+    border-color: #444 #444 #222 !important;
+    border-top: 3px solid /*[[base-color]]*/ !important;
+  }
+  .page-numbers.current, .page-numbers:hover, .page-numbers {
+    font-size: 100% !important;
+  }
+  .page-numbers.next, .page-numbers.prev {
+    border-color: transparent !important;
+  }
+  .page-numbers.next:hover, .page-numbers.prev:hover {
+    border-color: transparent !important;
+    background: none !important;
+    color: #fff !important;
+  }
+}
+@-moz-document url-prefix("https://data.stackexchange.com/apple") {
+  img[src*="apple/img/logo.png"] {
+    filter: invert(1) hue-rotate(180deg) brightness(120%);
+  }
+}
+@-moz-document url-prefix("https://data.stackexchange.com/askubuntu") {
+  img[src*="logo.png"] {
+    filter: none !important;
   }
 }
 @-moz-document domain("api.stackexchange.com") {
@@ -4347,98 +4537,6 @@ regexp("^https?:\/\/stackoverflow.[^\.]*\.com.*") {
   .site-footer .-title, .site-footer .-title a,
   .site-footer--copyright p a:hover {
     color: #eee !important;
-  }
-}
-@-moz-document domain("data.stackexchange.com") {
-  #logo {
-    filter: invert(1) hue-rotate(180deg) contrast(120%);
-  }
-  div.grippie {
-    background-color: #444;
-    border-color: #555 !important;
-  }
-  #schema dl dd, #schema .schema-table {
-    border-color: #555;
-  }
-  p.tagline {
-    color: #ccc;
-  }
-  .cm-sql-word, .relativetime, .profiler-number, #query-options .options,
-  #query-options label {
-    color: #ccc !important;
-  }
-  #messagesTab, .querylist .views {
-    background: transparent !important;
-  }
-  #history li, #recaptcha_table, #query .right-group, #schema .heading,
-  #history .heading, .slick-header .slick-header-column,
-  .profiler-result .profiler-timings th {
-    border-color: #555 !important;
-    background: #111 !important;
-  }
-  #schema dl dd {
-    background: #181818 !important;
-  }
-  #schema .schema-table, nav.primary .site-selector-popup,
-  .profiler-results .profiler-popup, .slick-row.odd, #messagesTab:hover,
-  .profiler-results .profiler-controls,
-  .profiler-results .profiler-button:not(.profiler-button-active) {
-    background: #1d1d1d !important;
-    color: #ddd !important;
-  }
-  .error-message {
-    background: #320000 !important;
-    border-color: #430 !important;
-    color: #ddd !important;
-  }
-  .cm-sql-keyword {
-    color: #00a2ff !important;
-  }
-  .cm-s-default span.cm-sql-var, .cm-variable-2 {
-    color: #f53636 !important;
-  }
-  .cm-sql-type {
-    color: #a84eff !important;
-  }
-  .cm-sql-function {
-    color: #b571e2 !important;
-  }
-  .CodeMirror-focused {
-    border: 1px solid /*[[base-color]]*/ !important;
-  }
-  #history li.selected {
-    background-color: #321 !important;
-  }
-  #history li {
-    background: #181818 !important;
-    border-bottom: 1px dotted #444 !important;
-  }
-  .icon-sort-by-alphabet.button.sort, .icon-plus.button.expand,
-  .icon-minus.button.collapse, .button.sort.icon-sort-by-order,
-  .icon-info.button.table-data {
-    background: #181818;
-  }
-  body nav.primary .nav .youarehere, html nav.primary .nav li a:hover {
-    background: /*[[base-color]]*/;
-  }
-  nav.primary .site-selector-popup {
-    background-color: #111;
-    border: 1px solid /*[[base-color]]*/;
-    border-top-color: /*[[base-color]]*/;
-  }
-  nav.primary .site-selector-popup input.ac_input:focus {
-    border-color: #444 !important;
-  }
-  .CodeMirror-code pre:not(.CodeMirror-line):not(.bg-transparent) {
-    background: #191919 !important;
-  }
-  .CodeMirror .CodeMirror-code pre:not(.CodeMirror-line) {
-    background: transparent !important;
-  }
-}
-@-moz-document url-prefix("https://data.stackexchange.com/apple") {
-  img[src*="apple/img/logo.png"] {
-    filter: invert(1) hue-rotate(180deg) brightness(120%);
   }
 }
 @-moz-document regexp("https?://stackoverflow\.com/(enterprise|teams|talent|advertising).*") {
