@@ -360,7 +360,7 @@ regexp("^https?:\/\/stackoverflow.[^\.]*\.com.*") {
     background-color: /*[[base-color]]*/;
     background-image: none;
   }
-  /* hack around to prevent pagination hover issues on stackexchage */
+  /* hack around to prevent pagination hover issues on stackexchange */
   a[href]:hover {
     color: rgba(79, 140, 201, .8);
     color: rgba(/*[[base-color-rgb]]*/, .8);
@@ -1153,6 +1153,12 @@ regexp("^https?:\/\/stackoverflow.[^\.]*\.com.*") {
   }
   html:not(#X) #tabs a.youarehere, html:not(#X) .tabs a.youarehere {
     border: 1px solid #444 !important;
+    border-bottom-color: transparent !important;
+    background: #222 !important;
+  }
+  html:not(#X) #tabs a.youarehere,
+  html:not(#X) #content:not(.subheader) .tabs a.youarehere {
+    border: 1px solid transparent !important;
     border-bottom-color: transparent !important;
     background: #222 !important;
   }
@@ -1977,6 +1983,11 @@ regexp("^https?:\/\/stackoverflow.[^\.]*\.com.*") {
   }
   body.no-message-slide .topbar .topbar-icon {
     filter: brightness(150%);
+  }
+  body.no-message-slide .post-text blockquote,
+  body.no-message-slide .post-text q {
+    background-color: #321;
+    border-color: #651;
   }
   #question .user-info, .answer .user-info {
     background: transparent !important;
@@ -3170,12 +3181,13 @@ regexp("^https?:\/\/stackoverflow.[^\.]*\.com.*") {
   .s-btn.s-btn__primary, .s-btn.s-btn__primary:focus {
     background-color: /*[[base-color]]*/ !important;
   }
-  .page-numbers {
+  .page-numbers, .page-numbers:active {
     background: #222;
     background-color: #222;
     color: #ccc;
     border: 1px solid #555;
     text-shadow: none;
+    padding: 5px 8px !important;
   }
   .page-numbers.current {
     background: /*[[base-color]]*/;
@@ -3787,13 +3799,14 @@ regexp("^https?:\/\/stackoverflow.[^\.]*\.com.*") {
     margin-top: 0 !important;
   }
   .outside .subheader #tabs a {
-    margin-top: 7px !important;
+    margin-top: 6px !important;
   }
   .outside .subheader #tabs a:hover {
-    margin-top: 8px !important;
-  }
-  .outside .subheader #tabs a.youarehere {
     margin-top: 6px !important;
+  }
+  html:not(#X) .outside .subheader #tabs a.youarehere {
+    margin-top: 5px !important;
+    border-top: 2px solid /*[[base-color]]*/ !important;
   }
   /* chat icons topbar */
   .topbar .icon-inbox, .topbar-icon.icon-achievements {
@@ -3812,7 +3825,7 @@ regexp("^https?:\/\/stackoverflow.[^\.]*\.com.*") {
   }
   .subtabs a.youarehere {
     background-color: #111;
-    border: 1px solid #444;
+    border-color: #444;
     color: #eee !important;
   }
   .event-banner {
