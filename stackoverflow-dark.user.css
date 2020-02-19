@@ -1215,7 +1215,7 @@ regexp("^https?:\/\/stackoverflow.[^\.]*\.com.*") {
     color: /*[[base-color]]*/ !important;
   }
   .subheader, .subheader._level-2 {
-    background: #191919;
+    background: transparent;
     border-color: #555;
   }
   #user-about-me, .user-about-me, .mine .messages, .avatar-card, .tag-container,
