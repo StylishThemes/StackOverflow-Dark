@@ -1935,6 +1935,48 @@ regexp("^https?:\/\/stackoverflow.[^\.]*\.com.*") {
   .-summary .-votes, .deleted-answer .votes {
     background-color: rgba(214, 217, 220, .1) !important;
   }
+  body.no-message-slide ._badge3 {
+    border-color: #651 !important;
+  }
+  body.no-message-slide .footer a, body.no-message-slide .footer a:visited {
+    color: /*[[base-color]]*/;
+  }
+  body.no-message-slide .footer a:hover,
+  body.no-message-slide .footer a:visited:hover {
+    color: /*[[base-color]]*/;
+    opacity: .9;
+  }
+  body.no-message-slide .tabs li._current a,
+  body.no-message-slide .tabs li._current select {
+    border-bottom-color: /*[[base-color]]*/ !important;
+    color: #eee !important;
+    background: rgba(/*[[base-color-rgb]]*/, .2) !important;
+  }
+  body.no-message-slide .nav li, body.no-message-slide .nav a {
+    background: transparent !important;
+  }
+  body.no-message-slide .nav li.current a {
+    background: /*[[base-color]]*/ !important;
+  }
+  body.no-message-slide .pager .-pagination .-number {
+    border-radius: 2px !important;
+    padding: 4px 8px !important;
+    font-size: 100%;
+    border-color: #444;
+    color: #aaa !important;
+    background: #222;
+  }
+  body.no-message-slide .pager .-pagination .-number._current {
+    background: /*[[base-color]]*/;
+    color: #eee !important;
+    border-color: /*[[base-color]]*/;
+  }
+  body.no-message-slide select._link {
+    color:  /*[[base-color]]*/ !important;
+  }
+  body.no-message-slide .topbar .topbar-icon {
+    filter: brightness(150%);
+  }
   #question .user-info, .answer .user-info {
     background: transparent !important;
   }
