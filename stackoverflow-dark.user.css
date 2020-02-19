@@ -4111,6 +4111,9 @@ regexp("^https?:\/\/stackoverflow.[^\.]*\.com.*") {
   .nav li.youarehere, .nav li:hover {
     background-color: /*[[base-color]]*/ !important;
   }
+  a.question-hyperlink, .summary h3 .question-hyperlink {
+    color: #ddd !important;
+  }
 }
 @-moz-document domain("dba.stackexchange.com") {
   /* database administrators */
@@ -4418,6 +4421,13 @@ regexp("^https?:\/\/stackoverflow.[^\.]*\.com.*") {
   a[class*="vote-"]:hover {
     background-color: transparent !important;
   }
+  .favicon.favicon-rpgmeta {
+    filter: invert(1) brightness(.9);
+  }
+  html:not(#X) #tabs a.youarehere, html:not(#X) .tabs a.youarehere {
+    border: 1px solid #444 !important;
+    border-bottom-color: transparent !important;
+  }
 }
 @-moz-document domain("ru.stackoverflow.com") {
   /* ru.stackoverflow.com (Russian) */
@@ -4575,6 +4585,15 @@ regexp("^https?:\/\/stackoverflow.[^\.]*\.com.*") {
   }
   .site-footer {
     color: #eee !important;
+  }
+}
+@-moz-document domain("webapps.stackexchange.com") {
+  #question-mini-list .summary .question-hyperlink {
+    color: /*[[base-color]]*/ !important;
+  }
+  #question-mini-list .summary .question-hyperlink:hover {
+    color: /*[[base-color]]*/ !important;
+    opacity: .9;
   }
 }
 @-moz-document domain("blender.stackexchange.com") {
