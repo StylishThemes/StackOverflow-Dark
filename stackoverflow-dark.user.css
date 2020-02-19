@@ -2607,6 +2607,11 @@ regexp("^https?:\/\/stackoverflow.[^\.]*\.com.*") {
   div.message.incomplete {
     border: 1px solid #b05308 !important;
   }
+  .page-numbers {
+    border-radius: 2px !important;
+    padding: 4px 8px !important;
+    font-size: 100%;
+  }
   .page-numbers.current, .page-numbers:hover,
   .s-navigation .s-navigation--item.is-selected {
     color: #fff;
@@ -2968,7 +2973,7 @@ regexp("^https?:\/\/stackoverflow.[^\.]*\.com.*") {
     color: #aaa !important;
   }
   .page-numbers {
-    border-radius: 1px;
+    border-radius: 2px;
     padding: 6px 8px;
   }
   input[type="submit"][value="Save Changes"] {
@@ -4497,6 +4502,11 @@ regexp("^https?:\/\/stackoverflow.[^\.]*\.com.*") {
     height: 60px !important;
     background-size: cover !important;
     background-image: url("https://StylishThemes.github.io/StackOverflow-Dark/images/stackexchange-logo.svg") !important;
+  }
+  .page-numbers.current {
+    border-radius: 2px !important;
+    padding: 5px 8px !important;
+    font-size: 100%;
   }
 }
 @-moz-document domain("superuser.com") {
