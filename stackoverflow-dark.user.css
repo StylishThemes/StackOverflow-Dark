@@ -1151,7 +1151,8 @@ regexp("^https?:\/\/stackoverflow.[^\.]*\.com.*") {
   body.user-page #content * {
     box-sizing: border-box !important;
   }
-  html:not(#X) #tabs a.youarehere, .tabs a.youarehere {
+  html:not(#X) #tabs a.youarehere, html:not(#X) .tabs a.youarehere {
+    border: 1px solid #444 !important;
     border-bottom-color: transparent !important;
     background: #222 !important;
   }
@@ -3630,8 +3631,9 @@ regexp("^https?:\/\/stackoverflow.[^\.]*\.com.*") {
     border-top: 3px solid #4c890d !important;
   }
   html:not(#X) #tabs a.youarehere {
-    border-color: #444 #444 #222 !important;
+    border: 1px solid #444 !important;
     border-top: 3px solid /*[[base-color]]*/ !important;
+    border-bottom-color: transparent !important;
   }
   .page-numbers.current, .page-numbers:hover, .page-numbers {
     font-size: 100% !important;
