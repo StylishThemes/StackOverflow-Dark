@@ -1979,7 +1979,7 @@ regexp("^https?:\/\/stackoverflow.[^\.]*\.com.*") {
     border-color: /*[[base-color]]*/;
   }
   body.no-message-slide select._link {
-    color:  /*[[base-color]]*/ !important;
+    color: /*[[base-color]]*/ !important;
   }
   body.no-message-slide .topbar .topbar-icon {
     filter: brightness(150%);
