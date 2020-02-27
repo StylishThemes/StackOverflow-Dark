@@ -528,7 +528,7 @@ regexp("^https?:\/\/stackoverflow.[^\.]*\.com.*") {
   .next-button, #footer, #herobox.alternate, .message-title {
     background-color: rgba(0, 0, 0, .4) !important;
   }
-  header {
+  header:not(.job-details--header) {
     background-color: #080808 !important;
   }
   .timeline-item header {
@@ -2179,9 +2179,6 @@ regexp("^https?:\/\/stackoverflow.[^\.]*\.com.*") {
   .search-form.responsive .filter-pane .popover .popover--arrow::after {
     border-bottom-color: #222 !important;
   }
-  .league-container, .-job {
-    border-bottom-color: #444;
-  }
   .profile-cards .bg-powder-800 {
     border: 1px solid #035;
     border-top: 0;
@@ -2290,6 +2287,26 @@ regexp("^https?:\/\/stackoverflow.[^\.]*\.com.*") {
   .bg-black-075, .s-tag.bg-black-075:hover, .h\:bg-black-075:hover,
   .f\:bg-black-075:focus {
     background-color: #777 !important;
+  }
+  .job-details--header .bg-white {
+    background-color: transparent !important;
+  }
+  .league-container, .-job {
+    border-bottom-color: #444;
+  }
+  html.html__responsive:not(.html__unpinned-leftnav) .previewable-results .-job._selected {
+    border-left-color: /*[[base-color]]*/;
+    background-color: #222;
+  }
+  html.html__responsive:not(.html__unpinned-leftnav) .previewable-results .-job {
+    background-color: #181818;
+  }
+  html.html__responsive:not(.html__unpinned-leftnav) .previewable-results .-job:not(._selected):not(#match-status-widget):hover {
+    border-left-color: rgba(/*[[base-color-rgb]]*/, .3);
+    background-color: #202020;
+  }
+  .-job._featured:not(._selected) {
+    background-color: #321 !important;
   }
   /* blue label count */
   .bounty-indicator-tab, .hero.profile, .jobs-banner.-blue,
