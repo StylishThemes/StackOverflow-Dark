@@ -445,8 +445,9 @@ regexp("^https?:\/\/stackoverflow.[^\.]*\.com.*") {
     border-color: rgba(/*[[base-color-rgb]]*/, .6);
     box-shadow: none;
   }
-  .s-btn:not([data-action="se-uql-list#editCurrent"]):hover, .s-btn:focus,
-  .s-btn:active {
+  .s-btn:not([data-action="se-uql-list#editCurrent"]):hover,
+  .s-btn:not([data-action="se-uql-list#editCurrent"]):focus,
+  .s-btn:not([data-action="se-uql-list#editCurrent"]):active {
     background-color: #282828;
   }
   .s-btn.s-btn__google {
@@ -1340,8 +1341,9 @@ regexp("^https?:\/\/stackoverflow.[^\.]*\.com.*") {
   }
   .s-btn__muted.is-selected:hover, .s-btn__muted.is-selected:focus,
   .s-btn__muted.is-selected:active,
-  .s-btn.s-btn__muted:not(.facebook-login):hover, .s-btn.s-btn__muted:focus,
-  .s-btn.s-btn__muted:active {
+  .s-btn.s-btn__muted:not(.facebook-login):hover,
+  .s-btn.s-btn__muted:not(.facebook-login):focus,
+  .s-btn.s-btn__muted:not(.facebook-login):active {
     color: #ccc !important;
     background-color: #282828 !important;
   }
@@ -2431,7 +2433,9 @@ regexp("^https?:\/\/stackoverflow.[^\.]*\.com.*") {
     border-color: #035;
     color: #ccc;
   }
-  .s-btn.fc-dark:hover {
+  .s-btn.fc-dark:not(.js-answer-help-close-btn):hover,
+  .s-btn.fc-dark:not(.js-answer-help-close-btn):focus,
+  .s-btn.fc-dark:not(.js-answer-help-close-btn):active {
     background-color: #035;
   }
   .dateNavBox {
