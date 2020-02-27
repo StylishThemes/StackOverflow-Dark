@@ -1852,10 +1852,12 @@ regexp("^https?:\/\/stackoverflow.[^\.]*\.com.*") {
   #answers .answer.accepted-answer[style*="background-color"] {
     background: inherit !important;
     border: 1px solid /*[[accepted-color]]*/ !important;
+    border-top: 1px solid #555 !important;
   }
   #answers .answer.accepted-answer {
     background: rgba(/*[[accepted-color-rgb]]*/, .5) !important;
     border: 1px solid /*[[accepted-color]]*/ !important;
+    border-top: 1px solid #444 !important;
   }
   .fc-green-400, .h\:fc-green-400:hover, .f\:fc-green-400:focus {
     color: #5fba7d !important;
