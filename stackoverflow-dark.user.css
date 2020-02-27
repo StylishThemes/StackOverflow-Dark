@@ -1515,6 +1515,22 @@ regexp("^https?:\/\/stackoverflow.[^\.]*\.com.*") {
   .wmd-button-bar.has-active-button .wmd-button:not(.wmd-button__active) {
     opacity: 1;
   }
+  .wmd-button > span {
+    filter: grayscale(1) invert(1) brightness(80%);
+  }
+  .wmd-button > span {
+    filter: grayscale(1) invert(1) brightness(100%);
+  }
+  .mdhelp-tabs {
+    background-color: #303030;
+  }
+  .mdhelp-tabs li.selected, .wmd-help-button.active-help {
+    background-color: #303030;
+  }
+  #wmd-undo-button span[style="background-position: -200px -20px;"],
+  #wmd-redo-button span[style="background-position: -220px -20px;"] {
+    filter: brightness(40%);
+  }
   #system-message, .commentlist, #hero-content, .tabs .selected,
   .rep-card .rep-col, .sort select, .MathJax_MenuDisabled,
   .gsc-option-menu-item-highlighted, .secondary-job-results-identifier,
@@ -1677,12 +1693,6 @@ regexp("^https?:\/\/stackoverflow.[^\.]*\.com.*") {
   .tagged-interesting, .tagged-interesting .views,
   .tagged-interesting .user-info {
     background-color: rgba(51, 34, 17, .6) !important;
-  }
-  .mdhelp-tabs {
-    background-color: rgba(51, 34, 17, .6);
-  }
-  .mdhelp-tabs li.selected, .wmd-help-button.active-help {
-    background-color: #321;
   }
   .mdhelp, .revision-comment {
     background-color: #321;
