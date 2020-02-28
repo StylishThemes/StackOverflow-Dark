@@ -273,6 +273,9 @@ regexp("^https?:\/\/stackoverflow.[^\.]*\.com.*") {
   .min-ds-step-counter .step.active, .s-badge__bounty {
     background: /*[[base-color]]*/;
   }
+  .bg-blue-700, .h\:bg-blue-700:hover, .f\:bg-blue-700:focus {
+    background: /*[[base-color]]*/ !important;
+  }
   input[type="submit"].btn-clear:hover, input[type="button"].btn-clear:hover,
   button.btn-clear:hover, .btn-clear:hover, input[type="submit"].btn-clear:focus,
   input[type="button"].btn-clear:focus, button.btn-clear:focus, .btn-clear:focus,
@@ -339,7 +342,7 @@ regexp("^https?:\/\/stackoverflow.[^\.]*\.com.*") {
     background-color: /*[[base-color]]*/ !important;
     color: #eee !important;
   }
-  a.post-tag.user-tag:hover {
+  a.post-tag.user-tag:hover, .s-tag.bg-blue-700:hover {
     background-color: rgba(79, 140, 201, .8) !important;
     background-color: rgba(/*[[base-color-rgb]]*/, .8) !important;
   }
