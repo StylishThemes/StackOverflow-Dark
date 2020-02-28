@@ -120,7 +120,8 @@ regexp("^https?:\/\/stackoverflow.[^\.]*\.com.*") {
     text-shadow: none !important;
     box-shadow: none !important;
   }
-  body, .cv-story header, .container.bg-black-050 {
+  body, .cv-story header, .container.bg-black-050,
+  body.floating-content > .container {
     background-color: #202020 !important;
     background-image: var(--bg-img) !important;
     background-clip: border-box !important;
