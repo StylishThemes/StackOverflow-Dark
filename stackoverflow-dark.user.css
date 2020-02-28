@@ -2721,6 +2721,15 @@ regexp("^https?:\/\/stackoverflow.[^\.]*\.com.*") {
     animation-name: highlight-fade !important;
     animation-duration: 3s !important;
   }
+  .faq-page .col-section.expanded {
+    background-color: transparent !important;
+  }
+  .faq-page #top-section .col-section {
+    border: solid 1px #542 !important;
+    background-color: #321 !important;
+    animation-name: highlight-fade !important;
+    animation-duration: 3s !important;
+  }
   @keyframes highlight-fade {
     from {
       background-color: #3e2914;
