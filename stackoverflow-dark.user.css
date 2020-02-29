@@ -1573,15 +1573,6 @@ regexp("^https?:\/\/stackoverflow.[^\.]*\.com.*") {
   .answer, #newsletter-ad {
     padding: 10px !important;
   }
-  /* tweak answer and tab distance */
-  .answer {
-    margin-top: -10px;
-    margin-bottom: 10px !important;
-  }
-  .answer.accepted-answer {
-    margin-top: -11px;
-    margin-bottom: 11px !important;
-  }
   #newsletter-ad::before {
     content: "Love this site?";
     font-size: 18px !important;
@@ -1856,12 +1847,10 @@ regexp("^https?:\/\/stackoverflow.[^\.]*\.com.*") {
   #answers .answer.accepted-answer[style*="background-color"] {
     background: inherit !important;
     border: 1px solid /*[[accepted-color]]*/ !important;
-    border-top: 1px solid #555 !important;
   }
   #answers .answer.accepted-answer {
     background: rgba(/*[[accepted-color-rgb]]*/, .5) !important;
     border: 1px solid /*[[accepted-color]]*/ !important;
-    border-top: 1px solid #444 !important;
   }
   .fc-green-400, .h\:fc-green-400:hover, .f\:fc-green-400:focus {
     color: #5fba7d !important;
