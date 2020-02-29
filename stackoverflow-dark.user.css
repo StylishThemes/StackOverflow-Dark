@@ -538,6 +538,9 @@ regexp("^https?:\/\/stackoverflow.[^\.]*\.com.*") {
   header:not(.job-details--header) {
     background-color: #080808 !important;
   }
+  .user-page header:not(.job-details--header):not(.top-bar) {
+    background-color: transparent !important;
+  }
   .timeline-item header {
     background-color: #151515 !important;
     color: #aaa !important;
