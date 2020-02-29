@@ -634,7 +634,9 @@ regexp("^https?:\/\/stackoverflow.[^\.]*\.com.*") {
     background-color: #111 !important;
     color: #ddd !important;
   }
-  .tag-editor-wrapper .tag-editor, .tag-editor {
+  .tag-editor-wrapper .tag-editor, .tag-editor,
+  .match-preferences .seniority-selector,
+  .match-preferences .salary-selector .double-field .field-with-bg {
     background-color: #111;
   }
   .s-input:focus, .s-input.has-focus, .s-textarea:focus,
@@ -763,9 +765,8 @@ regexp("^https?:\/\/stackoverflow.[^\.]*\.com.*") {
   .top-bar .-feature-notice:hover, .top-bar .-feature-notice.topbar-icon-on,
   .topbar-dialog .dialog-content, .feature-notice-dialog::before, .-item.social,
   .salary-results-container .collection, .sidebar #post-job,
-  .sidebar .salary-survey-sidebar, .ui-dialog, .salary-calculator-calculator,
-  .sticky-menu-wrapper._sticky, .-summary, .field._toolbar .-toolbar,
-  .timeline .feature-banner__background,
+  .sidebar .salary-survey-sidebar, .ui-dialog, .sticky-menu-wrapper._sticky,
+  .-summary, .field._toolbar .-toolbar, .timeline .feature-banner__background,
   .timeline .readings .readings-list .readings-item {
     background: #151515 !important;
   }
@@ -778,12 +779,19 @@ regexp("^https?:\/\/stackoverflow.[^\.]*\.com.*") {
     border-color: #444;
   }
   .top-bar .left-sidebar-toggle:hover,
-  .top-bar .left-sidebar-toggle.topbar-icon-on {
+  .top-bar .left-sidebar-toggle.topbar-icon-on, svg[style="background:#fff;"] {
     background-color: #191919 !important;
   }
   #post-job, .top-bar a.-logo.topbar-icon-on, .company-module footer,
   .company-module > header > h2, .company-module .-details strong span {
     background: #202020;
+  }
+  .salary-calculator-calculator, .salary-results {
+    background: #181818;
+    border-color: #444;
+  }
+  .salary-changelog, .salary-cta:hover {
+    border-color: #444;
   }
   #privilege-category-descriptions .privilege-icon,
   .privilege-table-row .privilege-icon, .favicon-stackexchangemeta {
