@@ -1100,16 +1100,6 @@ regexp("^https?:\/\/stackoverflow.[^\.]*\.com.*") {
     background-color: #191919 !important;
     border: 2px solid #262626 !important;
   }
-  #tabs a, .tabs a {
-    border: 1px solid transparent !important;
-  }
-  #tabs a.youarehere, .tabs a.youarehere {
-    border-color: #444 !important;
-    border-bottom-color: transparent;
-  }
-  .youarehere:hover {
-    background: #222 !important;
-  }
   .tag-suggestions, .dropdown li,
   .proposed-change .diff-buttons a:not(.selected), #logout-form, .snippet-holder,
   .CodeMirror, .CodeMirror-gutters, .badge-progress.completed,
@@ -1183,9 +1173,6 @@ regexp("^https?:\/\/stackoverflow.[^\.]*\.com.*") {
   .subheader.tools-rev #tabs a {
     margin-top: 3px !important;
   }
-  #tabs a.youarehere::before, .tabs a.youarehere::before {
-    background-color: /*[[base-color]]*/ !important;
-  }
   .subheader #tabs [href*="account_recovery"],
   .subheader #tabs a[href*="account_recovery"]:hover {
     margin-top: 0 !important;
@@ -1205,15 +1192,11 @@ regexp("^https?:\/\/stackoverflow.[^\.]*\.com.*") {
     margin-top: 3px;
     border-bottom-color: transparent !important;
   }
-  .subheader .tabs a.youarehere[href*="company"] {
-    margin-top: 3px;
-    border-bottom-color: transparent !important;
-  }
-  .subheader .tabs a[href*="company"] {
-    margin-top: -1px;
-  }
-  .subheader.user-tabs-nav .tabs a.youarehere {
+  .subheader.user-tabs-nav .tabs a.youarehere,
+  .subheader .tabs a[href*="company"].youarehere {
     margin-top: 0;
+    border-left-color: #444 !important;
+    border-right-color: #444 !important;
   }
   .subheader.user-tabs-nav .tabs a:not(.youarehere):hover,
   .subheader.reloaded #tabs a:not(.youarehere):hover {
@@ -1229,6 +1212,29 @@ regexp("^https?:\/\/stackoverflow.[^\.]*\.com.*") {
   .subheader:not(.user-tabs-nav) .tabs a.youarehere:not([href*="company"]) {
     border-bottom-color: /*[[base-color]]*/ !important;
     color: /*[[base-color]]*/ !important;
+  }
+  #tabs a.youarehere::before, .tabs a.youarehere::before {
+    background-color: /*[[base-color]]*/ !important;
+  }
+  #tabs a, .tabs a {
+    border: 1px solid transparent !important;
+  }
+  #tabs a.youarehere,
+  .tabs a:not([href*="company"]):not([id*="category-"]):not([href*="users"]).youarehere {
+    border-color: #444 !important;
+    border-bottom-color: transparent;
+  }
+  .subheader .tabs a.youarehere[href*="company"] {
+    border-bottom-color: transparent !important;
+    background-color: #222;
+  }
+  #mainArea.at-top .tabs a.youarehere, #mainArea.at-top .tabs a,
+  .tabs a[id*="category-"], .tabs a[id*="category-"]:hover {
+    border: 1px solid transparent !important;
+    background-color: transparent !important;
+  }
+  .youarehere:hover {
+    background: #222 !important;
   }
   .subheader:not(.user-tabs-nav) .tabs a:not([href*="company"]):hover,
   .sort a.current, .subtabs a.youarehere, .subtabs a:hover {
@@ -1889,7 +1895,7 @@ regexp("^https?:\/\/stackoverflow.[^\.]*\.com.*") {
   .topbar-dialog.achievements-dialog .rep-up, .-activity .-stat.answered {
     color: #92cc09 !important;
   }
-  .answer-votes, .answered .vote-count-post {
+  .answered .vote-count-post {
     color: #27ae60;
   }
   .user-show-new .user-rep .rep-amount .rep-up, .-stats.rep-up {
@@ -2117,7 +2123,8 @@ regexp("^https?:\/\/stackoverflow.[^\.]*\.com.*") {
     color: inherit;
     background-color: transparent;
   }
-  #tabs a:hover, .tabs a:not(.youarehere):hover {
+  #tabs a:hover,
+  .tabs a:not([id*="category-"]):not([href*="users"]):not(.youarehere):hover {
     background-color: #292929 !important;
     border-color: rgba(62, 62, 62, .1) !important;
     border-bottom-color: transparent !important;
@@ -3858,15 +3865,6 @@ regexp("^https?:\/\/stackoverflow.[^\.]*\.com.*") {
     background: #222;
     border-color: #222;
     color: #eee;
-  }
-  .outside .subheader #tabs {
-    margin-top: 0 !important;
-  }
-  .outside .subheader #tabs a {
-    margin-top: 6px !important;
-  }
-  .outside .subheader #tabs a:hover {
-    margin-top: 6px !important;
   }
   html:not(#X) .outside .subheader #tabs a.youarehere {
     margin-top: 2px !important;
