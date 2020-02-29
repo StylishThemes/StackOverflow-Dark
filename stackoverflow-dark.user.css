@@ -384,9 +384,12 @@ regexp("^https?:\/\/stackoverflow.[^\.]*\.com.*") {
     color: #eee !important;
   }
   /* end hack */
-  html:not(#X) #tabs a, html:not(#X) .tabs a:not([href]) {
+  html:not(#X) #tabs a:not(.youarehere), html:not(#X) .tabs a:not([href]) {
     color: #aaa !important;
     border: 1px solid transparent !important;
+  }
+  #tabs a, .tabs a {
+    background: #222;
   }
   html:not(#X) #tabs a.youarehere, html:not(#X) .tabs a:not([href]).youarehere,
   html:not(#X) #tabs:hover a.youarehere,
@@ -1089,7 +1092,14 @@ regexp("^https?:\/\/stackoverflow.[^\.]*\.com.*") {
   #tabs a, .tabs a {
     border: 1px solid transparent !important;
   }
-  #tabs a.youarehere, .tag-suggestions, .dropdown li,
+  #tabs a.youarehere, .tabs a.youarehere {
+    border-color: #444 !important;
+    border-bottom-color: transparent;
+  }
+  .youarehere:hover {
+    background: #222 !important;
+  }
+  .tag-suggestions, .dropdown li,
   .proposed-change .diff-buttons a:not(.selected), #logout-form, .snippet-holder,
   .CodeMirror, .CodeMirror-gutters, .badge-progress.completed,
   .item-select-table .item, .title-box, .-list-item, .bg-powder-050,
@@ -1155,17 +1165,6 @@ regexp("^https?:\/\/stackoverflow.[^\.]*\.com.*") {
   }
   body.user-page #content * {
     box-sizing: border-box !important;
-  }
-  html:not(#X) #tabs a.youarehere, html:not(#X) .tabs a.youarehere {
-    border: 1px solid #444 !important;
-    border-bottom-color: transparent !important;
-    background: #222 !important;
-  }
-  html:not(#X) #tabs a.youarehere,
-  html:not(#X) #content:not(.subheader) .tabs a.youarehere {
-    border: 1px solid transparent !important;
-    border-bottom-color: transparent !important;
-    background: #222 !important;
   }
   .subheader.tools-rev #tabs:nth-child(2) {
     margin-top: -2px !important;
@@ -2091,8 +2090,8 @@ regexp("^https?:\/\/stackoverflow.[^\.]*\.com.*") {
   .task-stat-leaderboard.user-info, #mdhelp .mdhelp-tab pre:not.bg-transparent {
     background-color: transparent !important;
   }
-  #content, .subheader #tabs a, .subheader .tabs a:not(.youarehere),
-  .story-preferences .link-text {
+  #content, .subheader #tabs a:not(.youarehere),
+  .subheader .tabs a:not(.youarehere), .story-preferences .link-text {
     background-color: transparent !important;
   }
   /* this selector on its own */
@@ -2394,8 +2393,8 @@ regexp("^https?:\/\/stackoverflow.[^\.]*\.com.*") {
     background-color: #777 !important;
     border-color: #777 !important;
   }
-  .s-btn__muted.s-btn__outlined.is-selected, .youarehere:hover,
-  .youarehere.is-selected, .nav-links .youarehere .nav-links--link, .s-tag:hover {
+  .s-btn__muted.s-btn__outlined.is-selected, .youarehere.is-selected,
+  .nav-links .youarehere .nav-links--link, .s-tag:hover {
     background-color: rgba(79, 140, 201, .3) !important;
     background-color: rgba(/*[[base-color-rgb]]*/, .3) !important;
   }
@@ -3784,6 +3783,9 @@ regexp("^https?:\/\/stackoverflow.[^\.]*\.com.*") {
   img[src*="stackoverflow/img/logo.png"],
   img[src*="stackoverflow/img/logo.png"]:hover {
     filter: invert(1) hue-rotate(180deg);
+  }
+  .subheader #tabs a.youarehere {
+    background: #222 !important;
   }
   .weekday-small {
     color: #111;
