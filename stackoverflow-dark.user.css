@@ -1487,11 +1487,11 @@ regexp("^https?:\/\/stackoverflow.[^\.]*\.com.*") {
   ul.comments-list .comment > *, #content, .comments, #question-header,
   .question-page #answers .answer, .wmd-button-row, .wmd-button-bar, .mdhelp,
   .s-input, .s-textarea, input, .grippie, .wmd-preview, #tags_list .tag-cell,
-  .page-numbers, .flush-left, #sidebar .s-sidebarwidget,
-  .-panel .s-sidebarwidget--header, .s-sidebarwidget--header.bg-white,
-  .-panel .s-sidebarwidget--content, .s-sidebarwidget, .company-module,
-  .topbar-dialog, .topbar-dialog .modal-content li, .pagination > a,
-  .pagination a:visited, .s-sidebarwidget .s-sidebarwidget--header.grid,
+  .flush-left, #sidebar .s-sidebarwidget, .-panel .s-sidebarwidget--header,
+  .s-sidebarwidget--header.bg-white, .-panel .s-sidebarwidget--content,
+  .s-sidebarwidget, .company-module, .topbar-dialog,
+  .topbar-dialog .modal-content li, .pagination > a, .pagination a:visited,
+  .s-sidebarwidget .s-sidebarwidget--header.grid,
   .-ignored .s-sidebarwidget--content, .s-sidebarwidget--header:not(.module),
   .module .s-sidebarwidget--content,
   #jobs-sidebar-placeholder .s-sidebarwidget--header,
@@ -2648,12 +2648,14 @@ regexp("^https?:\/\/stackoverflow.[^\.]*\.com.*") {
     border-radius: 2px !important;
     padding: 4px 8px !important;
     font-size: 100%;
+    border-color: #444;
   }
   .page-numbers.current, .page-numbers:hover,
   .s-navigation .s-navigation--item.is-selected {
     color: #fff;
     background-color: /*[[base-color]]*/;
-    border-color: transparent;
+    border-color: 2px solid /*[[base-color]]*/ !important;
+    border-radius: 2px !important;
   }
   /* === Style adjustments === */
   .nav a, .post-tag, .comment-link, .tag-synonym-link, a.post-tag:hover,
@@ -3018,9 +3020,10 @@ regexp("^https?:\/\/stackoverflow.[^\.]*\.com.*") {
   #question-mini-list .summary .question-hyperlink {
     color: #aaa !important;
   }
-  .page-numbers {
+  .page-numbers:not(.dots) {
     border-radius: 2px;
     padding: 6px 8px;
+    background-color: #222;
   }
   input[type="submit"][value="Save Changes"] {
     color: #ddd !important;
@@ -3035,6 +3038,7 @@ regexp("^https?:\/\/stackoverflow.[^\.]*\.com.*") {
     background-color: /*[[base-color]]*/ !important;
     border-color: /*[[base-color]]*/ !important;
     padding: 6px 8px;
+    border-radius: 2px !important;
   }
   .page-numbers.desc:hover {
     color: #888 !important;
@@ -3215,7 +3219,7 @@ regexp("^https?:\/\/stackoverflow.[^\.]*\.com.*") {
   .s-btn.s-btn__primary, .s-btn.s-btn__primary:focus {
     background-color: /*[[base-color]]*/ !important;
   }
-  .page-numbers, .page-numbers:active {
+  .page-numbers:not(.dots), .page-numbers:not(.dots):active {
     background: #222;
     background-color: #222;
     color: #ccc;
@@ -3229,7 +3233,7 @@ regexp("^https?:\/\/stackoverflow.[^\.]*\.com.*") {
     box-shadow: 0 2px 3px rgba(0, 0, 0, .4) inset, 0 1px 0 #111;
     color: #fff;
   }
-  .page-numbers:hover, .page-numbers.next:hover {
+  .page-numbers:not(.dots):hover, .page-numbers:not(.dots).next:hover {
     background: /*[[base-color]]*/;
     background-color: /*[[base-color]]*/;
     color: #fff;
@@ -3795,9 +3799,21 @@ regexp("^https?:\/\/stackoverflow.[^\.]*\.com.*") {
   .weekday, .weekday-small {
     border-radius: 4px 4px 0 0;
   }
-  .page-numbers {
+  .page-numbers:not(.dots) {
     border-radius: 2px !important;
     padding: 2px 8px !important;
+    background-color: #222;
+  }
+  .page-numbers:not(.dots).next, .page-numbers:not(.dots).prev,
+  .page-numbers.dots:hover, .page-numbers.dots:active {
+    border-color: transparent !important;
+    background-color: transparent !important;
+  }
+  .page-numbers:not(.dots):hover, .page-numbers:not(.dots).next:hover {
+    background: /*[[base-color]]*/;
+    background-color: /*[[base-color]]*/;
+    color: #fff;
+    text-decoration: none !important;
   }
   .refine-search {
     vertical-align: bottom !important;
@@ -3842,7 +3858,7 @@ regexp("^https?:\/\/stackoverflow.[^\.]*\.com.*") {
     margin-top: 6px !important;
   }
   html:not(#X) .outside .subheader #tabs a.youarehere {
-    margin-top: 5px !important;
+    margin-top: 2px !important;
     border-top: 2px solid /*[[base-color]]*/ !important;
   }
   /* chat icons topbar */
@@ -4401,6 +4417,7 @@ regexp("^https?:\/\/stackoverflow.[^\.]*\.com.*") {
     border-radius: 2px !important;
     padding: 4px 8px !important;
     font-size: 100%;
+    background-color: #222;
   }
 }
 @-moz-document domain("photo.stackexchange.com") {
