@@ -2681,6 +2681,9 @@ regexp("^https?:\/\/stackoverflow.[^\.]*\.com.*") {
     font-size: 100%;
     border-color: #444;
   }
+  .s-navigation .s-navigation--item {
+    border-radius: 2px;
+  }
   .page-numbers.current, .page-numbers:hover,
   .s-navigation .s-navigation--item.is-selected {
     color: #fff;
