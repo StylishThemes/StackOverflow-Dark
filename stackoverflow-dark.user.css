@@ -2278,9 +2278,8 @@ regexp("^https?:\/\/stackoverflow.[^\.]*\.com.*") {
   .subtabs a, .filter a {
     border-bottom: 1px solid transparent !important;
   }
-  .subtabs a.youarehere, .filter a.youarehere, .subtabs a:hover, .filter a:hover,
-  .subtabs a, .filter a, .-network-icons .-label, a.s-link__muted,
-  .s-link.s-link__muted {
+  .filter a.youarehere, .filter a:hover, .subtabs a, .filter a,
+  .-network-icons .-label, a.s-link__muted, .s-link.s-link__muted {
     color: #bbb;
   }
   .subtabs a.active, .filter a.active {
@@ -2855,6 +2854,10 @@ regexp("^https?:\/\/stackoverflow.[^\.]*\.com.*") {
     fill: rgba(79, 140, 201, 1) !important;
     fill: rgba(/*[[base-color-rgb]]*/, 1) !important;
   }
+  a.tag, .ob-post-tag, .ob-user-tag, .events-tooltip {
+    background-color: #191919 !important;
+    border-color: #111 !important;
+  }
   a.badge, a.badge-tag, .list-reset a.badge, .list-reset a.badge-tag {
     background-color: #111;
     border-color: transparent;
@@ -2882,14 +2885,6 @@ regexp("^https?:\/\/stackoverflow.[^\.]*\.com.*") {
   }
   a.badge[title^="gold"], a.badge-tag[title^="gold"], .badge1 + .badgecount {
     color: #ffcc46 !important;
-  }
-  a.tag, .ob-post-tag, .ob-user-tag, .events-tooltip {
-    background-color: #191919 !important;
-    border-color: #111 !important;
-  }
-  a.badge, a.badge-tag, .list-reset a.badge, .list-reset a.badge-tag {
-    background-color: #111;
-    border-color: transparent;
   }
   .badge3-alternate:not(.badge-tag), .progress-bar.badge-3 .bar .percent,
   .s-progress-bar._badge._badge3 .-fill, .badge-wrapper._badge3,
@@ -3918,9 +3913,9 @@ regexp("^https?:\/\/stackoverflow.[^\.]*\.com.*") {
     border-color: #444;
     color: #ccc !important;
   }
-  .subtabs a.youarehere {
-    background-color: #111;
-    border-color: #444;
+  .subtabs a.youarehere, .subtabs a:hover {
+    background-color: /*[[base-color]]*/ !important;
+    border-color: /*[[base-color]]*/ !important;
     color: #eee !important;
   }
   .event-banner {
