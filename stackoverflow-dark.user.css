@@ -1750,7 +1750,7 @@ regexp("^https?:\/\/stackoverflow.[^\.]*\.com.*") {
     background-color: #651 !important;
     color: #aaa !important;
   }
-  .event-banner, blockquote, .filter-dashboard-edit .floating-help {
+  .event-banner, .filter-dashboard-edit .floating-help {
     background-color: #321;
     border-color: #651;
   }
@@ -2015,6 +2015,12 @@ regexp("^https?:\/\/stackoverflow.[^\.]*\.com.*") {
   body.no-message-slide .post-text q {
     background-color: #321;
     border-color: #651;
+  }
+  blockquote {
+    background: #191919;
+  }
+  blockquote::before {
+    background: #777;
   }
   #question .user-info, .answer .user-info {
     background: transparent !important;
