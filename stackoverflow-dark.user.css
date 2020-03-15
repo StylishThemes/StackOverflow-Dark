@@ -2142,6 +2142,10 @@ regexp("^https?:\/\/stackoverflow.[^\.]*\.com.*") {
   .subheader.user-full-tab-header .subtabs.user-tab-sorts {
     margin-top: 3px !important;
   }
+  .spoiler {
+    background: #181818;
+    border-radius: 3px;
+  }
   .spoiler, .spoiler * {
     color: transparent !important;
   }
