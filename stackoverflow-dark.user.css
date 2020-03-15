@@ -3919,7 +3919,7 @@ regexp("^https?:\/\/stackoverflow.[^\.]*\.com.*") {
     border-color: #444;
     color: #ccc !important;
   }
-  .subtabs a.youarehere, .subtabs a:hover {
+  .no-message-slide .subtabs a.youarehere, .no-message-slide .subtabs a:hover {
     background-color: /*[[base-color]]*/ !important;
     border-color: /*[[base-color]]*/ !important;
     color: #eee !important;
