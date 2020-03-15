@@ -2855,6 +2855,25 @@ regexp("^https?:\/\/stackoverflow.[^\.]*\.com.*") {
     fill: rgba(79, 140, 201, 1) !important;
     fill: rgba(/*[[base-color-rgb]]*/, 1) !important;
   }
+  a.badge, a.badge-tag, .list-reset a.badge, .list-reset a.badge-tag {
+    background-color: #111;
+    border-color: transparent;
+  }
+  .s-badge__bronze {
+    border-color: #cd7f32;
+    background-color: #7c4318;
+    color: #fff;
+  }
+  .s-badge__silver {
+    border-color: #aaa;
+    background-color: #6b6b6b;
+    color: #fff;
+  }
+  .s-badge__gold {
+    border-color: #e5c100;
+    background-color: #998100;
+    color: #fff;
+  }
   a.badge[title^="bronze"], a.badge-tag[title^="bronze"], .badge3 + .badgecount {
     color: #c96 !important;
   }
@@ -2880,12 +2899,12 @@ regexp("^https?:\/\/stackoverflow.[^\.]*\.com.*") {
   .badge2-alternate:not(.badge-tag), .progress-bar.badge-2 .bar .percent,
   .s-progress-bar._badge._badge2 .-fill, .badge-wrapper._badge2,
   .s-progress__silver .s-progress--bar, .badge-top._badge2 .-name {
-    background-color: #464a4f !important; /* silver */
+    background-color: #6b6b6b !important; /* silver */
   }
   .badge1-alternate:not(.badge-tag), .progress-bar.badge-1 .bar .percent,
   .s-progress-bar._badge._badge1 .-fill, .badge-wrapper._badge1,
   .s-progress__gold .s-progress--bar, .badge-top._badge1 .-name {
-    background-color: #957000 !important; /* gold */
+    background-color: #998100 !important; /* gold */
   }
   .s-progress, .pico-content {
     background-color: #292929;
