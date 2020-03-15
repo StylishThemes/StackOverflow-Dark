@@ -443,7 +443,11 @@ regexp("^https?:\/\/stackoverflow.[^\.]*\.com.*") {
     background-image: none !important;
   }
   .delete-tag::after {
-    content: "✖️";
+    content: "✖";
+    color: #999;
+  }
+  .delete-tag:hover::after {
+    color: #eee;
   }
   .s-btn:not(.s-btn.s-btn__google) {
     background-color: transparent;
