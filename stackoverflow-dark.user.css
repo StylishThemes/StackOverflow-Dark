@@ -3834,6 +3834,12 @@ regexp("^https?:\/\/stackoverflow.[^\.]*\.com.*") {
   img[src*="stackoverflow/img/logo.png"]:hover {
     filter: invert(1) hue-rotate(180deg);
   }
+  .expander-arrow-small-hide, .expander-arrow-small-show {
+    filter: grayscale(1) brightness(90%);
+  }
+  .mention {
+    background-color: #005421;
+  }
   .subheader #tabs a.youarehere {
     background: #222 !important;
   }
