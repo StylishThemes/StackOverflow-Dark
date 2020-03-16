@@ -1600,16 +1600,20 @@ regexp("^https?:\/\/stackoverflow.[^\.]*\.com.*") {
   .dropdown li.selected a, .dropdown li.selected a:hover,
   .ob-docs .example-metric, .menu-popout, .version-row, .version-name,
   .switcher input[type="radio"]:checked+label, .double-input .separator,
-  .geo-tag, .MathJax_Menu, .MathJax_MenuLabel:focus, .salary-calc-inputs,
-  .comments-wrap {
+  .geo-tag, .salary-calc-inputs, .comments-wrap {
     background: #333 !important;
     color: #ccc !important;
+  }
+  .MathJax_Menu, .MathJax_MenuLabel:focus {
+    background: #222;
+    color: #ddd;
   }
   .modal.image-upload .modal-dropzone-default,
   .modal.image-upload .modal-dropzone-preview,
   .search-form.responsive .filter-pane .chosen-container .chosen-choices,
   .chosen-container .chosen-drop,
-  .search-form.responsive .filter-pane .tag-editor {
+  .search-form.responsive .filter-pane .tag-editor, .MathJax_Menu,
+  .MathJax_MenuRule {
     border-color: #555;
   }
   .modal.image-upload .modal-dropzone-default:hover,
