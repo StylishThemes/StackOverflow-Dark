@@ -1617,7 +1617,7 @@ regexp("^https?:\/\/stackoverflow.[^\.]*\.com.*") {
   .search-form.responsive .filter-pane .chosen-container .chosen-choices,
   .chosen-container .chosen-drop,
   .search-form.responsive .filter-pane .tag-editor, .MathJax_Menu,
-  .MathJax_MenuRule {
+  .MathJax_MenuRule, .chess-replayer .notes {
     border-color: #555;
   }
   .modal.image-upload .modal-dropzone-default:hover,
@@ -2365,7 +2365,8 @@ regexp("^https?:\/\/stackoverflow.[^\.]*\.com.*") {
     background: /*[[base-color]]*/ !important;
   }
   input[type="submit"].btn-secondary, input[type="button"].btn-secondary,
-  button.btn-secondary, .btn-secondary, #bigsearch input[type="submit"] {
+  button.btn-secondary, .btn-secondary, #bigsearch input[type="submit"],
+  .chess-replayer .controls a.button, .chess-replayer .controls a.button:visited {
     color: #ddd !important;
     background: rgba(79, 140, 201, .5) !important;
     border-color: rgba(79, 140, 201, .7) !important;
