@@ -998,9 +998,9 @@ regexp("^https?:\/\/stackoverflow.[^\.]*\.com.*") {
   .timeline-item.add .add-item-list .item-add:hover, .val-message,
   .min-ds-wizard .min-ds-box.jobs .min-ds-title .filters label:hover,
   .title-box .title, .title-box > .title,
-  .s-btn.s-btn__muted:not(.s-btn__outlined):hover, .comment-text,
+  .s-btn.s-btn__muted:not(.s-btn__outlined):hover,
   .topbar .login-links-container a:hover, .badge-top._badge1 .-name,
-  .badge-top._badge2 .-name, .badge-top._badge3 .-name,
+  .badge-top._badge2 .-name, .badge-top._badge3 .-name, strong,
   .s-progress__privilege .s-progress--label, .s-progress--label, .topbar-dialog {
     color: #ddd;
   }
