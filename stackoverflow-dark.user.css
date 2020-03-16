@@ -1005,8 +1005,10 @@ regexp("^https?:\/\/stackoverflow.[^\.]*\.com.*") {
   .title-box .title, .title-box > .title,
   .s-btn.s-btn__muted:not(.s-btn__outlined):hover,
   .topbar .login-links-container a:hover, .badge-top._badge1 .-name,
-  .badge-top._badge2 .-name, .badge-top._badge3 .-name, strong,
-  .s-progress__privilege .s-progress--label, .s-progress--label, .topbar-dialog {
+  .badge-top._badge2 .-name,
+  .badge-top._badge3 .-name
+  .s-progress__privilege .s-progress--label,
+  .s-progress--label, .topbar-dialog {
     color: #ddd;
   }
   .nav-links .nav-links--link:hover, .nav-links .nav-links--link:focus,
@@ -1064,7 +1066,6 @@ regexp("^https?:\/\/stackoverflow.[^\.]*\.com.*") {
   .min-ds-step-counter .step.completed, .icon-q-small, .icon-a-small {
     filter: grayscale(1) brightness(200%);
   }
-  .top-bar .-secondary .-item .-link .indicator-badge,
   .top-bar .-secondary .-link._danger-indicator::after {
     border-color: #111;
   }
@@ -1553,10 +1554,7 @@ regexp("^https?:\/\/stackoverflow.[^\.]*\.com.*") {
   .wmd-button > span {
     filter: grayscale(1) invert(1) brightness(100%);
   }
-  .mdhelp-tabs {
-    background-color: #303030;
-  }
-  .mdhelp-tabs li.selected, .wmd-help-button.active-help {
+  .mdhelp-tabs, .mdhelp-tabs li.selected, .wmd-help-button.active-help {
     background-color: #303030;
   }
   #wmd-undo-button span[style="background-position: -200px -20px;"],
@@ -1721,7 +1719,7 @@ regexp("^https?:\/\/stackoverflow.[^\.]*\.com.*") {
   .tagged-interesting .user-info {
     background-color: rgba(51, 34, 17, .6) !important;
   }
-  .mdhelp, .revision-comment {
+  .revision-comment {
     background-color: #321;
     color: #ccc;
   }
