@@ -995,7 +995,8 @@ regexp("^https?:\/\/stackoverflow.[^\.]*\.com.*") {
   #logins-table .pretty-login, .activity-status-prompt > .-fields > .-label,
   .stats-mainbar .task-stat-table .review-stats-count, .-votes .mini-counts,
   .s-sidebarwidget:not(.s-anchors) a:not(.button):not(.s-btn):not(.post-tag):not(.s-sidebarwidget--action),
-  .s-sidebarwidget:not(.s-anchors) a:not(.button):not(.s-btn):not(.post-tag):not(.s-sidebarwidget--action):visited {
+  .s-sidebarwidget:not(.s-anchors) a:not(.button):not(.s-btn):not(.post-tag):not(.s-sidebarwidget--action):visited,
+  .mdhelp {
     color: #ccc;
   }
   .nav-links .youarehere .nav-links--link,
@@ -1032,6 +1033,9 @@ regexp("^https?:\/\/stackoverflow.[^\.]*\.com.*") {
   li.s-sidebarwidget--item a[aria-current="page"],
   .s-sidebarwidget--item[aria-current="true"] a {
     color: #ddd !important;
+  }
+  .mdhelp li[data-tab*="mdhelp-"]:hover {
+    color: #eee;
   }
   .subtabs.user-panel-subtabs a:hover,
   .s-navigation .s-navigation--item.is-selected:hover,
