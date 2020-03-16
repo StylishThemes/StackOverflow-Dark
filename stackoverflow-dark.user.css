@@ -11,6 +11,7 @@
 @advanced color base-color "Base color scheme" #4183C4
 @advanced color visited-color "Visited link color" #4183C4
 @advanced color accepted-color "Accepted answer background color" #002810
+@advanced color strong-color "Strong color" #ccc
 @advanced text font-choice "Code Font" Menlo
 @advanced dropdown bg-choice "Background" {
   crosshatch "crosshatch" <<<EOT
@@ -134,6 +135,9 @@ regexp("^https?:\/\/stackoverflow.[^\.]*\.com.*") {
   }
   body {
     color: #ccc;
+  }
+  strong, b {
+    color: /*[[strong-color]]*/ !important;
   }
   /* custom code font */
   pre.prettyprint, code {
