@@ -454,7 +454,7 @@ regexp("^https?:\/\/stackoverflow.[^\.]*\.com.*") {
   .delete-tag:hover::after {
     color: #eee;
   }
-  .s-btn:not(.s-btn.s-btn__google) {
+  .s-btn:not(.s-btn__google) {
     background-color: transparent;
   }
   .s-btn:focus {
