@@ -1865,6 +1865,9 @@ regexp("^https?:\/\/stackoverflow.[^\.]*\.com.*") {
   .bg-black-025, .h\:bg-black-025:hover, .f\:bg-black-025:focus {
     background-color: #181818 !important;
   }
+  .user-show-new .user-rep-full .rep-table .loaded-body {
+    background: #181818;
+  }
   .bc-black-2 {
     border-color: #444 !important;
   }
