@@ -2050,7 +2050,7 @@ regexp("^https?:\/\/stackoverflow.[^\.]*\.com.*") {
     background: /*[[base-color]]*/ !important;
   }
   .timeline-item.job header::before {
-    background: ; /*[[base-color]]*/
+    background: /*[[base-color]]*/;
   }
   body.no-message-slide .pager .-pagination .-number {
     border-radius: 2px !important;
