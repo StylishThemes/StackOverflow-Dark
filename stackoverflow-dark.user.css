@@ -361,7 +361,8 @@ regexp("^https?:\/\/stackoverflow.[^\.]*\.com.*") {
     color: /*[[base-color]]*/;
     filter: brightness(115%);
   }
-  .old-hero a.-link, .fc-black-900 {
+  .old-hero a.-link, .fc-black-900, .fc-black, .h\:fc-black:hover,
+  .f\:fc-black:focus {
     color: #eee !important;
   }
   .old-hero._orange {
@@ -435,7 +436,8 @@ regexp("^https?:\/\/stackoverflow.[^\.]*\.com.*") {
   .min-ds-wizard .min-ds-box.jobs .min-ds-content .tag-editor-wrapper .tag-editor .post-tag .delete-tag,
   .s-btn.s-btn__primary:hover, .top-bar .-secondary .-ctas .btn-topbar-clear,
   .top-bar .-secondary .-ctas .btn-topbar-clear:focus, .s-btn__primary:focus,
-  .s-btn:focus, .mb16:not(.profile-placeholder--image):not(.bg-yellow-200),
+  .s-btn:focus,
+  .mb16:not(.profile-placeholder--image):not(.bg-yellow-200):not(.bc-black-3),
   .icon-site, .icon-location, .icon-github, .icon-twitter, .icon-time,
   .icon-calendar, .icon-eye, .icon-se, .icon-q, .icon-a, .icon-q-small,
   .icon-a-small, .icon-ppl-helped, .icon-helpful-edit, .icon-vote-cast,
@@ -953,7 +955,8 @@ regexp("^https?:\/\/stackoverflow.[^\.]*\.com.*") {
   .label:not(.s-label), .answerBox, .answerBox:visited, .community-option,
   .message.message-config a:not(.badge-tag):not(.button):not(.btn):not(.post-tag),
   .user-summary-details .user-created, .user-summary-details .user-saved-queries,
-  .s-empty-state, .timeline .header .job a, .timeline .header .meta a {
+  .s-empty-state, .timeline .header .job a, .timeline .header .meta a,
+  .user-page .settings-page .help {
     color: #aaa;
   }
   .topbar-dialog.help-dialog .item-summary,
@@ -1025,7 +1028,7 @@ regexp("^https?:\/\/stackoverflow.[^\.]*\.com.*") {
   .s-sidebarwidget:not(.s-anchors) a:not(.button):not(.s-btn):not(.post-tag):not(.s-sidebarwidget--action):visited,
   .mdhelp, .timeline-item .timeline-item-title,
   .timeline-item .timeline-item-paragraph, .timeline-item .mini-counts,
-  .cv-story .mini-counts {
+  .cv-story .mini-counts, .s-modal--body {
     color: #ccc;
   }
   .nav-links .youarehere .nav-links--link,
@@ -1060,7 +1063,7 @@ regexp("^https?:\/\/stackoverflow.[^\.]*\.com.*") {
   #logins-table .group-name, .top-bar .-marketing-link, html:not(#X) .fc-white,
   html:not(#X) .h\:fc-black-900:hover, .new-about-content-page h2.about-title,
   li.s-sidebarwidget--item a[aria-current="page"],
-  .s-sidebarwidget--item[aria-current="true"] a {
+  .s-sidebarwidget--item[aria-current="true"] a, .svg-icon.iconWave {
     color: #ddd !important;
   }
   .mdhelp li[data-tab*="mdhelp-"]:hover {
@@ -1075,7 +1078,7 @@ regexp("^https?:\/\/stackoverflow.[^\.]*\.com.*") {
   .s-btn__muted.s-btn__outlined:active, .message.message-info,
   .s-block-link:hover, .s-block-link:active, li.s-sidebarwidget--item a:hover,
   #more-actions a.fc-black-500:hover, html:not(#X) .s-card a.fc-black-500:hover,
-  .gv-size-huge .btn {
+  .gv-size-huge .btn, .fc-white, .h\:fc-white:hover, .f\:fc-white:focus {
     color: #eee !important;
   }
   .top-bar .navigation .-link:hover, .top-bar .navigation .-link:focus {
@@ -1184,12 +1187,18 @@ regexp("^https?:\/\/stackoverflow.[^\.]*\.com.*") {
   }
   .s-popover--arrow__tl::before, .s-popover--arrow__tc::before,
   .s-popover--arrow__tr::before,
-  .s-popover[x-placement^="bottom"] .s-popover--arrow::before {
+  .s-popover[x-placement^="bottom"] .s-popover--arrow::before,
+  .s-popover[data-popper-placement^="bottom"] .s-popover--arrow::before,
+  .s-popover--arrow__tl::before, .s-popover--arrow__tc::before,
+  .s-popover--arrow__tr::before {
     border-bottom-color: #444;
   }
   .s-popover--arrow__tl::after, .s-popover--arrow__tc::after,
   .s-popover--arrow__tr::after,
   .s-popover[x-placement^="bottom"] .s-popover--arrow::after,
+  .s-popover--arrow__tl::after, .s-popover--arrow__tc::after,
+  .s-popover--arrow__tr::after,
+  .s-popover[data-popper-placement^="bottom"] .s-popover--arrow::after,
   .s-popover--arrow__tl::after, .s-popover--arrow__tc::after,
   .s-popover--arrow__tr::after {
     border-bottom-color: #191919;
@@ -1203,8 +1212,16 @@ regexp("^https?:\/\/stackoverflow.[^\.]*\.com.*") {
   }
   .s-popover[x-placement^="top"] .s-popover--arrow::before,
   .s-popover--arrow__bl::before, .s-popover--arrow__bc::before,
+  .s-popover--arrow__br::before,
+  .s-popover[data-popper-placement^="top"] .s-popover--arrow::before,
+  .s-popover--arrow__bl::before, .s-popover--arrow__bc::before,
   .s-popover--arrow__br::before {
     border-top-color: #555;
+  }
+  .s-popover[data-popper-placement^="top"] .s-popover--arrow::after,
+  .s-popover--arrow__bl::after, .s-popover--arrow__bc::after,
+  .s-popover--arrow__br::after {
+    border-top-color: #191919;
   }
   .s-popover {
     background-color: #191919;
@@ -1471,7 +1488,6 @@ regexp("^https?:\/\/stackoverflow.[^\.]*\.com.*") {
   .timeline .header-edit-section .empty-description,
   .timeline .feature-banner__background, .user-page .settings-page h1,
   .inner-container, .tag-editor:not(.s-input),
-  .container .chosen-container .chosen-choices,
   .match-preferences .seniority-selector,
   .matching-preferences #location-widget .location-wrapper .visa-wrapper,
   .match-preferences .salary-selector .double-field .field-with-bg,
@@ -1571,7 +1587,9 @@ regexp("^https?:\/\/stackoverflow.[^\.]*\.com.*") {
   .s-sidebarwidget--content.s-sidebarwidget__items, #sub-navs > a,
   .s-sidebarwidget--content, .bc-black-3,
   td[style*="border-bottom: 1px solid #727272;"], .s-tag.bg-black-075:hover,
-  .s-tag.bg-black-075, .bc-black-5 {
+  .s-tag.bg-black-075, .bc-black-5,
+  .search-form.viv-stacksified .chosen-container .chosen-drop,
+  .chosen-container-active.chosen-with-drop .chosen-single {
     border-color: #444 !important;
   }
   .diff-buttons a:hover, .diff-choices a:hover, .diff-type-controls a:hover,
@@ -1589,12 +1607,6 @@ regexp("^https?:\/\/stackoverflow.[^\.]*\.com.*") {
   }
   .wmd-button-bar.has-active-button .wmd-button:not(.wmd-button__active) {
     opacity: 1;
-  }
-  .wmd-button > span {
-    filter: grayscale(1) invert(1) brightness(80%);
-  }
-  .wmd-button > span {
-    filter: grayscale(1) invert(1) brightness(100%);
   }
   .mdhelp-tabs, .mdhelp-tabs li.selected, .wmd-help-button.active-help {
     background-color: #303030;
@@ -1664,13 +1676,23 @@ regexp("^https?:\/\/stackoverflow.[^\.]*\.com.*") {
   .MathJax_MenuRule, .chess-replayer .notes {
     border-color: #555;
   }
+  .chosen-container-single .chosen-single {
+    border-left: 1px solid #555 !important;
+  }
   .modal.image-upload .modal-dropzone-default:hover,
-  .modal.image-upload .modal-dropzone-default.hover {
+  .modal.image-upload .modal-dropzone-default.hover,
+  .container .chosen-container .chosen-choices {
     background: #444;
     border-color: #666;
   }
+  .search-form.viv-stacksified .chosen-container .chosen-choices,
+  .search-form.viv-stacksified.responsive .filter-pane .tag-editor {
+    background: #111 !important;
+    border-color: #666;
+  }
   .owner-answer, .notification, #feed-ticker, #top-menu, .vote-revision td,
-  .privileges-wrapper .stroke, .progress-bar .bar {
+  .privileges-wrapper .stroke, .progress-bar .bar, .bg-black-100,
+  .h\:bg-black-100:hover, .f\:bg-black-100:focus {
     background: #404040 !important;
   }
   .history-table .reviewed-action,
@@ -1895,6 +1917,18 @@ regexp("^https?:\/\/stackoverflow.[^\.]*\.com.*") {
     background: #13552f;
     color: #fff !important;
     border-top: 1px solid #13552f !important;
+  }
+  .animated-flash-message.success,
+  .animated-flash-message.success .flash-content strong {
+    border-left: 4px solid #13552f;
+    background-color: #27ae60;
+    color: #111 !important;
+  }
+  .animated-flash-message.success a {
+    color: #111;
+  }
+  .animated-flash-message.success a:hover {
+    color: #333 !important;
   }
   .suggested-edit .inserted, .markdown-diff .inserted, .rep-increase,
   .progress-bar .percent, .recommended, .suggested-edit .inserted>div,
@@ -2769,8 +2803,7 @@ regexp("^https?:\/\/stackoverflow.[^\.]*\.com.*") {
   html a.page-numbers:hover {
     color: #eee;
   }
-  .html__responsive .site-footer li.-item a.-link:hover,
-	.s-input, .s-textarea {
+  .html__responsive .site-footer li.-item a.-link:hover, .s-input, .s-textarea {
     color: #bbb;
   }
   .tools-rev h1 .lsep {
@@ -2883,7 +2916,8 @@ regexp("^https?:\/\/stackoverflow.[^\.]*\.com.*") {
   .highcharts-container rect[fill="#FFFFFF"], rect[fill="rgb(255, 255, 255)"] {
     fill: transparent;
   }
-  .highcharts-tooltip rect[fill="rgb(255,255,255)"] {
+  .highcharts-tooltip rect[fill="rgb(255,255,255)"],
+  svg rect[rx="5"][ry="5"][fill="var(--white)"] {
     fill: #181818;
   }
   .highcharts-tooltip text[fill="#333333"] {
@@ -3501,11 +3535,9 @@ regexp("^https?:\/\/stackoverflow.[^\.]*\.com.*") {
   #hlogo a {
     background-image: url("https://StylishThemes.github.io/StackOverflow-Dark/images/stackoverflow-logo.svg") !important;
   }
-  .-logo > .-img {
-    background-image: url("https://StylishThemes.github.io/StackOverflow-Dark/images/stackoverflow-logo.svg") !important;
-    background-size: cover !important;
-    background-position: 0 0 !important;
-    background-repeat: no-repeat !important;
+  .top-bar .-logo .-img {
+    background-image: url("https://cdn.sstatic.net/Img/unified/sprites.svg?v=fcc0ea44ba27");
+    filter: grayscale(1) invert(1) brightness(120%);
   }
   .top-bar .-marketing-link:hover, .top-bar .-marketing-link:focus {
     background-color: #333;
