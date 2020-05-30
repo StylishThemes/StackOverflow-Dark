@@ -2771,7 +2771,8 @@ regexp("^https?:\/\/stackoverflow.[^\.]*\.com.*") {
   html a.page-numbers:hover {
     color: #eee;
   }
-  .html__responsive .site-footer li.-item a.-link:hover {
+  .html__responsive .site-footer li.-item a.-link:hover,
+	.s-input, .s-textarea {
     color: #bbb;
   }
   .tools-rev h1 .lsep {
