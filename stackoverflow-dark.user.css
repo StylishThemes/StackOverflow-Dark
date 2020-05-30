@@ -808,7 +808,9 @@ regexp("^https?:\/\/stackoverflow.[^\.]*\.com.*") {
   }
   .timeline .readings .readings-list .readings-item,
   .badges-page .single-badge-table .single-badge-row-reason, .s-press .-item,
-  .timeline-public .timeline-public-header, .s-btn__google, .s-btn__google:hover {
+  .timeline-public .timeline-public-header, .s-btn__google, .s-btn__google:hover,
+  .bookmark-container, .salary-changelog, .salary-cta:hover,
+  .timeline-item .mini-counts, .cv-story .mini-counts {
     border-color: #444;
   }
   .top-bar .left-sidebar-toggle:hover,
@@ -821,10 +823,6 @@ regexp("^https?:\/\/stackoverflow.[^\.]*\.com.*") {
   }
   .salary-calculator-calculator, .salary-results {
     background: #181818;
-    border-color: #444;
-  }
-  .salary-changelog, .salary-cta:hover, .timeline-item .mini-counts,
-  .cv-story .mini-counts {
     border-color: #444;
   }
   #privilege-category-descriptions .privilege-icon,
