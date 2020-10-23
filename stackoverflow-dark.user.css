@@ -1650,12 +1650,8 @@ regexp("^https?:\/\/stackoverflow.[^\.]*\.com.*") {
     background-color: #242424;
     border: 4px solid #181818;
   }
-  .answer, #newsletter-ad {
+  .answer {
     padding: 10px !important;
-  }
-  #newsletter-ad::before {
-    content: "Love this site?";
-    font-size: 18px !important;
   }
   .dropdown li.selected a, .dropdown li.selected a:hover,
   .ob-docs .example-metric, .menu-popout, .version-row, .version-name,
