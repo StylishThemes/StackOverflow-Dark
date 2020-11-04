@@ -413,9 +413,9 @@ regexp("^https?:\/\/stackoverflow.[^\.]*\.com.*") {
     border-color: rgba(/*[[base-color-rgb]]*/, .6);
     box-shadow: none;
   }
-  .s-btn:not([data-action="se-uql-list#editCurrent"]):hover,
-  .s-btn:not([data-action="se-uql-list#editCurrent"]):focus,
-  .s-btn:not([data-action="se-uql-list#editCurrent"]):active {
+  .s-btn:not([data-action="se-uql-list#editCurrent"]):not([id*="btnFollowPost-"]):hover,
+  .s-btn:not([data-action="se-uql-list#editCurrent"]):not([id*="btnFollowPost-"]):focus,
+  .s-btn:not([data-action="se-uql-list#editCurrent"]):not([id*="btnFollowPost-"]):active {
     background-color: #282828;
   }
   .s-btn.s-btn__google {
@@ -734,7 +734,7 @@ regexp("^https?:\/\/stackoverflow.[^\.]*\.com.*") {
   .gsc-selected-option-container {
     background-color: #111 !important;
   }
-  .wz-section-container.focused, .topbar-dialog .header {
+  .wz-section-container.focused {
     background: #111;
   }
   .s-table thead th {
@@ -757,6 +757,14 @@ regexp("^https?:\/\/stackoverflow.[^\.]*\.com.*") {
   }
   .timeline .readings .readings-list .readings-item .readings-image {
     background: #444;
+  }
+  .topbar-dialog .header {
+    background-color: #333;
+  }
+  .topbar-dialog {
+    background-color: #111;
+    border-color: #333;
+    color: #ccc;
   }
   .timeline .readings .readings-list .readings-item,
   .badges-page .single-badge-table .single-badge-row-reason, .s-press .-item,
@@ -869,7 +877,8 @@ regexp("^https?:\/\/stackoverflow.[^\.]*\.com.*") {
   .ask-confirmation-popup .popup-close a:hover,
   .user-page .subheader.reloaded .mini-avatar .name, a.h\:fc-white,
   .static-content ._muted, html:not(#X) .fc-black-500, .fc-black-500,
-  .fc-black-700, .s-btn__muted.s-btn__outlined {
+  .s-btn__muted.s-btn__outlined, .fc-black-700, .h\:fc-black-700:hover,
+  .f\:fc-black-700:focus {
     color: #c1beba !important;
   }
   /* these arent !important, but we botch them to make them work */
@@ -988,7 +997,7 @@ regexp("^https?:\/\/stackoverflow.[^\.]*\.com.*") {
   .s-btn.s-btn__muted:not(.s-btn__outlined):hover,
   .topbar .login-links-container a:hover, .badge-top._badge1 .-name,
   .badge-top._badge2 .-name, .badge-top._badge3 .-name,
-  .s-progress__privilege .s-progress--label, .s-progress--label, .topbar-dialog {
+  .s-progress__privilege .s-progress--label, .s-progress--label {
     color: #ddd;
   }
   .nav-links .nav-links--link:hover, .nav-links .nav-links--link:focus,
@@ -1016,7 +1025,7 @@ regexp("^https?:\/\/stackoverflow.[^\.]*\.com.*") {
   .s-sidebarwidget--item[aria-current="true"] a, .svg-icon.iconWave {
     color: #ddd !important;
   }
-  .mdhelp li[data-tab*="mdhelp-"]:hover {
+  .mdhelp li[data-tab*="mdhelp-"]:hover, .s-badge__bounty {
     color: #eee;
   }
   .subtabs.user-panel-subtabs a:hover,
@@ -1067,11 +1076,14 @@ regexp("^https?:\/\/stackoverflow.[^\.]*\.com.*") {
   }
   html, #post-preview, .nav .primarynav li a, #hsearch .textbox,
   .welovestackoverflow, #wmd-button-bar, .wmd-button-bar, .qa-block,
-  .content-block, .user-info-rep, .sidebar, .popup, .full-diff, .val-success,
+  .content-block, .user-info-rep, .sidebar, .popup, .val-success,
   .search-form .filter-pane nav, .s-card, .chosen-container .chosen-drop,
   .pac-item.pac-item-selected, .pac-item:hover, .-item.social:hover,
   .salary-results, .nav {
     background: #191919 !important;
+  }
+  body:not(.theme-system) .wmd-button > span {
+    filter: invert(80%) hue-rotate(180deg) contrast(160%);
   }
   .grippie {
     border: 1px solid #444;
@@ -1178,6 +1190,12 @@ regexp("^https?:\/\/stackoverflow.[^\.]*\.com.*") {
     border-color: #444;
     color: #aaa;
   }
+  .s-popover--arrow::before {
+    background: #444;
+  }
+  .bc-black-3, .bc-black-100 {
+    border-color: #444 !important;
+  }
   /* RSS Feed - issue #87 */
   body > pre:not(.prettyprint):not(.CodeMirror-line) {
     background: #191919 !important;
@@ -1277,7 +1295,7 @@ regexp("^https?:\/\/stackoverflow.[^\.]*\.com.*") {
     background-color: #292929 !important;
     border: 1px solid #444 !important;
   }
-  .topbar-dialog.siteSwitcher-dialog .current-site-container, .topbar-dialog {
+  .topbar-dialog.siteSwitcher-dialog .current-site-container {
     background-color: #191919;
   }
   #tag-menu, #overlay-header, .action-list .action-selected,
@@ -1527,8 +1545,8 @@ regexp("^https?:\/\/stackoverflow.[^\.]*\.com.*") {
   .s-input, .s-textarea, input, .grippie, .wmd-preview, #tags_list .tag-cell,
   .flush-left, #sidebar .s-sidebarwidget, .-panel .s-sidebarwidget--header,
   .s-sidebarwidget--header.bg-white, .-panel .s-sidebarwidget--content,
-  .s-sidebarwidget, .company-module, .topbar-dialog,
-  .topbar-dialog .modal-content li, .pagination > a, .pagination a:visited,
+  .s-sidebarwidget, .company-module, .topbar-dialog .modal-content li,
+  .pagination > a, .pagination a:visited,
   .s-sidebarwidget .s-sidebarwidget--header.grid,
   .-ignored .s-sidebarwidget--content, .s-sidebarwidget--header:not(.module),
   .module .s-sidebarwidget--content,
@@ -1730,7 +1748,7 @@ regexp("^https?:\/\/stackoverflow.[^\.]*\.com.*") {
     background-color: rgba(51, 34, 17, .6) !important;
   }
   .revision-comment {
-    background-color: #321;
+    background-color: inherit;
     color: #ccc;
   }
   #mdhelp .mdhelp-tab pre:not(.bg-transparent):not(.bg-black-050) {
@@ -1878,8 +1896,8 @@ regexp("^https?:\/\/stackoverflow.[^\.]*\.com.*") {
   }
   .suggested-edit .inserted, .markdown-diff .inserted, .rep-increase,
   .progress-bar .percent, .recommended, .suggested-edit .inserted>div,
-  .full-diff .inserted>div, .message.success, .p-highlights .-rep-increase,
-  .s-progress-bar .-fill, .answerBox.accepted, .s-notice__success {
+  .message.success, .p-highlights .-rep-increase, .s-progress-bar .-fill,
+  .answerBox.accepted, .s-notice__success {
     background: #002810 !important;
   }
   .profile-cards--checkmark {
@@ -1892,7 +1910,7 @@ regexp("^https?:\/\/stackoverflow.[^\.]*\.com.*") {
   .user-show-new .user-rep-full .rep-table .loaded-body {
     background: #181818;
   }
-  .bc-black-2 {
+  .bc-black-2, .bc-black-075 {
     border-color: #444 !important;
   }
   .s-card {
@@ -1921,7 +1939,7 @@ regexp("^https?:\/\/stackoverflow.[^\.]*\.com.*") {
   div.meter div, .s-progress--bar {
     background-color: #27ae60 !important;
   }
-  span.diff-add, .s-notice__success.s-notice__important {
+  .s-notice__success.s-notice__important {
     background: #3f4e1d !important;
     color: #92cc09 !important;
   }
@@ -1986,8 +2004,7 @@ regexp("^https?:\/\/stackoverflow.[^\.]*\.com.*") {
   .input-group.has-error .f-select select {
     border-color: #e33 !important;
   }
-  .deleted-answer, .suggested-edit .deleted, .markdown-diff .deleted,
-  .suggested-edit .deleted>div, .full-diff .deleted>div,
+  .deleted-answer, .suggested-edit .deleted>div,
   .realtime-post-deleted-notification p, .message.incomplete, .message.error,
   .deleted-answer .comments-wrap, .deleted-answer .user-info,
   .deleted-answer .util-bar, .deleted-answer .comment {
@@ -2081,10 +2098,6 @@ regexp("^https?:\/\/stackoverflow.[^\.]*\.com.*") {
   }
   .or::before, .or::after {
     border-top: 1px solid #555 !important;
-  }
-  span.diff-delete {
-    background-color: #400f00 !important;
-    color: #ff4a15 !important;
   }
   .summary a.moderator-tag, .s-notice__danger.s-notice__important,
   .s-notice__danger {
@@ -2180,15 +2193,25 @@ regexp("^https?:\/\/stackoverflow.[^\.]*\.com.*") {
   .subheader.user-full-tab-header .subtabs.user-tab-sorts {
     margin-top: 3px !important;
   }
-  .spoiler {
+  .s-prose blockquote::before {
+    background: #555;
+  }
+  .spoiler, .s-prose .spoiler {
     background: #181818;
     border-radius: 3px;
   }
-  .spoiler, .spoiler * {
-    color: transparent !important;
+  .s-prose .spoiler > * {
+    opacity: 0;
   }
   .spoiler:hover, .spoiler:hover * {
-    color: inherit !important;
+    color: inherit;
+  }
+  .s-prose .spoiler::after {
+    color: #aaa;
+  }
+  .s-prose .spoiler.is-visible > * {
+    color: #aaa;
+    opacity: 1;
   }
   .min-ds-wizard .min-ds-box.jobs .min-ds-title .filters input[type="radio"]:checked + label {
     color: #ddd;
@@ -2317,7 +2340,8 @@ regexp("^https?:\/\/stackoverflow.[^\.]*\.com.*") {
     border-bottom: 1px solid transparent !important;
   }
   .filter a.youarehere, .filter a:hover, .subtabs a, .filter a,
-  .-network-icons .-label, a.s-link__muted, .s-link.s-link__muted {
+  .-network-icons .-label, a.s-link__muted, .s-link.s-link__muted,
+  .s-prose blockquote {
     color: #bbb;
   }
   .subtabs a.active, .filter a.active {
@@ -3054,19 +3078,20 @@ regexp("^https?:\/\/stackoverflow.[^\.]*\.com.*") {
     border-color: transparent !important;
     color: #ddd !important;
   }
-  /* style non-prettyprint code */
+  /* style non-prettyprint code
   code, pre:not(.prettyprint):not(.CodeMirror-line):not(.bg-transparent) {
     background: #333 !important;
     color: #ddd !important;
   }
-  .prettyprint code, .accepted-answer pre > code {
-    background: transparent !important;
-  }
-  /* accepted answer code blocks */
+  /* accepted answer code blocks
   .accepted-answer a > code, .accepted-answer li > code,
   .accepted-answer .post-text > p > code, .accepted-answer .youarehere,
   .accepted-answer pre:not(.prettyprint) {
     background: #222822 !important;
+  }
+  */
+  .prettyprint code, .accepted-answer pre > code {
+    background: transparent !important;
   }
   .description.description-ellipsis .description-content-truncated::after {
     background: linear-gradient(to right, rgba(21, 21, 21, 0), rgba(21, 21, 21, 1) 50%) !important;
@@ -4678,8 +4703,8 @@ regexp("^https?:\/\/stackoverflow.[^\.]*\.com.*") {
     background-size: cover !important;
     background-image: url("https://StylishThemes.github.io/StackOverflow-Dark/images/superuser-logo.svg") !important;
   }
-  img.wmx100[src*="superuser/img/logo.svg"] {
-    filter: invert(1) hue-rotate(180deg) brightness(75%) saturate(150%);
+  .site-header--link img {
+    filter: invert(80%) hue-rotate(180deg) contrast(110%);
   }
 }
 @-moz-document domain("meta.superuser.com") {
