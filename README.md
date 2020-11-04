@@ -35,40 +35,15 @@ Then:
 
 📦 [Install the usercss](https://github.com/StylishThemes/StackOverflow-Dark/raw/master/stackoverflow-dark.user.css). Supports automatic updates.
 
-## Available Syntax Highlighting Themes
+## Additional styles
 
-| Theme                    |     |
-|--------------------------|:---:|
-| Atelier-cave-dark        | ✔️ |
-| Atelier-dune-dark        | ✔️ |
-| Atelier-estuary-dark     | ✔️ |
-| Atelier-forest-dark      | ✔️ |
-| Atelier-heath-dark       | ✔️ |
-| Atelier-lakeside-dark    | ✔️ |
-| Atelier-plateau-dark     | ✔️ |
-| Atelier-savanna-dark     | ✔️ |
-| Atelier-seaside-dark     | ✔️ |
-| Atelier-sulphurpool-dark | ✔️ |
-| Desert                   | ✔️ |
-| Doxy                     | ✔️ |
-| Hemisu Dark              | ✔️ |
-| Material                 | ✔️ |
-| Monokai                  | ✔️ |
-| Sons of Obsidian         | ✔️ |
-| Sunburst                 | ✔️ |
-| Tomorrow Night           | ✔️ |
-| Tomorrow Night Blue      | ✔️ |
-| Tomorrow Night Bright    | ✔️ |
-| Tomorrow Night Eigthies  | ✔️ |
-| Tranquil Heart           | ✔️ |
-| Vibrant Ink              | ✔️ |
-| VSCode Monaco            | ✔️ |
-
-\* See references at the [Themes wiki](https://github.com/StylishThemes/StackOverflow-Dark/wiki/Themes) for more details.
+📦 [Install the StackOverflow Syntax Themes usercss](https://raw.githubusercontent.com/StylishThemes/Feature-Override-Styles/master/stackoverflow-syntax-themes.user.css)<br>
+This style allows you to choose preset syntax themes for StackOverflow and associated sites.<br><br>
 
 ## Notes
 
 - In versions 2.8.0+, this style will apply to *almost* all Stack Exchange sites.
+- From version 5.0.0, the syntax themes are removed and added as separate theme switcher, this is because SO design upstream changed, see issue #218
 
 ## Contributions
 
