@@ -1191,7 +1191,10 @@ regexp("^https?:\/\/stackoverflow.[^\.]*\.com.*") {
     color: #aaa;
   }
   .s-popover--arrow::before {
-    background: #444;
+    background: #444 !important;
+  }
+  body.theme-system .s-popover--arrow {
+    color: #191919;
   }
   .bc-black-3, .bc-black-100 {
     border-color: #444 !important;
