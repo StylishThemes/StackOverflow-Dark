@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name         Stack Overflow Dark
-@version      5.0.1
+@version      5.0.2
 @description  Dark theme for Stack Overflow & most Stack Exchange network sites
 @namespace    StylishThemes
 @author       StylishThemes
@@ -3081,7 +3081,7 @@ regexp("^https?:\/\/stackoverflow.[^\.]*\.com.*") {
     border-color: transparent !important;
     color: #ddd !important;
   }
-  /* style non-prettyprint code
+  /* style non-prettyprint code*/
   code, pre:not(.prettyprint):not(.CodeMirror-line):not(.bg-transparent) {
     background: #333 !important;
     color: #ddd !important;
