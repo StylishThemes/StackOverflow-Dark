@@ -35,7 +35,7 @@ Then:
 
 📦 [Install the usercss](https://github.com/StylishThemes/StackOverflow-Dark/raw/master/stackoverflow-dark.user.css). Supports automatic updates.
 
-## Additional styles (required for properly rendering blocks of code on StackOverflow pages)
+## Additional styles
 
 📦 [Install the StackOverflow Syntax Themes usercss](https://raw.githubusercontent.com/StylishThemes/Feature-Override-Styles/master/stackoverflow-syntax-themes.user.css)<br>
 This style allows you to choose preset syntax themes for StackOverflow and associated sites.<br><br>
