@@ -38,7 +38,8 @@ Then:
 ## Additional styles
 
 📦 [Install the StackOverflow Syntax Themes usercss](https://raw.githubusercontent.com/StylishThemes/Feature-Override-Styles/master/stackoverflow-syntax-themes.user.css)<br>
-This style allows you to choose preset syntax themes for StackOverflow and associated sites.<br><br>
+- This style allows you to choose preset syntax themes for StackOverflow and associated sites.
+- The StackOverflow Syntax Themes style is **a required additional style** for properly rendering blocks of code on StackOverflow pages<br><br>
 
 ## Notes
 
