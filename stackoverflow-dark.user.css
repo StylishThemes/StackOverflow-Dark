@@ -2844,22 +2844,6 @@ regexp("^https?:\/\/stackoverflow.[^\.]*\.com.*") {
     -webkit-animation-name: autofill !important;
     -webkit-animation-fill-mode: both !important;
   }
-  /* scroll bar */
-  ::-webkit-scrollbar {
-    max-width: 10px !important;
-    max-height: 10px !important;
-    background: #1d1d1d !important;
-  }
-  ::-webkit-scrollbar-track, ::-webkit-scrollbar-corner {
-    background: #1d1d1d !important;
-  }
-  ::-webkit-scrollbar-thumb {
-    background: rgba(175, 175, 175, .5) !important;
-  }
-  ::-webkit-scrollbar-thumb:hover {
-    background: rgba(79, 140, 201, .8) !important;
-    background: rgba(/*[[base-color-rgb]]*/, .8) !important;
-  }
   /* === badges === */
   /* stackexchange badges fixes */
   .history-table .badge {
