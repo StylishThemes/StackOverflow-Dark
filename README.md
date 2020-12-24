@@ -40,6 +40,9 @@ Then:
 📦 [Install the StackOverflow Syntax Themes usercss](https://raw.githubusercontent.com/StylishThemes/Feature-Override-Styles/master/stackoverflow-syntax-themes.user.css)<br>
 - The StackOverflow Syntax Themes style is **a required additional style** for rendering blocks of code on StackOverflow, it contains preset + custom  syntax themes.<br><br>
 
+📦 [Install the global Overlay-Scrollbars usercss](https://raw.githubusercontent.com/StylishThemes/Overlay-Scrollbars/master/global-overlay-scrollbars.user.css)<br>
+- The  Overlay-Scrollbars style is **an optional additional style** for styling scrollbars on modern browsers since removing scrollbars styles in [this commit](https://github.com/StylishThemes/StackOverflow-Dark/commit/861fd20e7498494f486eb8d210d23a98e76b7422)<br><br>
+
 ## Notes
 
 - In versions 2.8.0+, this style will apply to *almost* all Stack Exchange sites.
