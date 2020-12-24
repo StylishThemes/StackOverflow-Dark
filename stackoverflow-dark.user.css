@@ -57,6 +57,9 @@ regexp("^https?:\/\/stackoverflow.[^\.]*\.com.*") {
     --bg-custom: /*[[bg-custom]]*/;
     --bg-img: /*[[bg-choice]]*/;
   }
+  body {
+    --theme-footer-link-color: #aaa;
+  }
   /**
    * ** Will apply to almost all Stack Exchange Sites **
    * Except:
@@ -1069,6 +1072,35 @@ regexp("^https?:\/\/stackoverflow.[^\.]*\.com.*") {
   .top-bar .-secondary .-item .-link.topbar-icon-on._danger-indicator::after,
   .top-bar .-secondary .-item .-link.topbar-icon-on._danger-indicator:hover::after {
     border-color: #111;
+  }
+  .top-bar .indicator-badge.wb-unread-count {
+    background-color: /*[[base-color]]*/;
+  }
+  .top-bar .indicator-badge {
+    background-color: #135;
+    color: #fff;
+  }
+  .topbar-dialog.wb-inbox-dialog {
+    border-color: #145;
+  }
+  .topbar-dialog.wb-inbox-dialog .header {
+    background-color: #135;
+  }
+  .wb-new {
+    background-color: #321;
+  }
+  .wb-inbox-item > a > p {
+    color: #eee;
+  }
+  .wb-inbox-dialog .wb-footer {
+    --black-025: #222;
+  }
+  a.wb-hat-details-avatar {
+    border: 15px solid transparent;
+  }
+  .wb-outer {
+    background-color: #333;
+    color: #ccc;
   }
   .left-sidebar-toggle span, .left-sidebar-toggle span::before,
   .left-sidebar-toggle span::after, .min-ds-step-counter .step {
@@ -2088,7 +2120,7 @@ regexp("^https?:\/\/stackoverflow.[^\.]*\.com.*") {
   .wrapper._card, .vertical-list .-item, .user-panel._card, .badge-top._badge2,
   .badge-top._badge1, .badge-top._badge3, .badge-top._badge1 .-name,
   .badge-top._badge2 .-name, .badge-top._badge3 .-name,
-  .contact-page .popup-content .content {
+  .contact-page .popup-content .content, .site-footer .site-footer--extra {
     border-color: #444;
   }
   .tabs._full li {
@@ -2859,6 +2891,13 @@ regexp("^https?:\/\/stackoverflow.[^\.]*\.com.*") {
   }
   .badge-tag:hover {
     border-color: inherit;
+  }
+  /* winter bash */
+  .wb-hat {
+    background: #111;
+  }
+  .wb-hatimg-stroke {
+    filter: brightness(1.2);
   }
   .profile-communities--rep-badges::before {
     background-image: linear-gradient(270deg, #222, rgba(255, 255, 255, 0));
