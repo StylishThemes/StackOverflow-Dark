@@ -74,6 +74,9 @@ regexp("^https?:\/\/stackoverflow.[^\.]*\.com.*") {
     text-shadow: none !important;
     box-shadow: none !important;
   }
+  .s-prose *:not(.s-code-block)>code, pre code{
+        color:#ddd;
+  }
   body, .cv-story header, .container.bg-black-050,
   body.floating-content > .container {
     background-color: #202020 !important;
