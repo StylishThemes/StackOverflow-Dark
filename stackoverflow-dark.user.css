@@ -1611,6 +1611,9 @@ regexp("^https?:\/\/stackoverflow.[^\.]*\.com.*") {
   .wmd-button-bar.has-active-button .wmd-button:not(.wmd-button__active) {
     opacity: 1;
   }
+  .mdhelp {
+    background-color: #282828;
+  }
   .mdhelp-tabs, .mdhelp-tabs li.selected, .wmd-help-button.active-help {
     background-color: #303030;
   }
