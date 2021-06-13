@@ -81,7 +81,7 @@ regexp("^https?:\/\/stackoverflow.[^\.]*\.com.*") {
   }
   body, .cv-story header, .container.bg-black-050,
   body.floating-content > .container {
-    background-color: #202020 !important;
+    background-color: var(--black-200) !important;
     background-image: var(--bg-img) !important;
     background-clip: border-box !important;
     background-origin: padding-box !important;
@@ -421,9 +421,9 @@ regexp("^https?:\/\/stackoverflow.[^\.]*\.com.*") {
     border-color: rgba(/*[[base-color-rgb]]*/, .6);
     box-shadow: none;
   }
-  .s-btn:not([data-action="se-uql-list#editCurrent"]):not([id*="btnFollowPost-"]):hover,
-  .s-btn:not([data-action="se-uql-list#editCurrent"]):not([id*="btnFollowPost-"]):focus,
-  .s-btn:not([data-action="se-uql-list#editCurrent"]):not([id*="btnFollowPost-"]):active {
+  .s-btn:not([data-action="se-uql-list#editCurrent"]):not([id*="btnFollowPost-"]):not([class*="post"]):hover,
+  .s-btn:not([data-action="se-uql-list#editCurrent"]):not([id*="btnFollowPost-"]):not([class*="post"]):focus,
+  .s-btn:not([data-action="se-uql-list#editCurrent"]):not([id*="btnFollowPost-"]):not([class*="post"]):active {
     background-color: #282828;
   }
   .s-btn.s-btn__google {
@@ -1079,10 +1079,10 @@ regexp("^https?:\/\/stackoverflow.[^\.]*\.com.*") {
     border-color: #111;
   }
   .top-bar .indicator-badge.wb-unread-count {
-    background-color: /*[[base-color]]*/;
+    background-color: /*[[base-color]]*/ #4183c4;
   }
   .top-bar .indicator-badge {
-    background-color: #135;
+    --blue-600: #135 !important;
     color: #fff;
   }
   .topbar-dialog.wb-inbox-dialog {
