@@ -57,13 +57,26 @@ regexp("^https?:\/\/stackoverflow.[^\.]*\.com.*") {
     --bg-custom: /*[[bg-custom]]*/;
     --bg-img: /*[[bg-choice]]*/;
   }
-  body, [class="theme-"] {
+  body[class*="theme-"] {
     --theme-footer-link-color: #aaa;
     --black-200: #202020;
     --black-400: #666;
     --black-500: #888;
     --black-050: #252525;
     --fc-dark: #eee;
+    /* include built in default syntax-theme */
+    --highlight-bg: var(--black-200) !important;
+    --highlight-color: var(--fc-dark);
+    --highlight-comment: #656e77;
+    --highlight-punctuation: var(--black-600);
+    --highlight-namespace: #d97c2b;
+    --highlight-attribute: #127fcc;
+    --highlight-literal: #d97c2b;
+    --highlight-symbol: #803378;
+    --highlight-keyword: #127fcc;
+    --highlight-variable: #6fa012;
+    --highlight-addition: #2f6f44;
+    --highlight-deletion: #c02d2e;
   }
   /**
    * ** Will apply to almost all Stack Exchange Sites **
@@ -1238,7 +1251,7 @@ regexp("^https?:\/\/stackoverflow.[^\.]*\.com.*") {
   }
   /* RSS Feed - issue #87 */
   body > pre:not(.prettyprint):not(.CodeMirror-line) {
-    background: #191919 !important;
+    background: var(--highlight-bg) !important;
     color: #ddd;
   }
   body.user-page #content * {
@@ -3585,7 +3598,7 @@ regexp("^https?:\/\/stackoverflow.[^\.]*\.com.*") {
     border-color: #444 !important;
   }
   code, pre:not(.prettyprint):not(.CodeMirror-line):not(.bg-transparent) {
-    background: #141414 !important;
+    background: var(--highlight-bg) !important;
   }
   .cm-comment, .cm-link {
     font-style: italic !important;
