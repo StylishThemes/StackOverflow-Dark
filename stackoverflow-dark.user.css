@@ -57,7 +57,7 @@ regexp("^https?:\/\/stackoverflow.[^\.]*\.com.*") {
     --bg-custom: /*[[bg-custom]]*/;
     --bg-img: /*[[bg-choice]]*/;
   }
-  body[class*="theme-"] {
+  body[class*="theme-"], body {
     --theme-footer-link-color: #aaa;
     --black-200: #202020;
     --black-400: #666;
