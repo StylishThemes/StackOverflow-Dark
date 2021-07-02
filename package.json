@@ -21,7 +21,7 @@
     "versions": "^8.4.7"
   },
   "scripts": {
-    "authors": "bash tools/authors",
+    "authors": "bash tools/authors.sh",
     "build": "node tools/update-usercss.js",
     "clean": "npm run perfectionist && node tools/clean.js",
     "lint": "eslint --fix tools/*.js && stylelint stackoverflow-dark.user.css themes/",
