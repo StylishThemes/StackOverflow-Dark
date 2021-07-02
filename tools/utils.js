@@ -6,13 +6,13 @@ function replaceHolders(pkg, css) {
   const placeholders = css.match(/\{\{\S+?\}\}/g);
   const domain = "https://github.com/";
   if (placeholders) {
-    new Set(placeholders).forEach((name) => {
+    for (const name of new Set(placeholders)) {
       let val = (pkg[name.replace(/[{}]/g, "")] || name);
       if (val.includes(domain)) {
         val = val.substring(domain.length, val.length);
       }
       css = css.replace(new RegExp(escapeRegex(name), "gi"), val);
-    });
+    }
   }
   return css;
 }
