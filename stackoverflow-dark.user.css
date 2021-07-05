@@ -2257,6 +2257,10 @@ regexp("^https?:\/\/stackoverflow.[^\.]*\.com.*") {
   .s-prose blockquote::before {
     background: #555;
   }
+  /* by default style code blocks in s-prose */
+  .s-prose :not(.s-code-block) > code {
+    color: var(--highlight-color);
+  }
   .spoiler, .s-prose .spoiler {
     background: #181818;
     border-radius: 3px;
