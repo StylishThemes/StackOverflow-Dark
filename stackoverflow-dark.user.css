@@ -2732,8 +2732,9 @@ regexp("^https?:\/\/stackoverflow.[^\.]*\.com.*") {
   .answer-hyperlink:visited, #hot-network-questions ul a:visited {
     color: /*[[visited-color]]*/ !important;
   }
-  .s-prose a:not(.post-tag):not(.s-tag):not(.badge-tag):not(.s-link__visited):not(.s-btn):not(.s-editor-btn), .comment-copy a {
-    color: /*[[base-color]]*/
+  .s-prose a:not(.post-tag):not(.s-tag):not(.badge-tag):not(.s-link__visited):not(.s-btn):not(.s-editor-btn),
+  .comment-copy a {
+    color: ; /*[[base-color]]*/
   }
   .rep-up, .message.success.text-only {
     color: #27ae60 !important;
