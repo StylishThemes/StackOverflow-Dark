@@ -57,7 +57,10 @@ regexp("^https?:\/\/stackoverflow.[^\.]*\.com.*") {
     --bg-custom: /*[[bg-custom]]*/;
     --bg-img: /*[[bg-choice]]*/;
   }
-  body[class*="theme-"], body {
+  body:not(.theme-dark), body.theme-dark .theme-light__forced,
+  body.theme-system .theme-light__forced, body:not(.theme-dark) .themed,
+  body.theme-dark .theme-light__forced .themed,
+  body.theme-system .theme-light__forced .themed {
     --theme-link-color-visited: /*[[visited-color]]*/ !important;
     --theme-footer-link-color: #aaa;
     --black-075: #202020;
