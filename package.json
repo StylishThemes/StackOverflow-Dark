@@ -12,8 +12,8 @@
   },
   "devDependencies": {
     "cssmin": "^0.4.3",
-    "eslint": "^7.30.0",
-    "eslint-config-silverwind": "^38.1.0",
+    "eslint": "^7.31.0",
+    "eslint-config-silverwind": "^39.0.0",
     "perfectionist": "^2.4.0",
     "stylelint": "^13.13.1",
     "stylelint-config-standard": "^22.0.0",
