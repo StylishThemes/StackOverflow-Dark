@@ -787,6 +787,9 @@ regexp("^https?:\/\/stackoverflow.[^\.]*\.com.*") {
   .timeline .readings .readings-list .readings-item {
     background: #151515 !important;
   }
+  .js-announcement-banner.bg-black-700 {
+    background-color: #444777 !important;
+  }
   .timeline .readings .readings-list .readings-item .readings-image {
     background: #444;
   }
