@@ -47,7 +47,7 @@ Then:
 
 - In versions 2.8.0+, this style will apply to *almost* all Stack Exchange sites.
 - From version 5.0.0, the syntax themes are removed and added as separate theme switcher, this is because SO design upstream changed, see issue #218
-- Do not use this style and the native site dark mode together. Make your choice and stick with one bot not both at same time. See below.
+- Do not use this style and the native site dark mode together. Make your choice and stick with one but not both at same time. See below.
 
 ## Bug reports
 
