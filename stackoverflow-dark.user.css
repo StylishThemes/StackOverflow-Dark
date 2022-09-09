@@ -11,6 +11,7 @@
 @advanced color base-color "Base color scheme" #4183C4
 @advanced color visited-color "Visited link color" #4183C4
 @advanced color accepted-color "Accepted answer background color" #002810
+@advanced color watched-color "Watched question background color" #002810
 @advanced color strong-color "Strong color" #ccc
 @advanced text font-choice "Code Font" Menlo
 @advanced dropdown bg-choice "Background image" {
@@ -3161,6 +3162,9 @@ regexp("^https?:\/\/stackoverflow.[^\.]*\.com.*") {
   }
   .description.description-ellipsis .description-content-truncated::after {
     background: linear-gradient(to right, rgba(21, 21, 21, 0), rgba(21, 21, 21, 1) 50%) !important;
+  }
+  .s-post-summary__watched {
+    background-color: /*[[watched-color]]*/;
   }
   /*[[syntax-theme]]*/
   }
