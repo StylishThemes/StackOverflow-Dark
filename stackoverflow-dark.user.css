@@ -708,6 +708,17 @@ regexp("^https?:\/\/stackoverflow.[^\.]*\.com.*") {
     filter: invert(1) hue-rotate(180deg) saturate(200%);
     mix-blend-mode: exclusion;
   }
+  /* fixes broken elements of dark theme */
+  .s-sidebarwidget {
+		background-color: var(--black-075) !important;
+	}
+	.s-topbar .s-topbar--logo .-img {
+	  filter: invert(1) hue-rotate(180deg) !important;
+	}	
+	.s-topbar .s-navigation .s-navigation--item:not(.is-selected) {
+  	color: var(--black-800);
+	}
+  /* endof fixes */
   .why-jobs-v2 .cta-cards .-card._browse-tech .-image,
   .why-jobs-v2 .cta-cards .-card._browse-salary .-image,
   .why-jobs-v2 .cta-cards .-card._browse-newest .-image,
