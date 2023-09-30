@@ -2288,7 +2288,7 @@ regexp("^https?:\/\/stackoverflow.[^\.]*\.com.*") {
     color: #ddd;
     border-bottom-color: /*[[base-color]]*/ !important;
   }
-  .s-badge__votes {
+  .s-badge__votes:not(.s-badge__answered) {
     border-color: #444;
     background-color: #181818;
     color: #eee;
