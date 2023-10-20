@@ -90,6 +90,25 @@ regexp("^https?:\/\/stackoverflow.[^\.]*\.com.*") {
     --highlight-addition: #2f6f44;
     --highlight-deletion: #c02d2e;
   }
+  /* This is just the bit i found from stackoverflow that defines text colours but i inverted the blacks to fix a problem where text was black. idrk what im doing sorry if this is bad */
+  body:not(.theme-highcontrast):not(.theme-dark), body:not(.theme-highcontrast).theme-dark .theme-light__forced, body:not(.theme-highcontrast).theme-system .theme-light__forced,
+  body:not(.theme- highcontrast):not(.theme-dark).themed, body:not(.theme-highcontrast).theme-dark .theme-light__forced.themed, body:not(.theme-highcontrast).theme-system .theme-light__forced.themed,
+  body:not(.theme-highcontrast):not(.theme-dark) .themed, body:not(.theme-highcontrast).theme-dark .theme-light__forced .themed, body:not(.theme-highcontrast).theme-system .theme-light__forced .themed {
+	--white: hsl(0,0%,0%);
+	--black-050: hsl(0,0%,55%);
+	--black-100: hsl(210,8%,60%);
+	--black-150: hsl(210,8%,65%);
+	--black-200: hsl(210,8%,70%);
+	--black-225: hsl(210,8%,73%);
+	--black-250: hsl(210,8%,75%);
+	--black-300: hsl(210,8%,80%);
+	--black-350: hsl(210,8%,85%);
+	--black-400: hsl(210,8%,90%);
+	--black-500: hsl(210, 8%, 95%);
+	--black-600: hsl(210, 8%, 98%);
+	--black: hsl(210, 8%, 100%);
+	color: var(--theme-body-font-color, var(--black-600));
+  }
   /**
    * ** Will apply to almost all Stack Exchange Sites **
    * Except:
