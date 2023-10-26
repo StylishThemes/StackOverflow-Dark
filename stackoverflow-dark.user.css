@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name         Stack Overflow Dark
-@version      5.1.2
+@version      5.1.3
 @description  Dark theme for Stack Overflow & most Stack Exchange network sites
 @namespace    StylishThemes
 @author       StylishThemes
@@ -61,9 +61,11 @@ regexp("^https?:\/\/stackoverflow.[^\.]*\.com.*") {
   body:not(.theme-dark), body.theme-dark .theme-light__forced,
   body.theme-system .theme-light__forced, body:not(.theme-dark) .themed,
   body.theme-dark .theme-light__forced .themed,
-  body.theme-system .theme-light__forced .themed {
+  body.theme-system .theme-light__forced .themed
+  body.unified-theme, body.unified-theme * {
     --theme-link-color-visited: /*[[visited-color]]*/ !important;
     --theme-footer-link-color: #aaa;
+    --theme-body-font-color: /*[[strong-color]]*/;
     --black-075: #202020;
     --black-200: #202020;
     --black-400: #666;
