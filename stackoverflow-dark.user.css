@@ -61,7 +61,16 @@ regexp("^https?:\/\/stackoverflow.[^\.]*\.com.*") {
   body:not(.theme-dark), body.theme-dark .theme-light__forced,
   body.theme-system .theme-light__forced, body:not(.theme-dark) .themed,
   body.theme-dark .theme-light__forced .themed,
-  body.theme-system .theme-light__forced .themed {
+  body.theme-system .theme-light__forced .themed,
+  body:not(.theme-highcontrast):not(.theme-dark),
+  body:not(.theme-highcontrast).theme-dark .theme-light__forced,
+  body:not(.theme-highcontrast).theme-system .theme-light__forced,
+  body:not(.theme-highcontrast):not(.theme-dark).themed,
+  body:not(.theme-highcontrast).theme-dark .theme-light__forced.themed,
+  body:not(.theme-highcontrast).theme-system .theme-light__forced.themed,
+  body:not(.theme-highcontrast):not(.theme-dark) .themed,
+  body:not(.theme-highcontrast).theme-dark .theme-light__forced .themed,
+  body:not(.theme-highcontrast).theme-system .theme-light__forced .themed {
     --theme-link-color-visited: /*[[visited-color]]*/ !important;
     --theme-footer-link-color: #aaa;
     --black-075: #202020;
@@ -69,6 +78,7 @@ regexp("^https?:\/\/stackoverflow.[^\.]*\.com.*") {
     --black-400: #666;
     --black-500: #888;
     --black-700: #777;
+    --black-600: #7f7f7f;
     --black-800: #888;
     --black-050: #252525;
     --orange-100: #874600;
@@ -715,7 +725,7 @@ regexp("^https?:\/\/stackoverflow.[^\.]*\.com.*") {
 	}
 	.s-topbar .s-topbar--logo .-img {
 	  filter: invert(1) hue-rotate(180deg) !important;
-	}	
+	}
 	.s-topbar .s-navigation .s-navigation--item:not(.is-selected) {
   	color: var(--black-800);
 	}
