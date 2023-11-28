@@ -61,7 +61,7 @@ regexp("^https?:\/\/stackoverflow.[^\.]*\.com.*") {
   body:not(.theme-dark), body.theme-dark .theme-light__forced,
   body.theme-system .theme-light__forced, body:not(.theme-dark) .themed,
   body.theme-dark .theme-light__forced .themed,
-  body.theme-system .theme-light__forced .themed
+  body.theme-system .theme-light__forced .themed,
   body.unified-theme, body.unified-theme * {
     --theme-link-color-visited: /*[[visited-color]]*/ !important;
     --theme-footer-link-color: #aaa;
@@ -2246,7 +2246,7 @@ regexp("^https?:\/\/stackoverflow.[^\.]*\.com.*") {
   .narrow .votes, .badge-tag:hover, .form-item, .nav-links li a:hover,
   .nav-links li a:focus, .answered, .message.success.text-only,
   .s-sidebarwidget .s-btn__muted:not(.facebook-login),
-  .task-stat-leaderboard.user-info, #mdhelp .mdhelp-tab pre:not.bg-transparent {
+  .task-stat-leaderboard.user-info, #mdhelp .mdhelp-tab pre:not(.bg-transparent) {
     background-color: transparent !important;
   }
   #content, .subheader #tabs a:not(.youarehere),
@@ -3483,7 +3483,6 @@ regexp("^https?:\/\/stackoverflow.[^\.]*\.com.*") {
 }
 @-moz-document domain("stats.stackexchange.com") {
   .site-header {
-    background-image: none;
     background: repeating-linear-gradient(-45deg, #111, #333 2px, #111 4px);
   }
   .site-header .site-header--sponsored {
