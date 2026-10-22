@@ -1,3 +1,5 @@
+**Retired:** Stack Overflow has a built-in dark mode now.
+
 <p align="center">
   <img alt="stackexchange-logo" src="https://cdn.jsdelivr.net/gh/StylishThemes/logos@master/se.dark/sedark.svg" width="508">
   <br>
